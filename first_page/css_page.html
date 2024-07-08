@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .g-link{
+            font-size: large;
+            color: green;
+        }
+        .g-link:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home.html">
+                <img src="icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item active-submenu" href="css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/2_CSS_Properties/31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/3_CSS_Advance/9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../all_content/css_content/4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../all_content/css_content/4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-8">
+                <p>
+                    CSS, which stands for Cascading Style Sheets, is a critical technology in web development used to
+                    control the
+                    presentation and styling of web content written in HTML. It allows web designers and developers to
+                    define how
+                    web
+                    pages should look and be displayed on different devices and screen sizes. CSS separates the content
+                    and
+                    structure
+                    (defined by HTML) from the visual presentation, enhancing the flexibility and maintainability of web
+                    designs.
+                    Here's
+                    an overview of CSS:
+
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <img src="logo/css_logo.png" alt="Html" style="height: 120px; width: 120px;">
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="mt-4 mb-5">Information About CSS</h2>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>1. Styling HTML Elements:</h4>
+                <p>CSS is primarily used to style HTML elements, such as text, headings, paragraphs, images, links, and
+                    more.
+                    Styling
+                    includes setting properties like colors, fonts, margins, padding, borders, and positioning.</p>
+
+
+            </div>
+            <div class="col-lg-6">
+                <h4>2. Separation of Concerns:</h4>
+                <p>CSS follows the principle of separation of concerns, which means separating the content (HTML),
+                    presentation
+                    (CSS), and
+                    behavior (JavaScript) of a web page. This separation makes it easier to update and maintain web
+                    designs.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>3. CSS Rules:</h4>
+                <p>CSS rules are composed of selectors and declarations. Selectors target HTML elements to apply styles,
+                    while
+                    declarations specify the styles themselves.
+                    <br>Example of a CSS rule:
+                <pre>
+            <code>
+                p {
+                    color: #333;
+                    font-size: 16px;
+                }
+            </code>
+        </pre>
+                </p>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>4. Cascading Nature:</h4>
+                <p>The term "cascading" in CSS refers to how styles are applied in a hierarchical manner. Multiple CSS
+                    rules can
+                    target
+                    the same element, and the most specific rule takes precedence. Cascading allows for greater
+                    flexibility and the
+                    ability to override styles when necessary.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>5. Classes and IDs:</h4>
+                <p>CSS allows the use of classes and IDs to apply styles to specific HTML elements. Classes can be
+                    reused across
+                    multiple
+                    elements, while IDs are unique to a single element.
+                    <br>Example:
+                <pre>
+            <code>
+                &lt;p class="highlight"&gt;This is a highlighted paragraph.&lt;/p&gt;
+            </code>
+        </pre>
+                </p>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>6. External, Internal, and Inline CSS:</h4>
+                <p>CSS can be included in HTML documents in three ways: externally (linked from an external CSS file),
+                    internally
+                    (embedded within the HTML document using the &lt;style&gt; tag), or inline (applied directly to
+                    individual HTML
+                    elements using the style attribute). External CSS is the most recommended approach for maintaining
+                    clean and
+                    organized code.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>7. Responsive Web Design:</h4>
+                <p>CSS plays a vital role in creating responsive web designs that adapt to different screen sizes and
+                    devices.
+                    Techniques like media queries and flexible layout grids are used to make web pages look and function
+                    well on
+                    various
+                    screens, including smartphones, tablets, and desktops.</p>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>8. Preprocessors:</h4>
+                <p>CSS preprocessors like Sass and LESS extend CSS with features like variables, nesting, and functions
+                    to make
+                    styling
+                    more efficient and maintainable. Preprocessors compile into standard CSS for browser compatibility.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>9. Browser Compatibility:</h4>
+                <p>CSS is supported by all modern web browsers, and compatibility issues are less common than with older
+                    versions of
+                    HTML and CSS. However, it's essential to test web designs in different browsers to ensure consistent
+                    rendering.
+                </p>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>10. Web Development Tools:</h4>
+                <p>Developers often use web development tools and browsers' built-in developer tools to inspect and
+                    debug CSS
+                    styles.
+                    Popular code editors like Visual Studio Code offer CSS auto-completion and real-time previews.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>11. Learning CSS:</h4>
+                <p>CSS is a fundamental skill for web designers and front-end developers. Numerous online tutorials,
+                    courses, and
+                    documentation are available for beginners to learn CSS effectively.</p>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>12. CSS Frameworks and Libraries:</h4>
+                <p>CSS frameworks like Bootstrap and Foundation provide pre-designed UI components and responsive grids,
+                    speeding up
+                    web development. CSS libraries like FontAwesome offer a collection of icons and styles for common
+                    design
+                    elements.</p>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="row mt-4 mb-3">
+            <h2>Summary</h2>
+            <p class="mt-2">
+
+                In summary, HTML is the foundation of web development, providing the structure and content for web
+                pages. It is an essential skill for web developers and anyone looking to create content for the
+                internet. When combined with CSS and JavaScript, HTML forms the core technologies used to build modern,
+                interactive, and visually appealing websites and web applications.
+
+            </p>
+        </div>
+        <hr>
+        <h2 class="mt-4 mb-2">Useful Website References</h2>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="g-link">w3schools CSS Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.geeksforgeeks.org/css-introduction/" target="_blank" class="g-link">GeeksforGeeks CSS Tutorial</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.hostinger.in/tutorials/what-is-css" target="_blank" class="g-link">Hostinger CSS Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.codecademy.com/catalog/language/html-css" target="_blank" class="g-link">Codecademy CSS Tutorial</a>
+            </div>
+        </div>
+
+        <div class="mb-5"></div>
+        <hr>
+
+        <h2 class="mt-4 mb-5"><a href="../all_content/css_content/1_CSS_tutorial/1_introduction_to_CSS.html">Start Learning From Our Tutorials&nbsp;<i
+                    class="bi bi-box-arrow-in-right"></i></a></h2>
+        <hr>
+
+
+        <h2 class="mt-4 mb-5">Learn From Some Amazing YouTube Tutorials :</h2>
+
+        <div style="margin-bottom: 50px;"></div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <iframe src="https://www.youtube.com/embed/ESnrn1kAD4E?si=Vo-Kc0b3Xd0MZd4D"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe src="https://www.youtube.com/embed/Edsxf_NBFrw?si=GibFj-q8-z_jXM_B"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe src="https://www.youtube.com/embed/1Rs2ND1ryYc?si=JFfIbHgISDZ1D39B"
+                        title=" YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <div style="margin-bottom: 50px;"></div>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<!-- Add Bootstrap JavaScript and jQuery for Bootstrap features (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item active-submenu" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python String</h1>
+    <p>Till now, we have discussed numbers as the standard data-types in Python. In this section of the tutorial, we
+        will discuss the most popular data type in Python, i.e., string.</p>
+    <p>Python string is the collection of the characters surrounded by single quotes, double quotes, or triple quotes.
+        The computer does not understand the characters; internally, it stores manipulated character as the combination
+        of the 0's and 1's.</p>
+    <p>Each character is encoded in the ASCII or Unicode character. So we can say that Python strings are also called
+        the collection of Unicode characters.</p>
+    <p>In Python, strings can be created by enclosing the character or the sequence of characters in the quotes. Python
+        allows us to use single quotes, double quotes, or triple quotes to create the string.</p>
+    <p>Consider the following example in Python to create a string.</p>
+    <h3 class="h3">Syntax:</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "Hi Python !"  
+</textarea></div>
+    <p>Here, if we check the type of the variable <strong>str</strong> using a Python script</p>
+    <div class="codeblock"><textarea name="code" class="python">
+print(type(str)), then it will print a string (str).  
+</textarea></div>
+    <p>In Python, strings are treated as the sequence of characters, which means that Python doesn't support the
+        character data-type; instead, a single character written as 'p' is treated as the string of length 1.</p>
+    <h2 class="h2">Creating String in Python</h2>
+    <p>We can create a string by enclosing the characters in single-quotes or double- quotes. Python also provides
+        triple-quotes to represent the string, but it is generally used for multiline string or
+        <strong>docstrings</strong>.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Using single quotes
+str1 = 'Hello Python'
+print(str1)
+#Using double quotes
+str2 = "Hello Python"
+print(str2)
+
+#Using triple quotes
+str3 = '''Triple quotes are generally used for 
+    represent the multiline or
+    docstring''' 
+print(str3)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Hello Python
+Hello Python
+Triple quotes are generally used for 
+    represent the multiline or
+    docstring
+</pre>
+    </div>
+    <h2 class="h2">Strings indexing and splitting</h2>
+    <p>Like other languages, the indexing of the Python strings starts from 0. For example, The string "HELLO" is
+        indexed as given in the below figure.</p>
+    <img src="https://static.javatpoint.com/python/images/strings-indexing-and-splitting.png" alt="Python String" />
+    <p>Consider the following example:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "HELLO"
+print(str[0])
+print(str[1])
+print(str[2])
+print(str[3])
+print(str[4])
+# It returns the IndexError because 6th index doesn't exist
+print(str[6])
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+H
+E
+L
+L
+O
+IndexError: string index out of range
+</pre>
+    </div>
+    <p>As shown in Python, the slice operator [] is used to access the individual characters of the string. However, we
+        can use the : (colon) operator in Python to access the substring from the given string. Consider the following
+        example.</p>
+    <img src="https://static.javatpoint.com/python/images/strings-indexing-and-splitting2.png" alt="Python String" />
+    <p>Here, we must notice that the upper range given in the slice operator is always exclusive i.e., if str = 'HELLO'
+        is given, then str[1:3] will always include str[1] = 'E', str[2] = 'L' and nothing else.</p>
+    <p>Consider the following example:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Given String
+str = "JAVATPOINT"
+# Start Oth index to end
+print(str[0:])
+# Starts 1th index to 4th index
+print(str[1:5])
+# Starts 2nd index to 3rd index
+print(str[2:4])
+# Starts 0th to 2nd index
+print(str[:3])
+#Starts 4th to 6th index
+print(str[4:7])
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+JAVATPOINT
+AVAT
+VA
+JAV
+TPO
+</pre>
+    </div>
+    <p>We can do the negative slicing in the string; it starts from the rightmost character, which is indicated as -1.
+        The second rightmost index indicates -2, and so on. Consider the following image.</p>
+    <img src="https://static.javatpoint.com/python/images/strings-indexing-and-splitting3.png" alt="Python String" />
+    <p>Consider the following example</p>
+    <div class="codeblock"><textarea name="code" class="python">
+str = 'JAVATPOINT'
+print(str[-1])
+print(str[-3])
+print(str[-2:])
+print(str[-4:-1])
+print(str[-7:-2])
+# Reversing the given string
+print(str[::-1])
+print(str[-12])
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+T
+I
+NT
+OIN
+ATPOI
+TNIOPTAVAJ
+IndexError: string index out of range
+</pre>
+    </div>
+    <h2 class="h2">Reassigning Strings</h2>
+    <p>Updating the content of the strings is as easy as assigning it to a new string. The string object doesn't support
+        item assignment i.e., A string can only be replaced with new string since its content cannot be partially
+        replaced. Strings are immutable in Python.</p>
+    <p>Consider the following example.</p>
+    <h3 class="h3">Example 1</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "HELLO"  
+str[0] = "h"  
+print(str)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Traceback (most recent call last):
+  File "12.py", line 2, in &lt;module&gt;
+    str[0] = "h";
+TypeError: 'str' object does not support item assignment
+</pre>
+    </div>
+    <p>However, in example 1, the string <strong>str</strong> can be assigned completely to a new content as specified
+        in the following example.</p>
+    <h3 class="h3">Example 2</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "HELLO"  
+print(str)  
+str = "hello"  
+print(str)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+HELLO
+hello  
+</pre>
+    </div>
+    <h2 class="h2">Deleting the String</h2>
+    <p>As we know that strings are immutable. We cannot delete or remove the characters from the string.&nbsp; But we
+        can delete the entire string using the <strong>del</strong> keyword.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "JAVATPOINT"
+del str[1]
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+TypeError: 'str' object doesn't support item deletion
+</pre>
+    </div>
+    <p>Now we are deleting entire string.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+str1 = "JAVATPOINT"
+del str1
+print(str1)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+NameError: name 'str1' is not defined
+</pre>
+    </div>
+    <h2 class="h2">String Operators</h2>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>It is known as concatenation operator used to join the strings given either side of the operator. </td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>It is known as repetition operator. It concatenates the multiple copies of the same string. </td>
+        </tr>
+        <tr>
+            <td>[]</td>
+            <td>It is known as slice operator. It is used to access the sub-strings of a particular string. </td>
+        </tr>
+        <tr>
+            <td>[:]</td>
+            <td>It is known as range slice operator. It is used to access the characters from the specified range. </td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>It is known as membership operator. It returns if a particular sub-string is present in the specified
+                string. </td>
+        </tr>
+        <tr>
+            <td>not in </td>
+            <td>It is also a membership operator and does the exact reverse of in. It returns true if a particular
+                substring is not present in the specified string. </td>
+        </tr>
+        <tr>
+            <td>r/R</td>
+            <td>It is used to specify the raw string. Raw strings are used in the cases where we need to print the
+                actual meaning of escape characters such as "C://python". To define any string as a raw string, the
+                character r or R is followed by the string. </td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>It is used to perform string formatting. It makes use of the format specifiers used in C programming
+                like %d or %f to map their values in python. We will discuss how formatting is done in python. </td>
+        </tr>
+    </table>
+    <h3 class="h3">Example</h3>
+    <p>Consider the following example to understand the real use of Python operators.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "Hello"   
+str1 = " world"  
+print(str*3) # prints HelloHelloHello  
+print(str+str1)# prints Hello world   
+print(str[4]) # prints o              
+print(str[2:4]); # prints ll                  
+print('w' in str) # prints false as w is not present in str  
+print('wo' not in str1) # prints false as wo is present in str1.   
+print(r'C://python37') # prints C://python37 as it is written  
+print("The string str : %s"%(str)) # prints The string str : Hello   
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+HelloHelloHello
+Hello world
+o
+ll
+False
+False
+C://python37
+The string str : Hello
+</pre>
+    </div>
+    <h2 class="h2">Python String Formatting</h2>
+    <h3 class="h3">Escape Sequence</h3>
+    <p>Let's suppose we need to write the text as - They said, "Hello what's going on?"- the given statement can be
+        written in single quotes or double quotes but it will raise the <strong>SyntaxError</strong> as it contains both
+        single and double-quotes.</p>
+    <h2 class="h3">Example </h2>
+    <p>Consider the following example to understand the real use of Python operators. </p>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "They said, "Hello what's going on?""
+print(str)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+SyntaxError: invalid syntax
+</pre>
+    </div>
+    <p>We can use the triple quotes to accomplish this problem but Python provides the escape sequence.</p>
+    <p>The backslash(/) symbol denotes the escape sequence. The backslash can be followed by a special character and it
+        interpreted differently. The single quotes inside the string must be escaped. We can apply the same as in the
+        double quotes.</p>
+    <h3 class="h3">Example -</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# using triple quotes
+print('''They said, "What's there?"''')
+
+# escaping single quotes
+print('They said, "What\'s going on?"')
+
+# escaping double quotes
+print("They said, \"What's going on?\"")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+They said, "What's there?"
+They said, "What's going on?"
+They said, "What's going on?"
+</pre>
+    </div>
+    <p>The list of an escape sequence is given below:</p>
+    <table class="alt">
+        <tr>
+            <th>Sr.</th>
+            <th>Escape Sequence</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>\newline</td>
+            <td>It ignores the new line.</td>
+            <td>
+                <pre>print("Python1 \
+Python2 \
+Python3")</pre>
+                <strong>Output:</strong>
+                <pre>Python1 Python2 Python3</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>\\</td>
+            <td>Backslash</td>
+            <td>
+                <pre>print("\\")</pre>
+                <strong>Output:</strong>
+                <pre>\</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>\'</td>
+            <td>Single Quotes</td>
+            <td>
+                <pre>print('\'')</pre>
+                <strong>Output:</strong>
+                <pre>'</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>\\''</td>
+            <td>Double Quotes</td>
+            <td>
+                <pre>print("\"")</pre>
+                <strong>Output:</strong>
+                <pre>"</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>\a</td>
+            <td>ASCII Bell</td>
+            <td>
+                <pre>print("\a")</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>\b</td>
+            <td>ASCII Backspace(BS)</td>
+            <td>
+                <pre>print("Hello \b World")</pre>
+                <strong>Output:</strong>
+                <pre>Hello World</pre>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>\f</td>
+            <td>ASCII Formfeed</td>
+            <td>
+                <pre>print("Hello \f World!")
+Hello  World!</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>\n</td>
+            <td>ASCII Linefeed</td>
+            <td>
+                <pre>print("Hello \n World!")</pre>
+                <strong>Output:</strong>
+                <pre>Hello
+ World!</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>\r</td>
+            <td>ASCII Carriege Return(CR)</td>
+            <td>
+                <pre>print("Hello \r World!")</pre>
+                <strong>Output:</strong>
+                <pre>World!</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>\t</td>
+            <td>ASCII Horizontal Tab</td>
+            <td>
+                <pre>print("Hello \t World!")</pre>
+                <strong>Output:</strong>
+                <pre>Hello 	 World!</pre>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td>\v</td>
+            <td>ASCII Vertical Tab</td>
+            <td>
+                <pre>print("Hello \v World!")</pre>
+                <strong>Output:</strong>
+                <pre>Hello 
+ World!</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td>\ooo</td>
+            <td>Character with octal value</td>
+            <td>
+                <pre>print("\110\145\154\154\157")<pre>
+<strong>Output:</strong>
+<pre>Hello</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>\xHH</td>
+            <td>Character with hex value.</td>
+            <td>
+                <pre>print("\x48\x65\x6c\x6c\x6f")</pre>
+                <strong>Output:</strong>
+                <pre>Hello</pre>
+            </td>
+        </tr>
+    </table>
+    <p>Here is the simple example of escape sequence.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+print("C:\\Users\\DEVANSH SHARMA\\Python32\\Lib")
+print("This is the \n multiline quotes")
+print("This is \x48\x45\x58 representation")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+C:\Users\DEVANSH SHARMA\Python32\Lib
+This is the 
+ multiline quotes
+This is HEX representation
+</pre>
+    </div>
+    <p>We can ignore the escape sequence from the given string by using the raw string. We can do this by writing
+        <strong>r</strong> or <strong>R</strong> in front of the string. Consider the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+print(r"C:\\Users\\DEVANSH SHARMA\\Python32")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+C:\\Users\\DEVANSH SHARMA\\Python32
+</pre>
+    </div>
+    <h2 class="h2">The format() method</h2>
+    <p>The <strong>format()</strong> method is the most flexible and useful method in formatting strings. The curly
+        braces {} are used as the placeholder in the string and replaced by the <strong>format()</strong> method
+        argument. Let's have a look at the given an example:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Using Curly braces
+print("{} and {} both are the best friend".format("Devansh","Abhishek"))
+
+#Positional Argument
+print("{1} and {0} best players ".format("Virat","Rohit"))
+
+#Keyword Argument
+print("{a},{b},{c}".format(a = "James", b = "Peter", c = "Ricky"))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Devansh and Abhishek both are the best friend
+Rohit and Virat best players 
+James,Peter,Ricky 
+</pre>
+    </div>
+    <h2 class="h2">Python String Formatting Using % Operator</h2>
+    <p>Python allows us to use the format specifiers used in C's printf statement. The format specifiers in Python are
+        treated in the same way as they are treated in C. However, Python provides an additional operator %, which is
+        used as an interface between the format specifiers and their values. In other words, we can say that it binds
+        the format specifiers to the values.</p>
+    <p>Consider the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+Integer = 10;  
+Float = 1.290  
+String = "Devansh"  
+print("Hi I am Integer ... My value is %d\nHi I am float ... My value is %f\nHi I am string ... My value is %s"%(Integer,Float,String))  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Hi I am Integer ... My value is 10
+Hi I am float ... My value is 1.290000
+Hi I am string ... My value is Devansh
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">Python String functions</h2>
+    <p>Python provides various in-built functions that are used for string handling. Many String fun</p>
+    <table class="alt">
+        <tr>
+            <th>Method </th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><a href="python-string-capitalize-method">capitalize()</a></td>
+            <td>It capitalizes the first character of the String. This function is deprecated in python3</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-casefold-method">casefold()</a></td>
+            <td>It returns a version of s suitable for case-less comparisons. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-center-method">center(width ,fillchar)</a></td>
+            <td>It returns a space padded string with the original string centred with equal number of left and right
+                spaces. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-count-method">count(string,begin,end)</a></td>
+            <td>It counts the number of occurrences of a substring in a String between begin and end index.</td>
+        </tr>
+        <tr>
+            <td>decode(encoding = 'UTF8', errors = 'strict')</td>
+            <td>Decodes the string using codec registered for encoding. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-encode-method">encode()</a></td>
+            <td>Encode S using the codec registered for encoding. Default encoding is 'utf-8'. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-endswith-method">endswith(suffix ,begin=0,end=len(string))</a></td>
+            <td>It returns a Boolean value if the string terminates with given suffix between begin and end.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-expandtabs-method">expandtabs(tabsize = 8)</a></td>
+            <td>It defines tabs in string to multiple spaces. The default space value is 8.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-find-method">find(substring ,beginIndex, endIndex)</a></td>
+            <td>It returns the index value of the string where substring is found between begin index and end index.
+            </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-format-method">format(value)</a></td>
+            <td>It returns a formatted version of S, using the passed value. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-index-method">index(subsring, beginIndex, endIndex)</a></td>
+            <td>It throws an exception if string is not found. It works same as find() method.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isalnum-method">isalnum()</a></td>
+            <td>It returns true if the characters in the string are alphanumeric i.e., alphabets or numbers and there is
+                at least 1 character. Otherwise, it returns false.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isalpha-method">isalpha()</a></td>
+            <td>It returns true if all the characters are alphabets and there is at least one character, otherwise
+                False.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isdecimal-method">isdecimal()</a></td>
+            <td>It returns true if all the characters of the string are decimals. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isdigit-method">isdigit()</a></td>
+            <td>It returns true if all the characters are digits and there is at least one character, otherwise False.
+            </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isidentifier-method">isidentifier()<a /></td>
+            <td>It returns true if the string is the valid identifier. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-islower-method">islower()</a></td>
+            <td>It returns true if the characters of a string are in lower case, otherwise false.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isnumeric-method">isnumeric()</a></td>
+            <td>It returns true if the string contains only numeric characters. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isprintable-method">isprintable()</a></td>
+            <td>It returns true if all the characters of s are printable or s is empty, false otherwise. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isupper-method">isupper()</a></td>
+            <td>It returns false if characters of a string are in Upper case, otherwise False.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isspace-method">isspace()</a></td>
+            <td>It returns true if the characters of a string are white-space, otherwise false.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-istitle-method">istitle()</a></td>
+            <td>It returns true if the string is titled properly and false otherwise. A title string is the one in which
+                the first character is upper-case whereas the other characters are lower-case. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-isupper-method">isupper()</a></td>
+            <td>It returns true if all the characters of the string(if exists) is true otherwise it returns false. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-join-method">join(seq)</a></td>
+            <td>It merges the strings representation of the given sequence. </td>
+        </tr>
+        <tr>
+            <td>len(string)</td>
+            <td>It returns the length of a string.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-ljust-method">ljust(width[,fillchar])</a></td>
+            <td>It returns the space padded strings with the original string left justified to the given width. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-lower-method">lower()</a></td>
+            <td>It converts all the characters of a string to Lower case.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-lstrip-method">lstrip()</a></td>
+            <td>It removes all leading whitespaces of a string and can also be used to remove particular character from
+                leading.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-partition-method">partition()</a></td>
+            <td>It searches for the separator sep in S, and returns the part before it, the separator itself, and the
+                part after it. If the separator is not found, return S and two empty strings.</td>
+        </tr>
+        <tr>
+            <td>maketrans()</td>
+            <td>It returns a translation table to be used in translate function. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-replace-method">replace(old,new[,count]) </a></td>
+            <td>It replaces the old sequence of characters with the new sequence. The max characters are replaced if max
+                is given. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-rfind-method">rfind(str,beg=0,end=len(str))</a></td>
+            <td>It is similar to find but it traverses the string in backward direction. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-rindex-method">rindex(str,beg=0,end=len(str))</a> </td>
+            <td>It is same as index but it traverses the string in backward direction. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-rjust-method">rjust(width,[,fillchar])</a></td>
+            <td>Returns a space padded string having original string right justified to the number of characters
+                specified. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-rstrip-method">rstrip()</a></td>
+            <td>It removes all trailing whitespace of a string and can also be used to remove particular character from
+                trailing.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-rsplit-method">rsplit(sep=None, maxsplit = -1)</a></td>
+            <td>It is same as split() but it processes the string from the backward direction. It returns the list of
+                words in the string. If Separator is not specified then the string splits according to the white-space.
+            </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-split-method">split(str,num=string.count(str)) </a></td>
+            <td>Splits the string according to the delimiter str. The string splits according to the space if the
+                delimiter is not provided. It returns the list of substring concatenated with the delimiter. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-splitlines-method">splitlines(num=string.count('\n'))</a></td>
+            <td>It returns the list of strings at each line with newline removed. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-startswith-method">startswith(str,beg=0,end=len(str))</a> </td>
+            <td>It returns a Boolean value if the string starts with given str between begin and end. </td>
+        </tr>
+        <tr>
+            <td>strip([chars]) </td>
+            <td>It is used to perform lstrip() and rstrip() on the string. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-swapcase-method">swapcase()</a></td>
+            <td>It inverts case of all characters in a string.</td>
+        </tr>
+        <tr>
+            <td>title() </td>
+            <td>It is used to convert the string into the title-case i.e., The string <strong>meEruT</strong> will be
+                converted to Meerut. </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-translate-method">translate(table,deletechars = '')</a></td>
+            <td>It translates the string according to the translation table passed in the function . </td>
+        </tr>
+        <tr>
+            <td><a href="python-string-upper-method">upper()</a></td>
+            <td>It converts all the characters of a string to Upper Case.</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-zfill-method">zfill(width)</a></td>
+            <td>Returns original string leftpadded with zeros to a total of width characters; intended for numbers,
+                zfill() retains any sign given (less one zero).</td>
+        </tr>
+        <tr>
+            <td><a href="python-string-rpartition-method">rpartition()</a></td>
+            <td></td>
+    </table>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="16_pass.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="18_lists.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

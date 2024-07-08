@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clustering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item active-submenu" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Clustering in Machine Learning</h1>
+    <p>Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset. It can be
+        defined as <strong><em>"A way of grouping the data points into different clusters, consisting of similar data
+                points. The objects with the possible similarities remain in a group that has less or no similarities
+                with another group."</em></strong></p>
+    <p>It does it by finding some similar patterns in the unlabelled dataset such as shape, size, color, behavior, etc.,
+        and divides them as per the presence and absence of those similar patterns.</p>
+    <p>It is an <a href="https://www.javatpoint.com/unsupervised-machine-learning">unsupervised learning</a> method,
+        hence no supervision is provided to the algorithm, and it deals with the unlabeled dataset.</p>
+    <p>After applying this clustering technique, each cluster or group is provided with a cluster-ID. ML system can use
+        this id to simplify the processing of large and complex datasets.</p>
+    <p>The clustering technique is commonly used for <strong>statistical data analysis.</strong></p>
+    <h4 class="n">Note: Clustering is somewhere similar to the <a
+            href="https://www.javatpoint.com/classification-algorithm-in-machine-learning">classification algorithm</a>,
+        but the difference is the type of dataset that we are using. In classification, we work with the labeled data
+        set, whereas in clustering, we work with the unlabelled dataset.</h4>
+    <p><strong>Example</strong>: Let's understand the clustering technique with the real-world example of Mall: When we
+        visit any shopping mall, we can observe that the things with similar usage are grouped together. Such as the
+        t-shirts are grouped in one section, and trousers are at other sections, similarly, at vegetable sections,
+        apples, bananas, Mangoes, etc., are grouped in separate sections, so that we can easily find out the things. The
+        clustering technique also works in the same way. Other examples of clustering are grouping documents according
+        to the topic.</p>
+    <p>The clustering technique can be widely used in various tasks. Some most common uses of this technique are:</p>
+    <ul class="points">
+        <li>Market Segmentation</li>
+        <li>Statistical data analysis</li>
+        <li>Social network analysis</li>
+        <li>Image segmentation</li>
+        <li>Anomaly detection, etc.</li>
+    </ul>
+    <p>Apart from these general usages, it is used by the <strong>Amazon</strong> in its recommendation system to
+        provide the recommendations as per the past search of products. <strong>Netflix</strong> also uses this
+        technique to recommend the movies and web-series to its users as per the watch history.</p>
+    <p>The below diagram explains the working of the clustering algorithm. We can see the different fruits are divided
+        into several groups with similar properties.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/clustering-in-machine-learning.png"
+        alt="Clustering in Machine Learning" />
+    <h2 class="h2">Types of Clustering Methods</h2>
+    <p>The clustering methods are broadly divided into <strong>Hard clustering</strong> (datapoint belongs to only one
+        group) and <strong>Soft Clustering</strong> (data points can belong to another group also). But there are also
+        other various approaches of Clustering exist. Below are the main clustering methods used in Machine learning:
+    </p>
+    <ol class="points">
+        <li><strong>Partitioning Clustering</strong></li>
+        <li><strong>Density-Based Clustering</strong></li>
+        <li><strong>Distribution Model-Based Clustering</strong></li>
+        <li><strong>Hierarchical Clustering</strong></li>
+        <li><strong>Fuzzy Clustering</strong></li>
+    </ol>
+    <h3 class="h3">Partitioning Clustering</h3>
+    <p>It is a type of clustering that divides the data into non-hierarchical groups. It is also known as the
+        <strong>centroid-based method</strong>. The most common example of partitioning clustering is the <strong><a
+                href="k-means-clustering-algorithm-in-machine-learning">K-Means Clustering algorithm</a></strong>.</p>
+    <p>In this type, the dataset is divided into a set of k groups, where K is used to define the number of pre-defined
+        groups. The cluster center is created in such a way that the distance between the data points of one cluster is
+        minimum as compared to another cluster centroid.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/clustering-in-machine-learning2.png"
+        alt="Clustering in Machine Learning" />
+    <h3 class="h3">Density-Based Clustering</h3>
+    <p>The density-based clustering method connects the highly-dense areas into clusters, and the arbitrarily shaped
+        distributions are formed as long as the dense region can be connected. This algorithm does it by identifying
+        different clusters in the dataset and connects the areas of high densities into clusters. The dense areas in
+        data space are divided from each other by sparser areas.</p>
+    <p>These algorithms can face difficulty in clustering the data points if the dataset has varying densities and high
+        dimensions.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/clustering-in-machine-learning3.png"
+        alt="Clustering in Machine Learning" />
+    <h3 class="h3">Distribution Model-Based Clustering</h3>
+    <p>In the distribution model-based clustering method, the data is divided based on the probability of how a dataset
+        belongs to a particular distribution. The grouping is done by assuming some distributions commonly
+        <strong>Gaussian Distribution</strong>.</p>
+    <p>The example of this type is the <strong>Expectation-Maximization Clustering algorithm</strong> that uses Gaussian
+        Mixture Models (GMM).</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/clustering-in-machine-learning4.png"
+        alt="Clustering in Machine Learning" />
+    <h3 class="h3">Hierarchical Clustering</h3>
+    <p>Hierarchical clustering can be used as an alternative for the partitioned clustering as there is no requirement
+        of pre-specifying the number of clusters to be created. In this technique, the dataset is divided into clusters
+        to create a tree-like structure, which is also called a <strong>dendrogram</strong>. The observations or any
+        number of clusters can be selected by cutting the tree at the correct level. The most common example of this
+        method is the <strong>Agglomerative Hierarchical algorithm</strong>.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/clustering-in-machine-learning5.png"
+        alt="Clustering in Machine Learning" />
+    <h3 class="h3">Fuzzy Clustering</h3>
+    <p><a href="https://www.javatpoint.com/fuzzy-logic">Fuzzy</a> clustering is a type of soft method in which a data
+        object may belong to more than one group or cluster. Each dataset has a set of membership coefficients, which
+        depend on the degree of membership to be in a cluster. <strong>Fuzzy C-means algorithm</strong> is the example
+        of this type of clustering; it is sometimes also known as the Fuzzy k-means algorithm.</p>
+    <h2 class="h2">Clustering Algorithms</h2>
+    <p>The Clustering algorithms can be divided based on their models that are explained above. There are different
+        types of clustering algorithms published, but only a few are commonly used. The clustering algorithm is based on
+        the kind of data that we are using. Such as, some algorithms need to guess the number of clusters in the given
+        dataset, whereas some are required to find the minimum distance between the observation of the dataset.</p>
+    <p>Here we are discussing mainly popular Clustering algorithms that are widely used in machine learning:</p>
+    <ol class="points">
+        <li><strong>K-Means algorithm:</strong> The k-means algorithm is one of the most popular clustering algorithms.
+            It classifies the dataset by dividing the samples into different clusters of equal variances. The number of
+            clusters must be specified in this algorithm. It is fast with fewer computations required, with the linear
+            complexity of <strong>O(n).</strong> </li>
+        <li><strong>Mean-shift algorithm:</strong> Mean-shift algorithm tries to find the dense areas in the smooth
+            density of data points. It is an example of a centroid-based model, that works on updating the candidates
+            for centroid to be the center of the points within a given region.</li>
+        <li><strong>DBSCAN Algorithm:</strong> It stands <strong>for Density-Based Spatial Clustering of Applications
+                with Noise</strong>. It is an example of a density-based model similar to the mean-shift, but with some
+            remarkable advantages. In this algorithm, the areas of high density are separated by the areas of low
+            density. Because of this, the clusters can be found in any arbitrary shape.</li>
+        <li><strong>Expectation-Maximization Clustering using GMM:</strong> This algorithm can be used as an alternative
+            for the k-means algorithm or for those cases where K-means can be failed. In GMM, it is assumed that the
+            data points are Gaussian distributed.</li>
+        <li><strong>Agglomerative Hierarchical algorithm:</strong> The Agglomerative hierarchical algorithm performs the
+            bottom-up hierarchical clustering. In this, each data point is treated as a single cluster at the outset and
+            then successively merged. The cluster hierarchy can be represented as a tree-structure.</li>
+        <li><strong>Affinity Propagation:</strong> It is different from other clustering algorithms as it does not
+            require to specify the number of clusters. In this, each data point sends a message between the pair of data
+            points until convergence. It has O(N<sup>2</sup>T) time complexity, which is the main drawback of this
+            algorithm.</li>
+    </ol>
+    <h2 class="h2">Applications of Clustering</h2>
+    <p>Below are some commonly known applications of clustering technique in Machine Learning:</p>
+    <ul class="points">
+        <li><strong>In Identification of Cancer Cells:</strong> The clustering algorithms are widely used for the
+            identification of cancerous cells. It divides the cancerous and non-cancerous data sets into different
+            groups.</li>
+        <li><strong>In Search Engines:</strong> Search engines also work on the clustering technique. The search result
+            appears based on the closest object to the search query. It does it by grouping similar data objects in one
+            group that is far from the other dissimilar objects. The accurate result of a query depends on the quality
+            of the clustering algorithm used.</li>
+        <li><strong>Customer Segmentation:</strong> It is used in market research to segment the customers based on
+            their choice and preferences.</li>
+        <li><strong>In Biology:</strong> It is used in the biology stream to classify different species of plants and
+            animals using the image recognition technique.</li>
+        <li><strong>In Land Use:</strong> The clustering technique is used in identifying the area of similar lands use
+            in the GIS database. This can be very useful to find that for what purpose the particular land should be
+            used, that means for which purpose it is more suitable.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="24_random_forest.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="26_k_means_clustering.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

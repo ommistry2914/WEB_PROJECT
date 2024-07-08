@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);"">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_Intro_to_html.html">Intro to html</a></li>
+                                <li><a class="dropdown-item" href="2_What_is_HTML.html">What is html </a></li>
+                                <li><a class="dropdown-item" href="3_Html_text_editors.html">text editors</a></li>
+                                <li><a class="dropdown-item" href="4_HTML_Building_blocks.html">Building blocks</a></li>
+                                <li><a class="dropdown-item active-submenu" href="5_HTML_tags.html">HTML Tags</a></li>
+                                <li><a class="dropdown-item" href="6_HTML_Attributes.html">HTML Attributes<li>
+                                <li><a class="dropdown-item" href="7_HTML_Elements.html">HTML Elements</a></li>
+                                <li><a class="dropdown-item" href="8_HTML_Formatting.html">Formatting in html</a></li>
+                                <li><a class="dropdown-item" href="9_HTML_Heading.html"> heading in html</a></li>
+                                <li><a class="dropdown-item" href="10_HTML_Paragraph.html">paragraph in html</a></li>
+                                <li><a class="dropdown-item" href="11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                                <li><a class="dropdown-item" href="12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                                <li><a class="dropdown-item" href="13_HTML_Image.html">Image tag</a></li>
+                                <li><a class="dropdown-item" href="14_HTML_Table.html">Table tag</a></li>
+                                <li><a class="dropdown-item" href="15_HTML_Lists.html">Lists tag</a></li>
+                                <li><a class="dropdown-item" href="16_HTML_Ordered_list.html">Ordered list</a></li>
+                                <li><a class="dropdown-item" href="17_HTML_Unordered_list.html">Unordered list</a></li>
+                                <li><a class="dropdown-item" href="18_HTML_Description_list.html">Description list</a></li>
+                                <li><a class="dropdown-item" href="19_HTML_form.html">form in html</a></li>
+                                <li><a class="dropdown-item" href="20_HTML_Form_Input.html">Form input</a></li>
+                                <li><a class="dropdown-item" href="21_HTML_Form_Attribute.html">Form attribute</a></li>
+                                <li><a class="dropdown-item" href="22_HTML_with_CSS.html">Html with CSS</a></li>
+                                <li><a class="dropdown-item" href="23_HTML_Classes.html">HTML classes</a></li>
+                                <li><a class="dropdown-item" href="24_HTML_ID.html">HTML ID</a></li>
+                                <li><a class="dropdown-item" href="25_HTML_Iframes.html">Html Iframes</a></li>
+                                <li><a class="dropdown-item" href="26_HTML_Javascript.html">HTML JavaScript</a></li>
+                                <li><a class="dropdown-item" href="27_HTML_Comments.html">HTML comments</a></li>
+                                <li><a class="dropdown-item" href="28_HTML_Filepath.html">Filepath</a></li>
+                                <li><a class="dropdown-item" href="29_HTML_head.html">HTML head</a></li>
+                                <li><a class="dropdown-item" href="30_HTML_layout.html">HTML layout</a></li>
+                                <li><a class="dropdown-item" href="32_HTML_Responsive.html">HTML Responsive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Attributes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tags
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_HTML_tags/1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/3_anchor_tag.html">Anchor tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/4_abbr_tag.html">Abbr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/5_acronym_tag.html">Acronym tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/6_address_tag.html">Address tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/7_applet_tag.html">Applet tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/8_area_tag.html">Area tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/9_article_tag.html">Article tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/10_aside_tag.html">Aside tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/11_audio_tag.html">Audio tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/12_b_tag.html">B tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/13_base_tag.html">Base tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/14_basefont_tag.html">Basefont tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/15_bdi_tag.html">Bdi tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/16_bdo_tag.html">Bdo tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/17_big_tag.html">Big tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/18_blockquote_tag.html">Blockquote</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/19_body_tag.html">Body tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/20_br_tag.html">Br tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/21_button_tag.html">Button tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/22_canvas_tag.html">canvas tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/23_caption_tag.html">caption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/24_center_tag.html">center tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/25_cite_tag.html">cite tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/26_code_tag.html">code tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/27_col_tag.html">col tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/28_colgroup_tag.html">colgroup tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/29_data_tag.html">data tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/30_datalist_tag.html">datalist tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/31_Description_list.html">Description tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/32_del_tag.html">del tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/33_details_tag.html">details tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/34_dfn_tag.html">dfn tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/35_Dialog_tag.html">Dialog tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/36_dir_tag.html">dir tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/37_div_tag.html">div tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/38_em_tag.html">em tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/39_embed_tag.html">embed tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/40_field_set_tag.html">field set tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/41_figcaption_tag.html">figcaption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/42_figure_tag.html">figure tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/43_font_tag.html">font tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/44_footer_tag.html">footer tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/45_form_tag.html">form tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/46_frame_tag.html">frame tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/47_frameset_tag.html">frameset tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/48_header_tag.html">header tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/49_hr_tag.html">hr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/50_i_tag.html">i tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/51_input_tag.html">input tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/52_kbd_tag.html">kbd tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/53_label_tag.html">label tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/54_legend_tag.html">legend tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/55_lists_tag.html">lists tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/56_link_tag.html">link tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/57_main_tag.html">main tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/58_mark_tag.html">mark tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/59_marquee_tag.html">marquee tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/60_menu_tag.html">menu tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/61_meta_tag.html">meta tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/62_Meter_tag.html">Meter tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/63_nav_tag.html">nav tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/64_object_tag.html">Object tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/65_Optgrp_tag.html">optgrp tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/66_option_tag.html">option tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/67_progress.html">progress tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/68_Colour_name.html">Color name</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML Tags</h1>
+    <p>HTML tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags.</p>
+    <p>When a web browser reads an HTML document, browser reads it from top to bottom and left to right. HTML tags are used to create HTML documents and render their properties. Each HTML tags have different properties.</p>
+    <p>An HTML file must have some essential tags so that web browser can differentiate between a simple text and HTML text. You can use as many tags you want as per your code requirement.</p>
+    <ul class="points">
+    <li>All HTML tags must enclosed within &lt; &gt; these brackets. </li>
+    <li>Every tag in HTML perform different tasks. </li>
+    <li>If you have used an open tag &lt;tag&gt;, then you must use a close tag &lt;/tag&gt; (except some tags)</li>
+    </ul>
+    <hr/>
+    <h2 class="h3">Syntax</h2>
+    <p>&lt;tag&gt; content &lt;/tag&gt;</p>
+    <hr/>
+    <h2 class="h3">HTML Tag Examples</h2>
+    <h4 class="n">Note: HTML Tags are always written in lowercase letters. The basic HTML tags are given below:</h4>
+    <div class="codeblock" style="padding:10px">
+    <p>&lt;p&gt; Paragraph Tag &lt;/p&gt;</p>
+    <h2>&lt;h2&gt; Heading Tag &lt;/h2&gt;</h2>
+    <p>&lt;b&gt; <span style="font-weight:bold">Bold Tag</span> &lt;/b&gt;</p>
+    <p>&lt;i&gt; <span style="font-style:italic">Italic Tag</span> &lt;/i&gt;</p>
+    <p>&lt;u&gt;<u> Underline Tag</u>&lt;/u&gt;</p>
+    </div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltags1" target="_blank">Test it Now</a></span>
+    <hr/>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <ins class="adsbygoogle cm_jtp_wtc_responsive" style="display:inline-block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <h2 class="h3">Unclosed HTML Tags</h2>
+    <p>Some HTML tags are not closed, for example br and hr.</p>
+    <p><span style="font-weight:bold">&lt;br&gt; Tag</span>: br stands for break line, it breaks the line of the code.</p>
+    <p><span style="font-weight:bold"> &lt;hr&gt; Tag</span>: hr stands for Horizontal Rule. This tag is used to put a line across the webpage.</p>
+    <hr/>
+    <h2 class="h3">HTML Meta Tags</h2>
+    <p>DOCTYPE, title, link, meta and style</p>
+    <hr/>
+    <h2 class="h3">HTML Text Tags</h2>
+    <p>&lt;p&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;abbr&gt;, &lt;acronym&gt;, &lt;address&gt;, &lt;bdo&gt;, &lt;blockquote&gt;, &lt;cite&gt;, &lt;q&gt;, &lt;code&gt;, &lt;ins&gt;, &lt;del&gt;, &lt;dfn&gt;, &lt;kbd&gt;, &lt;pre&gt;, &lt;samp&gt;, &lt;var&gt; and &lt;br&gt;</p>
+    <hr/>
+    <h2 class="h3">HTML Link Tags</h2>
+    <p>&lt;a&gt; and &lt;base&gt;</p>
+    <hr/>
+    <h2 class="h3">HTML Image and Object Tags</h2>
+    <p>&lt;img&gt;, &lt;area&gt;, &lt;map&gt;, &lt;param&gt; and &lt;object&gt;</p>
+    <hr/>
+    <h2 class="h3">HTML List Tags</h2>
+    <p>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt;</p>
+    <hr/>
+    <h2 class="h3">HTML Table Tags</h2>
+    <p>table, tr, td, th, tbody, thead, tfoot, col, colgroup and caption</p>
+    <hr/>
+    <h2 class="h3">HTML Form Tags</h2>
+    <p>form, input, textarea, select, option, optgroup, button, label, fieldset and legend</p>
+    <hr/>
+    <h2 class="h3">HTML Scripting Tags</h2>
+    <p>script and noscript</p>
+    <h4 class="n">Note: We will see examples using these tags in later charters.</h4>
+    <h2 class="h2">HTML Tags List</h2>
+    <p>Following is the complete list of HTML tags with the description which are arranged alphabetically.</p>
+    <h4 class="n">Note: Here <img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" />represents newly added Elements in HTML5. </h4>
+    <h4 class="h4">HTML Tags by Alphabets</h4>
+    <div class="pagination123">
+    <a href="#a">A</a><a href="#b">B</a><a href="#c">C</a><a href="#d">D</a><a href="#e">E</a><a href="#f">F</a><a href="#g">G</a><a href="#h">H</a><a href="#i">I</a><a href="#j">J</a><a href="#k">K</a><a href="#l">L</a><a href="#m">M</a><a href="#nn">N</a><a href="#o">O</a><a href="#p">P</a><a href="#q">Q</a><a href="#rr">R</a><a href="#s">S</a><a href="#t">T</a><a href="#u">U</a><a href="#v">V</a><a href="#w">W</a><a href="#x">X</a><a href="#y">Y</a><a href="#z">Z</a>
+    </div>
+    <hr/>
+    <table class="alt">
+    <tr>
+    <th>Tag name</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td><a href="html-comments">&lt;!-- --&gt;</a></td>
+    <td>This tag is used to apply comment in an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="doctype-html">&lt;!DOCTYPE&gt;</a></td>
+    <td>This tag is used to specify the version of HTML</td>
+    </tr>
+    <tr>
+    <td id="a" colspan="2"><span class="h2">A</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-anchor">&lt;a&gt;</a></td>
+    <td>It is termed as anchor tag and it creates a hyperlink or link.</td>
+    </tr>
+    <tr>
+    <td><a href="html-abbr-tag">&lt;abbr&gt;</a></td>
+    <td>It defines an abbreviation for a phrase or longer word.</td>
+    </tr>
+    <tr>
+    <td><a href="html-acronym-tag">&lt;acronym&gt;</a></td>
+    <td>It defines acronym for a word. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-address-tag">&lt;address&gt;</a></td>
+    <td>It defines the author's contact information of the HTML article</td>
+    </tr>
+    <tr>
+    <td><a href="html-applet-tag">&lt;applet&gt;</a></td>
+    <td>It defines an embedded Java applet. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-area-tag">&lt;area&gt;</a></td>
+    <td>It defines the area of an image map.</td>
+    </tr>
+    <tr>
+    <td><a href="html-article-tag">&lt;article&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines the self-contained content.</td>
+    </tr>
+    <tr>
+    <td><a href="html-aside-tag">&lt;aside&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines content aside from main content. Mainly represented as sidebar.</td>
+    </tr>
+    <tr>
+    <td><a href="html-audio">&lt;audio&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to embed sound content in HTML document.</td>
+    </tr>
+    <tr>
+    <td id="b" colspan="2"><span class="h2">B</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-bold-tag">&lt;b&gt;</a></td>
+    <td>It is used to make a text bold.</td>
+    </tr>
+    <tr>
+    <td><a href="html-base-tag">&lt;base&gt;</a></td>
+    <td>This tag defines the base URL for all relative URL within the document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-basefont-tag">&lt;basefont&gt;</a></td>
+    <td>This tag is used to set default font, size and color for all elements of document. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-bdi-tag">&lt;bdi&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>This tag is used to provide isolation for that part of text which may be formatted in different directions from its surrounding text.</td>
+    </tr>
+    <tr>
+    <td><a href="html-bdo-tag">&lt;bdo&gt;</a></td>
+    <td>It is used to override the current text direction.</td>
+    </tr>
+    <tr>
+    <td><a href="html-big-tag">&lt;big&gt;</a></td>
+    <td>This tag is used to make font size one level larger than its surrounding content. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-blockquote-tag">&lt;blockquote&gt;</a></td>
+    <td>It is used to define a content which is taken from another source.</td>
+    </tr>
+    <tr>
+    <td><a href="html-body-tag">&lt;body&gt;</a></td>
+    <td>It is used to define the body section of an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-br-tag">&lt;br&gt;</a></td>
+    <td>It is used to apply single line break.</td>
+    </tr>
+    <tr>
+    <td><a href="html-button-tag">&lt;button&gt;</a></td>
+    <td>It is used to represent a clickable button</td>
+    </tr>
+    <tr>
+    <td id="c" colspan="2"><span class="h2">C</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-canvas">&lt;canvas&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to provide a graphics space within a web document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-caption-tag">&lt;caption&gt;</a></td>
+    <td>It is used to define a caption for a table.</td>
+    </tr>
+    <tr>
+    <td><a href="html-center-tag">&lt;center&gt;</a></td>
+    <td>It is used to align the content in center. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-cite-tag">&lt;cite&gt;</a></td>
+    <td>It is used to define the title of the work, book, website, etc.</td>
+    </tr>
+    <tr>
+    <td><a href="html-code-tag">&lt;code&gt;</a></td>
+    <td>It is used to display a part of programming code in an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-col-tag">&lt;col&gt;</a></td>
+    <td>It defines a column within a table which represent common properties of columns and used with the &lt;colgroup&gt; element.</td>
+    </tr>
+    <tr>
+    <td><a href="html-colgroup-tag">&lt;colgroup&gt;</a></td>
+    <td>It is used to define group of columns in a table.</td>
+    </tr>
+    <tr>
+    <td id="d" colspan="2"><span class="h2">D</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-data-tag">&lt;data&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to link the content with the machine-readable translation.</td>
+    </tr>
+    <tr>
+    <td><a href="html-datalist-tag">&lt;datalist&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to provide a predefined list for input option.</td>
+    </tr>
+    <tr>
+    <td><a href="html-description-list">&lt;dd&gt;</a></td>
+    <td>It is used to provide definition/description of a term in description list.</td>
+    </tr>
+    <tr>
+    <td><a href="html-del-tag">&lt;del&gt;</a></td>
+    <td>It defines a text which has been deleted from the document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-details-tag">&lt;details&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines additional details which user can either view or hide.</td>
+    </tr>
+    <tr>
+    <td><a href="html-dfn-tag">&lt;dfn&gt;</a></td>
+    <td>It is used to indicate a term which is defined within a sentence/phrase.</td>
+    </tr>
+    <tr>
+    <td><a href="html-dialog-tag">&lt;dialog&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines a dialog box or other interactive components.</td>
+    </tr>
+    <tr>
+    <td><a href="html-dir-tag">&lt;dir&gt;</a></td>
+    <td>It is used as container for directory list of files. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-div-tag">&lt;div&gt;</a></td>
+    <td>It defines a division or section within HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-description-list">&lt;dl&gt;</a></td>
+    <td>It is sued to define a description list. </td>
+    </tr>
+    <tr>
+    <td><a href="html-description-list">&lt;dt&gt;</a></td>
+    <td>It is used to define a term in description list. </td>
+    </tr>
+    <tr>
+    <td id="e" colspan="2"><span class="h2">E</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-em-tag">&lt;em&gt;</a></td>
+    <td>It is used to emphasis the content applied within this element.</td>
+    </tr>
+    <tr>
+    <td><a href="html-embed-tag">&lt;embed&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used as embedded container for external file/application/media, etc.</td>
+    </tr>
+    <tr>
+    <td id="f" colspan="2"><span class="h2">F</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-fieldset-tag">&lt;fieldset&gt;</a></td>
+    <td>It is used to group related elements/labels within a web form.</td>
+    </tr>
+    <tr>
+    <td><a href="html-figcaption-tag">&lt;figcaption&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to add a caption or explanation for the &lt;figure&gt; element.</td>
+    </tr>
+    <tr>
+    <td><a href="html-figure-tag">&lt;figure&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to define the self-contained content, and s mostly refer as single unit.</td>
+    </tr>
+    <tr>
+    <td><a href="html-font-tag">&lt;font&gt;</a></td>
+    <td>It defines the font, size, color, and face for the content. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-footer-tag">&lt;footer&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines the footer section of a webpage.</td>
+    </tr>
+    <tr>
+    <td><a href="html-form">&lt;form&gt;</a></td>
+    <td>It is used to define an HTML form.</td>
+    </tr>
+    <tr>
+    <td><a href="html-frame-tag">&lt;frame&gt;</a></td>
+    <td>It defines a particular area of webpage which can contain another HTML file. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-frameset-tag">&lt;frameset&gt;</a></td>
+    <td>It defines group of Frames. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td id="h" colspan="2"><span class="h2">H</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-heading">&lt;h1&gt; to &lt;h6&gt;</a></td>
+    <td>It defines headings for an HTML document from level 1 to level 6.</td>
+    </tr>
+    <tr>
+    <td><a href="html-head">&lt;head&gt;</a></td>
+    <td>It defines the head section of an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-header-tag">&lt;header&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines the header of a section or webpage.</td>
+    </tr>
+    <tr>
+    <td><a href="html-hr-tag">&lt;hr&gt;</a></td>
+    <td>It is used to apply thematic break between paragraph-level elements.</td>
+    </tr>
+    <tr>
+    <td><a href="html-html-tag">&lt;html&gt;</a></td>
+    <td>It represents root of an HTML document. </td>
+    </tr>
+    <tr>
+    <td id="i" colspan="2"><span class="h2">I</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-i-tag">&lt;i&gt;</a></td>
+    <td>It is used to represent a text in some different voice. </td>
+    </tr>
+    <tr>
+    <td><a href="html-iframes">&lt;iframe&gt;</a></td>
+    <td>It defines an inline frame which can embed other content. </td>
+    </tr>
+    <tr>
+    <td><a href="html-image">&lt;img&gt;</a></td>
+    <td>It is used to insert an image within an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-input-tag">&lt;input&gt;</a></td>
+    <td>It defines an input field within an HTML form. </td>
+    </tr>
+    <tr>
+    <td><a href="html-ins-tag">&lt;ins&gt;</a></td>
+    <td>It represent text that has been inserted within an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-isindex-tag">&lt;isindex&gt;</a></td>
+    <td>It is used to display search string for current document. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td id="k" colspan="2"><span class="h2">K</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-kbd-tag">&lt;kbd&gt;</a></td>
+    <td>It is used to define keyboard input.</td>
+    </tr>
+    <tr>
+    <td id="l" colspan="2"><span class="h2">L</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-label-tag">&lt;label&gt;</a></td>
+    <td>It defines a text label for the input field of form.</td>
+    </tr>
+    <tr>
+    <td><a href="html-legend-tag">&lt;legend&gt;</a></td>
+    <td>It defines a caption for content of &lt;fieldset&gt;</td>
+    </tr>
+    <tr>
+    <td><a href="html-lists">&lt;li&gt;</a></td>
+    <td>It is used to represent items in list.</td>
+    </tr>
+    <tr>
+    <td><a href="html-link-tag">&lt;link&gt;</a></td>
+    <td>It represents a relationship between current document and an external resource.</td>
+    </tr>
+    <tr>
+    <td id="m" colspan="2"><span class="h2">M</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-main-tag">&lt;main&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It represents the main content of an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-map-tag">&lt;map&gt;</a></td>
+    <td>It defines an image map with active areas.</td>
+    </tr>
+    <tr>
+    <td><a href="html-mark-tag">&lt;mark&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It represents a highlighted text.</td>
+    </tr>
+    <tr>
+    <td><a href="marquee-html">&lt;marquee&gt;</a></td>
+    <td>It is used to insert the scrolling text or an image either horizontally or vertically. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-menu-tag">&lt;menu&gt;</a></td>
+    <td>It is used for creating a menu list of commands.</td>
+    </tr>
+    <tr>
+    <td><a href="html-meta-tag">&lt;meta&gt;</a></td>
+    <td>It defines metadata of an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-meter-tag">&lt;meter&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines scalar measurement with known range or fractional value.</td>
+    </tr>
+    <tr>
+    <td id="nn" colspan="2"><span class="h2">N</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-nav-tag">&lt;nav&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It represents section of page to represent navigation links.</td>
+    </tr>
+    <tr>
+    <td><a href="html-noframes-tag">&lt;noframes&gt;</a></td>
+    <td>It provides alternate content to represent in browser which does not support the &lt;frame&gt; elements. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-noscript-tag">&lt;noscript&gt;</a></td>
+    <td>It provides an alternative content if a script type is not supported in browser.</td>
+    </tr>
+    <tr>
+    <td id="o" colspan="2"><span class="h2">O</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-object-tag">&lt;object&gt;</a></td>
+    <td>It is used to embed an object in HTML file.</td>
+    </tr>
+    <tr>
+    <td><a href="html-ordered-list">&lt;ol&gt;</a></td>
+    <td>It defines an ordered list of items.</td>
+    </tr>
+    <tr>
+    <td><a href="html-optgroup-tag">&lt;optgroup&gt;</a></td>
+    <td>It is used to group the options of a drop-down list.</td>
+    </tr>
+    <tr>
+    <td><a href="html-option-tag">&lt;option&gt;</a></td>
+    <td>It is used to define options or items in a drop-down list.</td>
+    </tr>
+    <tr>
+    <td><a href="html-output-tag">&lt;output&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used as container element which can show result of a calculation.</td>
+    </tr>
+    <tr>
+    <td id="p" colspan="2"><span class="h2">P</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-paragraph">&lt;p&gt;</a></td>
+    <td>It represents a paragraph in an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-param-tag">&lt;param&gt;</a></td>
+    <td>It defines parameter for an &lt;object&gt; element</td>
+    </tr>
+    <tr>
+    <td><a href="html-picture-tag">&lt;picture&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines more than one source element and one image element.</td>
+    </tr>
+    <tr>
+    <td><a href="html-pre-tag">&lt;pre&gt;</a></td>
+    <td>It defines preformatted text in an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-progress-tag">&lt;progress&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines the progress of a task within HTML document.</td>
+    </tr>
+    <tr>
+    <td id="q" colspan="2"><span class="h2">Q</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-quotes">&lt;q&gt;</a></td>
+    <td>It defines short inline quotation.</td>
+    </tr>
+    <tr>
+    <td id="r" colspan="2"><span class="h2">R</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-rp-tag">&lt;rp&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines an alternative content if browser does not supports ruby annotations.</td>
+    </tr>
+    <tr>
+    <td><a href="html-rt-tag">&lt;rt&gt;</a></td>
+    <td>It defines explanations and pronunciations in ruby annotations.</td>
+    </tr>
+    <tr>
+    <td><a href="html-ruby-tag">&lt;ruby&gt;</a></td>
+    <td>It is used to represent ruby annotations.</td>
+    </tr>
+    <tr>
+    <td id="s" colspan="2"><span class="h2">S</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-s-tag">&lt;s&gt;</a></td>
+    <td>It render text which is no longer correct or relevant.</td>
+    </tr>
+    <tr>
+    <td><a href="html-samp-tag">&lt;samp&gt;</a></td>
+    <td>It is used to represent sample output of a computer program.</td>
+    </tr>
+    <tr>
+    <td><a href="html-script-tag">&lt;script&gt;</a></td>
+    <td>It is used to declare the JavaScript within HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-section-tag">&lt;section&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines a generic section for a document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-select-tag">&lt;select&gt;</a></td>
+    <td>It represents a control which provides a menu of options.</td>
+    </tr>
+    <tr>
+    <td><a href="html-small-tag">&lt;small&gt;</a></td>
+    <td>It is used to make text font one size smaller than document?s base font size.</td>
+    </tr>
+    <tr>
+    <td><a href="html-source-tag">&lt;source&gt;><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></a></td>
+    <td>It defines multiple media recourses for different media element such as &lt;picture&gt;, &lt;video&gt;, and &lt;audio&gt; element.</td>
+    </tr>
+    <tr>
+    <td><a href="html-span-tag">&lt;span&gt;</a></td>
+    <td>It is used for styling and grouping inline.</td>
+    </tr>
+    <tr>
+    <td><a href="html-strike-tag">&lt;strike&gt;</a></td>
+    <td>It is used to render strike through the text. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td><a href="html-strong-tag">&lt;strong&gt;</a></td>
+    <td>It is used to define important text. </td>
+    </tr>
+    <tr>
+    <td><a href="html-style">&lt;style&gt;</a></td>
+    <td>It is used to contain style information for an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-sub-tag">&lt;sub&gt;</a></td>
+    <td>It defines a text which displays as a subscript text.</td>
+    </tr>
+    <tr>
+    <td><a href="html-summary-tag">&lt;summary&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines summary which can be used with &lt;details&gt; tag.</td>
+    </tr>
+    <tr>
+    <td><a href="html-sup-tag">&lt;sup&gt;</a></td>
+    <td>It defines a text which represent as superscript text.</td>
+    </tr>
+    <tr>
+    <td><a href="html-svg">&lt;svg&gt;</a></td>
+    <td>It is used as container of SVG (Scalable Vector Graphics). </td>
+    </tr>
+    <tr>
+    <td id="t" colspan="2"><span class="h2">T</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-table">&lt;table&gt;</a></td>
+    <td>It is used to present data in tabular form or to create a table within HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-tbody-tag">&lt;tbody&gt;</a></td>
+    <td>It represents the body content of an HTML table and used along with &lt;thead&gt; and &lt;tfoot&gt;.</td>
+    </tr>
+    <tr>
+    <td><a href="html-td-tag">&lt;td&gt;</a></td>
+    <td>It is used to define cells of an HTML table which contains table data </td>
+    </tr>
+    <tr>
+    <td><a href="html-template-tag">&lt;template&gt;</a></td>
+    <td>It is used to contain the client side content which will not display at time of page load and may render later using JavaScript.</td>
+    </tr>
+    <tr>
+    <td><a href="html-textarea">&lt;textarea&gt;</a></td>
+    <td>It is used to define multiple line input, such as comment, feedback, and review, etc.</td>
+    </tr>
+    <tr>
+    <td><a href="html-tfoot-tag">&lt;tfoot&gt;</a></td>
+    <td>It defines the footer content of an HTML table.</td>
+    </tr>
+    <tr>
+    <td><a href="html-th-tag">&lt;th&gt;</a></td>
+    <td>It defines the head cell of an HTML table.</td>
+    </tr>
+    <tr>
+    <td><a href="html-thead-tag">&lt;thead&gt;</a></td>
+    <td>It defines the header of an HTML table. It is used along with &lt;tbody&gt; and &lt;tfoot&gt; tags.</td>
+    </tr>
+    <tr>
+    <td><a href="html-time-tag">&lt;time&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to define data/time within an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-title">&lt;title&gt;</a></td>
+    <td>It defines the title or name of an HTML document.</td>
+    </tr>
+    <tr>
+    <td><a href="html-tr-tag">&lt;tr&gt;</a></td>
+    <td>It defines the row cells in an HTML table</td>
+    </tr>
+    <tr>
+    <td><a href="html-track-tag">&lt;track&gt;</a></td>
+    <td>It is used to define text tracks for &lt;audio&gt; and &lt;video&gt; elements.</td>
+    </tr>
+    <tr>
+    <td><a href="html-tt-tag">&lt;tt&gt;</a></td>
+    <td>It is used to define teletype text. <strong>(Not supported in HTML5)</strong></td>
+    </tr>
+    <tr>
+    <td id="u" colspan="2"><span class="h2">U</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-u-tag">&lt;u&gt;</a></td>
+    <td>It is used to render enclosed text with an underline.</td>
+    </tr>
+    <tr>
+    <td><a href="html-unordered-list">&lt;ul&gt;</a></td>
+    <td>It defines unordered list of items.</td>
+    </tr>
+    <tr>
+    <td id="v" colspan="2"><span class="h2">V</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-var-list">&lt;var&gt;</a></td>
+    <td>It defines variable name used in mathematical or programming context.</td>
+    </tr>
+    <tr>
+    <td><a href="html-video">&lt;video&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It is used to embed a video content with an HTML document</td>
+    </tr>
+    <tr>
+    <td id="w" colspan="2"><span class="h2">W</span></td>
+    </tr>
+    <tr>
+    <td><a href="html-wbr-tag">&lt;wbr&gt;</a><img style="margin:5px 4px -4px 0" src="https://static.javatpoint.com/htmlpages/images/html-tags-list.png" alt="HTML Tags List" /></td>
+    <td>It defines a position within text where break line is possible.</td>
+    </tr>
+    </table>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="4_HTML_Building_blocks.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="6_HTML_Attributes.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch, Batch & Iterations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item active-submenu" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Epoch in Machine Learning</h1>
+    <p>In Machine Learning, whenever you want to train a model with some data, then <strong>Epoch</strong> refers to one
+        complete pass of the training dataset through the algorithm. Moreover, it takes a few epochs while training a
+        machine learning model, but, in this scenario, you will face an issue while feeding a bunch of training data in
+        the model. This issue happens due to limitations of computer storage. To overcome this issue, we have to break
+        the training data into small batches according to the computer memory or storage capacity. Then only we can
+        train a machine learning model by feeding these batches without any hassle. This process is called batch in
+        machine learning, and <strong><em>further, when all batches are fed exactly once to train the model, then this
+                entire procedure is known as Epoch in Machine Learning</em></strong>. In this article, <strong>''Epoch
+            in Machine Learning''</strong> we will briefly discuss the Epoch, batch, and sample, etc. So let's start
+        with the definition of the Epoch in Machine Learning.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/epoch-in-machine-learning.png"
+        alt="Epoch in Machine Learning" />
+    <h2 class="h2">What is Epoch in Machine Learning?</h2>
+    <p>Epochs are defined as the total number of iterations for training the machine learning model with all the
+        training data in one cycle. In Epoch, all training data is used exactly once. Further, in other words, Epoch can
+        also be understood as the total number of passes an algorithm has completed around the training dataset. A
+        forward and a backward pass together counted as one pass in training.</p>
+    <p>Usually, when a machine learning model is trained, then it requires a little number of Epochs. An Epoch is often
+        mixed up with iteration.</p>
+    <h2 class="h2">What is Iteration?</h2>
+    <p>Iteration is defined as a total number of batches required to complete one epoch, where a number of batches are
+        equal to the total number of iteration for one epoch.</p>
+    <p>Let's understand the iteration and epoch with an example, where we have 3000 training examples that we are going
+        to use to train a machine learning model.</p>
+    <p>In the above scenario, we can break up the training dataset into sizeable batches. So let's suppose we have
+        considered the batches of 500 examples in each batch, then it will take 6 iterations to complete 1 Epoch.</p>
+    <p>Mathematically, we can understand it as follows;</p>
+    <ul class="points">
+        <li>Total number of training examples = 3000;</li>
+        <li>Assume each batch size = 500;</li>
+        <li>Then the total number of Iterations = Total number of training examples/Individual batch size = 3000/500
+        </li>
+        <li>Total number of iterations = 6</li>
+        <li>And <strong><em>1 Epoch = 6 Iterations</em></strong></li>
+    </ul>
+    <p>Now, understand the Batch size in brief.</p>
+    <h2 class="h2">What is Batch in Machine Learning?</h2>
+    <p>Before starting the introduction of Batch in machine learning, you must have one thing in your mind that the
+        batch size and the batch are two separate entities in machine learning.</p>
+    <p>Batch size is defined as the total number of training examples that exist in a single batch. You can understand
+        batch with the above-mentioned example also, where we have divided the entire training dataset/examples into
+        different batches or sets or parts.</p>
+    <p>Let's understand the concept of mixing up an Epoch and iteration with the below example where we have considered
+        1000 datasets as shown in the below image.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/epoch-in-machine-learning2.png"
+        alt="Epoch in Machine Learning" />
+    <p>In the above figure, we can understand this concept as follows:</p>
+    <ul class="points">
+        <li>If the Batch size is 1000, then an epoch will complete in one iteration.</li>
+        <li>If the Batch size is 500, then an epoch will complete in 2 iterations.</li>
+    </ul>
+    <p>Similarly, if the batch size is too small or such as 100, then the epoch will be complete in 10 iterations. So,
+        as a result, we can conclude that for each epoch, the required number of iterations times the batch size gives
+        the number of data points. However, we can use multiple numbers epochs for training the machine learning model.
+    </p>
+    <h2 class="h2">Key points about Epoch and Batch in Machine Learning:</h2>
+    <p>There are a few important points that everyone should keep in mind during training a machine learning model.
+        These are as follows:</p>
+    <ul class="points">
+        <li>Epoch is a machine learning terminology that refers to the number of passes the training data goes through
+            machine learning algorithm during the entire data points.</li>
+        <li>If there is a large amount of data available, then you can divide entire data sets into common groups or
+            batches.</li>
+        <li>The process of running one batch through the learning model is known as iteration. In Machine Learning, one
+            cycle in entire training data sets is called an Epoch. However, in ideal conditions, one cycle in entire
+            training data sets is called an Epoch but training a model typically requires multiple numbers of Epochs.
+        </li>
+        <li>Better generalization can be achieved with new inputs by using more epochs in the training of the machine
+            learning model.</li>
+        <li>Given the complexity and variety of data in real-world applications, hundreds to thousands of epochs may be
+            required to achieve reasonable test data correctness. Furthermore, the term epoch has several definitions
+            depending on the topic at hand.</li>
+    </ul>
+    <h2 class="h2">Why use more than one Epoch?</h2>
+    <p>It may not look correct that passing the entire dataset through an ML algorithm or neural network is not enough,
+        and we need to pass it multiple times to the same algorithm.</p>
+    <p>So it needs to be kept in mind that to optimize the learning, we use gradient descent, an iterative process.
+        Hence, it is not enough to update the weights with a single pass or one epoch.</p>
+    <p>Moreover, one epoch may lead to overfitting in the model.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="38_normalization.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="40_feature_engineering.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

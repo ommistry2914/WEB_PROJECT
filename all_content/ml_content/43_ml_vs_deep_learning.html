@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning vs Deep Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item active-submenu" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Difference between Machine Learning and Deep Learning</h1>
+    <p>Machine Learning and Deep Learning are the two main concepts of Data Science and the subsets of Artificial
+        Intelligence. Most of the people think the machine learning, deep learning, and as well as artificial
+        intelligence as the same buzzwords. But in actuality, all these terms are different but related to each other.
+    </p>
+    <p>In this topic, we will learn how machine learning is different from deep learning. But before learning the
+        differences, lets first have a brief introduction of <a
+            href="https://www.javatpoint.com/machine-learning">machine learning</a> and <a
+            href="https://www.javatpoint.com/deep-learning">deep learning</a>.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-vs-deep-learning.png"
+        alt="Machine Learning vs Deep Learning" />
+    <h2 class="h2">What is Machine Learning?</h2>
+    <p>Machine learning is a part of artificial intelligence and growing technology that enables machines to learn from
+        past data and perform a given task automatically.</p>
+    <blockquote>Machine Leaning allows the computers to learn from the experiences by its own, use statistical methods
+        to improve the performance and predict the output without being explicitly programmed.</blockquote>
+    <p>The popular applications of ML are Email spam filtering, product recommendations, online fraud detection, etc.
+    </p>
+    <p>Some useful ML algorithms are:</p>
+    <ul class="points">
+        <li><strong>Decision Tree algorithm</strong></li>
+        <li><strong>Na&iuml;ve Bayes</strong> </li>
+        <li><strong>Random Forest</strong></li>
+        <li><strong>K-means clustering</strong></li>
+        <li><strong>KNN algorithm</strong></li>
+        <li><strong>Apriori Algorithm, etc.</strong></li>
+    </ul>
+    <h3 class="h3">How does Machine Learning work?</h3>
+    <p>The working of machine learning models can be understood by the example of identifying the image of a cat or dog.
+        To identify this, the ML model takes images of both cat and dog as input, extracts the different features of
+        images such as shape, height, nose, eyes, etc., applies the classification algorithm, and predict the output.
+        Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-vs-deep-learning2.png"
+        alt="Machine Learning vs Deep Learning" />
+    <h2 class="h2">What is Deep Learning?</h2>
+    <p><em>Deep Learning is the subset of machine learning or can be said as a special kind of machine learning</em>. It
+        works technically in the same way as machine learning does, but with different capabilities and approaches. It
+        is inspired by the functionality of human brain cells, which are called neurons, and leads to the concept of
+        artificial neural networks. It is also called a deep neural network or deep neural learning.</p>
+    <p>In deep learning, models use different layers to learn and discover insights from the data.</p>
+    <p>Some popular applications of deep learning are self-driving cars, language translation, natural language
+        processing, etc.</p>
+    <p>Some popular deep learning models are:</p>
+    <ul class="points">
+        <li><strong>Convolutional Neural Network</strong></li>
+        <li><strong>Recurrent Neural Network</strong></li>
+        <li><strong>Autoencoders</strong></li>
+        <li><strong>Classic Neural Networks, etc.</strong></li>
+    </ul>
+    <h3 class="h3">How Deep Learning Works?</h3>
+    <p>We can understand the working of deep learning with the same example of identifying cat vs. dog. The deep
+        learning model takes the images as the input and feed it directly to the algorithms without requiring any manual
+        feature extraction step. The images pass to the different layers of the artificial neural network and predict
+        the final output.</p>
+    <p>Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-vs-deep-learning3.png"
+        alt="Machine Learning vs Deep Learning" />
+    <h2 class="h2">Key comparisons between Machine Learning and Deep Learning</h2>
+    <p>Let's understand the key differences between these two terms based on different parameters:</p>
+    <table class="alt">
+        <tr>
+            <th>Parameter</th>
+            <th>Machine Learning</th>
+            <th>Deep Learning</th>
+        </tr>
+        <tr>
+            <td><strong>Data Dependency</strong></td>
+            <td>Although machine learning depends on the huge amount of data, it can work with a smaller amount of data.
+            </td>
+            <td>Deep Learning algorithms highly depend on a large amount of data, so we need to feed a large amount of
+                data for good performance.</td>
+        </tr>
+        <tr>
+            <td><strong>Execution time</strong></td>
+            <td>Machine learning algorithm takes less time to train the model than deep learning, but it takes a
+                long-time duration to test the model.</td>
+            <td>Deep Learning takes a long execution time to train the model, but less time to test the model.</td>
+        </tr>
+        <tr>
+            <td><strong>Hardware Dependencies</strong></td>
+            <td>Since machine learning models do not need much amount of data, so they can work on low-end machines.
+            </td>
+            <td>The deep learning model needs a huge amount of data to work efficiently, so they need GPU's and hence
+                the high-end machine.</td>
+        </tr>
+        <tr>
+            <td><strong>Feature Engineering</strong></td>
+            <td>Machine learning models need a step of feature extraction by the expert, and then it proceeds further.
+            </td>
+            <td>Deep learning is the enhanced version of machine learning, so it does not need to develop the feature
+                extractor for each problem; instead, it tries to learn high-level features from the data on its own.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Problem-solving approach</strong> </td>
+            <td>To solve a given problem, the traditional ML model breaks the problem in sub-parts, and after solving
+                each part, produces the final result.</td>
+            <td>The problem-solving approach of a deep learning model is different from the traditional ML model, as it
+                takes input for a given problem, and produce the end result. Hence it follows the end-to-end approach.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Interpretation of result</strong></td>
+            <td>The interpretation of the result for a given problem is easy. As when we work with machine learning, we
+                can interpret the result easily, it means why this result occur, what was the process.</td>
+            <td>The interpretation of the result for a given problem is very difficult. As when we work with the deep
+                learning model, we may get a better result for a given problem than the machine learning model, but we
+                cannot find why this particular outcome occurred, and the reasoning.</td>
+        </tr>
+        <tr>
+            <td><strong>Type of data</strong></td>
+            <td>Machine learning models mostly require data in a structured form.</td>
+            <td>Deep Learning models can work with structured and unstructured data both as they rely on the layers of
+                the Artificial neural network.</td>
+        </tr>
+        <tr>
+            <td><strong>Suitable for</strong></td>
+            <td>Machine learning models are suitable for solving simple or bit-complex problems.</td>
+            <td>Deep learning models are suitable for solving complex problems.</td>
+        </tr>
+    </table>
+    <h3 class="h3">Which one to select among ML and Deep Learning?</h3>
+    <p>As we have seen the brief introduction of ML and DL with some comparisons, now why and which one needs to be
+        chosen to solve a particular problem. So, it can be understood by the given flowchart:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-vs-deep-learning4.png"
+        alt="Machine Learning vs Deep Learning" />
+    <p>Hence, if you have lots of data and high hardware capabilities, go with deep learning. But if you don't have any
+        of them, choose the ML model to solve your problem.</p>
+    <p><strong>Conclusion:</strong> In conclusion, we can say that deep learning is machine learning with more
+        capabilities and a different working approach. And selecting any of them to solve a particular problem is depend
+        on the amount of data and complexity of the problem.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="42_data_science_vs_ml.html"><button class="btn btn-danger" type="button">Previous</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

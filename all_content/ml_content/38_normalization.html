@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalization in ML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item active-submenu" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Normalization in Machine Learning</h1>
+    <p><strong><em>Normalization is one of the most frequently used data preparation techniques, which helps us to
+                change the values of numeric columns in the dataset to use a common scale.</em></strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/normalization-in-machine-learning.png"
+        alt="Normalization in Machine Learning" />
+    <p>Although <strong>Normalization</strong> is no mandate for all datasets available in machine learning, it is used
+        whenever the attributes of the dataset have different ranges. It helps to enhance the performance and
+        reliability of a machine learning model. In this article, we will discuss in brief various Normalization
+        techniques in machine learning, why it is used, examples of normalization in an ML model, and much more. So,
+        let's start with the definition of Normalization in Machine Learning.</p>
+    <h2 class="h2">What is Normalization in Machine Learning?</h2>
+    <p>Normalization is a scaling technique in Machine Learning applied during data preparation to change the values of
+        numeric columns in the dataset to use a common scale. It is not necessary for all datasets in a model. It is
+        required only when features of machine learning models have different ranges.</p>
+    <p>Mathematically, we can calculate normalization with the below formula:</p>
+    <div class="codeblock"><textarea name="code" class="sql">
+Xn = (X - Xminimum) / ( Xmaximum - Xminimum)
+</textarea></div>
+    <ul class="points">
+        <li>Xn = Value of Normalization</li>
+        <li>Xmaximum = Maximum value of a feature</li>
+        <li>Xminimum = Minimum value of a feature</li>
+    </ul>
+    <p><strong>Example:</strong> Let's assume we have a model dataset having maximum and minimum values of feature as
+        mentioned above. To normalize the machine learning model, values are shifted and rescaled so their range can
+        vary between 0 and 1. This technique is also known as <strong>Min-Max scaling</strong>. In this scaling
+        technique, we will change the feature values as follows:</p>
+    <p><strong>Case1-</strong> If the value of X is minimum, the value of Numerator will be 0; hence Normalization will
+        also be 0.</p>
+    <div class="codeblock"><textarea name="code" class="sql">
+Xn = (X - Xminimum) / ( Xmaximum - Xminimum)
+</textarea></div>
+    <p>Put X =Xminimum in above formula, we get;</p>
+    <p>Xn = Xminimum- Xminimum/ ( Xmaximum - Xminimum)</p>
+    <p>Xn = 0</p>
+    <p><strong>Case2-</strong> If the value of X is maximum, then the value of the numerator is equal to the
+        denominator; hence Normalization will be 1.</p>
+    <div class="codeblock"><textarea name="code" class="sql">
+Xn = (X - Xminimum) / ( Xmaximum - Xminimum)
+</textarea></div>
+    <p>Put X =Xmaximum in above formula, we get;</p>
+    <p>Xn = Xmaximum - Xminimum/ ( Xmaximum - Xminimum)</p>
+    <p>Xn = 1</p>
+    <p><strong>Case3-</strong> On the other hand, if the value of X is neither maximum nor minimum, then values of
+        normalization will also be between 0 and 1.</p>
+    <p>Hence, Normalization can be defined as a scaling method where values are shifted and rescaled to maintain their
+        ranges between 0 and 1, or in other words; it can be referred to as <strong>Min-Max scaling technique</strong>.
+    </p>
+    <h2 class="h2">Normalization techniques in Machine Learning</h2>
+    <p>Although there are so many feature normalization techniques in Machine Learning, few of them are most frequently
+        used. These are as follows:</p>
+    <ul class="points">
+        <li><strong>Min-Max Scaling:</strong> This technique is also referred to as scaling. As we have already
+            discussed above, the Min-Max scaling method helps the dataset to shift and rescale the values of their
+            attributes, so they end up ranging between 0 and 1.</li>
+        <li><strong>Standardization scaling:</strong></li>
+    </ul>
+    <p>Standardization scaling is also known as <strong>Z-score</strong> normalization, in which values are centered
+        around the mean with a unit standard deviation, which means the attribute becomes zero and the resultant
+        distribution has a unit standard deviation. Mathematically, we can calculate the standardization by subtracting
+        the feature value from the mean and dividing it by standard deviation.</p>
+    <p>Hence, standardization can be expressed as follows:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/normalization-in-machine-learning2.png"
+        alt="Normalization in Machine Learning" />
+    <p>Here, <strong>&micro;</strong> represents the mean of feature value, and <strong>&sigma;</strong> represents the
+        standard deviation of feature values.</p>
+    <p>However, unlike Min-Max scaling technique, feature values are not restricted to a specific range in the
+        standardization technique.</p>
+    <p>This technique is helpful for various machine learning algorithms that use distance measures such as <strong>KNN,
+            K-means clustering, and Principal component analysis</strong>, etc. Further, it is also important that the
+        model is built on assumptions and data is normally distributed.</p>
+    <h2 class="h2">Difference between Normalization and Standardization</h2>
+    <table class="alt">
+        <tr>
+            <th>Normalization</th>
+            <th>Standardization</th>
+        </tr>
+        <tr>
+            <td>This technique uses minimum and max values for scaling of model.</td>
+            <td>This technique uses mean and standard deviation for scaling of model.</td>
+        </tr>
+        <tr>
+            <td>It is helpful when features are of different scales.</td>
+            <td>It is helpful when the mean of a variable is set to 0 and the standard deviation is set to 1.</td>
+        </tr>
+        <tr>
+            <td>Scales values ranges between [0, 1] or [-1, 1].</td>
+            <td>Scale values are not restricted to a specific range.</td>
+        </tr>
+        <tr>
+            <td>It got affected by outliers.</td>
+            <td>It is comparatively less affected by outliers.</td>
+        </tr>
+        <tr>
+            <td>Scikit-Learn provides a transformer called MinMaxScaler for Normalization.</td>
+            <td>Scikit-Learn provides a transformer called StandardScaler for Normalization.</td>
+        </tr>
+        <tr>
+            <td>It is also called Scaling normalization.</td>
+            <td>It is known as Z-score normalization.</td>
+        </tr>
+        <tr>
+            <td>It is useful when feature distribution is unknown.</td>
+            <td>It is useful when feature distribution is normal.</td>
+        </tr>
+    </table>
+    <h2 class="h2">When to use Normalization or Standardization?</h2>
+    <p>Which is suitable for our machine learning model, Normalization or Standardization? This is probably a big
+        confusion among all data scientists as well as machine learning engineers. Although both terms have the almost
+        same meaning choice of using normalization or standardization will depend on your problem and the algorithm you
+        are using in models.</p>
+    <p>1. Normalization is a transformation technique that helps to improve the performance as well as the accuracy of
+        your model better. Normalization of a machine learning model is useful when you don't know feature distribution
+        exactly. In other words, the feature distribution of data does not follow a <strong>Gaussian</strong> (bell
+        curve) distribution. Normalization must have an abounding range, so if you have outliers in data, they will be
+        affected by Normalization.</p>
+    <p>Further, it is also useful for data having variable scaling techniques such as <strong>KNN, artificial neural
+            network</strong>s. Hence, you can't use assumptions for the distribution of data.</p>
+    <p>2. Standardization in the machine learning model is useful when you are exactly aware of the feature distribution
+        of data or, in other words, your data follows a Gaussian distribution. However, this does not have to be
+        necessarily true. Unlike Normalization, Standardization does not necessarily have a bounding range, so if you
+        have outliers in your data, they will not be affected by Standardization.</p>
+    <p>Further, it is also useful when data has variable dimensions and techniques such as <strong>linear regression,
+            logistic regression, and linear discriminant analysis</strong>.</p>
+    <p><strong>Example:</strong> Let's understand an experiment where we have a dataset having two attributes, i.e., age
+        and salary. Where the age ranges from 0 to 80 years old, and the income varies from 0 to 75,000 dollars or more.
+        Income is assumed to be 1,000 times that of age. As a result, the ranges of these two attributes are much
+        different from one another.</p>
+    <p>Because of its bigger value, the attributed income will organically influence the conclusion more when we
+        undertake further analysis, such as multivariate linear regression. However, this does not necessarily imply
+        that it is a better predictor. As a result, we normalize the data so that all of the variables are in the same
+        range.</p>
+    <p>Further, it is also helpful for the prediction of credit risk scores where normalization is applied to all
+        numeric data except the class column. It uses the <strong>tanh transformation</strong> technique, which converts
+        all numeric features into values of range between 0 to 1.</p>
+    <h2 class="h2">Conclusion</h2>
+    <p>Normalization avoids raw data and various problems of datasets by creating new values and maintaining general
+        distribution as well as a ratio in data. Further, it also improves the performance and accuracy of machine
+        learning models using various techniques and algorithms. Hence, the concept of Normalization and Standardization
+        is a bit confusing but has a lot of importance to build a better machine learning model.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="37_cost_function.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="39_epoch_batch_iterations.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

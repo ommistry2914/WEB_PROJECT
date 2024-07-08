@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Life Cycle of Thread</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Life cycle of a Thread (Thread States)</h1>
+    <p>In Java, a thread always exists in any one of the following states. These states are:</p>
+    <ol class="points">
+        <li>New</li>
+        <li>Active</li>
+        <li>Blocked / Waiting</li>
+        <li>Timed Waiting</li>
+        <li>Terminated</li>
+    </ol>
+    <h2 class="h2">Explanation of Different Thread States</h2>
+    <p><strong>New:</strong> Whenever a new thread is created, it is always in the new state. For a thread in the new
+        state,
+        the code has not been run yet and thus has not begun its execution.</p>
+    <p><strong>Active:</strong> When a thread invokes the start() method, it moves from the new state to the active
+        state.
+        The active state contains two states within it: one is <strong>runnable</strong>, and the other is
+        <strong>running</strong>.
+    </p>
+    <ul class="points">
+        <li><strong>Runnable:</strong> A thread, that is ready to run is then moved to the runnable state. In the
+            runnable
+            state, the thread may be running or may be ready to run at any given instant of time. It is the duty of the
+            thread scheduler to provide the thread time to run, i.e., moving the thread the running state.<br>
+            A program implementing multithreading acquires a fixed slice of time to each individual thread. Each and
+            every
+            thread runs for a short span of time and when that allocated time slice is over, the thread voluntarily
+            gives up
+            the CPU to the other thread, so that the other threads can also run for their slice of time. Whenever such a
+            scenario occurs, all those threads that are willing to run, waiting for their turn to run, lie in the
+            runnable
+            state. In the runnable state, there is a queue where the threads lie.</li>
+        <li><strong>Running:</strong> When the thread gets the CPU, it moves from the runnable to the running state.
+            Generally, the most common change in the state of a thread is from runnable to running and again back to
+            runnable.</li>
+    </ul>
+    <p><strong>Blocked or Waiting:</strong> Whenever a thread is inactive for a span of time (not permanently) then,
+        either
+        the thread is in the blocked state or is in the waiting state.</p>
+    <p>For example, a thread (let's say its name is A) may want to print some data from the printer. However, at the
+        same
+        time, the other thread (let's say its name is B) is using the printer to print some data. Therefore, thread A
+        has to
+        wait for thread B to use the printer. Thus, thread A is in the blocked state. A thread in the blocked state is
+        unable to perform any execution and thus never consume any cycle of the Central Processing Unit (CPU). Hence, we
+        can
+        say that thread A remains idle until the thread scheduler reactivates thread A, which is in the waiting or
+        blocked
+        state.</p>
+    <p>When the main thread invokes the join() method then, it is said that the main thread is in the waiting state. The
+        main thread then waits for the child threads to complete their tasks. When the child threads complete their job,
+        a
+        notification is sent to the main thread, which again moves the thread from waiting to the active state.</p>
+    <p>If there are a lot of threads in the waiting or blocked state, then it is the duty of the thread scheduler to
+        determine which thread to choose and which one to reject, and the chosen thread is then given the opportunity to
+        run.</p>
+    <p><strong>Timed Waiting:</strong> Sometimes, waiting for leads to starvation. For example, a thread (its name is A)
+        has
+        entered the critical section of a code and is not willing to leave that critical section. In such a scenario,
+        another thread (its name is B) has to wait forever, which leads to starvation. To avoid such scenario, a timed
+        waiting state is given to thread B. Thus, thread lies in the waiting state for a specific span of time, and not
+        forever. A real example of timed waiting is when we invoke the sleep() method on a specific thread. The sleep()
+        method puts the thread in the timed wait state. After the time runs out, the thread wakes up and start its
+        execution
+        from when it has left earlier.</p>
+    <p><strong>Terminated:</strong> A thread reaches the termination state because of the following reasons:</p>
+    <ul class="points">
+        <li>When a thread has finished its job, then it exists or terminates normally.</li>
+        <li><strong>Abnormal termination:</strong> It occurs when some unusual events such as an unhandled exception or
+            segmentation fault.</li>
+    </ul>
+    <p>A terminated thread means the thread is no more in the system. In other words, the thread is dead, and there is
+        no
+        way one can respawn (active after kill) the dead thread.</p>
+    <p>The following diagram shows the different states involved in the life cycle of a thread.</p>
+    <img src="https://static.javatpoint.com/core/images/life-cycle-of-a-thread.png" alt="Java thread life cycle" />
+    <h2 class="h2">Implementation of Thread States</h2>
+    <p>In Java, one can get the current state of a thread using the <strong>Thread.getState()</strong> method. The
+        <strong>java.lang.Thread.State</strong> class of Java provides the constants ENUM to represent the state of a
+        thread. These constants are:
+    </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 80px;max-width: 100%;">
+public static final Thread.State NEW
+</textarea></div>
+    <p>It represents the first state of a thread that is the NEW state.</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 80px;max-width: 100%;">
+public static final Thread.State RUNNABLE
+</textarea></div>
+    <p>It represents the runnable state.It means a thread is waiting in the queue to run.</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 80px;max-width: 100%;">
+public static final Thread.State BLOCKED
+</textarea></div>
+    <p>It represents the blocked state. In this state, the thread is waiting to acquire a lock.</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 80px;max-width: 100%;">
+public static final Thread.State WAITING
+</textarea></div>
+    <p>It represents the waiting state. A thread will go to this state when it invokes the Object.wait() method, or
+        Thread.join() method with no timeout. A thread in the waiting state is waiting for another thread to complete
+        its
+        task.</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+        style="resize: none;min-height: 80px;max-width: 100%;">
+public static final Thread.State TIMED_WAITING
+</textarea></div>
+    <p>It represents the timed waiting state. The main difference between waiting and timed waiting is the time
+        constraint.
+        Waiting has no time constraint, whereas timed waiting has the time constraint. A thread invoking the following
+        method reaches the timed waiting state.</p>
+    <ul class="points">
+        <li>sleep</li>
+        <li>join with timeout</li>
+        <li>wait with timeout</li>
+        <li>parkUntil</li>
+        <li>parkNanos</li>
+    </ul>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+        style="resize: none;min-height: 80px;max-width: 100%;">
+public static final Thread.State TERMINATED
+</textarea></div>
+    <p>It represents the final state of a thread that is terminated or dead. A terminated thread means it has completed
+        its
+        execution.</p>
+    <h2 class="h2">Java Program for Demonstrating Thread States</h2>
+    <p>The following Java program shows some of the states of a thread defined above.</p>
+    <p><strong>FileName:</strong> ThreadState.java</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+        style="resize: none;min-height: 800px;max-width: 100%;">
+// ABC class implements the interface Runnable
+class ABC implements Runnable
+{
+public void run()
+{
+
+// try-catch block
+try
+{
+// moving thread t2 to the state timed waiting
+Thread.sleep(100);
+}
+catch (InterruptedException ie)
+{
+ie.printStackTrace();
+}
+
+
+System.out.println("The state of thread t1 while it invoked the method join() on thread t2 -"+ ThreadState.t1.getState());
+
+// try-catch block
+try
+{
+Thread.sleep(200);
+}
+catch (InterruptedException ie)
+{
+ie.printStackTrace();
+}	
+}
+}
+
+// ThreadState class implements the interface Runnable
+public class ThreadState implements Runnable
+{
+public static Thread t1;
+public static ThreadState obj;
+
+// main method 
+public static void main(String argvs[])
+{
+// creating an object of the class ThreadState
+obj = new ThreadState();
+t1 = new Thread(obj);
+
+// thread t1 is spawned 
+// The thread t1 is currently in the NEW state.
+System.out.println("The state of thread t1 after spawning it - " + t1.getState());
+
+// invoking the start() method on 
+// the thread t1
+t1.start();
+
+// thread t1 is moved to the Runnable state
+System.out.println("The state of thread t1 after invoking the method start() on it - " + t1.getState());
+}
+
+public void run()
+{
+ABC myObj = new ABC();
+Thread t2 = new Thread(myObj);
+
+// thread t2 is created and is currently in the NEW state.
+System.out.println("The state of thread t2 after spawning it - "+ t2.getState());
+t2.start();
+
+// thread t2 is moved to the runnable state
+System.out.println("the state of thread t2 after calling the method start() on it - " + t2.getState());
+
+// try-catch block for the smooth flow of the  program
+try
+{
+// moving the thread t1 to the state timed waiting 
+Thread.sleep(200);
+}
+catch (InterruptedException ie)
+{
+ie.printStackTrace();
+}
+
+System.out.println("The state of thread t2 after invoking the method sleep() on it - "+ t2.getState() );
+
+// try-catch block for the smooth flow of the  program
+try
+{
+// waiting for thread t2 to complete its execution
+t2.join();
+}
+catch (InterruptedException ie)
+{
+ie.printStackTrace();
+}
+System.out.println("The state of thread t2 when it has completed it's execution - " + t2.getState());
+}
+
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The state of thread t1 after spawning it - NEW
+The state of thread t1 after invoking the method start() on it - RUNNABLE
+The state of thread t2 after spawning it - NEW
+the state of thread t2 after calling the method start() on it - RUNNABLE
+The state of thread t1 while it invoked the method join() on thread t2 -TIMED_WAITING
+The state of thread t2 after invoking the method sleep() on it - TIMED_WAITING
+The state of thread t2 when it has completed it's execution - TERMINATED
+</pre>
+    </div>
+    <p><strong>Explanation:</strong> Whenever we spawn a new thread, that thread attains the new state. When the method
+        start() is invoked on a thread, the thread scheduler moves that thread to the runnable state. Whenever the
+        join()
+        method is invoked on any thread instance, the current thread executing that statement has to wait for this
+        thread to
+        finish its execution, i.e., move that thread to the terminated state. Therefore, before the final print
+        statement is
+        printed on the console, the program invokes the method join() on thread t2, making the thread t1 wait while the
+        thread t2 finishes its execution and thus, the thread t2 get to the terminated or dead state. Thread t1 goes to
+        the
+        waiting state because it is waiting for thread t2 to finish it's execution as it has invoked the method join()
+        on
+        thread t2.</p>
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="48multithreading.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="50garbage_collection.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

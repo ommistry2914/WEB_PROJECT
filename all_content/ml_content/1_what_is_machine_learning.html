@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Machine Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Machine Learning Tutorial</h1>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-logo.png"
+        alt="Machine Learning Tutorial" class="imageright" />
+    <p>The Machine Learning Tutorial covers both the fundamentals and more complex ideas of machine learning. Students
+        and professionals in the workforce can benefit from our machine learning tutorial.</p>
+    <p>A rapidly developing field of technology, machine learning allows computers to automatically learn from previous
+        data. For building mathematical models and making predictions based on historical data or information, machine
+        learning employs a variety of algorithms. It is currently being used for a variety of tasks, including speech
+        recognition, email filtering, auto-tagging on Facebook, a recommender system, and image recognition.</p>
+    <p>You will learn about the many different methods of machine learning, including reinforcement learning, supervised
+        learning, and unsupervised learning, in this machine learning tutorial. Regression and classification models,
+        clustering techniques, hidden Markov models, and various sequential models will all be covered.</p>
+    <h2 class="h2">What is Machine Learning</h2>
+    <p>In the real world, we are surrounded by humans who can learn everything from their experiences with their
+        learning capability, and we have computers or machines which work on our instructions. But can a machine also
+        learn from experiences or past data like a human does? So here comes the role of <strong>Machine
+            Learning</strong>.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/introduction-to-machine-learning.png"
+        alt="Introduction to Machine Learning" />
+    <p><strong>Introduction to Machine Learning</strong></p>
+    <p>A subset of artificial intelligence known as machine learning focuses primarily on the creation of algorithms
+        that enable a computer to independently learn from data and previous experiences. Arthur Samuel first used the
+        term "machine learning" in 1959. It could be summarized as follows:</p>
+    <p>Without being explicitly programmed, machine learning enables a machine to automatically learn from data, improve
+        performance from experiences, and predict things.</p>
+    <p>Machine learning algorithms create a mathematical model that, without being explicitly programmed, aids in making
+        predictions or decisions with the assistance of sample historical data, or training data. For the purpose of
+        developing predictive models, machine learning brings together statistics and computer science. Algorithms that
+        learn from historical data are either constructed or utilized in machine learning. The performance will rise in
+        proportion to the quantity of information we provide.</p>
+    <p><strong>A machine can learn if it can gain more data to improve its performance.</strong></p>
+    <h2 class="h2">How does Machine Learning work</h2>
+    <p>A machine learning system builds prediction models, learns from previous data, and predicts the output of new
+        data whenever it receives it. The amount of data helps to build a better model that accurately predicts the
+        output, which in turn affects the accuracy of the predicted output.</p>
+    <p>Let's say we have a complex problem in which we need to make predictions. Instead of writing code, we just need
+        to feed the data to generic algorithms, which build the logic based on the data and predict the output. Our
+        perspective on the issue has changed as a result of machine learning. The Machine Learning algorithm's operation
+        is depicted in the following block diagram:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/introduction-to-machine-learning2.png"
+        alt="Introduction to Machine Learning" />
+    <h2 class="h2">Features of Machine Learning:</h2>
+    <ul class="points">
+        <li>Machine learning uses data to detect various patterns in a given dataset.</li>
+        <li>It can learn from past data and improve automatically.</li>
+        <li>It is a data-driven technology.</li>
+        <li>Machine learning is much similar to data mining as it also deals with the huge amount of the data.</li>
+    </ul>
+    <h2 class="h2">Need for Machine Learning</h2>
+    <p>The demand for machine learning is steadily rising. Because it is able to perform tasks that are too complex for
+        a person to directly implement, machine learning is required. Humans are constrained by our inability to
+        manually access vast amounts of data; as a result, we require computer systems, which is where machine learning
+        comes in to simplify our lives.</p>
+    <p>By providing them with a large amount of data and allowing them to automatically explore the data, build models,
+        and predict the required output, we can train machine learning algorithms. The cost function can be used to
+        determine the amount of data and the machine learning algorithm's performance. We can save both time and money
+        by using machine learning.</p>
+    <p>The significance of AI can be handily perceived by its utilization's cases, Presently, AI is utilized in
+        self-driving vehicles, digital misrepresentation identification, face acknowledgment, and companion idea by
+        Facebook, and so on. Different top organizations, for example, Netflix and Amazon have constructed AI models
+        that are utilizing an immense measure of information to examine the client interest and suggest item likewise.
+    </p>
+    <p>Following are some key points which show the importance of Machine Learning:</p>
+    <ul class="points">
+        <li>Rapid increment in the production of data</li>
+        <li>Solving complex problems, which are difficult for a human</li>
+        <li>Decision making in various sector including finance</li>
+        <li>Finding hidden patterns and extracting useful information from data.</li>
+    </ul>
+    <h2 class="h2">Classification of Machine Learning</h2>
+    <p>At a broad level, machine learning can be classified into three types:</p>
+    <ol class="points">
+        <li><strong>Supervised learning</strong></li>
+        <li><strong>Unsupervised learning</strong></li>
+        <li><strong>Reinforcement learning</strong></li>
+    </ol>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/classification-of-machine-learning.png"
+        alt="Introduction to Machine Learning" />
+    <h3 class="h3">1) Supervised Learning</h3>
+    <p>In supervised learning, sample labeled data are provided to the machine learning system for training, and the
+        system then predicts the output based on the training data.</p>
+    <p>The system uses labeled data to build a model that understands the datasets and learns about each one. After the
+        training and processing are done, we test the model with sample data to see if it can accurately predict the
+        output.</p>
+    <p>The mapping of the input data to the output data is the objective of supervised learning. The managed learning
+        depends on oversight, and it is equivalent to when an understudy learns things in the management of the
+        educator. Spam filtering is an example of supervised learning.</p>
+    <p>Supervised learning can be grouped further in two categories of algorithms:</p>
+    <ul class="points">
+        <li><strong>Classification</strong></li>
+        <li><strong>Regression</strong></li>
+    </ul>
+    <h3 class="h3">2) Unsupervised Learning</h3>
+    <p>Unsupervised learning is a learning method in which a machine learns without any supervision.</p>
+    <p>The training is provided to the machine with the set of data that has not been labeled, classified, or
+        categorized, and the algorithm needs to act on that data without any supervision. The goal of unsupervised
+        learning is to restructure the input data into new features or a group of objects with similar patterns.</p>
+    <p>In unsupervised learning, we don't have a predetermined result. The machine tries to find useful insights from
+        the huge amount of data. It can be further classifieds into two categories of algorithms:</p>
+    <ul class="points">
+        <li><strong>Clustering</strong></li>
+        <li><strong>Association</strong></li>
+    </ul>
+    <h3 class="h3">3) Reinforcement Learning</h3>
+    <p>Reinforcement learning is a feedback-based learning method, in which a learning agent gets a reward for each
+        right action and gets a penalty for each wrong action. The agent learns automatically with these feedbacks and
+        improves its performance. In reinforcement learning, the agent interacts with the environment and explores it.
+        The goal of an agent is to get the most reward points, and hence, it improves its performance.</p>
+    <p>The robotic dog, which automatically learns the movement of his arms, is an example of Reinforcement learning.
+    </p>
+    <h4 class="n"><span class="bold">Note:</span> We will learn about the above types of machine learning in detail in
+        later chapters.</h4>
+    <h2 class="h2">History of Machine Learning</h2>
+    <p>Before some years (about 40-50 years), machine learning was science fiction, but today it is the part of our
+        daily life. Machine learning is making our day to day life easy from <strong>self-driving cars</strong> to
+        <strong>Amazon virtual assistant "Alexa"</strong>. However, the idea behind machine learning is so old and has a
+        long history. Below some milestones are given which have occurred in the history of machine learning:
+    </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/history-of-machine-learning.png"
+        alt="History of Machine Learning" />
+    <h2 class="h3">The early history of Machine Learning (Pre-1940):</h2>
+    <ul class="points">
+        <li><strong>1834:</strong> In 1834, Charles Babbage, the father of the computer, conceived a device that could
+            be programmed with punch cards. However, the machine was never built, but all modern computers rely on its
+            logical structure.</li>
+        <li><strong>1936:</strong> In 1936, Alan Turing gave a theory that how a machine can determine and execute a set
+            of instructions.</li>
+    </ul>
+    <h2 class="h3">The era of stored program computers:</h2>
+    <ul class="points">
+        <li><strong>1940:</strong> In 1940, the first manually operated computer, "ENIAC" was invented, which was the
+            first electronic general-purpose computer. After that stored program computer such as EDSAC in 1949 and
+            EDVAC in 1951 were invented.</li>
+        <li><strong>1943:</strong> In 1943, a human neural network was modeled with an electrical circuit. In 1950, the
+            scientists started applying their idea to work and analyzed how human neurons might work.</li>
+    </ul>
+    <h2 class="h3">Computer machinery and intelligence:</h2>
+    <ul class="points">
+        <li><strong>1950:</strong> In 1950, Alan Turing published a seminal paper, "<strong>Computer Machinery and
+                Intelligence</strong>," on the topic of artificial intelligence. <strong>In his paper, he asked, "Can
+                machines think?"</strong></li>
+    </ul>
+    <h2 class="h3">Machine intelligence in Games:</h2>
+    <ul class="points">
+        <li><strong>1952:</strong> Arthur Samuel, who was the pioneer of machine learning, created a program that helped
+            an IBM computer to play a checkers game. It performed better more it played.</li>
+        <li><strong>1959:</strong> In 1959, the term "Machine Learning" was first coined by <strong>Arthur
+                Samuel</strong>.</li>
+    </ul>
+    <h2 class="h3">The first "AI" winter:</h2>
+    <ul class="points">
+        <li>The duration of 1974 to 1980 was the tough time for AI and ML researchers, and this duration was called as
+            <strong>AI winter</strong>.
+        </li>
+        <li>In this duration, failure of machine translation occurred, and people had reduced their interest from AI,
+            which led to reduced funding by the government to the researches.</li>
+    </ul>
+    <h2 class="h3">Machine Learning from theory to reality</h2>
+    <ul class="points">
+        <li><strong>1959:</strong> In 1959, the first neural network was applied to a real-world problem to remove
+            echoes over phone lines using an adaptive filter.</li>
+        <li><strong>1985:</strong> In 1985, Terry Sejnowski and Charles Rosenberg invented a neural network
+            <strong>NETtalk</strong>, which was able to teach itself how to correctly pronounce 20,000 words in one
+            week.
+        </li>
+        <li><strong>1997:</strong> The IBM's <strong>Deep blue</strong> intelligent computer won the chess game against
+            the chess expert Garry Kasparov, and it became the first computer which had beaten a human chess expert.
+        </li>
+    </ul>
+    <h2 class="h3">Machine Learning at 21<sup>st</sup> century</h2>
+    <p><strong>2006:</strong></p>
+    <ul class="points">
+        <li>Geoffrey Hinton and his group presented the idea of profound getting the hang of utilizing profound
+            conviction organizations.</li>
+        <li>The Elastic Compute Cloud (EC2) was launched by Amazon to provide scalable computing resources that made it
+            easier to create and implement machine learning models.</li>
+    </ul>
+    <p><strong>2007:</strong></p>
+    <ul class="points">
+        <li>Participants were tasked with increasing the accuracy of Netflix's recommendation algorithm when the Netflix
+            Prize competition began.</li>
+        <li>Support learning made critical progress when a group of specialists utilized it to prepare a PC to play
+            backgammon at a top-notch level.</li>
+    </ul>
+    <p><strong>2008:</strong></p>
+    <ul class="points">
+        <li>Google delivered the Google Forecast Programming interface, a cloud-based help that permitted designers to
+            integrate AI into their applications.</li>
+        <li>Confined Boltzmann Machines (RBMs), a kind of generative brain organization, acquired consideration for
+            their capacity to demonstrate complex information conveyances.</li>
+    </ul>
+    <p><strong>2009:</strong></p>
+    <ul class="points">
+        <li>Profound learning gained ground as analysts showed its viability in different errands, including discourse
+            acknowledgment and picture grouping.</li>
+        <li>The expression "Large Information" acquired ubiquity, featuring the difficulties and open doors related with
+            taking care of huge datasets.</li>
+    </ul>
+    <p><strong>2010:</strong></p>
+    <ul class="points">
+        <li>The ImageNet Huge Scope Visual Acknowledgment Challenge (ILSVRC) was presented, driving progressions in PC
+            vision, and prompting the advancement of profound convolutional brain organizations (CNNs).</li>
+    </ul>
+    <p><strong>2011:</strong></p>
+    <ul class="points">
+        <li>On Jeopardy! IBM's Watson defeated human champions., demonstrating the potential of question-answering
+            systems and natural language processing.</li>
+    </ul>
+    <p><strong>2012:</strong></p>
+    <ul class="points">
+        <li>AlexNet, a profound CNN created by Alex Krizhevsky, won the ILSVRC, fundamentally further developing picture
+            order precision and laying out profound advancing as a predominant methodology in PC vision.</li>
+        <li>Google's Cerebrum project, drove by Andrew Ng and Jeff Dignitary, utilized profound figuring out how to
+            prepare a brain organization to perceive felines from unlabeled YouTube recordings.</li>
+    </ul>
+    <p>2013:</p>
+    <ul class="points">
+        <li>Ian Goodfellow introduced generative adversarial networks (GANs), which made it possible to create realistic
+            synthetic data.</li>
+        <li>Google later acquired the startup DeepMind Technologies, which focused on deep learning and artificial
+            intelligence.</li>
+    </ul>
+    <p><strong>2014:</strong></p>
+    <ul class="points">
+        <li>Facebook presented the DeepFace framework, which accomplished close human precision in facial
+            acknowledgment.</li>
+        <li>AlphaGo, a program created by DeepMind at Google, defeated a world champion Go player and demonstrated the
+            potential of reinforcement learning in challenging games.</li>
+    </ul>
+    <p><strong>2015:</strong></p>
+    <ul class="points">
+        <li>Microsoft delivered the Mental Toolbox (previously known as CNTK), an open-source profound learning library.
+        </li>
+        <li>The performance of sequence-to-sequence models in tasks like machine translation was enhanced by the
+            introduction of the idea of attention mechanisms.</li>
+    </ul>
+    <p><strong>2016:</strong></p>
+    <ul class="points">
+        <li>The goal of explainable AI, which focuses on making machine learning models easier to understand, received
+            some attention.</li>
+        <li>Google's DeepMind created AlphaGo Zero, which accomplished godlike Go abilities to play without human
+            information, utilizing just support learning.</li>
+    </ul>
+    <p><strong>2017:</strong></p>
+    <ul class="points">
+        <li>Move learning acquired noticeable quality, permitting pretrained models to be utilized for different errands
+            with restricted information.</li>
+        <li>Better synthesis and generation of complex data were made possible by the introduction of generative models
+            like variational autoencoders (VAEs) and Wasserstein GANs.</li>
+        <li>These are only a portion of the eminent headways and achievements in AI during the predefined period. The
+            field kept on advancing quickly past 2017, with new leap forwards, strategies, and applications arising.
+        </li>
+    </ul>
+    <h2 class="h3">Machine Learning at present:</h2>
+    <p>The field of machine learning has made significant strides in recent years, and its applications are numerous,
+        including self-driving cars, Amazon Alexa, Catboats, and the recommender system. It incorporates clustering,
+        classification, decision tree, SVM algorithms, and reinforcement learning, as well as unsupervised and
+        supervised learning.</p>
+    <p>Present day AI models can be utilized for making different expectations, including climate expectation, sickness
+        forecast, financial exchange examination, and so on.</p>
+    <h2 class="h2">Prerequisites</h2>
+    <p>Before learning machine learning, you must have the basic knowledge of followings so that you can easily
+        understand the concepts of machine learning:</p>
+    <ul class="points">
+        <li>Fundamental knowledge of probability and linear algebra.</li>
+        <li>The ability to code in any computer language, especially in Python language.</li>
+        <li>Knowledge of Calculus, especially derivatives of single variable and multivariate functions.</li>
+    </ul>
+    <h2 class="h2">Audience</h2>
+    <p>Our Machine learning tutorial is designed to help beginner and professionals.</p>
+    <h2 class="h2">Problems</h2>
+    <p>We assure you that you will not find any difficulty while learning our Machine learning tutorial. But if there is
+        any mistake in this tutorial, kindly post the problem or error in the contact form so that we can improve it.
+    </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="2_application_of_ml.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

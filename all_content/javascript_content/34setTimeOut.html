@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>setTimeoutss</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item" href="8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item active-submenu" href="34setTimeOut.html">JS setTimeOut</a>
+                                </li>
+                                <li><a class="dropdown-item" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">JavaScript setTimeout() method</h1>
+    <p>The <strong>setTimeout()</strong> method in JavaScript is used to execute a function after waiting for the
+        specified time interval. This method returns a numeric value that represents the ID value of the timer.</p>
+    <p>Unlike the <strong>setInterval()</strong> method, the <strong>setTimeout()</strong> method executes the function
+        only once. This method can be written with or without the <strong><em>window</em></strong> prefix.</p>
+    <p>We can use the <strong>clearTimeout()</strong> method to stop the timeout or to prevent the execution of the
+        function specified in the <strong>setTimeout()</strong> method. The value returned by the
+        <strong>setTimeout()</strong> method can be used as the argument of the <strong>clearTimeout()</strong> method
+        to cancel the timer.
+    </p>
+    <p>The commonly used syntax of the <strong>setTimeout()</strong> method is given below.</p>
+    <h3 class="h3">Syntax</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+window.setTimeout(function, milliseconds);
+</textarea></div>
+    <h3 class="h3">Parameter values</h3>
+    <p>This method takes two parameter values <strong><em>function</em></strong> and
+        <strong><em>milliseconds</em></strong> that are defined as follows.
+    </p>
+    <p><strong>function:</strong> It is the function containing the block of code that will be executed.</p>
+    <p><strong>milliseconds:</strong> This parameter represents the time-interval after which the execution of the
+        function takes place. The interval is in milliseconds. Its default value is 0. It defines how often the code
+        will be executed. If it is not specified, the value <strong>0</strong> is used.</p>
+    <p>Let's understand the use of <strong>setTimeout()</strong> method by using some illustrations.</p>
+    <h3 class="h3">Example1</h3>
+    <p>This is a simple example of using the <strong>setTimeout()</strong> method. Here, an alert dialog box will
+        display at an interval of two seconds. We are not using any method to prevent the execution of the function
+        specified in <strong>setTimeout()</strong> method. So the <strong>setTimeout()</strong> method executes the
+        specified function only once, after the given time interval.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; setTimeout() method &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; Hello World :) :) &lt;/h1&gt;
+&lt;h3&gt; This is an example of using the setTimeout() method &lt;/h3&gt;
+&lt;p&gt; Here, an alert dialog box will display after two seconds. &lt;/p&gt;
+
+&lt;script&gt;
+
+var a;
+
+a = setTimeout(fun, 2000);
+
+function fun() {
+alert(" Welcome to the javaTpoint.com ");
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-settimeout-method1"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-settimeout-method.png"
+        alt="JavaScript setTimeout() method" />
+    <p>After an interval of two seconds, the output will be -</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-settimeout-method2.png"
+        alt="JavaScript setTimeout() method" />
+    <h3 class="h3">Example2</h3>
+    <p>It is another example of using the <strong>setTimeout()</strong> method. Here, a new tab opens after a time
+        interval of two seconds and gets close after two seconds of opening. We are using the
+        <strong>window.open()</strong> method to open a new tab and <strong>window.close()</strong> method to close the
+        opened tab.
+    </p>
+    <p>Because we are not using any method to prevent the execution of the function specified in
+        <strong>setTimeout()</strong> method. So the function gets execute only once, after the given time interval.
+    </p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; setTimeout() method &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; Hello World :) :) &lt;/h1&gt;
+&lt;h3&gt; This is an example of using the setTimeout() method &lt;/h3&gt;
+&lt;p&gt; Here, a new tab will open after 2 seconds and close after 2 seconds. &lt;/p&gt;
+
+&lt;script&gt;
+var a = setTimeout(fun1, 2000);
+function fun1()
+{
+var win1 = window.open();
+win1.document.write(" &lt;h2&gt; Welcome to the javaTpoint.com &lt;/h2&gt;");
+setTimeout(function(){win1.close()}, 2000);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-settimeout-method2"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-settimeout-method3.png"
+        alt="JavaScript setTimeout() method" />
+    <p>After two seconds, a new tab will open as follows -</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-settimeout-method3.png"
+        alt="JavaScript setTimeout() method" />
+    <p>The new tab is closed after the interval of two seconds.</p>
+    <h3 class="h3">Example3</h3>
+    <p>In the above examples, we have not used any method to prevent the execution of function specified in
+        <strong>setTimeout()</strong>. Here, we are using the <strong>clearTimeout()</strong> method to stop the
+        function's execution.
+    </p>
+    <p>We have to click the given <strong><em>stop</em></strong> button before two seconds to see the effect.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; setTimeout() method &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; Hello World :) :) &lt;/h1&gt;
+&lt;h3&gt; This is an example of using the setTimeout() method &lt;/h3&gt;
+&lt;p&gt; Click the following button before 2 seconds to see the effect. &lt;/p&gt;
+&lt;button onclick = "stop()"&gt; Stop &lt;/button&gt;
+&lt;script&gt;
+var a = setTimeout(fun1, 2000);
+function fun1()
+{
+var win1 = window.open();
+win1.document.write(" &lt;h2&gt; Welcome to the javaTpoint.com &lt;/h2&gt;");
+setTimeout(function(){win1.close()}, 2000);
+}
+function stop() {
+  clearTimeout(a);
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-settimeout-method3"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-settimeout-method4.png"
+        alt="JavaScript setTimeout() method" />
+    <p>The output will remain same if the user clicks the <strong><em>stop</em></strong> button before two seconds.
+        Otherwise, a new tab will open after two seconds and close after two seconds of opening.</p>
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="33setInterval.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="35querySelector.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Abstract Class</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Abstract class in Java</h1>
+    <p>A class which is declared with the abstract keyword is known as an abstract class in <a
+            href="java-tutorial">Java</a>. It can have abstract and non-abstract methods (method with the body).</p>
+    <p>Before learning the Java abstract class, let's understand the abstraction in Java first.</p>
+    <hr />
+    <h3 class="h2">Abstraction in Java</h3>
+    <p><strong>Abstraction</strong> is a process of hiding the implementation details and showing only functionality to
+        the
+        user.</p>
+    <p>Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS
+        where you type the text and send the message. You don't know the internal processing about the message delivery.
+    </p>
+    <p>Abstraction lets you focus on what the <a href="object-and-class-in-java">object</a> does instead of how it does
+        it.
+    </p>
+    <h3 class="h4">Ways to achieve Abstraction</h3>
+    <p>There are two ways to achieve abstraction in java</p>
+    <ol>
+        <li>Abstract class (0 to 100%)</li>
+        <li>Interface (100%)</li>
+    </ol>
+    <hr />
+    
+    <h3 class="h2">Abstract class in Java</h3>
+    <p>A class which is declared as abstract is known as an <strong>abstract class</strong>. It can have abstract and
+        non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.</p>
+    <h4 class="h4">Points to Remember</h4>
+    <ul class="points">
+        <li>An abstract class must be declared with an abstract keyword.</li>
+        <li>It can have abstract and non-abstract methods.</li>
+        <li>It cannot be instantiated.</li>
+        <li>It can have <a href="java-constructor">constructors</a> and static methods also.</li>
+        <li>It can have final methods which will force the subclass not to change the body of the method.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/images/abstract-class-in-java.jpg" alt="Rules for Java Abstract class" />
+    
+    <h3 class="h3ex">Example of Abstract class that has an abstract method</h3>
+    <p>In this example, Bike is an abstract class that contains only one abstract method run. Its implementation is
+        provided
+        by the Honda class.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+ abstract class Bike{
+   abstract void run();
+ }
+ class Honda4 extends Bike{
+ void run(){System.out.println("running safely");}
+ public static void main(String args[]){
+  Bike obj = new Honda4();
+  obj.run();
+ }
+ }
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Honda4" target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+running safely
+</pre>
+    </div>
+    <hr />
+    <h3 class="h2">Understanding the real scenario of Abstract class</h3>
+    <p>In this example, Shape is the abstract class, and its implementation is provided by the Rectangle and Circle
+        classes.
+    </p>
+    <p>Mostly, we don't know about the implementation class (which is hidden to the end user), and an object of the
+        implementation class is provided by the <strong>factory method</strong>.</p>
+    <p>A <strong>factory method</strong> is a method that returns the instance of the class. We will learn about the
+        factory
+        method later.</p>
+    <p>In this example, if you create the instance of Rectangle class, draw() method of Rectangle class will be invoked.
+    </p>
+    <p class="filename">File: TestAbstraction1.java</p>
+    <div class="codeblock"><textarea name="code" class="java">
+abstract class Shape{
+abstract void draw();
+}
+//In real scenario, implementation is provided by others i.e. unknown by end user
+class Rectangle extends Shape{
+void draw(){System.out.println("drawing rectangle");}
+}
+class Circle1 extends Shape{
+void draw(){System.out.println("drawing circle");}
+}
+//In real scenario, method is called by programmer or user
+class TestAbstraction1{
+public static void main(String args[]){
+Shape s=new Circle1();//In a real scenario, object is provided through method, e.g., getShape() method
+s.draw();
+}
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestAbstraction1"
+            target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+drawing circle
+</pre>
+    </div>
+    <hr />
+    <h3 class="h2">Another example of Abstract class in java</h3>
+    <p class="filename">File: TestBank.java</p>
+    <div class="codeblock"><textarea name="code" class="java">
+abstract class Bank{  
+abstract int getRateOfInterest();  
+}  
+class SBI extends Bank{  
+int getRateOfInterest(){return 7;}  
+}  
+class PNB extends Bank{  
+int getRateOfInterest(){return 8;}  
+}  
+  
+class TestBank{  
+public static void main(String args[]){  
+Bank b;
+b=new SBI();
+System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");  
+b=new PNB();
+System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");  
+}}  
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestBank" target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+Rate of Interest is: 7 %
+Rate of Interest is: 8 %
+</pre>
+    </div>
+    <hr />
+    <h3 class="h2">Abstract class having constructor, data member and methods</h3>
+    <p> An abstract class can have a data member, abstract method, method body (non-abstract method), constructor, and
+        even
+        main() method.</p>
+    <p class="filename">File: TestAbstraction2.java</p>
+    <div class="codeblock"><textarea name="code" class="java">
+//Example of an abstract class that has abstract and non-abstract methods
+ abstract class Bike{
+   Bike(){System.out.println("bike is created");}
+   abstract void run();
+   void changeGear(){System.out.println("gear changed");}
+ }
+//Creating a Child class which inherits Abstract class
+ class Honda extends Bike{
+ void run(){System.out.println("running safely..");}
+ }
+//Creating a Test class which calls abstract and non-abstract methods
+ class TestAbstraction2{
+ public static void main(String args[]){
+  Bike obj = new Honda();
+  obj.run();
+  obj.changeGear();
+ }
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestAbstraction2"
+            target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+       bike is created
+       running safely..
+       gear changed
+</pre>
+    </div>
+    <hr />
+    <h4 class="n">Rule: If there is an abstract method in a class, that class must be abstract.</h4>
+    <div class="codeblock"><textarea name="code" class="java">
+   class Bike12{
+   abstract void run();
+   }
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Bike12" target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+compile time error
+</pre>
+    </div>
+    <h4 class="n">Rule: If you are extending an abstract class that has an abstract method, you must either provide the
+        implementation of the method or make this class abstract.</h4>
+    <hr />
+    <h3 class="h2">Another real scenario of abstract class</h3>
+    <p>The abstract class can also be used to provide some implementation of the <a
+            href="interface-in-java">interface</a>.
+        In such case, the end user may not be forced to override all the methods of the interface.</p>
+    <h4 id="r">Note: If you are beginner to java, learn interface first and skip this example.</h4>
+    <div class="codeblock"><textarea name="code" class="java">
+interface A{
+void a();
+void b();
+void c();
+void d();
+}
+
+abstract class B implements A{
+public void c(){System.out.println("I am c");}
+}
+
+class M extends B{
+public void a(){System.out.println("I am a");}
+public void b(){System.out.println("I am b");}
+public void d(){System.out.println("I am d");}
+}
+
+class Test5{
+public static void main(String args[]){
+A a=new M();
+a.a();
+a.b();
+a.c();
+a.d();
+}}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Test5" target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+Output:I am a
+       I am b
+       I am c
+       I am d
+</pre>
+    </div>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="38runtime_polymorfism.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="40interface.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

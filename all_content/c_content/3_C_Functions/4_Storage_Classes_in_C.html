@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage class in C</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);">
+	<nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+	  <div class="container-fluid">
+		  <a class="navbar-brand" href="../../../home.html">
+			  <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+			  data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+			  aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+			  aria-labelledby="offcanvasNavbarDarkLabel">
+			  <div class="offcanvas-header">
+				  <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+					  <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+				  </h5>
+				  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+					  aria-label="Close"></button>
+			  </div>
+			  <div class="offcanvas-body">
+				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					  <li class="nav-item">
+						  <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  Programming Language
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item active-submenu" href="../../../first_page/c_page.html">C</a></li>
+							  <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+							  <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+							  <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link  dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  C Tutorials
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item " href="../1_C_Tutorials/1C_language_tutorial.html">C Language Tutorial</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/2_History_of_c_language.html">History of C language</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/3_Feature_of_c_language.html">Feature of C language</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/4_How_to_install_C.html">how to install C</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/5_First_c_program.html">First C program</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/6_Compilation_process_in_C.html">Compilation process</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/7_printf_scanf.html">Printf scanf</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/8_Variables_in_C.html">Variables in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/9_Data_types_in_c.html">Datatypes in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/10_Keywords_in_c.html">keywords in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/11_C_Identifiers.html">Identifiers in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/12_C_Operators.html">Operators in c</a></li>
+							  <li><a class="dropdown-item " href="../1_C_Tutorials/13_C_Comments.html">Comments in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/14_C_Format_specifier.html">Format Specifier in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/15_C_Escape_Sequence.html">Escape Sequence in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/16_ASCII_in_C.html">ASCII in C</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/17_Constants_in_c.html">Constants in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/18_Literals_in_c.html">Literals in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/19_Tokens_in_c.html">tokens in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/20_C_boolean.html">Boolean in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/21_Programming_Error_in_c.html">Programming errors in c</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/22_Compile_Time_Vs_Run_Time.html">Compile time Vs Run time</a></li>
+							  <li><a class="dropdown-item" href="../1_C_Tutorials/23_Conditional_Operators_in_C.html">Conditional Operators in c</a></li>
+						   
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link  dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  C Control Statements
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item " href="../2_C_Control_Statements/1_C_if-else.html">if-else</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/2_Switch_case_in_C.html">switch-case</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/3_If-else_Vs_Switch.html">If-else Vs Switch</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/4_Loop_in_C.html">Loop in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/5_Do_While_in_C.html">Do while in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/6_While_loop_in_c.html">While loop in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/7_For_loop_in_C.html">For loop in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/8_Nested_loops_in_c.html">Nested Loops in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/9_Infinite_loops_in_c.html">Infinite Loops in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/10_Break_in_C.html">Break in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/11_Continue_in_C.html">Continue in C </a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/12_Goto_in_C.html">Goto Label in C</a></li>
+							  <li><a class="dropdown-item" href="../2_C_Control_Statements/13_C_Comments">Comments</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link  dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  C Functions
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item " href="1_What_is_Function_in_C.html">what is function</a></li>
+							  <li><a class="dropdown-item" href="2_Call_by_value_or_reference_in_C.html">call by value or reference</a></li>
+							  <li><a class="dropdown-item" href="3_Recursion_in_C.html">recursion</a></li>
+							  <li><a class="dropdown-item active-submenu" href="4_Storage_Classes_in_C.html">storage classes</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  C Array
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item" href="../4_C_Array/1_1D_Array_In_C.html">1D Array</a></li>
+							  <li><a class="dropdown-item" href="../4_C_Array/2_2D_Array_in_C.html">2D Array</a></li>
+							  <li><a class="dropdown-item" href="../4_C_Array/3_Return_An_Array_in_C.html">Return an Array</a></li>
+							  <li><a class="dropdown-item" href="../4_C_Array/4_Array_to_Functions_in_C.html">Array to function</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  C Pointers
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item" href="../5_C_Pointers/1_C_pointers.html">Pointers in C</a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/2_Pointers_to_Pointers.html">Pointers to pointers</a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/3_Pointer_Arithmetic.html">Pointer arithmetic</a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/4_Dangling_pointers.html">Dangling pointers</a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/5_Sizeof()_Operator_in_C.html">sizeof( ) operator</a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/6_Constant_Pointer.html">Constant pointer</a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/7_Void_pointer.html">Void pointer </a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/8_Dereference_pointer.html">Dereference Pointer </a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/9_Null_Pointer.html">Null pointer </a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/10_Function_pointer.html">Function Pointer </a></li>
+							  <li><a class="dropdown-item" href="../5_C_Pointers/11_Function_pointer_as_Argument.html">Function Pointer as argument</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  C Strings
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item" href="../6_C_Strings/1_String_in_C.html">Strings in C </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/2_gets_&_puts.html">gets & puts </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/3_String_functions.html">String functions </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/4_c_strlen().html">strlen</a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/5_c_strcpy().html">strcpy</a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/6_c_strcat().html">strcat</a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/7_c_strcmp().html">strcmp </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/8_c_strrev().html">strrev </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/9_c_strlwr().html">strlwr </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/10_c_strupr().html">strupr </a></li>
+							  <li><a class="dropdown-item" href="../6_C_Strings/11_c_strstr().html">strstr</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							  aria-expanded="false">
+							  Web Developement
+						  </a>
+						  <ul class="dropdown-menu">
+							  <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+							  <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+							  <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="../../../about.html">About Us</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="../../../contact.html">Contact Us</a>
+					  </li>
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+  </nav>
+  <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Storage Classes in C</h1>
+    <p>Storage classes in C are used to determine the lifetime, visibility, memory location, and initial value of a variable. There are four types of storage classes in C</p>
+    <ul class="points">
+    <li>Automatic</li>
+    <li>External</li>
+    <li>Static</li>
+    <li>Register</li>
+    </ul>
+    <table class="alt">
+    <tr><th>Storage Classes</th><th>Storage Place</th><th>Default Value</th><th>Scope</th><th>Lifetime</th></tr>
+    <tr><td>auto</td><td>RAM</td><td>Garbage Value</td><td>Local</td><td>Within function</td></tr>
+    <tr><td>extern</td><td>RAM</td><td>Zero</td><td>Global</td><td>Till the end of the main program Maybe declared anywhere in the program</td></tr>
+    <tr><td>static</td><td>RAM</td><td>Zero</td><td>Local</td><td>Till the end of the main program, Retains value between multiple functions call</td></tr>
+    <tr><td>register</td><td>Register</td><td>Garbage Value</td><td>Local</td><td>Within the function</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h2">Automatic</h2>
+    <ul class="points">
+    <li>Automatic variables are allocated memory automatically at runtime.</li>
+    <li>The visibility of the automatic variables is limited to the block in which they are defined.</li>
+    <ll>The scope of the automatic variables is limited to the block in which they are defined.</ll>
+    <li>The automatic variables are initialized to garbage by default.</li>
+    <li>The memory assigned to automatic variables gets freed upon exiting from the block.</li>
+    <li>The keyword used for defining automatic variables is auto.</li>
+    <li>Every local variable is automatic in C by default.</li>
+    </ul>
+    <h4 class="h4">Example 1</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include &lt;stdio.h&gt;
+    int main()
+    {
+    int a; //auto
+    char b;
+    float c; 
+    printf("%d %c %f",a,b,c); // printing initial default value of automatic variables a, b, and c. 
+    return 0;
+    }
+    </textarea></div>
+    <p><strong>Output:</p></strong>
+    <div class="codeblock3"><pre>
+    garbage garbage garbage 
+    </pre></div>
+    <h4 class="h4">Example 2</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include &lt;stdio.h&gt;
+    int main()
+    {
+    int a = 10,i; 
+    printf("%d ",++a);
+    {
+    int a = 20; 
+    for (i=0;i&lt;3;i++)
+    {
+    printf("%d ",a); // 20 will be printed 3 times since it is the local value of a
+    }
+    }
+    printf("%d ",a); // 11 will be printed since the scope of a = 20 is ended. 
+    }
+    </textarea></div>
+    <p><strong>Output:</p></strong>
+    <div class="codeblock3"><pre>
+      11 20 20 20 11
+    </pre></div>
+    <h2 class="h2">Static</h2>
+    <ul class="points">
+    <li>The variables defined as static specifier can hold their value between the multiple function calls.</li>
+    <li>Static local variables are visible only to the function or the block in which they are defined.</li>
+    <li>A same static variable can be declared many times but can be assigned at only one time.</li>
+    <li>Default initial value of the static integral variable is 0 otherwise null.</li>
+    <li>The visibility of the static global variable is limited to the file in which it has declared.</li>
+    <li>The keyword used to define static variable is static.</li>
+    </ul>
+    <h4 class="h4">Example 1</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include&lt;stdio.h&gt;
+    static char c;
+    static int i;
+    static float f; 
+    static char s[100];
+    void main ()
+    {
+    printf("%d %d %f %s",c,i,f); // the initial default value of c, i, and f will be printed. 
+    }
+    
+    </textarea></div>
+    <p><strong>Output:</p></strong>
+    <div class="codeblock3"><pre>
+    0 0 0.000000 (null)
+    </pre></div>
+    <h4 class="h4">Example 2</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include<stdio.h>
+    void sum()
+    {
+    static int a = 10;
+    static int b = 24; 
+    printf("%d %d \n",a,b);
+    a++; 
+    b++;
+    }
+    void main()
+    {
+    int i;
+    for(i = 0; i< 3; i++)
+    {
+    sum(); // The static variables holds their value between multiple function calls.  
+    }
+    }
+    
+    </textarea></div>
+    <p><strong>Output:</p></strong>
+    <div class="codeblock3"><pre>
+    10 24 
+    11 25 
+    12 26 
+    </pre></div>
+    <h2 class="h2">Register</h2>
+    <ul class="points">
+    <li>The variables defined as the register is allocated the memory into the CPU registers depending upon the size of the memory remaining in the CPU.</li>
+    <li>We can not dereference the register variables, i.e., we can not use &operator for the register variable.</li>
+    <li>The access time of the register variables is faster than the automatic variables.</li>
+    <li>The initial default value of the register local variables is 0.</li>
+    <li>The register keyword is used for the variable which should be stored in the CPU register. However, it is compiler?s choice whether or not; the variables can be stored in the register.</li>
+    <li>We can store pointers into the register, i.e., a register can store the address of a variable.</li>
+    <li>Static variables can not be stored into the register since we can not use more than one storage specifier for the same variable.</li>
+    </ul>
+    <h4 class="h4">Example 1</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include &lt;stdio.h&gt;
+    int main()
+    {
+    register int a; // variable a is allocated memory in the CPU register. The initial default value of a is 0. 
+    printf("%d",a);
+    }
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3"><pre>
+    0
+    </pre></div>
+    <h4 class="h4">Example 2</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include &lt;stdio.h&gt;
+    int main()
+    {
+    register int a = 0; 
+    printf("%u",&a); // This will give a compile time error since we can not access the address of a register variable. 
+    }
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3"><pre>
+    main.c:5:5: error: address of register variable ?a? requested
+    printf("%u",&a);
+    ^~~~~~
+    </pre></div>
+    <h2 class="h2">External</h2>
+    <ul class="points">
+    <li>The external storage class is used to tell the compiler that the variable defined as extern is declared with an external linkage elsewhere in the program.</li>
+    <li>The variables declared as extern are not allocated any memory. It is only declaration and intended to specify that the variable is declared elsewhere in the program.</li>
+    <li>The default initial value of external integral type is 0 otherwise null.</li>
+    <li>We can only initialize the extern variable globally, i.e., we can not initialize the external variable within any block or method.
+    <li>An external variable can be declared many times but can be initialized at only once.</li>
+    <li>If a variable is declared as external then the compiler searches for that variable to be initialized somewhere in the program which may be extern or static. If it is not, then the compiler will show an error.</li>
+    </ul>
+    <h4 class="h4">Example 1</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include &lt;stdio.h&gt;
+    int main()
+    {
+    extern int a; 
+    printf("%d",a);
+    }
+    </textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3"><pre>
+    main.c:(.text+0x6): undefined reference to `a'
+    collect2: error: ld returned 1 exit status
+    </pre></div>
+    <h4 class="h4">Example 2</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include <stdio.h>
+    int a; 
+    int main()
+    {
+    extern int a; // variable a is defined globally, the memory will not be allocated to a
+    printf("%d",a);
+    }
+    
+    </textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3"><pre>
+    0
+    </pre></div>
+    <h4 class="h4">Example 3</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include <stdio.h>
+    int a; 
+    int main()
+    {
+    extern int a = 0; // this will show a compiler error since we can not use extern and initializer at same time 
+    printf("%d",a);
+    }
+    
+    </textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3"><pre>
+    compile time error 
+    main.c: In function ?main?:
+    main.c:5:16: error: ?a? has both ?extern? and initializer
+    extern int a = 0;
+    </pre></div>
+    <h4 class="h4">Example 4</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    #include <stdio.h>
+    int main()
+    {
+    extern int a; // Compiler will search here for a variable a defined and initialized somewhere in the pogram or not. 
+    printf("%d",a);
+    }
+    int a = 20;
+    </textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3"><pre>
+    20
+    </pre></div>
+    <h4 class="h4">Example 5</h4>
+    <div class="codeblock"><textarea name="code" class="Cpp">
+    extern int a;
+    int a = 10; 
+    #include <stdio.h>
+    int main()
+    {
+    printf("%d",a);
+    }
+    int a = 20; // compiler will show an error at this line 
+    </textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3"><pre>
+    compile time error 
+    </pre></div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+      <a href="3_Recursion_in_C.html"><button class="btn btn-danger" type="button">Previous</button></a>
+      <!-- <a href="2_Call_by_value_or_reference_in_C.html"><button class="btn btn-success" type="button">Next</button></a> -->
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

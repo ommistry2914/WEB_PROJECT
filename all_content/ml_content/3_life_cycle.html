@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Life Cycle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item active-submenu" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Machine learning Life cycle</h1>
+    <p>Machine learning has given the computer systems the abilities to automatically learn without being explicitly
+        programmed. But how does a machine learning system work? So, it can be described using the life cycle of machine
+        learning. Machine learning life cycle is a cyclic process to build an efficient machine learning project. The
+        main purpose of the life cycle is to find a solution to the problem or project.</p>
+    <p>Machine learning life cycle involves seven major steps, which are given below:</p>
+    <ul class="points">
+        <li><strong>Gathering Data</strong></li>
+        <li><strong>Data preparation</strong></li>
+        <li><strong>Data Wrangling</strong></li>
+        <li><strong>Analyse Data</strong></li>
+        <li><strong>Train the model</strong></li>
+        <li><strong>Test the model</strong></li>
+        <li><strong>Deployment</strong></li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-life-cycle.png"
+        alt="Machine learning Life cycle" />
+    <p>The most important thing in the complete process is to understand the problem and to know the purpose of the
+        problem. Therefore, before starting the life cycle, we need to understand the problem because the good result
+        depends on the better understanding of the problem.</p>
+    <p>In the complete life cycle process, to solve a problem, we create a machine learning system called "model", and
+        this model is created by providing "training". But to train a model, we need data, hence, life cycle starts by
+        collecting data.</p>
+    <hr />
+    <h2 class="h2">1. Gathering Data:</h2>
+    <p>Data Gathering is the first step of the machine learning life cycle. The goal of this step is to identify and
+        obtain all data-related problems.</p>
+    <p>In this step, we need to identify the different data sources, as data can be collected from various sources such
+        as <strong>files</strong>, <strong>database</strong>, <strong>internet</strong>, or <strong>mobile
+            devices</strong>. It is one of the most important steps of the life cycle. The quantity and quality of the
+        collected data will determine the efficiency of the output. The more will be the data, the more accurate will be
+        the prediction.</p>
+    <p>This step includes the below tasks:</p>
+    <ul class="points">
+        <li><strong>Identify various data sources</strong></li>
+        <li><strong>Collect data</strong></li>
+        <li><strong>Integrate the data obtained from different sources</strong></li>
+    </ul>
+    <p>By performing the above task, we get a coherent set of data, also called as a <strong>dataset</strong>. It will
+        be used in further steps. </p>
+    <hr />
+    <h2 class="h2">2. Data preparation</h2>
+    <p>After collecting the data, we need to prepare it for further steps. Data preparation is a step where we put our
+        data into a suitable place and prepare it to use in our machine learning training.</p>
+    <p>In this step, first, we put all data together, and then randomize the ordering of data.</p>
+    <p>This step can be further divided into two processes:</p>
+    <ul class="points">
+        <li><strong>Data exploration:</strong><br>
+            It is used to understand the nature of data that we have to work with. We need to understand the
+            characteristics, format, and quality of data.<br>
+            A better understanding of data leads to an effective outcome. In this, we find Correlations, general trends,
+            and outliers.</li>
+        <li><strong>Data pre-processing:</strong><br>
+            Now the next step is preprocessing of data for its analysis.</li>
+    </ul>
+    <hr />
+    <h2 class="h2">3. Data Wrangling</h2>
+    <p>Data wrangling is the process of cleaning and converting raw data into a useable format. It is the process of
+        cleaning the data, selecting the variable to use, and transforming the data in a proper format to make it more
+        suitable for analysis in the next step. It is one of the most important steps of the complete process. Cleaning
+        of data is required to address the quality issues.</p>
+    <p>It is not necessary that data we have collected is always of our use as some of the data may not be useful. In
+        real-world applications, collected data may have various issues, including:</p>
+    <ul class="points">
+        <li><strong>Missing Values</strong></li>
+        <li><strong>Duplicate data </strong></li>
+        <li><strong>Invalid data</strong></li>
+        <li><strong>Noise</strong></li>
+    </ul>
+    <p>So, we use various filtering techniques to clean the data.</p>
+    <p>It is mandatory to detect and remove the above issues because it can negatively affect the quality of the
+        outcome.</p>
+    <hr />
+    <h2 class="h2">4. Data Analysis</h2>
+    <p>Now the cleaned and prepared data is passed on to the analysis step. This step involves:</p>
+    <ul class="points">
+        <li><strong>Selection of analytical techniques</strong></li>
+        <li><strong>Building models</strong></li>
+        <li><strong>Review the result</strong></li>
+    </ul>
+    <p>The aim of this step is to build a machine learning model to analyze the data using various analytical techniques
+        and review the outcome. It starts with the determination of the type of the problems, where we select the
+        machine learning techniques such as <strong>Classification</strong>, <strong>Regression</strong>,
+        <strong>Cluster analysis</strong>, <strong>Association</strong>, etc. then build the model using prepared data,
+        and evaluate the model.</p>
+    <p>Hence, in this step, we take the data and use machine learning algorithms to build the model.</p>
+    <hr />
+    <h2 class="h2">5. Train Model</h2>
+    <p>Now the next step is to train the model, in this step we train our model to improve its performance for better
+        outcome of the problem.</p>
+    <p>We use datasets to train the model using various machine learning algorithms. Training a model is required so
+        that it can understand the various patterns, rules, and, features.</p>
+    <hr />
+    <h2 class="h2">6. Test Model</h2>
+    <p>Once our machine learning model has been trained on a given dataset, then we test the model. In this step, we
+        check for the accuracy of our model by providing a test dataset to it.</p>
+    <p>Testing the model determines the percentage accuracy of the model as per the requirement of project or problem.
+    </p>
+    <hr />
+    <h2 class="h2">7. Deployment</h2>
+    <p>The last step of machine learning life cycle is deployment, where we deploy the model in the real-world system.
+    </p>
+    <p>If the above-prepared model is producing an accurate result as per our requirement with acceptable speed, then we
+        deploy the model in the real system. But before deploying the project, we will check whether it is improving its
+        performance using available data or not. The deployment phase is similar to making the final report for a
+        project. </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="2_application_of_ml.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="4_installing_anaconda_python.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

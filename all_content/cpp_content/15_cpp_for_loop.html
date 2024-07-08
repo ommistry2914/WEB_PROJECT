@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>C++ For Loop</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item active-submenu" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ For Loop</h1>
+    <p>The C++ for loop is used to iterate a part of the program several times. If the number of iteration is fixed, it
+        is recommended to use for loop than while or do-while loops.</p>
+    <p>The C++ for loop is same as C/C#. We can initialize variable, check condition and increment/decrement value.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+for(initialization; condition; incr/decr){  
+//code to be executed  
+}  
+</textarea></div>
+    <p><strong>Flowchart:</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-for-loop1.png" alt="Cpp For loop 1" />
+    <hr />
+    <h2 class="h2">C++ For Loop Example</h2>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main() {
+         for(int i=1;i<=10;i++){    
+            cout&lt;&lt;i &lt;&lt;"\n";    
+          }     
+    } 
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ Nested For Loop</h2>
+    <p>In C++, we can use for loop inside another for loop, it is known as nested for loop. The inner loop is executed
+        fully when outer loop is executed one time. So if outer loop and inner loop are executed 4 times, inner loop
+        will be executed 4 times for each outer loop i.e. total 16 times.</p>
+    <hr />
+    <h2 class="h2">C++ Nested For Loop Example</h2>
+    <p>Let's see a simple example of nested for loop in C++.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+ 
+int main () {
+        for(int i=1;i<=3;i++){    
+             for(int j=1;j<=3;j++){    
+            cout&lt;&lt;i&lt;&lt;" "&lt;&lt;j&lt;&lt;"\n";    
+          }   
+        }
+    }  
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+1 1
+1 2
+1 3
+2 1
+2 2 
+2 3
+3 1
+3 2
+3 3
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ Infinite For Loop</h2>
+    <p>If we use double semicolon in for loop, it will be executed infinite times. Let's see a simple example of
+        infinite for loop in C++.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include <iostream>
+using namespace std;
+ 
+int main () {
+        for (; ;)  
+          {  
+                  cout<<"Infinitive For Loop";  
+          }  
+    }  
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Infinitive For Loop
+Infinitive For Loop
+Infinitive For Loop
+Infinitive For Loop
+Infinitive For Loop
+ctrl+c
+</pre>
+    </div>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="14_cpp_switch.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="16_cpp_while_loop.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+    <style>
+        .g-link{
+            font-size: large;
+            color: green;
+        }
+        .g-link:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home.html">
+                <img src="icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../all_content/ml_content/1_what_is_machine_learning.html">What is Machine
+                                        Learning</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/2_application_of_ml.html">Applications of ML</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/3_life_cycle.html">Machine
+                                        Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/4_installing_anaconda_python.html">Installing
+                                        Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/5_ai_vs_ml.html">Artificial
+                                        Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/7_data_preprocessing.html">Data
+                                        preprocessing</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/8_supervised_learning.html">Supervised
+                                        Learning</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/9_unsupervised_learning.html">Unsupervised
+                                        Learning</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/10_supervised_vs_unsupervised.html">Supervised
+                                        Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/11_regression_analysis.html">Regression
+                                        Analysis</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/12_linear_regression.html">Linear Regression</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/13_simple_linear_regression.html">Simple Linear
+                                        Regression</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/14_multiple_linear_regression.html">Multiple
+                                        Linear Regression</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/15_polynomial_regression.html">Polynomial
+                                        Regression</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/16_classification_algorithm.html">Classification</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/17_logistic_regression.html">Logistic
+                                        Regression</a></li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/18_knn.html">KNN
+                                        Algorithm</a></li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/19_svm.html">Support Vector
+                                        Machine</a></li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/20_naive_bayes.html">Naive
+                                        Bayes</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/21_regression_vs_classification.html">Regression
+                                        vs Classification</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/22_linear_reg_vs_logistic_reg.html">Linear
+                                        Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/26_k_means_clustering.html">K-Means
+                                        Clustering</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/27_confusion_matrix.html">Confusion Matrix</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/28_cross_validation.html">Cross Validation</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/29_dimensionality_reduction.html">Dimensionality
+                                        Reduction</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/30_overfitting_underfitting.html">Overfitting &
+                                        Underfitting</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/31_principle_component_analysis.html">Principle
+                                        Component Analysis</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/33_regularization.html">Regularization in ML</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/35_bias_variance.html">Bias
+                                        & Variance</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/36_gradient_descent.html">Gradient Descent</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../all_content/ml_content/37_cost_function.html">Cost
+                                        Function</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/38_normalization.html">Normalization in ML</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/39_epoch_batch_iterations.html">Epoch, Batch &
+                                        Iterations</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/40_feature_engineering.html">Feature
+                                        Engineering</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/42_data_science_vs_ml.html">Data Science vs
+                                        Machine Learning</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/ml_content/43_ml_vs_deep_learning.html">Machine Learning vs
+                                        Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-8">
+                <p>
+
+                    Machine learning is a subset of artificial intelligence that enables computers to learn and improve
+                    from experience. It involves algorithms that analyze data, identify patterns, and make predictions
+                    or decisions without explicit programming. By training on vast datasets, machine learning models can
+                    recognize complex patterns and adapt to new information, allowing them to handle tasks such as image
+                    recognition, natural language processing, and recommendation systems.
+
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <img src="logo/ml_logo.png" alt="Html" style="height: 120px; width: 180px;">
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="mt-4 mb-5">Information About Machine Learning</h2>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>1. Learning from Data:</h4>
+                <ul>
+                    <li>At the core of machine learning is the idea of learning from data. ML algorithms are designed to
+                        analyze and
+                        learn patterns, relationships, and insights from large datasets.</li>
+                </ul>
+
+
+            </div>
+            <div class="col-lg-6">
+
+
+                <h4>2. Types of Learning:</h4>
+                <ul>
+                    <li><strong>Supervised Learning:</strong> In supervised learning, algorithms are trained on labeled
+                        data, where
+                        the correct answers are provided. The goal is to learn a mapping from input to output.</li>
+                    <li><strong>Unsupervised Learning:</strong> Unsupervised learning deals with unlabeled data.
+                        Algorithms aim to
+                        discover hidden patterns or structures within the data, such as clustering similar data points
+                        together.
+                    </li>
+                    <li><strong>Reinforcement Learning:</strong> Reinforcement learning involves agents that learn to
+                        make decisions
+                        by interacting with an environment. They receive feedback in the form of rewards or penalties to
+                        improve
+                        their decision-making.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+
+                <h4>3. Algorithms and Models:</h4>
+                <ul>
+                    <li>ML employs various algorithms and models, such as decision trees, neural networks, support
+                        vector machines,
+                        and more. Each algorithm has its strengths and weaknesses, making it suitable for different
+                        tasks.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+
+                <h4>4. Feature Engineering:</h4>
+                <ul>
+                    <li>Feature engineering is the process of selecting and transforming the relevant attributes or
+                        features from
+                        the data to improve the model's performance. It requires domain knowledge and creativity.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>5. Training and Testing:</h4>
+                <ul>
+                    <li>Machine learning models undergo training using a portion of the data. The trained models are
+                        then tested on
+                        unseen data to evaluate their performance and generalization ability.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+
+                <h4>6. Applications:</h4>
+                <ul>
+                    <li>Machine learning has a wide range of applications, including Natural Language Processing (NLP),
+                        Computer
+                        Vision, Healthcare, Finance, Recommendation Systems, Autonomous Systems, Industrial Automation,
+                        and more.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+
+                <h4>7. Deep Learning:</h4>
+                <ul>
+                    <li>Deep learning is a subset of machine learning that focuses on neural networks with multiple
+                        layers (deep
+                        neural networks). It has revolutionized areas like image and speech recognition, natural
+                        language
+                        processing, and more.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>8. Big Data:</h4>
+                <ul>
+                    <li>Machine learning often deals with big data, where traditional data analysis methods fall short.
+                        ML
+                        algorithms can process and extract insights from vast datasets efficiently.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>9. Evaluation Metrics:</h4>
+                <ul>
+                    <li>ML models are assessed using various evaluation metrics, such as accuracy, precision, recall,
+                        F1-score, and
+                        mean squared error, depending on the task at hand.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>10. Model Interpretability:</h4>
+                <ul>
+                    <li>Interpreting ML models is a crucial concern. Understanding why a model made a specific
+                        prediction is
+                        essential, especially in sensitive applications like healthcare and finance.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+
+                <h4>11. Ethical Considerations:</h4>
+                <ul>
+                    <li>ML raises ethical questions related to bias, fairness, transparency, and privacy. Addressing
+                        these concerns
+                        is essential for responsible AI development.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+
+                <h4>12. Continuous Learning:</h4>
+                <ul>
+                    <li>ML models require ongoing monitoring and updates to adapt to changing data distributions and
+                        maintain their
+                        accuracy and relevance.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <hr>
+        <!-- <div class="row mt-4 mb-3">
+            <h4>Summary</h4>
+            <p class="mt-2">
+
+                In summary, HTML is the foundation of web development, providing the structure and content for web
+                pages. It is an essential skill for web developers and anyone looking to create content for the
+                internet. When combined with CSS and JavaScript, HTML forms the core technologies used to build modern,
+                interactive, and visually appealing websites and web applications.
+
+            </p>
+        </div>
+        <hr> -->
+        <h2 class="mt-4 mb-2">Useful Website References</h2>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.geeksforgeeks.org/machine-learning/" target="_blank" class="g-link">GeeksforGeeks ML Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.kaggle.com/learn/intro-to-machine-learning" target="_blank" class="g-link">Kaggle ML Tutorial</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.w3schools.com/python/python_ml_getting_started.asp" target="_blank" class="g-link">w3schools ML Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.tutorialspoint.com/machine_learning/index.htm" target="_blank" class="g-link">Tutorialspoint ML Tutorial</a>
+            </div>
+        </div>
+        <div class="mb-5"></div>
+        <hr>
+
+        <h2 class="mt-4 mb-5"><a href="../all_content/ml_content/1_what_is_machine_learning.html">Start
+                Learning From Our Tutorials&nbsp;<i class="bi bi-box-arrow-in-right"></i></a></h2>
+        <hr>
+
+
+        <h2 class="mt-4 mb-5">Learn From Some Amazing YouTube Tutorials :</h2>
+
+        <div style="margin-bottom: 50px;"></div>
+
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <iframe
+                        src="https://www.youtube.com/embed/N5fSpaaxoZc"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe src="https://www.youtube.com/embed/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe
+                        src="https://www.youtube.com/embed/0g-XL0WV2xo"
+                        title=" YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div style="margin-bottom: 50px;"></div>
+
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<!-- Add Bootstrap JavaScript and jQuery for Bootstrap features (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

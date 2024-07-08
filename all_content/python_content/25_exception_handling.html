@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item active-submenu" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Exceptions</h1>
+    <p>When a Python program meets an error, it stops the execution of the rest of the program. An error in Python might
+        be either an error in the syntax of an expression or a Python exception. We will see what an exception is. Also,
+        we will see the difference between a syntax error and an exception in this tutorial. Following that, we will
+        learn about trying and except blocks and how to raise exceptions and make assertions. After that, we will see
+        the Python exceptions list.</p>
+    <h2 class="h2">What is an Exception?</h2>
+    <p>An exception in Python is an incident that happens while executing a program that causes the regular course of
+        the program's commands to be disrupted. When a Python code comes across a condition it can't handle, it raises
+        an exception. An object in Python that describes an error is called an exception.</p>
+    <p>When a Python code throws an exception, it has two options: handle the exception immediately or stop and quit.
+    </p>
+    <h3 class="h3">Exceptions versus Syntax Errors</h3>
+    <p>When the interpreter identifies a statement that has an error, syntax errors occur. Consider the following
+        scenario:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Python code after removing the syntax error
+string = "Python Exceptions"
+
+for s in string:
+    if (s != o:
+        print( s )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+    if (s != o:
+              ^
+SyntaxError: invalid syntax
+</pre>
+    </div>
+    <p>The arrow in the output shows where the interpreter encountered a syntactic error. There was one unclosed bracket
+        in this case. Close it and rerun the program:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Python code after removing the syntax error
+string = "Python Exceptions"
+
+for s in string:
+    if (s != o):
+        print( s )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+      2 string = "Python Exceptions"
+      4 for s in string:
+----> 5     if (s != o):
+      6         print( s )
+
+NameError: name 'o' is not defined
+</pre>
+    </div>
+    <p>We encountered an exception error after executing this code. When syntactically valid Python code produces an
+        error, this is the kind of error that arises. The output's last line specified the name of the exception error
+        code encountered. Instead of displaying just "exception error", Python displays information about the sort of
+        exception error that occurred. It was a NameError in this situation. Python includes several built-in
+        exceptions. However, Python offers the facility to construct custom exceptions.</p>
+    <h2 class="h2">Try and Except Statement - Catching Exceptions</h2>
+    <p>In Python, we catch exceptions and handle them using try and except code blocks. The try clause contains the code
+        that can raise an exception, while the except clause contains the code lines that handle the exception. Let's
+        see if we can access the index from the array, which is more than the array's length, and handle the resulting
+        exception.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to catch an exception and handle it using try and except code blocks
+ 
+a = ["Python", "Exceptions", "try and except"]
+try:
+    #looping through the elements of the array a, choosing a range that goes beyond the length of the array
+     for i in range( 4 ):
+        print( "The index and element from the array is", i, a[i] )
+#if an error occurs in the try block, then except block will be executed by the Python interpreter     
+except:
+    print ("Index out of range")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The index and element from the array is 0 Python
+The index and element from the array is 1 Exceptions
+The index and element from the array is 2 try and except
+Index out of range
+</pre>
+    </div>
+    <p>The code blocks that potentially produce an error are inserted inside the try clause in the preceding example.
+        The value of i greater than 2 attempts to access the list's item beyond its length, which is not present,
+        resulting in an exception. The except clause then catches this exception and executes code without stopping it.
+    </p>
+    <h2 class="h2">How to Raise an Exception</h2>
+    <p>If a condition does not meet our criteria but is correct according to the Python interpreter, we can
+        intentionally raise an exception using the raise keyword. We can use a customized exception in conjunction with
+        the statement.</p>
+    <p>If we wish to use raise to generate an exception when a given condition happens, we may do so as follows:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Python code to show how to raise an exception in Python
+num = [3, 4, 5, 7]
+if len(num) > 3:
+    raise Exception( f"Length of the given list must be less than or equal to 3 but is {len(num)}" )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+      1 num = [3, 4, 5, 7]
+      2 if len(num) > 3:
+----> 3     raise Exception( f"Length of the given list must be less than or equal to 3 but is {len(num)}" )
+
+Exception: Length of the given list must be less than or equal to 3 but is 4
+</pre>
+    </div>
+    <p>The implementation stops and shows our exception in the output, providing indications as to what went incorrect.
+    </p>
+    <h2 class="h2">Assertions in Python</h2>
+    <p>When we're finished verifying the program, an assertion is a consistency test that we can switch on or off.</p>
+    <p>The simplest way to understand an assertion is to compare it with an if-then condition. An exception is thrown if
+        the outcome is false when an expression is evaluated.</p>
+    <p>Assertions are made via the assert statement, which was added in Python 1.5 as the latest keyword.</p>
+    <p>Assertions are commonly used at the beginning of a function to inspect for valid input and at the end of calling
+        the function to inspect for valid output.</p>
+    <h3 class="h3">The assert Statement</h3>
+    <p>Python examines the adjacent expression, preferably true when it finds an assert statement. Python throws an
+        AssertionError exception if the result of the expression is false.</p>
+    <p><strong>The syntax for the assert clause is &minus;</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+assert Expressions[, Argument]
+</textarea></div>
+    <p>Python uses ArgumentException, if the assertion fails, as the argument for the AssertionError. We can use the
+        try-except clause to catch and handle AssertionError exceptions, but if they aren't, the program will stop, and
+        the Python interpreter will generate a traceback.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Python program to show how to use assert keyword
+# defining a function
+def square_root( Number ):
+    assert ( Number < 0), "Give a positive integer"
+    return Number**(1/2)
+
+#Calling function and passing the values
+print( square_root( 36 ) )
+print( square_root( -36 ) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+      7 #Calling function and passing the values
+----> 8 print( square_root( 36 ) )
+      9 print( square_root( -36 ) )
+
+Input In [23], in square_root(Number)
+      3 def square_root( Number ):
+----> 4     assert ( Number < 0), "Give a positive integer"
+      5     return Number**(1/2)
+
+AssertionError: Give a positive integer
+</pre>
+    </div>
+    <h2 class="h2">Try with Else Clause</h2>
+    <p>Python also supports the else clause, which should come after every except clause, in the try, and except blocks.
+        Only when the try clause fails to throw an exception the Python interpreter goes on to the else block.</p>
+    <p>Here is an instance of a try clause with an else clause.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how to use else clause with try and except clauses
+
+# Defining a function which returns reciprocal of a number
+def reciprocal( num1 ):
+    try:
+        reci = 1 / num1
+    except ZeroDivisionError:
+        print( "We cannot divide by zero" )
+    else:
+        print ( reci )
+# Calling the function and passing values
+reciprocal( 4 )
+reciprocal( 0 )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+0.25
+We cannot divide by zero
+</pre>
+    </div>
+    <h2 class="h2">Finally Keyword in Python</h2>
+    <p>The finally keyword is available in Python, and it is always used after the try-except block. The finally code
+        block is always executed after the try block has terminated normally or after the try block has terminated for
+        some other reason.</p>
+    <p>Here is an example of finally keyword with try-except clauses:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to show the use of finally clause
+ 
+# Raising an exception in try block
+try:
+    div = 4 // 0  
+    print( div )
+# this block will handle the exception raised
+except ZeroDivisionError:
+    print( "Atepting to divide by zero" )
+# this will always be executed no matter exception is raised or not
+finally:
+    print( 'This is code of finally clause' )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Atepting to divide by zero
+This is code of finally clause
+</pre>
+    </div>
+    <h2 class="h2">User-Defined Exceptions</h2>
+    <p>By inheriting classes from the typical built-in exceptions, Python also lets us design our customized exceptions.
+    </p>
+    <p>Here is an illustration of a RuntimeError. In this case, a class that derives from RuntimeError is produced. Once
+        an exception is detected, we can use this to display additional detailed information.</p>
+    <p>We raise a user-defined exception in the try block and then handle the exception in the except block. An example
+        of the class EmptyError is created using the variable var.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class EmptyError( RuntimeError ):
+   def __init__(self, argument):
+      self.arguments = argument
+Once the preceding class has been created, the following is how to raise an exception:
+Code
+var = " "
+try:
+    raise EmptyError( "The variable is empty" )
+except (EmptyError, var):
+    print( var.arguments )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+      2 try:
+----> 3     raise EmptyError( "The variable is empty" )
+      4 except (EmptyError, var):
+
+EmptyError: The variable is empty
+</pre>
+    </div>
+    <h2 class="h2">Python Exceptions List</h2>
+    <p>Here is the complete list of Python in-built exceptions.</p>
+    <table class="alt">
+        <tr>
+            <th>Sr.No.</th>
+            <th>Name of the Exception</th>
+            <th>Description of the Exception</th>
+        </tr>
+        <tr>
+            <td><strong>1</strong></td>
+            <td><strong>Exception</strong></td>
+            <td>All exceptions of Python have a base class.</td>
+        </tr>
+        <tr>
+            <td><strong>2</strong></td>
+            <td><strong>StopIteration</strong></td>
+            <td>If the next() method returns null for an iterator, this exception is raised.</td>
+        </tr>
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong>SystemExit</strong></td>
+            <td>The sys.exit() procedure raises this value.</td>
+        </tr>
+        <tr>
+            <td><strong>4</strong></td>
+            <td><strong>StandardError</strong></td>
+            <td>Excluding the StopIteration and SystemExit, this is the base class for all Python built-in exceptions.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>5</strong></td>
+            <td><strong>ArithmeticError</strong></td>
+            <td>All mathematical computation errors belong to this base class.</td>
+        </tr>
+        <tr>
+            <td><strong>6</strong></td>
+            <td><strong>OverflowError</strong></td>
+            <td>This exception is raised when a computation surpasses the numeric data type's maximum limit.</td>
+        </tr>
+        <tr>
+            <td><strong>7</strong></td>
+            <td><strong>FloatingPointError</strong></td>
+            <td>If a floating-point operation fails, this exception is raised.</td>
+        </tr>
+        <tr>
+            <td><strong>8</strong></td>
+            <td><strong>ZeroDivisionError</strong></td>
+            <td>For all numeric data types, its value is raised whenever a number is attempted to be divided by zero.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>9</strong></td>
+            <td><strong>AssertionError</strong></td>
+            <td>If the Assert statement fails, this exception is raised.</td>
+        </tr>
+        <tr>
+            <td><strong>10</strong></td>
+            <td><strong>AttributeError</strong></td>
+            <td>This exception is raised if a variable reference or assigning a value fails.</td>
+        </tr>
+        <tr>
+            <td><strong>11</strong></td>
+            <td><strong>EOFError</strong></td>
+            <td>When the endpoint of the file is approached, and the interpreter didn't get any input value by
+                raw_input() or input() functions, this exception is raised.</td>
+        </tr>
+        <tr>
+            <td><strong>12</strong></td>
+            <td><strong>ImportError</strong></td>
+            <td>This exception is raised if using the import keyword to import a module fails.</td>
+        </tr>
+        <tr>
+            <td><strong>13</strong></td>
+            <td><strong>KeyboardInterrupt</strong></td>
+            <td>If the user interrupts the execution of a program, generally by hitting Ctrl+C, this exception is
+                raised.</td>
+        </tr>
+        <tr>
+            <td><strong>14</strong></td>
+            <td><strong>LookupError</strong></td>
+            <td>LookupErrorBase is the base class for all search errors.</td>
+        </tr>
+        <tr>
+            <td><strong>15</strong></td>
+            <td><strong>IndexError</strong></td>
+            <td>This exception is raised when the index attempted to be accessed is not found.</td>
+        </tr>
+        <tr>
+            <td><strong>16</strong></td>
+            <td><strong>KeyError</strong></td>
+            <td>When the given key is not found in the dictionary to be found in, this exception is raised.</td>
+        </tr>
+        <tr>
+            <td><strong>17</strong></td>
+            <td><strong>NameError</strong></td>
+            <td>This exception is raised when a variable isn't located in either local or global namespace.</td>
+        </tr>
+        <tr>
+            <td><strong>18</strong></td>
+            <td><strong>UnboundLocalError</strong></td>
+            <td>This exception is raised when we try to access a local variable inside a function, and the variable has
+                not been assigned any value.</td>
+        </tr>
+        <tr>
+            <td><strong>19</strong></td>
+            <td><strong>EnvironmentError</strong></td>
+            <td>All exceptions that arise beyond the Python environment have this base class.</td>
+        </tr>
+        <tr>
+            <td><strong>20</strong></td>
+            <td><strong>IOError</strong></td>
+            <td>If an input or output action fails, like when using the print command or the open() function to access a
+                file that does not exist, this exception is raised.</td>
+        </tr>
+        <tr>
+            <td><strong>22</strong></td>
+            <td><strong>SyntaxError</strong></td>
+            <td>This exception is raised whenever a syntax error occurs in our program.</td>
+        </tr>
+        <tr>
+            <td><strong>23</strong></td>
+            <td><strong>IndentationError</strong></td>
+            <td>This exception was raised when we made an improper indentation.</td>
+        </tr>
+        <tr>
+            <td><strong>24</strong></td>
+            <td><strong>SystemExit</strong></td>
+            <td>This exception is raised when the sys.exit() method is used to terminate the Python interpreter. The
+                parser exits if the situation is not addressed within the code.</td>
+        </tr>
+        <tr>
+            <td><strong>25</strong></td>
+            <td><strong>TypeError</strong></td>
+            <td>This exception is raised whenever a data type-incompatible action or function is tried to be executed.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>26</strong></td>
+            <td><strong>ValueError</strong></td>
+            <td>This exception is raised if the parameters for a built-in method for a particular data type are of the
+                correct type but have been given the wrong values.</td>
+        </tr>
+        <tr>
+            <td><strong>27</strong></td>
+            <td><strong>RuntimeError</strong></td>
+            <td>This exception is raised when an error that occurred during the program's execution cannot be
+                classified.</td>
+        </tr>
+        <tr>
+            <td><strong>28</strong></td>
+            <td><strong>NotImplementedError</strong></td>
+            <td>If an abstract function that the user must define in an inherited class is not defined, this exception
+                is raised.</td>
+        </tr>
+    </table>
+    <h2 class="h2">Summary</h2>
+    <p>We learned about different methods to raise, catch, and handle Python exceptions after learning the distinction
+        between syntax errors and exceptions. We learned about these clauses in this tutorial:</p>
+    <ul class="points">
+        <li>We can throw an exception at any line of code using the raise keyword.</li>
+        <li>Using the assert keyword, we may check to see if a specific condition is fulfilled and raise an exception if
+            it is not.</li>
+        <li>All statements are carried out in the try clause until an exception is found.</li>
+        <li>The try clause's exception(s) are detected and handled using the except function.</li>
+        <li>If no exceptions are thrown in the try code block, we can write code to be executed in the else code block.
+        </li>
+    </ul>
+    <p>Here is the syntax of try, except, else, and finally clauses.</p>
+    <p><strong>Syntax:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+try:
+    # Code block
+    # These statements are those which can probably have some error
+
+except:
+    # This block is optional.
+    # If the try block encounters an exception, this block will handle it.
+
+else:
+    # If there is no exception, this code block will be executed by the Python interpreter
+
+finally:
+    # Python interpreter will always execute this code.
+</textarea></div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="24_lambda_functions.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="26_oops_concept.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

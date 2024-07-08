@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table tag in html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);"">
+  <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../../../home.html">
+              <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+              aria-labelledby="offcanvasNavbarDarkLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                      <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Programming Language
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Web Developement
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              HTML Tutorial
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="1_Intro_to_html.html">Intro to html</a></li>
+                              <li><a class="dropdown-item" href="2_What_is_HTML.html">What is html </a></li>
+                              <li><a class="dropdown-item" href="3_Html_text_editors.html">text editors</a></li>
+                              <li><a class="dropdown-item" href="4_HTML_Building_blocks.html">Building blocks</a></li>
+                              <li><a class="dropdown-item" href="5_HTML_tags.html">HTML Tags</a></li>
+                              <li><a class="dropdown-item" href="6_HTML_Attributes.html">HTML Attributes<li>
+                              <li><a class="dropdown-item" href="7_HTML_Elements.html">HTML Elements</a></li>
+                              <li><a class="dropdown-item" href="8_HTML_Formatting.html">Formatting in html</a></li>
+                              <li><a class="dropdown-item" href="9_HTML_Heading.html"> heading in html</a></li>
+                              <li><a class="dropdown-item" href="10_HTML_Paragraph.html">paragraph in html</a></li>
+                              <li><a class="dropdown-item" href="11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                              <li><a class="dropdown-item" href="12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                              <li><a class="dropdown-item" href="13_HTML_Image.html">Image tag</a></li>
+                              <li><a class="dropdown-item active-submenu" href="14_HTML_Table.html">Table tag</a></li>
+                              <li><a class="dropdown-item" href="15_HTML_Lists.html">Lists tag</a></li>
+                              <li><a class="dropdown-item" href="16_HTML_Ordered_list.html">Ordered list</a></li>
+                              <li><a class="dropdown-item " href="17_HTML_Unordered_list.html">Unordered list</a></li>
+                              <li><a class="dropdown-item" href="18_HTML_Description_list.html">Description list</a></li>
+                              <li><a class="dropdown-item" href="19_HTML_form.html">form in html</a></li>
+                              <li><a class="dropdown-item" href="20_HTML_Form_Input.html">Form input</a></li>
+                              <li><a class="dropdown-item" href="21_HTML_Form_Attribute.html">Form attribute</a></li>
+                              <li><a class="dropdown-item" href="22_HTML_with_CSS.html">Html with CSS</a></li>
+                              <li><a class="dropdown-item" href="23_HTML_Classes.html">HTML classes</a></li>
+                              <li><a class="dropdown-item" href="24_HTML_ID.html">HTML ID</a></li>
+                              <li><a class="dropdown-item" href="25_HTML_Iframes.html">Html Iframes</a></li>
+                              <li><a class="dropdown-item" href="26_HTML_Javascript.html">HTML JavaScript</a></li>
+                              <li><a class="dropdown-item" href="27_HTML_Comments.html">HTML comments</a></li>
+                              <li><a class="dropdown-item" href="28_HTML_Filepath.html">Filepath</a></li>
+                              <li><a class="dropdown-item" href="29_HTML_head.html">HTML head</a></li>
+                              <li><a class="dropdown-item" href="30_HTML_layout.html">HTML layout</a></li>
+                              <li><a class="dropdown-item" href="32_HTML_Responsive.html">HTML Responsive</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              HTML Attributes
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                              <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              HTML Tags
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../3_HTML_tags/1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/3_anchor_tag.html">Anchor tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/4_abbr_tag.html">Abbr tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/5_acronym_tag.html">Acronym tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/6_address_tag.html">Address tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/7_applet_tag.html">Applet tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/8_area_tag.html">Area tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/9_article_tag.html">Article tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/10_aside_tag.html">Aside tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/11_audio_tag.html">Audio tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/12_b_tag.html">B tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/13_base_tag.html">Base tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/14_basefont_tag.html">Basefont tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/15_bdi_tag.html">Bdi tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/16_bdo_tag.html">Bdo tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/17_big_tag.html">Big tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/18_blockquote_tag.html">Blockquote</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/19_body_tag.html">Body tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/20_br_tag.html">Br tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/21_button_tag.html">Button tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/22_canvas_tag.html">canvas tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/23_caption_tag.html">caption tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/24_center_tag.html">center tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/25_cite_tag.html">cite tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/26_code_tag.html">code tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/27_col_tag.html">col tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/28_colgroup_tag.html">colgroup tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/29_data_tag.html">data tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/30_datalist_tag.html">datalist tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/31_Description_list.html">Description tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/32_del_tag.html">del tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/33_details_tag.html">details tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/34_dfn_tag.html">dfn tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/35_Dialog_tag.html">Dialog tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/36_dir_tag.html">dir tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/37_div_tag.html">div tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/38_em_tag.html">em tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/39_embed_tag.html">embed tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/40_field_set_tag.html">field set tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/41_figcaption_tag.html">figcaption tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/42_figure_tag.html">figure tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/43_font_tag.html">font tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/44_footer_tag.html">footer tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/45_form_tag.html">form tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/46_frame_tag.html">frame tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/47_frameset_tag.html">frameset tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/48_header_tag.html">header tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/49_hr_tag.html">hr tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/50_i_tag.html">i tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/51_input_tag.html">input tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/52_kbd_tag.html">kbd tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/53_label_tag.html">label tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/54_legend_tag.html">legend tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/55_lists_tag.html">lists tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/56_link_tag.html">link tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/57_main_tag.html">main tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/58_mark_tag.html">mark tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/59_marquee_tag.html">marquee tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/60_menu_tag.html">menu tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/61_meta_tag.html">meta tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/62_Meter_tag.html">Meter tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/63_nav_tag.html">nav tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/64_object_tag.html">Object tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/65_Optgrp_tag.html">optgrp tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/66_option_tag.html">option tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/67_progress.html">progress tag</a></li>
+                              <li><a class="dropdown-item" href="../3_HTML_tags/68_Colour_name.html">Color name</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML Table</h1>
+    <p><b>HTML table tag</b> is used to display data in tabular form (row * column). There can be many columns in a row.</p>
+    <p>We can create a table to display data in tabular form, using &lt;table&gt; element, with the help of &lt;tr&gt; , &lt;td&gt;, and &lt;th&gt; elements. </p>
+    <p>In Each table, table row is defined by &lt;tr&gt; tag, table header is defined by &lt;th&gt;, and table data is defined by &lt;td&gt; tags.</p>
+    <p>HTML tables are used to manage the layout of the page e.g. header section, navigation bar, body content, footer section etc. But it is recommended to use div tag over table to manage the layout of the page .</p>
+    <hr/>
+    <h2 class="h2">HTML Table Tags</h2>
+    <table class="alt">
+    <tr><th>Tag</th><th>Description</th></tr>
+    <tr><td>&lt;table&gt;</td><td>It defines a table.</td></tr>
+    <tr><td>&lt;tr&gt;</td><td>It defines a row in a table.</td></tr>
+    <tr><td>&lt;th&gt;</td><td>It defines a header cell in a table.</td></tr>
+    <tr><td>&lt;td&gt;</td><td>It defines a cell in a table.</td></tr>
+    <tr><td>&lt;caption&gt;</td><td>It defines the table caption.</td></tr>
+    <tr><td>&lt;colgroup&gt;</td><td>It specifies a group of one or more columns in a table for formatting.</td></tr>
+    <tr><td>&lt;col&gt;</td><td>It is used with &lt;colgroup&gt; element to specify column properties for each
+    column.</td></tr>
+    <tr><td>&lt;tbody&gt;</td><td>It is used to group the body content in a table.</td></tr>
+    <tr><td>&lt;thead&gt;</td><td>It is used to group the header content in a table.</td></tr>
+    <tr><td>&lt;tfooter&gt;</td><td>It is used to group the footer content in a table.</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h2">HTML Table Example</h2>
+    <p>Let's see the example of HTML table tag. It output is shown above.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;table&gt;
+    &lt;tr&gt;&lt;th&gt;First_Name&lt;/th&gt;&lt;th&gt;Last_Name&lt;/th&gt;&lt;th&gt;Marks&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Sonoo&lt;/td&gt;&lt;td&gt;Jaiswal&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;James&lt;/td&gt;&lt;td&gt;William&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Swati&lt;/td&gt;&lt;td&gt;Sironi&lt;/td&gt;&lt;td&gt;82&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Chetna&lt;/td&gt;&lt;td&gt;Singh&lt;/td&gt;&lt;td&gt;72&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable1" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <table>
+    <tr><th>First_Name</th><th>Last_Name</th><th>Marks</th></tr>
+    <tr><td>Sonoo</td><td>Jaiswal</td><td>60</td></tr>
+    <tr><td>James</td><td>William</td><td>80</td></tr>
+    <tr><td>Swati</td><td>Sironi</td><td>82</td></tr>
+    <tr><td>Chetna</td><td>Singh</td><td>72</td></tr>
+    </table>
+    <p>In the above html table, there are 5 rows and 3 columns = 5 * 3 = 15 values.</p>
+    <hr/>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <ins class="adsbygoogle cm_jtp_wtc_responsive" style="display:inline-block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <h2 class="h2">HTML Table with Border</h2>
+    <p>There are two ways to specify border for HTML tables.</p>
+    <ol>
+    <li>By border attribute of table in HTML</li>
+    <li>By border property in CSS</li>
+    </ol>
+    <hr/>
+    <h2 class="h3">1) HTML Border attribute</h2>
+    <p>You can use border attribute of table tag in HTML to specify border. But it is not recommended now.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;table border="1"&gt;
+    &lt;tr&gt;&lt;th&gt;First_Name&lt;/th&gt;&lt;th&gt;Last_Name&lt;/th&gt;&lt;th&gt;Marks&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Sonoo&lt;/td&gt;&lt;td&gt;Jaiswal&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;James&lt;/td&gt;&lt;td&gt;William&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Swati&lt;/td&gt;&lt;td&gt;Sironi&lt;/td&gt;&lt;td&gt;82&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Chetna&lt;/td&gt;&lt;td&gt;Singh&lt;/td&gt;&lt;td&gt;72&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable3" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <table border="1">
+    <tr><th>First_Name</th><th>Last_Name</th><th>Marks</th></tr>
+    <tr><td>Sonoo</td><td>Jaiswal</td><td>60</td></tr>
+    <tr><td>James</td><td>William</td><td>80</td></tr>
+    <tr><td>Swati</td><td>Sironi</td><td>82</td></tr>
+    <tr><td>Chetna</td><td>Singh</td><td>72</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h3">2) CSS Border property</h2>
+    <p>It is now recommended to use border property of CSS to specify border in table.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;style&gt;
+    table, th, td {
+      border: 1px solid black;
+    }
+    &lt;/style&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable4" target="_blank">Test it Now</a></span>
+    <p>You can collapse all the borders in one border by border-collapse property. It will collapse the border into one.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;style&gt;
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    &lt;/style&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable5" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+    <tr>
+    <th style="border: 1px solid black; border-collapse: collapse;">Name</th>
+    <th style="border: 1px solid black; border-collapse: collapse;">Last Name</th>
+    <th style="border: 1px solid black; border-collapse: collapse;">Marks</th>
+    </tr>
+    <tr><td style="border: 1px solid black; border-collapse: collapse;">Sonoo</td><td style="border: 1px solid black; border-collapse: collapse;">Jaiswal</td><td style="border: 1px solid black; border-collapse: collapse;">60</td></tr>
+    <tr><td style="border: 1px solid black; border-collapse: collapse;">James</td><td style="border: 1px solid black; border-collapse: collapse;">William</td><td style="border: 1px solid black; border-collapse: collapse;">80</td></tr>
+    <tr><td style="border: 1px solid black; border-collapse: collapse;">Swati</td><td style="border: 1px solid black; border-collapse: collapse;">Sironi</td><td style="border: 1px solid black; border-collapse: collapse;">82</td></tr>
+    <tr><td style="border: 1px solid black; border-collapse: collapse;">Chetna</td><td style="border: 1px solid black; border-collapse: collapse;">Singh</td><td style="border: 1px solid black; border-collapse: collapse;">72</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h2">HTML Table with cell padding</h2>
+    <p>You can specify padding for table header and table data by two ways:</p>
+    <ol>
+    <li>By cellpadding attribute of table in HTML</li>
+    <li>By padding property in CSS</li>
+    </ol>
+    <p>The cellpadding attribute of HTML table tag is obselete now. It is recommended to use CSS. So let's see the code of CSS.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;style&gt;
+    table, th, td {
+      border: 1px solid pink;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+    &lt;/style&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable6" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+    <tr>
+    <th style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Name</th>
+    <th style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Last Name</th>
+    <th style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Marks</th>
+    </tr>
+    <tr><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Sonoo</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Jaiswal</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">60</td></tr>
+    <tr><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">James</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">William</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">80</td></tr>
+    <tr><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Swati</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Sironi</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">82</td></tr>
+    <tr><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Chetna</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">Singh</td><td style="padding: 10px;border: 1px solid black; border-collapse: collapse;">72</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h2">HTML Table width:</h2>
+    <p>We can specify the HTML table width using the <strong>CSS width</strong> property. It can be specify in pixels or percentage. </p>
+    <p>We can adjust our table width as per our requirement. Following is the example to display table with width.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    table{
+         width: 100%; 
+        }
+    </textarea></div>
+    <h2 class="h2">Example:</h2>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;table&lt;/title&gt;
+        &lt;style&gt;
+            table{
+                border-collapse: collapse;
+                width: 100%; 
+            }
+        th,td{
+            border: 2px solid green; 
+            padding: 15px;
+        }
+                 
+        &lt;/style&gt;
+      &lt;/head&gt;
+    &lt;body&gt;
+      &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;1 header&lt;/th&gt;
+            &lt;th&gt;1 header&lt;/th&gt;
+            &lt;th&gt;1 header&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1data&lt;/td&gt;
+            &lt;td&gt;1data&lt;/td&gt;
+            &lt;td&gt;1data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2 data&lt;/td&gt;
+            &lt;td&gt;2 data&lt;/td&gt;
+            &lt;td&gt;2 data&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3 data&lt;/td&gt;
+            &lt;td&gt;3 data&lt;/td&gt;
+            &lt;td&gt;3 data&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlTable" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-table-width.png" alt="html table width" />
+    <hr/>
+    <h2 class="h2">HTML Table with colspan</h2>
+    <p>If you want to make a cell span more than one column, you can use the colspan attribute.</p>
+    <p>It will divide one cell/row into multiple columns, and the number of columns depend on the value of colspan attribute. </p>
+    <p>Let's see the example that span two columns.</p>
+    <p>CSS code:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;style&gt;
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    &lt;/style&gt;
+    </textarea></div>
+    <p>HTML code:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;table style="width:100%"&gt;
+      &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th colspan="2"&gt;Mobile No.&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+      &lt;td&gt;Ajeet Maurya&lt;/td&gt;
+      &lt;td&gt;7503520801&lt;/td&gt;
+      &lt;td&gt;9555879135&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable2" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <table style="width:100%;border: 1px solid black; border-collapse: collapse;">
+    <tr>
+    <th style="padding: 5px;text-align: left;border: 1px solid black; border-collapse: collapse;">Name</th>
+    <th style="padding: 5px;text-align: left;border: 1px solid black; border-collapse: collapse;" colspan="2">Mobile No.</th>
+    </tr>
+    <tr>
+    <td style="padding: 5px;text-align: left;border: 1px solid black; border-collapse: collapse;">Ajeet Maurya</td>
+    <td style="padding: 5px;text-align: left;border: 1px solid black; border-collapse: collapse;">7503520801</td>
+    <td style="padding: 5px;text-align: left;border: 1px solid black; border-collapse: collapse;">9555879135</td>
+    </tr>
+    </table>
+    <hr/>
+    <h2 class="h2">HTML Table with rowspan</h2>
+    <p>If you want to make a cell span more than one row, you can use the rowspan attribute.</p>
+    <p>It will divide a cell into multiple rows. The number of divided rows will depend on rowspan values. </p>
+    <p>Let's see the example that span two rows.</p>
+    <p>CSS code:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;style&gt;
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+    &lt;/style&gt;
+    </textarea></div>
+    <p>HTML code:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;table&gt;  
+    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;td&gt;Ajeet Maurya&lt;/td&gt;&lt;/tr&gt;  
+    &lt;tr&gt;&lt;th rowspan="2"&gt;Mobile No.&lt;/th&gt;&lt;td&gt;7503520801&lt;/td&gt;&lt;/tr&gt;  
+    &lt;tr&gt;&lt;td&gt;9555879135&lt;/td&gt;&lt;/tr&gt;  
+    &lt;/table&gt; 
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable7" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <table style="border: 1px solid black;border-collapse: collapse;">
+    <tr><th style="padding: 10px;border: 1px solid black;border-collapse: collapse;">Name</th><td style="padding: 10px;border: 1px solid black;border-collapse: collapse;">Ajeet Maurya</td></tr>
+    <tr><th rowspan="2" style="padding: 10px;border: 1px solid black;border-collapse: collapse;">Mobile No.</th><td style="padding: 10px;border: 1px solid black;border-collapse: collapse;">7503520801</td></tr>
+    <tr><td style="padding: 10px;border: 1px solid black;border-collapse: collapse;">9555879135</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h2">HTML table with caption</h2>
+    <p>HTML caption is diplayed above the table. It must be used after table tag only.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;table&gt;
+    &lt;caption&gt;Student Records&lt;/caption&gt;
+    &lt;tr&gt;&lt;th&gt;First_Name&lt;/th&gt;&lt;th&gt;Last_Name&lt;/th&gt;&lt;th&gt;Marks&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Vimal&lt;/td&gt;&lt;td&gt;Jaiswal&lt;/td&gt;&lt;td&gt;70&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Mike&lt;/td&gt;&lt;td&gt;Warn&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Shane&lt;/td&gt;&lt;td&gt;Warn&lt;/td&gt;&lt;td&gt;42&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Jai&lt;/td&gt;&lt;td&gt;Malhotra&lt;/td&gt;&lt;td&gt;62&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable9" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h2">Styling HTML table even and odd cells</h2>
+    <p>CSS code:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;style&gt;
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+    table#alter tr:nth-child(even) {
+      background-color: #eee;
+    }
+    table#alter tr:nth-child(odd) {
+      background-color: #fff;
+    }
+    table#alter th {
+      color: white;
+      background-color: gray;
+    }
+    &lt;/style&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmltable8" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/tableevenodd.png" alt="html table even and odd" />
+    <h4 class="n">NOTE: You can also create various types of tables using different CSS properties in your table.</h4>
+    <hr/>
+    <h2 class="h3">Supporting Browsers</h2>
+    <table class="alt">
+    <tr><td>Element</td><td><img src="https://static.javatpoint.com/htmlpages/images/chrome_browser.png" alt="chrome browser" /> Chrome</td><td><img src="https://static.javatpoint.com/htmlpages/images/ie_browser.png" alt="ie browser" /> IE</td><td><img src="https://static.javatpoint.com/htmlpages/images/firefox_browser.png" alt="firefox browser" /> Firefox</td><td><img src="https://static.javatpoint.com/htmlpages/images/opera_browser.png" alt="opera browser" /> Opera</td><td><img src="https://static.javatpoint.com/htmlpages/images/safari_browser.png" alt="safari browser" /> Safari</td></tr>
+    <tr><td>&lt;table&gt;</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+    </table>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+      <a href="13_HTML_Image.html"><button class="btn btn-danger" type="button">Previous</button></a>
+      <a href="15_HTML_Lists.html"><button class="btn btn-success" type="button">Next</button></a>
+      </div>
+      <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bias & Variance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item active-submenu" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Bias and Variance in Machine Learning</h1>
+    <p>Machine learning is a branch of Artificial Intelligence, which allows machines to perform data analysis and make
+        predictions. However, if the machine learning model is not accurate, it can make predictions errors, and these
+        prediction errors are usually known as Bias and Variance. In machine learning, these errors will always be
+        present as there is always a slight difference between the model predictions and actual predictions. The main
+        aim of ML/data science analysts is to reduce these errors in order to get more accurate results. In this topic,
+        we are going to discuss bias and variance, Bias-variance trade-off, Underfitting and Overfitting. But before
+        starting, let's first understand what errors in Machine learning are?</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/bias-and-variance-in-machine-learning.png"
+        alt="Bias and Variance in Machine Learning" />
+    <h2 class="h2">Errors in Machine Learning?</h2>
+    <p>In machine learning, an error is a measure of how accurately an algorithm can make predictions for the previously
+        unknown dataset. On the basis of these errors, the machine learning model is selected that can perform best on
+        the particular dataset. There are mainly two types of errors in machine learning, which are:</p>
+    <ul class="points">
+        <li><strong>Reducible errors:</strong> These errors can be reduced to improve the model accuracy. Such errors
+            can further be classified into bias and Variance.<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/bias-and-variance-in-machine-learning2.png"
+                alt="Bias and Variance in Machine Learning" />
+        </li>
+        <li><strong>Irreducible errors:</strong> These errors will always be present in the model</li>
+    </ul>
+    <p>regardless of which algorithm has been used. The cause of these errors is unknown variables whose value can't be
+        reduced.</p>
+    <h2 class="h2">What is Bias?</h2>
+    <p>In general, a machine learning model analyses the data, find patterns in it and make predictions. While training,
+        the model learns these patterns in the dataset and applies them to test data for prediction. <strong><em>While
+                making predictions, a difference occurs between prediction values made by the model and actual
+                values/expected values</em></strong>, <strong><em>and this difference is known as bias errors or Errors
+                due to bias</em></strong>. It can be defined as an inability of machine learning algorithms such as
+        Linear Regression to capture the true relationship between the data points. Each algorithm begins with some
+        amount of bias because bias occurs from assumptions in the model, which makes the target function simple to
+        learn. A model has either:</p>
+    <ul class="points">
+        <li><strong>Low Bias:</strong> A low bias model will make fewer assumptions about the form of the target
+            function.</li>
+        <li><strong>High Bias:</strong> A model with a high bias makes more assumptions, and the model becomes unable to
+            capture the important features of our dataset. <strong>A high bias model also cannot perform well on new
+                data.</strong></li>
+    </ul>
+    <p>Generally, a linear algorithm has a high bias, as it makes them learn fast. The simpler the algorithm, the higher
+        the bias it has likely to be introduced. Whereas a nonlinear algorithm often has low bias.</p>
+    <p>Some examples of machine learning algorithms with low bias <strong>are Decision Trees, k-Nearest Neighbours and
+            Support Vector Machines</strong>. At the same time, an algorithm with high bias is <strong>Linear
+            Regression, Linear Discriminant Analysis and Logistic Regression.</strong></p>
+    <h3 class="h3">Ways to reduce High Bias:</h3>
+    <p>High bias mainly occurs due to a much simple model. Below are some ways to reduce the high bias:</p>
+    <ul class="points">
+        <li>Increase the input features as the model is underfitted.</li>
+        <li>Decrease the regularization term.</li>
+        <li>Use more complex models, such as including some polynomial features.</li>
+    </ul>
+    <h2 class="h2">What is a Variance Error?</h2>
+    <p>The variance would specify the amount of variation in the prediction if the different training data was used. In
+        simple words, <strong><em>variance tells that how much a random variable is different from its expected
+                value.</em></strong> Ideally, a model should not vary too much from one training dataset to another,
+        which means the algorithm should be good in understanding the hidden mapping between inputs and output
+        variables. Variance errors are either of <strong>low variance or high variance.</strong></p>
+    <p><strong>Low variance</strong> means there is a small variation in the prediction of the target function with
+        changes in the training data set. At the same time, <strong>High variance</strong> shows a large variation in
+        the prediction of the target function with changes in the training dataset.</p>
+    <p>A model that shows high variance learns a lot and perform well with the training dataset, and does not generalize
+        well with the unseen dataset. As a result, such a model gives good results with the training dataset but shows
+        high error rates on the test dataset.</p>
+    <p>Since, with high variance, the model learns too much from the dataset, it leads to overfitting of the model. A
+        model with high variance has the below problems:</p>
+    <ul class="points">
+        <li>A high variance model leads to overfitting.</li>
+        <li>Increase model complexities.</li>
+    </ul>
+    <p>Usually, nonlinear algorithms have a lot of flexibility to fit the model, have high variance.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/bias-and-variance-in-machine-learning3.png"
+        alt="Bias and Variance in Machine Learning" />
+    <p>Some examples of machine learning algorithms with low variance are, <strong>Linear Regression, Logistic
+            Regression, and Linear discriminant analysis</strong>. At the same time, algorithms with high variance are
+        <strong>decision tree, Support Vector Machine, and K-nearest neighbours.</strong> </p>
+    <h3 class="h3">Ways to Reduce High Variance:</h3>
+    <ul class="points">
+        <li>Reduce the input features or number of parameters as a model is overfitted.</li>
+        <li>Do not use a much complex model.</li>
+        <li>Increase the training data.</li>
+        <li>Increase the Regularization term.</li>
+    </ul>
+    <h2 class="h2">Different Combinations of Bias-Variance</h2>
+    <p>There are four possible combinations of bias and variances, which are represented by the below diagram:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/bias-and-variance-in-machine-learning4.png"
+        alt="Bias and Variance in Machine Learning" />
+    <ol class="points">
+        <li><strong>Low-Bias, Low-Variance:</strong><br>
+            The combination of low bias and low variance shows an ideal machine learning model. However, it is not
+            possible practically.</li>
+        <li><strong>Low-Bias, High-Variance:</strong> With low bias and high variance, model predictions are
+            inconsistent and accurate on average. This case occurs when the model learns with a large number of
+            parameters and hence leads to an <strong>overfitting</strong></li>
+        <li><strong>High-Bias, Low-Variance:</strong> With High bias and low variance, predictions are consistent but
+            inaccurate on average. This case occurs when a model does not learn well with the training dataset or uses
+            few numbers of the parameter. It leads to <strong>underfitting</strong> problems in the model.</li>
+        <li><strong>High-Bias, High-Variance:</strong><br>
+            With high bias and high variance, predictions are inconsistent and also inaccurate on average.</li>
+    </ol>
+    <h2 class="h2">How to identify High variance or High Bias?</h2>
+    <p>High variance can be identified if the model has:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/bias-and-variance-in-machine-learning5.png"
+        alt="Bias and Variance in Machine Learning" />
+    <ul class="points">
+        <li>Low training error and high test error.</li>
+    </ul>
+    <p>High Bias can be identified if the model has:</p>
+    <ul class="points">
+        <li>High training error and the test error is almost similar to training error.</li>
+    </ul>
+    <h2 class="h2">Bias-Variance Trade-Off</h2>
+    <p>While building the machine learning model, it is really important to take care of bias and variance in order to
+        avoid overfitting and underfitting in the model. If the model is very simple with fewer parameters, it may have
+        low variance and high bias. Whereas, if the model has a large number of parameters, it will have high variance
+        and low bias. So, it is required to make a balance between bias and variance errors, and this balance between
+        the bias error and variance error is known as <strong>the Bias-Variance trade-off.</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/bias-and-variance-in-machine-learning6.png"
+        alt="Bias and Variance in Machine Learning" />
+    <p>For an accurate prediction of the model, algorithms need a low variance and low bias. But this is not possible
+        because bias and variance are related to each other:</p>
+    <ul class="points">
+        <li>If we decrease the variance, it will increase the bias.</li>
+        <li>If we decrease the bias, it will increase the variance.</li>
+    </ul>
+    <p>Bias-Variance trade-off is a central issue in supervised learning. Ideally, we need a model that accurately
+        captures the regularities in training data and simultaneously generalizes well with the unseen dataset.
+        Unfortunately, doing this is not possible simultaneously. Because a high variance algorithm may perform well
+        with training data, but it may lead to overfitting to noisy data. Whereas, high bias algorithm generates a much
+        simple model that may not even capture important regularities in the data. So, we need to find a sweet spot
+        between bias and variance to make an optimal model.</p>
+    <p>Hence, the <strong><em>Bias-Variance trade-off is about finding the sweet spot to make a balance between bias and
+                variance errors.</em></strong></p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="34_overfitting.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="36_gradient_descent.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

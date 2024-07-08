@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item active-submenu" href="4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Pseudo-elements</h1>
+    <p>A pseudo-class can be defined as a keyword which is combined to a selector that defines the special state of the selected elements. Unlike the pseudo-classes, the pseudo-elements are used to style the specific part of an element, whereas the pseudo-classes are used to style the element.</p>
+    <p>As an example, a pseudo-element can be used to style the first letter or the first line of an element. The pseudo-elements can also be used to insert the content after or before an element.</p>
+    <h3 class="h4">Syntax</h3>
+    <p>Pseudo-element has a simple syntax which is given as follows:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    selector::pseudo-element {
+      property: value;
+    }
+    </textarea></div>
+    <p>We have used the <strong>double colon notation (::pseudo-element)</strong> in the syntax. In CSS3, the double colon replaced the single colon notation for pseudo-elements. It was an attempt from W3C to differentiate between the pseudo-elements and pseudo-classes. So, it is recommended to use <strong>double colon notation (::pseudo-element)</strong> instead of using single-colon notation <strong>(:)</strong>.</p>
+    <p>In CSS1 and CSS2, there is the use of a single colon <strong>(:)</strong> syntax for both pseudo-elements and pseudo-classes. The single colon syntax is valid for pseudo-elements in CSS1 and CSS2 for backward compatibility.</p>
+    <p>Although there are several <a href="https://www.javatpoint.com/css-tutorial">CSS</a> pseudo-elements, we are discussing some of the most commonly used. The widely used CSS pseudo-elements are tabulated as follows:</p>
+    <table class="alt">
+    <tr>
+    <th>pseudo-element</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td><strong>::first-letter (:first-letter)</strong></td>
+    <td>It selects the first letter of the text.</td>
+    </tr>
+    <tr>
+    <td><strong>::first-line (:first-line)</strong></td>
+    <td>It styles the first line of the text.</td>
+    </tr>
+    <tr>
+    <td><strong>::before (:before)</strong></td>
+    <td>It is used to add something before the element's content.</td>
+    </tr>
+    <tr>
+    <td><strong>::after (:after)</strong></td>
+    <td>It is used to add something after the element's content.</td>
+    </tr>
+    <tr>
+    <td><strong>::selection</strong></td>
+    <td>It is used to select the area of an element that is selected by the user.</td>
+    </tr>
+    </table>
+    <p>Let's discuss the above pseudo-elements, along with an example.</p>
+    <h2 class="h2">The ::first-letter pseudo-element</h2>
+    <p>As its name implies, it affects the first letter of the text. It can be applied only to block-level elements. Instead of supporting all CSS properties, it supports some of the CSS properties that are given below.</p>
+    <ul class="points">
+    <li>Color properties <strong>(such as color)</strong></li>
+    <li>Font properties <strong>(such as font-style, font-family, font-size, font-color, and many more)</strong>.</li>
+    <li>Margin properties <strong>(such as margin-top, margin-right, margin-bottom, and margin-left)</strong>.</li>
+    <li>Border properties <strong>(like border-top, border-right, border-bottom, border-left, border-color, border-width, and many more)</strong>.</li>
+    <li>Padding properties <strong>(such as padding-top, padding-right, padding-bottom, and padding-left)</strong>.</li>
+    <li>Background properties <strong>(such as background-color, background-repeat, background-image, and background-position)</strong>.</li>
+    <li>Text related properties <strong>(such as text-shadow, text-transform, text-decoration, etc.)</strong>.</li>
+    <li>Other properties are <strong>vertical-align</strong> (only when the <strong>float</strong> is '<strong>none</strong>') <strong>word-spacing, line-height, line-spacing, etc.</strong></li>
+    </ul>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align: center;
+        }
+        h1::first-letter { 
+        font-family: Lucida Calligraphy;
+        font-size: 3cm;
+        color: red;
+        text-shadow: 5px 8px 9px green;
+        } 
+        h1{
+        color: blue;
+        }
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;h1&gt; Welcome to the javaTpoint.com &lt;/h1&gt; 
+        &lt;h2&gt; This is an example of ::first-letter pseudo-element. &lt;/h2&gt;
+    &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSPseudoelements1" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-pseudo-elements1.png" alt="CSS Pseudo-elements" />
+    <h2 class="h2">The ::first-line pseudo-element</h2>
+    <p>It is similar to the <strong>::first-letter</strong> pseudo-element, but it affects the entire line. It adds the special effects to the first line of the text. It supports the following CSS properties:</p>
+    <ul class="points">
+    <li>Color properties <strong>(such as color)</strong></li>
+    <li>Font properties <strong>(such as font-style, font-family, font-size, font-color, and many more)</strong>.</li>
+    <li>Background properties <strong>(such as background-color, background-repeat, background-image, and background-position)</strong>.</li>
+    <li>Other properties are <strong>word-spacing, letter-spacing, line-height, vertical-align, text-transform, text-decoration.</strong></li>
+    </ul>
+    <h3 class="h4">Example</h3>
+    <p>In this example we will see the use of <strong>::first-line</strong> element to add special effects to the element's first line.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align: center;
+        }
+        h1::first-line { 
+        font-family: Lucida Calligraphy;
+        font-size: 1cm;
+        color: red;
+        text-shadow: 5px 8px 9px green;
+        } 
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;h1&gt; Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is committed to provide easy and in-depth tutorials on various technologies. &lt;/h1&gt; 
+        &lt;h2&gt; This is an example of ::first-line pseudo-element. &lt;/h2&gt;
+    &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSPseudoelements2" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-pseudo-elements2.png" alt="CSS Pseudo-elements" />
+    <h2 class="h2">The ::before pseudo-element</h2>
+    <p>It allows us to add something before the element's content. It is used to add something before the specific part of an element. Generally, it is used with the <strong>content</strong> property.</p>
+    <p>We can also add the regular strings or images before the content using this pseudo-element.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align: center;
+        }
+        h1::before { 
+        content: "'Hello World.'";
+        color: red;
+        } 
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;h1&gt;Welcome to the javaTpoint.com. &lt;/h1&gt; 
+        &lt;h2&gt; This is an example of ::before pseudo-element. &lt;/h2&gt;
+        &lt;h3&gt; In the first line the "Hello World" has added by using the pseudo-element ::before &lt;/h3&gt;
+    &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSPseudoelements3" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-pseudo-elements3.png" alt="CSS Pseudo-elements" />
+    <h2 class="h2">The ::after pseudo-element</h2>
+    <p>It works similar to <strong>::before</strong> pseudo-element, but it inserts the content after the content of the element. It is used to add something after the specific part of an element. Generally, it is used with the content property.</p>
+    <p>It also allows us to add regular strings or images after the content.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align: center;
+        }
+        h1::after { 
+        content: "'Welcome to the javaTpoint.com.'";
+        color: red;
+        } 
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;h1&gt; Hello World. &lt;/h1&gt; 
+        &lt;h2&gt; This is an example of ::after pseudo-element. &lt;/h2&gt;
+        &lt;h3&gt; In the first line the "Welcome to the javaTpoint.com." has added by using the pseudo-element ::after &lt;/h3&gt;
+    &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSPseudoelements4" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-pseudo-elements4.png" alt="CSS Pseudo-elements" />
+    <h2 class="h2">The ::selection pseudo-element</h2>
+    <p>It is used to style the part of an element that is selected by the user. We can use the following CSS properties with it:</p>
+    <ul class="points">
+    <li><strong>color.</strong></li>
+    <li><strong>background-color.</strong></li>
+    <li>Other properties include <strong>cursor, outline,</strong> etc.</li>
+    </ul>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align: center;
+        }
+        h1::selection {
+        color: red;
+        } 
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;h1&gt; Hello World. &lt;/h1&gt; 
+        &lt;h2&gt; Select the text in first line to see the effect. &lt;/h2&gt;
+        &lt;h3&gt; This is an example of ::selection pseudo-element. &lt;/h3&gt;
+        &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSPseudoelements5" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-pseudo-elements5.png" alt="CSS Pseudo-elements" />
+    <h2 class="h2">CSS classes and pseudo-element</h2>
+    <p>The pseudo-elements can be combined with CSS classes to style the specific element having that class. The syntax of combining the CSS classes with the pseudo-elements is given below.</p>
+    <h3 class="h4">Syntax</h3>
+    <p>It can be written as:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    selector.class::pseudo-element {
+    property: value
+    }
+    </textarea></div>
+    <h3 class="h4">Example</h3>
+    <p>This example will affect the first letter of those &lt;h1&gt; elements that have <strong>class="example"</strong> rather than affecting the all &lt;h1&gt; elements.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align: center;
+        }
+        h1.example::first-letter {
+        color: red;
+        font-size: 2cm;
+        font-family: Lucida Calligraphy;
+        } 
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;h1 class="example"&gt; Hello World. &lt;/h1&gt; 
+        &lt;h1&gt; Welcome to the javaTpoint.com. &lt;/h1&gt; 
+        &lt;h3&gt; This is an example of pseudo-element with CSS classes.&lt;/h3&gt;
+        &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSPseudoelements6" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-pseudo-elements6.png" alt="CSS Pseudo-elements" />
+    <hr/>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="3_pseudo_classes.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="5_radial_gradient.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

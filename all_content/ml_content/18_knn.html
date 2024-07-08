@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNN Algorithm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item active-submenu" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">K-Nearest Neighbor(KNN) Algorithm for Machine Learning</h1>
+    <ul class="points">
+        <li>K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning
+            technique.</li>
+        <li>K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case
+            into the category that is most similar to the available categories.</li>
+        <li>K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This
+            means when new data appears then it can be easily classified into a well suite category by using K- NN
+            algorithm. </li>
+        <li>K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the
+            Classification problems.</li>
+        <li>K-NN is a <strong>non-parametric algorithm</strong>, which means it does not make any assumption on
+            underlying data.</li>
+        <li>It is also called a <strong>lazy learner algorithm</strong> because it does not learn from the training set
+            immediately instead it stores the dataset and at the time of classification, it performs an action on the
+            dataset.</li>
+        <li>KNN algorithm at the training phase just stores the dataset and when it gets new data, then it classifies
+            that data into a category that is much similar to the new data. </li>
+        <li><strong>Example:</strong> Suppose, we have an image of a creature that looks similar to cat and dog, but we
+            want to know either it is a cat or dog. So for this identification, we can use the KNN algorithm, as it
+            works on a similarity measure. Our KNN model will find the similar features of the new data set to the cats
+            and dogs images and based on the most similar features it will put it in either cat or dog category.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <h2 class="h2"><u>Why do we need a K-NN Algorithm?</u></h2>
+    <p>Suppose there are two categories, i.e., Category A and Category B, and we have a new data point x1, so this data
+        point will lie in which of these categories. To solve this type of problem, we need a K-NN algorithm. With the
+        help of K-NN, we can easily identify the category or class of a particular dataset. Consider the below diagram:
+    </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning2.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <h2 class="h2"><u>How does K-NN work?</u></h2>
+    <p>The K-NN working can be explained on the basis of the below algorithm:</p>
+    <ul class="points">
+        <li><strong>Step-1:</strong> Select the number K of the neighbors</li>
+        <li><strong>Step-2:</strong> Calculate the Euclidean distance of <strong>K number of neighbors</strong></li>
+        <li><strong>Step-3:</strong> Take the K nearest neighbors as per the calculated Euclidean distance.</li>
+        <li><strong>Step-4:</strong> Among these k neighbors, count the number of the data points in each category.</li>
+        <li><strong>Step-5:</strong> Assign the new data points to that category for which the number of the neighbor is
+            maximum.</li>
+        <li><strong>Step-6:</strong> Our model is ready.</li>
+    </ul>
+    <p>Suppose we have a new data point and we need to put it in the required category. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning3.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <ul class="points">
+        <li>Firstly, we will choose the number of neighbors, so we will choose the k=5.</li>
+        <li>Next, we will calculate the <strong>Euclidean distance</strong> between the data points. The Euclidean
+            distance is the distance between two points, which we have already studied in geometry. It can be calculated
+            as:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning4.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <ul class="points">
+        <li>By calculating the Euclidean distance we got the nearest neighbors, as three nearest neighbors in category A
+            and two nearest neighbors in category B. Consider the below image:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning5.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <ul class="points">
+        <li>As we can see the 3 nearest neighbors are from category A, hence this new data point must belong to category
+            A. </li>
+    </ul>
+    <h2 class="h2"><u>How to select the value of K in the K-NN Algorithm?</u></h2>
+    <p>Below are some points to remember while selecting the value of K in the K-NN algorithm:</p>
+    <ul class="points">
+        <li>There is no particular way to determine the best value for "K", so we need to try some values to find the
+            best out of them. The most preferred value for K is 5. </li>
+        <li>A very low value for K such as K=1 or K=2, can be noisy and lead to the effects of outliers in the model.
+        </li>
+        <li>Large values for K are good, but it may find some difficulties.</li>
+    </ul>
+    <h2 class="h2"><u>Advantages of KNN Algorithm:</u></h2>
+    <ul class="points">
+        <li>It is simple to implement.</li>
+        <li>It is robust to the noisy training data</li>
+        <li>It can be more effective if the training data is large.</li>
+    </ul>
+    <h2 class="h3">Disadvantages of KNN Algorithm:</h2>
+    <ul class="points">
+        <li>Always needs to determine the value of K which may be complex some time.</li>
+        <li>The computation cost is high because of calculating the distance between the data points for all the
+            training samples.</li>
+    </ul>
+    <h2 class="h2"><u>Python implementation of the KNN algorithm</u></h2>
+    <p>To do the Python implementation of the K-NN algorithm, we will use the same problem and dataset which we have
+        used in Logistic Regression. But here we will improve the performance of the model. Below is the problem
+        description:</p>
+    <p><strong>Problem for K-NN Algorithm:</strong> There is a Car manufacturer company that has manufactured a new SUV
+        car. The company wants to give the ads to the users who are interested in buying that SUV. So for this problem,
+        we have a dataset that contains multiple user's information through the social network. The dataset contains
+        lots of information but the <strong>Estimated Salary</strong> and <strong>Age</strong> we will consider for the
+        independent variable and the <strong>Purchased variable</strong> is for the dependent variable. Below is the
+        dataset:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning6.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <p class="pq"><strong>Steps to implement the K-NN algorithm:</strong></p>
+    <ul class="points">
+        <li>Data Pre-processing step</li>
+        <li>Fitting the K-NN algorithm to the Training set</li>
+        <li>Predicting the test result</li>
+        <li>Test accuracy of the result(Creation of Confusion matrix)</li>
+        <li>Visualizing the test set result.</li>
+    </ul>
+    <p><strong>Data Pre-Processing Step:</strong></p>
+    <p>The Data Pre-processing step will remain exactly the same as Logistic Regression. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('user_data.csv')
+
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, [2,3]].values
+y= data_set.iloc[:, 4].values
+
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)
+
+#feature Scaling
+from sklearn.preprocessing import StandardScaler  
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+x_test= st_x.transform(x_test)
+</textarea></div>
+    <p>By executing the above code, our dataset is imported to our program and well pre-processed. After feature scaling
+        our test dataset will look like:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning7.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <p>From the above output image, we can see that our data is successfully scaled. </p>
+    <ul class="points">
+        <li><strong>Fitting K-NN classifier to the Training data:</strong><br>
+            Now we will fit the K-NN classifier to the training data. To do this we will import the
+            <strong>KNeighborsClassifier</strong> class of <strong>Sklearn Neighbors</strong> library. After importing
+            the class, we will create the <strong>Classifier</strong> object of the class. The Parameter of this class
+            will be
+            <ul class="points">
+                <li><strong>n_neighbors:</strong> To define the required neighbors of the algorithm. Usually, it takes
+                    5.</li>
+                <li><strong>metric='minkowski':</strong> This is the default parameter and it decides the distance
+                    between the points.</li>
+                <li><strong>p=2:</strong> It is equivalent to the standard Euclidean metric.</li>
+            </ul>
+            And then we will fit the classifier to the training data. Below is the code for it:
+        </li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting K-NN classifier to the training set
+from sklearn.neighbors import KNeighborsClassifier
+classifier= KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2 )
+classifier.fit(x_train, y_train)
+</textarea></div>
+    <p><strong>Output: By executing the above code, we will get the output as:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[10]: 
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                     weights='uniform')
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>Predicting the Test Result:</strong>
+            To predict the test set result, we will create a <strong>y_pred</strong> vector as we did in Logistic
+            Regression. Below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Predicting the test set result
+y_pred= classifier.predict(x_test)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>The output for the above code will be:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning8.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <ul class="points">
+        <li><strong>Creating the Confusion Matrix:</strong><br>
+            Now we will create the Confusion Matrix for our K-NN model to see the accuracy of the classifier. Below is
+            the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Creating the Confusion matrix
+    from sklearn.metrics import confusion_matrix
+    cm= confusion_matrix(y_test, y_pred)
+</textarea></div>
+    <p>In above code, we have imported the confusion_matrix function and called it using the variable cm. </p>
+    <p><strong>Output:</strong> By executing the above code, we will get the matrix as below:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning9.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <p>In the above image, we can see there are 64+29= 93 correct predictions and 3+4= 7 incorrect predictions, whereas,
+        in Logistic Regression, there were 11 incorrect predictions. So we can say that the performance of the model is
+        improved by using the K-NN algorithm.</p>
+    <ul class="points">
+        <li><strong>Visualizing the Training set result:</strong><br>
+            Now, we will visualize the training set result for K-NN model. The code will remain same as we did in
+            Logistic Regression, except the name of the graph. Below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the trianing set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_train, y_train
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('red','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('red', 'green'))(i), label = j)
+mtp.title('K-NN Algorithm (Training set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p><strong>By executing the above code, we will get the below graph:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning10.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <p>The output graph is different from the graph which we have occurred in Logistic Regression. It can be understood
+        in the below points:</p>
+    <ul class="points">
+        <ul class="points">
+            <li>As we can see the graph is showing the red point and green points. The green points are for Purchased(1)
+                and Red Points for not Purchased(0) variable. </li>
+            <li>The graph is showing an irregular boundary instead of showing any straight line or any curve because it
+                is a K-NN algorithm, i.e., finding the nearest neighbor. </li>
+            <li>The graph has classified users in the correct categories as most of the users who didn't buy the SUV are
+                in the red region and users who bought the SUV are in the green region. </li>
+            <li>The graph is showing good result but still, there are some green points in the red region and red points
+                in the green region. But this is no big issue as by doing this model is prevented from overfitting
+                issues. </li>
+            <li>Hence our model is well trained. </li>
+        </ul>
+        <li><strong>Visualizing the Test set result:</strong><br>
+            After the training of the model, we will now test the result by putting a new dataset, i.e., Test dataset.
+            Code remains the same except some minor changes: such as <strong>x_train and y_train</strong> will be
+            replaced by <strong>x_test and y_test</strong>.<br>
+            Below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visualizing the test set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_test, y_test
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('red','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('red', 'green'))(i), label = j)
+mtp.title('K-NN algorithm(Test set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning11.png"
+        alt="K-Nearest Neighbor(KNN) Algorithm for Machine Learning" />
+    <p>The above graph is showing the output for the test data set. As we can see in the graph, the predicted output is
+        well good as most of the red points are in the red region and most of the green points are in the green region.
+    </p>
+    <p>However, there are few green points in the red region and a few red points in the green region. So these are the
+        incorrect observations that we have observed in the confusion matrix(7 Incorrect output).</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="17_logistic_regression.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="19_svm.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

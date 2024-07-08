@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Covariant Return Type</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Covariant Return Type</h1>
+    <p>The covariant return type specifies that the return type may vary in the same direction as the subclass. </p>
+    <p>Before Java5, it was not possible to override any method by changing the return type. But now, since Java5, it is
+        possible to override method by changing the return type if subclass overrides any method whose return type is
+        Non-Primitive but it changes its return type to subclass type. Let's take a simple example:</p>
+    <h4 class="n">Note: If you are beginner to java, skip this topic and return to it after OOPs concepts.</h4>
+    <h3 class="h3ex">Simple example of Covariant Return Type</h3>
+    <p><strong>FileName:</strong> B1.java</p>
+    <div class="codeblock"><textarea name="code" class="java">
+class A{  
+A get(){return this;}  
+}  
+  
+class B1 extends A{  
+@Override
+B1 get(){return this;}  
+void message(){System.out.println("welcome to covariant return type");}  
+  
+public static void main(String args[]){  
+new B1().get().message();  
+}  
+}  
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=B1" target="_blank">Test it
+            Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+welcome to covariant return type
+</pre>
+    </div>
+    <p>As you can see in the above example, the return type of the get() method of A class is A but the return type of
+        the
+        get() method of B class is B. Both methods have different return type but it is method overriding. This is known
+        as
+        covariant return type.</p>
+    <h2 class="h2">Advantages of Covariant Return Type</h2>
+    <p>Following are the advantages of the covariant return type.</p>
+    <p>1) Covariant return type assists to stay away from the confusing type casts in the class hierarchy and makes the
+        code
+        more usable, readable, and maintainable.</p>
+    <p>2) In the method overriding, the covariant return type provides the liberty to have more to the point return
+        types.
+    </p>
+    <p>3) Covariant return type helps in preventing the run-time <em>ClassCastExceptions</em> on returns.</p>
+    <p>Let's take an example to understand the advantages of the covariant return type.</p>
+    <p><strong>FileName:</strong> CovariantExample.java</p>
+    <div class="codeblock"><textarea name="code" class="java">
+class A1
+{
+    A1 foo()
+    {
+        return this;
+    }
+    
+    void print()
+    {
+        System.out.println("Inside the class A1");
+    }
+}
+
+
+// A2 is the child class of A1
+class A2 extends A1
+{
+    @Override
+    A1 foo()
+    {
+        return this;
+    }
+    
+    void print()
+    {
+        System.out.println("Inside the class A2");
+    }
+}
+
+// A3 is the child class of A2
+class A3 extends A2
+{
+    @Override
+    A1 foo()
+    {
+        return this;
+    }
+    
+    @Override
+    void print()
+    {
+        System.out.println("Inside the class A3");
+    }
+}
+
+public class CovariantExample
+{
+    // main method
+    public static void main(String argvs[])
+    {
+       A1 a1 = new A1();
+       
+       // this is ok
+       a1.foo().print();
+       
+       A2 a2 = new A2();
+       
+       // we need to do the type casting to make it 
+       // more clear to reader about the kind of object created 
+       ((A2)a2.foo()).print();
+       
+       A3 a3 = new A3();
+       
+       // doing the type casting
+       ((A3)a3.foo()).print();
+       
+    }
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Inside the class A1
+Inside the class A2
+Inside the class A3
+</pre>
+    </div>
+    <p><strong>Explanation:</strong> In the above program, class A3 inherits class A2, and class A2 inherits class A1.
+        Thus,
+        A1 is the parent of classes A2 and A3. Hence, any object of classes A2 and A3 is also of type A1. As the return
+        type
+        of the method <em>foo()</em> is the same in every class, we do not know the exact type of object the method is
+        actually returning. We can only deduce that returned object will be of type A1, which is the most generic class.
+        We
+        can not say for sure that returned object will be of A2 or A3. It is where we need to do the typecasting to find
+        out
+        the specific type of object returned from the method <em>foo()</em>. It not only makes the code verbose; it also
+        requires precision from the programmer to ensure that typecasting is done properly; otherwise, there are fair
+        chances of getting the <em>ClassCastException</em>. To exacerbate it, think of a situation where the
+        hierarchical
+        structure goes down to 10 - 15 classes or even more, and in each class, the method <em>foo()</em> has the same
+        return type. That is enough to give a nightmare to the reader and writer of the code.</p>
+    <p>The better way to write the above is:</p>
+    <p><strong>FileName:</strong> CovariantExample.java</p>
+    <div class="codeblock"><textarea name="code" class="java">
+class A1
+{
+    A1 foo()
+    {
+        return this;
+    }
+    
+    void print()
+    {
+        System.out.println("Inside the class A1");
+    }
+}
+
+
+// A2 is the child class of A1
+class A2 extends A1
+{
+    @Override
+    A2 foo()
+    {
+        return this;
+    }
+    
+    void print()
+    {
+        System.out.println("Inside the class A2");
+    }
+}
+
+// A3 is the child class of A2
+class A3 extends A2
+{
+    @Override
+    A3 foo()
+    {
+        return this;
+    }
+    
+    @Override
+    void print()
+    {
+        System.out.println("Inside the class A3");
+    }
+}
+
+public class CovariantExample
+{
+    // main method
+    public static void main(String argvs[])
+    {
+       A1 a1 = new A1();
+       
+       a1.foo().print();
+       
+       A2 a2 = new A2();
+       
+       a2.foo().print();
+       
+       A3 a3 = new A3();
+       
+       a3.foo().print();
+       
+    }
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Inside the class A1
+Inside the class A2
+Inside the class A3
+</pre>
+    </div>
+    <p><strong>Explanation:</strong> In the above program, no typecasting is needed as the return type is specific.
+        Hence,
+        there is no confusion about knowing the type of object getting returned from the method <em>foo()</em>. Also,
+        even
+        if we write the code for the 10 - 15 classes, there would be no confusion regarding the return types of the
+        methods.
+        All this is possible because of the covariant return type.</p>
+    <h3 class="h3">How is Covariant return types implemented?</h3>
+    <p>Java doesn't allow the return type-based overloading, but JVM always allows return type-based overloading. JVM
+        uses
+        the full signature of a method for lookup/resolution. Full signature means it includes return type in addition
+        to
+        argument types. i.e., a class can have two or more methods differing only by return type. javac uses this fact
+        to
+        implement covariant return types.</p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The number 1 is not the powerful number.
+The number 2 is not the powerful number.
+The number 3 is not the powerful number.
+The number 4 is the powerful number.
+The number 5 is not the powerful number.
+The number 6 is not the powerful number.
+The number 7 is not the powerful number.
+The number 8 is the powerful number.
+The number 9 is the powerful number.
+The number 10 is not the powerful number.
+The number 11 is not the powerful number.
+The number 12 is not the powerful number.
+The number 13 is not the powerful number.
+The number 14 is not the powerful number.
+The number 15 is not the powerful number.
+The number 16 is the powerful number.
+The number 17 is not the powerful number.
+The number 18 is not the powerful number.
+The number 19 is not the powerful number.
+The number 20 is the powerful number.
+</pre>
+    </div>
+    <p><strong>Explanation:</strong> For every number from 1 to 20, the method <em>isPowerfulNo()</em> is invoked with
+        the
+        help of for-loop. For every number, a vector <em>primeFactors</em> is created for storing its prime divisors.
+        Then,
+        we check whether square of every number present in the vector <em>primeFactors</em> divides the number or not.
+        If
+        all square of all the number present in the vector <em>primeFactors</em> divides the number completely, the
+        number
+        is a powerful number; otherwise, not.</p>
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="34method_overrinding.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="36super_keyword.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

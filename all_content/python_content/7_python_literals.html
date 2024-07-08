@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a></li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item active-submenu" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a></li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a></li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Literals</h1>
+    <p>Python Literals can be defined as data that is given in a variable or constant.</p>
+    <p>Python supports the following literals:</p>
+    <h3 class="h3">1. String literals:</h3>
+    <p>String literals can be formed by enclosing a text in the quotes. We can use both single as well as double quotes
+        to create a string.</p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+"Aman" , '12345'
+</textarea></div>
+    <p><strong>Types of Strings:</strong></p>
+    <p>There are two types of Strings supported in Python:</p>
+    <p><strong>a) Single-line String</strong>- Strings that are terminated within a single-line are known as Single line
+        Strings.</p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+text1='hello'
+</textarea></div>
+    <p><strong>b) Multi-line String -</strong> A piece of text that is written in multiple lines is known as multiple
+        lines string.</p>
+    <p>There are two ways to create multiline strings:</p>
+    <p><strong>1) Adding black slash at the end of each line.</strong></p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+text1='hello\  
+user'  
+print(text1)
+</textarea></div>
+    <div class="codeblock3">
+        <pre>
+'hellouser'  
+</pre>
+    </div>
+    <p><strong>2) Using triple quotation marks:-</strong></p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+str2='''welcome 
+to 
+SSSIT'''  
+print str2 
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+welcome  
+to  
+SSSIT  
+</pre>
+    </div>
+    <h3 class="h3">II. Numeric literals:</h3>
+    <p>Numeric Literals are immutable. Numeric literals can belong to following four different numerical types.</p>
+    <table class="alt">
+        <tr>
+            <th>Int(signed integers)</th>
+            <th>Long(long integers)</th>
+            <th>float(floating point)</th>
+            <th>Complex(complex)</th>
+        </tr>
+        <tr>
+            <td>Numbers( can be both positive and negative) with no fractional part.eg: 100</td>
+            <td>Integers of unlimited size followed by lowercase or uppercase L eg: 87032845L</td>
+            <td>Real numbers with both integer and fractional part eg: -26.2</td>
+            <td>In the form of a+bj where a forms the real part and b forms the imaginary part of the complex number.
+                eg: 3.14j</td>
+        </tr>
+    </table>
+    <p><strong>Example - Numeric Literals</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+x = 0b10100 #Binary Literals
+y = 100 #Decimal Literal 
+z = 0o215 #Octal Literal
+u = 0x12d #Hexadecimal Literal
+
+#Float Literal
+float_1 = 100.5 
+float_2 = 1.5e2
+
+#Complex Literal 
+a = 5+3.14j
+
+print(x, y, z, u)
+print(float_1, float_2)
+print(a, a.imag, a.real)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+20 100 141 301
+100.5 150.0
+(5+3.14j) 3.14 5.0
+</pre>
+    </div>
+    <h3 class="h3">III. Boolean literals:</h3>
+    <p>A Boolean literal can have any of the two values: True or False.</p>
+    <p><strong>Example - Boolean Literals</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+x = (1 == True)
+y = (2 == False)
+z = (3 == True)
+a = True + 10
+b = False + 10
+
+print("x is", x)
+print("y is", y)
+print("z is", z)
+print("a:", a)
+print("b:", b)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+x is True
+y is False
+z is False
+a: 11
+b: 10
+</pre>
+    </div>
+    <h3 class="h3">IV. Special literals.</h3>
+    <p>Python contains one special literal i.e., <strong>None.</strong></p>
+    <p>None is used to specify to that field that is not created. It is also used for the end of lists in Python.</p>
+    <p><strong>Example - Special Literals</strong> </p>
+    <div class="codeblock"><textarea name="code" class="python">
+val1=10  
+val2=None  
+print(val1)   
+print(val2)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+10
+None
+</pre>
+    </div>
+    <h3 class="h3">V. Literal Collections.</h3>
+    <p>Python provides the four types of literal collection such as List literals, Tuple literals, Dict literals, and
+        Set literals.</p>
+    <p><strong>List:</strong></p>
+    <ul class="points">
+        <li>List contains items of different data types. Lists are mutable i.e., modifiable.</li>
+        <li>The values stored in List are separated by comma(,) and enclosed within square brackets([]). We can store
+            different types of data in a List.</li>
+    </ul>
+    <p><strong>Example - List literals</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list=['John',678,20.4,'Peter']  
+list1=[456,'Andrew']  
+print(list)  
+print(list + list1)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+['John', 678, 20.4, 'Peter']
+['John', 678, 20.4, 'Peter', 456, 'Andrew']
+</pre>
+    </div>
+    <p><strong>Dictionary:</strong></p>
+    <ul class="points">
+        <li>Python dictionary stores the data in the key-value pair.</li>
+        <li>It is enclosed by curly-braces {} and each pair is separated by the commas(,).</li>
+    </ul>
+    <p><strong>Example</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+dict = {'name': 'Pater', 'Age':18,'Roll_nu':101}
+print(dict)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+{'name': 'Pater', 'Age': 18, 'Roll_nu': 101}
+</pre>
+    </div>
+    <p><strong>Tuple:</strong></p>
+    <ul class="points">
+        <li>Python tuple is a collection of different data-type. It is immutable which means it cannot be modified after
+            creation.</li>
+        <li>It is enclosed by the parentheses () and each element is separated by the comma(,).</li>
+    </ul>
+    <p><strong>Example</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+tup = (10,20,"Dev",[2,3,4])
+print(tup)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+(10, 20, 'Dev', [2, 3, 4])
+</pre>
+    </div>
+    <p><strong>Set:</strong></p>
+    <ul class="points">
+        <li>Python set is the collection of the unordered dataset.</li>
+        <li>It is enclosed by the {} and each element is separated by the comma(,).</li>
+    </ul>
+    <p><strong>Example: - Set Literals</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+set = {'apple','grapes','guava','papaya'}
+print(set)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+{'guava', 'apple', 'papaya', 'grapes'}
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="6_python_keywords.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="8_python_operators.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

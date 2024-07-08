@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>C++,cout,cin,endl</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item active-submenu" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">C++ Basic Input/Output</h1>
+    <p>C++ I/O operation is using the stream concept. Stream is the sequence of bytes or flow of data. It makes the
+        performance fast.</p>
+    <p>If bytes flow from main memory to device like printer, display screen, or a network connection, etc, this is
+        called as <strong>output operation.</strong></p>
+    <p>If bytes flow from device like printer, display screen, or a network connection, etc to main memory, this is
+        called as <strong>input operation.</strong></p>
+    <hr />
+    <h2 class="h2">I/O Library Header Files</h2>
+    <p>Let us see the common header files used in C++ programming are:</p>
+    <table class="alt">
+        <tr>
+            <th>Header File</th>
+            <th>Function and Description</th>
+        </tr>
+        <tr>
+            <td>&lt;iostream&gt;</td>
+            <td>It is used to define the <strong>cout, cin and cerr</strong> objects, which correspond to standard
+                output stream, standard input stream and standard error stream, respectively.</td>
+        </tr>
+        <tr>
+            <td>&lt;iomanip&gt;</td>
+            <td>It is used to declare services useful for performing formatted I/O, such as <strong>setprecision and
+                    setw.</strong></td>
+        </tr>
+        <tr>
+            <td>&lt;fstream&gt;</td>
+            <td>It is used to declare services for user-controlled file processing.</td>
+        </tr>
+    </table>
+    <hr />
+    <h2 class="h2">Standard output stream (cout)</h2>
+    <p>The <strong>cout</strong> is a predefined object of <strong>ostream</strong> class. It is connected with the
+        standard output device, which is usually a display screen. The cout is used in conjunction with stream insertion
+        operator (&lt;&lt;) to display the output on a console</p>
+    <p>Let's see the simple example of standard output stream (cout):</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main( ) {
+   char ary[] = "Welcome to C++ tutorial";
+   cout &lt;&lt; "Value of ary is: " &lt;&lt; ary &lt;&lt; endl;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Value of ary is: Welcome to C++ tutorial
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">Standard input stream (cin)</h2>
+    <p>The <strong>cin</strong> is a predefined object of <strong>istream</strong> class. It is connected with the
+        standard input device, which is usually a keyboard. The cin is used in conjunction with stream extraction
+        operator (&gt;&gt;) to read the input from a console.</p>
+    <p>Let's see the simple example of standard input stream (cin):</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main( ) {
+  int age;
+   cout &lt;&lt; "Enter your age: ";
+   cin &gt;&gt; age;
+   cout &lt;&lt; "Your age is: " &lt;&lt; age &lt;&lt; endl;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Enter your age: 22
+Your age is: 22
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">Standard end line (endl)</h2>
+    <p>The <strong>endl</strong> is a predefined object of <strong>ostream</strong> class. It is used to insert a new
+        line characters and flushes the stream.</p>
+    <p>Let's see the simple example of standard end line (endl):</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main( ) {
+cout &lt;&lt; "C++ Tutorial";   
+cout &lt;&lt; " Javatpoint"&lt;&lt;endl; 
+cout &lt;&lt; "End of line"&lt;&lt;endl; 
+} 
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+C++ Tutorial Javatpoint 
+End of line
+</pre>
+    </div>
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="5_cpp_program.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="7_cpp_variable.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

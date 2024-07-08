@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynomial Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item active-submenu" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">ML Polynomial Regression</h1>
+    <ul class="points">
+        <li>Polynomial Regression is a regression algorithm that models the relationship between a dependent(y) and
+            independent variable(x) as nth degree polynomial. The Polynomial Regression equation is given below:</li>
+    </ul>
+    <div class="codeblock">
+        <pre>
+y= b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+ b<sub>2</sub>x<sub>1</sub><sup>2</sup>+ b<sub>2</sub>x<sub>1</sub><sup>3</sup>+...... b<sub>n</sub>x<sub>1</sub><sup>n</sup>
+</pre>
+    </div>
+    <ul class="points">
+        <li>It is also called the special case of Multiple Linear Regression in ML. Because we add some polynomial terms
+            to the Multiple Linear regression equation to convert it into Polynomial Regression.</li>
+        <li>It is a linear model with some modification in order to increase the accuracy.</li>
+        <li>The dataset used in Polynomial regression for training is of non-linear nature.</li>
+        <li>It makes use of a linear regression model to fit the complicated and non-linear functions and datasets.</li>
+        <li><strong>Hence, <em>"In Polynomial regression, the original features are converted into Polynomial features
+                    of required degree (2,3,..,n) and then modeled using a linear model."</em></strong></li>
+    </ul>
+    <h2 class="h2">Need for Polynomial Regression:</h2>
+    <p>The need of Polynomial Regression in ML can be understood in the below points:</p>
+    <ul class="points">
+        <li>If we apply a linear model on a <strong>linear dataset</strong>, then it provides us a good result as we
+            have seen in Simple Linear Regression, but if we apply the same model without any modification on a
+            <strong>non-linear dataset</strong>, then it will produce a drastic output. Due to which loss function will
+            increase, the error rate will be high, and accuracy will be decreased. </li>
+        <li>So for such cases, <strong>where data points are arranged in a non-linear fashion, we need the Polynomial
+                Regression model</strong>. We can understand it in a better way using the below comparison diagram of
+            the linear dataset and non-linear dataset.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression.png"
+        alt="ML Polynomial Regression" />
+    <ul class="points">
+        <li>In the above image, we have taken a dataset which is arranged non-linearly. So if we try to cover it with a
+            linear model, then we can clearly see that it hardly covers any data point. On the other hand, a curve is
+            suitable to cover most of the data points, which is of the Polynomial model. </li>
+        <li>Hence, <em>if the datasets are arranged in a non-linear fashion, then we should use the Polynomial
+                Regression model instead of Simple Linear Regression.</em></li>
+    </ul>
+    <h4 class="n"><span class="bold">Note:</span> A Polynomial Regression algorithm is also called Polynomial Linear
+        Regression because it does not depend on the variables, instead, it depends on the coefficients, which are
+        arranged in a linear fashion.</h4>
+    <h2 class="h2">Equation of the Polynomial Regression Model:</h2>
+    <p><strong>Simple Linear Regression equation: &nbsp; &nbsp; &nbsp; &nbsp; y = b<sub>0</sub>+b<sub>1</sub>x &nbsp;
+            &nbsp; &nbsp; &nbsp; .........(a)</strong></p>
+    <p><strong>Multiple Linear Regression equation: &nbsp; &nbsp; &nbsp; &nbsp; y= b<sub>0</sub>+b<sub>1</sub>x+
+            b<sub>2</sub>x<sub>2</sub>+ b<sub>3</sub>x<sub>3</sub>+....+ b<sub>n</sub>x<sub>n</sub> &nbsp; &nbsp; &nbsp;
+            &nbsp; .........(b)</strong></p>
+    <p><strong>Polynomial Regression equation: &nbsp; &nbsp; &nbsp; &nbsp; y= b<sub>0</sub>+b<sub>1</sub>x +
+            b<sub>2</sub>x<sup>2</sup>+ b<sub>3</sub>x<sup>3</sup>+....+ b<sub>n</sub>x<sup>n</sup> &nbsp; &nbsp; &nbsp;
+            &nbsp; ..........(c)</strong></p>
+    <p>When we compare the above three equations, we can clearly see that all three equations are Polynomial equations
+        but differ by the degree of variables. The Simple and Multiple Linear equations are also Polynomial equations
+        with a single degree, and the Polynomial regression equation is Linear equation with the nth degree. So if we
+        add a degree to our linear equations, then it will be converted into Polynomial Linear equations. </p>
+    <h4 class="n"><span class="bold">Note:</span> To better understand Polynomial Regression, you must have knowledge of
+        Simple Linear Regression. </h4>
+    <h2 class="h2">Implementation of Polynomial Regression using Python:</h2>
+    <p>Here we will implement the Polynomial Regression using Python. We will understand it by comparing Polynomial
+        Regression model with the Simple Linear Regression model. So first, let's understand the problem for which we
+        are going to build the model.</p>
+    <p><strong>Problem Description:</strong> There is a Human Resource company, which is going to hire a new candidate.
+        The candidate has told his previous salary 160K per annum, and the HR have to check whether he is telling the
+        truth or bluff. So to identify this, they only have a dataset of his previous company in which the salaries of
+        the top 10 positions are mentioned with their levels. By checking the dataset available, we have found that
+        there is a <strong>non-linear relationship between the Position levels and the salaries</strong>. Our goal is to
+        build a <strong>Bluffing detector regression</strong> model, so HR can hire an honest candidate. Below are the
+        steps to build such a model.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression2.png"
+        alt="ML Polynomial Regression" />
+    <h2 class="h3">Steps for Polynomial Regression:</h2>
+    <p>The main steps involved in Polynomial Regression are given below:</p>
+    <ul class="points">
+        <li>Data Pre-processing</li>
+        <li>Build a Linear Regression model and fit it to the dataset</li>
+        <li>Build a Polynomial Regression model and fit it to the dataset</li>
+        <li>Visualize the result for Linear Regression and Polynomial Regression model. </li>
+        <li>Predicting the output.</li>
+    </ul>
+    <h4 class="n"><span class="bold">Note:</span> Here, we will build the Linear regression model as well as Polynomial
+        Regression to see the results between the predictions. And Linear regression model is for reference. </h4>
+    <p class="pq"><strong>Data Pre-processing Step:</strong></p>
+    <p>The data pre-processing step will remain the same as in previous regression models, except for some changes. In
+        the Polynomial Regression model, we will not use feature scaling, and also we will not split our dataset into
+        training and test set. It has two reasons:</p>
+    <ul class="points">
+        <li>The dataset contains very less information which is not suitable to divide it into a test and training set,
+            else our model will not be able to find the correlations between the salaries and levels. </li>
+        <li>In this model, we want very accurate predictions for salary, so the model should have enough information.
+        </li>
+    </ul>
+    <p>The code for pre-processing step is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('Position_Salaries.csv')
+
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, 1:2].values
+y= data_set.iloc[:, 2].values
+</textarea></div>
+    <p><strong>Explanation:</strong></p>
+    <ul class="points">
+        <li>In the above lines of code, we have imported the important Python libraries to import dataset and operate on
+            it. </li>
+        <li>Next, we have imported the dataset '<strong>Position_Salaries.csv</strong>', which contains three columns
+            (Position, Levels, and Salary), but we will consider only two columns (Salary and Levels). </li>
+        <li>After that, we have extracted the dependent(Y) and independent variable(X) from the dataset. For x-variable,
+            we have taken parameters as [:,1:2], because we want 1 index(levels), and included :2 to make it as a
+            matrix. </li>
+    </ul>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above code, we can read our dataset as: </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression3.png"
+        alt="ML Polynomial Regression" />
+    <p>As we can see in the above output, there are three columns present (Positions, Levels, and Salaries). But we are
+        only considering two columns because Positions are equivalent to the levels or may be seen as the encoded form
+        of Positions. </p>
+    <p>Here we will predict the output for level <strong>6.5</strong> because the candidate has 4+ years' experience as
+        a regional manager, so he must be somewhere between levels 7 and 6.</p>
+    <p class="pq"><strong>Building the Linear regression model:</strong></p>
+    <p>Now, we will build and fit the Linear regression model to the dataset. In building polynomial regression, we will
+        take the Linear regression model as reference and compare both the results. The code is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting the Linear Regression to the dataset
+from sklearn.linear_model import LinearRegression
+lin_regs= LinearRegression()
+lin_regs.fit(x,y)
+</textarea></div>
+    <p>In the above code, we have created the Simple Linear model using <strong>lin_regs</strong> object of
+        <strong>LinearRegression</strong> class and fitted it to the dataset variables (x and y). </p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[5]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+</pre>
+    </div>
+    <p class="pq"><strong>Building the Polynomial regression model:</strong></p>
+    <p>Now we will build the Polynomial Regression model, but it will be a little different from the Simple Linear
+        model. Because here we will use <strong>PolynomialFeatures</strong> class of <strong>preprocessing</strong>
+        library. We are using this class to add some extra features to our dataset.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+ #Fitting the Polynomial regression to the dataset
+from sklearn.preprocessing import PolynomialFeatures
+poly_regs= PolynomialFeatures(degree= 2)
+x_poly= poly_regs.fit_transform(x)
+lin_reg_2 =LinearRegression()
+lin_reg_2.fit(x_poly, y)
+</textarea></div>
+    <p>In the above lines of code, we have used <strong>poly_regs.fit_transform(x)</strong>, because first we are
+        converting our feature matrix into polynomial feature matrix, and then fitting it to the Polynomial regression
+        model. The parameter value(degree= 2) depends on our choice. We can choose it according to our Polynomial
+        features.</p>
+    <p>After executing the code, we will get another matrix <strong>x_poly</strong>, which can be seen under the
+        variable explorer option:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression4.png"
+        alt="ML Polynomial Regression" />
+    <p>Next, we have used another LinearRegression object, namely <strong>lin_reg_2</strong>, to fit our
+        <strong>x_poly</strong> vector to the linear model. </p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[11]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+</pre>
+    </div>
+    <p class="pq"><strong>Visualizing the result for Linear regression:</strong></p>
+    <p>Now we will visualize the result for Linear regression model as we did in Simple Linear Regression. Below is the
+        code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the result for Linear Regression model
+mtp.scatter(x,y,color="blue")
+mtp.plot(x,lin_regs.predict(x), color="red")
+mtp.title("Bluff detection model(Linear Regression)")
+mtp.xlabel("Position Levels")
+mtp.ylabel("Salary")
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression5.png"
+        alt="ML Polynomial Regression" />
+    <p>In the above output image, we can clearly see that the regression line is so far from the datasets. Predictions
+        are in a red straight line, and blue points are actual values. If we consider this output to predict the value
+        of CEO, it will give a salary of approx. 600000$, which is far away from the real value. </p>
+    <p>So we need a curved model to fit the dataset other than a straight line.</p>
+    <p class="pq"><strong>Visualizing the result for Polynomial Regression</strong></p>
+    <p>Here we will visualize the result of Polynomial regression model, code for which is little different from the
+        above model.</p>
+    <p>Code for this is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the result for Polynomial Regression
+mtp.scatter(x,y,color="blue")
+mtp.plot(x, lin_reg_2.predict(poly_regs.fit_transform(x)), color="red")
+mtp.title("Bluff detection model(Polynomial Regression)")
+mtp.xlabel("Position Levels")
+mtp.ylabel("Salary")
+mtp.show()
+</textarea></div>
+    <p>In the above code, we have taken lin_reg_2.predict(poly_regs.fit_transform(x), instead of x_poly, because we want
+        a Linear regressor object to predict the polynomial features matrix. </p>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression6.png"
+        alt="ML Polynomial Regression" />
+    <p>As we can see in the above output image, the predictions are close to the real values. The above plot will vary
+        as we will change the degree.</p>
+    <p><strong>For degree= 3:</strong></p>
+    <p>If we change the degree=3, then we will give a more accurate plot, as shown in the below image.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression7.png"
+        alt="ML Polynomial Regression" />
+    <p>SO as we can see here in the above output image, the predicted salary for level 6.5 is near to 170K$-190k$, which
+        seems that future employee is saying the truth about his salary.</p>
+    <p><strong>Degree= 4:</strong> Let's again change the degree to 4, and now will get the most accurate plot. Hence we
+        can get more accurate results by increasing the degree of Polynomial.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-polynomial-regression8.png"
+        alt="ML Polynomial Regression" />
+    <p class="pq"><strong>Predicting the final result with the Linear Regression model:</strong></p>
+    <p>Now, we will predict the final output using the Linear regression model to see whether an employee is saying
+        truth or bluff. So, for this, we will use the <strong>predict()</strong> method and will pass the value 6.5.
+        Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+lin_pred = lin_regs.predict([[6.5]])
+print(lin_pred)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+[330378.78787879]
+</pre>
+    </div>
+    <p class="pq"><strong>Predicting the final result with the Polynomial Regression model:</strong></p>
+    <p>Now, we will predict the final output using the Polynomial Regression model to compare with Linear model. Below
+        is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+poly_pred = lin_reg_2.predict(poly_regs.fit_transform([[6.5]]))
+print(poly_pred)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+[158862.45265153]
+</pre>
+    </div>
+    <p>As we can see, the predicted output for the Polynomial Regression is [158862.45265153], which is much closer to
+        real value hence, we can say that future employee is saying true. </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="14_multiple_linear_regression.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="16_classification_algorithm.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

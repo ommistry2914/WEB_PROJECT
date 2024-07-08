@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item active-submenu" href="17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS background-attachment property</h1>
+    <p>The background-attachment property is used to specify that the background image is fixed or scroll with the rest of the page in the browser window.</p>
+    <p>This property has three values <strong>scroll, fixed,</strong> and <strong>local</strong>. Its default value is <strong>scroll</strong>, which causes the element to not scroll with its content. The <strong>local</strong> value of this property causes the element to scroll with the content. If we set the value to <strong>fixed</strong>, the <a href="https://www.javatpoint.com/how-to-add-background-image-in-css">background image</a> will not move during scrolling in the <a href="https://www.javatpoint.com/browsers">browser</a>.</p>
+    <p>This <a href="https://www.javatpoint.com/css-tutorial">CSS</a> property can support multiple background images. We can specify a different value of the <strong>background-attachment</strong> property for each background-image, separated by commas. Every image will match with the corresponding value of this property.</p>
+    <h3 class="h3">Syntax</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    background-attachment: scroll | fixed | local | initial | inherit;
+    </textarea></div>
+    <p>The values of this property are defined as follows.</p>
+    <h3 class="h3">Property Values</h3>
+    <p><strong>scroll:</strong> It is the default value that prevents the element from scrolling with the contents, but scrolls with the page.</p>
+    <p><strong>fixed:</strong> Using this value, the background image doesn't move with the element, even the element has a scrolling mechanism. It causes the image to be locked in one place, even the rest of the document scrolls.</p>
+    <p><strong>local:</strong> Using this value, if the element has a scrolling mechanism, the background image scrolls with the content of the element.</p>
+    <p><strong>initial:</strong> It sets the property to its default value.</p>
+    <p><strong>inherit:</strong> It inherits the property from its parent element.</p>
+    <p>Let's understand this property by using some illustrations.</p>
+    <h3 class="h3">Example</h3>
+    <p>In this example, we are using the <strong>scroll</strong> value of the <strong>background-attachment</strong> property, which is the default behavior. So when the page is scrolled, the background scrolls with it.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-attachment property
+    &lt;/title&gt;
+    
+    &lt;style&gt;
+    #example {
+    background-image:  url("lion.png");
+    font-size: 35px;
+    border: 4px solid red;
+    color: white;
+    background-position: center;
+    background-color: green;	
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    }
+    
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h1&gt; background-attachment: scroll;&lt;/h1&gt;
+    &lt;p&gt; If there is no scrollbar on your screen, then try to resize the browser's window to see the effect. &lt;/p&gt;
+    &lt;div id="example"&gt;
+    &lt;p&gt;
+    Hi, Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is always providing an easy and in-depth tutorial on various technologies. No one is perfect in this world, and nothing is eternally best. But we can try to be better.
+    &lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-attachment-property1" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-attachment-property1.png" alt="CSS background-attachment property" />
+    <h3 class="h3">Example - Using fixed value</h3>
+    <p>In this example, we are using the <strong>fixed</strong> value of the <strong>background-attachment</strong> property. This value fixed the background image, and the image will not move even the rest of the document scrolls.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-attachment property
+    &lt;/title&gt;
+    
+    &lt;style&gt;
+    #example {
+    background-image:  url("lion.png");
+    font-size: 35px;
+    border: 4px solid red;
+    color: white;
+    background-position: center;
+    background-color: green;	
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h1&gt; background-attachment: fixed;&lt;/h1&gt;
+    &lt;p&gt; If there is no scrollbar on your screen, then try to resize the browser's window to see the effect. &lt;/p&gt;
+    &lt;div id="example"&gt;
+    &lt;p&gt;
+    Hi, Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is always providing an easy and in-depth tutorial on various technologies. No one is perfect in this world, and nothing is eternally best. But we can try to be better.
+    &lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-attachment-property2" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-attachment-property2.png" alt="CSS background-attachment property" />
+    <h3 class="h3">Example - Using local value</h3>
+    <p>In this example, we are using the <strong>local</strong> value of the <strong>background-attachment</strong> property. Here, the background-image will scroll with the scrolling of the element's content.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-attachment property
+    &lt;/title&gt;
+    
+    &lt;style&gt;
+    #example {
+    background-image:  url("lion.png");
+    font-size: 35px;
+    border: 4px solid red;
+    color: white;
+    background-position: center;
+    background-color: green;	
+    background-repeat: no-repeat;
+    background-attachment: local;
+    }
+    
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h1&gt; background-attachment: local;&lt;/h1&gt;
+    &lt;p&gt; If there is no scrollbar on your screen, then try to resize the browser's window to see the effect. &lt;/p&gt;
+    &lt;div id="example"&gt;
+    &lt;p&gt;
+    Hi, Welcome to the javaTpoint.com. This site is developed so that students may learn computer science related technologies easily. The javaTpoint.com is always providing an easy and in-depth tutorial on various technologies. No one is perfect in this world, and nothing is eternally best. But we can try to be better.
+    &lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-attachment-property3" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-attachment-property3.png" alt="CSS background-attachment property" />
+    <p>Now, let's see another example in which we are using more than one background image for an element.</p>
+    <h3 class="h3">Example</h3>
+    <p>Here, there are two background images on which we are applying the <strong>background-attachment</strong> property. The attachment for the first image is set to <strong>fixed</strong>, whereas the attachment for the second image is set to <strong>scroll</strong>.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-attachment property
+    &lt;/title&gt;
+    
+    &lt;style&gt;
+    #example {
+    background-image:  url("jtp.png"), url("forest.jpg");
+    height: 500px;
+    border: 4px solid red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+    }
+    
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h1&gt; background-attachment: scroll;&lt;/h1&gt;
+    &lt;p&gt; If there is no scrollbar on your screen, then try to resize the browser's window to see the effect. &lt;/p&gt;
+    &lt;div id="example"&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-attachment-property4" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-attachment-property4.png" alt="CSS background-attachment property" />
+    <hr/>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+    <a href="16_background_color.html"><button class="btn btn-danger" type="button">Previous</button></a>
+    <a href="18_background_size.html"><button class="btn btn-success" type="button">Next</button></a>
+</div>
+<footer>
+    <div class="container-fluid bg-dark text-bg-dark"
+        style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+        Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

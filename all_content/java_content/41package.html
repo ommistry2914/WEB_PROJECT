@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Package</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Java Package</h1>
+    <div id="upr">
+        <ol>
+            <li><a href="#">Java Package</a></li>
+            <li><a href="#packageex">Example of package</a></li>
+            <li><a href="#packageaccess">Accessing package</a>
+                <ol>
+                    <li><a href="#packageaccess1">By import packagename.*</a></li>
+                    <li><a href="#packageaccess2">By import packagename.classname</a></li>
+                    <li><a href="#packageaccess3">By fully qualified name</a></li>
+                </ol>
+            </li>
+            <li><a href="#packagesub">Subpackage</a></li>
+            <li><a href="#packageanotherdirectory">Sending class file to another directory</a></li>
+            <li><a href="#packageclasspathswitch">-classpath switch</a></li>
+            <li><a href="#packagewaystoload">4 ways to load the class file or jar file</a></li>
+            <li><a href="#packagetwopublic">How to put two public class in a package</a></li>
+            <li><a href="#packagestaticimport">Static Import</a></li>
+            <li><a href="package-class">Package class</a></li>
+        </ol>
+    </div>
+    <p>A <b>java package</b> is a group of similar types of classes, interfaces and sub-packages.
+    </p>
+    <p>Package in java can be categorized in two form, built-in package and user-defined package. </p>
+    <p>There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.</p>
+    <p>Here, we will have the detailed learning of creating and using user-defined packages.
+    </p>
+    <h2 class="h4">Advantage of Java Package</h2>
+    <p>1) Java package is used to categorize the classes and interfaces so that they can be easily maintained.</p>
+    <p>2) Java package provides access protection.</p>
+    <p>3) Java package removes naming collision.</p>
+    <img src="https://static.javatpoint.com/images/package.JPG" alt="package in java" title="package" />
+    <hr />
+    <a id="packageex"></a>
+    <h2 class="h3ex">Simple example of java package</h2>
+    <p>The <b>package keyword</b> is used to create a package in java.</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save as Simple.java
+package mypack;
+public class Simple{
+ public static void main(String args[]){
+    System.out.println("Welcome to package");
+   }
+}
+</textarea></div>
+    <h2 class="h4">How to compile java package</h2>
+    <p>If you are not using any IDE, you need to follow the <b>syntax</b> given below:</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+javac -d directory javafilename
+</textarea></div>
+    <p>For <b>example</b></p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+javac -d . Simple.java
+</textarea></div>
+    <p>The -d switch specifies the destination where to put the generated class file. You can use any directory name
+        like
+        /home (in case of Linux), d:/abc (in case of windows) etc.
+        If you want to keep the package within the same directory, you can use . (dot).
+        <hr />
+    <h2 class="h4">How to run java package program</h2>
+    <p>You need to use fully qualified name e.g. mypack.Simple etc to run the class.
+        <hr />
+    <table>
+        <tr>
+            <td><strong>To Compile:</strong> javac -d . Simple.java</td>
+        </tr>
+        <tr>
+            <td><strong>To Run:</strong> java mypack.Simple</td>
+        </tr>
+    </table>
+    <div class="codeblock3">
+        <pre>
+Output:Welcome to package
+</pre>
+    </div>
+    <table>
+        <tr>
+            <td>The -d is a switch that tells the compiler where to put the class file i.e. it represents destination.
+                The .
+                represents the current folder.
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+    <a id="packageaccess"></a>
+    <h2 class="h2">How to access package from another package?</h2>
+    <p>There are three ways to access the package from outside the package.</p>
+    <ol>
+        <li>import package.*;</li>
+        <li>import package.classname;</li>
+        <li>fully qualified name.</li>
+    </ol>
+    <h4 class="h2">1) Using packagename.*</h4>
+    <p>If you use package.* then all the classes and interfaces of this package will be accessible but not subpackages.
+        </tp>
+    <p>The import keyword is used to make the classes and interface of another package accessible to the current
+        package.
+    </p>
+    <a id="packageaccess1"></a>
+    <h2 class="h3ex">Example of package that import the packagename.*</h2>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save by A.java
+package pack;
+public class A{
+  public void msg(){System.out.println("Hello");}
+}
+</textarea></div>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save by B.java
+package mypack;
+import pack.*;
+
+class B{
+  public static void main(String args[]){
+   A obj = new A();
+   obj.msg();
+  }
+}
+</textarea></div>
+    <div class="codeblock3">
+        <pre>
+Output:Hello
+</pre>
+    </div>
+    <hr />
+    <a id="packageaccess2"></a>
+    <h4 class="h2">2) Using packagename.classname</h4>
+    <p>If you import package.classname then only declared class of this package will be accessible.</p>
+    <h2 class="h3ex">Example of package by import package.classname</h2>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save by A.java
+
+package pack;
+public class A{
+  public void msg(){System.out.println("Hello");}
+}
+</textarea></div>
+    <div class="codeblock"><textarea name="code" class="java">
+//save by B.java
+package mypack;
+import pack.A;
+
+class B{
+  public static void main(String args[]){
+   A obj = new A();
+   obj.msg();
+  }
+}
+</textarea></div>
+    <div class="codeblock3">
+        <pre>
+Output:Hello
+</pre>
+    </div>
+    <hr />
+    <a id="packageaccess3"></a>
+    <h4 class="h2">3) Using fully qualified name</h4>
+    <p>If you use fully qualified name then only declared class of this package will be accessible. Now there is no need
+        to
+        import. But you need to use fully qualified name every time when you are accessing the class or interface.</p>
+    <p>It is generally used when two packages have same class name e.g. java.util and java.sql packages contain Date
+        class.
+    </p>
+    <h2 class="h3ex">Example of package by import fully qualified name</h2>
+    <div class="row justify-content-start p-3"><textarea name="code" class="codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save by A.java
+package pack;
+public class A{
+  public void msg(){System.out.println("Hello");}
+}
+</textarea></div>
+    <div class="codeblock"><textarea name="code" class="java">
+//save by B.java
+package mypack;
+class B{
+  public static void main(String args[]){
+   pack.A obj = new pack.A();//using fully qualified name
+   obj.msg();
+  }
+}
+</textarea></div>
+    <div class="codeblock3">
+        <pre>
+Output:Hello
+</pre>
+    </div>
+    <h4 class="n">Note: If you import a package, subpackages will not be imported.</h4>
+    <p>If you import a package, all the classes and interface of that package will be imported excluding the classes and
+        interfaces of the subpackages. Hence, you need to import the subpackage as well.</p>
+    <hr />
+    <h4 class="h4">Note: Sequence of the program must be package then import then class.</h4>
+    <img src="https://static.javatpoint.com/images/sequenceofpackage.JPG" alt="sequence of package"
+        title="sequence of package" />
+    <hr />
+    <a id="packagesub"></a>
+    <h2 class="h2">Subpackage in java</h2>
+    <p>Package inside the package is called the <b>subpackage</b>. It should be created <b>to categorize the package
+            further</b>.</p>
+    <p> Let's take an example, Sun Microsystem has definded a package named java that contains many classes like System,
+        String, Reader, Writer, Socket etc. These classes represent a particular group e.g. Reader and Writer classes
+        are
+        for Input/Output operation, Socket and ServerSocket classes are for networking etc and so on. So, Sun has
+        subcategorized the java package into subpackages such as lang, net, io etc. and put the Input/Output related
+        classes
+        in io package, Server and ServerSocket classes in net packages and so on.</p>
+    <h4 id="n">The standard of defining package is domain.company.package e.g. com.javatpoint.bean or org.sssit.dao.
+    </h4>
+    <h3 class="h3ex">Example of Subpackage</h3>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+package com.javatpoint.core;
+class Simple{
+  public static void main(String args[]){
+   System.out.println("Hello subpackage");
+  }
+}
+</textarea></div>
+    <table>
+        <tr>
+            <td><strong>To Compile:</strong> javac -d . Simple.java</td>
+        </tr>
+        <tr>
+            <td><strong>To Run:</strong> java com.javatpoint.core.Simple</td>
+        </tr>
+    </table>
+    <div class="codeblock3">
+        <pre>
+Output:Hello subpackage
+</pre>
+    </div>
+    <hr />
+    <a id="packageanotherdirectory"></a>
+    <h2 class="h2">How to send the class file to another directory or drive?</h2>
+    <p>There is a scenario, I want to put the class file of A.java source file in classes folder of c: drive. For
+        example:
+    </p>
+    <img src="https://static.javatpoint.com/images/anotherpackage.JPG" alt="how to put class file in another package"
+        title="how to put class file in another package" />
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save as Simple.java
+package mypack;
+public class Simple{
+ public static void main(String args[]){
+    System.out.println("Welcome to package");
+   }
+}
+</textarea></div>
+    <h3 class="h4">To Compile:</h3>
+    <p><strong>e:\sources> javac -d c:\classes Simple.java</strong></p>
+    <h3 class="h4">To Run:</h3>
+    <table>
+        <tr>
+            <td>To run this program from e:\source directory, you need to set classpath of the directory where the class
+                file resides.</td>
+        </tr>
+        <tr>
+            <td><strong>e:\sources> set classpath=c:\classes;.;</strong></td>
+        </tr>
+        <tr>
+            <td><strong>e:\sources> java mypack.Simple</strong></td>
+        </tr>
+    </table>
+    <a id="packageclasspathswitch"></a>
+    <h3 class="h3">Another way to run this program by -classpath switch of java:</h3>
+    <p>The -classpath switch can be used with javac and java tool.</p>
+    <p>To run this program from e:\source directory, you can use -classpath switch of java that tells where to look for
+        class file. For example:</p>
+    <p><strong>e:\sources> java -classpath c:\classes mypack.Simple</strong></p>
+    <div class="codeblock3">
+        <pre>
+Output:Welcome to package
+</pre>
+    </div>
+    <hr />
+    <a id="packagewaystoload"></a>
+    <h3 class="h3">Ways to load the class files or jar files</h3>
+    <table>
+        <tr>
+            <td>There are two ways to load the class files temporary and permanent.</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Temporary
+            <ul>
+                <li>By setting the classpath in the command prompt</li>
+                <li>By -classpath switch</li>
+            </ul>
+        </li>
+        <li>Permanent
+            <ul>
+                <li>By setting the classpath in the environment variables</li>
+                <li>By creating the jar file, that contains all the class files, and copying the jar file in the
+                    jre/lib/ext
+                    folder. </li>
+            </ul>
+        </li>
+    </ul>
+    <hr />
+    <h4 class="n">Rule: There can be only one public class in a java source file and it must be saved by the public
+        class
+        name.</h4>
+    <div class="codeblock"><textarea name="code" class="java">
+//save as C.java otherwise Compilte Time Error
+
+class A{}
+class B{}
+public class C{}
+
+</textarea></div>
+    <hr />
+    <a id="packagetwopublic"></a>
+    <h3 class="h3">How to put two public classes in a package? </h3>
+    <table>
+        <tr>
+            <td>If you want to put two public classes in a package, have two java source files containing one public
+                class,
+                but keep the package name same. For example:</td>
+        </tr>
+    </table>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save as A.java
+
+package javatpoint;
+public class A{}
+
+</textarea></div>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//save as B.java
+
+package javatpoint;
+public class B{}
+
+</textarea></div>
+    <hr />
+    <a id="packagestaticimport"></a>
+    
+    
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="40interface.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="42access_modifier.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

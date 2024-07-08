@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Java Data Type</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 id="h1">Data Types in Java</h1>
+    <p>Data types specify the different sizes and values that can be stored in the variable. There are two types of data
+        types in Java: </p>
+    <ol class="points">
+        <li><strong>Primitive data types:</strong> The primitive data types include boolean, char, byte, short, int,
+            long,
+            float and double.</li>
+        <li><strong>Non-primitive data types:</strong> The non-primitive data types include 
+                Classes, Interfaces , and Arrays.</li>
+    </ol>
+    <h2 class="h2">Java Primitive Data Types</h2>
+    <p>In Java language, primitive data types are the building blocks of data manipulation. These are the most basic
+        data
+        types available in Java language. </p>
+    <p class="n">Java is a statically-typed programming language. It means, all variables
+        must
+        be declared before its use. That is why we need to declare variable's type and name.</p>
+    <p>There are 8 types of primitive data types: </p>
+    <ul class="points">
+        <li>boolean data type</li>
+        <li>byte data type</li>
+        <li>char data type</li>
+        <li>short data type</li>
+        <li>int data type</li>
+        <li>long data type</li>
+        <li>float data type</li>
+        <li>double data type</li>
+    </ul>
+   <div class="center"> <img src="https://static.javatpoint.com/images/java-data-types.png"  alt="Java Data Types" /></div>
+    <TABLE class="alt mt-5">
+        <TR>
+            <th id="table_dvpt_datatype"><STRONG>Data Type</STRONG></th>
+            <th id="table_dvpt_defaultvalue"><STRONG>Default Value</STRONG></th>
+            <th id="table_dvpt_defaultsize"><STRONG>Default size</STRONG></th>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">boolean</TD>
+            <TD headers="table_dvpt_defaultvalue">false</TD>
+            <TD headers="table_dvpt_defaultsize">1 bit</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">char</TD>
+            <TD headers="table_dvpt_defaultvalue">'\u0000'</TD>
+            <TD headers="table_dvpt_defaultsize">2 byte</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">byte</TD>
+            <TD headers="table_dvpt_defaultvalue">0</TD>
+            <TD headers="table_dvpt_defaultsize">1 byte</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">short</TD>
+            <TD headers="table_dvpt_defaultvalue">0</TD>
+            <TD headers="table_dvpt_defaultsize">2 byte</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">int</TD>
+            <TD headers="table_dvpt_defaultvalue">0</TD>
+            <TD headers="table_dvpt_defaultsize">4 byte</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">long</TD>
+            <TD headers="table_dvpt_defaultvalue">0L</TD>
+            <TD headers="table_dvpt_defaultsize">8 byte</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">float</TD>
+            <TD headers="table_dvpt_defaultvalue">0.0f</TD>
+            <TD headers="table_dvpt_defaultsize">4 byte</TD>
+        </TR>
+        <TR>
+            <TD headers="table_dvpt_datatype">double</TD>
+            <TD headers="table_dvpt_defaultvalue">0.0d</TD>
+            <TD headers="table_dvpt_defaultsize">8 byte</TD>
+        </TR>
+    </TABLE>
+    <h2 class="h2 mt-3">Boolean Data Type</h2>
+    <p>The Boolean data type is used to store only two possible values: true and false. This data type is used for
+        simple
+        flags that track true/false conditions. </p>
+    <p>The Boolean data type specifies one bit of information, but its "size" can't be defined precisely.</p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+Boolean one = false
+</textarea></div>
+    <h2 class="h2">Byte Data Type </h2>
+    <p>The byte data type is an example of primitive data type. It isan 8-bit signed two's complement integer. Its
+        value-range lies between -128 to 127 (inclusive). Its minimum value is -128 and maximum value is 127. Its
+        default
+        value is 0. </p>
+    <p>The byte data type is used to save memory in large arrays where the memory savings is most required. It saves
+        space
+        because a byte is 4 times smaller than an integer. It can also be used in place of "int" data type. </p>
+    <p><Strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+byte a = 10, byte b = -20
+</textarea></div>
+    <h2 class="h2">Short Data Type </h2>
+    <p>The short data type is a 16-bit signed two's complement integer. Its value-range lies between -32,768 to 32,767
+        (inclusive). Its minimum value is -32,768 and maximum value is 32,767. Its default value is 0. </p>
+    <p>The short data type can also be used to save memory just like byte data type. A short data type is 2 times
+        smaller
+        than an integer. </p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;"">
+short s = 10000, short r = -5000
+</textarea></div>
+    <h2 class="h2">Int Data Type</h2>
+    <p>The int data type is a 32-bit signed two's complement integer. Its value-range lies between - 2,147,483,648
+        (-2^31)
+        to 2,147,483,647 (2^31 -1) (inclusive). Its minimum value is - 2,147,483,648and maximum value is 2,147,483,647.
+        Its
+        default value is 0. </p>
+    <p>The int data type is generally used as a default data type for integral values unless if there is no problem
+        about
+        memory.</p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+int a = 100000, int b = -200000
+</textarea></div>
+    <h2 class="h2">Long Data Type </h2>
+    <p>The long data type is a 64-bit two's complement integer. Its value-range lies between
+        -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 -1)(inclusive). Its minimum value is -
+        9,223,372,036,854,775,808and maximum value is 9,223,372,036,854,775,807. Its default value is 0. The long data
+        type
+        is used when you need a range of values more than those provided by int.</p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+long a = 100000L, long b = -200000L
+</textarea></div>
+    <h2 class="h2">Float Data Type</h2>
+    <p>The float data type is a single-precision 32-bit IEEE 754 floating point.Its value range is unlimited. It is
+        recommended to use a float (instead of double) if you need to save memory in large arrays of floating point
+        numbers.
+        The float data type should never be used for precise values, such as currency. Its default value is 0.0F.</p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+float f1 = 234.5f
+</textarea></div>
+    <h2 class="h2">Double Data Type </h2>
+    <p>The double data type is a double-precision 64-bit IEEE 754 floating point. Its value range is unlimited. The
+        double
+        data type is generally used for decimal values just like float. The double data type also should never be used
+        for
+        precise values, such as currency. Its default value is 0.0d.</p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+double d1 = 12.3
+</textarea></div>
+    <h2 class="h2">Char Data Type</h2>
+    <p>The char data type is a single 16-bit Unicode character. Its value-range lies between '\u0000' (or 0) to '\uffff'
+        (or
+        65,535 inclusive).The char data type is used to store characters. </p>
+    <p><strong>Example:</strong> </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;max-width: 100%;">
+char letterA = 'A'
+</textarea></div>
+    <h3 class="h2">Why char uses 2 byte in java and what is \u0000 ?</h3>
+    <p>It is because java uses Unicode system not ASCII code system. The \u0000 is the lowest range of Unicode system.
+        To
+        get detail explanation about Unicode visit next page.
+    </p>
+    <br>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="10java_variable.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="12unicode_system.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

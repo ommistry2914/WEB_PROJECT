@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a></li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item active-submenu" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a></li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a></li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Data Types</h1>
+    <p>Every value has a datatype, and variables can hold values. Python is a powerfully composed language;
+        consequently, we don't have to characterize the sort of variable while announcing it. The interpreter binds the
+        value implicitly to its type.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = 5
+</textarea></div>
+    <p>We did not specify the type of the variable a, which has the value five from an integer. The Python interpreter
+        will automatically interpret the variable as an integer.</p>
+    <p>We can verify the type of the program-used variable thanks to Python. The type() function in Python returns the
+        type of the passed variable.</p>
+    <p>Consider the following illustration when defining and verifying the values of various data types.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+a=10
+b="Hi Python"
+c = 10.5
+print(type(a))
+print(type(b))
+print(type(c))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;type 'int'&gt;
+&lt;type 'str'&gt;
+&lt;type 'float'&gt;
+</pre>
+    </div>
+    <h2 class="h2">Standard data types</h2>
+    <p>A variable can contain a variety of values. On the other hand, a person's id must be stored as an integer, while
+        their name must be stored as a string.</p>
+    <p>The storage method for each of the standard data types that Python provides is specified by Python. The following
+        is a list of the Python-defined data types.</p>
+    <ol class="points">
+        <li><a href="#numbers">Numbers</a></li>
+        <li><a href="#SequenceType">Sequence Type</a></li>
+        <li><a href="#Boolean">Boolean</a></li>
+        <li><a href="#Set">Set</a></li>
+        <li><a href="#dictionary">Dictionary</a></li>
+    </ol>
+    <img src="https://static.javatpoint.com/python/images/python-data-types.png" alt="Python Data Types" />
+    <p>The data types will be briefly discussed in this tutorial section. We will talk about every single one of them
+        exhaustively later in this instructional exercise.</p>
+    <h3 class="h3" id="numbers">Numbers</h3>
+    <p>Numeric values are stored in numbers. The whole number, float, and complex qualities have a place with a Python
+        Numbers datatype. Python offers the type() function to determine a variable's data type. The instance ()
+        capability is utilized to check whether an item has a place with a specific class.</p>
+    <p>When a number is assigned to a variable, Python generates Number objects. For instance,</p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = 5
+print("The type of a", type(a))
+
+b = 40.5
+print("The type of b", type(b))
+
+c = 1+3j
+print("The type of c", type(c))
+print(" c is a complex number", isinstance(1+3j,complex))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>The type of a &lt;class 'int'&gt;
+The type of b &lt;class 'float'&gt;
+The type of c &lt;class 'complex'&gt;
+c is complex number: True
+</pre>
+    </div>
+    <p>Python supports three kinds of numerical data.</p>
+    <ul class="points">
+        <li><strong>Int:</strong> Whole number worth can be any length, like numbers 10, 2, 29, - 20, - 150, and so on.
+            An integer can be any length you want in Python. Its worth has a place with int.</li>
+        <li><strong>Float:</strong> Float stores drifting point numbers like 1.9, 9.902, 15.2, etc. It can be accurate
+            to within 15 decimal places.</li>
+        <li><strong>Complex:</strong> An intricate number contains an arranged pair, i.e., x + iy, where x and y signify
+            the genuine and non-existent parts separately. The complex numbers like 2.14j, 2.0 + 2.3j, etc.</li>
+    </ul>
+    <h3 id="SequenceType" class="h3">Sequence Type</h3>
+    <h3 class="h4">String</h3>
+    <p>The sequence of characters in the quotation marks can be used to describe the string. A string can be defined in
+        Python using single, double, or triple quotes.</p>
+    <p>String dealing with Python is a direct undertaking since Python gives worked-in capabilities and administrators
+        to perform tasks in the string.</p>
+    <p>When dealing with strings, the operation "hello"+" python" returns "hello python," and the operator + is used to
+        combine two strings.</p>
+    <p>Because the operation "Python" *2 returns "Python," the operator * is referred to as a repetition operator.</p>
+    <p>The Python string is demonstrated in the following example.</p>
+    <p><strong>Example - 1</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+str = "string using double quotes"
+print(str)
+s = '''A multiline
+string'''
+print(s)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>string using double quotes
+A multiline
+string
+</pre>
+    </div>
+    <p>Look at the following illustration of string handling.</p>
+    <p><strong>Example - 2</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+str1 = 'hello javatpoint' #string str1  
+str2 = ' how are you' #string str2  
+print (str1[0:2]) #printing first two character using slice operator  
+print (str1[4]) #printing 4th character of the string  
+print (str1*2) #printing the string twice  
+print (str1 + str2) #printing the concatenation of str1 and str2  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>he
+o
+hello javatpointhello javatpoint
+hello javatpoint how are you
+</pre>
+    </div>
+    <h3 class="h4">List</h3>
+    <p>Lists in Python are like arrays in C, but lists can contain data of different types. The things put away in the
+        rundown are isolated with a comma (,) and encased inside square sections [].</p>
+    <p>To gain access to the list's data, we can use slice [:] operators. Like how they worked with strings, the list is
+        handled by the concatenation operator (+) and the repetition operator (*).</p>
+    <p>Look at the following example.</p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list1  = [1, "hi", "Python", 2]  
+#Checking type of given list
+print(type(list1))
+
+#Printing the list1
+print (list1)
+
+# List slicing
+print (list1[3:])
+
+# List slicing
+print (list1[0:2]) 
+
+# List Concatenation using + operator
+print (list1 + list1)
+
+# List repetation using * operator
+print (list1 * 3)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[1, 'hi', 'Python', 2]
+[2]
+[1, 'hi']
+[1, 'hi', 'Python', 2, 1, 'hi', 'Python', 2]
+[1, 'hi', 'Python', 2, 1, 'hi', 'Python', 2, 1, 'hi', 'Python', 2]
+</pre>
+    </div>
+    <h3 class="h3">Tuple</h3>
+    <p>In many ways, a tuple is like a list. Tuples, like lists, also contain a collection of items from various data
+        types. A parenthetical space () separates the tuple's components from one another.</p>
+    <p>Because we cannot alter the size or value of the items in a tuple, it is a read-only data structure.</p>
+    <p>Let's look at a straightforward tuple in action.</p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+tup  = ("hi", "Python", 2)  
+# Checking type of tup
+print (type(tup))  
+
+#Printing the tuple
+print (tup)
+
+# Tuple slicing
+print (tup[1:])  
+print (tup[0:1])  
+
+# Tuple concatenation using + operator
+print (tup + tup)  
+
+# Tuple repatation using * operator
+print (tup * 3)   
+
+# Adding value to tup. It will throw an error.
+t[2] = "hi"
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'tuple'&gt;
+('hi', 'Python', 2)
+('Python', 2)
+('hi',)
+('hi', 'Python', 2, 'hi', 'Python', 2)
+('hi', 'Python', 2, 'hi', 'Python', 2, 'hi', 'Python', 2)
+
+Traceback (most recent call last):
+  File "main.py", line 14, in &lt;module&gt;
+    t[2] = "hi";
+TypeError: 'tuple' object does not support item assignment
+</pre>
+    </div>
+    <h3 class="h3" id="dictionary">Dictionary</h3>
+    <p>A dictionary is a key-value pair set arranged in any order. It stores a specific value for each key, like an
+        associative array or a hash table. Value is any Python object, while the key can hold any primitive data type.
+    </p>
+    <p>The comma (,) and the curly braces are used to separate the items in the dictionary.</p>
+    <p>Look at the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+d = {1:'Jimmy', 2:'Alex', 3:'john', 4:'mike'}   
+
+# Printing dictionary
+print (d)
+
+# Accesing value using keys
+print("1st name is "+d[1]) 
+print("2nd name is "+ d[4])  
+
+print (d.keys())  
+print (d.values())  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>1st name is Jimmy
+2nd name is mike
+{1: 'Jimmy', 2: 'Alex', 3: 'john', 4: 'mike'}
+dict_keys([1, 2, 3, 4])
+dict_values(['Jimmy', 'Alex', 'john', 'mike'])
+</pre>
+    </div>
+    <h3 class="h3" id="Boolean">Boolean</h3>
+    <p>True and False are the two default values for the Boolean type. These qualities are utilized to decide the given
+        assertion valid or misleading. The class book indicates this. False can be represented by the 0 or the letter
+        "F," while true can be represented by any value that is not zero.</p>
+    <p>Look at the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to check the boolean type
+print(type(True))
+print(type(False))
+print(false)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'bool'&gt;
+&lt;class 'bool'&gt;
+NameError: name 'false' is not defined
+</pre>
+    </div>
+    <h3 class="h3" id="Set">Set</h3>
+    <p>The data type's unordered collection is Python Set. It is iterable, mutable(can change after creation), and has
+        remarkable components. The elements of a set have no set order; It might return the element's altered sequence.
+        Either a sequence of elements is passed through the curly braces and separated by a comma to create the set or
+        the built-in function set() is used to create the set. It can contain different kinds of values.</p>
+    <p>Look at the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Creating Empty set
+set1 = set()
+
+set2 = {'James', 2, 3,'Python'}
+
+#Printing Set value
+print(set2)
+
+# Adding element to the set
+
+set2.add(10)
+print(set2)
+
+#Removing element from the set
+set2.remove(2)
+print(set2)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{3, 'Python', 'James', 2}
+{'Python', 'James', 3, 2, 10}
+{'Python', 'James', 3, 10}
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="4_python_variables.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="6_python_keywords.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

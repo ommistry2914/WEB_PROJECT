@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installing Anaconda & Python</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item active-submenu" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Installing Anaconda and Python</h1>
+    <p>To learn machine learning, we will use the Python programming language in this tutorial. So, in order to use
+        Python for machine learning, we need to install it in our computer system with compatible <strong>IDEs
+            (Integrated Development Environment)</strong>.</p>
+    <p>In this topic, we will learn to install Python and an IDE with the help of <strong>Anaconda
+            distribution</strong>.</p>
+    <p>Anaconda distribution is a free and open-source platform for Python/R programming languages. It can be easily
+        installed on any OS such as Windows, Linux, and MAC OS. It provides more than 1500 Python/R data science
+        packages which are suitable for developing machine learning and deep learning models.</p>
+    <p>Anaconda distribution provides installation of Python with various IDE's such as <strong>Jupyter
+            Notebook</strong>, <strong>Spyder</strong>, <strong>Anaconda prompt</strong>, <strong>etc</strong>. Hence it
+        is a very convenient packaged solution which you can easily download and install in your computer. It will
+        automatically install Python and some basic IDEs and libraries with it.</p>
+    <p>Below some steps are given to show the downloading and installing process of Anaconda and IDE:</p>
+    <h3 class="h3">Step-1: Download Anaconda Python:</h3>
+    <ul class="points">
+        <li>To download Anaconda in your system, firstly, open your favorite browser and type Download Anaconda Python,
+            and then click on the first link as given in the below image. Alternatively, you can directly download it by
+            clicking on this link, <a href="https://www.anaconda.com/distribution/#download-section" rel="nofollow"
+                target="_blank">https://www.anaconda.com/distribution/#download-section</a>.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>After clicking on the first link, you will reach to download page of Anaconda, as shown in the below image:
+        </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python2.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>Since, Anaconda is available for Windows, Linux, and Mac OS, hence, you can download it as per your OS type
+            by clicking on available options shown in below image. It will provide you Python 2.7 and Python 3.7
+            versions, but the latest version is 3.7, hence we will download Python 3.7 version. After clicking on the
+            download option, it will start downloading on your computer.</li>
+    </ul>
+    <h4 class="n"><span class="bold">Note:</span> In this topic, we are downloading Anaconda for Windows you can choose
+        it as per your OS. </h4>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python3.png"
+        alt="Installing Anaconda and Python" />
+    <h3 class="h3">Step- 2: Install Anaconda Python (Python 3.7 version):</h3>
+    <p>Once the downloading process gets completed, go to downloads &rarr; double click on the "<strong>.exe</strong>"
+        file (<strong>Anaconda3-2019.03-Windows-x86_64.exe</strong>) of Anaconda. It will open a setup window for
+        Anaconda installations as given in below image, then click on Next. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python4.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>It will open a License agreement window click on "<strong>I Agree</strong>" option and move further. </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python5.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>In the next window, you will get two options for installations as given in the below image. Select the first
+            option (<strong>Just me</strong>) and click on <strong>Next</strong>. </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python6.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>Now you will get a window for installing location, here, you can leave it as default or change it by
+            browsing a location, and then click on Next. Consider the below image:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python7.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>Now select the second option, and click on <strong>install</strong>.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python8.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>Once the installation gets complete, click on <strong>Next</strong>.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python9.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>Now installation is completed, tick the checkbox if you want to learn more about Anaconda and Anaconda
+            cloud. Click on <strong>Finish</strong> to end the process. </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python10.png"
+        alt="Installing Anaconda and Python" />
+    <h4 class="n"><span class="bold">Note:</span> Here, we will use the Spyder IDE to run Python programs.</h4>
+    <h3 class="h3">Step- 3: Open Anaconda Navigator</h3>
+    <ul class="points">
+        <li>After successful installation of Anaconda, use Anaconda navigator to launch a Python IDE such as Spyder and
+            Jupyter Notebook.</li>
+        <li>To open Anaconda Navigator, click on window Key <img class="vmiddle"
+                src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python11.png"
+                alt="Installing Anaconda and Python" /> and search for Anaconda navigator, and click on it. Consider the
+            below image:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python12.png"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>After opening the navigator, launch the Spyder IDE by clicking on the <strong>Launch</strong> button given
+            below the <strong>Spyder</strong>. It will install the Spyder IDE in your system. </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python13.png"
+        alt="Installing Anaconda and Python" />
+    <p><strong>Run your Python program in Spyder IDE. </strong></p>
+    <ul class="points">
+        <li>Open Spyder IDE, it will look like the below image:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/installing-anaconda-and-python14.jpg"
+        alt="Installing Anaconda and Python" />
+    <ul class="points">
+        <li>Write your first program, and save it using the .py extension.</li>
+        <li>Run the program using the triangle <strong>Run</strong> button.</li>
+        <li>You can check the program's output on console pane at the bottom right side.</li>
+    </ul>
+    <h3 class="h3">Step- 4: Close the Spyder IDE. </h3>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="3_life_cycle.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="5_ai_vs_ml.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

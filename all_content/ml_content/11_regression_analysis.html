@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item active-submenu" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Regression Analysis in Machine learning</h1>
+    <p>Regression analysis is a statistical method to model the relationship between a dependent (target) and
+        independent (predictor) variables with one or more independent variables. More specifically, Regression analysis
+        helps us to understand how the value of the dependent variable is changing corresponding to an independent
+        variable when other independent variables are held fixed. It predicts continuous/real values such as
+        <strong>temperature, age, salary, price,</strong> etc.</p>
+    <p>We can understand the concept of regression analysis using the below example:</p>
+    <p><strong>Example:</strong> Suppose there is a marketing company A, who does various advertisement every year and
+        get sales on that. The below list shows the advertisement made by the company in the last 5 years and the
+        corresponding sales:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/regression-analysis-in-machine-learning.png"
+        alt="Regression Analysis in Machine learning" />
+    <p>Now, the company wants to do the advertisement of $200 in the year 2019 <strong>and wants to know the prediction
+            about the sales for this year</strong>. So to solve such type of prediction problems in machine learning, we
+        need regression analysis.</p>
+    <p>Regression is a <a href="supervised-machine-learning">supervised learning technique</a> which helps in finding
+        the correlation between variables and enables us to predict the continuous output variable based on the one or
+        more predictor variables. It is mainly used for <strong>prediction, forecasting, time series modeling, and
+            determining the causal-effect relationship between variables</strong>.</p>
+    <p>In Regression, we plot a graph between the variables which best fits the given datapoints, using this plot, the
+        machine learning model can make predictions about the data. In simple words, <strong><em>"Regression shows a
+                line or curve that passes through all the datapoints on target-predictor graph in such a way that the
+                vertical distance between the datapoints and the regression line is minimum."</em></strong> The distance
+        between datapoints and line tells whether a model has captured a strong relationship or not.</p>
+    <p>Some examples of regression can be as:</p>
+    <ul class="points">
+        <li>Prediction of rain using temperature and other factors</li>
+        <li>Determining Market trends</li>
+        <li>Prediction of road accidents due to rash driving.</li>
+    </ul>
+    <h2 class="h2">Terminologies Related to the Regression Analysis:</h2>
+    <ul class="points">
+        <li><strong>Dependent Variable:</strong> The main factor in Regression analysis which we want to predict or
+            understand is called the dependent variable. It is also called <strong>target variable</strong>.</li>
+        <li><strong>Independent Variable:</strong> The factors which affect the dependent variables or which are used to
+            predict the values of the dependent variables are called independent variable, also called as a
+            <strong>predictor</strong>.</li>
+        <li><strong>Outliers:</strong> Outlier is an observation which contains either very low value or very high value
+            in comparison to other observed values. An outlier may hamper the result, so it should be avoided.</li>
+        <li><strong>Multicollinearity:</strong> If the independent variables are highly correlated with each other than
+            other variables, then such condition is called Multicollinearity. It should not be present in the dataset,
+            because it creates problem while ranking the most affecting variable.</li>
+        <li><strong>Underfitting and Overfitting:</strong> If our algorithm works well with the training dataset but not
+            well with test dataset, then such problem is called <strong>Overfitting</strong>. And if our algorithm does
+            not perform well even with training dataset, then such problem is called <strong>underfitting</strong>.</li>
+    </ul>
+    <h2 class="h2">Why do we use Regression Analysis?</h2>
+    <p>As mentioned above, Regression analysis helps in the prediction of a continuous variable. There are various
+        scenarios in the real world where we need some future predictions such as weather condition, sales prediction,
+        marketing trends, etc., for such case we need some technology which can make predictions more accurately. So for
+        such case we need Regression analysis which is a statistical method and used in machine learning and data
+        science. Below are some other reasons for using Regression analysis:</p>
+    <ul class="points">
+        <li>Regression estimates the relationship between the target and the independent variable.</li>
+        <li>It is used to find the trends in data.</li>
+        <li>It helps to predict real/continuous values.</li>
+        <li>By performing the regression, we can confidently determine the <strong>most important factor, the least
+                important factor, and how each factor is affecting the other factors</strong>.</li>
+    </ul>
+    <h2 class="h2">Types of Regression</h2>
+    <p>There are various types of regressions which are used in data science and machine learning. Each type has its own
+        importance on different scenarios, but at the core, all the regression methods analyze the effect of the
+        independent variable on dependent variables. Here we are discussing some important types of regression which are
+        given below:</p>
+    <ul class="points">
+        <li><strong>Linear Regression</strong></li>
+        <li><strong>Logistic Regression</strong></li>
+        <li><strong>Polynomial Regression</strong></li>
+        <li><strong>Support Vector Regression</strong></li>
+        <li><strong>Decision Tree Regression</strong></li>
+        <li><strong>Random Forest Regression</strong></li>
+        <li><strong>Ridge Regression</strong></li>
+        <li><strong>Lasso Regression:</strong></li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression.png"
+        alt="Regression Analysis in Machine learning" />
+    <h3 class="h3">Linear Regression:</h3>
+    <ul class="points">
+        <li>Linear regression is a statistical regression method which is used for predictive analysis. </li>
+        <li>It is one of the very simple and easy algorithms which works on regression and shows the relationship
+            between the continuous variables.</li>
+        <li>It is used for solving the regression problem in machine learning.</li>
+        <li>Linear regression shows the linear relationship between the independent variable (X-axis) and the dependent
+            variable (Y-axis), hence called linear regression.</li>
+        <li>If there is only one input variable (x), then such linear regression is called <strong>simple linear
+                regression</strong>. And if there is more than one input variable, then such linear regression is called
+            <strong>multiple linear regression</strong>.</li>
+        <li>The relationship between variables in the linear regression model can be explained using the below image.
+            Here we are predicting the salary of an employee on the basis of <strong>the year of experience</strong>.
+        </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression2.png"
+        alt="Regression Analysis in Machine learning" />
+    <ul class="points">
+        <li>Below is the mathematical equation for Linear regression:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+      Y= aX+b
+</textarea></div>
+    <p><strong>Here, Y = dependent variables (target variables),</strong><br>
+        <strong>X= Independent variables (predictor variables),</strong></br>
+        <strong>a and b are the linear coefficients</strong>
+    </p>
+    <p>Some popular applications of linear regression are:</p>
+    <ul class="points">
+        <li><strong>Analyzing trends and sales estimates</strong></li>
+        <li><strong>Salary forecasting</strong></li>
+        <li><strong>Real estate prediction</strong></li>
+        <li><strong>Arriving at ETAs in traffic.</strong></li>
+    </ul>
+    <h3 class="h3">Logistic Regression:</h3>
+    <ul class="points">
+        <li>Logistic regression is another supervised learning algorithm which is used to solve the classification
+            problems. In <strong>classification problems</strong>, we have dependent variables in a binary or discrete
+            format such as 0 or 1.</li>
+        <li>Logistic regression algorithm works with the categorical variable such as 0 or 1, Yes or No, True or False,
+            Spam or not spam, etc.</li>
+        <li>It is a predictive analysis algorithm which works on the concept of probability.</li>
+        <li>Logistic regression is a type of regression, but it is different from the linear regression algorithm in the
+            term how they are used.</li>
+        <li>Logistic regression uses <strong>sigmoid function</strong> or logistic function which is a complex cost
+            function. This sigmoid function is used to model the data in logistic regression. The function can be
+            represented as:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression3.png"
+        alt="Regression Analysis in Machine learning" />
+    <ul class="points">
+        <li>f(x)= Output between the 0 and 1 value.</li>
+        <li>x= input to the function</li>
+        <li>e= base of natural logarithm.</li>
+    </ul>
+    <p>When we provide the input values (data) to the function, it gives the S-curve as follows:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression4.png"
+        alt="Regression Analysis in Machine learning" />
+    <ul class="points">
+        <li>It uses the concept of threshold levels, values above the threshold level are rounded up to 1, and values
+            below the threshold level are rounded up to 0.</li>
+    </ul>
+    <p>There are three types of logistic regression:</p>
+    <ul class="points">
+        <li><strong>Binary(0/1, pass/fail)</strong></li>
+        <li><strong>Multi(cats, dogs, lions)</strong></li>
+        <li><strong>Ordinal(low, medium, high)</strong></li>
+    </ul>
+    <h3 class="h3">Polynomial Regression:</h3>
+    <ul class="points">
+        <li>Polynomial Regression is a type of regression which models the <strong>non-linear dataset</strong> using a
+            linear model.</li>
+        <li>It is similar to multiple linear regression, but it fits a non-linear curve between the value of x and
+            corresponding conditional values of y.</li>
+        <li>Suppose there is a dataset which consists of datapoints which are present in a non-linear fashion, so for
+            such case, linear regression will not best fit to those datapoints. To cover such datapoints, we need
+            Polynomial regression.</li>
+        <li>I<strong>n Polynomial regression, the original features are transformed into polynomial features of given
+                degree and then modeled using a linear model.</strong> Which means the datapoints are best fitted using
+            a polynomial line.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression5.png"
+        alt="Regression Analysis in Machine learning" />
+    <ul class="points">
+        <li>The equation for polynomial regression also derived from linear regression equation that means Linear
+            regression equation Y= b<sub>0</sub>+ b<sub>1</sub>x, is transformed into Polynomial regression equation Y=
+            b<sub>0</sub>+b<sub>1</sub>x+ b<sub>2</sub>x<sup>2</sup>+ b<sub>3</sub>x<sup>3</sup>+.....+
+            b<sub>n</sub>x<sup>n</sup>. </li>
+        <li>Here Y is the <strong>predicted/target output, b<sub>0</sub>, b<sub>1</sub>,... b<sub>n</sub> are the
+                regression coefficients</strong>. x is our <strong>independent/input variable</strong>.</li>
+        <li>The model is still linear as the coefficients are still linear with quadratic</li>
+    </ul>
+    <h4 class="n"><span class="bold">Note:</span> This is different from Multiple Linear regression in such a way that
+        in Polynomial regression, a single element has different degrees instead of multiple variables with the same
+        degree.</h4>
+    <h3 class="h3">Support Vector Regression:</h3>
+    <p>Support Vector Machine is a supervised learning algorithm which can be used for regression as well as
+        classification problems. So if we use it for regression problems, then it is termed as Support Vector
+        Regression.</p>
+    <p>Support Vector Regression is a regression algorithm which works for continuous variables. Below are some keywords
+        which are used in <strong>Support Vector Regression</strong>:</p>
+    <ul class="points">
+        <li><strong>Kernel:</strong> It is a function used to map a lower-dimensional data into higher dimensional data.
+        </li>
+        <li><strong>Hyperplane:</strong> In general SVM, it is a separation line between two classes, but in SVR, it is
+            a line which helps to predict the continuous variables and cover most of the datapoints.</li>
+        <li><strong>Boundary line:</strong> Boundary lines are the two lines apart from hyperplane, which creates a
+            margin for datapoints.</li>
+        <li><strong>Support vectors:</strong> Support vectors are the datapoints which are nearest to the hyperplane and
+            opposite class.</li>
+    </ul>
+    <p>In SVR, we always try to determine a hyperplane with a maximum margin, so that maximum number of datapoints are
+        covered in that margin. <strong><em>The main goal of SVR is to consider the maximum datapoints within the
+                boundary lines and the hyperplane (best-fit line) must contain a maximum number of
+                datapoints</em></strong>. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression6.png"
+        alt="Regression Analysis in Machine learning" />
+    <p>Here, the blue line is called hyperplane, and the other two lines are known as boundary lines. </p>
+    <h3 class="h3">Decision Tree Regression:</h3>
+    <ul class="points">
+        <li>Decision Tree is a supervised learning algorithm which can be used for solving both classification and
+            regression problems.</li>
+        <li>It can solve problems for both categorical and numerical data</li>
+        <li>Decision Tree regression builds a tree-like structure in which each internal node represents the "test" for
+            an attribute, each branch represent the result of the test, and each leaf node represents the final decision
+            or result.</li>
+        <li>A decision tree is constructed starting from the root node/parent node (dataset), which splits into left and
+            right child nodes (subsets of dataset). These child nodes are further divided into their children node, and
+            themselves become the parent node of those nodes. Consider the below image:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression7.png"
+        alt="Regression Analysis in Machine learning" />
+    <p>Above image showing the example of Decision Tee regression, here, the model is trying to predict the choice of a
+        person between Sports cars or Luxury car. </p>
+    <ul class="points">
+        <li>Random forest is one of the most powerful supervised learning algorithms which is capable of performing
+            regression as well as classification tasks.</li>
+        <li>The Random Forest regression is an ensemble learning method which combines multiple decision trees and
+            predicts the final output based on the average of each tree output. The combined decision trees are called
+            as base models, and it can be represented more formally as:</li>
+    </ul>
+    <div class="codeblock">
+        <pre>
+g(x)= f<sub>0</sub>(x)+ f<sub>1</sub>(x)+ f<sub>2</sub>(x)+....
+</pre>
+    </div>
+    <ul class="points">
+        <li>Random forest uses <strong>Bagging or Bootstrap Aggregation</strong> technique of ensemble learning in which
+            aggregated decision tree runs in parallel and do not interact with each other.</li>
+        <li>With the help of Random Forest regression, we can prevent Overfitting in the model by creating random
+            subsets of the dataset. </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression8.png"
+        alt="Regression Analysis in Machine learning" />
+    <h3 class="h3">Ridge Regression:</h3>
+    <ul class="points">
+        <li>Ridge regression is one of the most robust versions of linear regression in which a small amount of bias is
+            introduced so that we can get better long term predictions.</li>
+        <li>The amount of bias added to the model is known as <strong>Ridge Regression penalty</strong>. We can compute
+            this penalty term by multiplying with the lambda to the squared weight of each individual features.</li>
+        <li>The equation for ridge regression will be: </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression9.png"
+        alt="Regression Analysis in Machine learning" />
+    <ul class="points">
+        <li>A general linear or polynomial regression will fail if there is high collinearity between the independent
+            variables, so to solve such problems, Ridge regression can be used.</li>
+        <li>Ridge regression is a regularization technique, which is used to reduce the complexity of the model. It is
+            also called as <strong>L2 regularization</strong>.</li>
+        <li>It helps to solve the problems if we have more parameters than samples. </li>
+    </ul>
+    <h3 class="h3">Lasso Regression:</h3>
+    <ul class="points">
+        <li>Lasso regression is another regularization technique to reduce the complexity of the model.</li>
+        <li>It is similar to the Ridge Regression except that penalty term contains only the absolute weights instead of
+            a square of weights.</li>
+        <li>Since it takes absolute values, hence, it can shrink the slope to 0, whereas Ridge Regression can only
+            shrink it near to 0.</li>
+        <li>It is also called as <strong>L1 regularization</strong>. The equation for Lasso regression will be:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/types-of-regression10.png"
+        alt="Regression Analysis in Machine learning" />
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="10_supervised_vs_unsupervised.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="12_linear_regression.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

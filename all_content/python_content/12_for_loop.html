@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item active-submenu" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python for loop</h1>
+    <p>Python is a strong, universally applicable prearranging language planned to be easy to comprehend and carry out.
+        It is allowed to get to because it is open-source. In this tutorial, we will learn how to use Python for loops,
+        one of the most fundamental looping instructions in Python programming.</p>
+    <h2 class="h2">Introduction to for Loop in Python</h2>
+    <p>Python frequently uses the Loop to iterate over iterable objects like lists, tuples, and strings. Crossing is the
+        most common way of emphasizing across a series, for loops are used when a section of code needs to be repeated a
+        certain number of times. The for-circle is typically utilized on an iterable item, for example, a rundown or the
+        in-fabricated range capability. In Python, the for Statement runs the code block each time it traverses a series
+        of elements. On the other hand, the "while" Loop is used when a condition needs to be verified after each
+        repetition or when a piece of code needs to be repeated indefinitely. The for Statement is opposed to this Loop.
+    </p>
+    <h3 class="h3">Syntax of for Loop</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+for value in sequence:
+    {loop body} 
+</textarea></div>
+    <p>The value is the parameter that determines the element's value within the iterable sequence on each iteration.
+        When a sequence contains expression statements, they are processed first. The first element in the sequence is
+        then assigned to the iterating variable iterating_variable. From that point onward, the planned block is run.
+        Each element in the sequence is assigned to iterating_variable during the statement block until the sequence as
+        a whole is completed. Using indentation, the contents of the Loop are distinguished from the remainder of the
+        program.</p>
+    <h3 class="h3">Example of Python for Loop</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to find the sum of squares of each element of the list using for loop
+
+# creating the list of numbers
+numbers = [3, 5, 23, 6, 5, 1, 2, 9, 8]
+
+# initializing a variable that will store the sum
+sum_ = 0
+
+# using for loop to iterate over the list
+for num in numbers:
+   
+sum_ = sum_ + num ** 2 
+
+print("The sum of squares is: ", sum_)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>The sum of squares is:  774
+</pre>
+    </div>
+    <h2 class="h2">The range() Function</h2>
+    <p>Since the "range" capability shows up so habitually in for circles, we could erroneously accept the reach as a
+        part of the punctuation of for circle. It's not: It is a built-in Python method that fulfills the requirement of
+        providing a series for the for expression to run over by following a particular pattern (typically serial
+        integers). Mainly, they can act straight on sequences, so counting is unnecessary. This is a typical novice
+        construct if they originate from a language with distinct loop syntax:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+my_list = [3, 5, 6, 8, 4]
+for iter_var in range( len( my_list ) ):
+    my_list.append(my_list[iter_var] + 2)
+print( my_list )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[3, 5, 6, 8, 4, 5, 7, 8, 10, 6]
+</pre>
+    </div>
+    <h2 class="h2">Iterating by Using Index of Sequence</h2>
+    <p>Another method of iterating through every item is to use an index offset within the sequence. Here's a simple
+        illustration:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to find the sum of squares of each element of the list using for loop
+
+# creating the list of numbers
+numbers = [3, 5, 23, 6, 5, 1, 2, 9, 8]
+
+# initializing a variable that will store the sum
+sum_ = 0
+
+# using for loop to iterate over list
+for num in range( len(numbers) ):
+   
+sum_ = sum_ + numbers[num] ** 2 
+
+print("The sum of squares is: ", sum_)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>The sum of squares is:  774
+</pre>
+    </div>
+    <p>The len() worked in a technique that profits the complete number of things in the rundown or tuple, and the
+        implicit capability range(), which returns the specific grouping to emphasize over, proved helpful here.</p>
+    <h2 class="h2">Using else Statement with for Loop</h2>
+    <p>A loop expression and an else expression can be connected in Python.</p>
+    <p>After the circuit has finished iterating over the list, the else clause is combined with a for Loop.</p>
+    <p>The following example demonstrates how to extract students' marks from the record by combining a for expression
+        with an otherwise statement.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# code to print marks of a student from the record
+student_name_1 = 'Itika'
+student_name_2 = 'Parker'
+
+
+# Creating a dictionary of records of the students
+records = {'Itika': 90, 'Arshia': 92, 'Peter': 46}
+def marks( student_name ):
+    for a_student in record: # for loop will iterate over the keys of the dictionary
+        if a_student == student_name:
+            return records[ a_student ]
+            break
+    else:
+        return f'There is no student of name {student_name} in the records' 
+        
+# giving the function marks() name of two students
+print( f"Marks of {student_name_1} are: ", marks( student_name_1 ) )
+print( f"Marks of {student_name_2} are: ", marks( student_name_2 ) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Marks of Itika are:  90
+Marks of Parker are:  There is no student of name Parker in the records
+</pre>
+    </div>
+    <h2 class="h2">Nested Loops</h2>
+    <p>If we have a piece of content that we need to run various times and, afterward, one more piece of content inside
+        that script that we need to run B several times, we utilize a "settled circle." While working with an iterable
+        in the rundowns, Python broadly uses these.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+import random
+numbers = [ ]
+for val in range(0, 11):
+    numbers.append( random.randint( 0, 11 ) )
+for num in range( 0, 11 ):
+    for i in numbers:
+        if num == i:
+            print( num, end = " " )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>0 2 4 5 6 7 8 8 9 10
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="11_python_loops.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="13_while_loop.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

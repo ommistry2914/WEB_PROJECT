@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);"">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="1_Intro_to_html.html">Intro to html</a></li>
+                                <li><a class="dropdown-item" href="2_What_is_HTML.html">What is html </a></li>
+                                <li><a class="dropdown-item" href="3_Html_text_editors.html">text editors</a></li>
+                                <li><a class="dropdown-item" href="4_HTML_Building_blocks.html">Building blocks</a></li>
+                                <li><a class="dropdown-item" href="5_HTML_tags.html">HTML Tags</a></li>
+                                <li><a class="dropdown-item" href="6_HTML_Attributes.html">HTML Attributes<li>
+                                <li><a class="dropdown-item" href="7_HTML_Elements.html">HTML Elements</a></li>
+                                <li><a class="dropdown-item" href="8_HTML_Formatting.html">Formatting in html</a></li>
+                                <li><a class="dropdown-item" href="9_HTML_Heading.html"> heading in html</a></li>
+                                <li><a class="dropdown-item" href="10_HTML_Paragraph.html">paragraph in html</a></li>
+                                <li><a class="dropdown-item" href="11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                                <li><a class="dropdown-item" href="12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                                <li><a class="dropdown-item" href="13_HTML_Image.html">Image tag</a></li>
+                                <li><a class="dropdown-item" href="14_HTML_Table.html">Table tag</a></li>
+                                <li><a class="dropdown-item" href="15_HTML_Lists.html">Lists tag</a></li>
+                                <li><a class="dropdown-item" href="16_HTML_Ordered_list.html">Ordered list</a></li>
+                                <li><a class="dropdown-item" href="17_HTML_Unordered_list.html">Unordered list</a></li>
+                                <li><a class="dropdown-item" href="18_HTML_Description_list.html">Description list</a></li>
+                                <li><a class="dropdown-item" href="19_HTML_form.html">form in html</a></li>
+                                <li><a class="dropdown-item" href="20_HTML_Form_Input.html">Form input</a></li>
+                                <li><a class="dropdown-item" href="21_HTML_Form_Attribute.html">Form attribute</a></li>
+                                <li><a class="dropdown-item" href="22_HTML_with_CSS.html">Html with CSS</a></li>
+                                <li><a class="dropdown-item" href="23_HTML_Classes.html">HTML classes</a></li>
+                                <li><a class="dropdown-item" href="24_HTML_ID.html">HTML ID</a></li>
+                                <li><a class="dropdown-item" href="25_HTML_Iframes.html">Html Iframes</a></li>
+                                <li><a class="dropdown-item" href="26_HTML_Javascript.html">HTML JavaScript</a></li>
+                                <li><a class="dropdown-item" href="27_HTML_Comments.html">HTML comments</a></li>
+                                <li><a class="dropdown-item" href="28_HTML_Filepath.html">Filepath</a></li>
+                                <li><a class="dropdown-item" href="29_HTML_head.html">HTML head</a></li>
+                                <li><a class="dropdown-item" href="30_HTML_layout.html">HTML layout</a></li>
+                                <li><a class="dropdown-item" href="32_HTML_Responsive.html">HTML Responsive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Attributes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tags
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_HTML_tags/1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/3_anchor_tag.html">Anchor tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/4_abbr_tag.html">Abbr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/5_acronym_tag.html">Acronym tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/6_address_tag.html">Address tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/7_applet_tag.html">Applet tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/8_area_tag.html">Area tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/9_article_tag.html">Article tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/10_aside_tag.html">Aside tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/11_audio_tag.html">Audio tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/12_b_tag.html">B tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/13_base_tag.html">Base tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/14_basefont_tag.html">Basefont tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/15_bdi_tag.html">Bdi tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/16_bdo_tag.html">Bdo tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/17_big_tag.html">Big tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/18_blockquote_tag.html">Blockquote</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/19_body_tag.html">Body tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/20_br_tag.html">Br tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/21_button_tag.html">Button tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/22_canvas_tag.html">canvas tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/23_caption_tag.html">caption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/24_center_tag.html">center tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/25_cite_tag.html">cite tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/26_code_tag.html">code tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/27_col_tag.html">col tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/28_colgroup_tag.html">colgroup tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/29_data_tag.html">data tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/30_datalist_tag.html">datalist tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/31_Description_list.html">Description tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/32_del_tag.html">del tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/33_details_tag.html">details tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/34_dfn_tag.html">dfn tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/35_Dialog_tag.html">Dialog tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/36_dir_tag.html">dir tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/37_div_tag.html">div tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/38_em_tag.html">em tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/39_embed_tag.html">embed tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/40_field_set_tag.html">field set tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/41_figcaption_tag.html">figcaption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/42_figure_tag.html">figure tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/43_font_tag.html">font tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/44_footer_tag.html">footer tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/45_form_tag.html">form tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/46_frame_tag.html">frame tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/47_frameset_tag.html">frameset tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/48_header_tag.html">header tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/49_hr_tag.html">hr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/50_i_tag.html">i tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/51_input_tag.html">input tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/52_kbd_tag.html">kbd tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/53_label_tag.html">label tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/54_legend_tag.html">legend tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/55_lists_tag.html">lists tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/56_link_tag.html">link tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/57_main_tag.html">main tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/58_mark_tag.html">mark tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/59_marquee_tag.html">marquee tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/60_menu_tag.html">menu tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/61_meta_tag.html">meta tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/62_Meter_tag.html">Meter tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/63_nav_tag.html">nav tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/64_object_tag.html">Object tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/65_Optgrp_tag.html">optgrp tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/66_option_tag.html">option tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/67_progress.html">progress tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/68_Colour_name.html">Color name</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML Tutorial</h1>
+<img src="https://static.javatpoint.com/htmlpages/images/html-tutorial.png" alt="HTML tutorial" style="float:right;padding:15px" />
+<p><strong>HTML tutorial</strong> or HTML 5 tutorial provides basic and advanced concepts of HTML. Our HTML tutorial is developed for beginners and professionals. In our tutorial, every topic is given step-by-step so that you can learn it in a very easy way. If you are new in learning HTML, then you can learn HTML from basic to a professional level and after learning HTML with CSS and JavaScript you will be able to create your own interactive and dynamic website. But Now We will focus on HTML only in this tutorial.</p>
+<p>The major points of HTML are given below:<p>
+<ul class="points">
+<li>HTML stands for HyperText Markup Language.</li>
+<li>HTML is used to create web pages and web applications.</li>
+<li>HTML is widely used language on the web.</li>
+<li>We can create a static website by HTML only.</li>
+<li>Technically, HTML is a Markup language rather than a programming language.</li>
+</ul>
+<h2 class="h2">HTML Example with HTML Editor</h2>
+<p>In this tutorial, you will get a lot of HTML examples, at least one example for each topic with explanation. You can also edit and run these examples, with our online HTML editor. Learning HTML is fun, and it's very easy to learn.</p>
+<div class="codeblock"><textarea name="code" class="html">
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Web page title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Write Your First Heading&lt;/h1&gt;
+&lt;p&gt;Write Your First Paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea></div>
+<h2 class="h2">HTML 5 Tags</h2>
+<p>In this tutorial, we will learn HTML 5 tags such as audio tag, video tag, canvas tag, HTML svg, HTML geolocation, HTML drag and drop etc.</p>
+<hr/>
+<h2 class="h2">All HTML Tags</h2>
+<p>At last, we will learn all HTML tags one by one for example, marquee tag, textarea tag, br tag, hr tag, pre tag, h tag, code tag, input tag, title tag, meta tag, script tag, style tag etc.</p>
+<hr/>
+<h2 class="h2">Prerequisite</h2>
+<p>Before learning HTML, you must have the basic knowledge of Computer Fundamental.</p>
+<h2 class="h2">Audience</h2>
+<p>Our HTML tutorial is designed to help beginners and professionals both.</p>
+<h2 class="h2">Problem</h2>
+<p>We assure, you will not find any problem in HTML tutorial. But, if you find any problem or mistake in our HTML tutorial, you can report to us. </p>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+    <!-- <a href="_Call_by_value_or_reference_in_C.html"><button class="btn btn-danger" type="button">Previous</button></a> -->
+    <a href="2_What_is_HTML.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

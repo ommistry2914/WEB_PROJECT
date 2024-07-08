@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item active-submenu" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Dictionary</h1>
+    <p>Dictionaries are a useful data structure for storing data in Python because they are capable of imitating
+        real-world data arrangements where a certain value exists for a given key.</p>
+    <p>The data is stored as key-value pairs using a Python dictionary.</p>
+    <ul class="points">
+        <li>This data structure is mutable</li>
+        <li>The components of dictionary were made using keys and values.</li>
+        <li>Keys must only have one component.</li>
+        <li>Values can be of any type, including integer, list, and tuple.</li>
+    </ul>
+    <p>A dictionary is, in other words, a group of key-value pairs, where the values can be any Python object. The keys,
+        in contrast, are immutable Python objects, such as strings, tuples, or numbers. Dictionary entries are ordered
+        as of Python version 3.7. In Python 3.6 and before, dictionaries are generally unordered.</p>
+    <h2 class="h2">Creating the Dictionary</h2>
+    <p>Curly brackets are the simplest way to generate a Python dictionary, although there are other approaches as well.
+        With many key-value pairs surrounded in curly brackets and a colon separating each key from its value, the
+        dictionary can be built. (:). The following provides the syntax for defining the dictionary.</p>
+    <p><strong>Syntax:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Dict = {"Name": "Gayle", "Age": 25} 
+</textarea></div>
+    <p>In the above dictionary <strong>Dict</strong>, The keys <strong>Name</strong> and <strong>Age</strong> are the
+        strings which comes under the category of an immutable object.</p>
+    <p>Let's see an example to create a dictionary and print its content.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Employee = {"Name": "Johnny", "Age": 32, "salary":26000,"Company":"^TCS"}      
+print(type(Employee))      
+print("printing Employee data .... ")      
+print(Employee)       
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+&lt;class 'dict'&gt;
+printing Employee data .... 
+{'Name': 'Johnny', 'Age': 32, 'salary': 26000, 'Company': TCS}
+</pre>
+    </div>
+    <p>Python provides the built-in function <strong>dict()</strong> method which is also used to create the dictionary.
+    </p>
+    <p>The empty curly braces {} is used to create empty dictionary.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Creating an empty Dictionary     
+Dict = {}     
+print("Empty Dictionary: ")     
+print(Dict)     
+    
+# Creating a Dictionary     
+# with dict() method     
+Dict = dict({1: 'Hcl', 2: 'WIPRO', 3:'Facebook'})     
+print("\nCreate Dictionary by using  dict(): ")     
+print(Dict)     
+    
+# Creating a Dictionary     
+# with each item as a Pair     
+Dict = dict([(4, 'Rinku'), (2, Singh)])     
+print("\nDictionary with each item as a pair: ")     
+print(Dict)     
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Empty Dictionary: 
+{}
+
+Create Dictionary by using  dict(): 
+{1: 'Hcl', 2: 'WIPRO', 3: 'Facebook'}
+
+Dictionary with each item as a pair: 
+{4: 'Rinku', 2: 'Singh'}
+</pre>
+    </div>
+    <h2 class="h2">Accessing the dictionary values</h2>
+    <p>To access data contained in lists and tuples, indexing has been studied. The keys of the dictionary can be used
+        to obtain the values because they are unique from one another. The following method can be used to access
+        dictionary values.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Employee = {"Name": "Dev", "Age": 20, "salary":45000,"Company":"WIPRO"}    
+print(type(Employee))    
+print("printing Employee data .... ")    
+print("Name : %s" %Employee["Name"])    
+print("Age : %d" %Employee["Age"])    
+print("Salary : %d" %Employee["salary"])    
+print("Company : %s" %Employee["Company"])     
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+ee["Company"])    
+Output
+&lt;class 'dict'&gt;
+printing Employee data .... 
+Name : Dev
+Age : 20
+Salary : 45000
+Company : WIPRO
+</pre>
+    </div>
+    <p>Python provides us with an alternative to use the get() method to access the dictionary values. It would give the
+        same result as given by the indexing.</p>
+    <h2 class="h2">Adding Dictionary Values</h2>
+    <p>The dictionary is a mutable data type, and utilising the right keys allows you to change its values. Dict[key] =
+        value and the value can both be modified. An existing value can also be updated using the update() method.</p>
+    <h4 class="n">Note: The value is updated if the key-value pair is already present in the dictionary. Otherwise, the
+        dictionary's newly added keys.</h4>
+    <p>Let's see an example to update the dictionary values.</p>
+    <h3 class="h3">Example - 1:</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Creating an empty Dictionary     
+Dict = {}     
+print("Empty Dictionary: ")     
+print(Dict)     
+      
+# Adding elements to dictionary one at a time     
+Dict[0] = 'Peter'    
+Dict[2] = 'Joseph'    
+Dict[3] = 'Ricky'    
+print("\nDictionary after adding 3 elements: ")     
+print(Dict)     
+      
+# Adding set of values      
+# with a single Key     
+# The Emp_ages doesn't exist to dictionary    
+Dict['Emp_ages'] = 20, 33, 24    
+print("\nDictionary after adding 3 elements: ")     
+print(Dict)     
+
+# Updating existing Key's Value     
+Dict[3] = 'JavaTpoint'    
+print("\nUpdated key value: ")     
+print(Dict)          
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Empty Dictionary: 
+{}
+
+Dictionary after adding 3 elements: 
+{0: 'Peter', 2: 'Joseph', 3: 'Ricky'}
+
+Dictionary after adding 3 elements: 
+{0: 'Peter', 2: 'Joseph', 3: 'Ricky', 'Emp_ages': (20, 33, 24)}
+
+Updated key value: 
+{0: 'Peter', 2: 'Joseph', 3: 'JavaTpoint', 'Emp_ages': (20, 33, 24)}
+</pre>
+    </div>
+    <h3 class="h3">Example - 2:</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Employee = {"Name": "Dev", "Age": 20, "salary":45000,"Company":"WIPRO"}       
+print(type(Employee))      
+print("printing Employee data .... ")      
+print(Employee)      
+print("Enter the details of the new employee....");      
+Employee["Name"] = input("Name: ");      
+Employee["Age"] = int(input("Age: "));      
+Employee["salary"] = int(input("Salary: "));      
+Employee["Company"] = input("Company:");      
+print("printing the new data");      
+print(Employee)   
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+&lt;class 'dict'&gt;
+printing Employee data .... 
+Employee = {"Name": "Dev", "Age": 20, "salary":45000,"Company":"WIPRO"} Enter the details of the new employee....
+Name: Sunny
+Age: 38
+Salary: 39000
+Company:Hcl
+printing the new data
+{'Name': 'Sunny', 'Age': 38, 'salary': 39000, 'Company': 'Hcl'}
+</pre>
+    </div>
+    <h2 class="h2">Deleting Elements using del Keyword</h2>
+    <p>The items of the dictionary can be deleted by using the <strong>del</strong> keyword as given below.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Employee = {"Name": "David", "Age": 30, "salary":55000,"Company":"WIPRO"}       
+print(type(Employee))      
+print("printing Employee data .... ")      
+print(Employee)      
+print("Deleting some of the employee data")       
+del Employee["Name"]      
+del Employee["Company"]      
+print("printing the modified information ")      
+print(Employee)      
+print("Deleting the dictionary: Employee");      
+del Employee      
+print("Lets try to print it again ");      
+print(Employee)     
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+&lt;class 'dict'&gt;
+printing Employee data .... 
+{'Name': 'David', 'Age': 30, 'salary': 55000, 'Company': 'WIPRO'}
+Deleting some of the employee data
+printing the modified information 
+{'Age': 30, 'salary': 55000}
+Deleting the dictionary: Employee
+Lets try to print it again 
+NameError: name 'Employee' is not defined.
+</pre>
+    </div>
+    <p>The last print statement in the above code, it raised an error because we tried to print the Employee dictionary
+        that already deleted.</p>
+    <h2 class="h2">Deleting Elements using pop() Method</h2>
+    <p>A dictionary is a group of key-value pairs in Python. You can retrieve, insert, and remove items using this
+        unordered, mutable data type by using their keys. The pop() method is one of the ways to get rid of elements
+        from a dictionary. In this post, we'll talk about how to remove items from a Python dictionary using the pop()
+        method.</p>
+    <p>The value connected to a specific key in a dictionary is removed using the pop() method, which then returns the
+        value. The key of the element to be removed is the only argument needed. The pop() method can be used in the
+        following ways:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Creating a Dictionary     
+Dict1 = {1: 'JavaTpoint', 2: 'Educational', 3: 'Website'}     
+# Deleting a key      
+# using pop() method     
+pop_key = Dict1.pop(2)     
+print(Dict1)    
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+{1: 'JavaTpoint', 3: 'Website'}
+</pre>
+    </div>
+    <p>Additionally, Python offers built-in functions popitem() and clear() for removing dictionary items. In contrast
+        to the clear() method, which removes all of the elements from the entire dictionary, popitem() removes any
+        element from a dictionary.</p>
+    <h2 class="h2">Iterating Dictionary</h2>
+    <p>A dictionary can be iterated using for loop as given below.</p>
+    <h3 class="h3">Example 1</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# for loop to print all the keys of a dictionary  
+Employee = {"Name": "John", "Age": 29, "salary":25000,"Company":"WIPRO"}      
+for x in Employee:      
+    print(x)     
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Name
+Age
+salary
+Company
+</pre>
+    </div>
+    <h3 class="h3">Example 2</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#for loop to print all the values of the dictionary  
+Employee = {"Name": "John", "Age": 29, "salary":25000,"Company":"WIPRO"} for x in Employee:      
+ print(Employee[x])     
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+John
+29
+25000
+WIPRO
+</pre>
+    </div>
+    <h3 class="h3">Example - 3</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#for loop to print the values of the dictionary by using values() method.  
+Employee = {"Name": "John", "Age": 29, "salary":25000,"Company":"WIPRO"}      
+for x in Employee.values():      
+    print(x)     
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+John
+29
+25000
+WIPRO
+</pre>
+    </div>
+    <h3 class="h3">Example 4</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#for loop to print the items of the dictionary by using items() method  
+Employee = {"Name": "John", "Age": 29, "salary":25000,"Company":"WIPRO"}     
+for x in Employee.items():      
+    print(x)    
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+('Name', 'John')
+('Age', 29)
+('salary', 25000)
+('Company', 'WIPRO')
+</pre>
+    </div>
+    <h2 class="h2">Properties of Dictionary Keys</h2>
+    <p>1. In the dictionary, we cannot store multiple values for the same keys. If we pass more than one value for a
+        single key, then the value which is last assigned is considered as the value of the key.</p>
+    <p>Consider the following example.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Employee={"Name":"John","Age":29,"Salary":25000,"Company":"WIPRO","Name":  
+"John"}      
+for x,y in Employee.items():      
+        print(x,y)         
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Name John
+Age 29
+Salary 25000
+Company WIPRO
+</pre>
+    </div>
+    <p>2. The key cannot belong to any mutable object in Python. Numbers, strings, or tuples can be used as the key,
+        however mutable objects like lists cannot be used as the key in a dictionary.</p>
+    <p>Consider the following example.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Employee = {"Name": "John", "Age": 29, "salary":26000,"Company":"WIPRO",[100,201,301]:"Department ID"}      
+for x,y in Employee.items():      
+    print(x,y)         
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Traceback (most recent call last):
+  File "dictionary.py", line 1, in 
+    Employee = {"Name": "John", "Age": 29, "salary":26000,"Company":"WIPRO",[100,201,301]:"Department ID"}
+TypeError: unhashable type: 'list'
+</pre>
+    </div>
+    <h2 class="h2">Built-in Dictionary Functions</h2>
+    <p>A function is a method that can be used on a construct to yield a value. Additionally, the construct is
+        unaltered. A few of the Python methods can be combined with a Python dictionary.</p>
+    <p>The built-in Python dictionary methods are listed below, along with a brief description.</p>
+    <ul class="points">
+        <li><strong>len()</strong></li>
+    </ul>
+    <p>The dictionary's length is returned via the len() function in Python. The string is lengthened by one for each
+        key-value pair.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+dict = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
+len(dict)
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>4
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>any()</strong></li>
+    </ul>
+    <p>Like how it does with lists and tuples, the any() method returns True indeed if one dictionary key does have a
+        Boolean expression that evaluates to True.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+dict = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
+any({'':'','':'','3':''})
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>True
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>all()</strong></li>
+    </ul>
+    <p>Unlike in any() method, all() only returns True if each of the dictionary's keys contain a True Boolean value.
+    </p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+dict = {1: "Ayan", 2: "Bunny", 3: "Ram", 4: "Bheem"}
+all({1:'',2:'','':''})
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>False
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>sorted()</strong></li>
+    </ul>
+    <p>Like it does with lists and tuples, the sorted() method returns an ordered series of the dictionary's keys. The
+        ascending sorting has no effect on the original Python dictionary.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+dict = {7: "Ayan", 5: "Bunny", 8: "Ram", 1: "Bheem"}
+sorted(dict)
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>[ 1, 5, 7, 8]
+</pre>
+    </div>
+    <h2 class="h2">Built-in Dictionary methods</h2>
+    <p>The built-in python dictionary methods along with the description and Code are given below.</p>
+    <ul class="points">
+        <li><strong>clear()</strong></li>
+    </ul>
+    <p>It is mainly used to delete all the items of the dictionary.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# clear() method  
+dict.clear()  
+print(dict)  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>{ }
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>copy()</strong></li>
+    </ul>
+    <p>It returns a shallow copy of the dictionary which is created.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# copy() method  
+dict_demo = dict.copy()  
+print(dict_demo)  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+{1: 'Hcl', 2: 'WIPRO', 3: 'Facebook', 4: 'Amazon', 5: 'Flipkart'}
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>pop()</strong></li>
+    </ul>
+    <p>It mainly eliminates the element using the defined key.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# pop() method  
+dict_demo = dict.copy()  
+x = dict_demo.pop(1)  
+print(x)  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+{2: 'WIPRO', 3: 'Facebook', 4: 'Amazon', 5: 'Flipkart'}
+</pre>
+    </div>
+    <p><strong>popitem()</strong></p>
+    <p>removes the most recent key-value pair entered</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# popitem() method  
+dict_demo.popitem()  
+print(dict_demo)  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+{1: 'Hcl', 2: 'WIPRO', 3: 'Facebook'}
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>keys()</strong></li>
+    </ul>
+    <p>It returns all the keys of the dictionary.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# keys() method  
+print(dict_demo.keys())  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+dict_keys([1, 2, 3, 4, 5])
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>items()</strong></li>
+    </ul>
+    <p>It returns all the key-value pairs as a tuple.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# items() method  
+print(dict_demo.items())  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+dict_items([(1, 'Hcl'), (2, 'WIPRO'), (3, 'Facebook'), (4, 'Amazon'), (5, 'Flipkart')])
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>get()</strong></li>
+    </ul>
+    <p>It is used to get the value specified for the passed key.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# get() method  
+print(dict_demo.get(3))  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>Facebook
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>update()</strong></li>
+    </ul>
+    <p>It mainly updates all the dictionary by adding the key-value pair of dict2 to this dictionary.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# update() method  
+dict_demo.update({3: "TCS"})  
+print(dict_demo)  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+{1: 'Hcl', 2: 'WIPRO', 3: 'TCS'}
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>values()</strong></li>
+    </ul>
+    <p>It returns all the values of the dictionary with respect to given input.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# dictionary methods  
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}  
+# values() method  
+print(dict_demo.values())  
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+dict_values(['Hcl', 'WIPRO', 'TCS'])
+</pre>
+    </div>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="21_set.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="23_functions.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

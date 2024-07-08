@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+  <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../../../home.html">
+              <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+              aria-labelledby="offcanvasNavbarDarkLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                      <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Programming Language
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Web Developement
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Tutorial
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Properties
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                              <li><a class="dropdown-item" href="2_border.html">Border</a></li>
+                              <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                              <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                              <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                              <li><a class="dropdown-item" href="6_Cursor.html">Cursor</a></li>
+                              <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                              <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                              <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                              <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                              <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                              <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                              <li><a class="dropdown-item active-submenu" href="13_colors.html">Colors</a></li>
+                              <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                              <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                              <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                              <li><a class="dropdown-item" href="17_background_attachment.html">background-attachment</a></li>
+                              <li><a class="dropdown-item" href="18_background_size.html">Background size</a></li>
+                              <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                              <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                              <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                              <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                              <li><a class="dropdown-item" href="23_position.html">Position</a></li>
+                              <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                              <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                              <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                              <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                              <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                              <li><a class="dropdown-item" href="29_Lists.html">Lists</a></li>
+                              <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                              <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Advance
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                              <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Design
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                              <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                              <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                              <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Colors</h1>
+    <p>The color property in CSS is used to set the color of HTML elements. Typically, this property is used to set the background color or the font color of an element.</p>
+    <p>In <a href="https://www.javatpoint.com/css-full-form">CSS</a>, we use color values for specifying the color. We can also use this property for the border-color and other decorative effects.</p>
+    <p>We can define the color of an element by using the following ways:</p>
+    <ul class="points">
+    <li>RGB format.</li>
+    <li>RGBA format.</li>
+    <li>Hexadecimal notation.</li>
+    <li>HSL.</li>
+    <li>HSLA.</li>
+    <li>Built-in color.</li>
+    </ul>
+    <p>Let's understand the syntax and description of the above ways in detail.</p>
+    <h2 class="h2">RGB Format</h2>
+    <p>RGB format is the short form of '<strong>RED GREEN</strong> and <strong>BLUE</strong>' that is used for defining the color of an <a href="https://www.javatpoint.com/html-tutorial">HTML</a> element simply by specifying the values of R, G, B that are in the range of 0 to 255.</p>
+    <p>The color values in this format are specified by using the <strong>rgb()</strong> property. This property allows three values that can either be in percentage or integer (range from 0 to 255).</p>
+    <p>This property is not supported in all browsers; that's why it is not recommended to use it.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    color: rgb(R, G, B);
+    </textarea></div>
+    <h2 class="h2">RGBA Format</h2>
+    <p>It is almost similar to RGB format except that <strong>RGBA</strong> contains <strong>A (Alpha)</strong> that specifies the element's transparency. The value of alpha is in the range <strong>0.0 to 1.0</strong>, in which <strong>0.0</strong> is for fully transparent, and <strong>1.0</strong> is for not transparent.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    color:rgba(R, G, B, A);
+    </textarea></div>
+    <h2 class="h2">Hexadecimal notation</h2>
+    <p>Hexadecimal can be defined as a six-digit color representation. This notation starts with the <strong># symbol</strong> followed by six characters ranges from <strong>0 to F</strong>. In hexadecimal notation, the first two digits represent the <strong>red (RR)</strong> color value, the next two digits represent the <strong>green (GG)</strong> color value, and the last two digits represent the <strong>blue (BB)</strong> color value.</p>
+    <p>The black color notation in hexadecimal is #000000, and the white color notation in hexadecimal is #FFFFFF. Some of the codes in hexadecimal notation are #FF0000, #00FF00, #0000FF, #FFFF00, and many more.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    color:#(0-F)(0-F)(0-F)(0-F)(0-F)(0-F);
+    </textarea></div>
+    <h2 class="h2">Short Hex codes</h2>
+    <p>It is a short form of hexadecimal notation in which every digit is recreated to arrive at an equivalent hexadecimal value. </p>
+    <p>For example, #7B6 becomes #77BB66 in hexadecimal.</p>
+    <p>The black color notation in short hex is #000, and the white color notation in short hex is #FFF. Some of the codes in short hex are #F00, #0F0, #0FF, #FF0, and many more.</p>
+    <h2 class="h2">HSL</h2>
+    <p>It is a short form of <strong>Hue, Saturation,</strong> and <strong>Lightness</strong>. Let's understand them individually.</p>
+    <p><strong>Hue:</strong> It can be defined as the degree on the color wheel from 0 to 360. 0 represents red, 120 represents green, 240 represents blue.</p>
+    <p><strong>Saturation:</strong> It takes value in percentage in which 100% represents fully saturated, i.e., no shades of gray, 50% represent 50% gray, but the color is still visible, and 0% represents fully unsaturated, i.e., completely gray, and the color is invisible.</p>
+    <p><strong>Lightness:</strong> The lightness of the color can be defined as the light that we want to provide the color in which 0% represents black (there is no light), 50% represents neither dark nor light, and 100% represents white (full lightness).</p>
+    <p>Let's see the syntax of HSL in color property.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    color:hsl(H, S, L);
+    </textarea></div>
+    <h2 class="h2">HSLA</h2>
+    <p>It is entirely similar to HSL property, except that it contains <strong>A (alpha)</strong> that specifies the element's transparency. The value of alpha is in the range <strong>0.0 to 1.0</strong>, in which <strong>0.0</strong> indicates fully transparent, and <strong>1.0</strong> indicates not transparent.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    color:hsla(H, S, L, A);
+    </textarea></div>
+    <h2 class="h2">Built-in Color</h2>
+    <p>As its name implies, built-in color means the collection of previously defined colors that are used by using a name such as red, blue, green, etc.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    color: color-name;
+    </textarea></div>
+    <p>Let's see the list of built-in colors along with their decimal and hexadecimal values.</p>
+    <table class="alt">
+    <tr>
+    <th>S.no.</th>
+    <th>Color name</th>
+    <th>Hexadecimal Value</th>
+    <th>Decimal Value or rgb() value</th>
+    </tr>
+    <tr>
+    <td><strong>1.</strong></td>
+    <td>Red</td>
+    <td>#FF0000</td>
+    <td>rgb(255,0,0)</td>
+    <tr>
+    <tr>
+    <td><strong>2.</strong></td>
+    <td>Orange</td>
+    <td>#FFA500</td>
+    <td>rgb(255,165,0)</td>
+    <tr>
+    <tr>
+    <td><strong>3.</strong></td>
+    <td>Yellow</td>
+    <td>#FFFF00</td>
+    <td>rgb(255,255,0)</td>
+    <tr>
+    <tr>
+    <td><strong>4.</strong></td>
+    <td>Pink</td>
+    <td>#FFC0CB</td>
+    <td>rgb(255,192,203)</td>
+    <tr>
+    <tr>
+    <td><strong>5.</strong></td>
+    <td>Green</td>
+    <td>#008000</td>
+    <td>rgb(0,128,0)</td>
+    <tr>
+    <tr>
+    <td><strong>6.</strong></td>
+    <td>Violet</td>
+    <td>#EE82EE</td>
+    <td>rgb(238,130,238)</td>
+    <tr>
+    <tr>
+    <td><strong>7.</strong></td>
+    <td>Blue</td>
+    <td>#0000FF</td>
+    <td>rgb(0,0,255)</td>
+    <tr>
+    <tr>
+    <td><strong>8.</strong></td>
+    <td>Aqua</td>
+    <td>#00FFFF</td>
+    <td>rgb(0,255,255)</td>
+    <tr>
+    <tr>
+    <td><strong>9.</strong></td>
+    <td>Brown</td>
+    <td>#A52A2A</td>
+    <td>rgb(165,42,42)</td>
+    <tr>
+    <tr>
+    <td><strong>10.</strong></td>
+    <td>White</td>
+    <td>#FFFFFF</td>
+    <td>rgb(255,255,255)</td>
+    <tr>
+    <tr>
+    <td><strong>11.</strong></td>
+    <td>Gray</td>
+    <td>#808080</td>
+    <td>rgb(128,128,128)</td>
+    <tr>
+    <tr>
+    <td><strong>12.</strong></td>
+    <td>Black</td>
+    <td>#000000</td>
+    <td>rgb(0,0,0)</td>
+    <tr>
+    </table>
+    <p>The illustration of <a href="https://www.javatpoint.com/css-full-form">CSS</a> colors, which includes the above properties, is given below.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt; 
+        &lt;head&gt; 
+            &lt;title&gt;CSS hsl color property&lt;/title&gt; 
+            &lt;style&gt; 
+                h1{ 
+                    text-align:center; 
+                } 
+                #rgb{
+                  color:rgb(255,0,0);
+                }
+                #rgba{
+                  color:rgba(255,0,0,0.5);
+                }
+                #hex{
+                  color:#EE82EE;
+                }
+                #short{
+                  color: #E8E;
+                }
+                #hsl{
+                  color:hsl(0,50%,50%);
+                }
+                #hsla{              
+                  color:hsla(0,50%,50%,0.5);
+                }
+                #built{
+                  color:green;
+                }
+            &lt;/style&gt; 
+        &lt;/head&gt; 
+        &lt;body&gt; 
+            &lt;h1 id="rgb"&gt; 
+                 Hello World. This is RGB format.
+            &lt;/h1&gt; 
+            &lt;h1 id="rgba"&gt; 
+              Hello World. This is RGBA format.
+         &lt;/h1&gt; 
+         &lt;h1 id="hex"&gt; 
+          Hello World. This is Hexadecimal format.
+     &lt;/h1&gt; 
+     &lt;h1 id="short"&gt; 
+      Hello World. This is Short-hexadecimal format.
+    &lt;/h1&gt; 
+     &lt;h1 id="hsl"&gt; 
+      Hello World. This is HSL format.
+    &lt;/h1&gt; 
+    &lt;h1 id="hsla"&gt; 
+      Hello World. This is HSLA format.
+    &lt;/h1&gt; 
+    &lt;h1 id="built"&gt; 
+      Hello World. This is Built-in color format.
+    &lt;/h1&gt; 
+        &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+      <a href="12_fontweight.html"><button class="btn btn-danger" type="button">Previous</button></a>
+      <a href="14_hover.html"><button class="btn btn-success" type="button">Next</button></a>
+  </div>
+  <footer>
+      <div class="container-fluid bg-dark text-bg-dark"
+          style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+          Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+      </div>
+  </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+</html>

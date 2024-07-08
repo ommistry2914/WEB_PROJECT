@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item active-submenu" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Functions</h1>
+    <p>This tutorial will go over the fundamentals of Python functions, including what they are, their syntax, their
+        primary parts, return keywords, and significant types. We'll also look at some examples of Python function
+        definitions.</p>
+    <h2 class="h2">What are Python Functions?</h2>
+    <p>A collection of related assertions that carry out a mathematical, analytical, or evaluative operation is known as
+        a function. An assortment of proclamations called Python Capabilities returns the specific errand. Python
+        functions are necessary for intermediate-level programming and are easy to define. Function names meet the same
+        standards as variable names do. The objective is to define a function and group-specific frequently performed
+        actions. Instead of repeatedly creating the same code block for various input variables, we can call the
+        function and reuse the code it contains with different variables.</p>
+    <p>Client-characterized and worked-in capabilities are the two primary classes of capabilities in Python. It aids in
+        maintaining the program's uniqueness, conciseness, and structure.</p>
+    <h2 class="h2">Advantages of Python Functions</h2>
+    <p>Pause We can stop a program from repeatedly using the same code block by including functions.</p>
+    <ul class="points">
+        <li>Once defined, Python functions can be called multiple times and from any location in a program.</li>
+        <li>Our Python program can be broken up into numerous, easy-to-follow functions if it is significant.</li>
+        <li>The ability to return as many outputs as we want using a variety of arguments is one of Python's most
+            significant achievements.</li>
+        <li>However, Python programs have always incurred overhead when calling functions.</li>
+    </ul>
+    <p>However, calling functions has always been overhead in a Python program.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#  An example Python Function
+def function_name( parameters ):
+	# code block
+</textarea></div>
+    <p>The accompanying components make up to characterize a capability, as seen previously.</p>
+    <ul class="points">
+        <li>The start of a capability header is shown by a catchphrase called def.</li>
+        <li>function_name is the function's name, which we can use to distinguish it from other functions. We will
+            utilize this name to call the capability later in the program. Name functions in Python must adhere to the
+            same guidelines as naming variables.</li>
+        <li>Using parameters, we provide the defined function with arguments. Notwithstanding, they are discretionary.
+        </li>
+        <li>A colon (:) marks the function header's end.</li>
+        <li>We can utilize a documentation string called docstring in the short structure to make sense of the reason
+            for the capability.</li>
+        <li>Several valid Python statements make up the function's body. The entire code block's indentation
+            depth-typically four spaces-must be the same.</li>
+        <li>A return expression can get a value from a defined function.</li>
+    </ul>
+    <h3 class="h3">Illustration of a User-Defined Function</h3>
+    <p>We will define a function that returns the argument number's square when called.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Example Python Code for User-Defined function
+def square( num ):  
+    """ 
+    This function computes the square of the number. 
+    """  
+    return num**2   
+object_ = square(6)  
+print( "The square of the given number is: ", object_ )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>The square of the given number is:  36
+</pre>
+    </div>
+    <h2 class="h2">Calling a Function</h2>
+    <p>Calling a Function To define a function, use the def keyword to give it a name, specify the arguments it must
+        receive, and organize the code block.</p>
+    <p>When the fundamental framework for a function is finished, we can call it from anywhere in the program. An
+        illustration of how to use the a_function function can be found below.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Example Python Code for calling a function
+# Defining a function  
+def a_function( string ):  
+    "This prints the value of length of string"  
+    return len(string)  
+  
+# Calling the function we defined  
+print( "Length of the string Functions is: ", a_function( "Functions" ) )  
+print( "Length of the string Python is: ", a_function( "Python" ) )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Length of the string Functions is:  9
+Length of the string Python is:  6
+</pre>
+    </div>
+    <h2 class="h2">Pass by Reference vs. Pass by Value</h2>
+    <p>In the Python programming language, all parameters are passed by reference. It shows that if we modify the worth
+        of contention within a capability, the calling capability will similarly mirror the change. For instance,</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Example Python Code for Pass by Reference vs. Value
+# defining the function  
+def square( item_list ):  
+    '''''This function will find the square of items in the list'''  
+    squares = [ ]  
+    for l in item_list:  
+        squares.append( l**2 )  
+    return squares  
+  
+# calling the defined function  
+my_list = [17, 52, 8];  
+my_result = square( my_list )  
+print( "Squares of the list are: ", my_result )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Squares of the list are:  [289, 2704, 64]
+</pre>
+    </div>
+    <h2 class="h2">Function Arguments</h2>
+    <p>The following are the types of arguments that we can use to call a function:</p>
+    <ol class="points">
+        <li>Default arguments</li>
+        <li>Keyword arguments</li>
+        <li>Required arguments</li>
+        <li>Variable-length arguments</li>
+    </ol>
+    <h3 class="h3">1) Default Arguments</h3>
+    <p>A default contention is a boundary that takes as information a default esteem, assuming that no worth is provided
+        for the contention when the capability is called. The following example demonstrates default arguments.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate the use of default arguments  
+# defining a function  
+def function( n1, n2 = 20 ):  
+    print("number 1 is: ", n1)  
+    print("number 2 is: ", n2)  
+   
+   
+# Calling the function and passing only one argument  
+print( "Passing only one argument" )  
+function(30)  
+  
+# Now giving two arguments to the function  
+print( "Passing two arguments" )  
+function(50,30)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Passing only one argument
+number 1 is:  30
+number 2 is:  20
+Passing two arguments
+number 1 is:  50
+number 2 is:  30
+</pre>
+    </div>
+    <h3 class="h3">2) Keyword Arguments</h3>
+    <p>Keyword arguments are linked to the arguments of a called function. While summoning a capability with watchword
+        contentions, the client might tell whose boundary esteem it is by looking at the boundary name.</p>
+    <p>We can eliminate or orchestrate specific contentions in an alternate request since the Python translator will
+        interface the furnished watchwords to connect the qualities with its boundaries. One more method for utilizing
+        watchwords to summon the capability() strategy is as per the following:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate the use of keyword arguments  
+  # Defining a function  
+def function( n1, n2 ):  
+    print("number 1 is: ", n1)  
+    print("number 2 is: ", n2)  
+  
+# Calling function and passing arguments without using keyword  
+print( "Without using keyword" )  
+function( 50, 30)     
+      
+# Calling function and passing arguments using keyword  
+print( "With using keyword" )  
+function( n2 = 50, n1 = 30)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Without using keyword
+number 1 is:  50
+number 2 is:  30
+With using keyword
+number 1 is:  30
+number 2 is:  50
+</pre>
+    </div>
+    <h3 class="h3">3) Required Arguments</h3>
+    <p>Required arguments are those supplied to a function during its call in a predetermined positional sequence. The
+        number of arguments required in the method call must be the same as those provided in the function's definition.
+    </p>
+    <p>We should send two contentions to the capability() all put together; it will return a language structure blunder,
+        as seen beneath.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate the use of default arguments    
+# Defining a function  
+def function( n1, n2 ):  
+    print("number 1 is: ", n1)  
+    print("number 2 is: ", n2)  
+  
+# Calling function and passing two arguments out of order, we need num1 to be 20 and num2 to be 30  
+print( "Passing out of order arguments" )  
+function( 30, 20 )     
+  
+# Calling function and passing only one argument  
+print( "Passing only one argument" )  
+try:  
+    function( 30 )  
+except:  
+    print( "Function needs two positional arguments" )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Passing out of order arguments
+number 1 is:  30
+number 2 is:  20
+Passing only one argument
+Function needs two positional arguments
+</pre>
+    </div>
+    <h3 class="h3">4) Variable-Length Arguments</h3>
+    <p>We can involve unique characters in Python capabilities to pass many contentions. However, we need a capability.
+        This can be accomplished with one of two types of characters:</p>
+    <p>"args" and "kwargs" refer to arguments not based on keywords.</p>
+    <p>To help you understand arguments of variable length, here's an example.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate the use of variable-length arguments     
+# Defining a function  
+def function( *args_list ):  
+    ans = []  
+    for l in args_list:  
+        ans.append( l.upper() )  
+    return ans  
+# Passing args arguments  
+object = function('Python', 'Functions', 'tutorial')  
+print( object )  
+  
+# defining a function  
+def function( **kargs_list ):  
+    ans = []  
+    for key, value in kargs_list.items():  
+        ans.append([key, value])  
+    return ans  
+# Paasing kwargs arguments  
+object = function(First = "Python", Second = "Functions", Third = "Tutorial")  
+print(object)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>['PYTHON', 'FUNCTIONS', 'TUTORIAL']
+[['First', 'Python'], ['Second', 'Functions'], ['Third', 'Tutorial']]
+</pre>
+    </div>
+    <h2 class="h2">return Statement</h2>
+    <p>When a defined function is called, a return statement is written to exit the function and return the calculated
+        value.</p>
+    <p><strong>Syntax:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+return < expression to be returned as output >  
+</textarea></div>
+    <p>The return statement can be an argument, a statement, or a value, and it is provided as output when a particular
+        job or function is finished. A declared function will return an empty string if no return statement is written.
+    </p>
+    <p>A return statement in Python functions is depicted in the following example.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate the use of return statements    
+# Defining a function with return statement  
+def square( num ):  
+    return num**2  
+   
+# Calling function and passing arguments.  
+print( "With return statement" )  
+print( square( 52 ) )  
+  
+# Defining a function without return statement   
+def square( num ):  
+     num**2   
+  
+# Calling function and passing arguments.  
+print( "Without return statement" )  
+print( square( 52 ) )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>With return statement
+2704
+Without return statement
+None
+</pre>
+    </div>
+    <h2 class="h2">The Anonymous Functions</h2>
+    <p>Since we do not use the def keyword to declare these kinds of Python functions, they are unknown. The lambda
+        keyword can define anonymous, short, single-output functions.</p>
+    <p>Arguments can be accepted in any number by lambda expressions; However, the function only produces a single value
+        from them. They cannot contain multiple instructions or expressions. Since lambda needs articulation, a
+        mysterious capability can't be straightforwardly called to print.</p>
+    <p>Lambda functions can only refer to variables in their argument list and the global domain name because they
+        contain their distinct local domain.</p>
+    <p>In contrast to inline expressions in C and C++, which pass function stack allocations at execution for efficiency
+        reasons, lambda expressions appear to be one-line representations of functions.</p>
+    <p><strong>Syntax</strong></p>
+    <p>Lambda functions have exactly one line in their syntax:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+lambda [argument1 [,argument2... .argumentn]] : expression  
+</textarea></div>
+    <p>Below is an illustration of how to use the lambda function:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate ananymous functions
+# Defining a function  
+lambda_ = lambda argument1, argument2: argument1 + argument2;  
+  
+# Calling the function and passing values  
+print( "Value of the function is : ", lambda_( 20, 30 ) )  
+print( "Value of the function is : ", lambda_( 40, 50 ) )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Value of the function is :  50
+Value of the function is :  90
+</pre>
+    </div>
+    <h2 class="h2">Scope and Lifetime of Variables</h2>
+    <p>A variable's scope refers to the program's domain wherever it is declared. A capability's contentions and factors
+        are not external to the characterized capability. They only have a local domain as a result.</p>
+    <p>The length of time a variable remains in RAM is its lifespan. The lifespan of a function is the same as the
+        lifespan of its internal variables. When we exit the function, they are taken away from us. As a result, the
+        value of a variable in a function does not persist from previous executions.</p>
+    <p>An easy illustration of a function's scope for a variable can be found here.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to demonstrate scope and lifetime of variables
+#defining a function to print a number.  
+def number( ):  
+    num = 50  
+    print( "Value of num inside the function: ", num)  
+  
+num = 10  
+number()  
+print( "Value of num outside the function:", num)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Value of num inside the function:  50
+Value of num outside the function: 10
+</pre>
+    </div>
+    <p>Here, we can see that the initial value of num is 10. Even though the function number() changed the value of num
+        to 50, the value of num outside of the function remained unchanged.</p>
+    <p>This is because the capability's interior variable num is not quite the same as the outer variable (nearby to the
+        capability). Despite having a similar variable name, they are separate factors with discrete extensions.</p>
+    <p>Factors past the capability are available inside the capability. The impact of these variables is global. We can
+        retrieve their values within the function, but we cannot alter or change them. The value of a variable can be
+        changed outside of the function if it is declared global with the keyword global.</p>
+    <h2 class="h2">Python Capability inside Another Capability</h2>
+    <p>Capabilities are viewed as top-of-the-line objects in Python. First-class objects are treated the same everywhere
+        they are used in a programming language. They can be stored in built-in data structures, used as arguments, and
+        in conditional expressions. If a programming language treats functions like first-class objects, it is
+        considered to implement first-class functions. Python lends its support to the concept of First-Class functions.
+    </p>
+    <p>A function defined within another is called an "inner" or "nested" function. The parameters of the outer scope
+        are accessible to inner functions. Internal capabilities are developed to cover them from the progressions
+        outside the capability. Numerous designers see this interaction as an embodiment.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to show how to access variables of a nested functions  
+# defining a nested function  
+def word():  
+    string = 'Python functions tutorial'  
+    x = 5   
+    def number():  
+        print( string ) 
+        print( x )
+           
+    number()  
+word()  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock">
+        <pre>Python functions tutorial
+5
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="22_dictionary.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="24_lambda_functions.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

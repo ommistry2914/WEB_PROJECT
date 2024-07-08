@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item active-submenu" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Logistic Regression in Machine Learning</h1>
+    <ul class="points">
+        <li>Logistic regression is one of the most popular Machine Learning algorithms, which comes under the Supervised
+            Learning technique. It is used for predicting the categorical dependent variable using a given set of
+            independent variables.</li>
+        <li>Logistic regression predicts the output of a categorical dependent variable. Therefore the outcome must be a
+            categorical or discrete value. It can be either Yes or No, 0 or 1, true or False, etc. but instead of giving
+            the exact value as 0 and 1, <strong>it gives the probabilistic values which lie between 0 and 1</strong>.
+        </li>
+        <li>Logistic Regression is much similar to the Linear Regression except that how they are used. Linear
+            Regression is used for solving Regression problems, whereas <strong>Logistic regression is used for solving
+                the classification problems</strong>.</li>
+        <li>In Logistic regression, instead of fitting a regression line, we fit an "S" shaped logistic function, which
+            predicts two maximum values (0 or 1).</li>
+        <li>The curve from the logistic function indicates the likelihood of something such as whether the cells are
+            cancerous or not, a mouse is obese or not based on its weight, etc.</li>
+        <li>Logistic Regression is a significant machine learning algorithm because it has the ability to provide
+            probabilities and classify new data using continuous and discrete datasets.</li>
+        <li>Logistic Regression can be used to classify the observations using different types of data and can easily
+            determine the most effective variables used for the classification. The below image is showing the logistic
+            function: </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning.png"
+        alt="Logistic Regression in Machine Learning" />
+    <h4 class="n"><span class="bold">Note:</span> Logistic regression uses the concept of predictive modeling as
+        regression; therefore, it is called logistic regression, but is used to classify samples; Therefore, it falls
+        under the classification algorithm.</h4>
+    <h2 class="h3">Logistic Function (Sigmoid Function):</h2>
+    <ul class="points">
+        <li>The sigmoid function is a mathematical function used to map the predicted values to probabilities. </li>
+        <li>It maps any real value into another value within a range of 0 and 1.</li>
+        <li>The value of the logistic regression must be between 0 and 1, which cannot go beyond this limit, so it forms
+            a curve like the "S" form. The S-form curve is called the Sigmoid function or the logistic function.</li>
+        <li>In logistic regression, we use the concept of the threshold value, which defines the probability of either 0
+            or 1. Such as values above the threshold value tends to 1, and a value below the threshold values tends to
+            0. </li>
+    </ul>
+    <h2 class="h3">Assumptions for Logistic Regression:</h2>
+    <ul class="points">
+        <li>The dependent variable must be categorical in nature. </li>
+        <li>The independent variable should not have multi-collinearity.</li>
+    </ul>
+    <h2 class="h3">Logistic Regression Equation:</h2>
+    <p>The Logistic regression equation can be obtained from the Linear Regression equation. The mathematical steps to
+        get Logistic Regression equations are given below:</p>
+    <ul class="points">
+        <li>We know the equation of the straight line can be written as:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning2.png"
+        alt="Logistic Regression in Machine Learning" />
+    <ul class="points">
+        <li>In Logistic Regression y can be between 0 and 1 only, so for this let's divide the above equation by (1-y):
+        </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning3.png"
+        alt="Logistic Regression in Machine Learning" />
+    <ul class="points">
+        <li>But we need range between -[infinity] to +[infinity], then take logarithm of the equation it will become:
+        </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning4.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>The above equation is the final equation for Logistic Regression.</p>
+    <h2 class="h3">Type of Logistic Regression:</h2>
+    <p>On the basis of the categories, Logistic Regression can be classified into three types:</p>
+    <ul class="points">
+        <li><strong>Binomial:</strong> In binomial Logistic regression, there can be only two possible types of the
+            dependent variables, such as 0 or 1, Pass or Fail, etc. </li>
+        <li><strong>Multinomial:</strong> In multinomial Logistic regression, there can be 3 or more possible unordered
+            types of the dependent variable, such as "cat", "dogs", or "sheep" </li>
+        <li><strong>Ordinal:</strong> In ordinal Logistic regression, there can be 3 or more possible ordered types of
+            dependent variables, such as "low", "Medium", or "High". </li>
+    </ul>
+    <h2 class="h3"><u>Python Implementation of Logistic Regression (Binomial)</u></h2>
+    <p>To understand the implementation of Logistic Regression in Python, we will use the below example:</p>
+    <p><strong>Example:</strong> There is a dataset given which contains the information of various users obtained from
+        the social networking sites. There is a car making company that has recently launched a new SUV car. So the
+        company wanted to check how many users from the dataset, wants to purchase the car.</p>
+    <p>For this problem, we will build a Machine Learning model using the Logistic regression algorithm. The dataset is
+        shown in the below image. In this problem, we will predict the <strong>purchased variable (Dependent
+            Variable)</strong> by using <strong>age and salary (Independent variables)</strong>. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning5.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p><strong>Steps in Logistic Regression:</strong> To implement the Logistic Regression using Python, we will use the
+        same steps as we have done in previous topics of Regression. Below are the steps:</p>
+    <ul class="points">
+        <li>Data Pre-processing step</li>
+        <li>Fitting Logistic Regression to the Training set</li>
+        <li>Predicting the test result</li>
+        <li>Test accuracy of the result(Creation of Confusion matrix)</li>
+        <li>Visualizing the test set result.</li>
+    </ul>
+    <p><strong>1. Data Pre-processing step:</strong> In this step, we will pre-process/prepare the data so that we can
+        use it in our code efficiently. It will be the same as we have done in Data pre-processing topic. The code for
+        this is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Data Pre-procesing Step
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('user_data.csv')
+</textarea></div>
+    <p>By executing the above lines of code, we will get the dataset as the output. Consider the given image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning6.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>Now, we will extract the dependent and independent variables from the given dataset. Below is the code for it:
+    </p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, [2,3]].values
+y= data_set.iloc[:, 4].values
+</textarea></div>
+    <p>In the above code, we have taken [2, 3] for x because our independent variables are age and salary, which are at
+        index 2, 3. And we have taken 4 for y variable because our dependent variable is at index 4. The output will be:
+    </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning7.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>Now we will split the dataset into a training set and test set. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)
+</textarea></div>
+    <p>The output for this is given below:</p>
+    <p><strong>For test set:</strong>
+        <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning8.png"
+            alt="Logistic Regression in Machine Learning" />
+    <p><strong>For training set:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning9.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>In logistic regression, we will do feature scaling because we want accurate result of predictions. Here we will
+        only scale the independent variable because dependent variable have only 0 and 1 values. Below is the code for
+        it: </p>
+    <div class="codeblock"><textarea name="code" class="java">
+#feature Scaling
+from sklearn.preprocessing import StandardScaler  
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+x_test= st_x.transform(x_test)
+</textarea></div>
+    <p>The scaled output is given below:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning10.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p><strong>2. Fitting Logistic Regression to the Training set:</strong></p>
+    <p>We have well prepared our dataset, and now we will train the dataset using the training set. For providing
+        training or fitting the model to the training set, we will import the <strong>LogisticRegression</strong> class
+        of the <strong>sklearn</strong> library.</p>
+    <p>After importing the class, we will create a classifier object and use it to fit the model to the logistic
+        regression. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting Logistic Regression to the training set
+from sklearn.linear_model import LogisticRegression
+classifier= LogisticRegression(random_state=0)
+classifier.fit(x_train, y_train)
+</textarea></div>
+    <p><strong>Output:</strong> By executing the above code, we will get the below output:</p>
+    <p><strong>Out[5]:</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=0, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)
+</textarea></div>
+    <p>Hence our model is well fitted to the training set. </p>
+    <p><strong>3. Predicting the Test Result</strong></p>
+    <p>Our model is well trained on the training set, so we will now predict the result by using test set data. Below is
+        the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Predicting the test set result
+y_pred= classifier.predict(x_test)
+</textarea></div>
+    <p>In the above code, we have created a y_pred vector to predict the test set result. </p>
+    <p><strong>Output:</strong> By executing the above code, a new vector (y_pred) will be created under the variable
+        explorer option. It can be seen as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning11.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>The above output image shows the corresponding predicted users who want to purchase or not purchase the car. </p>
+    <p><strong>4. Test Accuracy of the result</strong></p>
+    <p>Now we will create the confusion matrix here to check the accuracy of the classification. To create it, we need
+        to import the <strong>confusion_matrix</strong> function of the sklearn library. After importing the function,
+        we will call it using a new variable <strong>cm</strong>. The function takes two parameters, mainly
+        <strong>y_true</strong>( the actual values) and <strong>y_pred</strong> (the targeted value return by the
+        classifier). Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Creating the Confusion matrix
+from sklearn.metrics import confusion_matrix
+cm= confusion_matrix()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above code, a new confusion matrix will be created. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning12.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>We can find the accuracy of the predicted result by interpreting the confusion matrix. By above output, we can
+        interpret that 65+24= 89 (Correct Output) and 8+3= 11(Incorrect Output). </p>
+    <p><strong>5. Visualizing the training set result</strong></p>
+    <p>Finally, we will visualize the training set result. To visualize the result, we will use
+        <strong>ListedColormap</strong> class of matplotlib library. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visualizing the training set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_train, y_train
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('purple','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Logistic Regression (Training set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p>In the above code, we have imported the <strong>ListedColormap</strong> class of Matplotlib library to create the
+        colormap for visualizing the result. We have created two new variables <strong>x_set</strong> and
+        <strong>y_set</strong> to replace <strong>x_train</strong> and <strong>y_train</strong>. After that, we have
+        used the <strong>nm.meshgrid</strong> command to create a rectangular grid, which has a range of -1(minimum) to
+        1 (maximum). The pixel points we have taken are of 0.01 resolution.</p>
+    <p>To create a filled contour, we have used <strong>mtp.contourf</strong> command, it will create regions of
+        provided colors (purple and green). In this function, we have passed the <strong>classifier.predict</strong> to
+        show the predicted data points predicted by the classifier. </p>
+    <p><strong>Output:</strong> By executing the above code, we will get the below output:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning13.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>The graph can be explained in the below points:</p>
+    <ul class="points">
+        <li>In the above graph, we can see that there are some <strong>Green points</strong> within the green region and
+            <strong>Purple points</strong> within the purple region. </li>
+        <li>All these data points are the observation points from the training set, which shows the result for purchased
+            variables.</li>
+        <li>This graph is made by using two independent variables i.e., <strong>Age on the x-axis</strong> and
+            <strong>Estimated salary on the y-axis</strong>. </li>
+        <li>The <strong>purple point observations</strong> are for which purchased (dependent variable) is probably 0,
+            i.e., users who did not purchase the SUV car.</li>
+        <li>The <strong>green point observations</strong> are for which purchased (dependent variable) is probably 1
+            means user who purchased the SUV car. </li>
+        <li>We can also estimate from the graph that the users who are younger with low salary, did not purchase the
+            car, whereas older users with high estimated salary purchased the car.</li>
+        <li>But there are some purple points in the green region (Buying the car) and some green points in the purple
+            region(Not buying the car). So we can say that younger users with a high estimated salary purchased the car,
+            whereas an older user with a low estimated salary did not purchase the car.</li>
+    </ul>
+    <p><strong>The goal of the classifier:</strong></p>
+    <p>We have successfully visualized the training set result for the logistic regression, and our goal for this
+        classification is to divide the users who purchased the SUV car and who did not purchase the car. So from the
+        output graph, we can clearly see the two regions (Purple and Green) with the observation points. The Purple
+        region is for those users who didn't buy the car, and Green Region is for those users who purchased the car.</p>
+    <p><strong>Linear Classifier:</strong></p>
+    <p>As we can see from the graph, the classifier is a Straight line or linear in nature as we have used the Linear
+        model for Logistic Regression. In further topics, we will learn for non-linear Classifiers. </p>
+    <p><strong>Visualizing the test set result:</strong></p>
+    <p>Our model is well trained using the training dataset. Now, we will visualize the result for new observations
+        (Test set). The code for the test set will remain same as above except that here we will use <strong>x_test and
+            y_test</strong> instead of <strong>x_train and y_train</strong>. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the test set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_test, y_test
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('purple','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Logistic Regression (Test set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/logistic-regression-in-machine-learning14.png"
+        alt="Logistic Regression in Machine Learning" />
+    <p>The above graph shows the test set result. As we can see, the graph is divided into two regions (Purple and
+        Green). And Green observations are in the green region, and Purple observations are in the purple region. So we
+        can say it is a good prediction and model. Some of the green and purple data points are in different regions,
+        which can be ignored as we have already calculated this error using the confusion matrix (11 Incorrect output).
+    </p>
+    <p>Hence our model is pretty good and ready to make new predictions for this classification problem. </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="16_classification_algorithm.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="18_knn.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

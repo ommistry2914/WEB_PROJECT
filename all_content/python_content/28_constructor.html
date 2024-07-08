@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item active-submenu" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <div style="padding: 40px;">
+    <h1 class="h1">Python Constructor</h1>
+    <p>A constructor is a special type of method (function) which is used to initialize the instance members of the
+        class.</p>
+    <p>In C++ or Java, the constructor has the same name as its class, but it treats constructor differently in Python.
+        It is used to create an object.</p>
+    <p>Constructors can be of two types.</p>
+    <ol class="points">
+        <li>Parameterized Constructor</li>
+        <li>Non-parameterized Constructor</li>
+    </ol>
+    <p>Constructor definition is executed when we create the object of this class. Constructors also verify that there
+        are enough resources for the object to perform any start-up task.</p>
+    <h2 class="h2">Creating the constructor in python</h2>
+    <p>In Python, the method the <strong>__init__()</strong> simulates the constructor of the class. This method is
+        called when the class is instantiated. It accepts the <strong>self</strong>-keyword as a first argument which
+        allows accessing the attributes or method of the class.</p>
+    <p>We can pass any number of arguments at the time of creating the class object, depending upon the
+        <strong>__init__()</strong> definition. It is mostly used to initialize the class attributes. Every class must
+        have a constructor, even if it simply relies on the default constructor.</p>
+    <p>Consider the following example to initialize the <strong>Employee</strong> class attributes.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Employee:
+    def __init__(self, name, id):
+        self.id = id
+        self.name = name
+
+    def display(self):
+        print("ID: %d \nName: %s" % (self.id, self.name))
+
+
+emp1 = Employee("John", 101)
+emp2 = Employee("David", 102)
+
+# accessing display() method to print employee 1 information
+
+emp1.display()
+
+# accessing display() method to print employee 2 information
+emp2.display()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+ID: 101 
+Name: John
+ID: 102 
+Name: David
+</pre>
+    </div>
+    <h3 class="h2">Counting the number of objects of a class</h3>
+    <p>The constructor is called automatically when we create the object of the class. Consider the following example.
+    </p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:  
+    count = 0  
+    def __init__(self):  
+        Student.count = Student.count + 1  
+s1=Student()  
+s2=Student()  
+s3=Student()  
+print("The number of students:",Student.count)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The number of students: 3
+</pre>
+    </div>
+    <h2 class="h2">Python Non-Parameterized Constructor</h2>
+    <p>The non-parameterized constructor uses when we do not want to manipulate the value or the constructor that has
+        only self as an argument. Consider the following example.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:
+    # Constructor - non parameterized
+    def __init__(self):
+        print("This is non parametrized constructor")
+    def show(self,name):
+        print("Hello",name)
+student = Student()
+student.show("John")    
+</textarea></div>
+    <h2 class="h2">Python Parameterized Constructor</h2>
+    <p>The parameterized constructor has multiple parameters along with the <strong>self</strong>. Consider the
+        following example.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:
+    # Constructor - parameterized
+    def __init__(self, name):
+        print("This is parametrized constructor")
+        self.name = name
+    def show(self):
+        print("Hello",self.name)
+student = Student("John")
+student.show()  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+This is parametrized constructor
+Hello John
+</pre>
+    </div>
+    <h2 class="h2">Python Default Constructor</h2>
+    <p>When we do not include the constructor in the class or forget to declare it, then that becomes the default
+        constructor. It does not perform any task but initializes the objects. Consider the following example.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:
+    roll_num = 101
+    name = "Joseph"
+
+    def display(self):
+        print(self.roll_num,self.name)
+
+st = Student()
+st.display()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+101 Joseph
+</pre>
+    </div>
+    <h2 class="h2">More than One Constructor in Single class</h2>
+    <p>Let's have a look at another scenario, what happen if we declare the two same constructors in the class.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:
+    def __init__(self):
+        print("The First Constructor")
+    def __init__(self):
+        print("The second contructor")
+
+st = Student()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The Second Constructor
+</pre>
+    </div>
+    <p>In the above code, the object <strong>st</strong> called the second constructor whereas both have the same
+        configuration. The first method is not accessible by the <strong>st</strong> object. Internally, the object of
+        the class will always call the last constructor if the class has multiple constructors.</p>
+    <h4 class="n">Note: The constructor overloading is not allowed in Python.</h4>
+    <h2 class="h2">Python built-in class functions</h2>
+    <p>The built-in functions defined in the class are described in the following table.</p>
+    <table class="alt">
+        <tr>
+            <th>SN</th>
+            <th>Function</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>getattr(obj,name,default)</td>
+            <td>It is used to access the attribute of the object.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>setattr(obj, name,value)</td>
+            <td>It is used to set a particular value to the specific attribute of an object.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>delattr(obj, name)</td>
+            <td>It is used to delete a specific attribute.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>hasattr(obj, name)</td>
+            <td>It returns true if the object contains some specific attribute.</td>
+        </tr>
+    </table>
+    <h3 class="h2">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:
+    def __init__(self, name, id, age):
+        self.name = name
+        self.id = id
+        self.age = age
+
+    # creates the object of the class Student
+s = Student("John", 101, 22)
+
+# prints the attribute name of the object s
+print(getattr(s, 'name'))
+
+# reset the value of attribute age to 23
+setattr(s, "age", 23)
+
+# prints the modified value of age
+print(getattr(s, 'age'))
+
+# prints true if the student contains the attribute with name id
+
+print(hasattr(s, 'id'))
+# deletes the attribute age
+delattr(s, 'age')
+
+# this will give an error since the attribute age has been deleted
+print(s.age)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+John
+23
+True
+AttributeError: 'Student' object has no attribute 'age'
+</pre>
+    </div>
+    <h2 class="h2">Built-in class attributes</h2>
+    <p>Along with the other attributes, a Python class also contains some built-in class attributes which provide
+        information about the class.</p>
+    <p>The built-in class attributes are given in the below table.</p>
+    <table class="alt">
+        <tr>
+            <th>SN</th>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>__dict__</td>
+            <td>It provides the dictionary containing the information about the class namespace.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>__doc__</td>
+            <td>It contains a string which has the class documentation</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>__name__</td>
+            <td>It is used to access the class name.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>__module__</td>
+            <td>It is used to access the module in which, this class is defined.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>__bases__</td>
+            <td>It contains a tuple including all base classes.</td>
+        </tr>
+    </table>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+class Student:  
+    def __init__(self,name,id,age):  
+        self.name = name;  
+        self.id = id;  
+        self.age = age  
+    def display_details(self):  
+        print("Name:%s, ID:%d, age:%d"%(self.name,self.id))  
+s = Student("John",101,22)  
+print(s.__doc__)  
+print(s.__dict__)  
+print(s.__module__)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+None
+{'name': 'John', 'id': 101, 'age': 22}
+__main__
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="27_object_class.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="29_inheritance.html"> <button class="btn btn-success" type="button">Next</button></a>
+    </div>
+</div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

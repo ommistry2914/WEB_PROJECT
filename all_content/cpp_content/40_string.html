@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>C++ String</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item active-submenu" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Strings</h1>
+    <p>In C++, string is an object of <strong>std::string</strong> class that represents sequence of characters.
+        We can perform many operations on strings such as concatenation, comparison, conversion etc.</p>
+    <hr />
+    <h2 class="h2">C++ String Example</h2>
+    <p>Let's see the simple example of C++ string.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main( ) {
+    string s1 = "Hello";  
+        char ch[] = { 'C', '+', '+'};  
+        string s2 = string(ch);  
+        cout&lt;&lt;s1&lt;&lt;endl;  
+        cout&lt;&lt;s2&lt;&lt;endl;  
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Hello
+C++
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ String Compare Example</h2>
+    <p>Let's see the simple example of string comparison using strcmp() function.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include <iostream>
+#include &lt;cstring&gt;
+using namespace std;
+int main ()
+{
+  char key[] = "mango";
+  char buffer[50];
+  do {
+     cout&lt;&lt;"What is my favourite fruit? ";
+     cin&gt;&gt;buffer;
+  } while (strcmp (key,buffer) != 0);
+ cout&lt;&lt;"Answer is correct!!"&lt;&lt;endl;
+  return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+What is my favourite fruit? apple
+What is my favourite fruit? banana
+What is my favourite fruit? mango
+Answer is correct!!
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ String Concat Example</h2>
+    <p>Let's see the simple example of string concatenation using strcat() function.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+using namespace std;
+int main()
+{
+    char key[25], buffer[25];
+    cout &lt;&lt; "Enter the key string: ";
+    cin.getline(key, 25);
+    cout &lt;&lt; "Enter the buffer string: ";
+     cin.getline(buffer, 25);
+    strcat(key, buffer); 
+    cout &lt;&lt; "Key = " &lt;&lt; key &lt;&lt; endl;
+    cout &lt;&lt; "Buffer = " &lt;&lt; buffer&lt;&lt;endl;
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Enter the key string: Welcome to
+Enter the buffer string:  C++ Programming.
+Key = Welcome to C++ Programming.
+Buffer =  C++ Programming.
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ String Copy Example</h2>
+    <p>Let's see the simple example of copy the string using strcpy() function.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+using namespace std;
+int main()
+{
+    char key[25], buffer[25];
+    cout &lt;&lt; "Enter the key string: ";
+    cin.getline(key, 25);
+    strcpy(buffer, key);
+    cout &lt;&lt; "Key = "&lt;&lt; key &lt;&lt; endl;
+    cout &lt;&lt; "Buffer = "&lt;&lt; buffer&lt;&lt;endl;
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Enter the key string: C++ Tutorial
+Key = C++ Tutorial
+Buffer = C++ Tutorial
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ String Length Example</h2>
+    <p>Let's see the simple example of finding the string length using strlen() function.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+using namespace std;
+int main()
+{
+    char ary[] = "Welcome to C++ Programming";
+    cout &lt;&lt; "Length of String = " &lt;&lt; strlen(ary)&lt;&lt;endl;
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Length of String = 26
+</pre>
+    </div>
+    <h2 class="h2">C++ String Functions</h2>
+    <table class="alt">
+        <tr>
+            <th>Function</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-compare-function">int compare(const string&amp; str)</a></td>
+            <td>It is used to compare two string objects.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-length-function">int length()</a></td>
+            <td>It is used to find the length of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-swap-function">void swap(string&amp; str)</a></td>
+            <td>It is used to swap the values of two string objects.</td>
+        </tr>
+        <tr>
+            <td>string substr(int pos,int n)</td>
+            <td>It creates a new string object of n characters.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-size-function">int size()</a></td>
+            <td>It returns the length of the string in terms of bytes.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-resize-function">void resize(int n)</a></td>
+            <td>It is used to resize the length of the string up to n characters.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-replace-function">string&amp; replace(int pos,int len,string&amp; str)</a></td>
+            <td>It replaces portion of the string that begins at character position pos and spans len characters.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-append-function">string&amp; append(const string&amp; str)</a></td>
+            <td>It adds new characters at the end of another string object.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-at-function">char&amp; at(int pos)</a></td>
+            <td>It is used to access an individual character at specified position pos.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-find-function">int find(string&amp; str,int pos,int n)</a></td>
+            <td>It is used to find the string specified in the parameter.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-find-first-of-function">int find_first_of(string&amp; str,int pos,int n)</a></td>
+            <td>It is used to find the first occurrence of the specified sequence.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-find-first-not-of-function">int find_first_not_of(string&amp; str,int pos,int n
+                    )</a></td>
+            <td>It is used to search the string for the first character that does not match with any of the characters
+                specified in the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-find-last-of-function">int find_last_of(string&amp; str,int pos,int n)</a></td>
+            <td>It is used to search the string for the last character of specified sequence.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-find-last-not-of-function">int find_last_not_of(string&amp; str,int pos)</a></td>
+            <td>It searches for the last character that does not match with the specified sequence.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-insert-function">string&amp; insert()</a></td>
+            <td>It inserts a new character before the character indicated by the position pos.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-max-size-function">int max_size()</a></td>
+            <td>It finds the maximum length of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-push-back-function">void push_back(char ch)</a></td>
+            <td>It adds a new character ch at the end of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-pop-back-function">void pop_back()</a></td>
+            <td>It removes a last character of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-assign-function">string&amp; assign()</a></td>
+            <td>It assigns new value to the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-copy-function">int copy(string&amp; str)</a></td>
+            <td>It copies the contents of string into another.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-back-function">char&amp; back()</a></td>
+            <td>It returns the reference of last character.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-begin-function">Iterator begin()</a></td>
+            <td>It returns the reference of first character.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-capacity-function">int capacity()</a></td>
+            <td>It returns the allocated space for the string.</td>
+        </tr>
+        <tr>
+            <td>const_iterator cbegin()</td>
+            <td>It points to the first element of the string.</td>
+        </tr>
+        <tr>
+            <td>const_iterator cend()</td>
+            <td>It points to the last element of the string.</td>
+        </tr>
+        <tr>
+            <td>void clear()</td>
+            <td>It removes all the elements from the string.</td>
+        </tr>
+        <tr>
+            <td>const_reverse_iterator crbegin()</td>
+            <td>It points to the last character of the string.</td>
+        </tr>
+        <tr>
+            <td>const_char* data()</td>
+            <td>It copies the characters of string into an array.</td>
+        </tr>
+        <tr>
+            <td>bool empty()</td>
+            <td>It checks whether the string is empty or not.</td>
+        </tr>
+        <tr>
+            <td>string&amp; erase()</td>
+            <td>It removes the characters as specified.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-front-function">char&amp; front()</a></td>
+            <td>It returns a reference of the first character.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-operator+=()-function">string&amp;  operator+=()</a></td>
+            <td>It appends a new character at the end of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-operator=()-function">string&amp; operator=()</a></td>
+            <td>It assigns a new value to the string.</td>
+        </tr>
+        <tr>
+            <td>char operator[](pos)</td>
+            <td>It retrieves a character at specified position pos.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-rfind-function">int rfind()</a></td>
+            <td>It searches for the last occurrence of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-end-function">iterator end()</a></td>
+            <td>It references the last character of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-rend-function">reverse_iterator rend()</a></td>
+            <td>It points to the first character of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-shrink-to-fit-function">void shrink_to_fit()</a></td>
+            <td>It reduces the capacity and makes it equal to the size of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-c-str-function">char* c_str()</a></td>
+            <td>It returns pointer to an array that contains null terminated sequence of characters.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-crend-function">const_reverse_iterator crend()</a></td>
+            <td>It references the first character of the string.</td>
+        </tr>
+        <tr>
+            <td><a href="cpp-string-rbegin-function">reverse_iterator rbegin()</a></td>
+            <td>It reference the last character of the string.</td>
+        </tr>
+        <tr>
+            <td>void reserve(inr len)</td>
+            <td>It requests a change in capacity.</td>
+        </tr>
+        <tr>
+            <td>allocator_type get_allocator();</td>
+            <td>It returns the allocated object associated with the string.</td>
+        </tr>
+    </table>
+</div> 
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="39_namespaces.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <!-- <a href="js_example.html"><button class="btn btn-success" type="button">Next</button></a> -->
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

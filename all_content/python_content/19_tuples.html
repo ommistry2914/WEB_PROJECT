@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item active-submenu" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Tuples</h1>
+    <p>A comma-separated group of items is called a Python triple. The ordering, settled items, and reiterations of a
+        tuple are to some degree like those of a rundown, but in contrast to a rundown, a tuple is unchanging.</p>
+    <p>The main difference between the two is that we cannot alter the components of a tuple once they have been
+        assigned. On the other hand, we can edit the contents of a list.</p>
+    <p><strong>Example</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+("Suzuki", "Audi", "BMW"," Skoda ") is a tuple.
+</textarea></div>
+    <h3 class="h3">Features of Python Tuple</h3>
+    <ul class="points">
+        <li>Tuples are an immutable data type, meaning their elements cannot be changed after they are generated.</li>
+        <li>Each element in a tuple has a specific order that will never change because tuples are ordered sequences.
+        </li>
+    </ul>
+    <h3 class="h3">Forming a Tuple:</h3>
+    <p>All the objects-also known as "elements"-must be separated by a comma, enclosed in parenthesis (). Although
+        parentheses are not required, they are recommended.</p>
+    <p>Any number of items, including those with various data types (dictionary, string, float, list, etc.), can be
+        contained in a tuple.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to create a tuple  
+# Creating an empty tuple  
+empty_tuple = ()  
+print("Empty tuple: ", empty_tuple)  
+  
+# Creating tuple having integers  
+int_tuple = (4, 6, 8, 10, 12, 14)  
+print("Tuple with integers: ", int_tuple)  
+  
+# Creating a tuple having objects of different data types  
+mixed_tuple = (4, "Python", 9.3)  
+print("Tuple with different data types: ", mixed_tuple)  
+  
+# Creating a nested tuple  
+nested_tuple = ("Python", {4: 5, 6: 2, 8:2}, (5, 3, 5, 6))  
+print("A nested tuple: ", nested_tuple)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Empty tuple:  ()
+Tuple with integers:  (4, 6, 8, 10, 12, 14)
+Tuple with different data types:  (4, 'Python', 9.3)
+A nested tuple:  ('Python', {4: 5, 6: 2, 8: 2}, (5, 3, 5, 6))
+</pre>
+    </div>
+    <p>Parentheses are not necessary for the construction of multiples. This is known as triple pressing.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to create a tuple without using parentheses  
+# Creating a tuple  
+tuple_ = 4, 5.7, "Tuples", ["Python", "Tuples"]  
+# Displaying the tuple created  
+print(tuple_)  
+# Checking the data type of object tuple_  
+print(type(tuple_) )  
+# Trying to modify tuple_  
+try:  
+    tuple_[1] = 4.2  
+except:  
+    print(TypeError )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>(4, 5.7, 'Tuples', ['Python', 'Tuples'])
+&lt;class 'tuple'&gt;
+&lt;class 'TypeError'&gt;
+</pre>
+    </div>
+    <p>The development of a tuple from a solitary part may be complex.</p>
+    <p>Essentially adding a bracket around the component is lacking. A comma must separate the element to be recognized
+        as a tuple.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to create a tuple having a single element  
+single_tuple = ("Tuple")  
+print( type(single_tuple) )   
+# Creating a tuple that has only one element  
+single_tuple = ("Tuple",)  
+print( type(single_tuple) )   
+# Creating tuple without parentheses  
+single_tuple = "Tuple",  
+print( type(single_tuple) )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'str'&gt;
+&lt;class 'tuple'&gt;
+&lt;class 'tuple'&gt;
+</pre>
+    </div>
+    <h2 class="h2">Accessing Tuple Elements</h2>
+    <p>A tuple's objects can be accessed in a variety of ways.</p>
+    <p><strong>Indexing</strong></p>
+    <p>Indexing We can use the index operator [] to access an object in a tuple, where the index starts at 0.</p>
+    <p>The indices of a tuple with five items will range from 0 to 4. An Index Error will be raised assuming we attempt
+        to get to a list from the Tuple that is outside the scope of the tuple record. An index above four will be out
+        of range in this scenario.</p>
+    <p>Because the index in Python must be an integer, we cannot provide an index of a floating data type or any other
+        type. If we provide a floating index, the result will be TypeError.</p>
+    <p>The method by which elements can be accessed through nested tuples can be seen in the example below.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to access tuple elements  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Collection")  
+print(tuple_[0])    
+print(tuple_[1])   
+# trying to access element index more than the length of a tuple  
+try:  
+    print(tuple_[5])   
+except Exception as e:  
+    print(e)  
+# trying to access elements through the index of floating data type  
+try:  
+    print(tuple_[1.0])   
+except Exception as e:  
+    print(e)  
+# Creating a nested tuple  
+nested_tuple = ("Tuple", [4, 6, 2, 6], (6, 2, 6, 7))  
+  
+# Accessing the index of a nested tuple  
+print(nested_tuple[0][3])         
+print(nested_tuple[1][1])     
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Python
+Tuple
+tuple index out of range
+tuple indices must be integers or slices, not float
+l
+6
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>Negative Indexing</strong></li>
+    </ul>
+    <p>Python's sequence objects support negative indexing.</p>
+    <p>The last thing of the assortment is addressed by - 1, the second last thing by - 2, etc.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how negative indexing works in Python tuples  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Collection")  
+# Printing elements using negative indices  
+print("Element at -1 index: ", tuple_[-1])  
+print("Elements between -4 and -1 are: ", tuple_[-4:-1])  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Element at -1 index:  Collection
+Elements between -4 and -1 are:  ('Python', 'Tuple', 'Ordered')
+</pre>
+    </div>
+    <h2 class="h2">Slicing</h2>
+    <p>Tuple slicing is a common practice in Python and the most common way for programmers to deal with practical
+        issues. Look at a tuple in Python. Slice a tuple to access a variety of its elements. Using the colon as a
+        straightforward slicing operator (:) is one strategy.</p>
+    <p>To gain access to various tuple elements, we can use the slicing operator colon (:).</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how slicing works in Python tuples  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")  
+# Using slicing to access elements of the tuple  
+print("Elements between indices 1 and 3: ", tuple_[1:3])  
+# Using negative indexing in slicing  
+print("Elements between indices 0 and -4: ", tuple_[:-4])  
+# Printing the entire tuple by using the default start and end values.   
+print("Entire tuple: ", tuple_[:])  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Elements between indices 1 and 3:  ('Tuple', 'Ordered')
+Elements between indices 0 and -4:  ('Python', 'Tuple')
+Entire tuple:  ('Python', 'Tuple', 'Ordered', 'Immutable', 'Collection', 'Objects')
+</pre>
+    </div>
+    <h2 class="h2">Deleting a Tuple</h2>
+    <p>A tuple's parts can't be modified, as was recently said. We are unable to eliminate or remove tuple components as
+        a result.</p>
+    <p>However, the keyword del can completely delete a tuple.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to delete elements of a Python tuple  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")  
+# Deleting a particular element of the tuple  
+try:   
+    del tuple_[3]  
+    print(tuple_)  
+except Exception as e:  
+    print(e)  
+# Deleting the variable from the global space of the program  
+del tuple_  
+# Trying accessing the tuple after deleting it  
+try:  
+    print(tuple_)  
+except Exception as e:  
+    print(e)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>'tuple' object does not support item deletion
+name 'tuple_' is not defined
+</pre>
+    </div>
+    <h3 class="h3">Repetition Tuples in Python</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show repetition in tuples  
+tuple_ = ('Python',"Tuples")  
+print("Original tuple is: ", tuple_)  
+# Repeting the tuple elements  
+tuple_ = tuple_ * 3  
+print("New tuple is: ", tuple_)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Original tuple is:  ('Python', 'Tuples')
+New tuple is:  ('Python', 'Tuples', 'Python', 'Tuples', 'Python', 'Tuples')
+</pre>
+    </div>
+    <h3 class="h3">Tuple Methods</h3>
+    <p>Like the list, Python Tuples is a collection of immutable objects. There are a few ways to work with tuples in
+        Python. With some examples, this essay will go over these two approaches in detail.</p>
+    <p>The following are some examples of these methods.</p>
+    <ul class="points">
+        <li><strong>Count () Method</strong></li>
+    </ul>
+    <p>The times the predetermined component happens in the Tuple is returned by the count () capability of the Tuple.
+    </p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Creating tuples
+T1 = (0, 1, 5, 6, 7, 2, 2, 4, 2, 3, 2, 3, 1, 3, 2)
+T2 = ('python', 'java', 'python', 'Tpoint', 'python', 'java')
+# counting the appearance of 3
+res = T1.count(2)
+print('Count of 2 in T1 is:', res)
+# counting the appearance of java
+res = T2.count('java')
+print('Count of Java in T2 is:', res)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Count of 2 in T1 is: 5
+Count of java in T2 is: 2
+</pre>
+    </div>
+    <h3 class="h3">Index() Method:</h3>
+    <p>The Index() function returns the first instance of the requested element from the Tuple.</p>
+    <p><strong>Parameters:</strong></p>
+    <ul class="points">
+        <li>The thing that must be looked for.</li>
+        <li>Start: (Optional) the index that is used to begin the final (optional) search: The most recent index from
+            which the search is carried out</li>
+        <li>Index Method</li>
+    </ul>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Creating tuples
+Tuple_data = (0, 1, 2, 3, 2, 3, 1, 3, 2)
+# getting the index of 3
+res = Tuple_data.index(3)
+print('First occurrence of 1 is', res)
+# getting the index of 3 after 4th
+# index
+res = Tuple_data.index(3, 4)
+print('First occurrence of 1 after 4th index is:', res)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>First occurrence of 1 is 2
+First occurrence of 1 after 4th index is: 6
+</pre>
+    </div>
+    <h3 class="h3">Tuple Membership Test</h3>
+    <p>Utilizing the watchword, we can decide whether a thing is available in the given Tuple.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to perform membership test for tuples  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Ordered")  
+# In operator  
+print('Tuple' in tuple_)  
+print('Items' in tuple_)  
+# Not in operator  
+print('Immutable' not in tuple_)  
+print('Items' not in tuple_)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>True
+False
+False
+True
+</pre>
+    </div>
+    <h3 class="h3">Iterating Through a Tuple</h3>
+    <p>A for loop can be used to iterate through each tuple element.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to iterate over tuple elements  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable")  
+# Iterating over tuple elements using a for loop  
+for item in tuple_:  
+    print(item)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Python
+Tuple
+Ordered
+Immutable
+</pre>
+    </div>
+    <h3 class="h3">Changing a Tuple</h3>
+    <p>Tuples, instead of records, are permanent articles.</p>
+    <p>This suggests that once the elements of a tuple have been defined, we cannot change them. However, the nested
+        elements can be altered if the element itself is a changeable data type like a list.</p>
+    <p>Multiple values can be assigned to a tuple through reassignment.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show that Python tuples are immutable objects  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable", [1,2,3,4])  
+# Trying to change the element at index 2  
+try:  
+    tuple_[2] = "Items"  
+    print(tuple_)  
+except Exception as e:  
+    print( e )  
+# But inside a tuple, we can change elements of a mutable object  
+tuple_[-1][2] = 10   
+print(tuple_)  
+# Changing the whole tuple  
+tuple_ = ("Python", "Items")  
+print(tuple_)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>'tuple' object does not support item assignment
+('Python', 'Tuple', 'Ordered', 'Immutable', [1, 2, 10, 4])
+('Python', 'Items')
+</pre>
+    </div>
+    <p>The + operator can be used to combine multiple tuples into one. This phenomenon is known as concatenation.</p>
+    <p>We can also repeat the elements of a tuple a predetermined number of times by using the * operator. This is
+        already demonstrated above.</p>
+    <p>The aftereffects of the tasks + and * are new tuples.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to concatenate tuples  
+# Creating a tuple  
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable")  
+# Adding a tuple to the tuple_  
+print(tuple_ + (4, 5, 6))  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>('Python', 'Tuple', 'Ordered', 'Immutable', 4, 5, 6)
+</pre>
+    </div>
+    <h3 class="h3">Tuples have the following advantages over lists:</h3>
+    <ul class="points">
+        <li>Triples take less time than lists do.</li>
+        <li>Due to tuples, the code is protected from accidental modifications. It is desirable to store non-changing
+            information in "tuples" instead of "records" if a program expects it.</li>
+        <li>A tuple can be used as a dictionary key if it contains immutable values like strings, numbers, or another
+            tuple. "Lists" cannot be utilized as dictionary keys because they are mutable.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="18_lists.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="20_list_vs_tuple.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

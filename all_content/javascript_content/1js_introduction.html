@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>js introduction</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item" href="8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item" href="34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+        <h1 class="h1">Learn JavaScript Tutorial</h1>
+        <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="200"
+            alt="JavaScript Tutorial" class="imageright" />
+        <p>Our <strong>JavaScript Tutorial</strong> is designed for beginners and professionals both. JavaScript is used
+            to
+            create client-side dynamic pages. </p>
+        <p>JavaScript is <em>an object-based scripting language</em> which is lightweight and cross-platform.</p>
+        <p>JavaScript is not a compiled language, but it is a translated language. The JavaScript Translator (embedded
+            in
+            the browser) is responsible for translating the JavaScript code for the web browser.</p>
+        <h2 class="h2">What is JavaScript</h2>
+        <p>JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for
+            scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic
+            interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding
+            programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other
+            graphical web browsers. With JavaScript, users can build modern web applications to interact directly
+            without
+            reloading the page every time. The traditional website uses js to provide several forms of interactivity and
+            simplicity.</p>
+        <p>Although, JavaScript has no connectivity with Java programming language. The name was suggested and provided
+            in
+            the times when Java was gaining popularity in the market. In addition to web browsers, databases such as
+            CouchDB
+            and MongoDB uses JavaScript as their scripting and query language.</p>
+        <h2 class="h2">Features of JavaScript</h2>
+        <p>There are following features of JavaScript:</p>
+        <ol class="points">
+            <li>All popular web browsers support JavaScript as they provide built-in execution environments.</li>
+            <li>JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured
+                programming language.</li>
+            <li>JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the
+                operation).
+            </li>
+            <li>JavaScript is an object-oriented programming language that uses prototypes rather than using classes for
+                inheritance.</li>
+            <li>It is a light-weighted and interpreted language.</li>
+            <li>It is a case-sensitive language.</li>
+            <li>JavaScript is supportable in several operating systems including, Windows, macOS, etc.</li>
+            <li>It provides good control to the users over the web browsers.</li>
+        </ol>
+        <h2 class="h2">History of JavaScript</h2>
+        <p>In 1993, <strong>Mosaic</strong>, the first popular web browser, came into existence. In the <strong>year
+                1994</strong>, <strong>Netscape</strong> was founded by <strong>Marc Andreessen</strong>. He realized
+            that
+            the web needed to become more dynamic. Thus, a 'glue language' was believed to be provided to HTML to make
+            web
+            designing easy for designers and part-time programmers. Consequently, in 1995, the company recruited
+            <strong>Brendan Eich</strong> intending to implement and embed Scheme programming language to the browser.
+            But,
+            before Brendan could start, the company merged with <strong>Sun Microsystems</strong> for adding Java into
+            its
+            Navigator so that it could compete with Microsoft over the web technologies and platforms. Now, two
+            languages
+            were there: Java and the scripting language. Further, Netscape decided to give a similar name to the
+            scripting
+            language as Java's. It led to 'Javascript'. Finally, in May 1995, Marc Andreessen coined the first code of
+            Javascript named '<strong>Mocha</strong>'. Later, the marketing team replaced the name with
+            '<strong>LiveScript</strong>'. But, due to trademark reasons and certain other reasons, in December 1995,
+            the
+            language was finally renamed to 'JavaScript'. From then, JavaScript came into existence.
+        </p>
+        <h2 class="h2">Application of JavaScript</h2>
+        <p>JavaScript is used to create interactive websites. It is mainly used for:</p>
+        <ul class="points">
+            <li>Client-side validation,</li>
+            <li>Dynamic drop-down menus,</li>
+            <li>Displaying date and time,</li>
+            <li>Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt
+                dialog
+                box),</li>
+            <li>Displaying clocks etc.</li>
+        </ul>
+        <h3 class="h2">JavaScript Example</h3>
+        <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+document.write("Hello JavaScript by JavaScript");
+&lt;/script&gt;
+</textarea></div>
+        <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=hellojs" target="_blank">Test
+                it
+                Now</a></span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <!-- <a href="#"><button class="btn btn-danger" type="button">Previous</button></a> -->
+        <a href="2js_example.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/../1_HTML_tutorials/1_Intro_to_html.html">Intro to html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/2_What_is_HTML.html">What is html </a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/3_Html_text_editors.html">text editors</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/4_HTML_Building_blocks.html">Building blocks</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/5_HTML_tags.html">HTML Tags</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/6_HTML_Attributes.html">HTML Attributes<li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/7_HTML_Elements.html">HTML Elements</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/8_HTML_Formatting.html">Formatting in html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/9_HTML_Heading.html"> heading in html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/10_HTML_Paragraph.html">paragraph in html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/13_HTML_Image.html">Image tag</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/14_HTML_Table.html">Table tag</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/15_HTML_Lists.html">Lists tag</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/16_HTML_Ordered_list.html">Ordered list</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/17_HTML_Unordered_list.html">Unordered list</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/18_HTML_Description_list.html">Description list</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/19_HTML_form.html">form in html</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/20_HTML_Form_Input.html">Form input</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/21_HTML_Form_Attribute.html">Form attribute</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/22_HTML_with_CSS.html">Html with CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/23_HTML_Classes.html">HTML classes</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/24_HTML_ID.html">HTML ID</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/25_HTML_Iframes.html">Html Iframes</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/26_HTML_Javascript.html">HTML JavaScript</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/27_HTML_Comments.html">HTML comments</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/28_HTML_Filepath.html">Filepath</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/29_HTML_head.html">HTML head</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/30_HTML_layout.html">HTML layout</a></li>
+                                <li><a class="dropdown-item" href="../1_HTML_tutorials/32_HTML_Responsive.html">HTML Responsive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Attributes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tags
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                                <li><a class="dropdown-item" href="2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                                <li><a class="dropdown-item" href="3_anchor_tag.html">Anchor tag</a></li>
+                                <li><a class="dropdown-item" href="4_abbr_tag.html">Abbr tag</a></li>
+                                <li><a class="dropdown-item" href="5_acronym_tag.html">Acronym tag</a></li>
+                                <li><a class="dropdown-item" href="6_address_tag.html">Address tag</a></li>
+                                <li><a class="dropdown-item" href="7_applet_tag.html">Applet tag</a></li>
+                                <li><a class="dropdown-item" href="8_area_tag.html">Area tag</a></li>
+                                <li><a class="dropdown-item" href="9_article_tag.html">Article tag</a></li>
+                                <li><a class="dropdown-item" href="10_aside_tag.html">Aside tag</a></li>
+                                <li><a class="dropdown-item" href="11_audio_tag.html">Audio tag</a></li>
+                                <li><a class="dropdown-item" href="12_b_tag.html">B tag</a></li>
+                                <li><a class="dropdown-item" href="13_base_tag.html">Base tag</a></li>
+                                <li><a class="dropdown-item" href="14_basefont_tag.html">Basefont tag</a></li>
+                                <li><a class="dropdown-item" href="15_bdi_tag.html">Bdi tag</a></li>
+                                <li><a class="dropdown-item" href="16_bdo_tag.html">Bdo tag</a></li>
+                                <li><a class="dropdown-item" href="17_big_tag.html">Big tag</a></li>
+                                <li><a class="dropdown-item" href="18_blockquote_tag.html">Blockquote</a></li>
+                                <li><a class="dropdown-item" href="19_body_tag.html">Body tag</a></li>
+                                <li><a class="dropdown-item" href="20_br_tag.html">Br tag</a></li>
+                                <li><a class="dropdown-item" href="21_button_tag.html">Button tag</a></li>
+                                <li><a class="dropdown-item" href="22_canvas_tag.html">canvas tag</a></li>
+                                <li><a class="dropdown-item" href="23_caption_tag.html">caption tag</a></li>
+                                <li><a class="dropdown-item" href="24_center_tag.html">center tag</a></li>
+                                <li><a class="dropdown-item" href="25_cite_tag.html">cite tag</a></li>
+                                <li><a class="dropdown-item" href="26_code_tag.html">code tag</a></li>
+                                <li><a class="dropdown-item" href="27_col_tag.html">col tag</a></li>
+                                <li><a class="dropdown-item" href="28_colgroup_tag.html">colgroup tag</a></li>
+                                <li><a class="dropdown-item" href="29_data_tag.html">data tag</a></li>
+                                <li><a class="dropdown-item" href="30_datalist_tag.html">datalist tag</a></li>
+                                <li><a class="dropdown-item" href="31_Description_list.html">Description tag</a></li>
+                                <li><a class="dropdown-item" href="32_del_tag.html">del tag</a></li>
+                                <li><a class="dropdown-item" href="33_details_tag.html">details tag</a></li>
+                                <li><a class="dropdown-item" href="34_dfn_tag.html">dfn tag</a></li>
+                                <li><a class="dropdown-item" href="35_Dialog_tag.html">Dialog tag</a></li>
+                                <li><a class="dropdown-item" href="36_dir_tag.html">dir tag</a></li>
+                                <li><a class="dropdown-item" href="37_div_tag.html">div tag</a></li>
+                                <li><a class="dropdown-item" href="38_em_tag.html">em tag</a></li>
+                                <li><a class="dropdown-item" href="39_embed_tag.html">embed tag</a></li>
+                                <li><a class="dropdown-item" href="40_field_set_tag.html">field set tag</a></li>
+                                <li><a class="dropdown-item" href="41_figcaption_tag.html">figcaption tag</a></li>
+                                <li><a class="dropdown-item" href="42_figure_tag.html">figure tag</a></li>
+                                <li><a class="dropdown-item" href="43_font_tag.html">font tag</a></li>
+                                <li><a class="dropdown-item" href="44_footer_tag.html">footer tag</a></li>
+                                <li><a class="dropdown-item active-submenu" href="45_form_tag.html">form tag</a></li>
+                                <li><a class="dropdown-item" href="46_frame_tag.html">frame tag</a></li>
+                                <li><a class="dropdown-item" href="47_frameset_tag.html">frameset tag</a></li>
+                                <li><a class="dropdown-item" href="48_header_tag.html">header tag</a></li>
+                                <li><a class="dropdown-item" href="49_hr_tag.html">hr tag</a></li>
+                                <li><a class="dropdown-item" href="50_i_tag.html">i tag</a></li>
+                                <li><a class="dropdown-item" href="51_input_tag.html">input tag</a></li>
+                                <li><a class="dropdown-item" href="52_kbd_tag.html">kbd tag</a></li>
+                                <li><a class="dropdown-item" href="53_label_tag.html">label tag</a></li>
+                                <li><a class="dropdown-item" href="54_legend_tag.html">legend tag</a></li>
+                                <li><a class="dropdown-item" href="55_lists_tag.html">lists tag</a></li>
+                                <li><a class="dropdown-item" href="56_link_tag.html">link tag</a></li>
+                                <li><a class="dropdown-item" href="57_main_tag.html">main tag</a></li>
+                                <li><a class="dropdown-item" href="58_mark_tag.html">mark tag</a></li>
+                                <li><a class="dropdown-item" href="59_marquee_tag.html">marquee tag</a></li>
+                                <li><a class="dropdown-item" href="60_menu_tag.html">menu tag</a></li>
+                                <li><a class="dropdown-item" href="61_meta_tag.html">meta tag</a></li>
+                                <li><a class="dropdown-item" href="62_Meter_tag.html">Meter tag</a></li>
+                                <li><a class="dropdown-item" href="63_nav_tag.html">nav tag</a></li>
+                                <li><a class="dropdown-item" href="64_object_tag.html">Object tag</a></li>
+                                <li><a class="dropdown-item" href="65_Optgrp_tag.html">optgrp tag</a></li>
+                                <li><a class="dropdown-item" href="66_option_tag.html">option tag</a></li>
+                                <li><a class="dropdown-item" href="67_progress.html">progress tag</a></li>
+                                <li><a class="dropdown-item" href="68_Colour_name.html">Color name</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML Form</h1>
+    <p>An <b>HTML form</b> is <i>a section of a document</i> which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc.</p>
+    <p>An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc. .</p>
+    <hr/>
+    <h2 class="h2">Why use HTML Form</h2>
+    <p>HTML forms are required if you want to collect some data from of the site visitor.</p>
+    <p> For example: If a user want to purchase some items on internet, he/she must fill the form such as shipping address and credit/debit card details so that item can be sent to the given address. </p>
+    <hr/>
+    <h2 class="h2">HTML Form Syntax</h2>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form action="server url" method="get|post"&gt;
+      //input controls e.g. textfield, textarea, radiobutton, button
+    &lt;/form&gt;
+    </textarea></div>
+    <hr/>
+    <h2 class="h2">HTML Form Tags</h2>
+    <p>Let's see the list of HTML 5 form tags.</p>
+    <table class="alt">
+    <tr><th>Tag</th><th>Description</th></tr>
+    <tr><td>&lt;form&gt;</td><td>It defines an HTML form to enter inputs by the used side.</td></tr>
+    <tr><td>&lt;input&gt;</td><td>It defines an input control.</td></tr>
+    <tr><td>&lt;textarea&gt;</td><td>It defines a multi-line input control.</td></tr>
+    <tr><td>&lt;label&gt;</td><td>It defines a label for an input element.</td></tr>
+    <tr><td>&lt;fieldset&gt;</td><td>It groups the related element in a form.</td></tr>
+    <tr><td>&lt;legend&gt;</td><td>It defines a caption for a &lt;fieldset&gt; element.</td></tr>
+    <tr><td>&lt;select&gt;</td><td>It defines a drop-down list.</td></tr>
+    <tr><td>&lt;optgroup&gt;</td><td>It defines a group of related options in a drop-down list.</td></tr>
+    <tr><td>&lt;option&gt;</td><td>It defines an option in a drop-down list.</td></tr>
+    <tr><td>&lt;button&gt;</td><td>It defines a clickable button.</td></tr>
+    </table>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <ins class="adsbygoogle cm_jtp_wtc_responsive" style="display:inline-block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <h2 class="h2">HTML 5 Form Tags</h2>
+    <p>Let's see the list of HTML 5 form tags.</p>
+    <table class="alt">
+    <tr><th>Tag</th><th>Description</th></tr>
+    <tr><td>&lt;datalist&gt;</td><td>It specifies a list of pre-defined options for input control.</td></tr>
+    <tr><td>&lt;keygen&gt;</td><td>It defines a key-pair generator field for forms.</td></tr>
+    <tr><td>&lt;output&gt;</td><td>It defines the result of a calculation.</td></tr>
+    </table>
+    <hr/>
+    <h2 class="h2">HTML &lt;form&gt; element</h2>
+    <p>The HTML &lt;form&gt; element provide a document section to take input from user. It provides various interactive controls for submitting information to web server such as text field, text area, password field, etc. </p>
+    <h4 class="n">Note: The &lt;form&gt; element does not itself create a form but it is container to contain all required form elements, such as &lt;input&gt;, &lt;label&gt;, etc.</h4>
+    <p><strong>Syntax: </strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+    //Form elements
+    &lt;/form&gt;
+    </textarea></div>
+    <hr/>
+    <h2 class="h2">HTML &lt;input&gt; element</h2>
+    <p>The HTML &lt;input&gt; element is fundamental form element. It is used to create form fields, to take input from user. We can apply different input filed to gather different information form user. Following is the example to show the simple text input.</p>
+    <h2 class="h2">Example:</h2>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;body&gt;
+      &lt;form&gt;
+         Enter your name  &lt;br&gt;
+        &lt;input type="text" name="username"&gt;
+      &lt;/form&gt;
+    &lt;/body&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-form.png" alt="HTML Form" />
+    <hr/>
+    <h2 class="h2">HTML TextField Control</h2>
+    <p>The type="text" attribute of input tag creates textfield control also known as single line textfield control. The name attribute is optional, but it is required for the server side component such as JSP, ASP, PHP etc.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+        First Name: &lt;input type="text" name="firstname"/&gt; &lt;br/&gt;
+        Last Name:  &lt;input type="text" name="lastname"/&gt; &lt;br/&gt;
+     &lt;/form&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-textfield-control.png" alt="HTML TextField Control" />
+    <h4 class="n">Note: If you will omit 'name' attribute then the text filed input will not be submitted to server.</h4>
+    <hr/>
+    <h2 class="h2">HTML &lt;textarea&gt; tag in form</h2>
+    <p>The &lt;textarea&gt; tag in HTML is used to insert multiple-line text in a form. The size of &lt;textarea&gt; can be specify either using "rows" or "cols" attribute or by CSS.</p>
+    <p><strong>Example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Form in HTML&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;form&gt;
+            Enter your address:&lt;br&gt;
+          &lt;textarea rows="2" cols="20"&gt;&lt;/textarea&gt;
+      &lt;/form&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-textarea-tag-in-form.png" alt="HTML textarea tag in form" />
+    <hr/>
+    <h2 class="h2">Label Tag in Form</h2>
+    <p>It is considered better to have label in form. As it makes the code parser/browser/user friendly. </p>
+    <p>If you click on the label tag, it will focus on the text control. To do so, you need to have for attribute in label tag that must be same as id attribute of input tag.</p>
+    <h4 class="n">NOTE: It is good to use &lt;label&gt; tag with form, although it is optional but if you will use it, then it will provide a focus when you tap or click on label tag. It is more worthy with touchscreens.</h4>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+        &lt;label for="firstname"&gt;First Name: &lt;/label&gt; &lt;br/&gt;
+                  &lt;input type="text" id="firstname" name="firstname"/&gt; &lt;br/&gt;
+       &lt;label for="lastname"&gt;Last Name: &lt;/label&gt;
+                  &lt;input type="text" id="lastname" name="lastname"/&gt; &lt;br/&gt;
+     &lt;/form&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-label-tag-in-form.png" alt="HTML Label Tag in Form" />
+    <hr/>
+    <h2 class="h2">HTML Password Field Control</h2>
+    <p>The password is not visible to the user in password field control.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+        &lt;label for="password"&gt;Password: &lt;/label&gt;
+                  &lt;input type="password" id="password" name="password"/&gt; &lt;br/&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-password-field-control.png" alt="HTML Password Field Control" />
+    <hr/>
+    <h2 class="h2">HTML 5 Email Field Control</h2>
+    <p>The email field in new in HTML 5. It validates the text for correct email address. You must use @ and . in this field.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+        &lt;label for="email"&gt;Email: &lt;/label&gt;
+                  &lt;input type="email" id="email" name="email"/&gt; &lt;br/&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <p>It will display in browser like below: </p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-5-email-field-control.png" alt="HTML 5 Email Field Control" />
+    <h4 class="n">Note: If we will not enter the correct email, it will display error like: </h4>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-5-email-field-control2.png" alt="HTML 5 Email Field Control" />
+    <hr/>
+    <h2 class="h2">Radio Button Control</h2>
+    <p>The radio button is used to select one option from multiple options. It is used for selection of gender, quiz questions etc.</p>
+    <p>If you use one name for all the radio buttons, only one radio button can be selected at a time.</p>
+    <p>Using radio buttons for multiple options, you can only choose a single option at a time. </p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+        &lt;label for="gender"&gt;Gender: &lt;/label&gt;
+                  &lt;input type="radio" id="gender" name="gender" value="male"/&gt;Male
+                  &lt;input type="radio" id="gender" name="gender" value="female"/&gt;Female &lt;br/&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <img src="https://static.javatpoint.com/htmlpages/images/radio-button-control.png" alt="Radio Button Control" />
+    <hr/>
+    <h2 class="h2">Checkbox Control</h2>
+    <p>The checkbox control is used to check multiple options from given checkboxes.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+    Hobby:&lt;br&gt;
+                  &lt;input type="checkbox" id="cricket" name="cricket" value="cricket"/&gt;
+                     &lt;label for="cricket"&gt;Cricket&lt;/label&gt; &lt;br&gt;
+                  &lt;input type="checkbox" id="football" name="football" value="football"/&gt;
+                     &lt;label for="football"&gt;Football&lt;/label&gt; &lt;br&gt;
+                  &lt;input type="checkbox" id="hockey" name="hockey" value="hockey"/&gt;
+                     &lt;label for="hockey"&gt;Hockey&lt;/label&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <h4 class="n">Note: These are similar to radio button except it can choose multiple options at a time and radio button can select one button at a time, and its display.</h4>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/checkbox-control.png" alt="Checkbox Control" />
+    <hr/>
+    <h2 class="h2">Submit button control</h2>
+    <p>HTML <strong>&lt;input type="submit"&gt;</strong> are used to add a submit button on web page. When user clicks on submit button, then form get submit to the server. </p>
+    <p>Syntax: </p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;input type="submit" value="submit"&gt;
+    </textarea></div>
+    <p>The type = submit , specifying that it is a submit button </p>
+    <p>The value attribute can be anything which we write on button on web page. </p>
+    <p>The name attribute can be omit here. </p>
+    <p><strong>Example: </strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form&gt;
+        &lt;label for="name"&gt;Enter name&lt;/label&gt;&lt;br&gt;
+        &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+        &lt;label for="pass"&gt;Enter Password&lt;/label&gt;&lt;br&gt;
+        &lt;input type="Password" id="pass" name="pass"&gt;&lt;br&gt;
+        &lt;input type="submit" value="submit"&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/submit-button-control.png" alt="Submit button control" />
+    <hr/>
+    <h2 class="h2">HTML &lt;fieldset&gt; element: </h2>
+    <p>The &lt;fieldset&gt; element in HTML is used to group the related information of a form. This element is used with &lt;legend&gt; element which provide caption for the grouped elements. </p>
+    <p><strong>Example: </strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+      &lt;form&gt;
+          &lt;fieldset&gt;
+            &lt;legend&gt;User Information:&lt;/legend&gt;
+          &lt;label for="name"&gt;Enter name&lt;/label&gt;&lt;br&gt;
+        &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+        &lt;label for="pass"&gt;Enter Password&lt;/label&gt;&lt;br&gt;
+        &lt;input type="Password" id="pass" name="pass"&gt;&lt;br&gt;
+        &lt;input type="submit" value="submit"&gt;
+     &lt;/fieldset&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-fieldset-element.png" alt="HTML fieldset element" />
+    <hr/>
+    <h2 class="h2">HTML Form Example</h2>
+    <p>Following is the example for a simple form of registration. </p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+     &lt;html&gt;
+     &lt;head&gt;
+      &lt;title&gt;Form in HTML&lt;/title&gt;
+    &lt;/head&gt;
+     &lt;body&gt;
+         &lt;h2&gt;Registration form&lt;/h2&gt;
+        &lt;form&gt;
+           &lt;fieldset&gt;
+              &lt;legend&gt;User personal information&lt;/legend&gt;
+            &lt;label&gt;Enter your full name&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="name"&gt;&lt;br&gt;
+             &lt;label&gt;Enter your email&lt;/label&gt;&lt;br&gt;
+             &lt;input type="email" name="email"&gt;&lt;br&gt;
+             &lt;label&gt;Enter your password&lt;/label&gt;&lt;br&gt;
+             &lt;input type="password" name="pass"&gt;&lt;br&gt;
+             &lt;label&gt;confirm your password&lt;/label&gt;&lt;br&gt;
+             &lt;input type="password" name="pass"&gt;&lt;br&gt;
+             &lt;br&gt;&lt;label&gt;Enter your gender&lt;/label&gt;&lt;br&gt;
+             &lt;input type="radio" id="gender" name="gender" value="male"/&gt;Male  &lt;br&gt;
+             &lt;input type="radio" id="gender" name="gender" value="female"/&gt;Female &lt;br/&gt;  
+             &lt;input type="radio" id="gender" name="gender" value="others"/&gt;others &lt;br/&gt; 
+              &lt;br&gt;Enter your Address:&lt;br&gt;
+             &lt;textarea&gt;&lt;/textarea&gt;&lt;br&gt;
+             &lt;input type="submit" value="sign-up"&gt;
+         &lt;/fieldset&gt;
+      &lt;/form&gt;
+     &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlform2" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-form-example.png" alt="HTML Form Example" />
+    <hr/>
+    <h2 class="h2">HTML Form Example</h2>
+    <p>Let's see a simple example of creating HTML form.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;form action="#"&gt;
+    &lt;table&gt;
+    &lt;tr&gt;
+        &lt;td class="tdLabel"&gt;&lt;label for="register_name" class="label"&gt;Enter name:&lt;/label&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;input type="text" name="name" value="" id="register_name" style="width:160px"/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class="tdLabel"&gt;&lt;label for="register_password" class="label"&gt;Enter password:&lt;/label&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;input type="password" name="password" id="register_password" style="width:160px"/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class="tdLabel"&gt;&lt;label for="register_email" class="label"&gt;Enter Email:&lt;/label&gt;&lt;/td&gt;
+        &lt;td
+    &gt;&lt;input type="email" name="email" value="" id="register_email" style="width:160px"/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class="tdLabel"&gt;&lt;label for="register_gender" class="label"&gt;Enter Gender:&lt;/label&gt;&lt;/td&gt;
+        &lt;td&gt;
+    &lt;input type="radio" name="gender" id="register_gendermale" value="male"/&gt;
+    &lt;label for="register_gendermale"&gt;male&lt;/label&gt;
+    &lt;input type="radio" name="gender" id="register_genderfemale" value="female"/&gt;
+    &lt;label for="register_genderfemale"&gt;female&lt;/label&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class="tdLabel"&gt;&lt;label for="register_country" class="label"&gt;Select Country:&lt;/label&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;select name="country" id="register_country" style="width:160px"&gt;
+        &lt;option value="india"&gt;india&lt;/option&gt;
+        &lt;option value="pakistan"&gt;pakistan&lt;/option&gt;
+        &lt;option value="africa"&gt;africa&lt;/option&gt;
+        &lt;option value="china"&gt;china&lt;/option&gt;
+        &lt;option value="other"&gt;other&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;&lt;div align="right"&gt;&lt;input type="submit" id="register_0" value="register"/&gt;
+    &lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;/form&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlform1" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h3">Supporting Browsers</h2>
+    <table class="alt">
+    <tr><td>Element</td><td><img src="https://static.javatpoint.com/htmlpages/images/chrome_browser.png" alt="chrome browser" /> Chrome</td><td><img src="https://static.javatpoint.com/htmlpages/images/ie_browser.png" alt="ie browser" /> IE</td><td><img src="https://static.javatpoint.com/htmlpages/images/firefox_browser.png" alt="firefox browser" /> Firefox</td><td><img src="https://static.javatpoint.com/htmlpages/images/opera_browser.png" alt="opera browser" /> Opera</td><td><img src="https://static.javatpoint.com/htmlpages/images/safari_browser.png" alt="safari browser" /> Safari</td></tr>
+    <tr><td>&lt;form&gt;</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+    </table>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="44_footer_tag.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="46_frame_tag.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

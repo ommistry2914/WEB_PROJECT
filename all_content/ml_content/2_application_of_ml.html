@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications of ML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item active-submenu" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Applications of Machine learning</h1>
+    <p>Machine learning is a buzzword for today's technology, and it is growing very rapidly day by day. We are using
+        machine learning in our daily life even without knowing it such as Google Maps, Google assistant, Alexa, etc.
+        Below are some most trending real-world applications of Machine Learning:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/applications-of-machine-learning.png"
+        alt="Applications of Machine learning" />
+    <h3 class="h3">1. Image Recognition:</h3>
+    <p>Image recognition is one of the most common applications of machine learning. It is used to identify objects,
+        persons, places, digital images, etc. The popular use case of image recognition and face detection is,
+        <strong>Automatic friend tagging suggestion</strong>:</p>
+    <p>Facebook provides us a feature of auto friend tagging suggestion. Whenever we upload a photo with our Facebook
+        friends, then we automatically get a tagging suggestion with name, and the technology behind this is machine
+        learning's <strong>face detection</strong> and <strong>recognition algorithm</strong>.</p>
+    <p>It is based on the Facebook project named "<strong>Deep Face</strong>," which is responsible for face recognition
+        and person identification in the picture.</p>
+    <h3 class="h3">2. Speech Recognition</h3>
+    <p>While using Google, we get an option of "<strong>Search by voice</strong>," it comes under speech recognition,
+        and it's a popular application of machine learning.</p>
+    <p>Speech recognition is a process of converting voice instructions into text, and it is also known as
+        "<strong>Speech to text</strong>", or "<strong>Computer speech recognition</strong>." At present, machine
+        learning algorithms are widely used by various applications of speech recognition. <strong>Google
+            assistant</strong>, <strong>Siri</strong>, <strong>Cortana</strong>, and <strong>Alexa</strong> are using
+        speech recognition technology to follow the voice instructions.</p>
+    <h3 class="h3">3. Traffic prediction:</h3>
+    <p>If we want to visit a new place, we take help of Google Maps, which shows us the correct path with the shortest
+        route and predicts the traffic conditions.</p>
+    <p>It predicts the traffic conditions such as whether traffic is cleared, slow-moving, or heavily congested with the
+        help of two ways:</p>
+    <ul class="points">
+        <li><strong>Real Time location</strong> of the vehicle form Google Map app and sensors</li>
+        <li><strong>Average time has taken</strong> on past days at the same time.</li>
+    </ul>
+    <p>Everyone who is using Google Map is helping this app to make it better. It takes information from the user and
+        sends back to its database to improve the performance.</p>
+    <h3 class="h3">4. Product recommendations:</h3>
+    <p>Machine learning is widely used by various e-commerce and entertainment companies such as
+        <strong>Amazon</strong>, <strong>Netflix</strong>, etc., for product recommendation to the user. Whenever we
+        search for some product on Amazon, then we started getting an advertisement for the same product while internet
+        surfing on the same browser and this is because of machine learning.</p>
+    <p>Google understands the user interest using various machine learning algorithms and suggests the product as per
+        customer interest.</p>
+    <p>As similar, when we use Netflix, we find some recommendations for entertainment series, movies, etc., and this is
+        also done with the help of machine learning.</p>
+    <h3 class="h3">5. Self-driving cars:</h3>
+    <p>One of the most exciting applications of machine learning is self-driving cars. Machine learning plays a
+        significant role in self-driving cars. Tesla, the most popular car manufacturing company is working on
+        self-driving car. It is using unsupervised learning method to train the car models to detect people and objects
+        while driving.</p>
+    <h3 class="h3">6. Email Spam and Malware Filtering:</h3>
+    <p>Whenever we receive a new email, it is filtered automatically as important, normal, and spam. We always receive
+        an important mail in our inbox with the important symbol and spam emails in our spam box, and the technology
+        behind this is Machine learning. Below are some spam filters used by Gmail:</p>
+    <ul class="points">
+        <li>Content Filter</li>
+        <li>Header filter</li>
+        <li>General blacklists filter</li>
+        <li>Rules-based filters</li>
+        <li>Permission filters</li>
+    </ul>
+    <p>Some machine learning algorithms such as <strong>Multi-Layer Perceptron</strong>, <strong>Decision tree</strong>,
+        and <strong>Na&iuml;ve Bayes classifier</strong> are used for email spam filtering and malware detection.</p>
+    <h3 class="h3">7. Virtual Personal Assistant:</h3>
+    <p>We have various virtual personal assistants such as <strong>Google assistant</strong>, <strong>Alexa</strong>,
+        <strong>Cortana</strong>, <strong>Siri</strong>. As the name suggests, they help us in finding the information
+        using our voice instruction. These assistants can help us in various ways just by our voice instructions such as
+        Play music, call someone, Open an email, Scheduling an appointment, etc.</p>
+    <p>These virtual assistants use machine learning algorithms as an important part.</p>
+    <p>These assistant record our voice instructions, send it over the server on a cloud, and decode it using ML
+        algorithms and act accordingly.</p>
+    <h3 class="h3">8. Online Fraud Detection:</h3>
+    <p>Machine learning is making our online transaction safe and secure by detecting fraud transaction. Whenever we
+        perform some online transaction, there may be various ways that a fraudulent transaction can take place such as
+        <strong>fake accounts</strong>, <strong>fake ids</strong>, and <strong>steal money</strong> in the middle of a
+        transaction. So to detect this, <strong>Feed Forward Neural network</strong> helps us by checking whether it is
+        a genuine transaction or a fraud transaction.</p>
+    <p>For each genuine transaction, the output is converted into some hash values, and these values become the input
+        for the next round. For each genuine transaction, there is a specific pattern which gets change for the fraud
+        transaction hence, it detects it and makes our online transactions more secure.</p>
+    <h3 class="h3">9. Stock Market trading:</h3>
+    <p>Machine learning is widely used in stock market trading. In the stock market, there is always a risk of up and
+        downs in shares, so for this machine learning's <strong>long short term memory neural network</strong> is used
+        for the prediction of stock market trends.</p>
+    <h3 class="h3">10. Medical Diagnosis:</h3>
+    <p>In medical science, machine learning is used for diseases diagnoses. With this, medical technology is growing
+        very fast and able to build 3D models that can predict the exact position of lesions in the brain.</p>
+    It helps in finding brain tumors and other brain-related diseases easily.</p>
+    <h3 class="h3">11. Automatic Language Translation:</h3>
+    <p>Nowadays, if we visit a new place and we are not aware of the language then it is not a problem at all, as for
+        this also machine learning helps us by converting the text into our known languages. Google's GNMT (Google
+        Neural Machine Translation) provide this feature, which is a Neural Machine Learning that translates the text
+        into our familiar language, and it called as automatic translation.</p>
+    <p>The technology behind the automatic translation is a sequence to sequence learning algorithm, which is used with
+        image recognition and translates the text from one language to another language.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="1_what_is_machine_learning.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="3_life_cycle.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

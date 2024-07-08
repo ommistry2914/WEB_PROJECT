@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .g-link{
+            font-size: large;
+            color: green;
+        }
+        .g-link:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home.html">
+                <img src="icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="java_page.html">Java</a></li>
+                                <li><a class="dropdown-item active-submenu" href="python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../all_content/python_content/1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/2_python_applications.html">Python Applications</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/3_how_to_install_python.html">How To Install Python</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/8_python_operators.html">Operators</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/25_exception_handling.html">Exception Handling</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="../all_content/python_content/30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-8">
+                <p>
+                    Python is a high-level, versatile, and interpreted programming language known for its simplicity,
+                    readability,
+                    and vast ecosystem of libraries and frameworks. Created by Guido van Rossum and first released in
+                    1991, Python
+                    has gained immense popularity in the world of software development and data science. Here's an
+                    overview of
+                    Python:
+
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <img src="logo/python_logo.png" alt="Html" style="height: 120px; width: 120px;">
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="mt-4 mb-5">Information About Python</h2>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>1. Readability and Simplicity:</h4>
+                <ul>
+                    <li>Python's syntax is designed to be highly readable, with a clean and straightforward structure.
+                        This
+                        simplicity makes it an excellent choice for beginners and experienced developers alike.</li>
+                    <li>Python's use of indentation (whitespace) for code blocks enforces good coding practices and
+                        enhances code
+                        readability.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>2. Versatility:</h4>
+                <ul>
+                    <li>Python is a versatile language suitable for various domains, including web development, data
+                        analysis,
+                        scientific computing, artificial intelligence, machine learning, automation, and more.</li>
+                    <li>It offers a wide range of libraries and frameworks that make it adaptable to diverse application
+                        areas.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>3. Large Standard Library:</h4>
+                <ul>
+                    <li>Python includes a comprehensive standard library that provides modules and packages for various
+                        tasks, such
+                        as file handling, data manipulation, networking, and more.</li>
+                    <li>The standard library simplifies common programming tasks, reducing the need for writing code
+                        from scratch.
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>4. Cross-Platform Compatibility:</h4>
+                <ul>
+                    <li>Python is cross-platform, meaning it can run on different operating systems like Windows, macOS,
+                        and various
+                        Linux distributions without modification.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>5. Community and Support:</h4>
+                <ul>
+                    <li>Python boasts a large and active community of developers, which results in extensive
+                        documentation, numerous
+                        tutorials, forums, and open-source libraries.</li>
+                    <li>This strong community support makes it easy to find help and resources for Python development.
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>6. Interpreted Language:</h4>
+                <ul>
+                    <li>Python is an interpreted language, meaning that code is executed line-by-line by the Python
+                        interpreter.
+                        This enables rapid development and testing.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>7. Object-Oriented:</h4>
+                <ul>
+                    <li>Python is an object-oriented language, emphasizing the use of objects and classes to organize
+                        code and data.
+                        Object-oriented programming (OOP) concepts like inheritance and polymorphism are supported.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>8. Dynamic Typing:</h4>
+                <ul>
+                    <li>Python uses dynamic typing, where variable types are determined at runtime. This flexibility
+                        allows for more
+                        concise code but requires careful consideration of data types.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>9. High-Level Data Structures:</h4>
+                <ul>
+                    <li>Python provides high-level data structures like lists, dictionaries, and sets, making it easy to
+                        work with
+                        complex data and perform operations like sorting and filtering.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+                <h4>10. Exception Handling:</h4>
+                <ul>
+                    <li>Python has robust exception handling mechanisms, allowing developers to write code that
+                        gracefully handles
+                        errors and exceptions, improving the reliability of applications.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>11. Third-Party Libraries:</h4>
+                <ul>
+                    <li>Python's ecosystem includes a vast collection of third-party libraries and frameworks. For
+                        example, Django
+                        and Flask for web development, NumPy and pandas for data analysis, and TensorFlow and PyTorch
+                        for machine
+                        learning.</li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>12. Integration:</h4>
+                <ul>
+                    <li>Python can be easily integrated with other programming languages like C, C++, and Java, allowing
+                        developers
+                        to leverage existing codebases and libraries.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <hr>
+        <!-- <div class="row mt-4 mb-3">
+            <h4>Summary</h4>
+            <p class="mt-2">
+
+                In summary, HTML is the foundation of web development, providing the structure and content for web
+                pages. It is an essential skill for web developers and anyone looking to create content for the
+                internet. When combined with CSS and JavaScript, HTML forms the core technologies used to build modern,
+                interactive, and visually appealing websites and web applications.
+
+            </p>
+        </div>
+        <hr> -->
+        <h2 class="mt-4 mb-2">Useful Website References</h2>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.w3schools.com/python/" target="_blank" class="g-link">w3schools Python Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank" class="g-link">GeeksforGeeks Python Tutorial</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.learnpython.org/" target="_blank" class="g-link">learnpython Python Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.tutorialspoint.com/python/index.htm" target="_blank" class="g-link">Tutorialspoint Python Tutorial</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.codecademy.com/learn/learn-python" target="_blank" class="g-link">Codecademy Python Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.kaggle.com/learn/python" target="_blank" class="g-link">Kaggle Python Tutorial</a>
+            </div>
+        </div>
+        <div class="mb-5"></div>
+        <hr>
+
+        <h2 class="mt-4 mb-5"><a href="../all_content/python_content/1_python_history.html">Start Learning From Our Tutorials&nbsp;<i
+                    class="bi bi-box-arrow-in-right"></i></a></h2>
+        <hr>
+
+
+        <h2 class="mt-4 mb-5">Learn From Some Amazing YouTube Tutorials :</h2>
+
+        <div style="margin-bottom: 50px;"></div>
+
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <iframe
+                        src="https://www.youtube.com/embed/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe
+                        src="https://www.youtube.com/embed/rfscVS0vtbw"
+                        title=" YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div style="margin-bottom: 50px;"></div>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<!-- Add Bootstrap JavaScript and jQuery for Bootstrap features (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

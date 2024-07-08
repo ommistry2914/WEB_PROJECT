@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                                <li><a class="dropdown-item active-submenu" href="2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Border</h1>
+    <p>The CSS border is a shorthand property used to set the border on an element.</p>
+    <p>The <a href="https://www.javatpoint.com/css-tutorial">CSS</a> border properties are use to specify the style, color and size of the border of an element. The CSS border properties are given below</p>
+    <ul class="points">
+    <li>border-style</li>
+    <li>border-color</li>
+    <li>border-width</li>
+    <li>border-radius</li>
+    </ul>
+    <h2 class="h2">1) CSS border-style</h2>
+    <p>The Border style property is used to specify the border type which you want to display on the web page. </p>
+    <p>There are some border style values which are used with border-style property to define a border.</p>
+    <table class="alt">
+    <tr>
+    <th>Value</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td>none</td>
+    <td>It doesn't define any border.</td>
+    </tr>
+    <tr>
+    <td>dotted</td>
+    <td>It is used to define a dotted border.</td>
+    </tr>
+    <tr>
+    <td>dashed</td>
+    <td>It is used to define a dashed border.</td>
+    </tr>
+    <tr>
+    <td>solid</td>
+    <td>It is used to define a solid border.</td>
+    </tr>
+    <tr>
+    <td>double</td>
+    <td>It defines two borders wIth the same border-width value.</td>
+    </tr>
+    <tr>
+    <td>groove</td>
+    <td>It defines a 3d grooved border. effect is generated according to border-color value.</td>
+    </tr>
+    <tr>
+    <td>ridge</td>
+    <td>It defines a 3d ridged border. effect is generated according to border-color value.</td>
+    </tr>
+    <tr>
+    <td>inset</td>
+    <td>It defines a 3d inset border. effect is generated according to border-color value.</td>
+    </tr>
+    <tr>
+    <td>outset</td>
+    <td>It defines a 3d outset border. effect is generated according to border-color value.</td>
+    </tr>
+    </table>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    p.none {border-style: none;}
+    p.dotted {border-style: dotted;}
+    p.dashed {border-style: dashed;}
+    p.solid {border-style: solid;}
+    p.double {border-style: double;}
+    p.groove {border-style: groove;}
+    p.ridge {border-style: ridge;}
+    p.inset {border-style: inset;}
+    p.outset {border-style: outset;}
+    p.hidden {border-style: hidden;}
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;p class="none"&gt;No border.&lt;/p&gt;
+    &lt;p class="dotted"&gt;A dotted border.&lt;/p&gt;
+    &lt;p class="dashed"&gt;A dashed border.&lt;/p&gt;
+    &lt;p class="solid"&gt;A solid border.&lt;/p&gt;
+    &lt;p class="double"&gt;A double border.&lt;/p&gt;
+    &lt;p class="groove"&gt;A groove border.&lt;/p&gt;
+    &lt;p class="ridge"&gt;A ridge border.&lt;/p&gt;
+    &lt;p class="inset"&gt;An inset border.&lt;/p&gt;
+    &lt;p class="outset"&gt;An outset border.&lt;/p&gt;
+    &lt;p class="hidden"&gt;A hidden border.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=cssborder1" target="_blank">Test it Now</a></span>
+    <p>Output:</p>
+    <p style="border-style:none">No border.</p>
+    <p style="border-style:dotted">A dotted border.</p>
+    <p style="border-style:dashed">A dashed border.</p>
+    <p style="border-style:solid">A solid border.</p>
+    <p style="border-style:double">A double border.</p>
+    <p style="border-style:groove">A groove border.</p>
+    <p style="border-style:ridge">A ridge border.</p>
+    <p style="border-style:inset">An inset border.</p>
+    <p style="border-style:outset">An outset border.</p>
+    <p style="border-style:hidden">A hidden border.</p>
+    <h2 class="h2">2) CSS border-width</h2>
+    <p> The border-width property is used to set the border's width. It is set in pixels. You can also use the one of the three pre-defined values, thin, medium or thick to set the width of the border.</p>
+    <h4 class="n">Note: The border-width property is not used alone. It is always used with other border properties like "border-style" property to set the border first otherwise it will not work. </h4>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    p.one {
+        border-style: solid;
+        border-width: 5px;
+    }
+    p.two {
+        border-style: solid;
+        border-width: medium;
+    }
+    p.three {
+        border-style: solid;
+        border-width: 1px;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;p class="one"&gt;Write your text here.&lt;/p&gt;
+    &lt;p class="two"&gt;Write your text here.&lt;/p&gt;
+    &lt;p class="three"&gt;Write your text here.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=cssborder2" target="_blank">Test it Now</a></span>
+    <h2 class="h2">3) CSS border-color</h2>
+    <p>There are three methods to set the color of the border. </p>
+    <ul class="points">
+    <li>Name: It specifies the color name. For example: "red". </li>
+    <li>RGB: It specifies the RGB value of the color. For example: "rgb(255,0,0)".</li>
+    <li>Hex: It specifies the hex value of the color. For example: "#ff0000".</li>
+    </ul>
+    <p>There is also a border color named "transparent". If the border color is not set it is inherited from the color property of the element. </p>
+    <h4 class="n">Note: The border-color property is not used alone. It is always used with other border properties like "border-style" property to set the border first otherwise it will not work. </h4>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    p.one {
+        border-style: solid;
+        border-color: red;
+    }
+    p.two {
+        border-style: solid;
+        border-color: #98bf21;
+    } 
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;p class="one"&gt;This is a solid red border&lt;/p&gt;
+    &lt;p class="two"&gt;This is a solid green border&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=cssborder3" target="_blank">Test it Now</a></span>
+    <br>
+    <hr/>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+    <a href="1_background.html"><button class="btn btn-danger" type="button">Previous</button></a>
+    <a href="3_border_radius.html"><button class="btn btn-success" type="button">Next</button></a>
+</div>
+<footer>
+    <div class="container-fluid bg-dark text-bg-dark"
+        style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+        Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

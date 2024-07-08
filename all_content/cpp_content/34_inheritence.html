@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>C++ Inheritance</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item active-submenu" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Inheritance</h1>
+    <p>In C++, inheritance is a process in which one object acquires all the properties and behaviors of its parent
+        object automatically. In such way, you can reuse, extend or modify the attributes and behaviors which are
+        defined in other class.</p>
+    <p>In C++, the class which inherits the members of another class is called derived class and the class whose members
+        are inherited is called base class. The derived class is the specialized class for the base class.</p>
+    <hr />
+    <h2 class="h2">Advantage of C++ Inheritance</h2>
+    <p><strong>Code reusability:</strong> Now you can reuse the members of your parent class. So, there is no need to
+        define the member again. So less code is required in the class.</p>
+    <h2 class="h2">Types Of Inheritance</h2>
+    <p><strong>C++ supports five types of inheritance:</strong></p>
+    <ul class="points">
+        <li>Single inheritance</li>
+        <li>Multiple inheritance</li>
+        <li>Hierarchical inheritance</li>
+        <li>Multilevel inheritance</li>
+        <li>Hybrid inheritance</li>
+    </ul>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance.png" alt="C++ Inheritance" />
+    <h2 class="h2">Derived Classes</h2>
+    <p>A Derived class is defined as the class derived from the base class.</p>
+    <p>The Syntax of Derived class:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+class derived_class_name :: visibility-mode base_class_name
+{
+    // body of the derived class.
+}
+</textarea></div>
+    <p><strong>Where,</strong></p>
+    <p><strong>derived_class_name:</strong> It is the name of the derived class.</p>
+    <p><strong>visibility mode:</strong> The visibility mode specifies whether the features of the base class are
+        publicly inherited or privately inherited. It can be public or private.</p>
+    <p><strong>base_class_name:</strong> It is the name of the base class.</p>
+    <ul class="points">
+        <li>When the base class is privately inherited by the derived class, public members of the base class becomes
+            the private members of the derived class. Therefore, the public members of the base class are not accessible
+            by the objects of the derived class only by the member functions of the derived class.</li>
+        <li>When the base class is publicly inherited by the derived class, public members of the base class also become
+            the public members of the derived class. Therefore, the public members of the base class are accessible by
+            the objects of the derived class as well as by the member functions of the base class.</li>
+    </ul>
+    <h3 class="h4">Note:</h3>
+    <ul class="points">
+        <li>In C++, the default mode of visibility is private. </li>
+        <li>The private members of the base class are never inherited.</li>
+    </ul>
+    <h2 class="h2">C++ Single Inheritance</h2>
+    <p><strong>Single inheritance</strong> is defined as the inheritance in which a derived class is inherited from the
+        only one base class.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance2.png" alt="C++ Inheritance" />
+    <p>Where 'A' is the base class, and 'B' is the derived class.</p>
+    <h2 class="h2">C++ Single Level Inheritance Example: Inheriting Fields</h2>
+    <p>When one class inherits another class, it is known as single level inheritance. Let's see the example of single
+        level inheritance which inherits the fields only.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+ class Account {
+   public:
+   float salary = 60000; 
+ };
+   class Programmer: public Account {
+   public:
+   float bonus = 5000;  
+   };     
+int main(void) {
+     Programmer p1;
+     cout&lt;&lt;"Salary: "&lt;&lt;p1.salary&lt;&lt;endl;  
+     cout&lt;&lt;"Bonus: "&lt;&lt;p1.bonus&lt;&lt;endl;  
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Salary: 60000
+Bonus: 5000
+</pre>
+    </div>
+    <p>In the above example, Employee is the <strong>base</strong> class and Programmer is the <strong>derived</strong>
+        class.</p>
+    <h2 class="h2">C++ Single Level Inheritance Example: Inheriting Methods</h2>
+    <p>Let's see another example of inheritance in C++ which inherits methods only.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+ class Animal {
+   public:
+ void eat() { 
+    cout&lt;&lt;"Eating..."&lt;&lt;endl; 
+ }  
+   };
+   class Dog: public Animal  
+   {  
+       public:
+     void bark(){
+    cout&lt;&lt;"Barking..."; 
+     }  
+   }; 
+int main(void) {
+    Dog d1;
+    d1.eat();
+    d1.bark();
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Eating...
+Barking...
+</pre>
+    </div>
+    <p>Let's see a simple example.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class A
+{
+    int a = 4;
+    int b = 5;
+    public:
+    int mul()
+    {
+        int c = a*b;
+        return c;
+    }   
+};
+
+class B : private A
+{
+    public:
+    void display()
+    {
+        int result = mul();
+        std::cout &lt;&lt;"Multiplication of a and b is : "&lt;&lt;result&lt;&lt; std::endl;
+    }
+};
+int main()
+{
+   B b;
+   b.display();
+
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Multiplication of a and b is : 20
+</pre>
+    </div>
+    <p>In the above example, class A is privately inherited. Therefore, the mul() function of class 'A' cannot be
+        accessed by the object of class B. It can only be accessed by the member function of class B.</p>
+    <h2 class="h2">How to make a Private Member Inheritable</h2>
+    <p>The private member is not inheritable. If we modify the visibility mode by making it public, but this takes away
+        the advantage of data hiding.</p>
+    <p>C++ introduces a third visibility modifier, i.e., <strong>protected</strong>. The member which is declared as
+        protected will be accessible to all the member functions within the class as well as the class immediately
+        derived from it.</p>
+    <p><strong>Visibility modes can be classified into three categories:</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance3.png" alt="C++ Inheritance" />
+    <ul class="points">
+        <li><strong>Public</strong>: When the member is declared as public, it is accessible to all the functions of the
+            program.</li>
+        <li><strong>Private</strong>: When the member is declared as private, it is accessible within the class only.
+        </li>
+        <li><strong>Protected</strong>: When the member is declared as protected, it is accessible within its own class
+            as well as the class immediately derived from it.</li>
+    </ul>
+    <h2 class="h2">Visibility of Inherited Members</h2>
+    <table class="alt">
+        <tr>
+            <th rowspan="2">Base class visibility</th>
+            <th colspan="3">Derived class visibility</th>
+        </tr>
+        <tr>
+            <th>Public</th>
+            <th>Private</th>
+            <th>Protected</th>
+        </tr>
+        <tr>
+            <td>Private</td>
+            <td>Not Inherited</td>
+            <td>Not Inherited</td>
+            <td>Not Inherited</td>
+        </tr>
+        <tr>
+            <td>Protected</td>
+            <td>Protected</td>
+            <td>Private</td>
+            <td>Protected</td>
+        </tr>
+        <tr>
+            <td>Public</td>
+            <td>Public</td>
+            <td>Private</td>
+            <td>Protected</td>
+        </tr>
+    </table>
+    <h2 class="h2">C++ Multilevel Inheritance</h2>
+    <p><strong>Multilevel inheritance</strong> is a process of deriving a class from another derived class.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance4.png" alt="C++ Inheritance" />
+    <h2 class="h2">C++ Multi Level Inheritance Example</h2>
+    <p>When one class inherits another class which is further inherited by another class, it is known as multi level
+        inheritance in C++. Inheritance is transitive so the last derived class acquires all the members of all its base
+        classes.</p>
+    <p>Let's see the example of multi level inheritance in C++.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+ class Animal {
+   public:
+ void eat() { 
+    cout&lt;&lt;"Eating..."&lt;&lt;endl; 
+ }  
+   };
+   class Dog: public Animal 
+   {  
+       public:
+     void bark(){
+    cout&lt;&lt;"Barking..."&lt;&lt;endl; 
+     }  
+   }; 
+   class BabyDog: public Dog 
+   {  
+       public:
+     void weep() {
+    cout&lt;&lt;"Weeping..."; 
+     }  
+   }; 
+int main(void) {
+    BabyDog d1;
+    d1.eat();
+    d1.bark();
+     d1.weep();
+     return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Eating...
+Barking...
+Weeping...
+</pre>
+    </div>
+    <h2 class="h2">C++ Multiple Inheritance</h2>
+    <p><strong>Multiple inheritance</strong> is the process of deriving a new class that inherits the attributes from
+        two or more classes.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance5.png" alt="C++ Inheritance" />
+    <p><strong>Syntax of the Derived class:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+class D : visibility B-1, visibility B-2, ?
+{
+    // Body of the class;
+} 
+</textarea></div>
+    <p>Let's see a simple example of multiple inheritance.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class A
+{
+    protected:
+     int a;
+    public:
+    void get_a(int n)
+    {
+        a = n;
+    }
+};
+
+class B
+{
+    protected:
+    int b;
+    public:
+    void get_b(int n)
+    {
+        b = n;
+    }
+};
+class C : public A,public B
+{
+   public:
+    void display()
+    {
+        std::cout &lt;&lt; "The value of a is : " &lt;&lt;a&lt;&lt; std::endl;
+        std::cout &lt;&lt; "The value of b is : " &lt;&lt;b&lt;&lt; std::endl;
+        cout&lt;&lt;"Addition of a and b is : "&lt;&lt;a+b;
+    }
+};
+int main()
+{
+   C c;
+   c.get_a(10);
+   c.get_b(20);
+   c.display();
+
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+The value of a is : 10
+The value of b is : 20
+Addition of a and b is : 30
+</pre>
+    </div>
+    <p>In the above example, class 'C' inherits two base classes 'A' and 'B' in a public mode.</p>
+    <h2 class="h2">Ambiquity Resolution in Inheritance</h2>
+    <p>Ambiguity can be occurred in using the multiple inheritance when a function with the same name occurs in more
+        than one base class.</p>
+    <p>Let's understand this through an example:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class A
+{
+    public:
+    void display()
+    {
+        std::cout &lt;&lt; "Class A" &lt;&lt; std::endl;
+    }
+};
+class B
+{
+    public:
+    void display()
+    {
+        std::cout &lt;&lt; "Class B" &lt;&lt; std::endl;
+    }
+};
+class C : public A, public B
+{
+    void view()
+    {
+        display();
+    }
+};
+int main()
+{
+    C c;
+    c.display();
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+error: reference to 'display' is ambiguous
+        display();
+</pre>
+    </div>
+    <ul class="points">
+        <li>The above issue can be resolved by using the class resolution operator with the function. In the above
+            example, the derived class code can be rewritten as:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="cpp">
+class C : public A, public B
+{
+    void view()
+    {
+        A :: display();         // Calling the display() function of class A.
+        B :: display();         // Calling the display() function of class B.
+
+    }
+};
+</textarea></div>
+    <p>An ambiguity can also occur in single inheritance.</p>
+    <p>Consider the following situation:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+class A
+{
+   public:
+void display()
+{
+   cout&lt;&lt;?Class A?;
+} 
+} ;
+class B
+{ 
+  public:
+ void display()
+{
+ cout&lt;&lt;?Class B?;
+}
+} ;
+</textarea></div>
+    <p>In the above case, the function of the derived class overrides the method of the base class. Therefore, call to
+        the display() function will simply call the function defined in the derived class. If we want to invoke the base
+        class function, we can use the class resolution operator.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int main()
+{
+    B b;
+   b.display();               // Calling the display() function of B class.
+   b.B :: display();       // Calling the display() function defined in B class.
+} 
+</textarea></div>
+    <h2 class="h2">C++ Hybrid Inheritance</h2>
+    <p>Hybrid inheritance is a combination of more than one type of inheritance.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance6.png" alt="C++ Inheritance" />
+    <p>Let's see a simple example:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class A
+{
+    protected:
+    int a;
+    public:
+    void get_a()
+    {
+       std::cout &lt;&lt; "Enter the value of 'a' : " &lt;&lt; std::endl;
+       cin&gt;&gt;a;
+    }
+};
+
+class B : public A 
+{
+    protected:
+    int b;
+    public:
+    void get_b()
+    {
+        std::cout &lt;&lt; "Enter the value of 'b' : " &lt;&lt; std::endl;
+       cin&gt;&gt;b;
+    }
+};
+class C 
+{
+    protected:
+    int c;
+    public:
+    void get_c()
+    {
+        std::cout &lt;&lt; "Enter the value of c is : " &lt;&lt; std::endl;
+        cin&gt;&gt;c;
+    }
+};
+
+class D : public B, public C
+{
+    protected:
+    int d;
+    public:
+    void mul()
+    {
+         get_a();
+         get_b();
+         get_c();
+         std::cout &lt;&lt; "Multiplication of a,b,c is : " &lt;&lt;a*b*c&lt;&lt; std::endl;
+    }
+};
+int main()
+{
+    D d;
+    d.mul();
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Enter the value of 'a' :
+10              
+Enter the value of 'b' :    
+20      
+Enter the value of c is :   
+30  
+Multiplication of a,b,c is : 6000
+</pre>
+    </div>
+    <h2 class="h2">C++ Hierarchical Inheritance</h2>
+    <p>Hierarchical inheritance is defined as the process of deriving more than one class from a base class.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-inheritance7.png" alt="C++ Inheritance" />
+    <p><strong>Syntax of Hierarchical inheritance:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+class A
+{
+    // body of the class A.
+}  
+class B : public A 
+{
+    // body of class B.
+}
+class C : public A
+{
+    // body of class C.
+} 
+class D : public A
+{
+    // body of class D.
+} 
+</textarea></div>
+    <p>Let's see a simple example:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class Shape                 // Declaration of base class.
+{
+    public:
+    int a;
+    int b;
+    void get_data(int n,int m)
+    {
+        a= n;
+        b = m;
+    }
+};
+class Rectangle : public Shape  // inheriting Shape class
+{
+    public:
+    int rect_area()
+    {
+        int result = a*b;
+        return result;
+    }
+};
+class Triangle : public Shape    // inheriting Shape class
+{
+    public:
+    int triangle_area()
+    {
+        float result = 0.5*a*b;
+        return result;
+    }
+};
+int main()
+{
+    Rectangle r;
+    Triangle t;
+    int length,breadth,base,height;
+    std::cout &lt;&lt; "Enter the length and breadth of a rectangle: " &lt;&lt; std::endl;
+    cin&gt;&gt;length&gt;&gt;breadth;
+    r.get_data(length,breadth);
+    int m = r.rect_area();
+    std::cout &lt;&lt; "Area of the rectangle is : " &lt;&lt;m&lt;&lt; std::endl;
+    std::cout &lt;&lt; "Enter the base and height of the triangle: " &lt;&lt; std::endl;
+    cin&gt;&gt;base&gt;&gt;height;
+    t.get_data(base,height);
+    float n = t.triangle_area();
+    std::cout &lt;&lt;"Area of the triangle is : "  &lt;&lt; n&lt;&lt;std::endl;
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Enter the length and breadth of a rectangle:
+23  
+20  
+Area of the rectangle is : 460          
+Enter the base and height of the triangle:  
+2   
+5
+Area of the triangle is : 5 
+</pre>
+    </div>
+
+</div> 
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="33_friend_function.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="35_aggregation.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

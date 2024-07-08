@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes in html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">    
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);"">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_Intro_to_html.html">Intro to html</a></li>
+                                <li><a class="dropdown-item" href="2_What_is_HTML.html">What is html </a></li>
+                                <li><a class="dropdown-item" href="3_Html_text_editors.html">text editors</a></li>
+                                <li><a class="dropdown-item" href="4_HTML_Building_blocks.html">Building blocks</a></li>
+                                <li><a class="dropdown-item" href="5_HTML_tags.html">HTML Tags</a></li>
+                                <li><a class="dropdown-item" href="6_HTML_Attributes.html">HTML Attributes<li>
+                                <li><a class="dropdown-item" href="7_HTML_Elements.html">HTML Elements</a></li>
+                                <li><a class="dropdown-item" href="8_HTML_Formatting.html">Formatting in html</a></li>
+                                <li><a class="dropdown-item" href="9_HTML_Heading.html"> heading in html</a></li>
+                                <li><a class="dropdown-item" href="10_HTML_Paragraph.html">paragraph in html</a></li>
+                                <li><a class="dropdown-item" href="11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                                <li><a class="dropdown-item" href="12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                                <li><a class="dropdown-item" href="13_HTML_Image.html">Image tag</a></li>
+                                <li><a class="dropdown-item" href="14_HTML_Table.html">Table tag</a></li>
+                                <li><a class="dropdown-item" href="15_HTML_Lists.html">Lists tag</a></li>
+                                <li><a class="dropdown-item" href="16_HTML_Ordered_list.html">Ordered list</a></li>
+                                <li><a class="dropdown-item" href="17_HTML_Unordered_list.html">Unordered list</a></li>
+                                <li><a class="dropdown-item" href="18_HTML_Description_list.html">Description list</a></li>
+                                <li><a class="dropdown-item" href="19_HTML_form.html">form in html</a></li>
+                                <li><a class="dropdown-item" href="20_HTML_Form_Input.html">Form input</a></li>
+                                <li><a class="dropdown-item" href="21_HTML_Form_Attribute.html">Form attribute</a></li>
+                                <li><a class="dropdown-item" href="22_HTML_with_CSS.html">Html with CSS</a></li>
+                                <li><a class="dropdown-item" href="23_HTML_Classes.html">HTML classes</a></li>
+                                <li><a class="dropdown-item" href="24_HTML_ID.html">HTML ID</a></li>
+                                <li><a class="dropdown-item active-submenu" href="25_HTML_Iframes.html">Html Iframes</a></li>
+                                <li><a class="dropdown-item" href="26_HTML_Javascript.html">HTML JavaScript</a></li>
+                                <li><a class="dropdown-item" href="27_HTML_Comments.html">HTML comments</a></li>
+                                <li><a class="dropdown-item" href="28_HTML_Filepath.html">Filepath</a></li>
+                                <li><a class="dropdown-item" href="29_HTML_head.html">HTML head</a></li>
+                                <li><a class="dropdown-item" href="30_HTML_layout.html">HTML layout</a></li>
+                                <li><a class="dropdown-item" href="32_HTML_Responsive.html">HTML Responsive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Attributes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tags
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_HTML_tags/1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/3_anchor_tag.html">Anchor tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/4_abbr_tag.html">Abbr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/5_acronym_tag.html">Acronym tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/6_address_tag.html">Address tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/7_applet_tag.html">Applet tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/8_area_tag.html">Area tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/9_article_tag.html">Article tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/10_aside_tag.html">Aside tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/11_audio_tag.html">Audio tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/12_b_tag.html">B tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/13_base_tag.html">Base tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/14_basefont_tag.html">Basefont tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/15_bdi_tag.html">Bdi tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/16_bdo_tag.html">Bdo tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/17_big_tag.html">Big tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/18_blockquote_tag.html">Blockquote</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/19_body_tag.html">Body tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/20_br_tag.html">Br tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/21_button_tag.html">Button tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/22_canvas_tag.html">canvas tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/23_caption_tag.html">caption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/24_center_tag.html">center tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/25_cite_tag.html">cite tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/26_code_tag.html">code tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/27_col_tag.html">col tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/28_colgroup_tag.html">colgroup tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/29_data_tag.html">data tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/30_datalist_tag.html">datalist tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/31_Description_list.html">Description tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/32_del_tag.html">del tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/33_details_tag.html">details tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/34_dfn_tag.html">dfn tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/35_Dialog_tag.html">Dialog tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/36_dir_tag.html">dir tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/37_div_tag.html">div tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/38_em_tag.html">em tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/39_embed_tag.html">embed tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/40_field_set_tag.html">field set tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/41_figcaption_tag.html">figcaption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/42_figure_tag.html">figure tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/43_font_tag.html">font tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/44_footer_tag.html">footer tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/45_form_tag.html">form tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/46_frame_tag.html">frame tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/47_frameset_tag.html">frameset tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/48_header_tag.html">header tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/49_hr_tag.html">hr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/50_i_tag.html">i tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/51_input_tag.html">input tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/52_kbd_tag.html">kbd tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/53_label_tag.html">label tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/54_legend_tag.html">legend tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/55_lists_tag.html">lists tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/56_link_tag.html">link tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/57_main_tag.html">main tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/58_mark_tag.html">mark tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/59_marquee_tag.html">marquee tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/60_menu_tag.html">menu tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/61_meta_tag.html">meta tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/62_Meter_tag.html">Meter tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/63_nav_tag.html">nav tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/64_object_tag.html">Object tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/65_Optgrp_tag.html">optgrp tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/66_option_tag.html">option tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/67_progress.html">progress tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/68_Colour_name.html">Color name</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML iframes</h1>
+    <p>HTML Iframe is used to display a nested webpage (a webpage within a webpage). The HTML &lt;iframe&gt; tag defines an inline frame, hence it is also called as an Inline frame.</p>
+    <p>An HTML iframe embeds another document within the current HTML document in the rectangular region. </p>
+    <p>The webpage content and iframe contents can interact with each other using JavaScript.</p>
+    <h3 class="h3">Iframe Syntax</h3>
+    <p>An HTML iframe is defined with the &lt;iframe&gt; tag:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;iframe src="URL"&gt;&lt;/iframe&gt;
+    </textarea></div>
+    <p>Here, "src" attribute specifies the web address (URL) of the inline frame page.</p>
+    <h2 class="h2">Set Width and Height of iframe</h2>
+    <p>You can set the width and height of iframe by using "width" and "height" attributes. By default, the attributes values are specified in pixels but you can also set them in percent. i.e. 50%, 60% etc.</p>
+    <h3 class="h3">Example: (Pixels)</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt;  
+    &lt;body&gt;  
+    &lt;h2&gt;HTML Iframes example&lt;/h2&gt;  
+    &lt;p&gt;Use the height and width attributes to specify the size of the iframe:&lt;/p&gt;  
+    &lt;iframe src="https://www.javatpoint.com/" height="300" width="400"&gt;&lt;/iframe&gt;  
+    &lt;/body&gt;  
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes" target="_blank">Test it Now</a></span>
+    <h3 class="h3">Example: (Percentage)</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt;  
+    &lt;body&gt;  
+    &lt;h2&gt;HTML Iframes&lt;/h2&gt;  
+    &lt;p&gt;You can use the height and width attributes to specify the size of the iframe:&lt;/p&gt;  
+    &lt;iframe src="https://www.javatpoint.com/" height="50%" width="70%"&gt;&lt;/iframe&gt;  
+    &lt;/body&gt;  
+    &lt;/html&gt;  
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes2" target="_blank">Test it Now</a></span>
+    <p>You can also use CSS to set the height and width of the iframe.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt;  
+    &lt;body&gt;  
+    &lt;h2&gt;HTML Iframes&lt;/h2&gt;  
+    &lt;p&gt;Use the CSS height and width properties to specify the size of the iframe:&lt;/p&gt;  
+    &lt;iframe src="https://www.javatpoint.com/" style="height:300px;width:400px"&gt;&lt;/iframe&gt;  
+    &lt;/body&gt;  
+    &lt;/html&gt;  
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes3" target="_blank">Test it Now</a></span><hr/>
+    <h2 class="h2">Remove the border of iframe</h2>
+    <p>By default, an iframe contains a border around it. You can remove the border by using &lt;style&gt; attribute and CSS border property.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt;  
+    &lt;body&gt;  
+    &lt;h2&gt;Remove the Iframe Border&lt;/h2&gt;  
+    &lt;p&gt;This iframe example doesn't have any border&lt;/p&gt;   
+    &lt;iframe src="https://www.javatpoint.com/" style="border:none;"&gt;&lt;/iframe&gt;  
+    &lt;/body&gt;  
+    &lt;/html&gt;  
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes4" target="_blank">Test it Now</a></span>
+    <p>You can also change the size, color, style of the iframe's border.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt;  
+    &lt;body&gt;  
+    &lt;h2&gt;Custom Iframe Border&lt;/h2&gt;  
+    &lt;iframe src="https://www.javatpoint.com/" style="border:2px solid tomato;"&gt;&lt;/iframe&gt;  
+    &lt;/body&gt;  
+    &lt;/html&gt;  
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes5" target="_blank">Test it Now</a></span><hr/>
+    <h2 class="h2">Iframe Target for a link</h2>
+    <p>You can set a target frame for a link by using iframe. Your specified target attribute of the link must refer to the name attribute of the iframe.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    
+    &lt;h2&gt;Iframe - Target for a Link&lt;/h2&gt;
+    &lt;iframe height="300px" width="100%" src="new.html" name="iframe_a"&gt;&lt;/iframe&gt;
+    &lt;p&gt;&lt;a href="https://www.javatpoint.com" target="iframe_a"&gt;JavaTpoint.com&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;The name of iframe and link target must have same value else link will not open as a frame. &lt;/p&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes6" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-iframes.png" alt="HTML iframes" />
+    <p><strong>new.hmtl output code:</strong></p>
+    <div class="codeblock3"><pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;style&gt;
+    
+        p{ font-size: 50px;
+             color: red;}
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color: #c7f15e;"&gt;
+      &lt;p&gt;This is a link  below the ifarme click on link to open new iframe. &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre></div>
+    <hr/>
+    <h2 class="h2">Embed YouTube video using iframe</h2>
+    <p>You can also add a YouTube video on your webpage using the &lt;iframe&gt; tag. The attached video will be played at your webpage and you can also set height, width, autoplay, and many more properties for the video. </p>
+    <p>Following are some steps to add YouTube video on your webpage:</p>
+    <ul class="points">
+    <li>Goto YouTube video which you want to embed. </li>
+    <li>Click on SHARE &#10150; under the video. </li>
+    <li>Click on Embed &lt;&gt; option.</li>
+    <li>Copy HTML code.</li>
+    <li>Paste the code in your HTML file </li>
+    <li>Change height, width, and other properties (as per requirement).</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;iframe width="550" height="315" src="https://www.youtube.com/embed/JHq3pL4cdy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding:20px;"&gt;&lt;/iframe&gt;
+            &lt;iframe width="550" height="315" src="https://www.youtube.com/embed/O5hShUO6wxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="padding:20px;"&gt;&gt;&lt;/iframe&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes7" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/htmlpages/images/html-iframes2.png" alt="HTML iframes" />
+    <h2 class="h2">Attributes of &lt;iframe&gt;</h2>
+    <table class="alt">
+    <tr>
+    <th>Attribute name</th>
+    <th>Value</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td>allowfullscreen</td>
+    <td></td>
+    <td>If true then that frame can be opened in full screen.</td>
+    </tr>
+    <tr>
+    <td>height</td>
+    <td>Pixels</td>
+    <td>It defines the height of the embedded iframe, and the default height is 150 px.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>text</td>
+    <td>It gives the name to the iframe. The name attribute is important if you want to create a link in one frame.</td>
+    </tr>
+    <tr>
+    <td>frameborder</td>
+    <td>1 or 0 </td>
+    <td>It defines whether iframe should have a border or not. (Not supported in HTML5).</td>
+    </tr>
+    <tr>
+    <td>Width</td>
+    <td>Pixels</td>
+    <td>It defines the width of embedded frame, and default width is 300 px.</td>
+    </tr>
+    <tr>
+    <td>src</td>
+    <td>URL</td>
+    <td>The src attribute is used to give the path name or file name which content to be loaded into iframe.</td>
+    </tr>
+    <tr>
+    <td rowspan="6">sandbox</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>This attribute is used to apply extra restrictions for the content of the frame</td>
+    </tr>
+    <tr>
+    <td>allow-forms </td>
+    <td>It allows submission of the form if this keyword is not used then form submission is blocked.</td>
+    </tr>
+    <tr>
+    <td>allow-popups</td>
+    <td>It will enable popups, and if not applied then no popup will open.</td>
+    </tr>
+    <tr>
+    <td>allow-scripts</td>
+    <td>It will enable the script to run.</td>
+    </tr>
+    <tr>
+    <td>allow-same-origin</td>
+    <td>If this keyword is used then the embedded resource will be treated as downloaded from the same source.</td>
+    </tr>
+    <tr>
+    <td>srcdoc</td>
+    <td></td>
+    <td>The srcdoc attribute is used to show the HTML content in the inline iframe. It overrides the src attribute (if a browser supports).</td>
+    </tr>
+    <tr>
+    <td rowspan="5">scrolling</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>It indicates that browser should provide a scroll bar for the iframe or not. (Not supported in HTML5)</td>
+    </tr>
+    <tr>
+    <td>auto</td>
+    <td>Scrollbar only shows if the content of iframe is larger than its dimensions. </td>
+    </tr>
+    <tr>
+    <td>yes </td>
+    <td>Always shows scroll bar for the iframe.</td>
+    </tr>
+    <tr>
+    <td>no</td>
+    <td>Never shows scrollbar for the iframe.</td>
+    </tr>
+    </table>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="24_HTML_ID.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="26_HTML_Javascript.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

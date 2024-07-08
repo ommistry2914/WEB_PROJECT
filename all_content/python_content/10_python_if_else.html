@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item active-submenu" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python If-else statements</h1>
+    <p>Decision making is the most important aspect of almost all the programming languages. As the name implies,
+        decision making allows us to run a particular block of code for a particular decision. Here, the decisions are
+        made on the validity of the particular conditions. Condition checking is the backbone of decision making.</p>
+    <p>In python, decision making is performed by the following statements.</p>
+    <table class="alt">
+        <tr>
+            <th>Statement</th>
+            <th>Description</th>
+        <tr>
+        <tr>
+            <td>If Statement</td>
+            <td>The if statement is used to test a specific condition. If the condition is true, a block of code
+                (if-block) will be executed.</td>
+        </tr>
+        <tr>
+            <td>If - else Statement</td>
+            <td>The if-else statement is similar to if statement except the fact that, it also provides the block of the
+                code for the false case of the condition to be checked. If the condition provided in the if statement is
+                false, then the else statement will be executed.</td>
+        </tr>
+        <tr>
+            <td>Nested if Statement</td>
+            <td>Nested if statements enable us to use if ? else statement inside an outer if statement.</td>
+        </tr>
+    </table>
+    <h2 class="h2">Indentation in Python</h2>
+    <p>For the ease of programming and to achieve simplicity, python doesn't allow the use of parentheses for the block
+        level code. In Python, indentation is used to declare a block. If two statements are at the same indentation
+        level, then they are the part of the same block.</p>
+    <p>Generally, four spaces are given to indent the statements which are a typical amount of indentation in python.
+    </p>
+    <p>Indentation is the most used part of the python language since it declares the block of code. All the statements
+        of one block are intended at the same level indentation. We will see how the actual indentation takes place in
+        decision making and other stuff in python.</p>
+    <h2 class="h2">The if statement</h2>
+    <p>The if statement is used to test a particular condition and if the condition is true, it executes a block of code
+        known as if-block. The condition of if statement can be any valid logical expression which can be either
+        evaluated to true or false.</p>
+    <img src="https://static.javatpoint.com/python/images/python-if-statement.png" alt="Python If-else statements" />
+    <br>
+    <p>The syntax of the if-statement is given below.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+if expression:
+	statement
+</textarea></div>
+    <h3 class="h3">Example 1</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Simple Python program to understand the if statement
+num = int(input("enter the number:"))       
+# Here, we are taking an integer num and taking input dynamically
+if num%2 == 0:    
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print("The Given number is an even number")  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+enter the number: 10
+The Given number is an even number 
+</pre>
+    </div>
+    <h3 class="h3">Example 2 : Program to print the largest of the three numbers.</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Simple Python Program to print the largest of the three numbers.
+a = int (input("Enter a: "));  
+b = int (input("Enter b: "));  
+c = int (input("Enter c: "));  
+if a>b and a>c:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print ("From the above three numbers given a is largest");  
+if b>a and b>c:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print ("From the above three numbers given b is largest");  
+if c>a and c>b:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print ("From the above three numbers given c is largest");  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Enter a: 100
+Enter b: 120
+Enter c: 130
+From the above three numbers given c is largest 
+</pre>
+    </div>
+    <h2 class="h2">The if-else statement</h2>
+    <p>The if-else statement provides an else block combined with the if statement which is executed in the false case
+        of the condition.</p>
+    <p>If the condition is true, then the if-block is executed. Otherwise, the else-block is executed.</p>
+    <img src="https://static.javatpoint.com/python/images/python-if-else-statement.png"
+        alt="Python If-else statements" />
+    <br>
+    <p>The syntax of the if-else statement is given below.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+if condition:
+	#block of statements 
+else: 
+	#another block of statements (else-block) 
+</textarea></div>
+    <h3 class="h3">Example 1 : Program to check whether a person is eligible to vote or not.</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Simple Python Program to check whether a person is eligible to vote or not.
+age = int (input("Enter your age: "))  
+# Here, we are taking an integer num and taking input dynamically
+if age>=18:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print("You are eligible to vote !!");  
+else:  
+    print("Sorry! you have to wait !!");  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Enter your age: 90
+You are eligible to vote !!
+</pre>
+    </div>
+    <h3 class="h3">Example 2: Program to check whether a number is even or not.</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Simple Python Program to check whether a number is even or not.
+num = int(input("enter the number:"))       
+# Here, we are taking an integer num and taking input dynamically
+if num%2 == 0:    
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print("The Given number is an even number")  
+else:  
+    print("The Given Number is an odd number")  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+enter the number: 10
+The Given number is even number
+</pre>
+    </div>
+    <h2 class="h2">The elif statement</h2>
+    <p>The elif statement enables us to check multiple conditions and execute the specific block of statements depending
+        upon the true condition among them. We can have any number of elif statements in our program depending upon our
+        need. However, using elif is optional.</p>
+    <p>The elif statement works like an if-else-if ladder statement in C. It must be succeeded by an if statement.</p>
+    <p>The syntax of the elif statement is given below.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+if expression 1: 
+	# block of statements 
+
+elif expression 2: 
+	# block of statements 
+
+elif expression 3: 
+	# block of statements 
+
+else: 
+	# block of statements
+</textarea></div>
+    <img src="https://static.javatpoint.com/python/images/python-elif-statement.png" alt="Python If-else statements" />
+    <h3 class="h3">Example 1</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Simple Python program to understand elif statement
+number = int(input("Enter the number?"))  
+# Here, we are taking an integer number and taking input dynamically
+if number==10:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print("The given number is equals to 10")  
+elif number==50:
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+    print("The given number is equal to 50");  
+elif number==100:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+    print("The given number is equal to 100");  
+else:  
+    print("The given number is not equal to 10, 50 or 100");  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Enter the number?15
+The given number is not equal to 10, 50 or 100
+</pre>
+    </div>
+    <h3 class="h3">Example 2</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Simple Python program to understand elif statement
+marks = int(input("Enter the marks? "))  
+# Here, we are taking an integer marks and taking input dynamically
+if marks > 85 and marks <= 100:
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+   print("Congrats ! you scored grade A ...")  
+elif marks > 60 and marks <= 85:  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+   print("You scored grade B + ...")  
+elif marks > 40 and marks <= 60:
+# Here, we are checking the condition. If the condition is true, we will enter the block  
+   print("You scored grade B ...")  
+elif (marks > 30 and marks <= 40):  
+# Here, we are checking the condition. If the condition is true, we will enter the block
+   print("You scored grade C ...")  
+else:  
+   print("Sorry you are fail ?")  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Enter the marks? 89
+Congrats ! you scored grade A ...
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="9_python_comments.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="11_python_loops.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

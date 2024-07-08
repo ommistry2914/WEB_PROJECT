@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Vector Machine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item active-submenu" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Support Vector Machine Algorithm</h1>
+    <p>Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms, which is used for
+        Classification as well as Regression problems. However, primarily, it is used for Classification problems in
+        Machine Learning.</p>
+    <p>The goal of the SVM algorithm is to create the best line or decision boundary that can segregate n-dimensional
+        space into classes so that we can easily put the new data point in the correct category in the future. This best
+        decision boundary is called a hyperplane.</p>
+    <p>SVM chooses the extreme points/vectors that help in creating the hyperplane. These extreme cases are called as
+        support vectors, and hence algorithm is termed as Support Vector Machine. Consider the below diagram in which
+        there are two different categories that are classified using a decision boundary or hyperplane:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm.png"
+        alt="Support Vector Machine Algorithm" />
+    <p><strong>Example:</strong> SVM can be understood with the example that we have used in the KNN classifier. Suppose
+        we see a strange cat that also has some features of dogs, so if we want a model that can accurately identify
+        whether it is a cat or dog, so such a model can be created by using the SVM algorithm. We will first train our
+        model with lots of images of cats and dogs so that it can learn about different features of cats and dogs, and
+        then we test it with this strange creature. So as support vector creates a decision boundary between these two
+        data (cat and dog) and choose extreme cases (support vectors), it will see the extreme case of cat and dog. On
+        the basis of the support vectors, it will classify it as a cat. Consider the below diagram:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm2.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>SVM algorithm can be used for <strong>Face detection, image classification, text categorization,</strong> etc.
+    </p>
+    <h2 class="h3">Types of SVM</h2>
+    <p><strong>SVM can be of two types:</strong></p>
+    <ul class="points">
+        <li><strong>Linear SVM:</strong> Linear SVM is used for linearly separable data, which means if a dataset can be
+            classified into two classes by using a single straight line, then such data is termed as linearly separable
+            data, and classifier is used called as Linear SVM classifier.</li>
+        <li><strong>Non-linear SVM:</strong> Non-Linear SVM is used for non-linearly separated data, which means if a
+            dataset cannot be classified by using a straight line, then such data is termed as non-linear data and
+            classifier used is called as Non-linear SVM classifier. </li>
+    </ul>
+    <h2 class="h3">Hyperplane and Support Vectors in the SVM algorithm: </h2>
+    <p><strong>Hyperplane:</strong> There can be multiple lines/decision boundaries to segregate the classes in
+        n-dimensional space, but we need to find out the best decision boundary that helps to classify the data points.
+        This best boundary is known as the hyperplane of SVM.</p>
+    <p>The dimensions of the hyperplane depend on the features present in the dataset, which means if there are 2
+        features (as shown in image), then hyperplane will be a straight line. And if there are 3 features, then
+        hyperplane will be a 2-dimension plane.</p>
+    <p>We always create a hyperplane that has a maximum margin, which means the maximum distance between the data
+        points.</p>
+    <p><strong>Support Vectors:</strong></p>
+    <p>The data points or vectors that are the closest to the hyperplane and which affect the position of the hyperplane
+        are termed as Support Vector. Since these vectors support the hyperplane, hence called a Support vector.</p>
+    <h2 class="h3">How does SVM works?</h2>
+    <p class="pq"><strong>Linear SVM:</strong></p>
+    <p>The working of the SVM algorithm can be understood by using an example. Suppose we have a dataset that has two
+        tags (green and blue), and the dataset has two features x1 and x2. We want a classifier that can classify the
+        pair(x1, x2) of coordinates in either green or blue. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm3.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>So as it is 2-d space so by just using a straight line, we can easily separate these two classes. But there can
+        be multiple lines that can separate these classes. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm4.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>Hence, the SVM algorithm helps to find the best line or decision boundary; this best boundary or region is called
+        as a <strong>hyperplane</strong>. SVM algorithm finds the closest point of the lines from both the classes.
+        These points are called support vectors. The distance between the vectors and the hyperplane is called as
+        <strong>margin</strong>. And the goal of SVM is to maximize this margin. The <strong>hyperplane</strong> with
+        maximum margin is called the <strong>optimal hyperplane</strong>.
+    </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm5.png"
+        alt="Support Vector Machine Algorithm" />
+    <p class="pq"><strong>Non-Linear SVM:</strong></p>
+    <p>If data is linearly arranged, then we can separate it by using a straight line, but for non-linear data, we
+        cannot draw a single straight line. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm6.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>So to separate these data points, we need to add one more dimension. For linear data, we have used two dimensions
+        x and y, so for non-linear data, we will add a third dimension z. It can be calculated as:</p>
+    <div class="codeblock">
+        <pre>
+z=x<sup>2</sup> +y<sup>2</sup>
+</pre>
+    </div>
+    <p>By adding the third dimension, the sample space will become as below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm7.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>So now, SVM will divide the datasets into classes in the following way. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm8.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>Since we are in 3-d Space, hence it is looking like a plane parallel to the x-axis. If we convert it in 2d space
+        with z=1, then it will become as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm9.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>Hence we get a circumference of radius 1 in case of non-linear data. </p>
+    <p><strong>Python Implementation of Support Vector Machine</strong></p>
+    <p>Now we will implement the SVM algorithm using Python. Here we will use the same dataset
+        <strong>user_data</strong>, which we have used in Logistic regression and KNN classification.
+    </p>
+    <ul class="points">
+        <li><strong>Data Pre-processing step</strong></li>
+    </ul>
+    <p>Till the Data pre-processing step, the code will remain the same. Below is the code:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Data Pre-processing Step
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('user_data.csv')
+
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, [2,3]].values
+y= data_set.iloc[:, 4].values
+
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)
+#feature Scaling
+from sklearn.preprocessing import StandardScaler  
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+x_test= st_x.transform(x_test)     
+</textarea></div>
+    <p>After executing the above code, we will pre-process the data. The code will give the dataset as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm10.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>The scaled output for the test set will be:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm11.png"
+        alt="Support Vector Machine Algorithm" />
+    <p class="pq"><strong>Fitting the SVM classifier to the training set:</strong></p>
+    <p>Now the training set will be fitted to the SVM classifier. To create the SVM classifier, we will import
+        <strong>SVC</strong> class from <strong>Sklearn.svm</strong> library. Below is the code for it:
+    </p>
+    <div class="codeblock"><textarea name="code" class="java">
+from sklearn.svm import SVC # "Support vector classifier"
+classifier = SVC(kernel='linear', random_state=0)
+classifier.fit(x_train, y_train)
+</textarea></div>
+    <p>In the above code, we have used <strong>kernel='linear'</strong>, as here we are creating SVM for linearly
+        separable data. However, we can change it for non-linear data. And then we fitted the classifier to the training
+        dataset(x_train, y_train)</p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[8]: 
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+    kernel='linear', max_iter=-1, probability=False, random_state=0,
+    shrinking=True, tol=0.001, verbose=False)
+</pre>
+    </div>
+    <p>The model performance can be altered by changing the value of <strong>C(Regularization factor), gamma, and
+            kernel</strong>.</p>
+    <ul class="points">
+        <li><strong>Predicting the test set result:</strong><br>
+            Now, we will predict the output for test set. For this, we will create a new vector y_pred. Below is the
+            code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Predicting the test set result
+y_pred= classifier.predict(x_test)
+</textarea></div>
+    <p>After getting the y_pred vector, we can compare the result of <strong>y_pred</strong> and <strong>y_test</strong>
+        to check the difference between the actual value and predicted value. </p>
+    <p><strong>Output:</strong> Below is the output for the prediction of the test set:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm12.png"
+        alt="Support Vector Machine Algorithm" />
+    <ul class="points">
+        <li><strong>Creating the confusion matrix:</strong><br>
+            Now we will see the performance of the SVM classifier that how many incorrect predictions are there as
+            compared to the Logistic regression classifier. To create the confusion matrix, we need to import the
+            <strong>confusion_matrix</strong> function of the sklearn library. After importing the function, we will
+            call it using a new variable <strong>cm</strong>. The function takes two parameters, mainly
+            <strong>y_true</strong>( the actual values) and <strong>y_pred</strong> (the targeted value return by the
+            classifier). Below is the code for it:
+        </li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Creating the Confusion matrix
+from sklearn.metrics import confusion_matrix
+cm= confusion_matrix(y_test, y_pred)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm13.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>As we can see in the above output image, there are 66+24= 90 correct predictions and 8+2= 10 correct predictions.
+        Therefore we can say that our SVM model improved as compared to the Logistic regression model. </p>
+    <ul class="points">
+        <li><strong>Visualizing the training set result:</strong><br>
+            Now we will visualize the training set result, below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_train, y_train
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('red', 'green')))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('red', 'green'))(i), label = j)
+mtp.title('SVM classifier (Training set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above code, we will get the output as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm14.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>As we can see, the above output is appearing similar to the Logistic regression output. In the output, we got the
+        straight line as hyperplane because we have <strong>used a linear kernel in the classifier</strong>. And we have
+        also discussed above that for the 2d space, the hyperplane in SVM is a straight line. </p>
+    <ul class="points">
+        <li><strong>Visualizing the test set result:</strong></li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the test set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_test, y_test
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('red','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('red', 'green'))(i), label = j)
+mtp.title('SVM classifier (Test set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above code, we will get the output as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/support-vector-machine-algorithm15.png"
+        alt="Support Vector Machine Algorithm" />
+    <p>As we can see in the above output image, the SVM classifier has divided the users into two regions (Purchased or
+        Not purchased). Users who purchased the SUV are in the red region with the red scatter points. And users who did
+        not purchase the SUV are in the green region with green scatter points. The hyperplane has divided the two
+        classes into Purchased and not purchased variable. </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="18_knn.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="20_naive_bayes.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

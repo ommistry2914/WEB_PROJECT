@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Features of java</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item active-submenu" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Features of Java</h1>
+    <p>The primary objective of Java programming language creation was to make it portable,
+        simple and secure programming language. Apart from this, there are also some excellent features which play an
+        important role in the popularity of this language. The features of Java are also known as Java buzzwords.</p>
+    <p>A list of the most important features of the Java language is given below.</p>
+    <img src="https://static.javatpoint.com/images/core/java-features.png" alt="Java Features" class="imageright mx-2" style="width: 400px;" />
+    <ol class="points">
+        <li><a href="#Simple">Simple</a></li>
+        <li><a href="#Object-Oriented">Object-Oriented</a></li>
+        <li><a href="#Portable">Portable</a></li>
+        <li><a href="#Platform-independent">Platform independent</a></li>
+        <li><a href="#Secured">Secured</a></li>
+        <li><a href="#Robust">Robust</a></li>
+        <li><a href="#Architecture-neutral">Architecture neutral</a></li>
+        <li><a href="#Interpreted">Interpreted</a></li>
+        <li><a href="#High-Performance">High Performance</a></li>
+        <li><a href="#Multithreaded">Multithreaded</a></li>
+        <li><a href="#Distributed">Distributed</a></li>
+        <li><a href="#Dynamic">Dynamic</a></li>
+    </ol>
+    <!-- <div class="video-responsive">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/O5hShUO6wxs" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div> -->
+    <hr />
+    <h3 id="Simple" class="h3">Simple</h3>
+    <p>Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem,
+        Java language is a simple programming language because:</p>
+    <ul class="points">
+        <li>Java syntax is based on C++ (so easier for programmers to learn it after C++).</li>
+        <li>Java has removed many complicated and rarely-used features, for example, explicit pointers, operator
+            overloading, etc.</li>
+        <li>There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.
+        </li>
+    </ul>
+    <hr />
+    <h3 id="Object-Oriented" class="h3">Object-oriented</h3>
+    <p>Java is an object-oriented programming language. Everything in Java is an
+        object.
+        Object-oriented means we organize our software as a combination of different types of objects that incorporate
+        both
+        data and behavior.</p>
+    <p>Object-oriented programming (OOPs) is a methodology that simplifies software development and maintenance by
+        providing
+        some rules.</p>
+    <p>Basic concepts of OOPs are:</p>
+    <ol class="points">
+        <li>Object</li>
+        <li>Class</li>
+        <li>Inheritance</li>
+        <li>Polymorphism</li>
+        <li>Abstraction</li>
+        <li>Encapsulation</li>
+    </ol>
+    <hr />
+    <h3 id="Platform-independent" class="h3">Platform Independent</h3>
+    <img src="https://static.javatpoint.com/images/core/platform-independent-java.png" class="imageright"
+        style="width: 300px;" alt="Java is platform independent" />
+    <p>Java is platform independent because it is different from other languages like ,
+        C , C++, etc. which are compiled into
+        platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or
+        software
+        environment in which a program runs.</p>
+    <p> There are two types of platforms software-based and hardware-based. Java provides a software-based platform.</p>
+    <p>The Java platform differs from most other platforms in the sense that it is a software-based platform that runs
+        on
+        top of other hardware-based platforms. It has two components:</p>
+    <ol class="points">
+        <li>Runtime Environment</li>
+        <li>API(Application Programming Interface)</li>
+    </ol>
+    <p>Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code
+        is
+        compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it
+        can be
+        run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).</p>
+    <hr />
+    <h3 id="Secured" class="h3">Secured</h3>
+    <p>Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:</p>
+    <ul class="alt">
+        <li><strong>No explicit pointer</strong></li>
+        <li><strong>Java Programs run inside a virtual machine sandbox</strong></li>
+    </ul>
+    <img src="https://static.javatpoint.com/images/core/java-security.png" alt="how Java is secured">
+    <ul class="points">
+        <li><strong>Classloader:</strong> Classloader in Java is a part of the Java Runtime Environment (JRE) which is
+            used
+            to load Java classes into the Java Virtual Machine dynamically. It adds security by separating the package
+            for
+            the classes of the local file system from those that are imported from network sources.</li>
+        <li><strong>Bytecode Verifier:</strong> It checks the code fragments for illegal code that can violate access
+            rights
+            to objects.</li>
+        <li><strong>Security Manager:</strong> It determines what resources a class can access such as reading and
+            writing
+            to the local disk.</li>
+    </ul>
+    <p>Java language provides these securities by default. Some security can also be provided by an application
+        developer
+        explicitly through SSL, JAAS, Cryptography, etc.</p>
+    <hr />
+    <h3 id="Robust" class="h3">Robust</h3>
+    <p>The English mining of Robust is strong. Java is robust because:</p>
+    <ul class="points">
+        <li>It uses strong memory management.</li>
+        <li>There is a lack of pointers that avoids security problems.</li>
+        <li>Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects
+            which
+            are not being used by a Java application anymore.</li>
+        <li>There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+        </li>
+    </ul>
+    <hr />
+    <h3 id="Architecture-neutral" class="h3">Architecture-neutral</h3>
+    <p>Java is architecture neutral because there are no implementation dependent features, for example, the size of
+        primitive types is fixed. </p>
+    <p>In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for
+        64-bit
+        architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.</p>
+    <hr />
+    <h3 id="Portable" class="h3">Portable</h3>
+    <p>Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any
+        implementation.
+    </p>
+    <hr />
+    <h3 id="High-Performance" class="h3">High-performance</h3>
+    <p>Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to
+        native
+        code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that
+        is
+        why it is slower than compiled languages, e.g., C, C++, etc. </p>
+    <hr />
+    <h3 id="Distributed" class="h3">Distributed</h3>
+    <p>Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used
+        for
+        creating distributed applications. This feature of Java makes us able to access files by calling the methods
+        from
+        any machine on the internet. </p>
+    <hr />
+    <h3 id="Multithreaded" class="h3">Multi-threaded</h3>
+    <p>A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks
+        at
+        once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for
+        each
+        thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+    </p>
+    <hr />
+    <h3 id="Dynamic" class="h3">Dynamic</h3>
+    <p>Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It
+        also supports functions from its native languages, i.e., C and C++.</p>
+    <p>Java supports dynamic compilation and automatic memory management (garbage collection).</p>
+    <hr />
+</div>
+
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="2history_of_java.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="4c++_vs_java.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</html>

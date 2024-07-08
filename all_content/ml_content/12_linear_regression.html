@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item active-submenu" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Linear Regression in Machine Learning</h1>
+    <p>Linear regression is one of the easiest and most popular Machine Learning algorithms. It is a statistical method
+        that is used for predictive analysis. Linear regression makes predictions for continuous/real or numeric
+        variables such as <strong>sales, salary, age, product price,</strong> etc. </p>
+    <p>Linear regression algorithm shows a linear relationship between a dependent (y) and one or more independent (y)
+        variables, hence called as linear regression. Since linear regression shows the linear relationship, which means
+        it finds how the value of the dependent variable is changing according to the value of the independent variable.
+    </p>
+    <p>The linear regression model provides a sloped straight line representing the relationship between the variables.
+        Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning.png"
+        alt="Linear Regression in Machine Learning" />
+    <p>Mathematically, we can represent a linear regression as:</p>
+    <div class="codeblock">
+        <pre>
+y= a<sub>0</sub>+a<sub>1</sub>x+ &epsilon;
+</pre>
+    </div>
+    <p><strong>Here,</strong></p>
+    <p>Y= Dependent Variable (Target Variable)<br>
+        X= Independent Variable (predictor Variable)<br>
+        a0= intercept of the line (Gives an additional degree of freedom)<br>
+        a1 = Linear regression coefficient (scale factor to each input value).<br>
+        &epsilon; = random error</p>
+    <p>The values for x and y variables are training datasets for Linear Regression model representation. </p>
+    <h2 class="h2">Types of Linear Regression</h2>
+    <p>Linear regression can be further divided into two types of the algorithm:</p>
+    <ul class="points">
+        <li><strong>Simple Linear Regression:</strong><br>
+            If a single independent variable is used to predict the value of a numerical dependent variable, then such a
+            Linear Regression algorithm is called Simple Linear Regression. </li>
+        <li><strong>Multiple Linear regression:</strong><br>
+            If more than one independent variable is used to predict the value of a numerical dependent variable, then
+            such a Linear Regression algorithm is called Multiple Linear Regression. </li>
+    </ul>
+    <h2 class="h2">Linear Regression Line</h2>
+    <p>A linear line showing the relationship between the dependent and independent variables is called a
+        <strong>regression line</strong>. A regression line can show two types of relationship:</p>
+    <ul class="points">
+        <li><strong>Positive Linear Relationship:</strong><br>
+            If the dependent variable increases on the Y-axis and independent variable increases on X-axis, then such a
+            relationship is termed as a Positive linear relationship.</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning2.png"
+        alt="Linear Regression in Machine Learning" />
+    <ul class="points">
+        <li><strong>Negative Linear Relationship:</strong><br>
+            If the dependent variable decreases on the Y-axis and independent variable increases on the X-axis, then
+            such a relationship is called a negative linear relationship. </li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning3.png"
+        alt="Linear Regression in Machine Learning" />
+    <h2 class="h2">Finding the best fit line:</h2>
+    <p>When working with linear regression, our main goal is to find the best fit line that means the error between
+        predicted values and actual values should be minimized. The best fit line will have the least error. </p>
+    <p>The different values for weights or the coefficient of lines (a<sub>0</sub>, a<sub>1</sub>) gives a different
+        line of regression, so we need to calculate the best values for a<sub>0</sub> and a<sub>1</sub> to find the best
+        fit line, so to calculate this we use cost function. </p>
+    <h3 class="h3">Cost function-</h3>
+    <ul class="points">
+        <li>The different values for weights or coefficient of lines (a<sub>0</sub>, a<sub>1</sub>) gives the different
+            line of regression, and the cost function is used to estimate the values of the coefficient for the best fit
+            line.</li>
+        <li>Cost function optimizes the regression coefficients or weights. It measures how a linear regression model is
+            performing. </li>
+        <li>We can use the cost function to find the accuracy of the <strong>mapping function</strong>, which maps the
+            input variable to the output variable. This mapping function is also known as <strong>Hypothesis
+                function</strong>. </li>
+    </ul>
+    <p>For Linear Regression, we use the <strong>Mean Squared Error (MSE)</strong> cost function, which is the average
+        of squared error occurred between the predicted values and actual values. It can be written as:</p>
+    <p>For the above linear equation, MSE can be calculated as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning4.png"
+        alt="Linear Regression in Machine Learning" />
+    <p><strong>Where,</strong></p>
+    <p>N=Total number of observation<br>
+        Yi = Actual value<br>
+        (a1x<sub>i</sub>+a<sub>0</sub>)= Predicted value.</p>
+    <p><strong>Residuals:</strong> The distance between the actual value and predicted values is called residual. If the
+        observed points are far from the regression line, then the residual will be high, and so cost function will
+        high. If the scatter points are close to the regression line, then the residual will be small and hence the cost
+        function. </p>
+    <h3 class="h3">Gradient Descent: </h3>
+    <ul class="points">
+        <li>Gradient descent is used to minimize the MSE by calculating the gradient of the cost function. </li>
+        <li>A regression model uses gradient descent to update the coefficients of the line by reducing the cost
+            function. </li>
+        <li>It is done by a random selection of values of coefficient and then iteratively update the values to reach
+            the minimum cost function. </li>
+    </ul>
+    <h2 class="h2">Model Performance:</h2>
+    <p>The Goodness of fit determines how the line of regression fits the set of observations. The process of finding
+        the best model out of various models is called <strong>optimization</strong>. It can be achieved by below
+        method:</p>
+    <p class="pq"><strong>1. R-squared method:</strong></p>
+    <ul class="points">
+        <li>R-squared is a statistical method that determines the goodness of fit.</li>
+        <li>It measures the strength of the relationship between the dependent and independent variables on a scale of
+            0-100%.</li>
+        <li>The high value of R-square determines the less difference between the predicted values and actual values and
+            hence represents a good model.</li>
+        <li>It is also called a <strong>coefficient of determination,</strong> or <strong>coefficient of multiple
+                determination</strong> for multiple regression. </li>
+        <li>It can be calculated from the below formula:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/linear-regression-in-machine-learning5.png"
+        alt="Linear Regression in Machine Learning" />
+    <h2 class="h2">Assumptions of Linear Regression</h2>
+    <p>Below are some important assumptions of Linear Regression. These are some formal checks while building a Linear
+        Regression model, which ensures to get the best possible result from the given dataset. </p>
+    <ul class="points">
+        <li><strong>Linear relationship between the features and target:</strong><br>
+            Linear regression assumes the linear relationship between the dependent and independent variables.</li>
+        <li><strong>Small or no multicollinearity between the features:</strong><br>
+            Multicollinearity means high-correlation between the independent variables. Due to multicollinearity, it may
+            difficult to find the true relationship between the predictors and target variables. Or we can say, it is
+            difficult to determine which predictor variable is affecting the target variable and which is not. So, the
+            model assumes either little or no multicollinearity between the features or independent variables.</li>
+        <li><strong>Homoscedasticity Assumption: </strong><br>
+            Homoscedasticity is a situation when the error term is the same for all the values of independent variables.
+            With homoscedasticity, there should be no clear pattern distribution of data in the scatter plot.</li>
+        <li><strong>Normal distribution of error terms:</strong><br>
+            Linear regression assumes that the error term should follow the normal distribution pattern. If error terms
+            are not normally distributed, then confidence intervals will become either too wide or too narrow, which may
+            cause difficulties in finding coefficients.<br>
+            It can be checked using the <strong>q-q plot</strong>. If the plot shows a straight line without any
+            deviation, which means the error is normally distributed.</li>
+        <li><strong>No autocorrelations:</strong><br>
+            The linear regression model assumes no autocorrelation in error terms. If there will be any correlation in
+            the error term, then it will drastically reduce the accuracy of the model. Autocorrelation usually occurs if
+            there is a dependency between residual errors.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="11_regression_analysis.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="13_simple_linear_regression.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

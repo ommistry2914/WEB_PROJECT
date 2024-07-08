@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Java Control Statement</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+        <h1 class="h1">Java Control Statements | Control Flow in Java</h1>
+        <p>Java compiler executes the code from top to bottom. The statements in the code are executed according to the
+            order in
+            which they appear. However, Java provides statements that
+            can
+            be used to control the flow of Java code. Such statements are called control flow statements. It is one of
+            the
+            fundamental features of Java, which provides a smooth flow of program.</p>
+        <p>Java provides three types of control flow statements.</p>
+        <ol class="points">
+            <li>Decision Making statements
+                <ul class="points">
+                    <li>if statements</li>
+                    <li>switch statement</li>
+                </ul>
+            </li>
+            <li>Loop statements
+                <ul class="points">
+                    <li>do while loop</li>
+                    <li>while loop</li>
+                    <li>for loop</li>
+                    <li>for-each loop</li>
+                </ul>
+            </li>
+            <li>Jump statements
+                <ul class="points">
+                    <li>break statement</li>
+                    <li>continue statement</li>
+                </ul>
+            </li>
+        </ol>
+        <h3 class="h3">Decision-Making statements:</h3>
+        <p>As the name suggests, decision-making statements decide which statement to execute and when. Decision-making
+            statements evaluate the Boolean expression and control the program flow depending upon the result of the
+            condition
+            provided. There are two types of decision-making statements in Java, i.e., If statement and switch
+            statement.
+        </p>
+        <h3 class="h3">1) If Statement:</h3>
+        <p>In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending
+            upon
+            the specific condition. The condition of the If statement gives a Boolean value, either true or false. In
+            Java,
+            there are four types of if-statements given below.</p>
+        <ol class="points">
+            <li>Simple if statement</li>
+            <li>if-else statement</li>
+            <li>if-else-if ladder</li>
+            <li>Nested if-statement</li>
+        </ol>
+        <p>Let's understand the if-statements one by one.</p>
+        <h3 class="h4">1) Simple if statement:</h3>
+        <p>It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression
+            and
+            enables the program to enter a block of code if the expression evaluates to true.</p>
+        <p>Syntax of if statement is given below.</p>
+        <div class="row justify-content-start p-3"><textarea name="code"
+                class="java codeblock form-control col-lg-6 px-3" style="resize: none;max-width: 100%;">
+if(condition) {  
+statement 1; //executes when condition is true 
+}  
+</textarea></div>
+
+        
+
+        <p>Consider the following example.</p>
+        <p><strong>Student.java</strong></p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class Student {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 12;
+        if(x+y < 10) {
+            System.out.println("x + y is less than 10");
+        }	else {
+            System.out.println("x + y is greater than 20");
+            }
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>x + y is greater than 20
+</pre>
+        </div>
+        
+        
+        <h3 class="h3 mt-2">Switch Statement:</h3>
+        <p>In Java, Switch statements are similar to if-else-if
+            statements.
+            The switch statement contains multiple blocks of code called cases and a single case is executed based on
+            the
+            variable which is being switched. The switch statement is easier to use instead of if-else-if statements. It
+            also
+            enhances the readability of the program.</p>
+        <p>Points to be noted about switch statement:</p>
+        <ul class="points">
+            <li>The case variables can be int, short, byte, char, or enumeration. String type is also supported since
+                version 7
+                of Java</li>
+            <li>Cases cannot be duplicate</li>
+            <li>Default statement is executed when any of the case doesn't match the value of expression. It is
+                optional.
+            </li>
+            <li>Break statement terminates the switch block when the condition is satisfied.<br>
+                It is optional, if not used, next case is executed.</li>
+            <li>While using switch statements, we must notice that the case expression will be of the same type as the
+                variable.
+                However, it will also be a constant value.</li>
+        </ul>
+        
+        
+        <p>Consider the following example to understand the flow of the switch statement.</p>
+        <p><strong>Student.java</strong></p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 400px;max-width: 100%;">
+public class Student implements Cloneable {
+    public static void main(String[] args) {
+        int num = 2;
+        switch (num){
+        case 0:
+            System.out.println("number is 0");
+            break;
+        case 1:
+            System.out.println("number is 1");
+            break;
+            default:
+            System.out.println(num);
+        }
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>2
+</pre>
+        </div>
+        <p>While using switch statements, we must notice that the case expression will be of the same type as the
+            variable.
+            However, it will also be a constant value. The switch permits only int, string, and Enum type variables to
+            be
+            used.
+        </p>
+        <h3 class="h3">Loop Statements</h3>
+        <p>In programming, sometimes we need to execute the block of code repeatedly while some condition evaluates to
+            true.
+            However, loop statements are used to execute the set of instructions in a repeated order. The execution of
+            the
+            set
+            of instructions depends upon a particular condition.</p>
+        <p>In Java, we have three types of loops that execute similarly. However, there are differences in their syntax
+            and
+            condition checking time.</p>
+        <ol class="points">
+            <li>for loop</li>
+            <li>while loop</li>
+            <li>do-while loop</li>
+        </ol>
+        <p>Let's understand the loop statements one by one.</p>
+        <h3 class="h3">Java for loop</h3>
+        <p>In Java, for loop is similar to C and C++. It enables us to initialize the loop variable,
+            check
+            the
+            condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know
+            the
+            number of times, we want to execute the block of code.</p>
+        
+            
+        <p>The flow chart for the for-loop is given below.</p>
+        <img src="https://static.javatpoint.com/core/images/control-flow-in-java.png" alt="Control Flow in Java" />
+        <p>Consider the following example to understand the proper functioning of the for loop in java.</p>
+        <p><strong>Calculation.java</strong></p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class Calculattion {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int sum = 0;
+        for(int j = 1; j<=10; j++) {
+            sum = sum + j;
+        }
+        System.out.println("The sum of first 10 natural numbers is " + sum);
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>The sum of first 10 natural numbers is 55
+</pre>
+        </div>
+        <h3 class="h3">Java for-each loop</h3>
+        <p>Java provides an enhanced for loop to traverse the data structures like array or collection. In the for-each
+            loop, we
+            don't need to update the loop variable. The syntax to use the for-each loop in java is given below.</p>
+        
+            
+        <p>Consider the following example to understand the functioning of the for-each loop in Java.</p>
+        <p><strong>Calculation.java</strong></p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class Calculation {  
+    public static void main(String[] args) {  
+        // TODO Auto-generated method stub  
+        String[] names = {"Java","C","C++","Python","JavaScript"};  
+        System.out.println("Printing the content of the array names:\n");  
+        for(String name:names) {  
+            System.out.println(name);  
+        }  
+    }  
+}  
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+Printing the content of the array names:
+
+Java
+C
+C++
+Python
+JavaScript
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java while loop</h3>
+        <p>The while loop is also used to iterate over the
+            number
+            of
+            statements multiple times. However, if we don't know the number of iterations in advance, it is recommended
+            to
+            use a
+            while loop. Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop
+            statement
+            in while loop.</p>
+        <p>It is also known as the entry-controlled loop since the condition is checked at the start of the loop. If the
+            condition is true, then the loop body will be executed; otherwise, the statements after the loop will be
+            executed.
+        </p>
+        <p>The syntax of the while loop is given below.</p>
+        
+        
+        <p>The flow chart for the while loop is given in the following image.</p>
+        <img src="https://static.javatpoint.com/core/images/control-flow-in-java2.png" alt="Control Flow in Java" />
+        <p>Consider the following example.</p>
+        <p><strong>Calculation .java</strong></p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class Calculation {  
+    public static void main(String[] args) {  
+        // TODO Auto-generated method stub  
+        int i = 0;  
+        System.out.println("Printing the list of first 10 even numbers \n");  
+        while(i<=10) {  
+            System.out.println(i);  
+            i = i + 2;  
+        }  
+    }  
+}  
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+Printing the list of first 10 even numbers 
+
+0
+2
+4
+6
+8
+10
+</pre>
+        </div>
+        <h3 class="h3">Java do-while loop</h3>
+        <p>The do-while loop checks the condition at the end
+            of
+            the
+            loop after executing the loop statements. When the number of iteration is not known and we have to execute
+            the
+            loop
+            at least once, we can use do-while loop.</p>
+        <p>It is also known as the exit-controlled loop since the condition is not checked in advance. The syntax of the
+            do-while loop is given below.</p>
+      
+        <p>The flow chart of the do-while loop is given in the following image.</p>
+        <img src="https://static.javatpoint.com/core/images/control-flow-in-java3.png" alt="Control Flow in Java" />
+        <p>Consider the following example to understand the functioning of the do-while loop in Java.</p>
+        <p><strong>Calculation.java</strong></p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class Calculation {  
+    public static void main(String[] args) {  
+        // TODO Auto-generated method stub  
+        int i = 0;  
+        System.out.println("Printing the list of first 10 even numbers \n");  
+        do {  
+            System.out.println(i);  
+            i = i + 2;  
+        }while(i<=10);  
+    }  
+}  
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>Printing the list of first 10 even numbers 
+0
+2
+4
+6
+8
+10
+</pre>
+        </div>
+        <h3 class="h3">Jump Statements</h3>
+        <p>Jump statements are used to transfer the control of the program to the specific statements. In other words,
+            jump
+            statements transfer the execution control to the other part of the program. There are two types of jump
+            statements
+            in Java, i.e., break and continue.</p>
+        <h3 class="h3">Java break statement</h3>
+        <p>As the name suggests, the break statement is used to
+            break
+            the
+            current flow of the program and transfer the control to the next statement outside a loop or switch
+            statement.
+            However, it breaks only the inner loop in the case of the nested loop.</p>
+        <p>The break statement cannot be used independently in the Java program, i.e., it can only be written inside the
+            loop or
+            switch statement.</p>
+        
+            
+        <h3 class="h3">Java continue statement</h3>
+        <p>Unlike break statement, the continue statement doesn't
+            break
+            the loop, whereas, it skips the specific part of the loop and jumps to the next iteration of the loop
+            immediately.
+        </p>
+        
+        
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="14keyword.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="16if_else_statement.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

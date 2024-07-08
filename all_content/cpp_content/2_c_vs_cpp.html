@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+
+    <title>C VS C++</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item active-submenu" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Difference between C and C++</h1>
+    <h2 class="h2">What is C?</h2>
+    <p>C is a structural or procedural oriented programming language which is machine-independent and extensively used
+        in various applications. </p>
+    <p>C is the basic programming language that can be used to develop from the operating systems (like Windows) to
+        complex programs like Oracle database, Git, Python interpreter, and many more. C programming language can be
+        called a god's programming language as it forms the base for other programming languages. If we know the C
+        language, then we can easily learn other programming languages. C language was developed by the great computer
+        scientist Dennis Ritchie at the Bell Laboratories. It contains some additional features that make it unique from
+        other programming languages. </p>
+    <h2 class="h2">What is C++?</h2>
+    <p>C++ is a special-purpose programming language developed by <strong>Bjarne Stroustrup</strong> at Bell Labs circa
+        1980. C++ language is very similar to C language, and it is so compatible with C that it can run 99% of C
+        programs without changing any source of code though C++ is an object-oriented programming language, so it is
+        safer and well-structured programming language than C.</p>
+    <p class="pq"><strong>Let's understand the differences between C and C++.</strong></p>
+    <img src="https://static.javatpoint.com/cpages/images/c-vs-cpp.png" alt="C vs C++" />
+    <p><strong>The following are the differences between C and C++:</strong></p>
+    <ul class="points">
+        <li><strong>Definition</strong><br>
+            C is a structural programming language, and it does not support classes and objects, while C++ is an
+            object-oriented programming language that supports the concept of classes and objects.</li>
+        <li><strong>Type of programming language</strong><br>
+            C supports the structural programming language where the code is checked line by line, while C++ is an
+            object-oriented programming language that supports the concept of classes and objects.</li>
+        <li><strong>Developer of the language</strong><br>
+            Dennis Ritchie developed C language at Bell Laboratories while Bjarne Stroustrup developed the C++ language
+            at Bell Labs circa 1980.</li>
+        <li><strong>Subset</strong><br>
+            C++ is a superset of C programming language. C++ can run 99% of C code but C language cannot run C++ code.
+        </li>
+        <li><strong>Type of approach</strong><br>
+            C follows the top-down approach, while C++ follows the bottom-up approach. The top-down approach breaks the
+            main modules into tasks; these tasks are broken into sub-tasks, and so on. The bottom-down approach develops
+            the lower level modules first and then the next level modules.</li>
+        <li><strong>Security</strong><br>
+            In C, the data can be easily manipulated by the outsiders as it does not support the encapsulation and
+            information hiding while C++ is a very secure language, i.e., no outsiders can manipulate its data as it
+            supports both encapsulation and data hiding. In C language, functions and data are the free entities, and in
+            C++ language, all the functions and data are encapsulated in the form of objects.</li>
+        <li><strong>Function Overloading</strong><br>
+            Function overloading is a feature that allows you to have more than one function with the same name but
+            varies in the parameters. C does not support the function overloading, while C++ supports the function
+            overloading.</li>
+        <li><strong>Function Overriding</strong><br>
+            Function overriding is a feature that provides the specific implementation to the function, which is already
+            defined in the base class. C does not support the function overriding, while C++ supports the function
+            overriding.</li>
+        <li><strong>Reference variables</strong><br>
+            C does not support the reference variables, while C++ supports the reference variables.</li>
+        <li><strong>Keywords</strong><br>
+            C contains 32 keywords, and C++ supports 52 keywords.</li>
+        <li><strong>Namespace feature</strong><br>
+            A namespace is a feature that groups the entities like classes, objects, and functions under some specific
+            name. C does not contain the namespace feature, while C++ supports the namespace feature that avoids the
+            name collisions.</li>
+        <li><strong>Exception handling</strong><br>
+            C does not provide direct support to the exception handling; it needs to use functions that support
+            exception handling. C++ provides direct support to exception handling by using a try-catch block.</li>
+        <li><strong>Input/Output functions</strong><br>
+            In C, scanf and printf functions are used for input and output operations, respectively, while in C++, cin
+            and cout are used for input and output operations, respectively.</li>
+        <li><strong>Memory allocation and de-allocation</strong><br>
+            C supports calloc() and malloc() functions for the memory allocation, and free() function for the memory
+            de-allocation. C++ supports a new operator for the memory allocation and delete operator for the memory
+            de-allocation.</li>
+        <li><strong>Inheritance</strong><br>
+            Inheritance is a feature that allows the child class to reuse the properties of the parent class. C language
+            does not support the inheritance while C++ supports the inheritance.</li>
+        <li><strong>Header file</strong><br>
+            C program uses <strong>&lt;stdio.h&gt;</strong> header file while C++ program uses
+            <strong>&lt;iostream.h&gt;</strong> header file.</li>
+    </ul>
+    <p><strong>Let's summarize the above differences in a tabular form.</strong></p>
+    <table class="alt">
+        <tr>
+            <th>No.</th>
+            <th>C</th>
+            <th>C++</th>
+        </tr>
+        <tr>
+            <td>1)</td>
+            <td>C follows the <strong>procedural style programming.</strong></td>
+            <td>C++ is multi-paradigm. It supports both <strong>procedural and object oriented.</strong></td>
+        </tr>
+        <tr>
+            <td>2)</td>
+            <td>Data is less secured in C.</td>
+            <td>In C++, you can use modifiers for class members to make it inaccessible for outside users.</td>
+        </tr>
+        <tr>
+            <td>3)</td>
+            <td>C follows the <strong>top-down approach.</strong></td>
+            <td>C++ follows the <strong>bottom-up approach.</strong></td>
+        </tr>
+        <tr>
+            <td>4)</td>
+            <td>C does not support function overloading.</td>
+            <td>C++ supports function overloading.</td>
+        </tr>
+        <tr>
+            <td>5)</td>
+            <td>In C, you can't use functions in structure.</td>
+            <td>In C++, you can use functions in structure.</td>
+        </tr>
+        <tr>
+            <td>6)</td>
+            <td>C does not support reference variables.</td>
+            <td>C++ supports reference variables.</td>
+        </tr>
+        <tr>
+            <td>7)</td>
+            <td>In C, <strong>scanf() and printf()</strong> are mainly used for input/output.</td>
+            <td>C++ mainly uses stream <strong>cin and cout</strong> to perform input and output operations.</td>
+        </tr>
+        <tr>
+            <td>8)</td>
+            <td>Operator overloading is not possible in C.</td>
+            <td>Operator overloading is possible in C++.</td>
+        </tr>
+        <tr>
+            <td>9)</td>
+            <td>C programs are divided into <strong>procedures and modules</strong></td>
+            <td>C++ programs are divided into <strong>functions and classes.</strong></td>
+        </tr>
+        <tr>
+            <td>10)</td>
+            <td>C does not provide the feature of namespace.</td>
+            <td>C++ supports the feature of namespace.</td>
+        </tr>
+        <tr>
+            <td>11)</td>
+            <td>Exception handling is not easy in C. It has to perform using other functions.</td>
+            <td>C++ provides exception handling using Try and Catch block.</td>
+        </tr>
+        <tr>
+            <td>12)</td>
+            <td>C does not support the inheritance.</td>
+            <td>C++ supports inheritance.</td>
+        </tr>
+    </table>
+    <hr />
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="1_cpp_tutorial.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="3_cpp_history.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

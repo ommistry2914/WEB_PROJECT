@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item active-submenu" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Set </h1>
+    <p>A Python set is the collection of the unordered items. Each element in the set must be unique, immutable, and the
+        sets remove the duplicate elements. Sets are mutable which means we can modify it after its creation.</p>
+    <p>Unlike other collections in Python, there is no index attached to the elements of the set, i.e., we cannot
+        directly access any element of the set by the index. However, we can print them all together, or we can get the
+        list of elements by looping through the set.</p>
+    <h2 class="h2">Creating a set</h2>
+    <p>The set can be created by enclosing the comma-separated immutable items with the curly braces {}. Python also
+        provides the set() method, which can be used to create the set by the passed sequence.</p>
+    <h3 class="h3">Example 1: Using curly braces</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}  
+print(Days)  
+print(type(Days))  
+print("looping through the set elements ... ")  
+for i in Days:  
+    print(i)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Friday', 'Tuesday', 'Monday', 'Saturday', 'Thursday', 'Sunday', 'Wednesday'}
+&lt;class 'set'&gt;
+looping through the set elements ... 
+Friday
+Tuesday
+Monday
+Saturday
+Thursday
+Sunday
+Wednesday
+</pre>
+    </div>
+    <h3 class="h3">Example 2: Using set() method</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+Days = set(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"])  
+print(Days)  
+print(type(Days))  
+print("looping through the set elements ... ")  
+for i in Days:  
+    print(i)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Friday', 'Wednesday', 'Thursday', 'Saturday', 'Monday', 'Tuesday', 'Sunday'}
+&lt;class 'set'&gt;
+looping through the set elements ... 
+Friday
+Wednesday
+Thursday
+Saturday
+Monday
+Tuesday
+Sunday
+</pre>
+    </div>
+    <p>It can contain any type of element such as integer, float, tuple etc. But mutable elements (list, dictionary,
+        set) can't be a member of set. Consider the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Creating a set which have immutable elements
+set1 = {1,2,3, "JavaTpoint", 20.5, 14}
+print(type(set1))
+#Creating a set which have mutable element
+set2 = {1,2,3,["Javatpoint",4]}
+print(type(set2))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'set'&gt;
+
+Traceback (most recent call last)
+&lt;ipython-input-5-9605bb6fbc68&gt; in &lt;module&gt;
+      4 
+      5 #Creating a set which holds mutable elements
+----&gt; 6 set2 = {1,2,3,["Javatpoint",4]}
+      7 print(type(set2))
+
+TypeError: unhashable type: 'list'
+</pre>
+    </div>
+    <p>In the above code, we have created two sets, the set <strong>set1</strong> have immutable elements and set2 have
+        one mutable element as a list. While checking the type of set2, it raised an error, which means set can contain
+        only immutable elements.</p>
+    <p>Creating an empty set is a bit different because empty curly {} braces are also used to create a dictionary as
+        well. So Python provides the set() method used without an argument to create an empty set.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Empty curly braces will create dictionary
+set3 = {}
+print(type(set3))
+
+# Empty set using set() function
+set4 = set()
+print(type(set4))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'dict'&gt;
+&lt;class 'set'&gt;
+</pre>
+    </div>
+    <p>Let's see what happened if we provide the duplicate element to the set.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+set5 = {1,2,4,4,5,8,9,9,10}
+print("Return set with unique elements:",set5)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Return set with unique elements: {1, 2, 4, 5, 8, 9, 10}
+</pre>
+    </div>
+    <p>In the above code, we can see that <strong>set5</strong> consisted of multiple duplicate elements when we printed
+        it remove the duplicity from the set.</p>
+    <h2 class="h2">Adding items to the set</h2>
+    <p>Python provides the <strong>add()</strong> method and <strong>update()</strong> method which can be used to add
+        some particular item to the set. The add() method is used to add a single element whereas the update() method is
+        used to add multiple elements to the set. Consider the following example.</p>
+    <h3 class="h3">Example: 1 - Using add() method</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+Months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(months)  
+print("\nAdding other months to the set...");  
+Months.add("July");  
+Months.add ("August");  
+print("\nPrinting the modified set...");  
+print(Months)  
+print("\nlooping through the set elements ... ")  
+for i in Months:  
+    print(i)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'February', 'May', 'April', 'March', 'June', 'January'}
+
+Adding other months to the set...
+
+Printing the modified set...
+{'February', 'July', 'May', 'April', 'March', 'August', 'June', 'January'}
+
+looping through the set elements ... 
+February
+July
+May
+April
+March
+August
+June
+January 
+</pre>
+    </div>
+    <p>To add more than one item in the set, Python provides the <strong>update()</strong> method. It accepts iterable
+        as an argument.</p>
+    <p>Consider the following example.</p>
+    <h3 class="h3">Example - 2 Using update() function</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+Months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(Months)  
+print("\nupdating the original set ... ")  
+Months.update(["July","August","September","October"]);  
+print("\nprinting the modified set ... ")   
+print(Months);
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'January', 'February', 'April', 'May', 'June', 'March'}
+
+updating the original set ... 
+printing the modified set ... 
+{'January', 'February', 'April', 'August', 'October', 'May', 'June', 'July', 'September', 'March'}
+</pre>
+    </div>
+    <h2 class="h2">Removing items from the set</h2>
+    <p>Python provides the <strong>discard()</strong> method and <strong>remove()</strong> method which can be used to
+        remove the items from the set. The difference between these function, using discard() function if the item does
+        not exist in the set then the set remain unchanged whereas remove() method will through an error.</p>
+    <p>Consider the following example.</p>
+    <h3 class="h3">Example-1 Using discard() method</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(months)  
+print("\nRemoving some months from the set...");  
+months.discard("January");  
+months.discard("May");  
+print("\nPrinting the modified set...");  
+print(months)  
+print("\nlooping through the set elements ... ")  
+for i in months:  
+    print(i)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'February', 'January', 'March', 'April', 'June', 'May'}
+
+Removing some months from the set...
+
+Printing the modified set...
+{'February', 'March', 'April', 'June'}
+
+looping through the set elements ... 
+February
+March
+April
+June
+</pre>
+    </div>
+    <p>Python provides also the <strong>remove()</strong> method to remove the item from the set. Consider the following
+        example to remove the items using <strong>remove()</strong> method.</p>
+    <h3 class="h3">Example-2 Using remove() function</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(months)  
+print("\nRemoving some months from the set...");  
+months.remove("January");  
+months.remove("May");  
+print("\nPrinting the modified set...");  
+print(months)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'February', 'June', 'April', 'May', 'January', 'March'}
+
+Removing some months from the set...
+
+Printing the modified set...
+{'February', 'June', 'April', 'March'}
+</pre>
+    </div>
+    <p>We can also use the pop() method to remove the item. Generally, the pop() method will always remove the last item
+        but the set is unordered, we can't determine which element will be popped from set.</p>
+    <p>Consider the following example to remove the item from the set using pop() method.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+Months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(Months)  
+print("\nRemoving some months from the set...");  
+Months.pop();  
+Months.pop();  
+print("\nPrinting the modified set...");  
+print(Months)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'June', 'January', 'May', 'April', 'February', 'March'}
+
+Removing some months from the set...
+
+Printing the modified set...
+{'May', 'April', 'February', 'March'}
+</pre>
+    </div>
+    <p>In the above code, the last element of the <strong>Month</strong> set is <strong>March</strong> but the pop()
+        method removed the <strong>June and January</strong> because the set is unordered and the pop() method could not
+        determine the last element of the set.</p>
+    <p>Python provides the clear() method to remove all the items from the set.</p>
+    <p>Consider the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+Months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(Months)  
+print("\nRemoving all the items from the set...");  
+Months.clear()  
+print("\nPrinting the modified set...")  
+print(Months)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'January', 'May', 'June', 'April', 'March', 'February'}
+
+Removing all the items from the set...
+
+Printing the modified set...
+set()
+</pre>
+    </div>
+    <h2 class="h2">Difference between discard() and remove()</h2>
+    <p>Despite the fact that <strong>discard()</strong> and <strong>remove()</strong> method both perform the same task,
+        There is one main difference between discard() and remove().</p>
+    <p>If the key to be deleted from the set using discard() doesn't exist in the set, the Python will not give the
+        error. The program maintains its control flow.</p>
+    <p>On the other hand, if the item to be deleted from the set using remove() doesn't exist in the set, the Python
+        will raise an error.</p>
+    <p>Consider the following example.</p>
+    <h3 class="h3">Example-</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+Months = set(["January","February", "March", "April", "May", "June"])  
+print("\nprinting the original set ... ")  
+print(Months)  
+print("\nRemoving items through discard() method...");  
+Months.discard("Feb"); #will not give an error although the key feb is not available in the set  
+print("\nprinting the modified set...")  
+print(Months)  
+print("\nRemoving items through remove() method...");  
+Months.remove("Jan") #will give an error as the key jan is not available in the set.   
+print("\nPrinting the modified set...")  
+print(Months)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing the original set ... 
+{'March', 'January', 'April', 'June', 'February', 'May'}
+
+Removing items through discard() method...
+
+printing the modified set...
+{'March', 'January', 'April', 'June', 'February', 'May'}
+
+Removing items through remove() method...
+Traceback (most recent call last):
+  File "set.py", line 9, in 
+    Months.remove("Jan")
+KeyError: 'Jan'
+</pre>
+    </div>
+    <h2 class="h2">Python Set Operations</h2>
+    <p>Set can be performed mathematical operation such as union, intersection, difference, and symmetric difference.
+        Python provides the facility to carry out these operations with operators or methods. We describe these
+        operations as follows.</p>
+    <h3 class="h3">Union of two Sets</h3>
+    <p>To combine two or more sets into one set in Python, use the union() function. All of the distinctive
+        characteristics from each combined set are present in the final set. As parameters, one or more sets may be
+        passed to the union() function. The function returns a copy of the set supplied as the lone parameter if there
+        is just one set. The method returns a new set containing all the different items from all the arguments if more
+        than one set is supplied as an argument.</p>
+    <img src="https://static.javatpoint.com/python/images/python-set.png" alt="Python Set" />
+    <p>Consider the following example to calculate the union of two sets.</p>
+    <p><strong>Example 1: using union | operator</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Days1 = {"Monday","Tuesday","Wednesday","Thursday", "Sunday"}  
+Days2 = {"Friday","Saturday","Sunday"}  
+print(Days1|Days2) #printing the union of the sets   
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Friday', 'Sunday', 'Saturday', 'Tuesday', 'Wednesday', 'Monday', 'Thursday'}
+</pre>
+    </div>
+    <p>Python also provides the <strong>union()</strong> method which can also be used to calculate the union of two
+        sets. Consider the following example.</p>
+    <p><strong>Example 2: using union() method</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Days1 = {"Monday","Tuesday","Wednesday","Thursday"}  
+Days2 = {"Friday","Saturday","Sunday"}  
+print(Days1.union(Days2)) #printing the union of the sets   
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Friday', 'Monday', 'Tuesday', 'Thursday', 'Wednesday', 'Sunday', 'Saturday'}
+</pre>
+    </div>
+    <p>Now, we can also make the union of more than two sets using the union() function, for example:</p>
+    <p><strong>Program:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Create three sets
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+set3 = {3, 4, 5}
+
+# Find the common elements between the three sets
+common_elements = set1.union(set2, set3)
+
+# Print the common elements
+print(common_elements)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+{1, 2, 3, 4, 5}
+</pre>
+    </div>
+    <h3 class="h3">The intersection of two sets</h3>
+    <p>To discover what is common between two or more sets in Python, apply the intersection() function. Only the items
+        in all sets being compared are included in the final set. One or more sets can also be used as the
+        intersection() function parameters. The function returns a copy of the set supplied as the lone parameter if
+        there is just one set. The method returns a new set that only contains the elements in all the compared sets if
+        multiple sets are supplied as arguments.</p>
+    <p>The intersection of two sets can be performed by the <strong>and &amp;</strong> operator or the
+        <strong>intersection() function</strong>. The intersection of the two sets is given as the set of the elements
+        that common in both sets.</p>
+    <img src="https://static.javatpoint.com/python/images/python-set2.png" alt="Python Set" />
+    <p>Consider the following example.</p>
+    <p><strong>Example 1: Using &amp; operator</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Days1 = {"Monday","Tuesday", "Wednesday", "Thursday"}  
+Days2 = {"Monday","Tuesday","Sunday", "Friday"}  
+print(Days1&Days2) #prints the intersection of the two sets  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Monday', 'Tuesday'}
+</pre>
+    </div>
+    <p><strong>Example 2: Using intersection() method</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = {"Devansh","John", "David", "Martin"}  
+set2 = {"Steve", "Milan", "David", "Martin"}  
+print(set1.intersection(set2)) #prints the intersection of the two sets  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Martin', 'David'}
+</pre>
+    </div>
+    <p><strong>Example 3:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = {1,2,3,4,5,6,7}
+set2 = {1,2,20,32,5,9}
+set3 = set1.intersection(set2)
+print(set3)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{1,2,5}
+</pre>
+    </div>
+    <p>Similarly, as the same as union function, we can perform the intersection of more than two sets at a time,</p>
+    <p>For Example:</p>
+    <p><strong>Program</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Create three sets
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+set3 = {3, 4, 5}
+
+# Find the common elements between the three sets
+common_elements = set1.intersection(set2, set3)
+
+# Print the common elements
+print(common_elements)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+{3}
+</pre>
+    </div>
+    <h2 class="h2">The intersection_update() method</h2>
+    <p>The <strong>intersection_update()</strong> method removes the items from the original set that are not present in
+        both the sets (all the sets if more than one are specified).</p>
+    <p>The <strong>intersection_update()</strong> method is different from the intersection() method since it modifies
+        the original set by removing the unwanted items, on the other hand, the intersection() method returns a new set.
+    </p>
+    <p>Consider the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = {"Devansh", "bob", "castle"}  
+b = {"castle", "dude", "emyway"}  
+c = {"fuson", "gaurav", "castle"}  
+  
+a.intersection_update(b, c)  
+  
+print(a)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'castle'}
+</pre>
+    </div>
+    <h2 class="h2">Difference between the two sets</h2>
+    <p>The difference of two sets can be calculated by using the subtraction (-) operator or
+        <strong>intersection()</strong> method. Suppose there are two sets A and B, and the difference is A-B that
+        denotes the resulting set will be obtained that element of A, which is not present in the set B.</p>
+    <img src="https://static.javatpoint.com/python/images/python-set3.png" alt="Python Set" />
+    <p>Consider the following example.</p>
+    <p><strong>Example 1 : Using subtraction ( - ) operator</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Days1 = {"Monday",  "Tuesday", "Wednesday", "Thursday"}  
+Days2 = {"Monday", "Tuesday", "Sunday"}  
+print(Days1-Days2) #{"Wednesday", "Thursday" will be printed}  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Thursday', 'Wednesday'}
+</pre>
+    </div>
+    <p><strong>Example 2 : Using difference() method</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Days1 = {"Monday",  "Tuesday", "Wednesday", "Thursday"}  
+Days2 = {"Monday", "Tuesday", "Sunday"}  
+print(Days1.difference(Days2)) # prints the difference of the two sets Days1 and Days2  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{'Thursday', 'Wednesday'}
+</pre>
+    </div>
+    <h2 class="h2">Symmetric Difference of two sets</h2>
+    <p>In Python, the symmetric Difference between set1 and set2 is the set of elements present in one set or the other
+        but not in both sets. In other words, the set of elements is in set1 or set2 but not in their intersection.</p>
+    <p>The Symmetric Difference of two sets can be computed using Python's symmetric_difference() method. This method
+        returns a new set containing all the elements in either but not in both. Consider the following example:</p>
+    <img src="https://static.javatpoint.com/python/images/python-set4.png" alt="Python Set" />
+    <p><strong>Example - 1: Using ^ operator</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = {1,2,3,4,5,6}
+b = {1,2,9,8,10}
+c = a^b
+print(c)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{3, 4, 5, 6, 8, 9, 10}
+</pre>
+    </div>
+    <p><strong>Example - 2: Using symmetric_difference() method</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = {1,2,3,4,5,6}
+b = {1,2,9,8,10}
+c = a.symmetric_difference(b)
+print(c)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{3, 4, 5, 6, 8, 9, 10}
+</pre>
+    </div>
+    <h2 class="h2">Set comparisons</h2>
+    <p>In Python, you can compare sets to check if they are equal, if one set is a subset or superset of another, or if
+        two sets have elements in common.</p>
+    <p>Here are the set comparison operators available in Python:</p>
+    <ul class="points">
+        <li>==: checks if two sets have the same elements, regardless of their order.</li>
+        <li>!=: checks if two sets are not equal.</li>
+        <li>&lt;: checks if the left set is a proper subset of the right set (i.e., all elements in the left set are
+            also in the right set, but the right set has additional elements).</li>
+        <li>&lt;=: checks if the left set is a subset of the right set (i.e., all elements in the left set are also in
+            the right set).</li>
+        <li>&gt;: checks if the left set is a proper superset of the right set (i.e., all elements in the right set are
+            also in the left set, but the left set has additional elements).</li>
+        <li>&gt;=: checks if the left set is a superset of the right set (i.e., all elements in the right set are also
+            in the left).</li>
+    </ul>
+    <p><strong>Consider the following example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Days1 = {"Monday",  "Tuesday", "Wednesday", "Thursday"}  
+Days2 = {"Monday", "Tuesday"}  
+Days3 = {"Monday", "Tuesday", "Friday"}  
+  
+#Days1 is the superset of Days2 hence it will print true.   
+print (Days1>Days2)   
+  
+#prints false since Days1 is not the subset of Days2   
+print (Days1<Days2)  
+  
+#prints false since Days2 and Days3 are not equivalent   
+print (Days2 == Days3)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>True
+False
+False
+</pre>
+    </div>
+    <h2 class="h2">FrozenSets</h2>
+    <p>In Python, a frozen set is an immutable version of the built-in set data type. It is similar to a set, but its
+        contents cannot be changed once a frozen set is created.</p>
+    <p>Frozen set objects are unordered collections of unique elements, just like sets. They can be used the same way as
+        sets, except they cannot be modified. Because they are immutable, frozen set objects can be used as elements of
+        other sets or dictionary keys, while standard sets cannot.</p>
+    <p>One of the main advantages of using frozen set objects is that they are hashable, meaning they can be used as
+        keys in dictionaries or as elements of other sets. Their contents cannot change, so their hash values remain
+        constant. Standard sets are not hashable because they can be modified, so their hash values can change.</p>
+    <p>Frozen set objects support many of the assets of the same operation, such as union, intersection, Difference, and
+        symmetric Difference. They also support operations that do not modify the frozen set, such as len(), min(),
+        max(), and in.</p>
+    <p><strong>Consider the following example to create the frozen set.</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+Frozenset = frozenset([1,2,3,4,5])   
+print(type(Frozenset))  
+print("\nprinting the content of frozen set...")  
+for i in Frozenset:  
+    print(i);  
+Frozenset.add(6) #gives an error since we cannot change the content of Frozenset after creation   
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'frozenset'&gt;
+
+printing the content of frozen set...
+1
+2
+3
+4
+5
+Traceback (most recent call last):
+  File "set.py", line 6, in &lt;module&gt;
+    Frozenset.add(6) #gives an error since we can change the content of Frozenset after creation 
+AttributeError: 'frozenset' object has no attribute 'add'
+</pre>
+    </div>
+    <h2 class="h2">Frozenset for the dictionary</h2>
+    <p>If we pass the dictionary as the sequence inside the frozenset() method, it will take only the keys from the
+        dictionary and returns a frozenset that contains the key of the dictionary as its elements.</p>
+    <p>Consider the following example.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+Dictionary = {"Name":"John", "Country":"USA", "ID":101}   
+print(type(Dictionary))  
+Frozenset = frozenset(Dictionary); #Frozenset will contain the keys of the dictionary  
+print(type(Frozenset))  
+for i in Frozenset:   
+    print(i)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>&lt;class 'dict'&gt;
+&lt;class 'frozenset'&gt;
+Name
+Country
+ID
+</pre>
+    </div>
+    <h3 class="h3">Set Programming Example</h3>
+    <p><strong>Example - 1:</strong> Write a program to remove the given number from the set.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+my_set = {1,2,3,4,5,6,12,24}
+n = int(input("Enter the number you want to remove"))
+my_set.discard(n)
+print("After Removing:",my_set)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Enter the number you want to remove:12
+After Removing: {1, 2, 3, 4, 5, 6, 24}
+</pre>
+    </div>
+    <p><strong>Example - 2:</strong> Write a program to add multiple elements to the set.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = set([1,2,4,"John","CS"])
+set1.update(["Apple","Mango","Grapes"])
+print(set1)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{1, 2, 4, 'Apple', 'John', 'CS', 'Mango', 'Grapes'}
+</pre>
+    </div>
+    <p><strong>Example - 3:</strong> Write a program to find the union between two set.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = set(["Peter","Joseph", 65,59,96])
+set2  = set(["Peter",1,2,"Joseph"])
+set3 = set1.union(set2)
+print(set3)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{96, 65, 2, 'Joseph', 1, 'Peter', 59}
+</pre>
+    </div>
+    <p><strong>Example- 4:</strong> Write a program to find the intersection between two sets.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = {23,44,56,67,90,45,"Javatpoint"}
+set2 = {13,23,56,76,"Sachin"}
+set3 = set1.intersection(set2)
+print(set3)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>{56, 23}
+</pre>
+    </div>
+    <p><strong>Example - 5:</strong> Write the program to add element to the frozenset.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = {23,44,56,67,90,45,"Javatpoint"}
+set2 = {13,23,56,76,"Sachin"}
+set3 = set1.intersection(set2)
+print(set3)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>TypeError: 'frozenset' object does not support item assignment
+</pre>
+    </div>
+    <p>Above code raised an error because frozensets are immutable and can't be changed after creation.</p>
+    <p><strong>Example - 6:</strong> Write the program to find the issuperset, issubset and superset.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+set1 = set(["Peter","James","Camroon","Ricky","Donald"])
+set2 = set(["Camroon","Washington","Peter"])
+set3 = set(["Peter"])
+
+issubset = set1 &gt;= set2
+print(issubset)
+issuperset = set1 &lt;= set2
+print(issuperset)
+issubset = set3 &lt;= set2
+print(issubset)
+issuperset = set2 &gt;= set3
+print(issuperset)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>False
+False
+True
+True
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">Python Built-in set methods</h2>
+    <p>Python contains the following methods to be used with the sets. </p>
+    <table class="alt">
+        <tr>
+            <th>SN</th>
+            <th>Method </th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="python-set-add-method">add(item)</a></td>
+            <td>It adds an item to the set. It has no effect if the item is already present in the set. </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>clear()</td>
+            <td>It deletes all the items from the set. </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>copy()</td>
+            <td>It returns a shallow copy of the set. </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>difference_update(....)</td>
+            <td>It modifies this set by removing all the items that are also present in the specified sets. </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="python-set-discard-method">discard(item)</a></td>
+            <td>It removes the specified item from the set. </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>intersection()</td>
+            <td>It returns a new set that contains only the common elements of both the sets. (all the sets if more than
+                two are specified). </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>intersection_update(....)</td>
+            <td>It removes the items from the original set that are not present in both the sets (all the sets if more
+                than one are specified).</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Isdisjoint(....)</td>
+            <td>Return True if two sets have a null intersection.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Issubset(....)</td>
+            <td>Report whether another set contains this set.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Issuperset(....)</td>
+            <td>Report whether this set contains another set.</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="python-set-pop-method">pop()</a></td>
+            <td>Remove and return an arbitrary set element that is the last element of the set. Raises KeyError if the
+                set is empty.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="python-set-remove-method">remove(item)</a></td>
+            <td>Remove an element from a set; it must be a member. If the element is not a member, raise a KeyError.
+            </td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>symmetric_difference(....)</td>
+            <td>Remove an element from a set; it must be a member. If the element is not a member, raise a KeyError.
+            </td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>symmetric_difference_update(....)</td>
+            <td>Update a set with the symmetric difference of itself and another.</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>union(....)</td>
+            <td>Return the union of sets as a new set.<br>(i.e. all elements that are in either set.)</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>update()</td>
+            <td>Update a set with the union of itself and others.</td>
+        </tr>
+    </table>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="20_list_vs_tuple.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="22_dictionary.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

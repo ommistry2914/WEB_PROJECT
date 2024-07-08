@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+
+    <title>C++ Pointer</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item active-submenu" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Pointers</h1>
+    <p>The pointer in C++ language is a variable, it is also known as locator or indicator that points to an address of
+        a value.</p>
+    <p>The symbol of an address is represented by a pointer. In addition to creating and modifying dynamic data
+        structures, they allow programs to emulate call-by-reference. One of the principal applications of pointers is
+        iterating through the components of arrays or other data structures. The pointer variable that refers to the
+        same data type as the variable you're dealing with has the address of that variable set to it (such as an int or
+        string).</p>
+    <h3 class="h3">Syntax</h3>
+    <div class="codeblock"><textarea name="code" class="cpp">
+datatype *var_name; 
+int *ptr;   // ptr can point to an address which holds int data 
+</textarea></div>
+    <h2 class="h2">How to use a pointer?</h2>
+    <ol class="points">
+        <li>Establish a pointer variable.</li>
+        <li>employing the unary operator (&amp;), which yields the address of the variable, to assign a pointer to a
+            variable's address.</li>
+        <li>Using the unary operator (*), which gives the variable's value at the address provided by its argument, one
+            can access the value stored in an address.</li>
+    </ol>
+    <p>Since the data type knows how many bytes the information is held in, we associate it with a reference. The size
+        of the data type to which a pointer points is added when we increment a pointer.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-pointers1.png" alt="Cpp Pointers" />
+    <h3 class="h3">Advantage of pointer</h3>
+    <p>1) Pointer reduces the code and improves the performance, it is used to retrieving strings, trees etc. and used
+        with
+        arrays, structures and functions.</p>
+    <p>2) We can return multiple values from function using pointer.</p>
+    <p>3) It makes you able to access any memory location in the computer's memory.</p>
+    <h3 class="h3">Usage of pointer</h3>
+    <p>There are many usage of pointers in C++ language.</p>
+    <p><strong>1) Dynamic memory allocation</strong></p>
+    <p>In c language, we can dynamically allocate memory using malloc() and calloc() functions where pointer is used.
+    </p>
+    <p><strong>2) Arrays, Functions and Structures</strong></p>
+    <p>Pointers in c language are widely used in arrays, functions and structures. It reduces the code and improves the
+        performance.</p>
+    <h2 class="h2">Symbols used in pointer</h2>
+    <table class="alt">
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>& (ampersand sign)</td>
+            <td>Address operator</td>
+            <td>Determine the address of a variable.</td>
+        </tr>
+        <tr>
+            <td>&lowast; (asterisk sign)</td>
+            <td>Indirection operator</td>
+            <td>Access the value of an address.</td>
+        </tr>
+    </table>
+    <h2 class="h2">Declaring a pointer</h2>
+    <p>The pointer in C++ language can be declared using &lowast; (asterisk symbol).</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int &lowast;	a; //pointer to int  
+char &lowast;	c; //pointer to char  
+</textarea></div>
+    <h2 class="h2">Pointer Example</h2>
+    <p>Let's see the simple example of using pointers printing the address and value.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+int number=30;  
+int &lowast;	p;    
+p=&number;//stores the address of number variable  
+cout&lt;&lt;"Address of number variable is:"&lt;&lt;&number&lt;&lt;endl;  
+cout&lt;&lt;"Address of p variable is:"&lt;&lt;p&lt;&lt;endl;  
+cout&lt;&lt;"Value of p variable is:"&lt;&lt;*p&lt;&lt;endl;  
+   return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Address of number variable is:0x7ffccc8724c4
+Address of p variable is:0x7ffccc8724c4
+Value of p variable is:30  
+</pre>
+    </div>
+    <h2 class="h2">Pointer Program to swap 2 numbers without using 3rd variable</h2>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+int a=20,b=10,&lowast;p1=&a,&lowast;p2=&b;  
+cout&lt;&lt;"Before swap: &lowast;p1="&lt;&lt;&lowast;p1&lt;&lt;" &lowast;p2="&lt;&lt;&lowast;p2&lt;&lt;endl;  
+&lowast;p1=&lowast;p1+&lowast;p2;  
+&lowast;p2=&lowast;p1-&lowast;p2;  
+&lowast;p1=&lowast;p1-&lowast;p2;  
+cout&lt;&lt;"After swap: &lowast;p1="&lt;&lt;&lowast;p1&lt;&lt;" &lowast;p2="&lt;&lt;&lowast;p2&lt;&lt;endl;  
+   return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Before swap: &lowast;p1=20 &lowast;p2=10
+After swap: &lowast;p1=10 &lowast;p2=20
+</pre>
+    </div>
+    <h2 class="h2">What are Pointer and string literals?</h2>
+    <p>String literals are arrays of character sequences with null ends. The elements of a string literal are arrays of
+        type const char (because characters in a string cannot be modified) plus a terminating null-character.</p>
+    <h2 class="h2">What is a void pointer?</h2>
+    <p>This unique type of pointer, which is available in C++, stands in for the lack of a kind. Pointers that point to
+        a value that has no type are known as void pointers (and thus also an undetermined length and undetermined
+        dereferencing properties). This indicates that void pointers are very flexible because they can point to any
+        data type. This flexibility has benefits. Direct dereference is not possible with these pointers. Before they
+        may be dereferenced, they must be converted into another pointer type that points to a specific data type.</p>
+    <h2 class="h2">What is a invalid pointer?</h2>
+    <p>A pointer must point to a valid address, not necessarily to useful items (like for arrays). We refer to these as
+        incorrect pointers. Additionally, incorrect pointers are uninitialized pointers.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *ptr1;
+int arr[10];
+int *ptr2 = arr+20;
+</textarea></div>
+    <p>Here, ptr1 is not initialized, making it invalid, and ptr2 is outside of the bounds of arr, making it likewise
+        weak. (Take note that not all build failures are caused by faulty references.)</p>
+    <h2 class="h2">What is a null pointer?</h2>
+    <p>A null pointer is not merely an incorrect address; it also points nowhere. Here are two ways to mark a pointer as
+        NULL:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *ptr1 = 0;
+int *ptr2 = NULL;
+</textarea></div>
+    <h2 class="h2">What is a pointer to a pointer?</h2>
+    <p>In C++, we have the ability to build a pointer to another pointer, which might then point to data or another
+        pointer. The unary operator (*) is all that is needed in the syntax for declaring the pointer for each level of
+        indirection.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+char a;
+char *b;
+char ** c;
+a = 'g';
+b = &a;
+c = &b;
+</textarea></div>
+    <p>Here b points to a char that stores 'g', and c points to the pointer b.</p>
+    <h2 class="h2">What are references and pointers?</h2>
+    <ol class="points">
+        <li>Call-By-Value</li>
+        <li>Call-By-Reference with a Pointer Argument</li>
+        <li>Call-By-Reference with a Reference Argument</li>
+    </ol>
+    <p><strong>Example</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include 
+using namespace std;
+// Pass-by-Value
+int square1(int n)
+{cout << "address of n1 in square1(): " << &n << "\n";
+n *= n;
+return n;
+}
+// Pass-by-Reference with Pointer Arguments
+void square2(int* n)
+{
+cout << "address of n2 in square2(): " << n << "\n";
+*n *= *n;
+}
+// Pass-by-Reference with Reference Arguments
+void square3(int& n)
+{
+	
+cout << "address of n3 in square3(): " << &n << "\n";
+n *= n;
+}
+void example()
+{
+	// Call-by-Value
+	int n1 = 8;
+	cout << "address of n1 in main(): " << &n1 << "\n";
+	cout << "Square of n1: " << square1(n1) << "\n";
+	cout << "No change in n1: " << n1 << "\n";
+
+	// Call-by-Reference with Pointer Arguments
+	int n2 = 8;
+	cout << "address of n2 in main(): " << &n2 << "\n";
+	square2(&n2);
+	cout << "Square of n2: " << n2 << "\n";
+	cout << "Change reflected in n2: " << n2 << "\n";
+
+	// Call-by-Reference with Reference Arguments
+	int n3 = 8;
+	cout << "address of n3 in main(): " << &n3 << "\n";
+	square3(n3);
+	cout << "Square of n3: " << n3 << "\n";
+	cout << "Change reflected in n3: " << n3 << "\n";
+}
+// Driver program
+int main() { example(); }
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-pointers2.png" alt="Cpp Pointers 1" />
+    <hr />
+    <h1 class="h1">C++ Void Pointer</h1>
+    <p>A void pointer is a general-purpose pointer that can hold the address of any data type, but it is not associated
+        with any data type.</p>
+    <h3 class="h3">Syntax of void pointer</h3>
+    <div class="codeblock"><textarea name="code" class="cpp">
+void *ptr;
+</textarea></div>
+    <p>In C++, we cannot assign the address of a variable to the variable of a different data type. Consider the
+        following example:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *ptr;  // integer pointer declaration
+float a=10.2; // floating variable initialization
+ptr= &a;  // This statement throws an error.
+</textarea></div>
+    <p>In the above example, we declare a pointer of type integer, i.e., ptr and a float variable, i.e., 'a'. After
+        declaration, we try to store the address of 'a' variable in 'ptr', but this is not possible in C++ as the
+        variable cannot hold the address of different data types.</p>
+    <p><strong>Let's understand through a simple example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream.h&gt;
+using namespace std;
+int main()
+{
+    int *ptr;
+    float f=10.3;
+    ptr = &f; // error
+    std::cout &lt;&lt; "The value of *ptr is : " &lt;&lt;*ptr&lt;&lt; std::endl;
+    return 0;
+}
+</textarea></div>
+    <p>In the above program, we declare a pointer of integer type and variable of float type. An integer pointer
+        variable cannot point to the float variable, but it can point to an only integer variable.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-void-pointer.png" alt="C++ Void Pointer" />
+    <p>C++ has overcome the above problem by using the C++ void pointer as a void pointer can hold the address of any
+        data type.</p>
+    <p><strong>Let's look at a simple example of void pointer.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+  void *ptr;   // void pointer declaration
+  int a=9;   // integer variable initialization
+  ptr=&a;   // storing the address of 'a' variable in a void pointer variable.
+  std::cout &lt;&lt; &a &lt;&lt; std::endl;
+  std::cout &lt;&lt; ptr &lt;&lt; std::endl;
+  return 0;
+}
+</textarea></div>
+    <p>In the above program, we declare a void pointer variable and an integer variable where the void pointer contains
+        the address of an integer variable.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-void-pointer2.png" alt="C++ Void Pointer" />
+    <h3 class="h3">Difference between void pointer in C and C++</h3>
+    <p>In C, we can assign the void pointer to any other pointer type without any typecasting, whereas in C++, we need
+        to typecast when we assign the void pointer type to any other pointer type.</p>
+    <p><strong>Let's understand through a simple example.</strong></p>
+    <p><strong>In C,</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;stdio.h&gt;
+int main()
+{
+   void *ptr; // void pointer declaration
+   int *ptr1;  // integer pointer declaration
+   int a =90;  // integer variable initialization
+   ptr=&a; // storing the address of 'a' in ptr
+   ptr1=ptr; // assigning void pointer to integer pointer type.
+   printf("The value of *ptr1 : %d",*ptr1);
+   return 0;
+}
+</textarea></div>
+    <p>In the above program, we declare two pointers 'ptr' and 'ptr1' of type void and integer, respectively. We also
+        declare the integer type variable, i.e., 'a'. After declaration, we assign the address of 'a' variable to the
+        pointer 'ptr'. Then, we assign the void pointer to the integer pointer, i.e., ptr1 without any typecasting
+        because in C, we do not need to typecast while assigning the void pointer to any other type of pointer.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-void-pointer3.png" alt="C++ Void Pointer" />
+    <p><strong>In C++,</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+  void *ptr; // void pointer declaration
+  int *ptr1; // integer pointer declaration
+  int data=10; // integer variable initialization
+  ptr=&data;  // storing the address of data variable in void pointer variable
+  ptr1=(int *)ptr; // assigning void pointer to integer pointer
+  std::cout &lt;&lt; "The value of *ptr1 is : " &lt;&lt;*ptr1&lt;&lt; std::endl;
+  return 0;
+}
+</textarea></div>
+    <p>In the above program, we declare two pointer variables of type void and int type respectively. We also create
+        another integer type variable, i.e., 'data'. After declaration, we store the address of variable 'data' in a
+        void pointer variable, i.e., ptr. Now, we want to assign the void pointer to integer pointer, in order to do
+        this, we need to apply the cast operator, i.e., (int *) to the void pointer variable. This cast operator tells
+        the compiler which type of value void pointer is holding. For casting, we have to type the data type and * in a
+        bracket like (char *) or (int *).</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-void-pointer4.png" alt="C++ Void Pointer" />
+    <hr />
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="23_cpp_arrays.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="25_cpp_array_of_pointer.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

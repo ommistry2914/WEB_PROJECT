@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keywords</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a></li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item active-submenu" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a></li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a></li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Keywords</h1>
+    <p>Every scripting language has designated words or keywords, with particular definitions and usage guidelines.
+        Python is no exception. The fundamental constituent elements of any Python program are Python keywords.</p>
+    <p>This tutorial will give you a basic overview of all Python keywords and a detailed discussion of some important
+        keywords that are frequently used.</p>
+    <h2 class="h2">Introducing Python Keywords</h2>
+    <p>Python keywords are unique words reserved with defined meanings and functions that we can only apply for those
+        functions. You'll never need to import any keyword into your program because they're permanently present.</p>
+    <p>Python's built-in methods and classes are not the same as the keywords. Built-in methods and classes are
+        constantly present; however, they are not as limited in their application as keywords.</p>
+    <p>Assigning a particular meaning to Python keywords means you can't use them for other purposes in our code. You'll
+        get a message of SyntaxError if you attempt to do the same. If you attempt to assign anything to a built-in
+        method or type, you will not receive a SyntaxError message; however, it is still not a smart idea.</p>
+    <p>Python contains thirty-five keywords in the most recent version, i.e., Python 3.8. Here we have shown a complete
+        list of Python keywords for the reader's reference.</p>
+    <table class="alt">
+        <tr>
+            <td>False</td>
+            <td>await</td>
+            <td>else</td>
+            <td>import</td>
+            <td>pass</td>
+        </tr>
+        <tr>
+            <td>None</td>
+            <td>break</td>
+            <td>except</td>
+            <td>in</td>
+            <td>raise</td>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>class</td>
+            <td>finally</td>
+            <td>is</td>
+            <td>return</td>
+        </tr>
+        <tr>
+            <td>and</td>
+            <td>continue</td>
+            <td>for</td>
+            <td>lambda</td>
+            <td>try</td>
+        </tr>
+        <tr>
+            <td>as</td>
+            <td>def</td>
+            <td>from</td>
+            <td>nonlocal</td>
+            <td>while</td>
+        </tr>
+        <tr>
+            <td>assert</td>
+            <td>del</td>
+            <td>global</td>
+            <td>not</td>
+            <td>with</td>
+        </tr>
+        <tr>
+            <td>async</td>
+            <td>elif</td>
+            <td>if</td>
+            <td>or</td>
+            <td>yield</td>
+        </tr>
+    </table>
+    <p>In distinct versions of Python, the preceding keywords might be changed. Some extras may be introduced, while
+        others may be deleted. By writing the following statement into the coding window, you can anytime retrieve the
+        collection of keywords in the version you are working on.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to demonstrate the application of iskeyword()
+# importing keyword library which has lists
+import keyword
+  
+# displaying the complete list using "kwlist()."
+print("The set of keywords in this version is: ")
+print( keyword.kwlist )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The set of keywords in this version is : 
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+</pre>
+    </div>
+    <p>By calling help(), you can retrieve a list of currently offered keywords:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+help("keywords")
+</textarea></div>
+    <h2 class="h2">How to Identify Python Keywords</h2>
+    <p>Python's keyword collection has evolved as new versions were introduced. The await and async keywords, for
+        instance, were not introduced till Python 3.7. Also, in Python 2.7, the words print and exec constituted
+        keywords; however, in Python 3+, they were changed into built-in methods and are no longer part of the set of
+        keywords. In the paragraphs below, you'll discover numerous methods for determining whether a particular word in
+        Python is a keyword or not.</p>
+    <h3 class="h3">Write Code on a Syntax Highlighting IDE</h3>
+    <p>There are plenty of excellent Python IDEs available. They'll all highlight keywords to set them apart from the
+        rest of the terms in the code. This facility will assist you in immediately identifying Python keywords during
+        coding so that you do not misuse them.</p>
+    <h3 class="h3">Verify Keywords with Script in a REPL</h3>
+    <p>There are several ways to detect acceptable Python keywords plus know further regarding them in the Python REPL.
+    </p>
+    <h3 class="h3">Look for a SyntaxError</h3>
+    <p>Lastly, if you receive a SyntaxError when attempting to allocate to it, name a method with it, or do anything
+        else with that, and it isn't permitted, it's probably a keyword. This one is somewhat more difficult to see, but
+        it is still a technique for Python to tell you if you're misusing a keyword.</p>
+    <h2 class="h2">Python Keywords and Their Usage</h2>
+    <p>The following sections categorize Python keywords under the headings based on their frequency of use. The first
+        category, for instance, includes all keywords utilized as values, whereas the next group includes keywords
+        employed as operators. These classifications will aid in understanding how keywords are employed and will assist
+        you in arranging the huge collection of Python keywords.</p>
+    <ul class="points">
+        <li>A few terms mentioned in the segment following may be unfamiliar to you. They're explained here, and you
+            must understand what they mean before moving on:</li>
+        <li>The Boolean assessment of a variable is referred to as truthfulness. A value's truthfulness reveals if the
+            value of the variable is true or false.</li>
+    </ul>
+    <p>In the Boolean paradigm, truth refers to any variable that evaluates to true. Pass an item as an input to bool()
+        to see if it is true. If True is returned, the value of the item is true. Strings and lists which are not empty,
+        non-zero numbers, and many other objects are illustrations of true values.</p>
+    <p>False refers to any item in a Boolean expression that returns false. Pass an item as an input to bool() to see if
+        it is false. If False is returned, the value of the item is false. Examples of false values are " ", 0, { }, and
+        [ ].</p>
+    <h3 class="h3">Value Keywords: True, False, None</h3>
+    <p>Three Python keywords are employed as values in this example. These are singular values, which we can reuse
+        indefinitely and every time correspond to the same entity. These values will most probably be seen and used
+        frequently.</p>
+    <p><strong>The Keywords True and False</strong></p>
+    <p>These keywords are typed in lowercase in conventional computer languages (true and false); however, they are
+        typed in uppercase in Python every time. In Python script, the True Python keyword represents the Boolean true
+        state. False is a keyword equivalent to True, except it has the negative Boolean state of false.</p>
+    <p>True and False are those keywords that can be allocated to variables or parameters and are compared directly.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+print( 4 == 4 )
+print( 6 > 9 )
+print( True or False )
+print( 9 <= 28 )
+print( 6 > 9 )
+print( True and False )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+True
+False
+True
+True
+False
+False
+</pre>
+    </div>
+    <p>Because the first, third, and fourth statements are true, the interpreter gives True for those and False for
+        other statements. True and False are the equivalent in Python as 1 &amp; 0. We can use the accompanying
+        illustration to support this claim:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+print( True == 3 )
+print( False == 0 )
+print( True + True + True)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+False
+True
+3
+</pre>
+    </div>
+    <p><strong>The None Keyword</strong></p>
+    <p>None is a Python keyword that means "nothing." None is known as nil, null, or undefined in different computer
+        languages.</p>
+    <p>If a function does not have a return clause, it will give None as the default output:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+print( None == 0 )
+print( None == " " )
+print( None == False )
+A = None 
+B = None
+print( A == B )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+False
+False
+False
+True
+</pre>
+    </div>
+    <p>If a no_return_function returns nothing, it will simply return a None value. None is delivered by functions that
+        do not meet a return expression in the program flow. Consider the following scenario:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def no_return_function():
+    num1 = 10
+    num2 = 20
+    addition = num1 + num2
+
+number = no_return_function()
+print( number )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+None
+</pre>
+    </div>
+    <p>This program has a function with_return that performs multiple operations and contains a return expression. As a
+        result, if we display a number, we get None, which is given by default when there is no return statement. Here's
+        an example showing this:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def with_return( num ):
+    if num % 4 == 0:
+        return False
+
+number = with_return( 67 )
+print( number )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+None
+</pre>
+    </div>
+    <h3 class="h3">Operator Keywords: and, or, not, in, is</h3>
+    <p>Several Python keywords are employed as operators to perform mathematical operations. In many other computer
+        languages, these operators are represented by characters such as &amp;, |, and!. All of these are keyword
+        operations in Python:</p>
+    <table class="alt">
+        <tr>
+            <th>Mathematical Operations</th>
+            <th>Operations in Other Languages</th>
+            <th>Python Keyword</th>
+        </tr>
+        <tr>
+            <td><strong>AND, &and;</strong></td>
+            <td>&amp;&amp;</td>
+            <td>and</td>
+        </tr>
+        <tr>
+            <td><strong>OR, &or;</strong></td>
+            <td>||</td>
+            <td>or</td>
+        </tr>
+        <tr>
+            <td><strong>NOT, &not;</strong></td>
+            <td>!</td>
+            <td>not</td>
+        </tr>
+        <tr>
+            <td><strong>CONTAINS, &isin;</strong></td>
+            <td></td>
+            <td>in</td>
+        </tr>
+        <tr>
+            <td><strong>IDENTITY</strong></td>
+            <td>===</td>
+            <td>is</td>
+        </tr>
+    </table>
+    <p>Writers created Python programming with clarity in mind. As a result, many operators in other computer languages
+        that employ characters in Python are English words called keywords.</p>
+    <p><strong>The and Keyword</strong></p>
+    <p>The Python keyword and determines whether both the left-hand side and right-hand side operands and are true or
+        false. The outcome will be True if both components are true. If one is false, the outcome will also be False:
+    </p>
+    <table class="alt">
+        <tr>
+            <th colspan="3">Truth table for and</th>
+        </tr>
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>X and Y</th>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>True</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+        </tr>
+    </table>
+    <br>
+    <div class="codeblock"><textarea name="code" class="python">
+&lt;component1&gt; and &lt;component2&gt;
+</textarea></div>
+    <p>It's worth noting that the outcomes of an and statement aren't always True or False. Due to and's peculiar
+        behavior, this is the case. Instead of processing the inputs to corresponding Boolean values, it just gives
+        &lt;component1&gt; if it is false or &lt;component2&gt; if it is true. The outputs of a and expression could be
+        utilized with a conditional if clause or provided to bool() to acquire an obvious True or False answer.</p>
+    <p><strong>The or Keyword</strong></p>
+    <p>The or keyword in Python is utilized to check if, at minimum, 1 of the inputs is true. If the first argument is
+        true, the or operation yields it; otherwise, the second argument is returned:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+&lt;component1&gt; or &lt;component2&gt;
+</textarea></div>
+    <p>Similarly to the and keyword, the or keyword does not change its inputs to corresponding Boolean values. Instead,
+        the outcomes are determined based on whether they are true or false.</p>
+    <table class="alt">
+        <tr>
+            <th colspan="3">Truth table for or</th>
+        </tr>
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>X or Y</th>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>True</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+        </tr>
+    </table>
+    <p><strong>The not Keyword</strong></p>
+    <p>The not keyword in Python is utilized to acquire a variable's contrary Boolean value:</p>
+    <p>The not keyword is employed to switch the Boolean interpretation or outcome in conditional sentences or other
+        Boolean equations. Not, unlike and, and or, determines the specific Boolean state, True or False, afterward
+        returns the inverse.</p>
+    <table class="alt">
+        <tr>
+            <th colspan="2">Truth Table for not</th>
+        </tr>
+        <tr>
+            <th>X</th>
+            <th>not X</th>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>False</td>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>True</td>
+        </tr>
+    </table>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+False and True
+False or True
+not True
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+False
+True
+False
+</pre>
+    </div>
+    <p><strong>The in Keyword</strong></p>
+    <p>The in keyword of Python is a robust confinement checker, also known as a membership operator. If you provide it
+        an element to seek and a container or series to seek into, it will give True or False, depending on if that
+        given element was located in the given container:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+&lt;an_element&gt; in &lt;a_container&gt;
+</textarea></div>
+    <p>Testing for a certain character in a string is a nice illustration of how to use the in keyword:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+container = "Javatpoint"
+print( "p" in container )
+print( "P" in container )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+True
+False
+</pre>
+    </div>
+    <p>Lists, dictionaries, tuples, strings, or any data type with the method __contains__(), or we can iterate over it
+        will work with the in keyword.</p>
+    <p><strong>The is Keyword</strong></p>
+    <p>In Python, it's used to check the identification of objects. The == operation is used to determine whether two
+        arguments are identical. It also determines whether two arguments relate to the unique object.</p>
+    <p>When the objects are the same, it gives True; otherwise, it gives False.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+print( True is True )
+print( False is True )
+print( None is not None )
+print( (9 + 5) is (7 * 2) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+True
+False
+False
+True
+</pre>
+    </div>
+    <p>True, False, and None are all the same in Python since there is just one version.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+print( [] == [] )
+print( [] is [] )
+print( {} == {} )
+print( {} is {} )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+True
+False
+True
+False
+</pre>
+    </div>
+    <p>A blank dictionary or list is the same as another blank one. However, they aren't identical entities because they
+        are stored independently in memory. This is because both the list and the dictionary are changeable.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+print( '' == '' )
+print( '' is '' )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+True
+True
+</pre>
+    </div>
+    <p>Strings and tuples, unlike lists and dictionaries, are unchangeable. As a result, two equal strings or tuples are
+        also identical. They're both referring to the unique memory region.</p>
+    <h3 class="h3">The nonlocal Keyword</h3>
+    <p>Nonlocal keyword usage is fairly analogous to global keyword usage. The keyword nonlocal is designed to indicate
+        that a variable within a function that is inside a function, i.e., a nested function is just not local to it,
+        implying that it is located in the outer function. We must define a non-local parameter with nonlocal if we ever
+        need to change its value under a nested function. Otherwise, the nested function creates a local variable using
+        that title. The example below will assist us in clarifying this.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def the_outer_function():
+    var = 10
+    def the_inner_function():
+        nonlocal var
+        var = 14
+        print("The value inside the inner function: ", var)
+    the_inner_function()
+    print("The value inside the outer function: ", var)
+
+the_outer_function()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The value inside the inner function:  14
+The value inside the outer function:  14
+</pre>
+    </div>
+    <p>the_inner_function() is placed inside the_outer_function in this case.</p>
+    <p>The the_outer_function has a variable named var. Var is not a global variable, as you may have noticed. As a
+        result, if we wish to change it inside the the_inner_function(), we should declare it using nonlocal.</p>
+    <p>As a result, the variable was effectively updated within the nested the_inner_function, as evidenced by the
+        results. The following is what happens if you don't use the nonlocal keyword:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def the_outer_function():
+    var = 10
+    def the_inner_function():
+        var = 14
+        print("Value inside the inner function: ", var)
+    the_inner_function()
+    print("Value inside the outer function: ", var)
+
+the_outer_function()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Value inside the inner function:  14
+Value inside the outer function:  10
+</pre>
+    </div>
+    <h3 class="h3">Iteration Keywords: for, while, break, continue</h3>
+    <p>The iterative process and looping are essential programming fundamentals. To generate and operate with loops,
+        Python has multiple keywords. These would be utilized and observed in almost every Python program. Knowing how
+        to use them correctly can assist you in becoming a better Python developer.</p>
+    <p><strong>The for Keyword</strong></p>
+    <p>The for loop is by far the most popular loop in Python. It's built by blending two Python keywords. They are for
+        and in, as previously explained.</p>
+    <p><strong>The while Keyword</strong></p>
+    <p>Python's while loop employs the term while and functions similarly to other computer languages' while loops. The
+        block after the while phrase will be repeated repeatedly until the condition following the while keyword is
+        false.</p>
+    <p><strong>The break Keyword</strong></p>
+    <p>If you want to quickly break out of a loop, employ the break keyword. We can use this keyword in both for and
+        while loops.</p>
+    <p><strong>The continue Keyword</strong></p>
+    <p>You can use the continue Python keyword if you wish to jump to the subsequent loop iteration. The continue
+        keyword, as in many other computer languages, enables you to quit performing the present loop iteration and go
+        on to the subsequent one.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Program to show the use of keywords for, while, break, continue
+for i in range(15):
+  
+    print( i + 4, end = " ")
+      
+    # breaking the loop when i = 9
+    if i == 9:
+        break   
+print()
+      
+# looping from 1 to 15
+i = 0 # initial condition
+while i < 15:
+      
+    # When i has value 9, loop will jump to next iteration using continue. It will not print
+    if i == 9:
+        i += 3
+        continue
+    else:
+        # when i is not equal to 9, adding 2 and printing the value
+        print( i + 2, end = " ")
+          
+    i += 1
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+4 5 6 7 8 9 10 11 12 13 
+2 3 4 5 6 7 8 9 10 14 15 16 
+</pre>
+    </div>
+    <h3 class="h3">Exception Handling Keywords - try, except, raise, finally, and assert</h3>
+    <p><strong>try:</strong> This keyword is designed to handle exceptions and is used in conjunction with the keyword
+        except to handle problems in the program. When there is some kind of error, the program inside the "try" block
+        is verified, but the code in that block is not executed.</p>
+    <p><strong>except:</strong> As previously stated, this operates in conjunction with "try" to handle exceptions.</p>
+    <p><strong>finally:</strong> Whatever the outcome of the "try" section, the "finally" box is implemented every time.
+    </p>
+    <p><strong>raise:</strong> The raise keyword could be used to specifically raise an exception.</p>
+    <p><strong>assert:</strong> This method is used to help in troubleshooting. Often used to ensure that code is
+        correct. Nothing occurs if an expression is interpreted as true; however, if it is false, "AssertionError" is
+        raised. An output with the error, followed by a comma, can also be printed.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# initializing the numbers
+var1 = 4
+var2 = 0
+  
+# Exception raised in the try section
+try:
+    d = var1 // var2 # this will raise a "divide by zero" exception.
+    print( d )
+# this section will handle exception raised in try block
+except ZeroDivisionError:
+    print("We cannot divide by zero")
+finally:
+    # If exception is raised or not, this block will be executed every time
+    print("This is inside finally block")
+# by using assert keyword we will check if var2 is 0
+print ("The value of var1 / var2 is : ")
+assert var2 != 0, "Divide by 0 error"
+print (var1 / var2)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+We cannot divide by zero
+This is inside finally block
+The value of var1 / var2 is : 
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+Input In [44], in <cell line: 17>()
+     15 # by using assert keyword we will check if var2 is 0
+     16 print ("The value of var1 / var2 is : ")
+---> 17 assert var2 != 0, "Divide by 0 error"
+     18 print (var1 / var2)
+
+AssertionError: Divide by 0 error
+</pre>
+    </div>
+    <h3 class="h3">The pass Keyword</h3>
+    <p>In Python, a null sentence is called a pass. It serves as a stand-in for something else. When it is run, nothing
+        occurs.</p>
+    <p>Let's say we possess a function that has not been coded yet however we wish to do so in the long term. If we
+        write just this in the middle of code,</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def function_pass( arguments ):
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+def function_pass( arguments ):
+                                   ^
+IndentationError: expected an indented block after function definition on line 1
+</pre>
+    </div>
+    <p>as shown, IndentationError will be thrown. Rather, we use the pass command to create a blank container.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def function_pass( arguments ):
+    pass
+</textarea></div>
+    <p>We can use the pass keyword to create an empty class too.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class passed_class:
+    pass
+</textarea></div>
+    <h3 class="h3">The return Keyword</h3>
+    <p>The return expression is used to leave a function and generate a result.</p>
+    <p>The None keyword is returned by default if we don't specifically return a value. The accompanying example
+        demonstrates this.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+def func_with_return():
+    var = 13
+    return var
+
+def func_with_no_return():
+    var = 10
+
+print( func_with_return() )
+print( func_with_no_return() )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+13
+None
+</pre>
+    </div>
+    <h3 class="h3">The del Keyword</h3>
+    <p>The del keyword is used to remove any reference to an object. In Python, every entity is an object. We can use
+        the del command to remove a variable reference.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+var1 = var2 = 5
+del var1
+print( var2 )
+print( var1 )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+5
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [42], in <cell line: 4>()
+      2 del var1
+      3 print( var2 )
+----> 4 print( var1 )
+
+NameError: name 'var1' is not defined
+</pre>
+    </div>
+    <p>We can notice that the variable var1's reference has been removed. As a result, it's no longer recognized.
+        However, var2 still exists.</p>
+    <p>Deleting entries from a collection like a list or a dictionary is also possible with del:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list_ = ['A','B','C']
+del list_[2]
+print(list_)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+['A', 'B']
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="5_python_datatypes.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="7_python_literals.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

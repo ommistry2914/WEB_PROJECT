@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item active-submenu" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Classes and Objects in Python</h1>
+    <p>Python is an object-oriented programming language that offers classes, which are a potent tool for writing
+        reusable code. To describe objects with shared characteristics and behaviours, classes are utilised. We shall
+        examine Python's ideas of classes and objects in this article.</p>
+    <h2 class="h2">Classes in Python:</h2>
+    <p>In Python, a class is a user-defined data type that contains both the data itself and the methods that may be
+        used to manipulate it. In a sense, classes serve as a template to create objects. They provide the
+        characteristics and operations that the objects will employ.</p>
+    <p>Suppose a class is a prototype of a building. A building contains all the details about the floor, rooms, doors,
+        windows, etc. we can make as many buildings as we want, based on these details. Hence, the building can be seen
+        as a class, and we can create as many objects of this class.</p>
+    <h2 class="h2">Creating Classes in Python</h2>
+    <p>In Python, a class can be created by using the keyword class, followed by the class name. The syntax to create a
+        class is given below.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class ClassName:  
+    #statement_suite   
+</textarea></div>
+    <p>In Python, we must notice that each class is associated with a documentation string which can be accessed by
+        using <strong>&lt;class-name&gt;.__doc__.</strong> A class contains a statement suite including fields,
+        constructor, function, etc. definition.</p>
+    <p><strong>Example:</strong></p>
+    <p><strong>Code:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class Person:
+    def __init__(self, name, age):
+        # This is the constructor method that is called when creating a new Person object
+        # It takes two parameters, name and age, and initializes them as attributes of the object
+        self.name = name
+        self.age = age
+    def greet(self):
+        # This is a method of the Person class that prints a greeting message
+        print("Hello, my name is " + self.name)
+</textarea></div>
+    <p>Name and age are the two properties of the Person class. Additionally, it has a function called greet that prints
+        a greeting.</p>
+    <h2 class="h2">Objects in Python:</h2>
+    <p>An object is a particular instance of a class with unique characteristics and functions. After a class has been
+        established, you may make objects based on it. By using the class constructor, you may create an object of a
+        class in Python. The object's attributes are initialised in the constructor, which is a special procedure with
+        the name __init__.</p>
+    <p><strong>Syntax:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Declare an object of a class
+object_name = Class_Name(arguments) 
+</textarea></div>
+    <p><strong>Example:</strong></p>
+    <p><strong>Code:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class Person:
+    def __init__(self, name, age):
+        self.name = name  
+        self.age = age    
+    def greet(self):
+        print("Hello, my name is " + self.name)
+
+# Create a new instance of the Person class and assign it to the variable person1
+person1 = Person("Ayan", 25)
+person1.greet()  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+"Hello, my name is Ayan"
+</pre>
+    </div>
+    <h2 class="h2">The self-parameter</h2>
+    <p>The self-parameter refers to the current instance of the class and accesses the class variables. We can use
+        anything instead of self, but it must be the first parameter of any function which belongs to the class.</p>
+    <h2 class="h2">_ _init_ _ method</h2>
+    <p>In order to make an instance of a class in Python, a specific function called __init__ is called. Although it is
+        used to set the object's attributes, it is often referred to as a constructor.</p>
+    <p>The self-argument is the only one required by the __init__ method. This argument refers to the newly generated
+        instance of the class. To initialise the values of each attribute associated with the objects, you can declare
+        extra arguments in the __init__ method.</p>
+    <h2 class="h2">Class and Instance Variables</h2>
+    <p>All instances of a class exchange class variables. They function independently of any class methods and may be
+        accessed through the use of the class name. Here's an illustration:</p>
+    <p><strong>Code:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class Person:
+    count = 0   # This is a class variable
+
+    def __init__(self, name, age):
+        self.name = name    # This is an instance variable
+        self.age = age
+        Person.count += 1   # Accessing the class variable using the name of the class
+person1 = Person("Ayan", 25)
+person2 = Person("Bobby", 30)
+print(Person.count)   
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+2
+</pre>
+    </div>
+    <p>Whereas, instance variables are specific to each instance of a class. They are specified using the self-argument
+        in the __init__ method. Here's an illustration:</p>
+    <p><strong>Code:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+class Person:
+    def __init__(self, name, age):
+        self.name = name    # This is an instance variable
+        self.age = age
+person1 = Person("Ayan", 25)
+person2 = Person("Bobby", 30)
+print(person1.name)  
+print(person2.age)   
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Ayan
+30
+</pre>
+    </div>
+    <p>Class variables are created separately from any class methods and are shared by all class copies. Every instance
+        of a class has its own instance variables, which are specified in the __init__ method utilising the
+        self-argument.</p>
+    <h2 class="h2">Conclusion:</h2>
+    <p>In conclusion, Python's classes and objects notions are strong ideas that let you write reusable programmes. You
+        may combine information and capabilities into a single entity that is able to be used to build many objects by
+        establishing a class. Using the dot notation, you may access an object's methods and properties after it has
+        been created. You can develop more logical, effective, and manageable code by comprehending Python's classes and
+        objects.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="26_oops_concept.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="28_constructor.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+  <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../../../home.html">
+              <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+              aria-labelledby="offcanvasNavbarDarkLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                      <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Programming Language
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Web Developement
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                              <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Tutorial
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                              <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Properties
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/1_background.html">Background</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/2_border.html">Border</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/3_border_radius.html">Border-radius</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/4_border_collapse.html">Border-collapse</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/5_display.html">Display</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/6_Cursor.html">Cursor</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/7_button.html">Button</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/8_float.html">Float</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/9_font.html">font</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/10_fontsize.html">fontsize</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/11_fontfamily.html">Font family</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/12_fontweight.html">font weight</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/13_colors.html">Colors</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/14_hover.html">Hover</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/15_Important.html">important</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/16_background_color.html">background-color</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/17_background_attachment.html">background-attachment</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/18_background_size.html">Background size</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/19_Margin.html">Margin</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/20_opacity.html">Opacity</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/21_Overflow.html">Overflow</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/22_padding.html">Padding</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/23_position.html">Position</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/24_width.html">width</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/25_text_shadow.html">Text Shadow</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/26_icons.html">icons</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/27_justify_content.html">Justify content</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/28_text_decoration.html">text-decoration</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/29_Lists.html">Lists</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/30_navigation_bar.html">Navigation bar</a></li>
+                              <li><a class="dropdown-item" href="../2_CSS_Properties/31_text_align.html">Text-align</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Advance
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item " href="1_animation.html">Animation</a></li>
+                              <li><a class="dropdown-item" href="2_keyframes.html">keyframes</a></li>
+                              <li><a class="dropdown-item active-submenu" href="3_pseudo_classes.html">pseudo class</a></li>
+                              <li><a class="dropdown-item" href="4_pseudo_elements.html">Pseudo elements</a></li>
+                              <li><a class="dropdown-item" href="5_radial_gradient.html">radial gradient</a></li>
+                              <li><a class="dropdown-item" href="6_gradient.html">Gradient</a></li>
+                              <li><a class="dropdown-item" href="7_z-index.html">Z-index</a></li>
+                              <li><a class="dropdown-item" href="8_flexbox.html">flexbox</a></li>
+                              <li><a class="dropdown-item" href="9_media_query.html">media query</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              CSS Design
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                              <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                              <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                              <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS pseudo-classes</h1>
+    <p>A pseudo-class can be defined as a keyword which is combined to a selector that defines the special state of the selected elements. It is added to the selector for adding an effect to the existing elements based on their states. For example, The <strong>":hover"</strong> is used for adding special effects to an element when the user moves the cursor over the element.</p>
+    <p>The names of the pseudo-class are not case-sensitive.</p>
+    <h3 class="h4">Syntax</h3>
+    <p>A pseudo-class starts with a colon <strong>(:).</strong> Let's see its syntax.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    selector: pseudo-class {
+      property: value;
+    }
+    </textarea></div>
+    <p>Although there are various CSS pseudo-classes, here we are going to discuss some of the most commonly used pseudo-classes. The widely used CSS classes are tabulated as follows:</p>
+    <table class="alt">
+    <tr>
+    <th>pseudo-class</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td><strong>:active</strong></td>
+    <td>IIt is used to add style to an active element.</td>
+    </tr>
+    <tr>
+    <td><strong>:hover</strong></td>
+    <td>IIt adds special effects to an element when the user moves the mouse pointer over the element.</td>
+    </tr>
+    <tr>
+    <td><strong>:link</strong></td>
+    <td>IIt adds style to the unvisited link.</td>
+    </tr>
+    <tr>
+    <td><strong>:visited</strong></td>
+    <td>IIt adds style to a visited link.</td>
+    </tr>
+    <tr>
+    <td><strong>:lang</strong></td>
+    <td>IIt is used to define a language to use in a specified element.</td>
+    </tr>
+    <tr>
+    <td><strong>:focus</strong></td>
+    <td>IIt selects the element which is focused by the user currently.</td>
+    </tr>
+    <tr>
+    <td><strong>:first-child</strong></td>
+    <td>It adds special effects to an element, which is the first child of another element.</td>
+    </tr>
+    </table>
+    <p>Let's discuss the above pseudo-classes, along with an example.</p>
+    <h2 class="h2">:hover pseudo-class</h2>
+    <p>This pseudo-class adds a special style to an element when the user moves the cursor over it. If you want to make it effective, it must be applied after the <strong>":link"</strong> and <strong>":visited"</strong> pseudo-classes.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt;
+       &lt;head&gt;
+          &lt;style&gt;
+             body{
+         text-align:center;
+         }
+         h1:hover{
+         color:red;
+         }
+         h2:hover{
+         color:blue;
+         }
+          &lt;/style&gt;
+       &lt;/head&gt;
+    
+       &lt;body&gt;
+          &lt;h1&gt;Hello world &lt;/h1&gt;
+          &lt;h2&gt;This is an example of :hover pseudo class&lt;/h2&gt;
+       &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses1" target="_blank">Test it Now</a></span>
+    <h2 class="h2">:active pseudo-class</h2>
+    <p>It applies when the elements are clicked or activated. It selects the activated element.</p>
+    <p>We can understand it with the example given below.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt; 
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align:center;
+        }
+        a:active{ 
+            color: yellow; 
+        } 
+        h1, h2, h3{ 
+            color:red; ; 
+        } 
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+      
+    &lt;body&gt; 
+        &lt;h1&gt;Hello World&lt;/h1&gt; 
+        &lt;h2&gt;The :active pseudo-class&lt;/h2&gt; 
+        &lt;h3&gt;Click the following link to see the effect&lt;/h3&gt;
+        &lt;a href="#"&gt;Click the link&lt;/a&gt;
+    &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses2" target="_blank">Test it Now</a></span>
+    <h2 class="h2">:visited pseudo-class</h2>
+    <p>It selects the visited links and adds special styles to them. Its possible values can be any color name in a valid format.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt; 
+    &lt;html&gt; 
+    &lt;head&gt; 
+        &lt;style&gt; 
+        body{
+        text-align:center;
+        }
+        a:visited{ 
+            color: red; 
+        } 
+    
+        &lt;/style&gt; 
+    &lt;/head&gt; 
+      
+    &lt;body&gt; 
+        &lt;h1&gt;Hello World&lt;/h1&gt; 
+        &lt;h2&gt;The :visited pseudo-class&lt;/h2&gt; 
+        &lt;h3&gt;Click the following link to see the effect&lt;/h3&gt;
+        &lt;a href="#"&gt;Click the link&lt;/a&gt;
+    &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses3" target="_blank">Test it Now</a></span>
+    <h2 class="h2">:lang pseudo-class</h2>
+    <p>It is helpful in documents that require multiple languages. It allows us to define special rules for different languages.</p>
+    <h3 class="h4">Example</h3>
+    <p>In this example, we specify <strong>p:lang(fr)</strong> which selects the elements having attribute <strong>lang="fr"</strong>.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE HTML&gt;
+     &lt;html&gt;
+      &lt;head&gt;
+        &lt;style&gt;
+        body{
+        text-align:center;
+        }
+           p:lang(fr)
+        {
+            font-family:Verdana;
+            color:blue;
+            
+        }
+       &lt;/style&gt;
+     &lt;/head&gt;
+    &lt;body&gt;
+      
+      &lt;p&gt;Without :lang pseudo class&lt;/p&gt;
+      &lt;p lang="fr"&gt;With :lang pseudo class with the value fr&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt; 
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses4" target="_blank">Test it Now</a></span>
+    <h2 class="h2">:focus pseudo-class</h2>
+    <p>It selects the elements that are currently focused on by the user. It is generally used in input elements of the forms and triggers when the user clicks on it.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE HTML&gt;
+    &lt;html&gt;
+      &lt;style&gt;
+      form{
+      text-align:center;
+      }
+      input:focus{
+             border:5px solid lightblue;
+             box-shadow:10px 10px 10px black;
+             color: blue;
+             width:300px;
+             }
+       &lt;/style&gt;
+     &lt;body&gt;
+      &lt;form&gt;
+        &lt;h1&gt;Name: &lt;input type="text" value="Enter your name"&gt;&lt;/h1&gt;
+       &lt;/form&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses5" target="_blank">Test it Now</a></span>
+    <h2 class="h2">:first-child pseudo-class</h2>
+    <p>It matches a particular element, which is the first child of another element and adds a special effect to the corresponding element.</p>
+    <p>Note: We have to declare a &lt;!DOCTYPE&gt; at the top of the document to make ":first-child" pseudo-class to work in IE8 and its earlier versions.</p>
+    <p>The following illustration explains it more clearly.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE HTML&gt;
+    &lt;html&gt;
+       &lt;head&gt;
+          &lt;style&gt;
+              h1:first-child {
+                text-indent: 200px;
+        color:blue;
+             }
+          &lt;/style&gt;
+       &lt;/head&gt;
+    
+       &lt;body&gt;
+       
+          &lt;div&gt;
+             &lt;h1&gt;It is the first heading in div. It will be indented, and its color will be blue.&lt;/h1&gt;
+             &lt;h1&gt;It is the Second heading in div, which will not be affected.&lt;/h1&gt;
+          &lt;/div&gt;
+       &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses6" target="_blank">Test it Now</a></span>
+    <h2 class="h2">The simple tooltip hover</h2>
+    <p>A tooltip specifies extra information about something when the user moves the cursor over the element. Let's create a tooltip by using the <strong>":hover"</strong> pseudo-class.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    body{
+    text-align:center;
+    }
+    h2{
+      display: none;
+      background-color: red;
+      color:white;
+      padding: 20px;
+    }
+    div{
+    font-size:40px;
+    }
+    div:hover h2 {
+      display: block;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Move your mouse to the below text to see the effect&lt;/h1&gt; 
+    &lt;div&gt;Hello World
+      &lt;h2&gt;Welcome to the javaTpoint&lt;/h2&gt;
+    &lt;/div&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses7" target="_blank">Test it Now</a></span>
+    <h2 class="h2">CSS classes and pseudo-classes</h2>
+    <p>The classes in CSS can be combined with <strong>pseudo-classes.</strong> We can write it as-</p>
+    <h3 class="h4">Syntax</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    selector.class: pseudo-class {
+      property: value;
+    }
+    </textarea></div>
+    <p>We can understand it with the following example.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    body{
+    text-align:center;
+    }
+    div.hello:hover {
+      color: red;
+      font-size:40px;
+    } 
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;CSS Classes and pseudo-classes&lt;/h1&gt;
+    &lt;h2&gt;Move your cursor to the below text&lt;/h2&gt;
+    &lt;div class="hello"&gt;Hello World&lt;/p&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csspseudoclasses8" target="_blank">Test it Now</a></span>
+    <br>
+    <hr/>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+      <a href="2_keyframes.html"><button class="btn btn-danger" type="button">Previous</button></a>
+      <a href="4_pseudo_elements.html"><button class="btn btn-success" type="button">Next</button></a>
+      </div>
+      <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

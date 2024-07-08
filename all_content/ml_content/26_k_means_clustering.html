@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Means Clustering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item active-submenu" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">K-Means Clustering Algorithm</h1>
+    <p>K-Means Clustering is an unsupervised learning algorithm that is used to solve the clustering problems in machine
+        learning or data science. In this topic, we will learn what is K-means clustering algorithm, how the algorithm
+        works, along with the Python implementation of k-means clustering.</p>
+    <h2 class="h2">What is K-Means Algorithm?</h2>
+    <p>K-Means Clustering is an <a href="https://www.javatpoint.com/unsupervised-machine-learning">Unsupervised Learning
+            algorithm</a>, which groups the unlabeled dataset into different clusters. Here K defines the number of
+        pre-defined clusters that need to be created in the process, as if K=2, there will be two clusters, and for K=3,
+        there will be three clusters, and so on.</p>
+    <blockquote>It is an iterative algorithm that divides the unlabeled dataset into k different clusters in such a way
+        that each dataset belongs only one group that has similar properties.</blockquote>
+    <p>It allows us to cluster the data into different groups and a convenient way to discover the categories of groups
+        in the unlabeled dataset on its own without the need for any training.</p>
+    <p>It is a centroid-based algorithm, where each cluster is associated with a centroid. The main aim of this
+        algorithm is to minimize the sum of distances between the data point and their corresponding clusters.</p>
+    <p>The algorithm takes the unlabeled dataset as input, divides the dataset into k-number of clusters, and repeats
+        the process until it does not find the best clusters. The value of k should be predetermined in this algorithm.
+    </p>
+    <p>The k-means <a href="clustering-in-machine-learning">clustering</a> algorithm mainly performs two tasks:</p>
+    <ul class="points">
+        <li>Determines the best value for K center points or centroids by an iterative process.</li>
+        <li>Assigns each data point to its closest k-center. Those data points which are near to the particular
+            k-center, create a cluster.</li>
+    </ul>
+    <p>Hence each cluster has datapoints with some commonalities, and it is away from other clusters.</p>
+    <p>The below diagram explains the working of the K-means Clustering Algorithm:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning.png"
+        alt="K-Means Clustering Algorithm" />
+    <h2 class="h2">How does the K-Means Algorithm Work?</h2>
+    <p>The working of the K-Means algorithm is explained in the below steps:</p>
+    <p><strong>Step-1:</strong> Select the number K to decide the number of clusters.</p>
+    <p><strong>Step-2:</strong> Select random K points or centroids. (It can be other from the input dataset).</p>
+    <p><strong>Step-3:</strong> Assign each data point to their closest centroid, which will form the predefined K
+        clusters.</p>
+    <p><strong>Step-4:</strong> Calculate the variance and place a new centroid of each cluster.</p>
+    <p><strong>Step-5:</strong> Repeat the third steps, which means reassign each datapoint to the new closest centroid
+        of each cluster.</p>
+    <p><strong>Step-6:</strong> If any reassignment occurs, then go to step-4 else go to FINISH.</p>
+    <p><strong>Step-7</strong>: The model is ready.</p>
+    <p>Let's understand the above steps by considering the visual plots:</p>
+    <p>Suppose we have two variables M1 and M2. The x-y axis scatter plot of these two variables is given below:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning2.png"
+        alt="K-Means Clustering Algorithm" />
+    <ul class="points">
+        <li>Let's take number k of clusters, i.e., K=2, to identify the dataset and to put them into different clusters.
+            It means here we will try to group these datasets into two different clusters.</li>
+        <li>We need to choose some random k points or centroid to form the cluster. These points can be either the
+            points from the dataset or any other point. So, here we are selecting the below two points as k points,
+            which are not the part of our dataset. Consider the below image:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning3.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+        <li>Now we will assign each data point of the scatter plot to its closest K-point or centroid. We will compute
+            it by applying some mathematics that we have studied to calculate the distance between two points. So, we
+            will draw a median between both the centroids. Consider the below image:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning4.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+    </ul>
+    <p>From the above image, it is clear that points left side of the line is near to the K1 or blue centroid, and
+        points to the right of the line are close to the yellow centroid. Let's color them as blue and yellow for clear
+        visualization.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning5.png"
+        alt="K-Means Clustering Algorithm" />
+    <ul class="points">
+        <li>As we need to find the closest cluster, so we will repeat the process by choosing <strong>a new
+                centroid</strong>. To choose the new centroids, we will compute the center of gravity of these
+            centroids, and will find new centroids as below:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning6.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+        <li>Next, we will reassign each datapoint to the new centroid. For this, we will repeat the same process of
+            finding a median line. The median will be like below image:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning7.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+    </ul>
+    <p>From the above image, we can see, one yellow point is on the left side of the line, and two blue points are right
+        to the line. So, these three points will be assigned to new centroids. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning8.png"
+        alt="K-Means Clustering Algorithm" />
+    <p>As reassignment has taken place, so we will again go to the step-4, which is finding new centroids or K-points.
+    </p>
+    <ul class="points">
+        <li>We will repeat the process by finding the center of gravity of centroids, so the new centroids will be as
+            shown in the below image:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning9.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+        <li>As we got the new centroids so again will draw the median line and reassign the data points. So, the image
+            will be:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning10.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+        <li>We can see in the above image; there are no dissimilar data points on either side of the line, which means
+            our model is formed. Consider the below image:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning11.png"
+                alt="K-Means Clustering Algorithm" />
+        </li>
+    </ul>
+    <p>As our model is ready, so we can now remove the assumed centroids, and the two final clusters will be as shown in
+        the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning12.png"
+        alt="K-Means Clustering Algorithm" />
+    <h2 class="h2">How to choose the value of "K number of clusters" in K-means Clustering?</h2>
+    <p>The performance of the K-means clustering algorithm depends upon highly efficient clusters that it forms. But
+        choosing the optimal number of clusters is a big task. There are some different ways to find the optimal number
+        of clusters, but here we are discussing the most appropriate method to find the number of clusters or value of
+        K. The method is given below:</p>
+    <h3 class="h3">Elbow Method</h3>
+    <p>The Elbow method is one of the most popular ways to find the optimal number of clusters. This method uses the
+        concept of WCSS value. <strong>WCSS</strong> stands for <strong>Within Cluster Sum of Squares</strong>, which
+        defines the total variations within a cluster. The formula to calculate the value of WCSS (for 3 clusters) is
+        given below:</p>
+    <div class="formula">
+        WCSS= &sum;<sub>P<sub>i in Cluster1</sub></sub> distance(P<sub>i</sub> C<sub>1</sub>)<sup>2</sup>
+        +&sum;<sub>P<sub>i in Cluster2</sub></sub>distance(P<sub>i</sub> C<sub>2</sub>)<sup>2</sup>+&sum;<sub>P<sub>i in
+                CLuster3</sub></sub> distance(P<sub>i</sub> C<sub>3</sub>)<sup>2</sup>
+    </div>
+    <p>In the above formula of WCSS,</p>
+    <p>&sum;<sub>P<sub>i in Cluster1</sub></sub> distance(P<sub>i</sub> C<sub>1</sub>)<sup>2</sup>: It is the sum of the
+        square of the distances between each data point and its centroid within a cluster1 and the same for the other
+        two terms.</p>
+    <p>To measure the distance between data points and centroid, we can use any method such as Euclidean distance or
+        Manhattan distance.</p>
+    <p>To find the optimal value of clusters, the elbow method follows the below steps:</p>
+    <ul class="points">
+        <li>It executes the K-means clustering on a given dataset for different K values (ranges from 1-10).</li>
+        <li>For each value of K, calculates the WCSS value.</li>
+        <li>Plots a curve between calculated WCSS values and the number of clusters K.</li>
+        <li>The sharp point of bend or a point of the plot looks like an arm, then that point is considered as the best
+            value of K.</li>
+    </ul>
+    <p>Since the graph shows the sharp bend, which looks like an elbow, hence it is known as the elbow method. The graph
+        for the elbow method looks like the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning13.png"
+        alt="K-Means Clustering Algorithm" />
+    <h4 class="n">Note: We can choose the number of clusters equal to the given data points. If we choose the number of
+        clusters equal to the data points, then the value of WCSS becomes zero, and that will be the endpoint of the
+        plot.</h4>
+    <h2 class="h2">Python Implementation of K-means Clustering Algorithm</h2>
+    <p>In the above section, we have discussed the K-means algorithm, now let's see how it can be implemented using <a
+            href="https://www.javatpoint.com/python-tutorial">Python</a>.</p>
+    <p>Before implementation, let's understand what type of problem we will solve here. So, we have a dataset of
+        <strong>Mall_Customers</strong>, which is the data of customers who visit the mall and spend there.</p>
+    <p>In the given dataset, we have <strong>Customer_Id, Gender, Age, Annual Income ($), and Spending Score</strong>
+        (which is the calculated value of how much a customer has spent in the mall, the more the value, the more he has
+        spent). From this dataset, we need to calculate some patterns, as it is an unsupervised method, so we don't know
+        what to calculate exactly.</p>
+    <p>The steps to be followed for the implementation are given below:</p>
+    <ul class="points">
+        <li><strong>Data Pre-processing</strong> </li>
+        <li><strong>Finding the optimal number of clusters using the elbow method</strong></li>
+        <li><strong>Training the K-means algorithm on the training dataset</strong></li>
+        <li><strong>Visualizing the clusters</strong></li>
+    </ul>
+    <h3 class="h3">Step-1: Data pre-processing Step</h3>
+    <p>The first step will be the data pre-processing, as we did in our earlier topics of Regression and Classification.
+        But for the clustering problem, it will be different from other models. Let's discuss it:</p>
+    <ul class="points">
+        <li><strong>Importing Libraries</strong><br>
+            As we did in previous topics, firstly, we will import the libraries for our model, which is part of data
+            pre-processing. The code is given below:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+# importing libraries  
+import numpy as nm  
+import matplotlib.pyplot as mtp  
+import pandas as pd  
+</textarea></div>
+    <p>In the above code, the <strong><a href="https://www.javatpoint.com/numpy-tutorial">numpy</a></strong> we have
+        imported for the performing mathematics calculation, <strong>matplotlib</strong> is for plotting the graph, and
+        <strong>pandas</strong> are for managing the dataset.</p>
+    <ul class="points">
+        <li><strong>Importing the Dataset:</strong><br>
+            Next, we will import the dataset that we need to use. So here, we are using the Mall_Customer_data.csv
+            dataset. It can be imported using the below code:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+# Importing the dataset
+dataset = pd.read_csv('Mall_Customers_data.csv')
+</textarea></div>
+    <p>By executing the above lines of code, we will get our dataset in the Spyder IDE. The dataset looks like the below
+        image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning15.png"
+        alt="K-Means Clustering Algorithm" />
+    <p>From the above dataset, we need to find some patterns in it.</p>
+    <ul class="points">
+        <li><strong>Extracting Independent Variables</strong></li>
+    </ul>
+    <p>Here we don't need any dependent variable for data pre-processing step as it is a clustering problem, and we have
+        no idea about what to determine. So we will just add a line of code for the matrix of features.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+x = dataset.iloc[:, [3, 4]].values
+</textarea></div>
+    <p>As we can see, we are extracting only 3<sup>rd</sup> and 4<sup>th</sup> feature. It is because we need a 2d plot
+        to visualize the model, and some features are not required, such as customer_id.</p>
+    <h3 class="h3">Step-2: Finding the optimal number of clusters using the elbow method</h3>
+    <p>In the second step, we will try to find the optimal number of clusters for our clustering problem. So, as
+        discussed above, here we are going to use the elbow method for this purpose.</p>
+    <p>As we know, the elbow method uses the WCSS concept to draw the plot by plotting WCSS values on the Y-axis and the
+        number of clusters on the X-axis. So we are going to calculate the value for WCSS for different k values ranging
+        from 1 to 10. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#finding optimal number of clusters using the elbow method
+from sklearn.cluster import KMeans
+wcss_list= []  #Initializing the list for the values of WCSS
+
+#Using for loop for iterations from 1 to 10.
+for i in range(1, 11):
+    kmeans = KMeans(n_clusters=i, init='k-means++', random_state= 42)
+    kmeans.fit(x)
+    wcss_list.append(kmeans.inertia_)
+mtp.plot(range(1, 11), wcss_list)
+mtp.title('The Elobw Method Graph')
+mtp.xlabel('Number of clusters(k)')
+mtp.ylabel('wcss_list')
+mtp.show()
+</textarea></div>
+    <p>As we can see in the above code, we have used <strong>the KMeans</strong> class of sklearn. cluster library to
+        form the clusters.</p>
+    <p>Next, we have created the <strong>wcss_list</strong> variable to initialize an empty list, which is used to
+        contain the value of wcss computed for different values of k ranging from 1 to 10.</p>
+    <p>After that, we have initialized the for loop for the iteration on a different value of k ranging from 1 to 10;
+        since for loop in Python, exclude the outbound limit, so it is taken as 11 to include 10<sup>th</sup> value.</p>
+    <p>The rest part of the code is similar as we did in earlier topics, as we have fitted the model on a matrix of
+        features and then plotted the graph between the number of clusters and WCSS.</p>
+    <p><strong>Output:</strong> After executing the above code, we will get the below output:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning16.png"
+        alt="K-Means Clustering Algorithm" />
+    <p>From the above plot, we can see the elbow point is at <strong>5. So the number of clusters here will be
+            5.</strong> </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning17.png"
+        alt="K-Means Clustering Algorithm" />
+    <h3 class="h3">Step- 3: Training the K-means algorithm on the training dataset</h3>
+    <p>As we have got the number of clusters, so we can now train the model on the dataset.</p>
+    <p>To train the model, we will use the same two lines of code as we have used in the above section, but here instead
+        of using i, we will use 5, as we know there are 5 clusters that need to be formed. The code is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#training the K-means model on a dataset
+kmeans = KMeans(n_clusters=5, init='k-means++', random_state= 42)
+y_predict= kmeans.fit_predict(x)
+</textarea></div>
+    <p>The first line is the same as above for creating the object of KMeans class.</p>
+    <p>In the second line of code, we have created the dependent variable <strong>y_predict</strong> to train the model.
+    </p>
+    <p>By executing the above lines of code, we will get the y_predict variable. We can check it under <strong>the
+            variable explorer</strong> option in the Spyder IDE. We can now compare the values of y_predict with our
+        original dataset. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning18.png"
+        alt="K-Means Clustering Algorithm" />
+    <p>From the above image, we can now relate that the CustomerID 1 belongs to a cluster</p>
+    <p>3(as index starts from 0, hence 2 will be considered as 3), and 2 belongs to cluster 4, and so on.</p>
+    <h3 class="h3">Step-4: Visualizing the Clusters</h3>
+    <p>The last step is to visualize the clusters. As we have 5 clusters for our model, so we will visualize each
+        cluster one by one.</p>
+    <p>To visualize the clusters will use scatter plot using mtp.scatter() function of matplotlib.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#visulaizing the clusters
+mtp.scatter(x[y_predict == 0, 0], x[y_predict == 0, 1], s = 100, c = 'blue', label = 'Cluster 1') #for first cluster
+mtp.scatter(x[y_predict == 1, 0], x[y_predict == 1, 1], s = 100, c = 'green', label = 'Cluster 2') #for second cluster
+mtp.scatter(x[y_predict== 2, 0], x[y_predict == 2, 1], s = 100, c = 'red', label = 'Cluster 3') #for third cluster
+mtp.scatter(x[y_predict == 3, 0], x[y_predict == 3, 1], s = 100, c = 'cyan', label = 'Cluster 4') #for fourth cluster
+mtp.scatter(x[y_predict == 4, 0], x[y_predict == 4, 1], s = 100, c = 'magenta', label = 'Cluster 5') #for fifth cluster
+mtp.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroid') 
+mtp.title('Clusters of customers')
+mtp.xlabel('Annual Income (k$)')
+mtp.ylabel('Spending Score (1-100)')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p>In above lines of code, we have written code for each clusters, ranging from 1 to 5. The first coordinate of the
+        mtp.scatter, i.e., x[y_predict == 0, 0] containing the x value for the showing the matrix of features values,
+        and the y_predict is ranging from 0 to 1.</p>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/k-means-clustering-algorithm-in-machine-learning19.png"
+        alt="K-Means Clustering Algorithm" />
+    <p>The output image is clearly showing the five different clusters with different colors. The clusters are formed
+        between two parameters of the dataset; Annual income of customer and Spending. We can change the colors and
+        labels as per the requirement or choice. We can also observe some points from the above patterns, which are
+        given below:</p>
+    <ul class="points">
+        <li><strong>Cluster1</strong> shows the customers with average salary and average spending so we can categorize
+            these customers as</li>
+        <li>Cluster2 shows the customer has a high income but low spending, so we can categorize them as
+            <strong>careful</strong>.</li>
+        <li>Cluster3 shows the low income and also low spending so they can be categorized as sensible.</li>
+        <li>Cluster4 shows the customers with low income with very high spending so they can be categorized as
+            <strong>careless</strong>.</li>
+        <li>Cluster5 shows the customers with high income and high spending so they can be categorized as target, and
+            these customers can be the most profitable customers for the mall owner.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="25_clustering.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="27_confusion_matrix.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

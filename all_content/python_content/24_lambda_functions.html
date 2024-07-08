@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Functions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item active-submenu" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Lambda Functions</h1>
+    <p>This tutorial will study anonymous, commonly called lambda functions in Python. A lambda function can take n
+        number of arguments at a time. But it returns only one argument at a time. We will understand what they are, how
+        to execute them, and their syntax.</p>
+    <h2 class="h2">What are Lambda Functions in Python?</h2>
+    <p>Lambda Functions in Python are anonymous functions, implying they don't have a name. The def keyword is needed to
+        create a typical function in Python, as we already know. We can also use the lambda keyword in Python to define
+        an unnamed function.</p>
+    <h3 class="h3">Syntax</h3>
+    <p>The syntax of the Lambda Function is given below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+lambda arguments: expression     
+</textarea></div>
+    <p>This function accepts any count of inputs but only evaluates and returns one expression. That means it takes many
+        inputs but returns only one output.</p>
+    <p>Lambda functions can be used whenever function arguments are necessary. In addition to other forms of
+        formulations in functions, it has a variety of applications in certain coding domains. It's important to
+        remember that according to syntax, lambda functions are limited to a single statement.</p>
+    <h3 class="h3">Example</h3>
+    <p>Here we share some examples of lambda functions in Python for learning purposes. <strong>Program Code 1:</strong>
+    </p>
+    <p>Now we gave an example of a lambda function that adds 4 to the input number is shown below.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to demonstrate how we can use a lambda function for adding 4 numbers
+add = lambda num: num + 4  
+print( add(6) )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in Python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>10
+</pre>
+    </div>
+    <p>Here we explain the above code. The lambda function is "lambda num: num+4" in the given programme. The parameter
+        is num, and the computed and returned equation is num * 4.</p>
+    <p>There is no label for this function. It generates a function object associated with the "add" identifier. We can
+        now refer to it as a standard function. The lambda statement, "lambda num: num+4", is written using the add
+        function, and the code is given below: <strong>Program Code 2:</strong></p>
+    <p>Now we gave an example of a lambda function that adds 4 to the input number using the add function. The code is
+        shown below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+def add( num ):
+   return num + 4
+print( add(6) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in Python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>10
+</pre>
+    </div>
+    <p><strong>Program Code 3:</strong></p>
+    <p>Now we gave an example of a lambda function that multiply 2 numbers and return one result. The code is shown
+        below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = lambda x, y : (x * y)
+print(a(4, 5))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+20
+</pre>
+    </div>
+    <p><strong>Program Code 4:</strong></p>
+    <p>Now we gave another example of a lambda function that adds 2 numbers and return one result. The code is shown
+        below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = lambda x, y, z : (x + y + z)
+print(a(4, 5, 5))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+14
+</pre>
+    </div>
+    <h2 class="h2">What's the Distinction Between Lambda and Def Functions?</h2>
+    <p>Let's glance at this instance to see how a conventional def defined function differs from a function defined
+        using the lambda keyword. This program calculates the reciprocal of a given number:</p>
+    <p><strong>Program Code:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python code to show the reciprocal of the given number to highlight the difference between def() and lambda().
+def reciprocal( num ):
+    return 1 / num
+ 
+lambda_reciprocal = lambda num: 1 / num
+ 
+# using the function defined by def keyword
+print( "Def keyword: ", reciprocal(6) )
+ 
+# using the function defined by lambda keyword
+print( "Lambda keyword: ", lambda_reciprocal(6) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>Def keyword:  0.16666666666666666
+Lambda keyword:  0.16666666666666666
+</pre>
+    </div>
+    <p><strong>Explanation:</strong></p>
+    <p>The reciprocal() and lambda_reciprocal() functions act similarly and as expected in the preceding scenario. Let's
+        take a closer look at the sample above:</p>
+    <p>Both of these yield the reciprocal of a given number without employing Lambda. However, we wanted to declare a
+        function with the name reciprocal and send a number to it while executing def. We were also required to use the
+        return keyword to provide the output from wherever the function was invoked after being executed.</p>
+    <p>Using Lambda: Instead of a "return" statement, Lambda definitions always include a statement given at output. The
+        beauty of lambda functions is their convenience. We need not allocate a lambda expression to a variable because
+        we can put it at any place a function is requested.</p>
+    <h2 class="h2">Using Lambda Function with filter()</h2>
+    <p>The filter() method accepts two arguments in Python: a function and an iterable such as a list.</p>
+    <p>The function is called for every item of the list, and a new iterable or list is returned that holds just those
+        elements that returned True when supplied to the function.</p>
+    <p>Here's a simple illustration of using the filter() method to return only odd numbers from a list.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>Here we give an example of lambda function with filter() in Python. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# This code used to filter the odd numbers from the given list
+list_ = [35, 12, 69, 55, 75, 14, 73]    
+odd_list = list(filter( lambda num: (num % 2 != 0) , list_ ))    
+print('The list of odd number is:',odd_list)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+The list of odd number is: [35, 69, 55, 75, 73]
+</pre>
+    </div>
+    <h2 class="h2">Using Lambda Function with map()</h2>
+    <p>A method and a list are passed to Python's map() function.</p>
+    <p>The function is executed for all of the elements within the list, and a new list is produced with elements
+        generated by the given function for every item.</p>
+    <p>The map() method is used to square all the entries in a list in this example.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>Here we give an example of lambda function with map() in Python. Then code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Code to calculate the square of each number of a list using the map() function    
+numbers_list = [2, 4, 5, 1, 3, 7, 8, 9, 10]    
+squared_list = list(map( lambda num: num ** 2 , numbers_list ))    
+print( 'Square of each number in the given list:' ,squared_list )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+Square of each number in the given list: [4, 16, 25, 1, 9, 49, 64, 81, 100]
+</pre>
+    </div>
+    <h2 class="h2">Using Lambda Function with List Comprehension</h2>
+    <p>In this instance, we will apply the lambda function combined with list comprehension and the lambda keyword with
+        a for loop. Using the Lambda Function with List Comprehension, we can print the square value from 0 to 10. For
+        printing the square value from 0 to 10, we create a loop range from 0 to 11.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>Here we give an example of lambda function with List Comprehension in Python. Then code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Code to calculate square of each number of lists using list comprehension  
+squares = [lambda num = num: num ** 2 for num in range(0, 11)]     
+for square in squares:  
+       print('The square value of all numbers from 0 to 10:',square(), end = " ")  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+The square value of all numbers from 0 to 10: 0 1 4 9 16 25 36 49 64 81 100 
+</pre>
+    </div>
+    <h2 class="h2">Using Lambda Function with if-else</h2>
+    <p>We will use the lambda function with the if-else block. In the program code below, we check which number is
+        greater than the given two numbers using the if-else block.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>Here we give an example of a lambda function with an if-else block in Python. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to use lambda function with if-else  
+Minimum = lambda x, y : x if (x < y) else y     
+print('The greater number is:', Minimum( 35, 74 ))  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+The greater number is: 35
+</pre>
+    </div>
+    <h2 class="h2">Using Lambda with Multiple Statements</h2>
+    <p>Multiple expressions are not allowed in lambda functions, but we can construct 2 lambda functions or more and
+        afterward call the second lambda expression as an argument to the first. We are sorting every sub-list from the
+        given list in the below program. Let us use lambda to discover the third largest number from every sub-list.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>Here we give an example of lambda function with Multiple Statements in Python. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to print the third largest number of the given list using the lambda function    
+
+my_List = [ [3, 5, 8, 6], [23, 54, 12, 87], [1, 2, 4, 12, 5] ]    
+# sorting every sublist of the above list  
+sort_List = lambda num : ( sorted(n) for n in num )    
+# Getting the third largest number of the sublist  
+third_Largest = lambda num, func : [ l[ len(l) - 2] for l in func(num)]  
+result = third_Largest( my_List, sort_List)    
+print('The third largest number from every sub list is:', result )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code, in python and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+The third largest number from every sub list is: [6, 54, 5]
+</pre>
+    </div>
+    <h2 class="h2">Conclusion:</h2>
+    <p>So, in this, we discuss the Lambda function in Python. A lambda function can take n number of arguments at a
+        time. But it returns only one argument at a time. Here we discuss some lambda functions with the program code in
+        Python, and we also share some examples of them. Here we discuss the Lambda function with the list, map, filter,
+        multiple statements, if-else, and some basic programs of lambda function in Python.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="23_functions.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="25_exception_handling.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

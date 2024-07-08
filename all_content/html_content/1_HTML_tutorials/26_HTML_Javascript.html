@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);"">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_Intro_to_html.html">Intro to html</a></li>
+                                <li><a class="dropdown-item" href="2_What_is_HTML.html">What is html </a></li>
+                                <li><a class="dropdown-item" href="3_Html_text_editors.html">text editors</a></li>
+                                <li><a class="dropdown-item" href="4_HTML_Building_blocks.html">Building blocks</a></li>
+                                <li><a class="dropdown-item" href="5_HTML_tags.html">HTML Tags</a></li>
+                                <li><a class="dropdown-item" href="6_HTML_Attributes.html">HTML Attributes<li>
+                                <li><a class="dropdown-item" href="7_HTML_Elements.html">HTML Elements</a></li>
+                                <li><a class="dropdown-item" href="8_HTML_Formatting.html">Formatting in html</a></li>
+                                <li><a class="dropdown-item" href="9_HTML_Heading.html"> heading in html</a></li>
+                                <li><a class="dropdown-item" href="10_HTML_Paragraph.html">paragraph in html</a></li>
+                                <li><a class="dropdown-item" href="11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                                <li><a class="dropdown-item" href="12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                                <li><a class="dropdown-item" href="13_HTML_Image.html">Image tag</a></li>
+                                <li><a class="dropdown-item" href="14_HTML_Table.html">Table tag</a></li>
+                                <li><a class="dropdown-item" href="15_HTML_Lists.html">Lists tag</a></li>
+                                <li><a class="dropdown-item" href="16_HTML_Ordered_list.html">Ordered list</a></li>
+                                <li><a class="dropdown-item" href="17_HTML_Unordered_list.html">Unordered list</a></li>
+                                <li><a class="dropdown-item" href="18_HTML_Description_list.html">Description list</a></li>
+                                <li><a class="dropdown-item" href="19_HTML_form.html">form in html</a></li>
+                                <li><a class="dropdown-item" href="20_HTML_Form_Input.html">Form input</a></li>
+                                <li><a class="dropdown-item" href="21_HTML_Form_Attribute.html">Form attribute</a></li>
+                                <li><a class="dropdown-item" href="22_HTML_with_CSS.html">Html with CSS</a></li>
+                                <li><a class="dropdown-item" href="23_HTML_Classes.html">HTML classes</a></li>
+                                <li><a class="dropdown-item" href="24_HTML_ID.html">HTML ID</a></li>
+                                <li><a class="dropdown-item" href="25_HTML_Iframes.html">Html Iframes</a></li>
+                                <li><a class="dropdown-item active-submenu" href="26_HTML_Javascript.html">HTML JavaScript</a></li>
+                                <li><a class="dropdown-item" href="27_HTML_Comments.html">HTML comments</a></li>
+                                <li><a class="dropdown-item" href="28_HTML_Filepath.html">Filepath</a></li>
+                                <li><a class="dropdown-item" href="29_HTML_head.html">HTML head</a></li>
+                                <li><a class="dropdown-item" href="30_HTML_layout.html">HTML layout</a></li>
+                                <li><a class="dropdown-item" href="32_HTML_Responsive.html">HTML Responsive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Attributes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tags
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_HTML_tags/1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/3_anchor_tag.html">Anchor tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/4_abbr_tag.html">Abbr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/5_acronym_tag.html">Acronym tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/6_address_tag.html">Address tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/7_applet_tag.html">Applet tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/8_area_tag.html">Area tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/9_article_tag.html">Article tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/10_aside_tag.html">Aside tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/11_audio_tag.html">Audio tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/12_b_tag.html">B tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/13_base_tag.html">Base tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/14_basefont_tag.html">Basefont tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/15_bdi_tag.html">Bdi tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/16_bdo_tag.html">Bdo tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/17_big_tag.html">Big tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/18_blockquote_tag.html">Blockquote</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/19_body_tag.html">Body tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/20_br_tag.html">Br tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/21_button_tag.html">Button tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/22_canvas_tag.html">canvas tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/23_caption_tag.html">caption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/24_center_tag.html">center tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/25_cite_tag.html">cite tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/26_code_tag.html">code tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/27_col_tag.html">col tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/28_colgroup_tag.html">colgroup tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/29_data_tag.html">data tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/30_datalist_tag.html">datalist tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/31_Description_list.html">Description tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/32_del_tag.html">del tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/33_details_tag.html">details tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/34_dfn_tag.html">dfn tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/35_Dialog_tag.html">Dialog tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/36_dir_tag.html">dir tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/37_div_tag.html">div tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/38_em_tag.html">em tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/39_embed_tag.html">embed tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/40_field_set_tag.html">field set tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/41_figcaption_tag.html">figcaption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/42_figure_tag.html">figure tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/43_font_tag.html">font tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/44_footer_tag.html">footer tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/45_form_tag.html">form tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/46_frame_tag.html">frame tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/47_frameset_tag.html">frameset tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/48_header_tag.html">header tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/49_hr_tag.html">hr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/50_i_tag.html">i tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/51_input_tag.html">input tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/52_kbd_tag.html">kbd tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/53_label_tag.html">label tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/54_legend_tag.html">legend tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/55_lists_tag.html">lists tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/56_link_tag.html">link tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/57_main_tag.html">main tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/58_mark_tag.html">mark tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/59_marquee_tag.html">marquee tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/60_menu_tag.html">menu tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/61_meta_tag.html">meta tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/62_Meter_tag.html">Meter tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/63_nav_tag.html">nav tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/64_object_tag.html">Object tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/65_Optgrp_tag.html">optgrp tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/66_option_tag.html">option tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/67_progress.html">progress tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/68_Colour_name.html">Color name</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML JavaScript</h1>
+    <p>A Script is a small program which is used with HTML to make web pages more attractive, dynamic and interactive, such as an alert popup window on mouse click. Currently, the most popular scripting language is JavaScript used for websites.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;h1&gt;JavaScript Date and Time example&lt;/h1&gt;
+    &lt;button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()"&gt;
+    Click me to display Date and Time.&lt;/button&gt;
+    &lt;p id="demo"&gt;&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript" target="_blank">Test it Now</a></span>
+    
+    <hr/>
+    <h2 class="h2">HTML &lt;script&gt; Tag </h2>
+    <p>The HTML &lt;script&gt; tag is used to specify a client-side script. It may be an internal or external JavaScript which contains scripting statements, hence we can place &lt;script&gt; tag within &lt;body&gt; or &lt;head&gt; section.</p>
+    <p>It is mainly used to manipulate images, form validation and change content dynamically. JavaScript uses document.getElementById() method to select an HTML element.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;h2&gt;Use JavaScript to Change Text&lt;/h2&gt;
+    &lt;p id="demo"&gt;&lt;/p&gt;
+    &lt;script&gt;
+    document.getElementById("demo").innerHTML = "Hello JavaTpoint";
+    &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript2" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h2">HTML events with JavaScript</h2>
+    <p>An event is something which user does, or browser does such as mouse click or page loading are examples of events, and JavaScript comes in the role if we want something to happen on these events. </p>
+    <p>HTML provides event handler attributes which work with JavaScript code and can perform some action on an event.</p>
+    <h3 class="h3">Syntax:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;element event = "JS code"&gt; 
+    </textarea></div>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;input type="button" value="Click" onclick="alert('Hi, how are you')"&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript3" target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3"><pre>
+    <h2>Click Event Example</h2>
+    <p>Click on the button and you csn see a pop-up window with a message</p>
+    <input type="button" value="Click" onclick="alert('Hi,how are you')">
+    </pre></div>
+    <p>HTML can have following events such as:</p>
+    <ul class="points">
+    <li><strong>Form events:</strong> reset, submit, etc.</li>
+    <li><strong>Select events:</strong> text field, text area, etc.</li>
+    <li><strong>Focus event:</strong> focus, blur, etc.</li>
+    <li><strong>Mouse events:</strong> select, mouseup, mousemove, mousedown, click, dblclick, etc.</li>
+    </ul>
+    <p>Following are the list for Window event attributes:</p>
+    <table class="alt">
+    <tr>
+    <th>Event Event Name</th>
+    <th>Handler Name</th>
+    <th>Occurs when</th>
+    </tr>
+    <tr>
+    <td>onBlur</td>
+    <td>blur</td>
+    <td>When form input loses focus</td>
+    </tr>
+    <tr>
+    <td>onClick</td>
+    <td>click</td>
+    <td>When the user clicks on a form element or a link</td>
+    </tr>
+    <tr>
+    <td>onSubmit</td>
+    <td>submit</td>
+    <td>When user submits a form to the server.</td>
+    </tr>
+    <tr>
+    <td>onLoad</td>
+    <td>load</td>
+    <td>When page loads in a browser.</td>
+    </tr>
+    <tr>
+    <td>onFocus</td>
+    <td>focus</td>
+    <td>When user focuses on an input field.</td>
+    </tr>
+    <tr>
+    <td>onSelect</td>
+    <td>select</td>
+    <td>When user selects the form input filed.</td>
+    </tr>
+    </table>
+    <h4 class="n">Note: You will learn more about JavaScript Events in our JavaScript tutorial.</h4>
+    <p>Let's see what JavaScript can do:</p>
+    <p><strong>1) JavaScript can change HTML content.</strong></p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;p&gt;JavaScript can change the content of an HTML element:&lt;/p&gt;
+    &lt;button type="button" onclick="myFunction()"&gt;Click Me!&lt;/button&gt;
+    &lt;p id="demo"&gt;&lt;/p&gt;
+    &lt;script&gt;
+    function myFunction() { 
+        document.getElementById("demo").innerHTML = "Hello JavaTpoint!";
+    }
+    &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript3" target="_blank">Test it Now</a></span>
+    <p><strong>2) JavaScript can change HTML style</strong></p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;p id="demo"&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;
+    &lt;script&gt;
+    function myFunction() {
+        document.getElementById("demo").style.fontSize = "25px"; 
+        document.getElementById("demo").style.color = "brown";
+        document.getElementById("demo").style.backgroundColor = "lightgreen";       
+    }
+    &lt;/script&gt;
+    &lt;button type="button" onclick="myFunction()"&gt;Click Me!&lt;/button&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript4" target="_blank">Test it Now</a></span>
+    <p><strong>3) JavaScript can change HTML attributes.</strong></p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;script&gt;
+    function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "pic_lightoff.png"
+        } else {
+            pic = "pic_lighton.png"
+        }
+        document.getElementById('myImage').src = pic;
+    }
+    &lt;/script&gt;
+    &lt;img id="myImage" src="pic_lightoff.png" width="100" height="180"&gt;
+    &lt;p&gt;
+    &lt;button type="button" onclick="light(1)"&gt;Light On&lt;/button&gt;
+    &lt;button type="button" onclick="light(0)"&gt;Light Off&lt;/button&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript5" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h2">Use External Script</h2>
+    <p>Suppose, you have various HTML files which should have same script, then we can put our JavaScript code in separate file and can call in HTML file. Save JavaScript external files using .js extension.</p>
+    <h4 class="n">Note: Do not add &lt;script&gt; tag in the external file, and provide the complete path where you have put the JS file.</h4>
+    <h3 class="h3">Syntax:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;script type="text/javascript" src="URL "&gt;&lt;/script&gt;
+    </textarea></div>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+       &lt;head&gt;
+        &lt;script type="text/javascript" src="external.js"&gt;&lt;/script&gt;
+        &lt;/head&gt;
+         &lt;body&gt;
+          &lt;h2&gt;External JavaScript Example&lt;/h2&gt;
+           &lt;form onsubmit="fun()"&gt;
+             &lt;label&gt;Enter your name:&lt;/label&gt;&lt;br&gt;
+          &lt;input type="text" name="uname" id="frm1"&gt;&lt;br&gt;
+           &lt;label&gt;Enter your Email-address:&lt;/label&gt;&lt;br&gt;  
+          &lt;input type="email" name="email"&gt;&lt;br&gt;
+          &lt;input type="submit"&gt;
+      &lt;/form&gt;
+     &lt;/body&gt;
+     &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript6_2" target="_blank">Test it Now</a></span>
+    <p><strong>JavaScript code:</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+    function fun() {
+           var x = document.getElementById("frm1").value;
+            alert("Hi"+" "+x+ "you have successfully submitted the details");
+        }
+    </textarea></div>
+    <p><strong>Output:</strong></p>
+    
+    <img src="https://static.javatpoint.com/htmlpages/images/html-javascript.png" alt="HTML JavaScript" />
+    <hr/>
+    <h2 class="h2">HTML &lt;noscript&gt; Tag</h2>
+    <p>HTML &lt;noscript&gt; tag is used to write disabled script in the browser. The text written within &lt;noscript&gt;&lt;/noscript&gt; tag is not displayed on the browser.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;p id="demo"&gt;&lt;/p&gt;
+    &lt;script&gt;
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    &lt;/script&gt;
+    &lt;noscript&gt;This text is not visible in the browser.&lt;/noscript&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmljavascript6" target="_blank">Test it Now</a></span>
+    <br>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="25_HTML_Iframes.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="27_HTML_Comments.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

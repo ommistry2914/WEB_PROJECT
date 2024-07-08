@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Function</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item active-submenu" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Cost Function in Machine Learning</h1>
+    <p>A Machine Learning model should have a very high level of accuracy in order to perform well with real-world
+        applications. But how to calculate the accuracy of the model, i.e., how good or poor our model will perform in
+        the real world? In such a case, the Cost function comes into existence. It is an important machine learning
+        parameter to correctly estimate the model.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/cost-function-in-machine-learning.png"
+        alt="Cost Function in Machine Learning" />
+    <p>Cost function also plays a crucial role in understanding that how well your model estimates the relationship
+        between the input and output parameters.</p>
+    <p>In this topic, we will explain the cost function in Machine Learning, Gradient descent, and types of cost
+        functions.</p>
+    <h2 class="h2">What is Cost Function?</h2>
+    <p><strong><em>A cost function is an important parameter that determines how well a machine learning model performs
+                for a given dataset.</em></strong> It calculates the difference between the expected value and predicted
+        value and represents it as a single real number.</p>
+    <p>In machine learning, once we train our model, then we want to see how well our model is performing. Although
+        there are various accuracy functions that tell you how your model is performing, but will not give insights to
+        improve them. So, we need a function that can find when the model is most accurate by finding the spot between
+        the undertrained and overtrained model.</p>
+    <p>In simple, "<strong><em>Cost function is a measure of how wrong the model is in estimating the relationship
+                between X(input) and Y(output) Parameter</em></strong>." A cost function is sometimes also referred to
+        as Loss function, and it can be estimated by iteratively running the model to compare estimated predictions
+        against the known values of Y.</p>
+    <p>The main aim of each ML model is to determine parameters or weights that can minimize the cost function.</p>
+    <h2 class="h2">Why use Cost Function?</h2>
+    <p>While there are different accuracy parameters, then why do we need a Cost function for the Machine learning
+        model. So, we can understand it with an example of the classification of data. Suppose we have a dataset that
+        contains the height and weights of cats &amp; dogs, and we need to classify them accordingly. If we plot the
+        records using these two features, we will get a scatter plot as below:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/cost-function-in-machine-learning2.png"
+        alt="Cost Function in Machine Learning" />
+    <p>In the above image, the green dots are cats, and the yellow dots are dogs. Below are the three possible solutions
+        for this classification problem.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/cost-function-in-machine-learning3.png"
+        alt="Cost Function in Machine Learning" />
+    <p>In the above solutions, all three classifiers have high accuracy, but the third solution is the best because it
+        correctly classifies each datapoint. The reason behind the best classification is that it is in mid between both
+        the classes, not close or not far to any of them.</p>
+    <p>To get such results, we need a Cost function. It means for getting the optimal solution; we need a Cost function.
+        It calculated the difference between the actual values and predicted values and measured how wrong was our model
+        in the prediction. By minimizing the value of the cost function, we can get the optimal solution.</p>
+    <h2 class="h2">Gradient Descent: Minimizing the cost function</h2>
+    <p>As we discussed in the above section, the cost function tells how wrong your model is? And each machine learning
+        model tries to minimize the cost function in order to give the best results. Here comes the role of Gradient
+        descent.</p>
+    <p>"<strong><em>Gradient Descent is an optimization algorithm which is used for optimizing the cost function or
+                error in the model."</em></strong> It enables the models to take the gradient or direction to reduce the
+        errors by reaching to least possible error. Here direction refers to how model parameters should be corrected to
+        further reduce the cost function. The error in your model can be different at different points, and you have to
+        find the quickest way to minimize it, to prevent resource wastage.</p>
+    <p>Gradient descent is an iterative process where the model gradually converges towards a minimum value, and if the
+        model iterates further than this point, it produces little or zero changes in the loss. This point is known as
+        convergence, and at this point, the error is least, and the cost function is optimized.</p>
+    <p>Below is the equation for gradient descent in linear regression:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/cost-function-in-machine-learning4.png"
+        alt="Cost Function in Machine Learning" />
+    <p>In the gradient descent equation, alpha is known as the learning rate. This parameter decides how fast you should
+        move down to the slope. For large alpha, take big steps, and for small alpha value, you need to take small
+        steps.</p>
+    <h2 class="h2">Types of Cost Function</h2>
+    <p>Cost functions can be of various types depending on the problem. However, mainly it is of three types, which are
+        as follows:</p>
+    <ol class="points">
+        <li>Regression Cost Function</li>
+        <li>Binary Classification cost Functions</li>
+        <li>Multi-class Classification Cost Function.</li>
+    </ol>
+    <h3 class="h3">1. Regression Cost Function</h3>
+    <p>Regression models are used to make a prediction for the continuous variables such as the price of houses, weather
+        prediction, loan predictions, etc. When a cost function is used with Regression, it is known as the "Regression
+        Cost Function." In this, the cost function is calculated as the error based on the distance, such as:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+Error= Actual Output-Predicted output
+</textarea></div>
+    <p>There are three commonly used Regression cost functions, which are as follows:</p>
+    <p><strong>a. Means Error</strong></p>
+    <p>In this type of cost function, the error is calculated for each training data, and then the mean of all error
+        values is taken.</p>
+    <p>It is one of the simplest ways possible.</p>
+    <p>The errors that occurred from the training data can be either negative or positive. While finding mean, they can
+        cancel out each other and result in the zero-mean error for the model, so it is not recommended cost function
+        for a model.</p>
+    <p>However, it provides a base for other cost functions of regression models.</p>
+    <p><strong>b. Mean Squared Error (MSE)</strong></p>
+    <p>Means Square error is one of the most commonly used Cost function methods. It improves the drawbacks of the Mean
+        error cost function, as it calculates the square of the difference between the actual value and predicted value.
+        Because of the square of the difference, it avoids any possibility of negative error.</p>
+    <p>The formula for calculating MSE is given below:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/cost-function-in-machine-learning5.png"
+        alt="Cost Function in Machine Learning" />
+    <p>Mean squared error is also known as L2 Loss.</p>
+    <p>In MSE, each error is squared, and it helps in reducing a small deviation in prediction as compared to MAE. But
+        if the dataset has outliers that generate more prediction errors, then squaring of this error will further
+        increase the error multiple times. Hence, we can say MSE is less robust to outliers.</p>
+    <p><strong>c. Mean Absolute Error (MAE)</strong></p>
+    <p>Mean Absolute error also overcome the issue of the Mean error cost function by taking the absolute difference
+        between the actual value and predicted value.</p>
+    <p>The formula for calculating Mean Absolute Error is given below:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/cost-function-in-machine-learning6.png"
+        alt="Cost Function in Machine Learning" />
+    <p>This means the Absolute error cost function is also known as <strong>L1 Loss</strong>. It is not affected by
+        noise or outliers, hence giving better results if the dataset has noise or outlier.</p>
+    <h3 class="h3">2. Binary Classification Cost Functions</h3>
+    <p>Classification models are used to make predictions of categorical variables, such as predictions for 0 or 1, Cat
+        or dog, etc. The cost function used in the classification problem is known as the Classification cost function.
+        However, the classification cost function is different from the Regression cost function.</p>
+    <p>One of the commonly used loss functions for classification is cross-entropy loss.</p>
+    <p>The binary Cost function is a special case of Categorical cross-entropy, where there is only one output class.
+        For example, classification between red and blue.</p>
+    <p>To better understand it, let's suppose there is only a single output variable Y</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+Cross-entropy(D) = - y*log(p) when y = 1
+
+Cross-entropy(D) = - (1-y)*log(1-p) when y = 0
+</textarea></div>
+    <p>The error in binary classification is calculated as the mean of cross-entropy for all N training data. Which
+        means:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+Binary Cross-Entropy = (Sum of Cross-Entropy for N data)/N
+</textarea></div>
+    <h3 class="h3">3. Multi-class Classification Cost Function</h3>
+    <p>A multi-class classification cost function is used in the classification problems for which instances are
+        allocated to one of more than two classes. Here also, similar to binary class classification cost function,
+        cross-entropy or categorical cross-entropy is commonly used cost function.</p>
+    <p>It is designed in a way that it can be used with multi-class classification with the target values ranging from 0
+        to 1, 3, &hellip;.,n classes.</p>
+    <p>In a multi-class classification problem, cross-entropy will generate a score that summarizes the mean difference
+        between actual and anticipated probability distribution.</p>
+    <p>For a perfect cross-entropy, the value should be zero when the score is minimized.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="36_gradient_descent.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="38_normalization.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

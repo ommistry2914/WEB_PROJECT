@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>querySelector</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item" href="8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item" href="34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item active-submenu" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">JavaScript querySelector</h1>
+    <p>The querySelector is a JavaScript method that plays a vital role in the searching of elements.</p>
+    <p>In this section, we will understand and discuss the querySelector () method, its use and also look over an
+        example to understand the concept of the querySelector () method practically.</p>
+    <h2 class="h2">Introducing JavaScript querySelector () method</h2>
+    <p>An element interface method that enables us to search and return the first element within the document. It finds
+        that element that matches with any of the specified CSS selectors or group of selectors. However, if no matching
+        element is found, it returns null. The querySelector () method is the method of the Document interface only. A
+        document interface is an interface that describes the common methods as well as the properties for any <a
+            href="https://www.javatpoint.com/html-tutorial">html</a>, <a
+            href="https://www.javatpoint.com/xml-tutorial">XML</a>, or any other kind of document.</p>
+    <h3 class="h3">How does the querySelector () method perform the searching</h3>
+    <p>We know that there are different types of searches that can be used for searching elements. However, the
+        querySelector () method uses <strong>depth-first pre-order</strong> traversal of the nodes of the document. In
+        it, the traversal starts with the first element in the document's markup and then traverse through the
+        sequential nodes by order of the number of child nodes.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+element = document.querySelector(selectors);
+</textarea></div>
+    <p>The querySelector () method is a method of document interface and so it has such syntax.</p>
+    <p>It has one parameter, 'selectors', which is a DOM string and has one or more valid CSS selectors.</p>
+    <p><strong>Return Type</strong></p>
+    <p>It may return 'null' if no match is found, and if the first element matches the specified CSS selectors (if any),
+        it will return that element.</p>
+    <p>However, if there is not any valid CSS selector, it will throw a 'SyntaxError' exception.</p>
+    <p>Now, before looking at an example implementation, we should know about various types of CSS selectors. If you are
+        not aware, visit our <a
+            href="https://www.javatpoint.com/css-selector">https://www.javatpoint.com/css-selector</a> section of the
+        CSS tutorial.</p>
+    <p>So, we will now implement an example under which we will cover a CSS selector and retain its first element value
+        by using the querySelector () method.</p>
+    <h3 class="h3">Implementing querySelector () Example</h3>
+    <p>Below is an example code that will make us understand the working of querySelector () method:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt; class="colors"&gt;Colors&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; JavaScript Query Selector&lt;/h1&gt;
+&lt;h1 class="myClass"&gt;Class 1&lt;/h1&gt;
+&lt;p class="myClass"&gt; Myclass&lt;/p&gt;
+&lt;div id="firstid"&gt;
+&lt;p&gt; It is the div p paragraph&lt;/p&gt;
+&lt;p class="pclass"&gt; div p class&lt;/p&gt;
+&lt;/div&gt;
+&lt;p id="myid"&gt; It is p id&lt;/p&gt;
+&lt;div id="divid"&gt; It is div id&lt;/div&gt;
+&lt;script&gt; &lt;script&gt;
+ //Element selector
+ var e=document.querySelector("p");
+ console.log(e); 
+ &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea></div>
+    <p><strong>The output of the above code is shown below:</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-queryselector.png"
+        alt="JavaScript querySelector" />
+    <p><strong>Code Explanation</strong></p>
+    <ul class="points">
+        <li>The above code is a combination of html and JavaScript.</li>
+        <li>We have implemented different CSS selectors in the code.</li>
+        <li>In the JavaScript section, we have used a querySelector () and invoked an element selector of CSS.</li>
+        <li>So, the querySelector () method now moves to the code for traversing it using the Depth-first pre-order
+            method and returns the first element selector as it finds it.</li>
+    </ul>
+    <p>In this way, the querySelector () method gets executed, and you can also try and use the querySelector () method
+        for other CSS selectors also.</p>
+    <p>Let's also see and use the same example for other CSS selectors also. Just replace the element selector code with
+        these selector codes described below:</p>
+    <h3 class="h3">Few CSS Selectors</h3>
+    <p><strong>Class Selector</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+//Class selector
+var e=document.querySelector(".myClass");
+console.log(e);
+</textarea></div>
+    <p>We need to use the (.) operator with the class name for finding the class first element. In the output, you will
+        see that the querySelector () searches from the starting of the code and the search get completed on the h1
+        class element and so its return has a specified value as you can see below:</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-queryselector2.png"
+        alt="JavaScript querySelector" />
+    <p><strong>ID Selector</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+//ID selector
+var e=document.querySelector("#myid");
+console.log(e);
+</textarea></div>
+    <p>Use (#) for using the ID selector of CSS.</p>
+    <p><strong>The output will be as shown below:</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-queryselector3.png"
+        alt="JavaScript querySelector" />
+    <p><strong>Attribute Selector</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+//Attribute selector
+var e=document.querySelector('[target]');
+console.log (e);
+</textarea></div>
+    <p>The output of the above code will be 'null' because, in our code, we have not used any such attribute as shown
+        below:</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-queryselector4.png"
+        alt="JavaScript querySelector" />
+    <p>So, there are various CSS selectors and can be used if one has complete knowledge and understanding of the CSS
+        selectors and its types.</p>
+    <h2 class="h2">JavaScript querySelectorAll () Method</h2>
+    <p>The querySelector () method of <a href="https://www.javatpoint.com/javascript-tutorial">JavaScript</a> is used
+        for selecting only the first element from the code. But what in case we want to retain more than one CSS
+        selector value from the code. So, for such a case, we use another method of the Document interface, which is
+        known as the querySelectorAll () method. The querySelectorAll () method is a method that is used to return all
+        the matching values of the specified CSS selector or group of a CSS selector.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+elementList = parentNode . querySelectorAll (selectors);
+</textarea></div>
+    <p>In the syntax, it contains selectors as an argument which holds one or more selectors with which we may match the
+        values.</p>
+    <p><strong>Return</strong> </p>
+    <p>If the matching list or selector is found, it will return the specified value of those. Else it will return an
+        <strong>empty nodeList</strong> if no match is found.</p>
+    <p>Also, in case the specified CSS selectors have <a href="https://www.javatpoint.com/css-pseudo-elements">CSS
+            pseudo-element</a>, it will return an empty list.</p>
+    <p><strong>Syntax Error</strong></p>
+    <p>If there is a syntax error, it will return a syntax error exception that the specified selector's string is not
+        valid.</p>
+    <h3 class="h3">Example</h3>
+    <p>Below is the same example we have used for explaining the querySelector () method, let's look at the same example
+        to understand the difference between both the methods:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt; class="colors"&gt;Colors&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt; JavaScript Query Selector&lt;/h1&gt;
+&lt;h1 class="myClass"&gt;Class 1&lt;/h1&gt;
+&lt;p class="myClass"&gt; Myclass&lt;/p&gt;
+&lt;div id="firstid"&gt;
+&lt;p&gt; It is the div p paragraph&lt;/p&gt;
+&lt;p class="pclass"&gt; div p class&lt;/p&gt;
+&lt;/div&gt;
+&lt;p id="myid"&gt; It is p id&lt;/p&gt;
+&lt;div id="divid"&gt; It is div id&lt;/div&gt;
+&lt;script&gt;
+ //Element selector
+ var e = document.querySelectorAll ("p");
+ console.log(e); 
+ &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+</textarea></div>
+    <p>Now, you can see the difference between the code that in the first example, we used the querySelector () method
+        and it outputted only the first matching selector value. But, when you observe the output of this second
+        example, you will see that it has returned all the matching values of the specified selectors or group of
+        selectors. The output of the above code is shown below:</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-queryselector5.png"
+        alt="JavaScript querySelector" />
+    <p><strong>Code Explanation</strong></p>
+    <ul class="points">
+        <li>The above code is a combination of html and JavaScript.</li>
+        <li>We have implemented different CSS selectors in the code.</li>
+        <li>In the JavaScript section, we have used a querySelectorAll () method and invoked an element selector of CSS.
+        </li>
+        <li>So, the querySelectorAll () method now moves to the code for traversing it using the Depth-first pre-order
+            method and returns all the matching element values that are specified as querySlectorAll () method
+            parameters.</li>
+    </ul>
+    <p>So, in the same way, we can use the querySelectorAll () method for the various other types of CSS selectors also,
+        and it will return all the matching values of the selectors which are specified as its argument. In order to
+        implement the method, replace the querySelector () method with querySelectorAll () method for various selectors,
+        and the method will find the match and will return atleast one matching value of the specified element.</p>
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="34setTimeOut.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <!-- <a href="js_example.html"><button class="btn btn-success" type="button">Next</button></a> -->
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naive Bayes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item active-submenu" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Na&iuml;ve Bayes Classifier Algorithm</h1>
+    <ul class="points">
+        <li>Na&iuml;ve Bayes algorithm is a supervised learning algorithm, which is based on <strong>Bayes
+                theorem</strong> and used for solving classification problems. </li>
+        <li>It is mainly used in <em>text classification</em> that includes a high-dimensional training dataset. </li>
+        <li>Na&iuml;ve Bayes Classifier is one of the simple and most effective Classification algorithms which helps in
+            building the fast machine learning models that can make quick predictions. </li>
+        <li><strong>It is a probabilistic classifier, which means it predicts on the basis of the probability of an
+                object</strong>. </li>
+        <li>Some popular examples of Na&iuml;ve Bayes Algorithm are <strong>spam filtration, Sentimental analysis, and
+                classifying articles</strong>. </li>
+    </ul>
+    <h2 class="h2">Why is it called Na&iuml;ve Bayes?</h2>
+    <p>The Na&iuml;ve Bayes algorithm is comprised of two words Na&iuml;ve and Bayes, Which can be described as:</p>
+    <ul class="points">
+        <li><strong>Na&iuml;ve</strong>: It is called Na&iuml;ve because it assumes that the occurrence of a certain
+            feature is independent of the occurrence of other features. Such as if the fruit is identified on the bases
+            of color, shape, and taste, then red, spherical, and sweet fruit is recognized as an apple. Hence each
+            feature individually contributes to identify that it is an apple without depending on each other. </li>
+        <li><strong>Bayes</strong>: It is called Bayes because it depends on the principle of <a
+                href="https://www.javatpoint.com/bayes-theorem-in-artifical-intelligence" target="_blank">Bayes'
+                Theorem</a>.</li>
+    </ul>
+    <h2 class="h2">Bayes' Theorem:</h2>
+    <ul class="points">
+        <li>Bayes' theorem is also known as <strong>Bayes' Rule</strong> or <strong>Bayes' law</strong>, which is used
+            to determine the probability of a hypothesis with prior knowledge. It depends on the conditional
+            probability. </li>
+        <li>The formula for Bayes' theorem is given as:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/naive-bayes-classifier-algorithm.png"
+        alt="Na&iuml;ve Bayes Classifier Algorithm" />
+    <p><strong>Where, </strong></p>
+    <p><strong>P(A&verbar;B) is Posterior probability</strong>: Probability of hypothesis A on the observed event B.</p>
+    <p><strong>P(B&verbar;A) is Likelihood probability</strong>: Probability of the evidence given that the probability
+        of a hypothesis is true.</p>
+    <p><strong>P(A) is Prior Probability</strong>: Probability of hypothesis before observing the evidence.</p>
+    <p><strong>P(B) is Marginal Probability</strong>: Probability of Evidence. </p>
+    <h2 class="h2">Working of Na&iuml;ve Bayes' Classifier:</h2>
+    <p>Working of Na&iuml;ve Bayes' Classifier can be understood with the help of the below example: </p>
+    <p>Suppose we have a dataset of <strong>weather conditions</strong> and corresponding target variable
+        "<strong>Play</strong>". So using this dataset we need to decide that whether we should play or not on a
+        particular day according to the weather conditions. So to solve this problem, we need to follow the below steps:
+    </p>
+    <ol class="points">
+        <li>Convert the given dataset into frequency tables.</li>
+        <li>Generate Likelihood table by finding the probabilities of given features. </li>
+        <li>Now, use Bayes theorem to calculate the posterior probability. </li>
+    </ol>
+    <p><strong>Problem</strong>: If the weather is sunny, then the Player should play or not? </p>
+    <p><strong>Solution</strong>: To solve this, first consider the below dataset:</p>
+    <table class="alt">
+        <tr>
+            <th></th>
+            <th>Outlook</th>
+            <th>Play</th>
+        </tr>
+        <tr>
+            <td><strong>0</strong></td>
+            <td>Rainy</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>1</strong></td>
+            <td>Sunny</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>2</strong></td>
+            <td>Overcast</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>3</strong></td>
+            <td>Overcast</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>4</strong></td>
+            <td>Sunny</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td><strong>5</strong></td>
+            <td>Rainy</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>6</strong></td>
+            <td>Sunny</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>7</strong></td>
+            <td>Overcast</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>8</strong></td>
+            <td>Rainy</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td><strong>9</strong></td>
+            <td>Sunny</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td><strong>10</strong></td>
+            <td>Sunny</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>11</strong></td>
+            <td>Rainy</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td><strong>12</strong></td>
+            <td>Overcast</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td><strong>13</strong></td>
+            <td>Overcast</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    <p><strong>Frequency table for the Weather Conditions:</strong></p>
+    <table class="alt">
+        <tr>
+            <td>Weather</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Overcast</td>
+            <td>5</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Rainy</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Sunny</td>
+            <td>3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+    </table>
+    <p><strong>Likelihood table weather condition:</strong></p>
+    <table class="alt">
+        <tr>
+            <td>Weather</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Overcast</td>
+            <td>0</td>
+            <td>5</td>
+            <td>5/14= 0.35</td>
+        </tr>
+        <tr>
+            <td>Rainy</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4/14=0.29</td>
+        </tr>
+        <tr>
+            <td>Sunny</td>
+            <td>2</td>
+            <td>3</td>
+            <td>5/14=0.35</td>
+        </tr>
+        <tr>
+            <td>All</td>
+            <td>4/14=0.29</td>
+            <td>10/14=0.71</td>
+            <td></td>
+        </tr>
+    </table>
+    <p><strong>Applying Bayes'theorem:</strong></p>
+    <p><strong>P(Yes&verbar;Sunny)= P(Sunny&verbar;Yes)*P(Yes)/P(Sunny)</strong></p>
+    <p>P(Sunny&verbar;Yes)= 3/10= 0.3</p>
+    <p>P(Sunny)= 0.35</p>
+    <p>P(Yes)=0.71</p>
+    <p>So P(Yes&verbar;Sunny) = 0.3*0.71/0.35= <strong>0.60</strong></p>
+    <p><strong>P(No&verbar;Sunny)= P(Sunny&verbar;No)*P(No)/P(Sunny)</strong></p>
+    <p>P(Sunny&verbar;NO)= 2/4=0.5</p>
+    <p>P(No)= 0.29</p>
+    <p>P(Sunny)= 0.35</p>
+    <p>So P(No&verbar;Sunny)= 0.5*0.29/0.35 = <strong>0.41</strong></p>
+    <p>So as we can see from the above calculation that <strong>P(Yes&verbar;Sunny)&gt;P(No&verbar;Sunny)</strong></p>
+    <p><strong>Hence on a Sunny day, Player can play the game. </strong></p>
+    <h3 class="h3">Advantages of Na&iuml;ve Bayes Classifier:</h3>
+    <ul class="points">
+        <li>Na&iuml;ve Bayes is one of the fast and easy ML algorithms to predict a class of datasets. </li>
+        <li>It can be used for Binary as well as Multi-class Classifications. </li>
+        <li>It performs well in Multi-class predictions as compared to the other Algorithms. </li>
+        <li>It is the most popular choice for <strong>text classification problems</strong>. </li>
+    </ul>
+    <h3 class="h3">Disadvantages of Na&iuml;ve Bayes Classifier:</h3>
+    <ul class="points">
+        <li>Naive Bayes assumes that all features are independent or unrelated, so it cannot learn the relationship
+            between features. </li>
+    </ul>
+    <h3 class="h3">Applications of Na&iuml;ve Bayes Classifier:</h3>
+    <ul class="points">
+        <li>It is used for <strong>Credit Scoring</strong>.</li>
+        <li>It is used in <strong>medical data classification</strong>.</li>
+        <li>It can be used in <strong>real-time predictions</strong> because Na&iuml;ve Bayes Classifier is an eager
+            learner.</li>
+        <li>It is used in Text classification such as <strong>Spam filtering</strong> and <strong>Sentiment
+                analysis</strong>. </li>
+    </ul>
+    <h2 class="h2">Types of Na&iuml;ve Bayes Model: </h2>
+    <p>There are three types of Naive Bayes Model, which are given below:</p>
+    <ul class="points">
+        <li><strong>Gaussian</strong>: The Gaussian model assumes that features follow a normal distribution. This means
+            if predictors take continuous values instead of discrete, then the model assumes that these values are
+            sampled from the Gaussian distribution.</li>
+        <li><strong>Multinomial</strong>: The Multinomial Na&iuml;ve Bayes classifier is used when the data is
+            multinomial distributed. It is primarily used for document classification problems, it means a particular
+            document belongs to which category such as Sports, Politics, education, etc.<br>
+            The classifier uses the frequency of words for the predictors. </li>
+        <li><strong>Bernoulli</strong>: The Bernoulli classifier works similar to the Multinomial classifier, but the
+            predictor variables are the independent Booleans variables. Such as if a particular word is present or not
+            in a document. This model is also famous for document classification tasks. </li>
+    </ul>
+    <h2 class="h2">Python Implementation of the Na&iuml;ve Bayes algorithm:</h2>
+    <p>Now we will implement a Naive Bayes Algorithm using Python. So for this, we will use the
+        "<strong>user_data</strong>" <strong>dataset</strong>, which we have used in our other classification model.
+        Therefore we can easily compare the Naive Bayes model with the other models. </p>
+    <h3 class="h3">Steps to implement:</h3>
+    <ul class="points">
+        <li>Data Pre-processing step</li>
+        <li>Fitting Naive Bayes to the Training set</li>
+        <li>Predicting the test result</li>
+        <li>Test accuracy of the result(Creation of Confusion matrix)</li>
+        <li>Visualizing the test set result. </li>
+    </ul>
+    <h3 class="h3">1) Data Pre-processing step:</h3>
+    <p>In this step, we will pre-process/prepare the data so that we can use it efficiently in our code. It is similar
+        as we did in <a href="https://www.javatpoint.com/data-preprocessing-machine-learning"
+            target="_blank">data-pre-processing</a>. The code for this is given below:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+Importing the libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+# Importing the dataset
+dataset = pd.read_csv('user_data.csv')
+x = dataset.iloc[:, [2, 3]].values
+y = dataset.iloc[:, 4].values
+
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.25, random_state = 0)
+
+# Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+x_train = sc.fit_transform(x_train)
+x_test = sc.transform(x_test)
+</textarea></div>
+    <p>In the above code, we have loaded the dataset into our program using "<strong>dataset =
+            pd.read_csv('user_data.csv')</strong>. The loaded dataset is divided into training and test set, and then we
+        have scaled the feature variable. </p>
+    <p>The output for the dataset is given as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/naive-bayes-classifier-algorithm-1.png"
+        alt="Na&iuml;ve Bayes Classifier Algorithm 1" />
+    <h3 class="h3">2) Fitting Naive Bayes to the Training Set: </h3>
+    <p>After the pre-processing step, now we will fit the Naive Bayes model to the Training set. Below is the code for
+        it:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Fitting Naive Bayes to the Training set
+from sklearn.naive_bayes import GaussianNB
+classifier = GaussianNB()
+classifier.fit(x_train, y_train)
+</textarea></div>
+    <p>In the above code, we have used the <strong>GaussianNB classifier</strong> to fit it to the training dataset. We
+        can also use other classifiers as per our requirement. </p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[6]: GaussianNB(priors=None, var_smoothing=1e-09)
+</pre>
+    </div>
+    <h3 class="h3">3) Prediction of the test set result:</h3>
+    <p>Now we will predict the test set result. For this, we will create a new predictor variable
+        <strong>y_pred</strong>, and will use the predict function to make the predictions. </p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Predicting the Test set results
+y_pred = classifier.predict(x_test)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/naive-bayes-classifier-algorithm-2.png"
+        alt="Na&iuml;ve Bayes Classifier Algorithm 2" />
+    <p>The above output shows the result for prediction vector <strong>y_pred</strong> and real vector y_test. We can
+        see that some predications are different from the real values, which are the incorrect predictions. </p>
+    <h3 class="h3">4) Creating Confusion Matrix:</h3>
+    <p>Now we will check the accuracy of the Naive Bayes classifier using the Confusion matrix. Below is the code for
+        it:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/naive-bayes-classifier-algorithm-3.png"
+        alt="Na&iuml;ve Bayes Classifier Algorithm 3" />
+    <p>As we can see in the above confusion matrix output, there are 7+3= 10 incorrect predictions, and 65+25=90 correct
+        predictions. </p>
+    <h3 class="h3">5) Visualizing the training set result:</h3>
+    <p>Next we will visualize the training set result using Naïve Bayes Classifier. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Visualising the Training set results
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_train, y_train
+X1, X2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step = 0.01),
+                     nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(X1, X2, classifier.predict(nm.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
+             alpha = 0.75, cmap = ListedColormap(('purple', 'green')))
+mtp.xlim(X1.min(), X1.max())
+mtp.ylim(X2.min(), X2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+                c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Naive Bayes (Training set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/naive-bayes-classifier-algorithm-4.png"
+        alt="Na&iuml;ve Bayes Classifier Algorithm 4" />
+    <p>In the above output we can see that the Naïve Bayes classifier has segregated the data points with the fine
+        boundary. It is Gaussian curve as we have used <strong>GaussianNB</strong> classifier in our code. </p>
+    <h3 class="h3">6) Visualizing the Test set result:</h3>
+    <div class="codeblock"><textarea name="code" class="python">
+# Visualising the Test set results
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_test, y_test
+X1, X2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step = 0.01),
+                     nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(X1, X2, classifier.predict(nm.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
+             alpha = 0.75, cmap = ListedColormap(('purple', 'green')))
+mtp.xlim(X1.min(), X1.max())
+mtp.ylim(X2.min(), X2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+                c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Naive Bayes (test set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/naive-bayes-classifier-algorithm-5.png"
+        alt="Na&iuml;ve Bayes Classifier Algorithm 5" />
+    <p>The above output is final output for test set data. As we can see the classifier has created a Gaussian curve to
+        divide the "purchased" and "not purchased" variables. There are some wrong predictions which we have calculated
+        in Confusion matrix. But still it is pretty good classifier. </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="19_svm.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="21_regression_vs_classification.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

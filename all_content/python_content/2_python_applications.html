@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Applications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item active-submenu" href="2_python_applications.html">Python Applications</a></li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a></li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a></li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Applications</h1>
+    <p>Python is known for its general-purpose nature that makes it applicable in almost every domain of software
+        development. Python makes its presence in every emerging field. It is the fastest-growing programming language
+        and can develop any application.</p>
+    <p>Here, we are specifying application areas where Python can be applied.</p>
+    <img src="https://static.javatpoint.com/python/images/python-applications.png" alt="Python Applications" />
+    <h3 class="h3">1) Web Applications</h3>
+    <p> We can use Python to develop web applications. It provides libraries to handle internet protocols such as HTML
+        and XML, JSON, Email processing, request, beautifulSoup, Feedparser, etc. One of Python web-framework named
+        Django is used on <strong>Instagram</strong>. Python provides many useful frameworks, and these are given below:
+    </p>
+    <ul class="points">
+        <li>Django and Pyramid framework(Use for heavy applications)</li>
+        <li>Flask and Bottle (Micro-framework)</li>
+        <li>Plone and Django CMS (Advance Content management)</li>
+    </ul>
+    <h3 class="h3">2) Desktop GUI Applications</h3>
+    <p>The GUI stands for the Graphical User Interface, which provides a smooth interaction to any application. Python
+        provides a <strong>Tk GUI library</strong> to develop a user interface. Some popular GUI libraries are given
+        below.</p>
+    <ul class="points">
+        <li>Tkinter or Tk</li>
+        <li>wxWidgetM</li>
+        <li>Kivy (used for writing multitouch applications )</li>
+        <li>PyQt or Pyside</li>
+    </ul>
+    <h3 class="h3">3) Console-based Application</h3>
+    <p>Console-based applications run from the command-line or shell. These applications are computer program which are
+        used commands to execute. This kind of application was more popular in the old generation of computers. Python
+        can develop this kind of application very effectively. It is famous for having REPL, which means <strong>the
+            Read-Eval-Print Loop</strong> that makes it the most suitable language for the command-line applications.
+    </p>
+    <p>Python provides many free library or module which helps to build the command-line apps. The necessary
+        <strong>IO</strong> libraries are used to read and write. It helps to parse argument and create console help
+        text out-of-the-box. There are also advance libraries that can develop independent console apps.
+    </p>
+    <h3 class="h3">4) Software Development</h3>
+    <p>Python is useful for the software development process. It works as a support language and can be used to build
+        control and management, testing, etc.</p>
+    <ul class="points">
+        <li><strong>SCons</strong> is used to build control.</li>
+        <li><strong>Buildbot</strong> and <strong>Apache</strong> Gumps are used for automated continuous compilation
+            and testing.
+        <li><strong>Round</strong> or <strong>Trac</strong> for bug tracking and project management.
+    </ul>
+    <h3 class="h3">5) Scientific and Numeric</h3>
+    <p>This is the era of Artificial intelligence where the machine can perform the task the same as the human. Python
+        language is the most suitable language for Artificial intelligence or machine learning. It consists of many
+        scientific and mathematical libraries, which makes easy to solve complex calculations.</p>
+    <p>Implementing machine learning algorithms require complex mathematical calculation. Python has many libraries for
+        scientific and numeric such as Numpy, Pandas, Scipy, Scikit-learn, etc. If you have some basic knowledge of
+        Python, you need to import libraries on the top of the code. Few popular frameworks of machine libraries are
+        given below.</p>
+    <ul class="points">
+        <li>SciPy</li>
+        <li>Scikit-learn</li>
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+    </ul>
+    <h3 class="h3">6) Business Applications</h3>
+    <p>Business Applications differ from standard applications. E-commerce and ERP are an example of a business
+        application. This kind of application requires extensively, scalability and readability, and Python provides all
+        these features.</p>
+    <p>Oddo is an example of the all-in-one Python-based application which offers a range of business applications.
+        Python provides a <strong>Tryton</strong> platform which is used to develop the business application.</p>
+    <h3 class="h3">7) Audio or Video-based Applications</h3>
+    <p>Python is flexible to perform multiple tasks and can be used to create multimedia applications. Some multimedia
+        applications which are made by using Python are <strong>TimPlayer, cplay,</strong> etc. The few multimedia
+        libraries are given below.</p>
+    <ul class="points">
+        <li>Gstreamer</li>
+        <li>Pyglet</li>
+        <li>QT Phonon</li>
+    </ul>
+    <h3 class="h3">8) 3D CAD Applications</h3>
+    <p>The CAD (Computer-aided design) is used to design engineering related architecture. It is used to develop the 3D
+        representation of a part of a system. Python can create a 3D CAD application by using the following
+        functionalities.</p>
+    <ul class="points">
+        <li>Fandango (Popular )</li>
+        <li>CAMVOX</li>
+        <li>HeeksCNC</li>
+        <li>AnyCAD<M li>
+        <li>RCAM</li>
+    </ul>
+    <h3 class="h3">9) Enterprise Applications</h3>
+    <p>Python can be used to create applications that can be used within an Enterprise or an Organization. Some
+        real-time applications are OpenERP, Tryton, Picalo, etc.</p>
+    <h3 class="h3">10) Image Processing Application</h3>
+    <p>Python contains many libraries that are used to work with the image. The image can be manipulated according to
+        our requirements. Some libraries of image processing are given below.</p>
+    <ul class="points">
+        <li>OpenCV</li>
+        <li>Pillow</li>
+        <li>SimpleITK</li>
+    </ul>
+    <p>In this topic, we have described all types of applications where Python plays an essential role in the
+        development of these applications. In the next tutorial, we will learn more concepts about Python.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="1_python_history.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="3_how_to_install_python.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

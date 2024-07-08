@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Java Operator</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+        <h1 class="h1">Operators in Java</h1>
+        <p><b>Operator</b> in Java is a symbol that is used to perform operations. For
+            example:
+            +,
+            -, *, / etc.
+        <p>
+        <p> There are many types of operators in Java which are given below:</p>
+        <ul class="points">
+            <li>Unary Operator, </li>
+            <li>Arithmetic Operator, </li>
+            <li>Shift Operator, </li>
+            <li>Relational Operator, </li>
+            <li>Bitwise Operator, </li>
+            <li>Logical Operator, </li>
+            <li>Ternary Operator and </li>
+            <li>Assignment Operator.</li>
+        </ul>
+        <h2 class="h2">Java Operator Precedence</h2>
+        <table class="alt mt-4">
+            <tr>
+                <th>Operator Type</th>
+                <th>Category</th>
+                <th>Precedence</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Unary</td>
+                <td>postfix</td>
+                <td><code><em>expr</em>++ <em>expr</em>--</code></td>
+            </tr>
+            <tr>
+                <td>prefix</td>
+                <td headers="precedence"><code>++<em>expr</em> --<em>expr</em> +<em>expr</em> -<em>expr</em> ~ !</code>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Arithmetic</td>
+                <td>multiplicative</td>
+                <td headers="precedence"><code>* / %</code></td>
+            </tr>
+            <tr>
+                <td>additive</td>
+                <td headers="precedence"><code>+ -</code></td>
+            </tr>
+            <tr>
+                <td>Shift</td>
+                <td>shift</td>
+                <td headers="precedence"><code><< >> >>></code></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Relational</td>
+                <td>comparison</td>
+                <td headers="precedence"><code>&lt; &gt; &lt;= &gt;= instanceof</code></td>
+            </tr>
+            <tr>
+                <td>equality</td>
+                <td headers="precedence"><code>== !=</code></td>
+            </tr>
+            <tr>
+                <td rowspan="3">Bitwise</td>
+                <td>bitwise AND</td>
+                <td headers="precedence"><code>&</code></td>
+            </tr>
+            <tr>
+                <td>bitwise exclusive OR</td>
+                <td headers="precedence"><code>^</code></td>
+            </tr>
+            <tr>
+                <td>bitwise inclusive OR</td>
+                <td headers="precedence"><code>|</code></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Logical</td>
+                <td>logical AND</td>
+                <td headers="precedence"><code>&&</code></td>
+            </tr>
+            <tr>
+                <td>logical OR</td>
+                <td headers="precedence"><code>||</code></td>
+            </tr>
+            <tr>
+                <td>Ternary</td>
+                <td>ternary</td>
+                <td headers="precedence"><code>? :</code></td>
+            </tr>
+            <tr>
+                <td>Assignment</td>
+                <td>assignment</td>
+                <td headers="precedence"><code>= += -= *= /= %= &= ^= |= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=</code></td>
+            </tr>
+        </table>
+        <h3 class="h3 mt-3">Java Unary Operator</h3>
+        <p>The Java unary operators require only one operand. Unary operators are used to perform various operations
+            i.e.:
+        </p>
+        <ul class="points">
+            <li>incrementing/decrementing a value by one</li>
+            <li>negating an expression</li>
+            <li>inverting the value of a boolean</li>
+        </ul>
+        <h3 class="h3">Java Unary Operator Example: ++ and --</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 270px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int x=10;
+        System.out.println(x++);//10 (11)
+        System.out.println(++x);//12
+        System.out.println(x--);//12 (11)
+        System.out.println(--x);//10
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+10
+12
+12
+10
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Unary Operator Example 2: ++ and --</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 250px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=10;
+        System.out.println(a++ + ++a);//10+12=22
+        System.out.println(b++ + b++);//10+11=21
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+22
+21
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Unary Operator Example: ~ and !</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 340px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=-10;
+        boolean c=true;
+        boolean d=false;
+        System.out.println(~a);//-11 (minus of total positive value which starts from 0)
+        System.out.println(~b);//9 (positive of total minus, positive starts from 0)
+        System.out.println(!c);//false (opposite of boolean value)
+        System.out.println(!d);//true
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+-11
+9
+false
+true
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Arithmetic Operators</h3>
+        <p>Java arithmetic operators are used to perform addition, subtraction, multiplication, and division. They act
+            as
+            basic
+            mathematical operations.</p>
+        <h3 class="h3">Java Arithmetic Operator Example</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 320px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=5;
+        System.out.println(a+b);//15
+        System.out.println(a-b);//5
+        System.out.println(a*b);//50
+        System.out.println(a/b);//2
+        System.out.println(a%b);//0
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+15
+5
+50
+2
+0
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Arithmetic Operator Example: Expression</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 180px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        System.out.println(10*10/5+3-1*4/2);
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+21
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Left Shift Operator</h3>
+        <p>The Java left shift operator &lt;&lt; is used to shift all of the bits in a value to the left side of a
+            specified
+            number of times.</p>
+        <h3 class="h3">Java Left Shift Operator Example</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 270px;max-width: 100%;"">
+public class OperatorExample{
+    public static void main(String args[]){
+        System.out.println(10<<2); //10*2^2=10*4=40
+        System.out.println(10<<3); //10*2^3=10*8=80
+        System.out.println(20<<2); //20*2^2=20*4=80
+        System.out.println(15<<4); //15*2^4=15*16=240
+    }
+}
+
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+40
+80
+80
+240
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Right Shift Operator</h3>
+        <p>The Java right shift operator >> is used to move the value of the left operand to right by the number of bits
+            specified by the right operand.</p>
+        <h3 class="h3">Java Right Shift Operator Example</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 230px;max-width: 100%;">
+public OperatorExample{
+    public static void main(String args[]){
+        System.out.println(10>>2);//10/2^2=10/4=2
+        System.out.println(20>>2);//20/2^2=20/4=5
+        System.out.println(20>>3);//20/2^3=20/8=2
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+2
+5
+2
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Shift Operator Example: >> vs >>></h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+	    //For positive number, >> and >>> works same
+	    System.out.println(20>>2);
+	    System.out.println(20>>>2);
+	    //For negative number, >>> changes parity bit (MSB) to 0
+	    System.out.println(-20>>2);
+	    System.out.println(-20>>>2);
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+5
+5
+-5
+1073741819
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java AND Operator Example: Logical && and Bitwise &</h3>
+        <p>The logical && operator doesn't check the second condition if the first condition is false. It checks the
+            second
+            condition only if the first one is true.</p>
+        <p>The bitwise & operator always checks both conditions whether first condition is true or false.</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 270px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=5;
+        int c=20;
+        System.out.println(a&lt;b&&a&lt;c);//false && true = false
+        System.out.println(a&lt;b&a&lt;c);//false & true = false
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+false
+false
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java AND Operator Example: Logical && vs Bitwise &</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 330px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=5;
+        int c=20;
+        System.out.println(a&lt;b&&a++&lt;c);//false && true = false
+        System.out.println(a);//10 because second condition is not checked
+        System.out.println(a&lt;b&a++&lt;c);//false && true = false
+        System.out.println(a);//11 because second condition is checked
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+false
+10
+false
+11
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java OR Operator Example: Logical || and Bitwise |</h3>
+        <p>The logical || operator doesn't check the second condition if the first condition is true. It checks the
+            second
+            condition only if the first one is false.</p>
+        <p>The bitwise | operator always checks both conditions whether first condition is true or false.</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 390px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=5;
+        int c=20;
+        System.out.println(a>b||a<c);//true || true = true
+        System.out.println(a>b|a<c);//true | true = true
+        //|| vs |
+        System.out.println(a>b||a++<c);//true || true = true
+        System.out.println(a);//10 because second condition is not checked
+        System.out.println(a>b|a++<c);//true | true = true
+        System.out.println(a);//11 because second condition is checked
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+true
+true
+true
+10
+true
+11
+</pre>
+        </div>
+        <h3 class="h3 mt-2">Java Ternary Operator</h3>
+        <p>Java Ternary operator is used as one line replacement for if-then-else statement and used a lot in Java
+            programming.
+            It is the only conditional operator which takes three operands.</p>
+        <h3 class="h3">Java Ternary Operator Example</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 250px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=2;
+        int b=5;
+        int min=(a&lt;b)?a:b;
+        System.out.println(min);
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+2
+</pre>
+        </div>
+        
+        <h3 class="h3 mt-2">Java Assignment Operator</h3>
+        <p>Java assignment operator is one of the most common operators. It is used to assign the value on its right to
+            the
+            operand on its left.</p>
+        <h3 class="h3">Java Assignment Operator Example</h3>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+public class OperatorExample{
+    public static void main(String args[]){
+        int a=10;
+        int b=20;
+        a+=4;//a=a+4 (a=10+4)
+        b-=4;//b=b-4 (b=20-4)
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+</textarea></div>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+14
+16
+</pre>
+        </div>
+        
+        
+        <hr />
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="12unicode_system.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="14keyword.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

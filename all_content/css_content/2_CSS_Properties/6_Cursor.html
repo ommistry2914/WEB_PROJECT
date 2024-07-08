@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+   <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+       <div class="container-fluid">
+           <a class="navbar-brand" href="../../../home.html">
+               <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+               data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+               aria-labelledby="offcanvasNavbarDarkLabel">
+               <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                       <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                   </h5>
+                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                       aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                       <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               Programming Language
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               Web Developement
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Tutorial
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Properties
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                               <li><a class="dropdown-item" href="2_border.html">Border</a></li>
+                               <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                               <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                               <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                               <li><a class="dropdown-item active-submenu" href="6_Cursor.html">Cursor</a></li>
+                               <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                               <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                               <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                               <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                               <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                               <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                               <li><a class="dropdown-item" href="13_colors.html">Colors</a></li>
+                               <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                               <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                               <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                               <li><a class="dropdown-item" href="17_background_attachment.html">background-attachment</a></li>
+                               <li><a class="dropdown-item" href="18_background_size.html">Background size</a></li>
+                               <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                               <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                               <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                               <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                               <li><a class="dropdown-item" href="23_position.html">Position</a></li>
+                               <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                               <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                               <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                               <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                               <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                               <li><a class="dropdown-item" href="29_Lists.html">Lists</a></li>
+                               <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                               <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Advance
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Design
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                               <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                               <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                               <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../../../about.html">About Us</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </nav>
+   <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Cursor</h1>
+    <p>It is used to define the type of mouse cursor when the mouse pointer is on the element. It allows us to specify the cursor type, which will be displayed to the user. When a user hovers on the link, then by default, the cursor transforms into the hand from a pointer.</p>
+    <p>Let's understand the property values of the cursor.</p>
+    <table class="alt">
+    <tr>
+    <th>Values</th>
+    <th>Usage</th>
+    </tr>
+    <tr>
+    <td><strong>alias</strong></td>
+    <td>It is used to display the indication of the cursor of something that is to be created.</td>
+    </tr>
+    <tr>
+    <td><strong>auto</strong></td>
+    <td>It is the default property in which the browser sets the cursor.</td>
+    </tr>
+    <tr>
+    <td><strong>all-scroll</strong></td>
+    <td>It indicates the scrolling.</td>
+    </tr>
+    <tr>
+    <td><strong>col-resize</strong></td>
+    <td>Using it, the cursor will represent that the column can be horizontally resized.</td>
+    </tr>
+    <tr>
+    <td><strong>cell</strong></td>
+    <td>The cursor will represent that a cell or the collection of cells is selected.</td>
+    </tr>
+    <tr>
+    <td><strong>context-menu</strong></td>
+    <td>It indicates the availability of the context menu.</td>
+    </tr>
+    <tr>
+    <td><strong>default</strong></td>
+    <td>It indicates an arrow, which is the default cursor.</td>
+    </tr>
+    <tr>
+    <td><strong>copy</strong></td>
+    <td>It is used to indicate that something is copied.</td>
+    </tr>
+    <tr>
+    <td><strong>crosshair</strong></td>
+    <td>In it, the cursor changes to the crosshair or the plus sign.</td>
+    </tr>
+    <tr>
+    <td><strong>e-resize</strong></td>
+    <td>It represents the east direction and indicates that the edge of the box is to be shifted towards right.</td>
+    </tr>
+    <tr>
+    <td><strong>ew-resize</strong></td>
+    <td>It represents the east/west direction and indicates a bidirectional resize cursor.</td>
+    </tr>
+    <tr>
+    <td><strong>n-resize</strong></td>
+    <td>It represents the north direction that indicates that the edge of the box is to be shifted to up.</td>
+    </tr>
+    <tr>
+    <td><strong>ne-resize</strong></td>
+    <td>It represents the north/east direction and indicates that the edge of the box is to be shifted towards up and right.</td>
+    </tr>
+    <tr>
+    <td><strong>move</strong></td>
+    <td>It indicates that something is to be shifted.</td>
+    </tr>
+    <tr>
+    <td><strong>help</strong></td>
+    <td>It is in the form of a question mark or ballon, which represents that help is available.</td>
+    </tr>
+    <tr>
+    <td><strong>None</strong></td>
+    <td>It is used to indicate that no cursor is rendered for the element.</td>
+    </tr>
+    <tr>
+    <td><strong>No-drop</strong></td>
+    <td>It is used to represent that the dragged item cannot be dropped here.</td>
+    </tr>
+    <tr>
+    <td><strong>s-resize</strong></td>
+    <td>It indicates an edge box is to be moved down. It indicates the south direction.</td>
+    </tr>
+    <tr>
+    <td><strong>Row-resize</strong></td>
+    <td>It is used to indicate that the row can be vertically resized.</td>
+    </tr>
+    <tr>
+    <td><strong>Se-resize</strong></td>
+    <td>It represents the south/east direction, which indicates that an edge box is to be moved down and right. </td>
+    </tr>
+    <tr>
+    <td><strong>Sw-resize</strong></td>
+    <td>It represents south/west direction and indicates that an edge of the box is to be shifted towards down and left.</td>
+    </tr>
+    <tr>
+    <td><strong>Wait</strong></td>
+    <td>It represents an hourglass.</td>
+    </tr>
+    <tr>
+    <td><strong>&lt;url&gt;</strong></td>
+    <td>It indicates the source of the cursor image file.</td>
+    </tr>
+    <tr>
+    <td><strong>w-resize</strong></td>
+    <td>It indicates the west direction and represents that the edge of the box is to be shifted left.</td>
+    </tr>
+    <tr>
+    <td><strong>Zoom-in</strong></td>
+    <td>It is used to indicate that something can be zoomed in.</td>
+    </tr>
+    <tr>
+    <td><strong>Zoom-out</strong></td>
+    <td>It is used to indicate that something can be zoomed out.</td>
+    </tr>
+    </table>
+    <p>The illustration of using the above values of cursor property is given below:</p>
+    <p><strong>Example</strong></p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;html&gt;
+       &lt;head&gt;
+       &lt;/head&gt;
+       &lt;style&gt;
+          body{
+             background-color: lightblue;
+             color:green;
+             text-align: center;
+             font-size: 20px;
+          }
+        
+       &lt;/style&gt;
+       
+       &lt;body&gt;
+          &lt;p&gt;Move your mouse over the below words for the cursor change.&lt;/p&gt;
+          &lt;div style = "cursor:alias"&gt;alias Value&lt;/div&gt;      
+          &lt;div style = "cursor:auto"&gt;auto Value&lt;/div&gt;
+          &lt;div style = "cursor:all-scroll"&gt;all-scroll value&lt;/div&gt;
+          &lt;div style = "cursor:col-resize"&gt;col-resize value&lt;/div&gt;
+          &lt;div style = "cursor:crosshair"&gt;Crosshair&lt;/div&gt;
+          &lt;div style = "cursor:default"&gt;Default value&lt;/div&gt;
+          &lt;div style = "cursor:copy"&gt;copy value&lt;/div&gt;
+          &lt;div style = "cursor:pointer"&gt;Pointer&lt;/div&gt;
+          &lt;div style = "cursor:move"&gt;Move&lt;/div&gt;
+          &lt;div style = "cursor:e-resize"&gt;e-resize&lt;/div&gt;
+          &lt;div style = "cursor:ew-resize"&gt;ew-resize&lt;/div&gt;
+          &lt;div style = "cursor:ne-resize"&gt;ne-resize&lt;/div&gt;
+          &lt;div style = "cursor:nw-resize"&gt;nw-resize&lt;/div&gt;
+          &lt;div style = "cursor:n-resize"&gt;n-resize&lt;/div&gt;
+          &lt;div style = "cursor:se-resize"&gt;se-resize&lt;/div&gt;
+          &lt;div style = "cursor:sw-resize"&gt;sw-resize&lt;/div&gt;
+          &lt;div style = "cursor:s-resize"&gt;s-resize&lt;/div&gt;
+          &lt;div style = "cursor:w-resize"&gt;w-resize&lt;/div&gt;
+          &lt;div style = "cursor:text"&gt;text&lt;/div&gt;
+          &lt;div style = "cursor:wait"&gt;wait&lt;/div&gt;
+          &lt;div style = "cursor:help"&gt;help&lt;/div&gt;
+          &lt;div style = "cursor:progress"&gt;Progress&lt;/div&gt;
+          &lt;div style = "cursor:no-drop"&gt;no-drop&lt;/div&gt;
+          &lt;div style = "cursor:not-allowed"&gt;not-allowed&lt;/div&gt;
+          &lt;div style = "cursor:vertical-text"&gt;vertical-text&lt;/div&gt;
+          &lt;div style = "cursor:zoom-in"&gt;Zoom-in&lt;/div&gt;
+          &lt;div style = "cursor:zoom-out"&gt;Zoom-out&lt;/div&gt;
+       &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+   </div>
+   <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+       <a href="5_display.html"><button class="btn btn-danger" type="button">Previous</button></a>
+       <a href="7_button.html"><button class="btn btn-success" type="button">Next</button></a>
+   </div>
+   <footer>
+       <div class="container-fluid bg-dark text-bg-dark"
+           style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+           Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+       </div>
+   </footer>
+   </body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+   crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstraction in Python</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item active-submenu" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Abstraction in Python</h1>
+    <p>Abstraction is used to hide the internal functionality of the function from the users. The users only interact
+        with the basic implementation of the function, but inner working is hidden. User is familiar with that
+        <strong>"what function does"</strong> but they don't know <strong>"how it does."</strong></p>
+    <p>In simple words, we all use the smartphone and very much familiar with its functions such as camera,
+        voice-recorder, call-dialing, etc., but we don't know how these operations are happening in the background.
+        Let's take another example - When we use the TV remote to increase the volume. We don't know how pressing a key
+        increases the volume of the TV. We only know to press the "+" button to increase the volume.</p>
+    <p>That is exactly the abstraction that works in the <a
+            href="https://www.javatpoint.com/python-oops-concepts">object-oriented concept</a>.</p>
+    <h2 class="h2">Why Abstraction is Important?</h2>
+    <p>In Python, an abstraction is used to hide the irrelevant data/class in order to reduce the complexity. It also
+        enhances the application efficiency. Next, we will learn how we can achieve abstraction using the <a
+            href="https://www.javatpoint.com/python-programs">Python program</a>.</p>
+    <h2 class="h2">Abstraction classes in Python</h2>
+    <p>In <a href="https://www.javatpoint.com/python-tutorial">Python</a>, abstraction can be achieved by using abstract
+        classes and interfaces.</p>
+    <p>A class that consists of one or more abstract method is called the abstract class. Abstract methods do not
+        contain their implementation. Abstract class can be inherited by the subclass and abstract method gets its
+        definition in the subclass. Abstraction classes are meant to be the blueprint of the other class. An abstract
+        class can be useful when we are designing large functions. An abstract class is also helpful to provide the
+        standard interface for different implementations of components. Python provides the <strong>abc</strong> module
+        to use the abstraction in the Python program. Let's see the following syntax.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+from abc import ABC
+class ClassName(ABC):
+</textarea></div>
+    <p>We import the ABC class from the <strong>abc</strong> module.</p>
+    <h2 class="h2">Abstract Base Classes</h2>
+    <p>An abstract base class is the common application program of the interface for a set of subclasses. It can be used
+        by the third-party, which will provide the implementations such as with plugins. It is also beneficial when we
+        work with the large code-base hard to remember all the classes.</p>
+    <h2 class="h2">Working of the Abstract Classes</h2>
+    <p>Unlike the other high-level language, Python doesn't provide the abstract class itself. We need to import the abc
+        module, which provides the base for defining Abstract Base classes (ABC). The ABC works by decorating methods of
+        the base class as abstract. It registers concrete classes as the implementation of the abstract base. We use the
+        <strong><em>@abstractmethod</em></strong> decorator to define an abstract method or if we don't provide the
+        definition to the method, it automatically becomes the abstract method. Let's understand the following example.
+    </p>
+    <p><strong>Example -</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program demonstrate
+# abstract base class work 
+from abc import ABC, abstractmethod 
+class Car(ABC): 
+	def mileage(self): 
+		pass
+
+class Tesla(Car): 
+	def mileage(self): 
+		print("The mileage is 30kmph") 
+class Suzuki(Car): 
+	def mileage(self): 
+		print("The mileage is 25kmph ") 
+class Duster(Car): 
+	 def mileage(self): 
+		  print("The mileage is 24kmph ") 
+
+class Renault(Car): 
+    def mileage(self): 
+		    print("The mileage is 27kmph ") 
+		
+# Driver code 
+t= Tesla () 
+t.mileage() 
+
+r = Renault() 
+r.mileage() 
+
+s = Suzuki() 
+s.mileage() 
+d = Duster() 
+d.mileage()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The mileage is 30kmph
+The mileage is 27kmph 
+The mileage is 25kmph 
+The mileage is 24kmph
+</pre>
+    </div>
+    <p><strong>Explanation -</strong></p>
+    <p>In the above code, we have imported the <strong>abc module</strong> to create the abstract base class. We created
+        the Car class that inherited the ABC class and defined an abstract method named mileage(). We have then
+        inherited the base class from the three different subclasses and implemented the abstract method differently. We
+        created the objects to call the abstract method.</p>
+    <p>Let's understand another example.</p>
+    <p>Let's understand another example.</p>
+    <p><strong>Example -</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to define 
+# abstract class
+
+from abc import ABC
+
+class Polygon(ABC): 
+
+   # abstract method 
+   def sides(self): 
+      pass
+
+class Triangle(Polygon): 
+
+   
+   def sides(self): 
+      print("Triangle has 3 sides") 
+
+class Pentagon(Polygon): 
+
+   
+   def sides(self): 
+      print("Pentagon has 5 sides") 
+
+class Hexagon(Polygon): 
+
+   def sides(self): 
+      print("Hexagon has 6 sides") 
+
+class square(Polygon): 
+
+   def sides(self): 
+      print("I have 4 sides") 
+
+# Driver code 
+t = Triangle() 
+t.sides() 
+
+s = square() 
+s.sides() 
+
+p = Pentagon() 
+p.sides() 
+
+k = Hexagon() 
+K.sides() 
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Triangle has 3 sides
+Square has 4 sides
+Pentagon has 5 sides
+Hexagon has 6 sides
+</pre>
+    </div>
+    <p><strong>Explanation -</strong></p>
+    <p>In the above code, we have defined the abstract base class named Polygon and we also defined the abstract method.
+        This base class inherited by the various subclasses. We implemented the abstract method in each subclass. We
+        created the object of the subclasses and invoke the <strong>sides()</strong> method. The hidden implementations
+        for the <strong>sides()</strong> method inside the each subclass comes into play. The abstract method
+        <strong>sides()</strong> method, defined in the abstract class, is never invoked.</p>
+    <h2 class="h2">Points to Remember</h2>
+    <p>Below are the points which we should remember about the abstract base class in Python.</p>
+    <ul class="points">
+        <li>An Abstract class can contain the both method normal and abstract method.</li>
+        <li>An Abstract cannot be instantiated; we cannot create objects for the abstract class.</li>
+    </ul>
+    <p>Abstraction is essential to hide the core functionality from the users. We have covered the all the basic
+        concepts of Abstraction in Python.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="29_inheritance.html"><button class="btn btn-danger" type="button">Previous</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

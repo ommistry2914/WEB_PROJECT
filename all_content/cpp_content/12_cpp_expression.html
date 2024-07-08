@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Expression</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item active-submenu" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Expression</h1>
+    <p>C++ expression consists of operators, constants, and variables which are arranged according to the rules of the
+        language. It can also contain function calls which return values. An expression can consist of one or more
+        operands, zero or more operators to compute a value. Every expression produces some value which is assigned to
+        the variable with the help of an assignment operator. </p>
+    <p><strong>Examples of C++ expression:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+(a+b) - c
+(x/y) -z
+4a2 - 5b +c
+(a+b) * (x+y)
+</textarea></div>
+    <h3 class="h3">An expression can be of following types:</h3>
+    <ul class="points">
+        <li>Constant expressions</li>
+        <li>Integral expressions</li>
+        <li>Float expressions</li>
+        <li>Pointer expressions</li>
+        <li>Relational expressions</li>
+        <li>Logical expressions</li>
+        <li>Bitwise expressions</li>
+        <li>Special assignment expressions</li>
+    </ul>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-expression.png" alt="C++ Expression" />
+    <p>If the expression is a combination of the above expressions, such expressions are known as compound expressions.
+    </p>
+    <h3 class="h3">Constant expressions</h3>
+    <p>A constant expression is an expression that consists of only constant values. It is an expression whose value is
+        determined at the compile-time but evaluated at the run-time. It can be composed of integer, character,
+        floating-point, and enumeration constants.</p>
+    <p>Constants are used in the following situations:</p>
+    <ul class="poitns">
+        <li>It is used in the subscript declarator to describe the array bound.</li>
+        <li>It is used after the case keyword in the switch statement.</li>
+        <li>It is used as a numeric value in an <strong>enum</strong></li>
+        <li>It specifies a bit-field width.</li>
+        <li>It is used in the pre-processor <strong>#if</strong></li>
+    </ul>
+    <p>In the above scenarios, the constant expression can have integer, character, and enumeration constants. We can
+        use the static and extern keyword with the constants to define the function-scope.</p>
+    <p>The following table shows the expression containing constant value:</p>
+    <table class="alt">
+        <tr>
+            <th>Expression containing constant</th>
+            <th>Constant value</th>
+        </tr>
+        <tr>
+            <td>x = (2/3) * 4</td>
+            <td>(2/3) * 4</td>
+        </tr>
+        <tr>
+            <td>extern int y = 67</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>int z = 43</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>static int a = 56</td>
+            <td>56</td>
+        </tr>
+    </table>
+    <p>Let's see a simple program containing constant expression:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int x;        // variable declaration.
+    x=(3/2) + 2;  // constant expression
+    cout&lt;&lt;"Value of x is : "&lt;&lt;x;  // displaying the value of x.
+    return 0;
+}
+</textarea></div>
+    <p>In the above code, we have first declared the 'x' variable of integer type. After declaration, we assign the
+        simple constant expression to the 'x' variable.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Value of x is : 3  
+</pre>
+    </div>
+    <h3 class="h3">Integral Expressions</h3>
+    <p>An integer expression is an expression that produces the integer value as output after performing all the
+        explicit and implicit conversions.</p>
+    <p><strong>Following are the examples of integral expression:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+(x * y) -5      
+x + int(9.0)
+where x and y are the integers.
+</textarea></div>
+    <p><strong>Let's see a simple example of integral expression:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int x;  // variable declaration.
+    int y;  // variable declaration
+    int z;  // variable declaration
+    cout&lt;&lt;"Enter the values of x and y";
+    cin&gt;&gt;x&gt;&gt;y;
+    z=x+y;
+    cout&lt;&lt;"\n"&lt;&lt;"Value of z is :"&lt;&lt;z; //  displaying the value of z.
+    return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared three variables, i.e., x, y, and z. After declaration, we take the user input
+        for the values of 'x' and 'y'. Then, we add the values of 'x' and 'y' and stores their result in 'z' variable.
+    </p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Enter the values of x and y                                                                                                     
+8                                                                                                                               
+9                                                                                                                               
+Value of z is :17     
+</pre>
+    </div>
+    <p><strong>Let's see another example of integral expression.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    
+   int x;   // variable declaration
+   int y=9;    // variable initialization
+   x=y+int(10.0);    // integral expression
+  cout&lt;&lt;"Value of x : "&lt;&lt;x;   // displaying the value of x.
+  return 0;
+}
+</textarea></div>
+    <p>In the above code, we declare two variables, i.e., x and y. We store the value of expression (y+int(10.0)) in a
+        'x' variable.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Value of x : 19       
+</pre>
+    </div>
+    <h3 class="h3">Float Expressions</h3>
+    <p>A float expression is an expression that produces floating-point value as output after performing all the
+        explicit and implicit conversions.</p>
+    <p>The following are the examples of float expressions:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+x+y
+(x/10) + y
+34.5
+x+float(10)
+</textarea></div>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    
+   float x=8.9;      // variable initialization
+   float y=5.6;      // variable initialization
+   float z;             // variable declaration
+   z=x+y;
+   std::cout &lt;&lt;"value of z is :"  &lt;&lt; z&lt;&lt;std::endl;  // displaying the value of z.
+   
+
+    return 0;
+}
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+value of z is :14.5       
+</pre>
+    </div>
+    <p><strong>Let's see another example of float expression.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+   float x=6.7;    // variable initialization
+   float y;      // variable declaration
+   y=x+float(10);   // float expression
+   std::cout &lt;&lt;"value of y is :"  &lt;&lt; y&lt;&lt;std::endl;  // displaying the value of y
+   return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared two variables, i.e., x and y. After declaration, we store the value of
+        expression (x+float(10)) in variable 'y'.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+value of y is :16.7  
+</pre>
+    </div>
+    <h3 class="h3">Pointer Expressions</h3>
+    <p>A pointer expression is an expression that produces address value as an output. </p>
+    <p><strong>The following are the examples of pointer expression:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+&x
+ptr
+ptr++
+ptr-
+</textarea></div>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    
+   int a[]={1,2,3,4,5};  // array initialization
+   int *ptr;       // pointer declaration
+   ptr=a;    // assigning base address of array to the pointer ptr
+   ptr=ptr+1;   // incrementing the value of pointer
+   std::cout &lt;&lt;"value of second element of an array : "  &lt;&lt; *ptr&lt;&lt;std::endl;
+   return 0;
+}
+</textarea></div>
+    <p>In the above code, we declare the array and a pointer ptr. We assign the base address to the variable 'ptr'.
+        After assigning the address, we increment the value of pointer 'ptr'. When pointer is incremented then 'ptr'
+        will be pointing to the second element of the array.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+value of second element of an array : 2
+</pre>
+    </div>
+    <h3 class="h3">Relational Expressions</h3>
+    <p>A relational expression is an expression that produces a value of type bool, which can be either true or false.
+        It is also known as a boolean expression. When arithmetic expressions are used on both sides of the relational
+        operator, arithmetic expressions are evaluated first, and then their results are compared.</p>
+    <p><strong>The following are the examples of the relational expression:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+a&gt;b
+a-b &gt;= x-y
+a+b&gt;80
+</textarea></div>
+    <p><strong>Let's understand through an example</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int a=45;    // variable declaration
+    int b=78;    // variable declaration
+    bool y= a&gt;b;   // relational expression
+    cout&lt;&lt;"Value of y is :"&lt;&lt;y;  // displaying the value of y.
+    return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared two variables, i.e., 'a' and 'b'. After declaration, we have applied the
+        relational operator between the variables to check whether 'a' is greater than 'b' or not.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Value of y is :0 
+</pre>
+    </div>
+    <p><strong>Let's see another example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int a=4;     // variable declaration
+ int b=5;     // variable declaration
+ int x=3;     // variable declaration
+ int y=6;    // variable declaration
+ cout&lt;&lt;((a+b)&gt;=(x+y));   // relational expression 
+ return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared four variables, i.e., 'a', 'b', 'x' and 'y'. Then, we apply the relational
+        operator (>=) between these variables.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+1
+</pre>
+    </div>
+    <h3 class="h3">Logical Expressions</h3>
+    <p>A logical expression is an expression that combines two or more relational expressions and produces a bool type
+        value. The logical operators are '&&' and '||' that combines two or more relational expressions.</p>
+    <p>The following are some examples of logical expressions:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+a&gt;b && x&gt;y
+a&gt;10 || b==5
+</textarea></div>
+    <p><strong>Let's see a simple example of logical expression.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int a=2;
+ int b=7;
+ int c=4;
+cout&lt;&lt;((a&gt;b)||(a&gt;c));
+return 0;
+}
+</textarea></div>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+0
+</pre>
+    </div>
+    <h3 class="h3">Bitwise Expressions</h3>
+    <p>A bitwise expression is an expression which is used to manipulate the data at a bit level. They are basically
+        used to shift the bits.</p>
+    <p>For example:</p>
+    <p>x=3</p>
+    <p>x>>3 // This statement means that we are shifting the three-bit position to the right.</p>
+    <p>In the above example, the value of 'x' is 3 and its binary value is 0011. We are shifting the value of 'x' by
+        three-bit position to the right. Let's understand through the diagrammatic representation.</p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-expression2.png" alt="C++ Expression" />
+    <p><strong>Let's see a simple example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int x=5;   // variable declaration
+std::cout &lt;&lt; (x&gt;&gt;1) &lt;&lt; std::endl;
+return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared a variable 'x'. After declaration, we applied the bitwise operator, i.e.,
+        right shift operator to shift one-bit position to right.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+2
+</pre>
+    </div>
+    <p><strong>Let's look at another example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int x=7;   // variable declaration
+std::cout &lt;&lt; (x&lt;&lt;3) &lt;&lt; std::endl;
+return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared a variable 'x'. After declaration, we applied the left shift operator to
+        variable 'x' to shift the three-bit position to the left.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+56
+</pre>
+    </div>
+    <h3 class="h3">Special Assignment Expressions</h3>
+    <p>Special assignment expressions are the expressions which can be further classified depending upon the value
+        assigned to the variable.</p>
+    <ul class="points">
+        <li><strong>Chained Assignment</strong></li>
+    </ul>
+    <p>Chained assignment expression is an expression in which the same value is assigned to more than one variable by
+        using single statement.</p>
+    <p><strong>For example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+a=b=20 
+ or 
+(a=b) = 20
+</textarea></div>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+
+ int a;   // variable declaration
+ int b;   // variable declaration
+ a=b=80;  // chained assignment
+ std::cout &lt;&lt;"Values of 'a' and 'b' are : " &lt;&lt;a&lt;&lt;","&lt;&lt;b&lt;&lt; std::endl;
+ return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared two variables, i.e., 'a' and 'b'. Then, we have assigned the same value to
+        both the variables using chained assignment expression.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Values of 'a' and 'b' are : 80,80  
+</pre>
+    </div>
+    <h4 class="n">Note: Using chained assignment expression, the value cannot be assigned to the variable at the time of
+        declaration. For example, int a=b=c=90 is an invalid statement.</h4>
+    <ul class="points">
+        <li><strong>Embedded Assignment Expression</strong></li>
+    </ul>
+    <p>An embedded assignment expression is an assignment expression in which assignment expression is enclosed within
+        another assignment expression.</p>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int a;  // variable declaration
+ int b;  // variable declaration
+ a=10+(b=90);  // embedded assignment expression
+ std::cout &lt;&lt;"Values of 'a' is " &lt;&lt;a&lt;&lt; std::endl;
+ return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared two variables, i.e., 'a' and 'b'. Then, we applied embedded assignment
+        expression (a=10+(b=90)).</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Values of 'a' is 100  
+</pre>
+    </div>
+    <ul class="points">
+        <li><strong>Compound Assignment</strong></li>
+    </ul>
+    <p>A compound assignment expression is an expression which is a combination of an assignment operator and binary
+        operator.</p>
+    <p><strong>For example,</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+a+=10; 
+</textarea></div>
+    <p>In the above statement, 'a' is a variable and '+=' is a compound statement.</p>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+  int a=10;   // variable declaration
+  a+=10;    // compound assignment
+  std::cout &lt;&lt; "Value of a is :" &lt;&lt;a&lt;&lt; std::endl; // displaying the value of a.
+  return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared a variable 'a' and assigns 10 value to this variable. Then, we applied
+        compound assignment operator (+=) to 'a' variable, i.e., a+=10 which is equal to (a=a+10). This statement
+        increments the value of 'a' by 10.</p>
+    <p><strong>Output</strong></p>
+    <div class="codeblock3">
+        <pre>
+Value of a is :20  
+</pre>
+    </div>
+    <hr />
+
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="11_cpp_identifier.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="13_cpp_if_else_statement.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

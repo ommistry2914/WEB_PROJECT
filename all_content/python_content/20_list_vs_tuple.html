@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List vs Tuples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item active-submenu" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python List Vs Tuple</h1>
+    <p>This tutorial will study the major differences between lists and tuples and how to handle these two data
+        structures.</p>
+    <p>Lists and tuples are types of data structures that hold one or more than one objects or items in a predefined
+        order. We can contain objects of any data type in a list or tuple, including the null data type defined by the
+        None Keyword.</p>
+    <h2 class="h2">What is a List?</h2>
+    <p>In other programming languages, list objects are declared similarly to arrays. Lists don't have to be homogeneous
+        all the time, so they can simultaneously store items of different data types. This makes lists the most useful
+        tool. The list is a kind of container data Structure of Python that is used to hold numerous pieces of data
+        simultaneously. Lists are helpful when we need to iterate over some elements and keep hold of the items.</p>
+    <h2 class="h2">What is a Tuple?</h2>
+    <p>A tuple is another data structure to store the collection of items of many data types, but unlike mutable lists,
+        tuples are immutable. A tuple, in other words, is a collection of items separated by commas. Because of its
+        static structure, the tuple is more efficient than the list.</p>
+    <h2 class="h2">Differences between Lists and Tuples</h2>
+    <p>In most cases, lists and tuples are equivalent. However, there are some important differences to be explored in
+        this article.</p>
+    <h3 class="h3">List and Tuple Syntax Differences</h3>
+    <p>The syntax of a list differs from that of a tuple. Items of a tuple are enclosed by parentheses or curved
+        brackets (), whereas items of a list are enclosed by square brackets [].</p>
+    <p><strong>Example Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+ # Python code to show the difference between creating a list and a tuple
+
+list_ = [4, 5, 7, 1, 7]
+tuple_ = (4, 1, 8, 3, 9)
+
+print("List is: ", list_)
+print("Tuple is: ", tuple_)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+List is:  [4, 5, 7, 1, 7]
+Tuple is:  (4, 1, 8, 3, 9)
+</pre>
+    </div>
+    <p>We declared a variable named list_, which contains a certain number of integers ranging from 1 to 10. The list is
+        enclosed in square brackets []. We also created a variable called tuple_, which holds a certain number of
+        integers. The tuple is enclosed in curly brackets (). The type() method in Python returns the data type of the
+        data structure or object passed to it.</p>
+    <p><strong>Example Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to print the data type of the data structure using the type() function
+print( type(list_) )
+print( type(tuple_) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+&lt;class 'list'&gt;
+&lt;class 'tuple'&gt;
+</pre>
+    </div>
+    <h3 class="h3">Mutable List vs. Immutable Tuple</h3>
+    <p>An important difference between a list and a tuple is that lists are mutable, whereas tuples are immutable. What
+        exactly does this imply? It means a list's items can be changed or modified, whereas a tuple's items cannot be
+        changed or modified.</p>
+    <p>We can't employ a list as a key of a dictionary because it is mutable. This is because a key of a Python
+        dictionary is an immutable object. As a result, tuples can be used as keys to a dictionary if required.</p>
+    <p>Let's consider the example highlighting the difference between lists and tuples in immutability and mutability.
+    </p>
+    <p><strong>Example Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Updating the element of list and tuple at a particular index
+
+# creating a list and a tuple
+list_ = ["Python", "Lists", "Tuples", "Differences"]
+tuple_ = ("Python", "Lists", "Tuples", "Differences")
+
+# modifying the last string in both data structures
+list_[3] = "Mutable"
+print( list_ )
+try:
+    tuple_[3] = "Immutable"
+    print( tuple_ )
+except TypeError:
+    print( "Tuples cannot be modified because they are immutable" )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+['Python', 'Lists', 'Tuples', 'Mutable']
+Tuples cannot be modified because they are immutable
+</pre>
+    </div>
+    <p>We altered the string of list_ at index 3 in the above code, which the Python interpreter updated at index 3 in
+        the output. Also, we tried to modify the last index of the tuple in a try block, but since it raised an error,
+        we got output from the except block. This is because tuples are immutable, and the Python interpreter raised
+        TypeError on modifying the tuple.</p>
+    <h3 class="h3">Size Difference</h3>
+    <p>Since tuples are immutable, Python allocates bigger chunks of memory with minimal overhead. Python, on the
+        contrary, allots smaller memory chunks for lists. The tuple would therefore have less memory than the list. If
+        we have a huge number of items, this makes tuples a little more memory-efficient than lists.</p>
+    <p>For example, consider creating a list and a tuple with the identical items and comparing their sizes:</p>
+    <p><strong>Example Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Code to show the difference in the size of a list and a tuple
+
+#creating a list and a tuple
+list_ = ["Python", "Lists", "Tuples", "Differences"]
+tuple_ = ("Python", "Lists", "Tuples", "Differences")
+# printing sizes 
+print("Size of tuple: ", tuple_.__sizeof__())
+print("Size of list: ", list_.__sizeof__())
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Size of tuple:  28
+Size of list:  52
+</pre>
+    </div>
+    <h3 class="h3">Available Functions</h3>
+    <p>Tuples have fewer built-in functions than lists. We may leverage the in-built function dir([object] to access all
+        the corresponding methods for the list and tuple.</p>
+    <p><strong>Example Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# printing directory of list
+dir(list_)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+</pre>
+    </div>
+    <p><strong>Example Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Printing directory of a tuple
+print( dir(tuple_), end = ", " )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+</pre>
+    </div>
+    <p>As we can observe, a list has many more methods than a tuple. With intrinsic functions, we can perform insert and
+        pop operations and remove and sort items from the list not provided in the tuple.</p>
+    <h2 class="h2">Tuples and Lists: Key Similarities</h2>
+    <ul class="points">
+        <li>They both hold collections of items and are heterogeneous data types, meaning they can contain multiple data
+            types simultaneously.</li>
+        <li>They're both ordered, which implies the items or objects are maintained in the same order as they were
+            placed until changed manually.</li>
+        <li>Because they're both sequential data structures, we can iterate through the objects they hold; hence, they
+            are iterables.</li>
+        <li>An integer index, enclosed in square brackets [index], can be used to access objects of both data types.
+        </li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="19_tuples.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="21_set.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

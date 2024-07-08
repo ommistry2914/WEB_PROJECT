@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsupervised Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item active-submenu" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Unsupervised Machine Learning</h1>
+    <p>In the previous topic, we learned supervised machine learning in which models are trained using labeled data
+        under the supervision of training data. But there may be many cases in which we do not have labeled data and
+        need to find the hidden patterns from the given dataset. So, to solve such types of cases in machine learning,
+        we need unsupervised learning techniques. </p>
+    <h2 class="h2">What is Unsupervised Learning?</h2>
+    <p>As the name suggests, unsupervised learning is a machine learning technique in which models are not supervised
+        using training dataset. Instead, models itself find the hidden patterns and insights from the given data. It can
+        be compared to learning which takes place in the human brain while learning new things. It can be defined as:
+    </p>
+    <blockquote><em>Unsupervised learning is a type of machine learning in which models are trained using unlabeled
+            dataset and are allowed to act on that data without any supervision.</em></blockquote>
+    <p>Unsupervised learning cannot be directly applied to a regression or classification problem because unlike
+        supervised learning, we have the input data but no corresponding output data. The goal of unsupervised learning
+        is to <strong>find the underlying structure of dataset, group that data according to similarities, and represent
+            that dataset in a compressed format</strong>.</p>
+    <p><strong>Example:</strong> Suppose the unsupervised learning algorithm is given an input dataset containing images
+        of different types of cats and dogs. The algorithm is never trained upon the given dataset, which means it does
+        not have any idea about the features of the dataset. The task of the unsupervised learning algorithm is to
+        identify the image features on their own. Unsupervised learning algorithm will perform this task by clustering
+        the image dataset into the groups according to similarities between images. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/unsupervised-machine-learning.png"
+        alt="Supervised Machine learning" />
+    <h2 class="h2">Why use Unsupervised Learning?</h2>
+    <p>Below are some main reasons which describe the importance of Unsupervised Learning:</p>
+    <ul class="points">
+        <li>Unsupervised learning is helpful for finding useful insights from the data.</li>
+        <li>Unsupervised learning is much similar as a human learns to think by their own experiences, which makes it
+            closer to the real AI. </li>
+        <li>Unsupervised learning works on unlabeled and uncategorized data which make unsupervised learning more
+            important.</li>
+        <li>In real-world, we do not always have input data with the corresponding output so to solve such cases, we
+            need unsupervised learning. </li>
+    </ul>
+    <h2 class="h2">Working of Unsupervised Learning</h2>
+    <p>Working of unsupervised learning can be understood by the below diagram:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/unsupervised-machine-learning-1.png"
+        alt="Supervised Machine learning" />
+    <p>Here, we have taken an unlabeled input data, which means it is not categorized and corresponding outputs are also
+        not given. Now, this unlabeled input data is fed to the machine learning model in order to train it. Firstly, it
+        will interpret the raw data to find the hidden patterns from the data and then will apply suitable algorithms
+        such as k-means clustering, Decision tree, etc. </p>
+    <p>Once it applies the suitable algorithm, the algorithm divides the data objects into groups according to the
+        similarities and difference between the objects. </p>
+    <h2 class="h2">Types of Unsupervised Learning Algorithm:</h2>
+    <p> The unsupervised learning algorithm can be further categorized into two types of problems:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/unsupervised-machine-learning-2.png"
+        alt="Supervised Machine learning" />
+    <ul class="points">
+        <li><strong>Clustering</strong>: Clustering is a method of grouping the objects into clusters such that objects
+            with most similarities remains into a group and has less or no similarities with the objects of another
+            group. Cluster analysis finds the commonalities between the data objects and categorizes them as per the
+            presence and absence of those commonalities.</li>
+        <li><strong>Association</strong>: An association rule is an unsupervised learning method which is used for
+            finding the relationships between variables in the large database. It determines the set of items that
+            occurs together in the dataset. Association rule makes marketing strategy more effective. Such as people who
+            buy X item (suppose a bread) are also tend to purchase Y (Butter/Jam) item. A typical example of Association
+            rule is Market Basket Analysis. </li>
+    </ul>
+    <h4 class="n">Note: We will learn these algorithms in later chapters.</h4>
+    <h2 class="h2">Unsupervised Learning algorithms:</h2>
+    <p>Below is the list of some popular unsupervised learning algorithms:</p>
+    <ul class="points">
+        <li><strong>K-means clustering</strong></li>
+        <li><strong>KNN (k-nearest neighbors) </strong></li>
+        <li><strong>Hierarchal clustering</strong></li>
+        <li><strong>Anomaly detection</strong></li>
+        <li><strong>Neural Networks</strong></li>
+        <li><strong>Principle Component Analysis</strong></li>
+        <li><strong>Independent Component Analysis</strong></li>
+        <li><strong>Apriori algorithm</strong></li>
+        <li><strong>Singular value decomposition</strong></li>
+    </ul>
+    <h2 class="h2">Advantages of Unsupervised Learning</h2>
+    <ul class="points">
+        <li>Unsupervised learning is used for more complex tasks as compared to supervised learning because, in
+            unsupervised learning, we don't have labeled input data. </li>
+        <li>Unsupervised learning is preferable as it is easy to get unlabeled data in comparison to labeled data.</li>
+    </ul>
+    <h2 class="h2">Disadvantages of Unsupervised Learning</h2>
+    <ul class="points">
+        <li>Unsupervised learning is intrinsically more difficult than supervised learning as it does not have
+            corresponding output.</li>
+        <li>The result of the unsupervised learning algorithm might be less accurate as input data is not labeled, and
+            algorithms do not know the exact output in advance.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="8_supervised_learning.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="10_supervised_vs_unsupervised.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

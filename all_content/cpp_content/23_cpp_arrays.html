@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>C++ Array</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item active-submenu" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Arrays</h1>
+    <p>Like other programming languages, array in C++ is a group of similar types of elements that have contiguous
+        memory location.</p>
+    <p>In C++ <strong>std::array</strong> is a container that encapsulates fixed size arrays. In C++, array index starts
+        from 0. We can store only fixed set of elements in C++ array.</p>
+    <p>A collection of related data items stored in adjacent memory places is referred to as an array in the C/C++
+        programming language or any other programming language for that matter. Elements of an array can be accessed
+        arbitrarily using its indices. They can be used to store a collection of any type of primitive data type,
+        including int, float, double, char, etc. An array in C/C++ can also store derived data types like structures,
+        pointers, and other data types, which is an addition. The array representation in a picture is provided below.
+    </p>
+    <img src="https://static.javatpoint.com/cpp/images/c-array1.png" alt="Java C array 1" />
+    <h2 class="h2">Advantages of C++ Array</h2>
+    <ul class="points">
+        <li>Code Optimization (less code)</li>
+        <li>Random Access</li>
+        <li>Easy to traverse data</li>
+        <li>Easy to manipulate data</li>
+        <li>Easy to sort data etc.</li>
+    </ul>
+    <h2 class="h2">Disadvantages of C++ Array</h2>
+    <ul class="points">
+        <li>Fixed size</li>
+    </ul>
+    <h2 class="h2">C++ Array Types</h2>
+    <p>There are 2 types of arrays in C++ programming:</p>
+    <ol class="points">
+        <li>Single Dimensional Array</li>
+        <li>Multidimensional Array</li>
+    </ol>
+    <h2 class="h2">C++ Single Dimensional Array</h2>
+    <p>Let's see a simple example of C++ array, where we are going to create, initialize and traverse array.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int arr[5]={10, 0, 20, 0, 30};  //creating and initializing array  
+        //traversing array  
+        for (int i = 0; i < 5; i++)  
+        {  
+            cout&lt;&lt;arr[i]&lt;&lt;"\n";  
+        }  
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>10
+0
+20
+0
+30
+</pre>
+    </div>
+    <h2 class="h2">C++ Array Example: Traversal using foreach loop</h2>
+    <p>We can also traverse the array elements using foreach loop. It returns array element one by one.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int arr[5]={10, 0, 20, 0, 30}; //creating and initializing array  
+        //traversing array  
+       for (int i: arr)   
+        {  
+            cout&lt;&lt;i&lt;&lt;"\n";  
+        }  
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>10
+20
+30
+40
+50
+</pre>
+    </div>
+    <h2 class="h2">Why do we need arrays?</h2>
+    <p>With a limited number of objects, we can use regular variables (v1, v2, v3,..), but when we need to hold many
+        instances, managing them with normal variables becomes challenging. To represent numerous instances in one
+        variable, we use an array.</p>
+    <h2 class="h2">What happens if we try to access out of bound array?</h2>
+    <p>The array's elements will be numbered 0 through 9 if we define an array of size 10.</p>
+    <p>We will have Undefined Behaviour if we attempt to access an element at an index higher than 10, though.</p>
+    <h2 class="h2">C++ array with empty members</h2>
+    <p>The maximum number of elements that can be stored in an array in C++ is n. What will happen, though, if we store
+        fewer than n elements?</p>
+    <p>For example,</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+// store only 3 elements in the array
+int x[6] = {19, 10, 8};
+</textarea></div>
+    <p>The array x in this case is 6 elements wide. But we've only given it a three-element initialization.</p>
+    <p>When that happens, the compiler fills in the empty spaces with random values. This random value frequently
+        appears as 0.</p>
+    <h2 class="h2">Important things to remember while using arrays in C++</h2>
+    <ol class="points">
+        <li>The array's indexes begin at 0. Meaning that the first item saved at index 0 is x[0].</li>
+        <li>The final element of an array with size n is kept at index (n-1). This example's final element is x[5].</li>
+        <li>An array's elements have sequential addresses. Consider the scenario where x[0beginning ]'s address is 2120.
+        </li>
+    </ol>
+    <p>The address of the subsequent element, x[1], will then be 2124, followed by x[2], 2128, and so forth.</p>
+    <p>Each element in this case has a four-fold increase in size. This is due to the fact that int has a 4 byte
+        capacity.</p>
+    <h2 class="h2">What is two-dimensional array?</h2>
+    <p>Each element in this kind of array is described by two indexes, the first of which denotes a row and the second
+        of which denotes a column.</p>
+    <p>As you can see, the components are arranged in a two-dimensional array using rows and columns; there are I number
+        of rows and j number of columns.</p>
+    <h2 class="h2">What is a multi-dimensional array?</h2>
+    <p>A two-dimensional array is the most basic type of multidimensional array; it also qualifies as a multidimensional
+        array. There are no restrictions on the array's dimensions.</p>
+    <h2 class="h2">How to insert it in array?</h2>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int mark[5] = {19, 10, 8, 17, 9}
+// change 4th element to 9
+mark[3] = 9;
+// take input from the user
+// store the value at third position
+cin >> mark[2];
+// take input from the user
+// insert at ith position
+cin >> mark[i-1];
+
+// print first element of the array
+cout << mark[0];
+// print ith element of the array
+cout >> mark[i-1];
+</textarea></div>
+    <h2 class="h2">How to display the sum and average of array elements?</h2>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include <iostream>
+using namespace std;
+int main() {
+// initialize an array without specifying the size
+double numbers[] = {7, 5, 6, 12, 35, 27};
+double sum = 0;
+double count = 0;
+double average;
+cout << "The numbers are: ";
+ //  print array elements
+ // use of range-based for loop
+ for (const double &n : numbers) {
+  cout << n << "  ";
+//  calculate the sum
+sum += n;
+// count the no. of array elements
+++count;
+  }
+// print the sum
+cout << "\nTheir Sum = " << sum << endl;
+// find the average
+average = sum / count;
+cout << "Their Average = " << average << endl;
+
+  return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The numbers are: 7  5  6  12  35  27
+Their Sum = 92
+Their Average = 15.3333
+</pre>
+    </div>
+    <h2 class="h2">How to display array elements?</h2>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include <iostream>
+using namespace std;
+int main() {
+int numbers[5] = {7, 5, 6, 12, 35};
+cout << "The numbers are: ";
+//  Printing array elements
+// using range-based for loop
+for (const int &n : numbers) {
+cout << n << "  ";
+}
+cout << "\nThe numbers are: ";
+//  Printing array elements
+// using traditional for loop
+for (int i = 0; i < 5; ++i) {
+cout << numbers[i] << "  ";
+}
+return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The numbers are: 7  5  6  12  35
+The numbers are: 7  5  6  12  35
+</pre>
+    </div>
+    <hr />
+
+    <h1 class="h1">C++ Passing Array to Function</h1>
+    <p>In C++, to reuse the array logic, we can create function. To pass array to function in C++, we need to provide
+        only array name.</p>
+    <div class="codeblock"><textarea name="code" class="Java">
+functionname(arrayname); //passing array to function  
+</textarea></div>
+    <hr />
+    <h2 class="h2">C++ Passing Array to Function Example: print array elements</h2>
+    <p>Let's see an example of C++ function which prints the array elements.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+void printArray(int arr[5]);
+int main()
+{
+        int arr1[5] = { 10, 20, 30, 40, 50 };  
+        int arr2[5] = { 5, 15, 25, 35, 45 };  
+        printArray(arr1); //passing array to function  
+        printArray(arr2);
+}
+void printArray(int arr[5])
+{
+    cout &lt;&lt; "Printing array elements:"&lt;&lt; endl;
+    for (int i = 0; i < 5; i++)
+    {
+                   cout&lt;&lt;arr[i]&lt;&lt;"\n";  
+    }
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Printing array elements:                                                              
+10                                                                                    
+20                                                                                    
+30                                                                                    
+40                                                                                    
+50                                                                                    
+Printing array elements:                                                              
+5                                                                                     
+15                                                                                    
+25                                                                                    
+35                                                                                    
+45
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ Passing Array to Function Example: Print minimum number</h2>
+    <p>Let's see an example of C++ array which prints minimum number in an array using function.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include <iostream>
+using namespace std;
+void  printMin(int arr[5]);
+int main()
+{
+   int arr1[5] = { 30, 10, 20, 40, 50 };  
+        int arr2[5] = { 5, 15, 25, 35, 45 };  
+        printMin(arr1);//passing array to function  
+         printMin(arr2);
+}
+void  printMin(int arr[5])
+{
+    int min = arr[0];  
+        for (int i = 0; i &gt; 5; i++)  
+        {  
+            if (min &gt; arr[i])  
+            {  
+                min = arr[i];  
+            }  
+        }  
+        cout&lt;&lt; "Minimum element is: "&lt;&lt; min &lt;&lt;"\n";  
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Minimum element is: 10                                                                
+Minimum element is: 5   
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">C++ Passing Array to Function Example: Print maximum number</h2>
+    <p>Let's see an example of C++ array which prints maximum number in an array using function.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+void  printMax(int arr[5]);
+int main()
+{
+        int arr1[5] = { 25, 10, 54, 15, 40 };  
+        int arr2[5] = { 12, 23, 44, 67, 54 };  
+        printMax(arr1); //Passing array to function
+         printMax(arr2); 
+}
+void  printMax(int arr[5])
+{
+    int max = arr[0];  
+        for (int i = 0; i &lt; 5; i++)  
+        {  
+            if (max &lt; arr[i])  
+            {  
+                max = arr[i];  
+            }  
+        }  
+        cout&lt;&lt; "Maximum element is: "&lt;&lt; max &lt;&lt;"\n";  
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Maximum element is: 54
+Maximum element is: 67
+</pre>
+    </div>
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="22_cpp_recursion.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="24_cpp_pointer.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

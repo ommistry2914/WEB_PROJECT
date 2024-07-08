@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Java Object And Class</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+        <h1 class="h1">Objects and Classes in Java</h1>
+        <div id="upr">
+            <ol>
+                <li><a href="#object">Object in Java</a></li>
+                <li><a href="#class">Class in Java</a></li>
+                <li><a href="#objectinstancevariable">Instance Variable in Java</a></li>
+                <li><a href="#objectmethod">Method in Java</a></li>
+                <li><a href="#objectannonymous">Anonymous Object</a></li>
+            </ol>
+        </div>
+        <p>In this page, we will learn about Java objects and classes. In object-oriented programming technique, we
+            design a
+            program using objects and classes.</p>
+        <p>An object in Java is the physical as well as a logical entity, whereas, a class in Java is a logical entity
+            only.
+        </p>
+        <a id="object"></a>
+        <h3 class="h2">What is an object in Java</h3>
+        <img src="https://static.javatpoint.com/images/objects.jpg" alt="object in Java" width="350" height="350"
+            style="margin-left:20px;float:right;" />
+        <p>An entity that has state and behavior is known as an object e.g., chair, bike, marker, pen, table, car, etc.
+            It
+            can
+            be physical or logical (tangible and intangible). The example of an intangible object is the banking system.
+        </p>
+        <p>An object has three characteristics:</p>
+        <ul class="points">
+            <li><strong>State:</strong> represents the data (value) of an object.</li>
+            <li><strong>Behavior:</strong> represents the behavior (functionality) of an object such as deposit,
+                withdraw,
+                etc.
+            </li>
+            <li><strong>Identity:</strong> An object identity is typically implemented via a unique ID. The value of the
+                ID
+                is
+                not visible to the external user. However, it is used internally by the JVM to identify each object
+                uniquely.
+            </li>
+        </ul>
+        <img src="https://static.javatpoint.com/images/characteristics-of-object.jpg"
+            alt="Characteristics of Object in Java" />
+        <p>For Example, Pen is an object. Its name is Reynolds; color is white, known as its state. It is used to write,
+            so
+            writing is its behavior.
+        </p>
+        <p><strong>An object is an instance of a class.</strong> A class is a template or blueprint from which objects
+            are
+            created. So, an object is the instance(result) of a class.
+        </p>
+        <p><strong>Object Definitions:</strong></p>
+        <ul class="points">
+            <li>An object is <em>a real-world entity</em>.</li>
+            <li>An object is <em>a runtime entity</em>.</li>
+            <li>The object is <em>an entity which has state and behavior</em>.</li>
+            <li>The object is <em>an instance of a class</em>.</li>
+        </ul>
+        <hr />
+        
+        <h2 id="class" class="h2">What is a class in Java</h2>
+        <p>A class is a group of objects which have common properties. It is a template or blueprint from which objects
+            are
+            created. It is a logical entity. It can't be physical.</p>
+        <p>A class in Java can contain:</p>
+        <ul class="points">
+            <li><strong>Fields</strong></li>
+            <li><strong>Methods</strong></li>
+            <li><strong>Constructors</strong></li>
+            <li><strong>Blocks</strong></li>
+            <li><strong>Nested class and interface</strong></li>
+        </ul>
+        <img src="https://static.javatpoint.com/images/class-in-java.png" alt="Class in Java" />
+        
+        <hr />
+        <a id="objectinstancevariable"></a>
+        <h3 class="h2">Instance variable in Java</h3>
+        <p>A variable which is created inside the class but outside the method is known as an instance variable.
+            Instance
+            variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is
+            created.
+            That
+            is why it is known as an instance variable.</p>
+        <hr />
+        <a id="objectmethod"></a>
+        <h3 class="h2">Method in Java</h3>
+        <p>In Java, a method is like a function which is used to expose the behavior of an object.</p>
+        <a id="objectadvantageofmethod"></a>
+        <h4 class="h4">Advantage of Method</h4>
+        <ul class="points">
+            <li>Code Reusability</li>
+            <li>Code Optimization</li>
+        </ul>
+        <hr />
+        <a id="objectnewkeyword"></a>
+        <h3 class="h2">new keyword in Java</h3>
+        <p>The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.</p>
+        <hr />
+        <h3 class="h3ex">Object and Class Example: main within the class</h3>
+        <p>In this example, we have created a Student class which has two data members id and name. We are creating the
+            object
+            of the Student class by new keyword and printing the object's value.</p>
+        <p>Here, we are creating a main() method inside the class.</p>
+        <p class="filename">File: Student.java</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 300px;max-width: 100%;">
+//Java Program to illustrate how to define a class and fields
+//Defining a Student class.
+class Student{
+ //defining fields
+ int id;//field or data member or instance variable
+ String name;
+ //creating main method inside the Student class
+ public static void main(String args[]){
+  //Creating an object or instance
+  Student s1=new Student();//creating an object of Student
+  //Printing values of the object
+  System.out.println(s1.id);//accessing member through reference variable
+  System.out.println(s1.name);
+ }
+}
+</textarea></div>
+        <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Student" target="_blank">Test it
+                Now</a></span>
+        <p>Output:</p>
+        <div class="codeblock3">
+            <pre>
+0 
+null
+</pre>
+        </div>
+        <h3 class="h3ex">Object and Class Example: main outside the class</h3>
+        <p>In real time development, we create classes and use it from another class. It is a better approach than
+            previous
+            one.
+            Let's see a simple example, where we are having main() method in another class.</p>
+        <p>We can have multiple classes in different Java files or single Java file. If you define multiple classes in a
+            single
+            Java source file, it is a good idea to save the file name with the class name which has main() method.</p>
+        <p class="filename">File: TestStudent1.java</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+            style="resize: none;min-height: 200px;max-width: 100%;">
+//Java Program to demonstrate having the main method in 
+//another class
+//Creating Student class.
+class Student{
+ int id;
+ String name;
+}
+//Creating another class TestStudent1 which contains the main method
+class TestStudent1{
+ public static void main(String args[]){
+  Student s1=new Student();
+  System.out.println(s1.id);
+  System.out.println(s1.name);
+ }
+}
+</textarea></div>
+        <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestStudent1"
+                target="_blank">Test it
+                Now</a></span>
+        <p>Output:</p>
+        <div class="codeblock3">
+            <pre>
+0 
+null
+</pre>
+        </div>
+        <h2 class="h2">3 Ways to initialize object</h2>
+        <p>There are 3 ways to initialize object in Java.</p>
+        <ol class="points">
+            <li>By reference variable</li>
+            <li>By method</li>
+            <li>By constructor</li>
+        </ol>
+        
+        <a id="objectways"></a>
+        <h2 class="h2">What are the different ways to create an object in Java?</h2>
+        <p>There are many ways to create an object in java. They are:</p>
+        <ul class="points">
+            <li>By new keyword</li>
+            <li>By newInstance() method</li>
+            <li>By clone() method</li>
+            <li>By deserialization</li>
+            <li>By factory method etc.</li>
+        </ul>
+        <p>We will learn these ways to create object later.</p>
+        <img src="https://static.javatpoint.com/images/different-ways-to-create-object-in-java.jpg"
+            alt="Different Ways to create an Object in Java" />
+        <a id="objectannonymous"></a>
+        <h2 class="h2">Anonymous object</h2>
+        <p>Anonymous simply means nameless. An object which has no reference is known as an anonymous object. It can be
+            used
+            at
+            the time of object creation only.</p>
+        
+            <a id="objectbyonetype"></a>
+        <h3 class="h2">Creating multiple objects by one type only</h3>
+        <p>We can create multiple objects by one type only as we do in case of primitives.</p>
+        
+        
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="25java_naming.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="27method.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

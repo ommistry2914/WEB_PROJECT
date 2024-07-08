@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a></li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install Python</a></li>
+                                <li><a class="dropdown-item active-submenu" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a></li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a></li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Variables</h1>
+    <p>A variable is the name given to a memory location. A value-holding Python variable is also known as an
+        identifier.</p>
+    <p>Since Python is an infer language that is smart enough to determine the type of a variable, we do not need to
+        specify its type in Python.</p>
+    <p>Variable names must begin with a letter or an underscore, but they can be a group of both letters and digits.</p>
+    <p>The name of the variable should be written in lowercase. Both Rahul and rahul are distinct variables.</p>
+    <h2 class="h2">Identifier Naming</h2>
+    <p>Identifiers are things like variables. An Identifier is utilized to recognize the literals utilized in the
+        program. The standards to name an identifier are given underneath.</p>
+    <ul class="points">
+        <li>The variable's first character must be an underscore or alphabet (_).</li>
+        <li>Every one of the characters with the exception of the main person might be a letter set of lower-case(a-z),
+            capitalized (A-Z), highlight, or digit (0-9).</li>
+        <li>White space and special characters (!, @, #, %, etc.) are not allowed in the identifier name. ^, &amp;, *).
+        </li>
+        <li>Identifier name should not be like any watchword characterized in the language.</li>
+        <li>Names of identifiers are case-sensitive; for instance, my name, and MyName isn't something very similar.
+        </li>
+        <li>Examples of valid identifiers: a123, _n, n_9, etc.</li>
+        <li>Examples of invalid identifiers: 1a, n%4, n 9, etc.</li>
+    </ul>
+    <h2 class="h2">Declaring Variable and Assigning Values</h2>
+    <ul class="points">
+        <li>Python doesn't tie us to pronounce a variable prior to involving it in the application. It permits us to
+            make a variable at the necessary time.</li>
+        <li>In Python, we don't have to explicitly declare variables. The variable is declared automatically whenever a
+            value is added to it.</li>
+        <li>The equal (=) operator is utilized to assign worth to a variable.</li>
+    </ul>
+    <h2 class="h2">Object References</h2>
+    <p>When we declare a variable, it is necessary to comprehend how the Python interpreter works. Compared to a lot of
+        other programming languages, the procedure for dealing with variables is a little different.</p>
+    <p>Python is the exceptionally object-arranged programming language; Because of this, every data item is a part of a
+        particular class. Think about the accompanying model.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+print("John")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+John
+</pre>
+    </div>
+    <p>The Python object makes a integer object and shows it to the control center. We have created a string object in
+        the print statement above. Make use of the built-in type() function in Python to determine its type.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+type("John")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+&lt;class 'str'&gt;
+</pre>
+    </div>
+    <p>In Python, factors are an symbolic name that is a reference or pointer to an item. The factors are utilized to
+        indicate objects by that name.</p>
+    <p>Let's understand the following example</p>
+    <div class="codeblock"><textarea name="code" class="java">
+a = 50 
+</textarea></div>
+    <br>
+    <img src="https://static.javatpoint.com/python/images/python-variables.png" alt="Python Variables" />
+    <p>In the above image, the variable <strong>a</strong> refers to an integer object.</p>
+    <p>Suppose we assign the integer value 50 to a new variable b.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+a = 50
+b = a
+</textarea></div>
+    <br>
+    <img src="https://static.javatpoint.com/python/images/python-variables2.png" alt="Python Variables" />
+    <p>The variable b refers to the same object that a points to because Python does not create another object.</p>
+    <p>Let's assign the new value to b. Now both variables will refer to the different objects.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+a = 50
+b =100
+</textarea></div>
+    <br>
+    <img src="https://static.javatpoint.com/python/images/python-variables3.png" alt="Python Variables" />
+    <p>Python manages memory efficiently if we assign the same variable to two different values.</p>
+    <h2 class="h2">Object Identity</h2>
+    <p>Every object created in Python has a unique identifier. Python gives the dependable that no two items will have a
+        similar identifier. The object identifier is identified using the built-in id() function. consider about the
+        accompanying model.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+a = 50
+b = a
+print(id(a))
+print(id(b))
+# Reassigned variable a
+a = 500
+print(id(a))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+140734982691168
+140734982691168
+2822056960944
+</pre>
+    </div>
+    <p>We assigned the b = a, an and b both highlight a similar item. The id() function that we used to check returned
+        the same number. We reassign a to 500; The new object identifier was then mentioned.</p>
+    <h2 class="h2">Variable Names</h2>
+    <p>The process for declaring the valid variable has already been discussed. Variable names can be any length can
+        have capitalized, lowercase (start to finish, a to z), the digit (0-9), and highlight character(_). Take a look
+        at the names of valid variables in the following example.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+name = "Devansh"
+age = 20
+marks = 80.50
+
+print(name)
+print(age)
+print(marks)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Devansh
+20
+80.5
+</pre>
+    </div>
+    <p>Consider the following valid variables name.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+name = "A"
+Name = "B"
+naMe = "C"
+NAME = "D"
+n_a_m_e = "E"
+_name = "F"
+name_ = "G"
+_name_ = "H"
+na56me = "I"
+
+print(name,Name,naMe,NAME,n_a_m_e, NAME, n_a_m_e, _name, name_,_name, na56me)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+A B C D E D E F G F I
+</pre>
+    </div>
+    <p>We have declared a few valid variable names in the preceding example, such as name, _name_, and so on. However,
+        this is not recommended because it may cause confusion when we attempt to read code. To make the code easier to
+        read, the name of the variable ought to be descriptive.</p>
+    <p>The multi-word keywords can be created by the following method.</p>
+    <ul class="points">
+        <li><strong>Camel Case -</strong> In the camel case, each word or abbreviation in the middle of begins with a
+            capital letter. There is no intervention of whitespace. For example - nameOfStudent, valueOfVaraible, etc.
+        </li>
+        <li><strong>Pascal Case -</strong> It is the same as the Camel Case, but here the first word is also capital.
+            For example - NameOfStudent, etc.</li>
+        <li><strong>Snake Case -</strong> In the snake case, Words are separated by the underscore. For example -
+            name_of_student, etc.</li>
+    </ul>
+    <h2 class="h2">Multiple Assignment</h2>
+    <p>Multiple assignments, also known as assigning values to multiple variables in a single statement, is a feature of
+        Python.</p>
+    <p>We can apply different tasks in two ways, either by relegating a solitary worth to various factors or doling out
+        numerous qualities to different factors. Take a look at the following example.</p>
+    <p><strong>1. Assigning single value to multiple variables</strong></p>
+    <p><strong>Eg:</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+x=y=z=50  
+print(x)  
+print(y)  
+print(z)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+50  
+50  
+50  
+</pre>
+    </div>
+    <p><strong>2. Assigning multiple values to multiple variables:</strong></p>
+    <p><strong>Eg:</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+a,b,c=5,10,15  
+print a  
+print b  
+print c  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+5  
+10  
+15  
+</pre>
+    </div>
+    <p>The values will be assigned in the order in which variables appear.</p>
+    <h2 class="h2">Python Variable Types</h2>
+    <p>There are two types of variables in Python - Local variable and Global variable. Let's understand the following
+        variables.</p>
+    <h3 class="h3">Local Variable</h3>
+    <p>The variables that are declared within the function and have scope within the function are known as local
+        variables. Let's examine the following illustration.</p>
+    <p><strong>Example -</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Declaring a function
+def add():
+    # Defining local variables. They has scope only within a function
+    a = 20
+    b = 30
+    c = a + b
+    print("The sum is:", c)
+
+# Calling a function
+add()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The sum is: 50
+</pre>
+    </div>
+    <p><strong>Explanation:</strong></p>
+    <p>We declared the function add() and assigned a few variables to it in the code above. These factors will be
+        alluded to as the neighborhood factors which have scope just inside the capability. We get the error that
+        follows if we attempt to use them outside of the function.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+add()
+# Accessing local variable outside the function 
+print(a)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The sum is: 50
+    print(a)
+NameError: name 'a' is not defined
+</pre>
+    </div>
+    <p>We tried to use local variable outside their scope; it threw the <strong>NameError.</strong></p>
+    <h3 class="h3">Global Variables</h3>
+    <p>Global variables can be utilized all through the program, and its extension is in the whole program. Global
+        variables can be used inside or outside the function.</p>
+    <p>By default, a variable declared outside of the function serves as the global variable. Python gives the worldwide
+        catchphrase to utilize worldwide variable inside the capability. The function treats it as a local variable if
+        we don't use the global keyword. Let's examine the following illustration.</p>
+    <p><strong>Example -</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Declare a variable and initialize it
+x = 101
+
+# Global variable in function
+def mainFunction():
+    # printing a global variable
+    global x
+    print(x)
+    # modifying a global variable
+    x = 'Welcome To Javatpoint'
+    print(x)
+
+mainFunction()
+print(x)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+101
+Welcome To Javatpoint
+Welcome To Javatpoint
+</pre>
+    </div>
+    <p><strong>Explanation:</strong></p>
+    <p>In the above code, we declare a global variable x and give out a value to it. We then created a function and used
+        the global keyword to access the declared variable within the function. We can now alter its value. After that,
+        we gave the variable x a new string value and then called the function and printed x, which displayed the new
+        value.</p>=
+    <h2 class="h2">Delete a variable</h2>
+    <p>We can delete the variable using the <strong>del</strong> keyword. The syntax is given below.</p>
+    <p><strong>Syntax -</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+del &lt;variable_name&gt;
+</textarea></div>
+    <p>In the following example, we create a variable x and assign value to it. We deleted variable x, and print it, we
+        get the error <strong>"variable x is not defined"</strong>. The variable x will no longer use in future.</p>
+    <p><strong>Example -</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Assigning a value to x
+x = 6
+print(x)
+# deleting a variable. 
+del x
+print(x)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+6
+Traceback (most recent call last):
+  File "C:/Users/DEVANSH SHARMA/PycharmProjects/Hello/multiprocessing.py", line 389, in <module>
+    print(x)
+NameError: name 'x' is not defined
+</pre>
+    </div>
+    <h2 class="h2">Maximum Possible Value of an Integer in Python</h2>
+    <p>Python, to the other programming languages, does not support long int or float data types. It uses the int data
+        type to handle all integer values. The query arises here. In Python, what is the maximum value that the variable
+        can hold? Take a look at the following example.</p>
+    <p><strong>Example -</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# A Python program to display that we can store
+# large numbers in Python
+
+a = 10000000000000000000000000000000000000000000
+a = a + 1
+print(type(a))
+print (a)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+&lt;class 'int'&gt;
+10000000000000000000000000000000000000000001
+</pre>
+    </div>
+    <p>As we can find in the above model, we assigned a large whole number worth to variable x and really look at its
+        sort. It printed class &lt;int&gt; not long int. As a result, the number of bits is not limited, and we are free
+        to use all of our memory.</p>
+    <p>There is no special data type for storing larger numbers in Python.</p>
+    <p>Print Single and Numerous Factors in Python</p>
+    <p>We can print numerous factors inside the single print explanation. The examples of single and multiple printing
+        values are provided below.</p>
+    <p><strong>Example - 1 (Printing Single Variable)</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# printing single value 
+a = 5
+print(a)
+print((a))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+5
+5
+</pre>
+    </div>
+    <p><strong>Example - 2 (Printing Multiple Variables)</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+a = 5
+b = 6
+# printing multiple variables
+print(a,b)
+# separate the variables by the comma
+Print(1, 2, 3, 4, 5, 6, 7, 8) 
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+5 6
+1 2 3 4 5 6 7 8
+</pre>
+    </div>
+    <h2 class="h2">Basic Fundamentals:</h2>
+    <p>This section contains the fundamentals of Python, such as:</p>
+    <p><strong>i)Tokens and their types.</strong></p>
+    <p><strong>ii) Comments</strong></p>
+    <p><strong>a)Tokens:</strong></p>
+    <ul class="points">
+        <li>The tokens can be defined as a punctuator mark, reserved words, and each word in a statement.</li>
+        <li>The token is the smallest unit inside the given program.</li>
+    </ul>
+    <p>There are following tokens in Python:</p>
+    <ul class="points">
+        <li>Keywords.</li>
+        <li>Identifiers.</li>
+        <li>Literals.</li>
+        <li>Operators.</li>
+    </ul>
+    <p>We will discuss above the tokens in detail next tutorials.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="3_how_to_install_python.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="5_python_datatypes.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

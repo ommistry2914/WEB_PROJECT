@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+
+    <style>
+        .nav-item {
+            margin-left: 22px;
+        }
+
+        .font {
+            font-size: 1.12rem;
+        }
+
+        /* Added text decoration and box shadow */
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+            /* text-decoration: underline; */
+            /* font-weight: normal; */
+        }
+
+        .card {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.06);
+        }
+
+        @keyframes ri-icon {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            
+            100% {
+                transform: scale(1.2) rotate(360deg);
+            }
+        }
+
+        @keyframes ro-icon {
+            0% {
+                transform: scale(1.2) rotate(360deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        .icon-img:hover{
+            cursor: pointer;
+            animation: ri-icon 2s forwards;
+        }
+
+        .icon-img{
+            cursor: pointer;
+            animation: ro-icon 2s forwards;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <!-- Navigation -->
+    
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="icon/sg.png" alt="logo"
+                    style="height: 50px; width: 50px; margin-left: 20px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse" style="padding-left: 20px;">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link  font" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Programming Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="first_page/c_page.html">C</a></li>
+                            <li><a class="dropdown-item" href="first_page/c++_page.html">C++</a></li>
+                            <li><a class="dropdown-item" href="first_page/java_page.html">Java</a></li>
+                            <li><a class="dropdown-item" href="first_page/python_page.html">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Web Developement
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="first_page/html_page.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="first_page/css_page.html">CSS</a></li>
+                            <li><a class="dropdown-item" href="first_page/javascript_page.html">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font" href="first_page/ml_page.html">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active font" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Main Content -->
+
+    <div class="container my-4">
+        <div class="row" style="overflow: hidden;">
+            <!-- First Row -->
+            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                <img src="icon/black_sg.png" alt="Icon" class="img-fluid icon-img">
+            </div>
+            <div class="col-lg-8 my-4 p-3">
+                <h3 class="mb-4">Mission of StudyGenie</h3>
+                <h4>
+                    <p style="font-weight: normal; color: darkslategray;"> 
+                        At StudyGenie, our mission is to provide a dynamic and accessible online platform for learning and
+                        skill development. We are committed to empowering individuals of all backgrounds to enhance their
+                        knowledge, acquire new skills, and achieve their educational and career goals. Our comprehensive
+                        range of courses, tutorials, and resources, coupled with a user-friendly interface, fosters a
+                        flexible and engaging learning experience. With a vision of promoting lifelong learning, we aim to
+                        remove barriers to education, making it affordable and accessible to a global audience. Join us
+                        in the journey of continuous growth and discovery at StudyGenie.
+                    </p>
+                </h4>
+            </div>
+        </div>
+        <hr>
+        <h2 class="mt-5">About The Developers</h2>
+
+        <!-- Second Row with Cards -->
+        <div class="row mt-5">
+            <div class="col-lg-4 my-4">
+                <a href="mailto:shahdishank24@gmail.com" style="color: black; text-decoration: none;" target="_blank">
+                    <div class="card">
+                        <img src="boy1.png" class="card-img-top" alt="Card Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dishank Shah</h5>
+                            <p class="card-text">BE-III CSE</p>
+                            <p class="card-text">The Maharaja Sayajirao University | Baroda</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 my-4">
+                <a href="mailto:ommistry1376@gmail.com" style="color: black; text-decoration: none;" target="_blank">
+                    <div class="card">
+                        <img src="boy2.png" class="card-img-top" alt="Card Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Om Mistry</h5>
+                            <p class="card-text">BE-III CSE</p>
+                            <p class="card-text">The Maharaja Sayajirao University | Baroda</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 my-4">
+                <a href="mailto:aadityamahil1409@gmail.com" style="color: black; text-decoration: none;" target="_blank">
+                    <div class="card">
+                        <img src="boy3.png" class="card-img-top" alt="Card Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Aaditya Mahil</h5>
+                            <p class="card-text">BE-III CSE</p>
+                            <p class="card-text">The Maharaja Sayajirao University | Baroda</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            &copy; 2023 StudyGenie - All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Signup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+    <style>
+        .center-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .custom-icon {
+            width: 50%;
+            /* max-width: 150px; set maximum width for the icon */
+        }
+
+        .card {
+            box-shadow: 30px 30px 15px 0px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(white, #b3d6e6, white);">
+    <div class="container">
+        <div class="row justify-content-center center-div">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>Signup</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <label for="fn" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="fn" placeholder="Enter your first name"
+                                        onblur="bgcolor(event)">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="ln" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="ln" placeholder="Enter your last name"
+                                        onblur="bgcolor(event)">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="un" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="un" placeholder="Enter your username"
+                                    onblur="bgcolor(event)">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6">
+                                    <label for="pwd" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="pwd"
+                                        placeholder="Enter your password" onblur="bgcolor(event)">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="cpwd" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cpwd"
+                                        placeholder="Confirm your password" onblur="bgcolor(event)">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lun" class="form-label">Lucky Number<span
+                                        style="color: red;">*</span></label>
+                                <input type="number" class="form-control" id="lun" placeholder="Enter your lucky number"
+                                    onblur="bgcolor(event)">
+                                <div style="color: red;">remembet this because this is used to change your password!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="eml" class="form-label">E-mail ID</label>
+                                <input type="email" class="form-control" id="eml" placeholder="Enter your email"
+                                    onblur="bgcolor(event)">
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success" onclick="signupbtn()">Signup</button>
+                                <input type="reset" value="Clear" class="btn btn-warning">
+                                <a href="index.html"><button type="button" class="btn btn-danger">Cancel</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script>
+    function bgcolor(e) {
+        let c = document.getElementById(e.target.id);
+        if (c.value == "") {
+            c.style.borderColor = 'red';
+        }
+        else {
+            c.style.borderColor = 'lightgray';
+        }
+    }
+
+    function signupbtn() {
+        var fn = document.getElementById('fn').value;
+        var ln = document.getElementById('ln').value;
+        var un = document.getElementById('un').value;
+        var pwd = document.getElementById('pwd').value;
+        var cpwd = document.getElementById('cpwd').value;
+        var lun = document.getElementById('lun').value;
+        var eml = document.getElementById('eml').value;
+        if (fn == "") {
+            document.getElementById('fn').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (ln == "") {
+            document.getElementById('ln').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (un == "") {
+            document.getElementById('un').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (pwd == "") {
+            document.getElementById('pwd').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (cpwd == "") {
+            document.getElementById('cpwd').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (lun == "") {
+            document.getElementById('lun').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (eml == "") {
+            document.getElementById('eml').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (pwd != cpwd) {
+            window.alert("Confirm Password is wrong!");
+            document.getElementById('cpwd').style.borderColor = "red";
+        }
+        else if (eml != "" && !/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(eml)) {
+            window.alert('Invalid email address!');
+            document.getElementById('eml').style.borderColor = 'red';
+        }
+        else {
+            console.log(un);
+            console.log(ln);
+            window.alert('Account created successfully!');
+            window.open("home.html", target = '_top');
+        }
+    }
+</script>
+
+</html>

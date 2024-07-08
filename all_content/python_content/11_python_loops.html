@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item active-submenu" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python Loops</h1>
+    <p>The following loops are available in Python to fulfil the looping needs. Python offers 3 choices for running the
+        loops. The basic functionality of all the techniques is the same, although the syntax and the amount of time
+        required for checking the condition differ.</p>
+    <p>We can run a single statement or set of statements repeatedly using a loop command.</p>
+    <p>The following sorts of loops are available in the Python programming language.</p>
+    <table class="alt">
+        <tr>
+            <th>Sr.No.</th>
+            <th>Name of the loop</th>
+            <th>Loop Type & Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>While loop</strong></td>
+            <td>Repeats a statement or group of statements while a given condition is TRUE. It tests the condition
+                before executing the loop body.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>For loop</strong></td>
+            <td>This type of loop executes a code block multiple times and abbreviates the code that manages the loop
+                variable.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Nested loops</strong></td>
+            <td>We can iterate a loop inside another loop.</td>
+        </tr>
+    </table>
+    <h2 class="h2">Loop Control Statements</h2>
+    <p>Statements used to control loops and change the course of iteration are called control statements. All the
+        objects produced within the local scope of the loop are deleted when execution is completed.</p>
+    <p>Python provides the following control statements. We will discuss them later in detail.</p>
+    <p>Let us quickly go over the definitions of these loop control statements.</p>
+    <table class="alt">
+        <tr>
+            <th>Sr.No.</th>
+            <th>Name of the control statement</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>Break statement</strong></td>
+            <td>This command terminates the loop's execution and transfers the program's control to the statement next
+                to the loop.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Continue statement</strong></td>
+            <td>This command skips the current iteration of the loop. The statements following the continue statement
+                are not executed once the Python interpreter reaches the continue statement.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Pass statement</strong></td>
+            <td>The pass statement is used when a statement is syntactically necessary, but no code is to be executed.
+            </td>
+        </tr>
+    </table>
+    <h2 class="h2">The for Loop</h2>
+    <p>Python's for loop is designed to repeatedly execute a code block while iterating through a list, tuple,
+        dictionary, or other iterable objects of Python. The process of traversing a sequence is known as iteration.</p>
+    <p><strong>Syntax of the for Loop</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+for value in sequence:
+    { code block }
+</textarea></div>
+    <p>In this case, the variable value is used to hold the value of every item present in the sequence before the
+        iteration begins until this particular iteration is completed.</p>
+    <p>Loop iterates until the final item of the sequence are reached.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how the for loop works
+
+# Creating a sequence which is a tuple of numbers
+numbers = [4, 2, 6, 7, 3, 5, 8, 10, 6, 1, 9, 2]
+
+# variable to store the square of the number
+square = 0
+
+# Creating an empty list
+squares = []
+
+# Creating a for loop
+for value in numbers:
+    square = value ** 2
+    squares.append(square)
+print("The list of squares is", squares)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The list of squares is [16, 4, 36, 49, 9, 25, 64, 100, 36, 1, 81, 4]
+</pre>
+    </div>
+    <h3 class="h3">Using else Statement with for Loop</h3>
+    <p>As already said, a for loop executes the code block until the sequence element is reached. The statement is
+        written right after the for loop is executed after the execution of the for loop is complete.</p>
+    <p>Only if the execution is complete does the else statement comes into play. It won't be executed if we exit the
+        loop or if an error is thrown.</p>
+    <p>Here is a code to better understand if-else statements.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how if-else statements work
+
+string = "Python Loop"
+
+# Initiating a loop
+for s in a string:
+    # giving a condition in if block
+    if s == "o":
+        print("If block")
+    # if condition is not satisfied then else block will be executed
+    else:
+        print(s)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+P
+y
+t
+h
+If block
+n
+
+L
+If block
+If block
+p
+</pre>
+    </div>
+    <p>Now similarly, using else with for loop.</p>
+    <p><strong>Syntax:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+for value in sequence:
+     # executes the statements until sequences are exhausted
+else:
+     # executes these statements when for loop is completed
+</textarea></div>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how to use else statement with for loop
+
+# Creating a sequence
+tuple_ = (3, 4, 6, 8, 9, 2, 3, 8, 9, 7)
+
+# Initiating the loop
+for value in tuple_:
+    if value % 2 != 0:
+        print(value)
+# giving an else statement
+else:
+    print("These are the odd numbers present in the tuple")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+3
+9
+3
+9
+7
+These are the odd numbers present in the tuple
+</pre>
+    </div>
+    <h3 class="h3">The range() Function</h3>
+    <p>With the help of the range() function, we may produce a series of numbers. range(10) will produce values between
+        0 and 9. (10 numbers).</p>
+    <p>We can give specific start, stop, and step size values in the manner range(start, stop, step size). If the step
+        size is not specified, it defaults to 1.</p>
+    <p>Since it doesn't create every value it "contains" after we construct it, the range object can be characterized as
+        being "slow." It does provide in, len, and __getitem__ actions, but it is not an iterator.</p>
+    <p>The example that follows will make this clear.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show the working of range() function
+
+print(range(15))
+
+print(list(range(15)))
+
+print(list(range(4, 9)))
+
+print(list(range(5, 25, 4)))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+range(0, 15)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+[4, 5, 6, 7, 8]
+[5, 9, 13, 17, 21]
+</pre>
+    </div>
+    <p>To iterate through a sequence of items, we can apply the range() method in for loops. We can use indexing to
+        iterate through the given sequence by combining it with an iterable's len() function. Here's an illustration.
+    </p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to iterate over a sequence with the help of indexing
+
+tuple_ = ("Python", "Loops", "Sequence", "Condition", "Range")
+
+# iterating over tuple_ using range() function
+for iterator in range(len(tuple_)):
+    print(tuple_[iterator].upper())
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+PYTHON
+LOOPS
+SEQUENCE
+CONDITION
+RANGE
+</pre>
+    </div>
+    <h2 class="h2">While Loop</h2>
+    <p>While loops are used in Python to iterate until a specified condition is met. However, the statement in the
+        program that follows the while loop is executed once the condition changes to false.</p>
+    <p><strong>Syntax of the while loop is:</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+while <condition>:
+    { code block }
+</textarea></div>
+    <p>All the coding statements that follow a structural command define a code block. These statements are intended
+        with the same number of spaces. Python groups statements together with indentation. <br /> <strong>Code</strong>
+    </p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how to use a while loop
+counter = 0
+# Initiating the loop
+while counter < 10: # giving the condition
+    counter = counter + 3
+    print("Python Loops")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Python Loops
+Python Loops
+Python Loops
+Python Loops
+</pre>
+    </div>
+    <h3 class="h3">Using else Statement with while Loops</h3>
+    <p>As discussed earlier in the for loop section, we can use the else statement with the while loop also. It has the
+        same syntax.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Python program to show how to use else statement with the while loop
+counter = 0
+
+# Iterating through the while loop
+while (counter < 10):    
+    counter = counter + 3
+    print("Python Loops") # Executed untile condition is met
+# Once the condition of while loop gives False this statement will be executed
+else:
+    print("Code block inside the else statement")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Python Loops
+Python Loops
+Python Loops
+Python Loops
+Code block inside the else statement
+</pre>
+    </div>
+    <h3 class="h3">Single statement while Block</h3>
+    <p>The loop can be declared in a single statement, as seen below. This is similar to the if-else block, where we can
+        write the code block in a single line.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how to write a single statement while loop
+counter = 0
+while (count < 3): print("Python Loops")
+</textarea></div>
+    <h2 class="h2">Loop Control Statements</h2>
+    <p>Now we will discuss the loop control statements in detail. We will see an example of each control statement.</p>
+    <h3 class="h3">Continue Statement</h3>
+    <p>It returns the control to the beginning of the loop.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how the continue statement works
+
+# Initiating the loop
+for string in "Python Loops":
+    if string == "o" or string == "p" or string == "t":
+         continue
+    print('Current Letter:', string)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Current Letter: P
+Current Letter: y
+Current Letter: h
+Current Letter: n
+Current Letter:  
+Current Letter: L
+Current Letter: s
+</pre>
+    </div>
+    <h3 class="h3">Break Statement</h3>
+    <p>It stops the execution of the loop when the break statement is reached.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how the break statement works
+
+# Initiating the loop
+for string in "Python Loops":
+    if string == 'L':
+         break
+    print('Current Letter: ', string)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Current Letter:  P
+Current Letter:  y
+Current Letter:  t
+Current Letter:  h
+Current Letter:  o
+Current Letter:  n
+Current Letter:   
+</pre>
+    </div>
+    <h3 class="h3">Pass Statement</h3>
+    <p>Pass statements are used to create empty loops. Pass statement is also employed for classes, functions, and empty
+        control statements.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# Python program to show how the pass statement works
+for a string in "Python Loops":
+    pass
+print( 'Last Letter:', string) 
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Last Letter: s
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="10_python_if_else.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="12_for_loop.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

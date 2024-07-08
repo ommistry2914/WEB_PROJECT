@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Linear Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item active-submenu" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Simple Linear Regression in Machine Learning</h1>
+    <p>Simple Linear Regression is a type of Regression algorithms that models the relationship between a dependent
+        variable and a single independent variable. The relationship shown by a Simple Linear Regression model is linear
+        or a sloped straight line, hence it is called Simple Linear Regression.</p>
+    <p>The key point in Simple Linear Regression is that the <strong><em>dependent variable must be a continuous/real
+                value</em></strong>. However, the independent variable can be measured on continuous or categorical
+        values.</p>
+    <p>Simple Linear regression algorithm has mainly two objectives:</p>
+    <ul class="points">
+        <li><strong>Model the relationship between the two variables.</strong> Such as the relationship between Income
+            and expenditure, experience and Salary, etc.</li>
+        <li><strong>Forecasting new observations.</strong> Such as Weather forecasting according to temperature, Revenue
+            of a company according to the investments in a year, etc.</li>
+    </ul>
+    <h2 class="h2">Simple Linear Regression Model:</h2>
+    <p>The Simple Linear Regression model can be represented using the below equation:</p>
+    <div class="codeblock">
+        <pre>y= a<sub>0</sub>+a<sub>1</sub>x+ &epsilon; 
+</pre>
+    </div>
+    <p>Where,</p>
+    <p><strong>a0= It is the intercept of the Regression line (can be obtained putting x=0)</strong><br>
+        <strong>a1= It is the slope of the regression line, which tells whether the line is increasing or decreasing.
+        </strong><br>
+        <strong>&epsilon; = The error term. (For a good model it will be negligible)</strong>
+    </p>
+    <h2 class="h2">Implementation of Simple Linear Regression Algorithm using Python</h2>
+    <p><strong>Problem Statement example for Simple Linear Regression:</strong></p>
+    <p>Here we are taking a dataset that has two variables: salary (dependent variable) and experience (Independent
+        variable). The goals of this problem is:</p>
+    <ul class="points">
+        <li><strong>We want to find out if there is any correlation between these two variables</strong></li>
+        <li><strong>We will find the best fit line for the dataset.</strong></li>
+        <li><strong>How the dependent variable is changing by changing the independent variable.</strong></li>
+    </ul>
+    <p>In this section, we will create a Simple Linear Regression model to find out the best fitting line for
+        representing the relationship between these two variables.</p>
+    <p>To implement the Simple Linear regression model in machine learning using Python, we need to follow the below
+        steps:</p>
+    <p class="pq"><strong>Step-1: Data Pre-processing</strong></p>
+    <p>The first step for creating the Simple Linear Regression model is <a
+            href="data-preprocessing-machine-learning">data pre-processing</a>. We have already done it earlier in this
+        tutorial. But there will be some changes, which are given in the below steps:</p>
+    <ul class="points">
+        <li>First, we will import the three important libraries, which will help us for loading the dataset, plotting
+            the graphs, and creating the Simple Linear Regression model. </li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+</textarea></div>
+    <ul class="points">
+        <li>Next, we will load the dataset into our code:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+data_set= pd.read_csv('Salary_Data.csv')
+</textarea></div>
+    <p>By executing the above line of code (ctrl+ENTER), we can read the dataset on our Spyder IDE screen by clicking on
+        the variable explorer option. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/simple-linear-regression-in-machine-learning.png"
+        alt="Simple Linear Regression in Machine Learning" />
+    <p>The above output shows the dataset, which has two variables: Salary and Experience. </p>
+    <h4 class="n"><span class="bold">Note:</span> In Spyder IDE, the folder containing the code file must be saved as a
+        working directory, and the dataset or csv file should be in the same folder. </h4>
+    <ul class="points">
+        <li>After that, we need to extract the dependent and independent variables from the given dataset. The
+            independent variable is years of experience, and the dependent variable is salary. Below is code for it:
+        </li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+x= data_set.iloc[:, :-1].values
+y= data_set.iloc[:, 1].values 
+</textarea></div>
+    <p>In the above lines of code, for x variable, we have taken -1 value since we want to remove the last column from
+        the dataset. For y variable, we have taken 1 value as a parameter, since we want to extract the second column
+        and indexing starts from the zero. </p>
+    <p>By executing the above line of code, we will get the output for X and Y variable as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/simple-linear-regression-in-machine-learning2.png"
+        alt="Simple Linear Regression in Machine Learning" />
+    <p>In the above output image, we can see the X (independent) variable and Y (dependent) variable has been extracted
+        from the given dataset. </p>
+    <ul class="points">
+        <li>Next, we will split both variables into the test set and training set. We have 30 observations, so we will
+            take 20 observations for the training set and 10 observations for the test set. We are splitting our dataset
+            so that we can train our model using a training dataset and then test the model using a test dataset. The
+            code for this is given below:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 1/3, random_state=0)
+</textarea></div>
+    <p>By executing the above code, we will get x-test, x-train and y-test, y-train dataset. Consider the below images:
+    </p>
+    <p><strong>Test-dataset:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/simple-linear-regression-in-machine-learning3.png"
+        alt="Simple Linear Regression in Machine Learning" />
+    <p><strong>Training Dataset:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/simple-linear-regression-in-machine-learning4.png"
+        alt="Simple Linear Regression in Machine Learning" />
+    <ul class="points">
+        <li>For simple linear Regression, we will not use Feature Scaling. Because Python libraries take care of it for
+            some cases, so we don't need to perform it here. Now, our dataset is well prepared to work on it and we are
+            going to start building a Simple Linear Regression model for the given problem. </li>
+    </ul>
+    <p class="pq"><strong>Step-2: Fitting the Simple Linear Regression to the Training Set:</strong></p>
+    <p>Now the second step is to fit our model to the training dataset. To do so, we will import the
+        <strong>LinearRegression</strong> class of the <strong>linear_model</strong> library from the <strong>scikit
+            learn</strong>. After importing the class, we are going to create an object of the class named as a
+        <strong>regressor</strong>. The code for this is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting the Simple Linear Regression model to the training dataset
+from sklearn.linear_model import LinearRegression
+regressor= LinearRegression()
+regressor.fit(x_train, y_train)
+</textarea></div>
+    <p>In the above code, we have used a <strong>fit()</strong> method to fit our Simple Linear Regression object to the
+        training set. In the fit() function, we have passed the x_train and y_train, which is our training dataset for
+        the dependent and an independent variable. We have fitted our regressor object to the training set so that the
+        model can easily learn the correlations between the predictor and target variables. After executing the above
+        lines of code, we will get the below output.</p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Out[7]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+</pre>
+    </div>
+    <p class="pq"><strong>Step: 3. Prediction of test set result:</strong></p>
+    <p>dependent (salary) and an independent variable (Experience). So, now, our model is ready to predict the output
+        for the new observations. In this step, we will provide the test dataset (new observations) to the model to
+        check whether it can predict the correct output or not. </p>
+    <p>We will create a prediction vector <strong>y_pred</strong>, and <strong>x_pred</strong>, which will contain
+        predictions of test dataset, and prediction of training set respectively. </p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Prediction of Test and Training set result
+y_pred= regressor.predict(x_test)
+x_pred= regressor.predict(x_train)
+</textarea></div>
+    <p>On executing the above lines of code, two variables named y_pred and x_pred will generate in the variable
+        explorer options that contain salary predictions for the training set and test set. </p>
+    <p><strong>Output:</strong></p>
+    <p>You can check the variable by clicking on the variable explorer option in the IDE, and also compare the result by
+        comparing values from y_pred and y_test. By comparing these values, we can check how good our model is
+        performing. </p>
+    <p class="pq"><strong>Step: 4. visualizing the Training set results:</strong></p>
+    <p>Now in this step, we will visualize the training set result. To do so, we will use the scatter() function of the
+        pyplot library, which we have already imported in the pre-processing step. The <strong>scatter ()
+            function</strong> will create a scatter plot of observations.</p>
+    <p>In the x-axis, we will plot the Years of Experience of employees and on the y-axis, salary of employees. In the
+        function, we will pass the real values of training set, which means a year of experience x_train, training set
+        of Salaries y_train, and color of the observations. Here we are taking a green color for the observation, but it
+        can be any color as per the choice. </p>
+    <p>Now, we need to plot the regression line, so for this, we will use the <strong>plot() function</strong> of the
+        pyplot library. In this function, we will pass the years of experience for training set, predicted salary for
+        training set x_pred, and color of the line. </p>
+    <p>Next, we will give the title for the plot. So here, we will use the <strong>title()</strong> function of the
+        <strong>pyplot</strong> library and pass the name ("Salary vs Experience (Training Dataset)". </p>
+    <p>After that, we will assign labels for x-axis and y-axis using <strong>xlabel() and ylabel() function</strong>.
+    </p>
+    <p>Finally, we will represent all above things in a graph using show(). The code is given below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+mtp.scatter(x_train, y_train, color="green") 
+mtp.plot(x_train, x_pred, color="red")  
+mtp.title("Salary vs Experience (Training Dataset)")
+mtp.xlabel("Years of Experience")
+mtp.ylabel("Salary(In Rupees)")
+mtp.show() 
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above lines of code, we will get the below graph plot as an output. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/simple-linear-regression-in-machine-learning5.png"
+        alt="Simple Linear Regression in Machine Learning" />
+    <p>In the above plot, we can see the real values observations in green dots and predicted values are covered by the
+        red regression line. The regression line shows a correlation between the dependent and independent variable.
+    </p>
+    <p>The good fit of the line can be observed by calculating the difference between actual values and predicted
+        values. But as we can see in the above <strong>plot, most of the observations are close to the regression line,
+            hence our model is good for the training set</strong>.</p>
+    <p class="pq"><strong>Step: 5. visualizing the Test set results:</strong></p>
+    <p>In the previous step, we have visualized the performance of our model on the training set. Now, we will do the
+        same for the Test set. The complete code will remain the same as the above code, except in this, we will use
+        x_test, and y_test instead of x_train and y_train.</p>
+    <p>Here we are also changing the color of observations and regression line to differentiate between the two plots,
+        but it is optional.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#visualizing the Test set results
+mtp.scatter(x_test, y_test, color="blue") 
+mtp.plot(x_train, x_pred, color="red")  
+mtp.title("Salary vs Experience (Test Dataset)")
+mtp.xlabel("Years of Experience")
+mtp.ylabel("Salary(In Rupees)")
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above line of code, we will get the output as: </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/simple-linear-regression-in-machine-learning6.png"
+        alt="Simple Linear Regression in Machine Learning" />
+    <p>In the above plot, there are observations given by the blue color, and prediction is given by the red regression
+        line. As we can see, most of the observations are close to the regression line, hence we can say our Simple
+        Linear Regression is a good model and able to make good predictions.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="12_linear_regression.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="14_multiple_linear_regression.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

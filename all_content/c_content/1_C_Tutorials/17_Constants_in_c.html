@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constants in c</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);">
+  <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../../../home.html">
+            <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                    <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Programming Language
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                            <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                            <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                            <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            C Tutorials
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="1C_language_tutorial.html">C Language Tutorial</a></li>
+                            <li><a class="dropdown-item" href="2_History_of_c_language.html">History of C language</a></li>
+                            <li><a class="dropdown-item" href="3_Feature_of_c_language.html">Feature of C language</a></li>
+                            <li><a class="dropdown-item" href="4_How_to_install_C.html">how to install C</a></li>
+                            <li><a class="dropdown-item" href="5_First_c_program.html">First C program</a></li>
+                            <li><a class="dropdown-item" href="6_Compilation_process_in_C.html">Compilation process</a></li>
+                            <li><a class="dropdown-item" href="7_printf_scanf.html">Printf scanf</a></li>
+                            <li><a class="dropdown-item" href="8_Variables_in_C.html">Variables in c</a></li>
+                            <li><a class="dropdown-item" href="9_Data_types_in_c.html">Datatypes in c</a></li>
+                            <li><a class="dropdown-item" href="10_Keywords_in_c.html">keywords in c</a></li>
+                            <li><a class="dropdown-item" href="11_C_Identifiers.html">Identifiers in c</a></li>
+                            <li><a class="dropdown-item" href="12_C_Operators.html">Operators in c</a></li>
+                            <li><a class="dropdown-item " href="13_C_Comments.html">Comments in c</a></li>
+                            <li><a class="dropdown-item" href="14_C_Format_specifier.html">Format Specifier in c</a></li>
+                            <li><a class="dropdown-item" href="15_C_Escape_Sequence.html">Escape Sequence in c</a></li>
+                            <li><a class="dropdown-item" href="16_ASCII_in_C.html">ASCII in C</a></li>
+                            <li><a class="dropdown-item active-submenu" href="17_Constants_in_c.html">Constants in c</a></li>
+                            <li><a class="dropdown-item" href="18_Literals_in_c.html">Literals in c</a></li>
+                            <li><a class="dropdown-item" href="19_Tokens_in_c.html">tokens in c</a></li>
+                            <li><a class="dropdown-item" href="20_C_boolean.html">Boolean in c</a></li>
+                            <li><a class="dropdown-item" href="21_Programming_Error_in_c.html">Programming errors in c</a></li>
+                            <li><a class="dropdown-item" href="22_Compile_Time_Vs_Run_Time.html">Compile time Vs Run time</a></li>
+                            <li><a class="dropdown-item" href="23_Conditional_Operators_in_C.html">Conditional Operators in c</a></li>
+                         
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            C Control Statements
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/1_C_if-else.html">if-else</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/2_Switch_case_in_C.html">switch-case</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/3_If-else_Vs_Switch.html">If-else Vs Switch</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/4_Loop_in_C.html">Loop in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/5_Do_While_in_C.html">Do while in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/6_While_loop_in_c.html">While loop in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/7_For_loop_in_C.html">For loop in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/8_Nested_loops_in_c.html">Nested Loops in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/9_Infinite_loops_in_c.html">Infinite Loops in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/10_Break_in_C.html">Break in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/11_Continue_in_C.html">Continue in C </a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/12_Goto_in_C.html">Goto Label in C</a></li>
+                            <li><a class="dropdown-item" href="../2_C_Control_Statements/13_C_Comments">Comments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            C Functions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../3_C_Functions/1_What_is_Function_in_C.html">what is function</a></li>
+                            <li><a class="dropdown-item" href="../3_C_Functions/2_Call_by_value_or_reference_in_C.html">call by value or reference</a></li>
+                            <li><a class="dropdown-item" href="../3_C_Functions/3_Recursion_in_C.html">recursion</a></li>
+                            <li><a class="dropdown-item" href="../3_C_Functions/4_Storage_Classes_in_C.html">storage classes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            C Array
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../4_C_Array/1_1D_Array_In_C.html">1D Array</a></li>
+                            <li><a class="dropdown-item" href="../4_C_Array/2_2D_Array_in_C.html">2D Array</a></li>
+                            <li><a class="dropdown-item" href="../4_C_Array/3_Return_An_Array_in_C.html">Return an Array</a></li>
+                            <li><a class="dropdown-item" href="../4_C_Array/4_Array_to_Functions_in_C.html">Array to function</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            C Pointers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../5_C_Pointers/1_C_pointers.html">Pointers in C</a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/2_Pointers_to_Pointers.html">Pointers to pointers</a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/3_Pointer_Arithmetic.html">Pointer arithmetic</a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/4_Dangling_pointers.html">Dangling pointers</a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/5_Sizeof()_Operator_in_C.html">sizeof( ) operator</a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/6_Constant_Pointer.html">Constant pointer</a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/7_Void_pointer.html">Void pointer </a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/8_Dereference_pointer.html">Dereference Pointer </a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/9_Null_Pointer.html">Null pointer </a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/10_Function_pointer.html">Function Pointer </a></li>
+                            <li><a class="dropdown-item" href="../5_C_Pointers/11_Function_pointer_as_Argument.html">Function Pointer as argument</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            C Strings
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../6_C_Strings/1_String_in_C.html">Strings in C </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/2_gets_&_puts.html">gets & puts </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/3_String_functions.html">String functions </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/4_c_strlen().html">strlen</a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/5_c_strcpy().html">strcpy</a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/6_c_strcat().html">strcat</a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/7_c_strcmp().html">strcmp </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/8_c_strrev().html">strrev </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/9_c_strlwr().html">strlwr </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/10_c_strupr().html">strupr </a></li>
+                            <li><a class="dropdown-item" href="../6_C_Strings/11_c_strstr().html">strstr</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Web Developement
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                            <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div style="padding: 30px;font-size: 18px;">
+<h1 class="h1">Constants in C</h1>
+<p>
+  In programming languages like <strong><em>C, constants</em></strong> are
+  essential because they give you a mechanism to store
+  <strong><em>unchanging values</em></strong> that hold true throughout the
+  course of the program. These numbers may be used for several things, such as
+  <strong><em>creating mathematical constants</em></strong> or
+  <strong><em>giving variables set values</em></strong
+  >. We will discuss the idea of <strong><em>constants</em></strong> in
+  <strong><em>C</em></strong
+  >, their <strong><em>syntax</em></strong
+  >, how to <strong><em>declare</em></strong> and
+  <strong><em>use</em></strong> them and give illustrated examples along with
+  their anticipated results in this blog article. By the end of this article,
+  you'll have a firm grasp of constants and their importance in C programming.
+</p>
+<p>
+  A <strong><em>constant in C</em></strong> is a value that doesn't change as
+  the program runs.
+  <strong><em>Integers, floating-point numbers, characters,</em></strong> and
+  <strong><em>strings</em></strong> are just a few of the several types of
+  constants that may be employed. When a constant has a value, it cannot be
+  changed, unlike variables. They may be utilized in various operations and
+  computations and serve as the program's representation of fixed values.
+</p>
+<h2 class="h2">Advantages of C Constants:</h2>
+<p>
+  There are several advantages of C Constants. Some main advantages of C
+  Constants are as follows:
+</p>
+<ol class="points">
+  <li>
+    Programmers may use constants to provide names that have meaning to fixed
+    numbers, which makes the code simpler to comprehend and update.
+  </li>
+  <li>
+    Constants assist in avoiding the usage of magic numbers, which are
+    hard-coded values, in the code. Instead, constants offer named
+    representations of such values, enhancing the code's readability.
+  </li>
+  <li>
+    Constants are reusable throughout the program, allowing for constant values
+    in various locations and lowering the possibility of errors brought on by
+    typos or inconsistent values.
+  </li>
+  <li>
+    Calculations or processes inside the program can be optimized by using
+    certain constants, such as mathematical or physical constants.
+  </li>
+  <li>
+    A constant is a value or variable that can't be changed in the program, for
+    example: 10, 20, 'a', 3.4, "c programming", etc.
+  </li>
+</ol>
+<p>There are different types of constants in C programming.</p>
+<h2 class="h2">List of Constants in C</h2>
+<table class="alt">
+  <tr>
+    <th>Constant</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Decimal Constant</td>
+    <td>10, 20, 450 etc.</td>
+  </tr>
+  <tr>
+    <td>Real or Floating-point Constant</td>
+    <td>10.3, 20.2, 450.6 etc.</td>
+  </tr>
+  <tr>
+    <td>Octal Constant</td>
+    <td>021, 033, 046 etc.</td>
+  </tr>
+  <tr>
+    <td>Hexadecimal Constant</td>
+    <td>0x2a, 0x7b, 0xaa etc.</td>
+  </tr>
+  <tr>
+    <td>Character Constant</td>
+    <td>'a', 'b', 'x' etc.</td>
+  </tr>
+  <tr>
+    <td>String Constant</td>
+    <td>"c", "c program", "c in javatpoint" etc.</td>
+  </tr>
+</table>
+<h2 class="h2">2 ways to define constant in C</h2>
+<p>
+  There are two ways to define constant in
+  <a href="https://www.javatpoint.com/c-programming-language-tutorial"
+    >C programming</a
+  >.
+</p>
+<ol class="points">
+  <li>const keyword</li>
+  <li>#define preprocessor</li>
+</ol>
+<h2 class="h3">1) C const keyword</h2>
+<p>The const keyword is used to define constant in C programming.</p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+const float PI=3.14;
+</textarea
+  >
+</div>
+<p>Now, the value of PI variable can't be changed.</p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include<stdio.h>  
+int main(){  
+	const float PI=3.14;  
+	printf("The value of PI is: %f",PI);  
+	return 0;
+}   
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The value of PI is: 3.140000
+</pre
+  >
+</div>
+<p>
+  If you try to change the the value of PI, it will render compile time error.
+</p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include<stdio.h>  
+int main(){  
+const float PI=3.14;   
+PI=4.5;  
+printf("The value of PI is: %f",PI);  
+	return 0;
+}   
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+Compile Time Error: Cannot modify a const object
+</pre
+  >
+</div>
+<h2 class="h3">2) C #define preprocessor</h2>
+<p>
+  The #define preprocessor is also used to define constant. We will learn about
+  <a href="https://www.javatpoint.com/c-preprocessor-define"
+    >#define preprocessor directive</a
+  >.
+</p>
+<h2 class="h2">Types of constant:</h2>
+<p>There are different types of Constants in C. Some of them are as follows:</p>
+<h3 class="h3">Decimal Constant</h3>
+<p>
+  A whole number represented in <strong><em>base 10</em></strong> is known as a
+  <strong><em>decimal constant</em></strong
+  >. It has digits that range from <strong><em>0</em></strong> to
+  <strong><em>9</em></strong
+  >. Declaring a <strong><em>decimal constant</em></strong> has a simple syntax
+  that just requires the value to be written.
+</p>
+<p><strong>Example:</strong></p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include <stdio.h>
+
+int main() {
+int decimal = 42;
+printf("The decimal constant is: %d\n", decimal);
+return 0;
+}
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The decimal constant is: 42
+</pre
+  >
+</div>
+<h3 class="h3">Real or Floating-Point Constant:</h3>
+<p>
+  A <strong><em>fractional component</em></strong> or
+  <strong><em>exponentiation</em></strong> of a number is represented by
+  <strong><em>a real or floating-point constant</em></strong
+  >. It can be expressed with a decimal point, the letter
+  <strong><em>"E"</em></strong
+  >, or the symbol <strong><em>"e"</em></strong> in exponential or decimal
+  notation.
+</p>
+<p><strong>Example:</strong></p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include <stdio.h>
+
+int main() {
+float real = 3.14;
+printf("The real constant is: %f\n", real);
+return 0;
+}
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The real constant is: 3.140000
+</pre
+  >
+</div>
+<h3 class="h3">Octal Constant:</h3>
+<p>
+  A <strong><em>base 8</em></strong> value is represented by an
+  <strong><em>octal constant</em></strong
+  >. It is prefixed with a <strong><em>'0' (zero)</em></strong> to show that it
+  is an octal constant and has digits ranging from
+  <strong><em>0</em></strong> to <strong><em>7</em></strong
+  >.
+</p>
+<p><strong>Example:</strong></p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include <stdio.h>
+
+int main() {
+int octal = 052; // Octal representation of decimal 42
+printf("The octal constant is: %o\n", octal);
+return 0;
+}
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The octal constant is: 52
+</pre
+  >
+</div>
+<h3 class="h3">Hexadecimal Constant:</h3>
+<p>
+  A <strong><em>base-16</em></strong> value is represented by a
+  <strong><em>hexadecimal constant</em></strong
+  >. It uses letters <strong><em>A to F</em></strong> (or
+  <strong><em>a to f</em></strong
+  >) and numbers <strong><em>0</em></strong> to <strong><em>9</em></strong> to
+  represent values from <strong><em>10</em></strong> to
+  <strong><em>15</em></strong
+  >. It is prefixed with <strong><em>'0x'</em></strong> or
+  <strong><em>'0X'</em></strong> to identify it as a hexadecimal constant.
+</p>
+<p><strong>Example:</strong></p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include <stdio.h>
+
+int main() {
+int hexadecimal = 0x2A; // Hexadecimal representation of decimal 42
+printf("The hexadecimal constant is: %x\n", hexadecimal);
+return 0;
+}
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The hexadecimal constant is: 2a
+</pre
+  >
+</div>
+<h3 class="h3">Character Constant</h3>
+<p>
+  A <strong><em>character constant</em></strong> represents a
+  <strong><em>single character</em></strong> that is enclosed in
+  <strong><em>single quotes</em></strong
+  >.
+</p>
+<p><strong>Example:</strong></p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include <stdio.h>
+
+int main() {
+char character = 'A';
+printf("The character constant is: %c\n", character);
+return 0;
+}
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The character constant is: A
+</pre
+  >
+</div>
+<h3 class="h3">String Constant:</h3>
+<p>
+  A <strong><em>series of characters</em></strong> wrapped in
+  <strong><em>double quotes</em></strong> is represented by a
+  <strong><em>string constant</em></strong
+  >. It is a character array that ends with the null character
+  <strong><em>\0</em></strong
+  >.
+</p>
+<p><strong>Example:</strong></p>
+<div class="codeblock">
+  <textarea name="code" class="Cpp">
+#include <stdio.h>
+
+int main() {
+char string[] = "Hello, World!";
+printf("The string constant is: %s\n", string);
+return 0;
+}
+</textarea
+  >
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+  <pre>
+The string constant is: Hello, World!
+</pre
+  >
+</div>
+<h2 class="h2">Rules for constructing constants:</h2>
+<p>
+  The creation of constants must follow
+  <strong><em>specified guidelines</em></strong
+  >. These guidelines specify the format that constants of various kinds must
+  follow in order for the compiler to accept them as legitimate. The guidelines
+  for creating constants in C are as follows:
+</p>
+<h3 class="h3">Integer Constants:</h3>
+<ol class="points">
+  <li>
+    The digits of an <strong><em>integer constant</em></strong> can range from
+    <strong><em>0 to 9.</em></strong>
+  </li>
+  <li>
+    A <strong><em>decimal point</em></strong> should not be present in an
+    integer constant.
+  </li>
+  <li>
+    <strong><em>Positive</em></strong> or
+    <strong><em>negative integer constants</em></strong> are also possible.
+  </li>
+  <li>
+    You can add a <strong><em>suffix</em></strong> to a constant's name to
+    define its type. <strong><em>'U'</em></strong> or
+    <strong><em>'u'</em></strong> stands for
+    <strong><em>unsigned, 'L'</em></strong> or <strong><em>'l'</em></strong> for
+    <strong><em>long</em></strong
+    >, or <strong><em>'LL'</em></strong> or <strong><em>'ll'</em></strong> for
+    <strong><em>long long</em></strong
+    >.
+  </li>
+</ol>
+<h3 class="h3">Floating-Point Constants:</h3>
+<ol class="points">
+  <li>
+    A <strong><em>decimal point</em></strong
+    >, an exponent, or digits can all be found in floating-point constants.
+  </li>
+  <li>
+    Either <strong><em>exponential notation</em></strong> or
+    <strong><em>decimal notation</em></strong> can be used to write them.
+  </li>
+  <li>
+    <strong><em>'E'</em></strong> or <strong><em>'e'</em></strong> can be used
+    to denote an <strong><em>exponent</em></strong
+    >.
+  </li>
+  <li>
+    You can add a suffix to a <strong><em>constant's name</em></strong> to
+    define its type. For instance, <strong><em>"F"</em></strong> or
+    <strong><em>"f"</em></strong> stands for <strong><em>float</em></strong> and
+    <strong><em>"L"</em></strong> or <strong><em>"l"</em></strong> for
+    <strong><em>long double</em></strong
+    >.
+  </li>
+</ol>
+<h3 class="h3">Octagonal Constants</h3>
+<ol class="points">
+  <li>
+    <strong><em>Base 8</em></strong> is used for
+    <strong><em>writing octal constants</em></strong
+    >.
+  </li>
+  <li>
+    They are made up of the numerals <strong><em>0</em></strong> through
+    <strong><em>7</em></strong
+    >.
+  </li>
+  <li>
+    A <strong><em>'0' (zero)</em></strong> should come before any octal
+    constants.
+  </li>
+</ol>
+<h3 class="h3">Hexadecimal Constants:</h3>
+<ol class="points">
+  <li>
+    Constants in hexadecimal are expressed in <strong><em>base 16</em></strong
+    >.
+  </li>
+  <li>
+    To represent numbers from <strong><em>10</em></strong> to
+    <strong><em>15</em></strong
+    >, they are made up of numerals <strong><em>0</em></strong> to
+    <strong><em>9</em></strong> and letters <strong><em>A to F (</em></strong
+    >or <strong><em>a to f</em></strong
+    >).
+  </li>
+  <li>
+    Prefixing a <strong><em>hexadecimal constant</em></strong> with
+    <strong><em>'0x'</em></strong> or <strong><em>'0X'</em></strong> is
+    appropriate.
+  </li>
+</ol>
+<h3 class="h3">Character Constants:</h3>
+<ol class="points">
+  <li>
+    Individual characters are represented as character constants when they are
+    in single quotes.
+  </li>
+  <li>
+    A <strong><em>single letter</em></strong> or an
+    <strong><em>escape sequence</em></strong
+    >, such as <strong><em>"n"</em></strong> for
+    <strong><em>newline</em></strong> or <strong><em>"t"</em></strong> for
+    <strong><em>tab</em></strong
+    >, can be used as these characters.
+  </li>
+</ol>
+<h3 class="h3">String Constants:</h3>
+<ol class="points">
+  <li>
+    A series of characters surrounded in
+    <strong><em>double quotes</em></strong> is represented by
+    <strong><em>string constants</em></strong
+    >.
+  </li>
+  <li>
+    They are essentially character arrays that are closed with the null
+    character <strong><em>"0"</em></strong
+    >.
+  </li>
+</ol>
+<h2 class="h2">Conclusion:</h2>
+<p>
+  As a result of their representation of
+  <strong><em>fixed values</em></strong> that don't change during the course of
+  the program, constants are crucial in C programming. By following the rules
+  for making constants, programmers may create
+  <strong><em>reliable</em></strong> and practical representations of data in
+  their programs.
+</p>
+<p>
+  By giving descriptive names to fixed values, minimizing the usage of
+  <strong><em>"magic numbers",</em></strong> and
+  <strong><em>encouraging self-documenting code</em></strong
+  >, constants improve the readability of code. By offering a central area to
+  edit constant values, facilitating simple modifications, and lowering the
+  possibility of mistakes, they also aid in the maintainability of the code.
+</p>
+<p>
+  As constants may be used and referenced several times throughout the program,
+  using them in <strong><em>C programs</em></strong> also increases code reuse.
+  When utilizing the same value again, it assures consistency and lessens the
+  possibility of adding errors or mistakes.
+</p>
+<p>
+  Constants can also improve <strong><em>computations and processes</em></strong
+  >, particularly when physical or mathematical constants are involved.
+  Programmers can create code that is more effective and optimized by utilizing
+  constants rather than hard-coding variables.
+</p>
+<hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+  <a href="16_ASCII_in_C.html"><button class="btn btn-danger" type="button">Previous</button></a>
+  <a href="18_Literals_in_c.html"><button class="btn btn-success" type="button">Next</button></a>
+</div>
+<footer>
+  <div class="container-fluid bg-dark text-bg-dark"
+      style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+      Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+  </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></html>

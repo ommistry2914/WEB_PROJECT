@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Multithreading In Java</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Multithreading in Java</h1>
+    <div id="upr">
+        <ol>
+            <li><a href="#">Multithreading</a></li>
+            <li><a href="#multitasing">Multitasking</a></li>
+            <li><a href="#multiprocessing">Process-based multitasking</a></li>
+            <li><a href="#multithreading">Thread-based multitasking</a></li>
+            <li><a href="#thread">What is Thread</a></li>
+        </ol>
+    </div>
+    <p><strong>Multithreading in <a href="java-tutorial">Java</a></strong> is a process of executing multiple threads
+        simultaneously.</p>
+    <p>A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both
+        are
+        used to achieve multitasking.</p>
+    <p>However, we use multithreading than multiprocessing because threads use a shared memory area. They don't allocate
+        separate memory area so saves memory, and context-switching between the threads takes less time than process.
+    </p>
+    <p>Java Multithreading is mostly used in games, animation, etc.</p>
+    <hr />
+    <h3 class="h3">Advantages of Java Multithreading</h3>
+    <p>1) It <strong>doesn't block the user</strong> because threads are independent and you can perform multiple
+        operations
+        at the same time.</p>
+    <p>2) You <strong>can perform many operations together, so it saves time</strong>.</p>
+    <p>3) Threads are <strong>independent</strong>, so it doesn't affect other threads if an exception occurs in a
+        single
+        thread.</p>
+    <hr />
+    
+    <h2 class="h2">Multitasking</h2>
+    <p>Multitasking is a process of executing multiple tasks simultaneously. We use multitasking to utilize the CPU.
+        Multitasking can be achieved in two ways:</p>
+    <ul class="points">
+        <li>Process-based Multitasking (Multiprocessing)</li>
+        <li>Thread-based Multitasking (Multithreading)</li>
+    </ul>
+    <h3 class="h3">1) Process-based Multitasking (Multiprocessing)</h3>
+    <ul class="points">
+        <li>Each process has an address in memory. In other words, each process allocates a separate memory area.</li>
+        <li>A process is heavyweight.</li>
+        <li>Cost of communication between the process is high.</li>
+        <li>Switching from one process to another requires some time for saving and loading <a
+                href="register-memory">registers</a>, memory maps, updating lists, etc.</li>
+    </ul>
+    <h3 class="h3">2) Thread-based Multitasking (Multithreading)</h3>
+    <ul class="points">
+        <li>Threads share the same address space.</li>
+        <li>A thread is lightweight.</li>
+        <li>Cost of communication between the thread is low.</li>
+    </ul>
+    <h4 class="n">Note: At least one process is required for each thread.</h4>
+    <h2 class="h2">What is Thread in java</h2>
+    <p>A thread is a lightweight subprocess, the smallest unit of processing. It is a separate path of execution.</p>
+    <p>Threads are independent. If there occurs exception in one thread, it doesn't affect other threads. It uses a
+        shared
+        memory area.
+    </p>
+    <img alt="Java Multithreading" src="https://static.javatpoint.com/images/java-multithreading.png" />
+    <p>As shown in the above figure, a thread is executed inside the process. There is context-switching between the
+        threads. There can be multiple processes inside the <a href="os-tutorial">OS</a>, and one process can have
+        multiple
+        threads.
+    </p>
+    <h4 class="n">Note: At a time one thread is executed only.</h4>
+    
+    <h2 class="h2">Java Thread class </h2>
+    <p>Java provides <strong>Thread class</strong> to achieve thread programming. Thread class provides <a
+            href="java-constructor">constructors</a> and methods to create and perform operations on a thread. Thread
+        class
+        extends <a href="object-class">Object class</a> and implements Runnable interface.</p>
+    <h2 class="h2">Java Thread Methods</h2>
+    <table class="alt">
+        <tr>
+            <th>S.N.</th>
+            <th>Modifier and Type</th>
+            <th>Method</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1)</td>
+            <td>void</td>
+            <td><a href="java-thread-start-method">start()</a></td>
+            <td>It is used to start the execution of the thread.</td>
+        </tr>
+        <tr>
+            <td>2)</td>
+            <td>void</td>
+            <td><a href="java-thread-run-method">run()</a></td>
+            <td>It is used to do an action for a thread.</td>
+        </tr>
+        <tr>
+            <td>3)</td>
+            <td>static void</td>
+            <td><a href="java-thread-sleep-method">sleep()</a></td>
+            <td>It sleeps a thread for the specified amount of time.</td>
+        </tr>
+        <tr>
+            <td>4)</td>
+            <td>static Thread</td>
+            <td><a href="java-thread-currentthread-method">currentThread()</a></td>
+            <td>It returns a reference to the currently executing thread object.</td>
+        </tr>
+        <tr>
+            <td>5)</td>
+            <td>void</td>
+            <td><a href="java-thread-join-method">join()</a></td>
+            <td>It waits for a thread to die.</td>
+        </tr>
+        <tr>
+            <td>6)</td>
+            <td>int</td>
+            <td><a href="java-thread-getpriority-method">getPriority()</a></td>
+            <td>It returns the priority of the thread.</td>
+        </tr>
+        <tr>
+            <td>7)</td>
+            <td>void</td>
+            <td><a href="java-thread-setpriority-method">setPriority()</a></td>
+            <td>It changes the priority of the thread.</td>
+        </tr>
+        <tr>
+            <td>8)</td>
+            <td>String</td>
+            <td><a href="java-thread-getname-method">getName()</a></td>
+            <td>It returns the name of the thread.</td>
+        </tr>
+        <tr>
+            <td>9)</td>
+            <td>void</td>
+            <td><a href="java-thread-setname-method">setName()</a></td>
+            <td>It changes the name of the thread.</td>
+        </tr>
+        <tr>
+            <td>10)</td>
+            <td>long</td>
+            <td><a href="java-thread-getid-method">getId()</a></td>
+            <td>It returns the id of the thread.</td>
+        </tr>
+        <tr>
+            <td>11)</td>
+            <td>boolean</td>
+            <td><a href="java-thread-isalive-method">isAlive()</a></td>
+            <td>It tests if the thread is alive.</td>
+        </tr>
+        <tr>
+            <td>12)</td>
+            <td>static void</td>
+            <td><a href="java-thread-yield-method">yield()</a></td>
+            <td>It causes the currently executing thread object to pause and allow other threads to execute temporarily.
+            </td>
+        </tr>
+        <tr>
+            <td>13)</td>
+            <td>void</td>
+            <td><a href="java-thread-suspend-method">suspend()</a></td>
+            <td>It is used to suspend the thread.</td>
+        </tr>
+        <tr>
+            <td>14)</td>
+            <td>void</td>
+            <td><a href="java-thread-resume-method">resume()</a></td>
+            <td>It is used to resume the suspended thread.</td>
+        </tr>
+        <tr>
+            <td>15)</td>
+            <td>void</td>
+            <td><a href="java-thread-stop-method">stop()</a></td>
+            <td>It is used to stop the thread.</td>
+        </tr>
+        <tr>
+            <td>16)</td>
+            <td>void</td>
+            <td><a href="java-thread-destroy-method">destroy()</a></td>
+            <td>It is used to destroy the thread group and all of its subgroups.</td>
+        </tr>
+        <tr>
+            <td>17)</td>
+            <td>boolean</td>
+            <td><a href="java-thread-isdaemon-method">isDaemon()</a></td>
+            <td>It tests if the thread is a daemon thread.</td>
+        </tr>
+        <tr>
+            <td>18)</td>
+            <td>void</td>
+            <td><a href="java-thread-setdaemon-method">setDaemon()</a></td>
+            <td>It marks the thread as daemon or user thread.</td>
+        </tr>
+        <tr>
+            <td>19)</td>
+            <td>void</td>
+            <td><a href="java-thread-interrupt-method">interrupt()</a></td>
+            <td>It interrupts the thread.</td>
+        </tr>
+        <tr>
+            <td>20)</td>
+            <td>boolean</td>
+            <td><a href="java-thread-isinterrupted-method">isinterrupted()</a></td>
+            <td>It tests whether the thread has been interrupted.</td>
+        </tr>
+        <tr>
+            <td>21)</td>
+            <td>static boolean</td>
+            <td><a href="java-thread-interrupted-method">interrupted()</a></td>
+            <td>It tests whether the current thread has been interrupted.</td>
+        </tr>
+        <tr>
+            <td>22)</td>
+            <td>static int</td>
+            <td><a href="java-thread-activecount-method">activeCount()</a></td>
+            <td>It returns the number of active threads in the current thread's thread group.</td>
+        </tr>
+        <tr>
+            <td>23)</td>
+            <td>void</td>
+            <td><a href="java-thread-checkaccess-method">checkAccess()</a></td>
+            <td>It determines if the currently running thread has permission to modify the thread.</td>
+        </tr>
+        <tr>
+            <td>24)</td>
+            <td>static boolean</td>
+            <td><a href="java-thread-holdlock-method">holdLock()</a></td>
+            <td>It returns true if and only if the current thread holds the monitor lock on the specified object.</td>
+        </tr>
+        <tr>
+            <td>25)</td>
+            <td>static void</td>
+            <td><a href="java-thread-dumpstack-method">dumpStack()</a></td>
+            <td>It is used to print a stack trace of the current thread to the standard error stream.</td>
+        </tr>
+        <tr>
+            <td>26)</td>
+            <td>StackTraceElement[]</td>
+            <td><a href="java-thread-getstacktrace-method">getStackTrace()</a></td>
+            <td>It returns an array of stack trace elements representing the stack dump of the thread.</td>
+        </tr>
+        <tr>
+            <td>27)</td>
+            <td>static int</td>
+            <td><a href="java-thread-enumerate-method">enumerate()</a></td>
+            <td>It is used to copy every active thread's thread group and its subgroup into the specified array.</td>
+        </tr>
+        <tr>
+            <td>28)</td>
+            <td>Thread.State</td>
+            <td><a href="java-thread-getstate-method">getState()</a></td>
+            <td>It is used to return the state of the thread.</td>
+        </tr>
+        <tr>
+            <td>29)</td>
+            <td>ThreadGroup</td>
+            <td><a href="java-thread-getthreadgroup-method">getThreadGroup()</a></td>
+            <td>It is used to return the thread group to which this thread belongs</td>
+        </tr>
+        <tr>
+            <td>30)</td>
+            <td>String</td>
+            <td><a href="java-thread-tostring-method">toString()</a></td>
+            <td>It is used to return a string representation of this thread, including the thread's name, priority, and
+                thread group.</td>
+        </tr>
+        <tr>
+            <td>31)</td>
+            <td>void</td>
+            <td><a href="java-thread-notify-method">notify()</a></td>
+            <td>It is used to give the notification for only one thread which is waiting for a particular object.</td>
+        </tr>
+        <tr>
+            <td>32)</td>
+            <td>void</td>
+            <td><a href="java-thread-notifyall-method">notifyAll()</a></td>
+            <td>It is used to give the notification to all waiting threads of a particular object.</td>
+        </tr>
+        <tr>
+            <td>33)</td>
+            <td>void</td>
+            <td><a href="java-thread-setcontextclassloader-method">setContextClassLoader()</a></td>
+            <td>It sets the context ClassLoader for the Thread.</td>
+        </tr>
+        <tr>
+            <td>34)</td>
+            <td>ClassLoader</td>
+            <td><a href="java-thread-getcontextclassloader-method">getContextClassLoader()</a></td>
+            <td>It returns the context ClassLoader for the thread.</td>
+        </tr>
+        <tr>
+            <td>35)</td>
+            <td>static Thread.UncaughtExceptionHandler</td>
+            <td><a href="java-thread-getdefaultuncaughtexceptionhandler-method">getDefaultUncaughtExceptionHandler()</a>
+            </td>
+            <td>It returns the default handler invoked when a thread abruptly terminates due to an uncaught exception.
+            </td>
+        </tr>
+        <tr>
+            <td>36)</td>
+            <td>static void </td>
+            <td><a href="java-thread-setdefaultuncaughtexceptionhandler-method">setDefaultUncaughtExceptionHandler()</a>
+            </td>
+            <td>It sets the default handler invoked when a thread abruptly terminates due to an uncaught exception.</td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend class="legendfont">Do You Know</legend>
+        <div id="youknow">
+            <ul class="points">
+                <li>How to perform two tasks by two threads?</li>
+                <li>How to perform multithreading by anonymous class?</li>
+                <li>What is the Thread Scheduler and what is the difference between preemptive scheduling and time
+                    slicing?
+                </li>
+                <li>What happens if we start a thread twice?</li>
+                <li>What happens if we call the run() method instead of start() method?</li>
+                <li>What is the purpose of join method?</li>
+                <li>Why JVM terminates the daemon thread if no user threads are remaining?</li>
+                <li>What is the shutdown hook?</li>
+                <li>What is garbage collection?</li>
+                <li>What is the purpose of finalize() method?</li>
+                <li>What does the gc() method?</li>
+                <li>What is synchronization and why use synchronization?</li>
+                <li>What is the difference between synchronized method and synchronized block?</li>
+                <li>What are the two ways to perform static synchronization?</li>
+                <li>What is deadlock and when it can occur?</li>
+                <li>What is interthread-communication or cooperation?</li>
+            </ul>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend class="legendfont">What will we learn in Multithreading</legend>
+        <div id="whatlearn">
+            <ul class="points">
+                <li>Multithreading</li>
+                <li>Life Cycle of a Thread</li>
+                <li>Two ways to create a Thread</li>
+                <li>How to perform multiple tasks by multiple threads </li>
+                <li>Thread Scheduler</li>
+                <li>Sleeping a thread</li>
+                <li>Can we start a thread twice?</li>
+                <li>What happens if we call the run() method instead of start() method?</li>
+                <li>Joining a thread</li>
+                <li>Naming a thread</li>
+                <li>Priority of a thread</li>
+                <li>Daemon Thread</li>
+                <li>ShutdownHook</li>
+                <li>Garbage collection</li>
+                <li>Synchronization with synchronized method</li>
+                <li>Synchronized block</li>
+                <li>Static synchronization</li>
+                <li>Deadlock</li>
+                <li>Inter-thread communication</li>
+            </ul>
+        </div>
+    </fieldset>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="47exception_handling.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="49life_cycle_of_thread.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

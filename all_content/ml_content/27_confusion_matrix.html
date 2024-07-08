@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confusion Matrix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item active-submenu" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Confusion Matrix in Machine Learning</h1>
+    <p>The confusion matrix is a matrix used to determine the performance of the classification models for a given set
+        of test data. It can only be determined if the true values for test data are known. The matrix itself can be
+        easily understood, but the related terminologies may be confusing. Since it shows the errors in the model
+        performance in the form of a matrix, hence also known as an <strong>error matrix</strong>. Some features of
+        Confusion matrix are given below:</p>
+    <ul class="points">
+        <li>For the 2 prediction classes of classifiers, the matrix is of 2*2 table, for 3 classes, it is 3*3 table, and
+            so on.</li>
+        <li>The matrix is divided into two dimensions, that are <strong>predicted values</strong> and <strong>actual
+                values</strong> along with the total number of predictions.</li>
+        <li>Predicted values are those values, which are predicted by the model, and actual values are the true values
+            for the given observations.</li>
+        <li>It looks like the below table:</li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix.png"
+        alt="Confusion Matrix in Machine Learning" />
+    <p>The above table has the following cases:</p>
+    <ul class="points">
+        <li><strong>True Negative:</strong> Model has given prediction No, and the real or actual value was also No.
+        </li>
+        <li><strong>True Positive:</strong> The model has predicted yes, and the actual value was also true.</li>
+        <li><strong>False Negative:</strong> The model has predicted no, but the actual value was Yes, it is also called
+            as <strong>Type-II error</strong>.</li>
+        <li><strong>False Positive:</strong> The model has predicted Yes, but the actual value was No. It is also called
+            a <strong>Type-I error.</strong></li>
+    </ul>
+    <h2 class="h2">Need for Confusion Matrix in Machine learning</h2>
+    <ul class="points">
+        <li>It evaluates the performance of the classification models, when they make predictions on test data, and
+            tells how good our classification model is.</li>
+        <li>It not only tells the error made by the classifiers but also the type of errors such as it is either type-I
+            or type-II error.</li>
+        <li>With the help of the confusion matrix, we can calculate the different parameters for the model, such as
+            accuracy, precision, etc.</li>
+    </ul>
+    <p><strong>Example</strong>: We can understand the confusion matrix using an example.</p>
+    <p>Suppose we are trying to create a model that can predict the result for the disease that is either a person has
+        that disease or not. So, the confusion matrix for this is given as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix2.png"
+        alt="Confusion Matrix in Machine Learning" />
+    <p>From the above example, we can conclude that:</p>
+    <ul class="points">
+        <li>The table is given for the two-class classifier, which has two predictions "Yes" and "NO." Here, Yes defines
+            that patient has the disease, and No defines that patient does not has that disease.</li>
+        <li>The classifier has made a total of <strong>100 predictions</strong>. Out of 100 predictions, <strong>89 are
+                true predictions</strong>, and <strong>11 are incorrect predictions</strong>.</li>
+        <li>The model has given prediction "yes" for 32 times, and "No" for 68 times. Whereas the actual "Yes" was 27,
+            and actual "No" was 73 times.</li>
+    </ul>
+    <h2 class="h2">Calculations using Confusion Matrix:</h2>
+    <p>We can perform various calculations for the model, such as the model's accuracy, using this matrix. These
+        calculations are given below:</p>
+    <ul class="points">
+        <li><strong>Classification Accuracy:</strong> It is one of the important parameters to determine the accuracy of
+            the classification problems. It defines how often the model predicts the correct output. It can be
+            calculated as the ratio of the number of correct predictions made by the classifier to all number of
+            predictions made by the classifiers. The formula is given below:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix3.png"
+                alt="Confusion Matrix in Machine Learning" />
+        </li>
+        <li><strong>Misclassification rate:</strong> It is also termed as Error rate, and it defines how often the model
+            gives the wrong predictions. The value of error rate can be calculated as the number of incorrect
+            predictions to all number of the predictions made by the classifier. The formula is given below:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix4.png"
+                alt="Confusion Matrix in Machine Learning" />
+        </li>
+        <li><strong>Precision:</strong> It can be defined as the number of correct outputs provided by the model or out
+            of all positive classes that have predicted correctly by the model, how many of them were actually true. It
+            can be calculated using the below formula:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix5.png"
+                alt="Confusion Matrix in Machine Learning" />
+        </li>
+        <li><strong>Recall:</strong> It is defined as the out of total positive classes, how our model predicted
+            correctly. The recall must be as high as possible.<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix6.png"
+                alt="Confusion Matrix in Machine Learning" />
+        </li>
+        <li><strong>F-measure:</strong> If two models have low precision and high recall or vice versa, it is difficult
+            to compare these models. So, for this purpose, we can use F-score. This score helps us to evaluate the
+            recall and precision at the same time. The F-score is maximum if the recall is equal to the precision. It
+            can be calculated using the below formula:<br>
+            <img src="https://static.javatpoint.com/tutorial/machine-learning/images/confusion-matrix7.png"
+                alt="Confusion Matrix in Machine Learning" />
+        </li>
+    </ul>
+    <p>Other important terms used in Confusion Matrix:</p>
+    <ul class="points">
+        <li><strong>Null Error rate:</strong> It defines how often our model would be incorrect if it always predicted
+            the majority class. As per the accuracy paradox, it is said that "<em>the best classifier has a higher error
+                rate than the null error rate.</em>"</li>
+        <li><strong>ROC Curve:</strong> The ROC is a graph displaying a classifier's performance for all possible
+            thresholds. The graph is plotted between the true positive rate (on the Y-axis) and the false Positive rate
+            (on the x-axis).</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="26_k_means_clustering.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="28_cross_validation.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+
+    <title>C++ Array Of Pointer</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item active-submenu" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Array of Pointers</h1>
+    <p>Array and pointers are closely related to each other. In C++, the name of an array is considered &agrave;s a
+        pointer, i.e., the name of an array contains the address of an element. C++ considers the array name as the
+        address of the first element. For example, if we create an array, i.e., marks which hold the 20 values of
+        integer type, then marks will contain the address of first element, i.e., marks[0]. Therefore, we can say that
+        array name (marks) is a pointer which is holding the address of the first element of an array.</p>
+    <p><strong>Let's understand this scenario through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int *ptr;  // integer pointer declaration
+    int marks[10]; // marks array declaration
+    std::cout &lt;&lt; "Enter the elements of an array :" &lt;&lt; std::endl;
+    for(int i=0;i&lt;10;i++)
+    {
+        cin&gt;&gt;marks[i];
+    }
+    ptr=marks; // both marks and ptr pointing to the same element..
+    std::cout &lt;&lt; "The value of *ptr is :" &lt;&lt;*ptr&lt;&lt; std::endl;
+    std::cout &lt;&lt; "The value of *marks is :" &lt;&lt;*marks&lt;&lt;std::endl;
+}
+</textarea></div>
+    <p>In the above code, we declare an integer pointer and an array of integer type. We assign the address of marks to
+        the ptr by using the statement ptr=marks; it means that both the variables 'marks' and 'ptr' point to the same
+        element, i.e., marks[0]. When we try to print the values of *ptr and *marks, then it comes out to be same.
+        Hence, it is proved that the array name stores the address of the first element of an array.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-array-of-pointers.png" alt="C++ Array of Pointers" />
+    <h3 class="h3">Array of Pointers</h3>
+    <p>An array of pointers is an array that consists of variables of pointer type, which means that the variable is a
+        pointer addressing to some other element. Suppose we create an array of pointer holding 5 integer pointers; then
+        its declaration would look like:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *ptr[5];         // array of 5 integer pointer. 
+</textarea></div>
+    <p>In the above declaration, we declare an array of pointer named as ptr, and it allocates 5 integer pointers in
+        memory.</p>
+    <p>The element of an array of a pointer can also be initialized by assigning the address of some other element.
+        Let's observe this case through an example.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int a; // variable declaration.
+ptr[2] = &a;  
+</textarea></div>
+    <p>In the above code, we are assigning the address of 'a' variable to the third element of an array 'ptr'.</p>
+    <p>We can also retrieve the value of 'a' be dereferencing the pointer.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+*ptr[2];
+</textarea></div>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int ptr1[5]; // integer array declaration
+    int *ptr2[5]; // integer array of pointer declaration
+    std::cout &lt;&lt; "Enter five numbers :" &lt;&lt; std::endl;
+    for(int i=0;i&lt;5;i++)
+    {
+        std::cin &gt;&gt; ptr1[i];
+    }
+    for(int i=0;i&lt;5;i++)
+    {
+        ptr2[i]=&ptr1[i]; 
+    }
+    // printing the values of ptr1 array
+    std::cout &lt;&lt; "The values are" &lt;&lt; std::endl;
+    for(int i=0;i&lt;5;i++)
+    {
+        std::cout &lt;&lt; *ptr2[i] &lt;&lt; std::endl;
+    }
+    }
+</textarea></div>
+    <p>In the above code, we declare an array of integer type and an array of integer pointers. We have defined the
+        'for' loop, which iterates through the elements of an array 'ptr1', and on each iteration, the address of
+        element of ptr1 at index 'i' gets stored in the ptr2 at index 'i'.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-array-of-pointers2.png" alt="C++ Array of Pointers" />
+    <p>Till now, we have learnt the array of pointers to an integer. Now, we will see how to create the array of
+        pointers to strings.</p>
+    <h3 class="h3">Array of Pointer to Strings</h3>
+    <p>An array of pointer to strings is an array of character pointers that holds the address of the first character of
+        a string or we can say the base address of a string.</p>
+    <p>The following are the differences between an array of pointers to string and two-dimensional array of characters:
+    </p>
+    <ul class="points">
+        <li>An array of pointers to string is more efficient than the two-dimensional array of characters in case of
+            memory consumption because an array of pointer to strings consumes less memory than the two-dimensional
+            array of characters to store the strings.</li>
+        <li>In an array of pointers, the manipulation of strings is comparatively easier than in the case of 2d array.
+            We can also easily change the position of the strings by using the pointers.</li>
+    </ul>
+    <p>Let's see how to declare the array of pointers to string.</p>
+    <p>First, we declare the array of pointer to string:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+char *names[5] = {"john",
+                  "Peter",
+                  "Marco",
+                  "Devin",
+                  "Ronan"};
+</textarea></div>
+    <p>In the above code, we declared an array of pointer names as 'names' of size 5. In the above case, we have done
+        the initialization at the time of declaration, so we do not need to mention the size of the array of a pointer.
+        The above code can be re-written as:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+char *names[ ] = {"john",
+                  "Peter",
+                  "Marco",
+                  "Devin",
+                  "Ronan"};
+</textarea></div>
+    <p>In the above case, each element of the 'names' array is a string literal, and each string literal would hold the
+        base address of the first character of a string. For example, names[0] contains the base address of "john",
+        names[1] contains the base address of "Peter", and so on. It is not guaranteed that all the string literals will
+        be stored in the contiguous memory location, but the characters of a string literal are stored in a contiguous
+        memory location.</p>
+    <p><strong>Let's create a simple example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+  char *names[5] = {"john",
+                    "Peter",
+                    "Marco",
+                    "Devin",
+                    "Ronan"};
+for(int i=0;i&lt;5;i++)
+    {
+        std::cout &lt;&lt; names[i] &lt;&lt; std::endl;
+    }
+    return 0;
+}
+</textarea></div>
+    <p>In the above code, we have declared an array of char pointer holding 5 string literals, and the first character
+        of each string is holding the base address of the string.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-array-of-pointers3.png" alt="C++ Array of Pointers" />
+    <hr />
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="24_cpp_pointer.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="26_cpp_reference.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

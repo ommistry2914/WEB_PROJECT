@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Linear Regression</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item active-submenu" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Multiple Linear Regression</h1>
+    <p>In the previous topic, we have learned about Simple Linear Regression, where a single Independent/Predictor(X)
+        variable is used to model the response variable (Y). But there may be various cases in which the response
+        variable is affected by more than one predictor variable; for such cases, the Multiple Linear Regression
+        algorithm is used. </p>
+    <p>Moreover, Multiple Linear Regression is an extension of Simple Linear regression as it takes more than one
+        predictor variable to predict the response variable. We can define it as:</p>
+    <blockquote><em>Multiple Linear Regression is one of the important regression algorithms which models the linear
+            relationship between a single dependent continuous variable and more than one independent variable.</em>
+    </blockquote>
+    <p><strong>Example:</strong></p>
+    <p>Prediction of CO<sub>2</sub> emission based on engine size and number of cylinders in a car. </p>
+    <p><strong>Some key points about MLR:</strong></p>
+    <ul class="points">
+        <li>For MLR, the dependent or target variable(Y) must be the continuous/real, but the predictor or independent
+            variable may be of continuous or categorical form.</li>
+        <li>Each feature variable must model the linear relationship with the dependent variable. </li>
+        <li>MLR tries to fit a regression line through a multidimensional space of data-points. </li>
+    </ul>
+    <h3 class="h3">MLR equation:</h3>
+    <p>In Multiple Linear Regression, the target variable(Y) is a linear combination of multiple predictor variables
+        x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ...,x<sub>n</sub>. Since it is an enhancement of Simple Linear
+        Regression, so the same is applied for the multiple linear regression equation, the equation becomes:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+Y= b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+ b<sub>2</sub>x<sub>2</sub>+ b<sub>3</sub>x<sub>3</sub>+...... bnxn       ............... (a)
+</textarea></div>
+    <p>Where,</p>
+    <p><strong>Y= Output/Response variable</strong></p>
+    <p><strong>b<sub>0</sub>, b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub> , b<sub>n</sub>....= Coefficients of the
+            model.</strong></p>
+    <p><strong>x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>,...= Various Independent/feature
+            variable</strong></p>
+    <h3 class="h3">Assumptions for Multiple Linear Regression:</h3>
+    <ul class="points">
+        <li>A <strong>linear relationship</strong> should exist between the Target and predictor variables. </li>
+        <li>The regression residuals must be <strong>normally distributed</strong>. </li>
+        <li>MLR assumes little or <strong>no multicollinearity</strong> (correlation between the independent variable)
+            in data. </li>
+    </ul>
+    <h3 class="h3">Implementation of Multiple Linear Regression model using Python:</h3>
+    <p>To implement MLR using Python, we have below problem:</p>
+    <p><strong>Problem Description:</strong></p>
+    <p>We have a dataset of <strong>50 start-up companies</strong>. This dataset contains five main information:
+        <strong>R&D Spend, Administration Spend, Marketing Spend, State, and Profit for a financial year</strong>. Our
+        goal is to create a model that can easily determine which company has a maximum profit, and which is the most
+        affecting factor for the profit of a company.</p>
+    <p>Since we need to find the Profit, so it is the dependent variable, and the other four variables are independent
+        variables. Below are the main steps of deploying the MLR model:</p>
+    <ol class="points">
+        <li><strong>Data Pre-processing Steps</strong></li>
+        <li><strong>Fitting the MLR model to the training set</strong></li>
+        <li><strong>Predicting the result of the test set</strong></li>
+    </ol>
+    <p><strong>Step-1: Data Pre-processing Step:</strong></p>
+    <p>The very first step is <a href="data-preprocessing-machine-learning">data pre-processing</a>, which we have
+        already discussed in this tutorial. This process contains the below steps:</p>
+    <ul class="points">
+        <li><strong>Importing libraries:</strong> Firstly we will import the library which will help in building the
+            model. Below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+</textarea></div>
+    <ul class="points">
+        <li><strong>Importing dataset:</strong> Now we will import the dataset(50_CompList), which contains all the
+            variables. Below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#importing datasets
+data_set= pd.read_csv('50_CompList.csv')
+</textarea></div>
+    <p><strong>Output:</strong> We will get the dataset as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/multiple-linear-regression-in-machine-learning.png"
+        alt="Multiple Linear Regression" />
+    <p>In above output, we can clearly see that there are five variables, in which four variables are continuous and one
+        is categorical variable. </p>
+    <ul class="points">
+        <li><strong>Extracting dependent and independent Variables:</strong></li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, :-1].values
+y= data_set.iloc[:, 4].values
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p><strong>Out[5]: </strong></p>
+    <div class="codeblock3">
+        <pre>
+array([[165349.2, 136897.8, 471784.1, 'New York'],
+       [162597.7, 151377.59, 443898.53, 'California'],
+       [153441.51, 101145.55, 407934.54, 'Florida'],
+       [144372.41, 118671.85, 383199.62, 'New York'],
+       [142107.34, 91391.77, 366168.42, 'Florida'],
+       [131876.9, 99814.71, 362861.36, 'New York'],
+       [134615.46, 147198.87, 127716.82, 'California'],
+       [130298.13, 145530.06, 323876.68, 'Florida'],
+       [120542.52, 148718.95, 311613.29, 'New York'],
+       [123334.88, 108679.17, 304981.62, 'California'],
+       [101913.08, 110594.11, 229160.95, 'Florida'],
+       [100671.96, 91790.61, 249744.55, 'California'],
+       [93863.75, 127320.38, 249839.44, 'Florida'],
+       [91992.39, 135495.07, 252664.93, 'California'],
+       [119943.24, 156547.42, 256512.92, 'Florida'],
+       [114523.61, 122616.84, 261776.23, 'New York'],
+       [78013.11, 121597.55, 264346.06, 'California'],
+       [94657.16, 145077.58, 282574.31, 'New York'],
+       [91749.16, 114175.79, 294919.57, 'Florida'],
+       [86419.7, 153514.11, 0.0, 'New York'],
+       [76253.86, 113867.3, 298664.47, 'California'],
+       [78389.47, 153773.43, 299737.29, 'New York'],
+       [73994.56, 122782.75, 303319.26, 'Florida'],
+       [67532.53, 105751.03, 304768.73, 'Florida'],
+       [77044.01, 99281.34, 140574.81, 'New York'],
+       [64664.71, 139553.16, 137962.62, 'California'],
+       [75328.87, 144135.98, 134050.07, 'Florida'],
+       [72107.6, 127864.55, 353183.81, 'New York'],
+       [66051.52, 182645.56, 118148.2, 'Florida'],
+       [65605.48, 153032.06, 107138.38, 'New York'],
+       [61994.48, 115641.28, 91131.24, 'Florida'],
+       [61136.38, 152701.92, 88218.23, 'New York'],
+       [63408.86, 129219.61, 46085.25, 'California'],
+       [55493.95, 103057.49, 214634.81, 'Florida'],
+       [46426.07, 157693.92, 210797.67, 'California'],
+       [46014.02, 85047.44, 205517.64, 'New York'],
+       [28663.76, 127056.21, 201126.82, 'Florida'],
+       [44069.95, 51283.14, 197029.42, 'California'],
+       [20229.59, 65947.93, 185265.1, 'New York'],
+       [38558.51, 82982.09, 174999.3, 'California'],
+       [28754.33, 118546.05, 172795.67, 'California'],
+       [27892.92, 84710.77, 164470.71, 'Florida'],
+       [23640.93, 96189.63, 148001.11, 'California'],
+       [15505.73, 127382.3, 35534.17, 'New York'],
+       [22177.74, 154806.14, 28334.72, 'California'],
+       [1000.23, 124153.04, 1903.93, 'New York'],
+       [1315.46, 115816.21, 297114.46, 'Florida'],
+       [0.0, 135426.92, 0.0, 'California'],
+       [542.05, 51743.15, 0.0, 'New York'],
+       [0.0, 116983.8, 45173.06, 'California']], dtype=object)
+</pre>
+    </div>
+    <p>As we can see in the above output, the last column contains categorical variables which are not suitable to apply
+        directly for fitting the model. So we need to encode this variable. </p>
+    <p><strong>Encoding Dummy Variables:</strong></p>
+    <p>As we have one categorical variable (State), which cannot be directly applied to the model, so we will encode it.
+        To encode the categorical variable into numbers, we will use the <strong>LabelEncoder</strong> class. But it is
+        not sufficient because it still has some relational order, which may create a wrong model. So in order to remove
+        this problem, we will use <strong>OneHotEncoder</strong>, which will create the dummy variables. Below is code
+        for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Catgorical data
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_x= LabelEncoder()
+x[:, 3]= labelencoder_x.fit_transform(x[:,3])
+onehotencoder= OneHotEncoder(categorical_features= [3])  
+x= onehotencoder.fit_transform(x).toarray()
+</textarea></div>
+    <p>Here we are only encoding one independent variable, which is state as other variables are continuous.</p>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/multiple-linear-regression-in-machine-learning2.png"
+        alt="Multiple Linear Regression" />
+    <p>As we can see in the above output, the state column has been converted into dummy variables (0 and 1).
+        <strong>Here each dummy variable column is corresponding to the one State</strong>. We can check by comparing it
+        with the original dataset. The first column corresponds to the <strong>California State</strong>, the second
+        column corresponds to the <strong>Florida State</strong>, and the third column corresponds to the <strong>New
+            York State</strong>. </p>
+    <h4 class="n"><span class="bold">Note:</span> We should not use all the dummy variables at the same time, so it must
+        be 1 less than the total number of dummy variables, else it will create a dummy variable trap. </h4>
+    <ul class="points">
+        <li>Now, we are writing a single line of code just to avoid the dummy variable trap: </li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+#avoiding the dummy variable trap:
+x = x[:, 1:]
+</textarea></div>
+    <p>If we do not remove the first dummy variable, then it may introduce multicollinearity in the model. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/multiple-linear-regression-in-machine-learning3.png"
+        alt="Multiple Linear Regression" />
+    <p>As we can see in the above output image, the first column has been removed. </p>
+    <ul class="points">
+        <li>Now we will split the dataset into training and test set. The code for this is given below:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.2, random_state=0)
+</textarea></div>
+    <p>The above code will split our dataset into a training set and test set. </p>
+    <p><strong>Output:</strong> The above code will split the dataset into training set and test set. You can check the
+        output by clicking on the variable explorer option given in Spyder IDE. The test set and training set will look
+        like the below image:</p>
+    <p><strong>Test set:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/multiple-linear-regression-in-machine-learning4.png"
+        alt="Multiple Linear Regression" />
+    <p><strong>Training set:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/multiple-linear-regression-in-machine-learning5.png"
+        alt="Multiple Linear Regression" />
+    <h4 class="n"><span class="bold">Note:</span> In MLR, we will not do feature scaling as it is taken care by the
+        library, so we don't need to do it manually. </h4>
+    <h3 class="h3">Step: 2- Fitting our MLR model to the Training set:</h3>
+    <p>Now, we have well prepared our dataset in order to provide training, which means we will fit our regression model
+        to the training set. It will be similar to as we did in <a
+            href="simple-linear-regression-in-machine-learning">Simple Linear Regression</a> model. The code for this
+        will be:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting the MLR model to the training set:
+from sklearn.linear_model import LinearRegression
+regressor= LinearRegression()
+regressor.fit(x_train, y_train)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[9]: LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+</pre>
+    </div>
+    <p>Now, we have successfully trained our model using the training dataset. In the next step, we will test the
+        performance of the model using the test dataset. </p>
+    <h3 class="h3">Step: 3- Prediction of Test set results:</h3>
+    <p>The last step for our model is checking the performance of the model. We will do it by predicting the test set
+        result. For prediction, we will create a <strong>y_pred</strong> vector. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Predicting the Test set result;
+y_pred= regressor.predict(x_test)
+</textarea></div>
+    <p>By executing the above lines of code, a new vector will be generated under the variable explorer option. We can
+        test our model by comparing the predicted values and test set values. </p>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/multiple-linear-regression-in-machine-learning6.png"
+        alt="Multiple Linear Regression" />
+    <p>In the above output, we have predicted result set and test set. We can check model performance by comparing these
+        two value index by index. For example, the first index has a predicted value of <strong>103015$</strong> profit
+        and test/real value of <strong>103282$</strong> profit. The difference is only of <strong>267$</strong>, which
+        is a good prediction, so, finally, our model is completed here. </p>
+    <ul class="points">
+        <li>We can also check the score for training dataset and test dataset. Below is the code for it:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+print('Train Score: ', regressor.score(x_train, y_train))
+print('Test Score: ', regressor.score(x_test, y_test))
+</textarea></div>
+    <p><strong>Output:</strong> The score is:</p>
+    <div class="codeblock3">
+        <pre>
+Train Score:  0.9501847627493607
+Test Score:  0.9347068473282446
+</pre>
+    </div>
+    <p><strong>The above score tells that our model is 95% accurate with the training dataset and 93% accurate with the
+            test dataset.</strong></p>
+    <h4 class="n"><span class="bold">Note:</span> In the next topic, we will see how we can improve the performance of
+        the model using the <span class="bold">Backward Elimination</span> process. </h4>
+    <h3 class="h3">Applications of Multiple Linear Regression:</h3>
+    <p>There are mainly two applications of Multiple Linear Regression:</p>
+    <ul class="points">
+        <li>Effectiveness of Independent variable on prediction:</li>
+        <li>Predicting the impact of changes:</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="13_simple_linear_regression.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="15_polynomial_regression.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

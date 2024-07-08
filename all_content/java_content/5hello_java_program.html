@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Hello Java Program</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item " href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+        <p>In this section, we will learn how to write the simple program of Java. We can write a simple hello Java
+            program
+            easily after installing the JDK.</p>
+        <p>To create a simple Java program, you need to create a class that contains the main method. Let's understand
+            the
+            requirement first.</p>
+        <h3 id="hellojavareq" class="h3">The requirement for Java Hello World Example</h3>
+        <p>For executing any Java program, the following software or application must be properly installed.</p>
+        <ul class="points">
+            <li>Install the JDK if you don't have installed it, download the JDK and install it.</li>
+            <li>Set path of the jdk/bin directory. </li>
+            <li>Create the Java program</li>
+            <li>Compile and run the Java program</li>
+        </ul>
+        <hr />
+        <h3 id="hellojavaex" class="h3ex">Creating Hello World Example</h3>
+        <p>Let's create the hello java program:</p>
+
+        <div class="row justify-content-start p-3">
+            <textarea name="code" class="java codeblock form-control col-lg-6"
+                style="resize: none;min-height: 200px;max-width: 100%;">
+            class Simple{
+                 public static void main(String args[]){
+                System.out.println("Hello Java");
+                }
+            }
+            </textarea>
+        </div>
+        <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Simple" target="_blank">Test it
+                Now</a></span>
+        <p class="mt-3">Save the above file as Simple.java.</p>
+        <table>
+            <tr>
+                <td><strong>To compile:</strong></td>
+                <td>javac Simple.java</td>
+            </tr>
+            <tr>
+                <td><strong>To execute:</strong></td>
+                <td>java Simple</td>
+            </tr>
+        </table>
+        <p><strong>Output:</strong></p>
+        <div class="codeblock3">
+            <pre>
+    Hello Java
+    </pre>
+        </div>
+        <p><strong>Compilation Flow:</strong></p>
+        <p>When we compile Java program using javac tool, the Java compiler converts the source code into byte code.</p>
+        <img src="https://static.javatpoint.com/images/core/javacodecompile.png" alt="Java How to Compile" />
+        <h2 class="h2">Parameters used in First Java Program</h2>
+        <p>Let's see what is the meaning of class, public, static, void, main, String[], System.out.println().
+        <p>
+        <ul class="points">
+            <li><strong>class</strong> keyword is used to declare a class in Java.</li>
+            <li><strong>public</strong> keyword is an access modifier that represents visibility. It means it is visible
+                to
+                all.
+            </li>
+            <li><strong>static</strong> is a keyword. If we declare any method as static, it is known as the static
+                method.
+                The
+                core advantage of the static method is that there is no need to create an object to invoke the static
+                method.
+                The main() method is executed by the JVM, so it doesn't require creating an object to invoke the main()
+                method.
+                So, it saves memory.</li>
+            <li><strong>void</strong> is the return type of the method. It means it doesn't return any value.</li>
+            <li><strong>main</strong> represents the starting point of the program.</li>
+            <li><strong>String[] args</strong> or <strong>String args[]</strong> is used for command line arguments. We
+                will discuss
+                it in
+                coming section.</li>
+            <li><strong>System.out.println()</strong> is used to print statement. Here, System is a class, out is an
+                object
+                of
+                the PrintStream class, println() is a method of the PrintStream class. We will discuss the internal
+                working
+                of
+                System.out.println() statement in
+                the
+                coming
+                section.
+            </li>
+        </ul>
+
+        <hr />
+        <p>To write the simple program, you need to open notepad by <strong>start menu -&gt; All Programs -&gt;
+                Accessories
+                -&gt; Notepad</strong> and write a simple program as we have shownbelow:</p>
+        <img src="https://static.javatpoint.com/images/simpleprogram.jpg" alt="The first program of java" />
+        <p>As displayed in the above diagram, write the simple program of Java in notepad and saved it as Simple.java.
+            In
+            order
+            to compile and run the above program, you need to open the command prompt by <strong>start menu -&gt; All
+                Programs
+                -&gt; Accessories -&gt; command prompt</strong>. When we have done with all the steps properly, it shows
+            the
+            following output:</p>
+        <img src="https://static.javatpoint.com/images/simpleprogram2.jpg"
+            alt="how to compile and run a simple program of java" />
+        <p>To compile and run the above program, go to your current directory first; my current directory is c:\new.
+            Write
+            here:
+        </p>
+        <table>
+            <tr>
+                <td><strong>To compile:</strong></td>
+                <td>javac Simple.java</td>
+            </tr>
+            <tr>
+                <td><strong>To execute:</strong></td>
+                <td>java Simple</td>
+            </tr>
+        </table>
+        <hr />
+        <h2 class="h2">In how many ways we can write a Java program?</h2>
+        <p>There are many ways to write a Java program. The modifications that can be done in a Java program are given
+            below:
+        </p>
+        <p><b>1) By changing the sequence of the modifiers, method prototype is not changed in Java.</b></p>
+        <p>Let's see the simple code of the main method.</p>
+        <div class="row justify-content-start p-3">
+            <textarea name="code" class="java codeblock form-control col-lg-6"
+            style="resize: none;max-width: 100%;">
+    static public void main(String args[])
+    </textarea>
+        </div>
+        <p><b>2) The subscript notation in the Java array can be used after type, before the variable or after the
+                variable.</b>
+        </p>
+        <p>Let's see the different codes to write the main method.</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+            style="resize: none;min-height:100px;max-width: 100%;">
+    public static void main(String[] args)
+    public static void main(String []args)
+    public static void main(String args[])
+    </textarea></div>
+        <p><b>3) You can provide var-args support to the main() method by passing 3 ellipses (dots)</b></p>
+        <p>Let's see the simple code of using var-args in the main() method. We will learn about var-args later in the
+            Java
+            New
+            Features chapter.</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+            style="resize: none;max-width: 100%;">
+    public static void main(String... args)
+    </textarea></div>
+        <p><b>4) Having a semicolon at the end of class is optional in Java.</b></p>
+        <p>Let's see the simple code.</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+            style="resize: none;min-height: 150px;max-width: 100%;"">
+    class A{
+        static public void main(String... args){
+            System.out.println("hello java4");
+        }
+    };
+    </textarea></div>
+        <hr />
+        <h2 class="h2">Valid Java main() method signature</h2>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+            style="resize: none;min-height: 230px;max-width: 100%;">
+    public static void main(String[] args)
+    public static void main(String []args)
+    public static void main(String args[])
+    public static void main(String... args)
+    static public void main(String[] args)
+    public static final void main(String[] args)
+    final public static void main(String[] args)
+    final strictfp public static void main(String[] args)
+    </textarea></div>
+        <hr />
+        <h2 class="h2">Invalid Java main() method signature</h2>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+            style="resize: none;min-height: 150px;max-width: 100%;">
+    public void main(String[] args)
+    static void main(String[] args)
+    public void static main(String[] args)
+    abstract public static void main(String[] args)
+    </textarea></div>
+        <hr />
+        <span id="hellojavawhatjavacnot"></span>
+        <h3 class="h3">Resolving an error &quot;javac is not recognized as an internal or external command&quot;?</h3>
+        <p>If there occurs a problem like displayed in the below figure, you need to set a path. Since DOS doesn't
+            recognize
+            javac and java as internal or external command. To overcome this problem, we need to set a path. The path is
+            not
+            required in a case where you save your program inside the JDK/bin directory. However, it is an excellent
+            approach to
+            set the path. Click here for How to set path in java.</p>
+        <img src="https://static.javatpoint.com/images/simpleprogram3.jpg"
+            alt="how to resolve the problem of a hello world program in java" />
+        <hr />
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="4c++_vs_java.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="6program_internal.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</html>

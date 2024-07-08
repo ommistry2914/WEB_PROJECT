@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Tutorial</h1>
+    <img src="https://static.javatpoint.com/csspages/images/css-tutorial.png" alt="CSS tutorial" style="float:right;padding:15px" />
+    <p><b>CSS tutorial</b> or CSS 3 tutorial provides basic and advanced concepts of CSS technology. Our CSS tutorial is developed for beginners and professionals. The major points of CSS are given below:<p>
+    <ul class="points">
+    <li>CSS stands for Cascading Style Sheet.</li>
+    <li>CSS is used to design HTML tags.</li>
+    <li>CSS is a widely used language on the web.</li>
+    <li>HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags.</li>
+    </ul>
+    <h2 class="h2">CSS Example with CSS Editor</h2>
+    <p>In this tutorial, you will get a lot of CSS examples, you can edit and run these examples with our online CSS editor tool.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    h1{
+    color:white;
+    background-color:red;
+    padding:5px;
+    }
+    p{
+    color:blue;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Write Your First CSS Example&lt;/h1&gt;
+    &lt;p&gt;This is Paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=csscss1" target="_blank">Test it Now</a></span>
+    <p>Output:</p>
+    <h2 style="color:white;background-color:red;padding:10px;">Write Your First CSS Example</h2>
+    <p style="color:blue;">This is Paragraph.</p>
+    <hr/>
+    <h2 class="h2 center textshadow">CSS Index</h2>
+    <hr/>
+    <div class="responsivediv">
+    <div class="col-3">
+    <p><strong>CSS Tutorial</strong></p>
+    <ul class="points">
+    <li><a href="css-tutorial">Introduction to CSS</a></li>
+    <li><a href="what-is-css">What is CSS</a></li>
+    <li><a href="css-syntax">CSS Syntax</a></li>
+    <li><a href="css-selector">CSS Selector</a></li>
+    <li><a href="how-to-add-css">How to Add CSS</a></li>
+    <li><a href="inline-css">Inline CSS</a></li>
+    <li><a href="internal-css">Internal CSS</a></li>
+    <li><a href="external-css">External CSS</a></li>
+    <li><a href="css-comments">CSS Comments</a></li>
+    </ul>
+    </div>
+    <div class="col-3">
+    <p><strong>CSS Properties</strong></p>
+    <ul class="points">
+    <li><a href="css-background">CSS Background</a></li>
+    <li><a href="css-border">CSS Border</a></li>
+    <li><a href="css-display">CSS Display</a></li>
+    <li><a href="css-float">CSS Float</a></li>
+    <li><a href="css-font">CSS Font</a></li>
+    <li><a href="css-line-height">CSS Line Height</a></li>
+    <li><a href="css-margin">CSS Margin</a></li>
+    <li><a href="css-opacity">CSS Opacity</a></li>
+    <li><a href="css-overflow">CSS Overflow</a></li>
+    <li><a href="css-padding">CSS Padding</a></li>
+    <li><a href="css-position">CSS Position</a></li>
+    <li><a href="css-vertical-align">CSS Vertical Align</a></li>
+    <li><a href="css-white-space">CSS White Space</a></li>
+    <li><a href="css-width">CSS Width</a></li>
+    <li><a href="css-word-wrap">CSS Word Wrap</a></li>
+    <li><a href="css-outline">CSS Outline</a></li>
+    <li><a href="css-visibility">CSS Visibility</a></li>
+    <li><a href="css-counter">CSS Counter</a></li>
+    </ul>
+    </div>
+    <div class="col-3">
+    <p><strong>CSS Advance</strong></p>
+    <ul class="points">
+    <li><a href="css-animation">CSS Animation</a></li>
+    <li><a href="css-gradient">CSS Gradient</a></li>
+    <li><a href="css-transition">CSS Transition</a></li>
+    <li><a href="css-tooltips">CSS Tooltips</a></li>
+    <li><a href="css-tooltip-animation">CSS Tooltip Animation</a></li>
+    <li><a href="css-arrow">CSS Arrow</a></li>
+    <li><a href="css-flexbox">CSS FlexBox</a></li>
+    <li><a href="css-media-query">CSS @Media Query</a></li>
+    <li><a href="css-2d-transforms">CSS 2D Transforms</a></li>
+    <li><a href="css-3d-transforms">CSS 3D Transforms</a></li>
+    <li><a href="css-aural-media">CSS Aural Media</a></li>
+    <li><a href="css-user-interface">CSS User Interface</a></li>
+    <li><a href="css-pagination">CSS Pagination</a></li>
+    </ul>
+    <p><strong>CSS Design</strong></p>
+    <ul class="points">
+    <li><a href="css-layout">CSS Layout</a></li>
+    <li><a href="css-table">CSS Table</a></li>
+    </ul>
+    <p><strong>Interview Questions</strong></p>
+    <ul class="points">
+    <li><a href="css-interview-questions">CSS Interview Questions</a></li>
+    </ul>
+    </div>
+    </div>
+    <hr/>
+    <h2 class="h2">CSS 3 Tutorial</h2>
+    <p>In this tutorial, we will learn CSS 3 properties to design box model, apply opacity, radius etc.</p>
+    <hr/>
+    <h2 class="h2">All CSS Properties</h2>
+    <p>In this tutorial, you will get details of all CSS properties such as background, border, font, float, display, margin, opacity, padding, text-align, vertical-align, position, color etc.</p>
+    <hr/>
+    <h2 class="h2">Prerequisite</h2>
+    <p>Before learning CSS, you must have the basic knowledge of HTML.</p>
+    <h2 class="h2">Audience</h2>
+    <p>Our CSS tutorial is designed to help beginners and professionals both.</p>
+    <h2 class="h2">Problem</h2>
+    <p>If you find any problem or mistake in our CSS tutorial, you can report to us. We assure, you will not find any problem in CSS tutorial.</p>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+    <!-- <a href="#"><button class="btn btn-danger" type="button">Previous</button></a> -->
+    <a href="2_What_is_CSS.html"><button class="btn btn-success" type="button">Next</button></a>
+</div>
+<footer>
+    <div class="container-fluid bg-dark text-bg-dark"
+        style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+        Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

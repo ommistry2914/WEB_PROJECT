@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+
+    <title>JS Operator</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item active-submenu" href="8js_operator.html">JS Operator</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item" href="34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">JavaScript Operators</h1>
+    <p>JavaScript operators are symbols that are used to perform operations on operands. For example:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+var sum=10+20;
+</textarea></div>
+    <p>Here, + is the arithmetic operator and = is the assignment operator.</p>
+    <p>There are following types of operators in JavaScript.</p>
+    <ol>
+        <li>Arithmetic Operators</li>
+        <li>Comparison (Relational) Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Logical Operators</li>
+        <li>Assignment Operators</li>
+        <li>Special Operators</li>
+    </ol>
+    <hr />
+    <h2 class="h2">JavaScript Arithmetic Operators</h2>
+    <p>Arithmetic operators are used to perform arithmetic operations on the operands. The following operators are known
+        as JavaScript arithmetic operators.</p>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Addition</td>
+            <td>10+20 = 30</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>20-10 = 10</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplication</td>
+            <td>10*20 = 200</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Division</td>
+            <td> 20/10 = 2</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Modulus (Remainder)</td>
+            <td>20%10 = 0</td>
+        </tr>
+        <tr>
+            <td>++</td>
+            <td>Increment</td>
+            <td>var a=10; a++; Now a = 11</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>Decrement</td>
+            <td>var a=10; a--; Now a = 9</td>
+        </tr>
+    </table>
+    <h2 class="h2 mt-3">JavaScript Comparison Operators</h2>
+    <p>The JavaScript comparison operator compares the two operands. The comparison operators are as follows:</p>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Is equal to</td>
+            <td>10==20 = false</td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td>Identical (equal and of same type)</td>
+            <td>10==20 = false</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Not equal to</td>
+            <td>10!=20 = true</td>
+        </tr>
+        <tr>
+            <td>!==</td>
+            <td>Not Identical</td>
+            <td> 20!==20 = false</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Greater than</td>
+            <td>20>10 = true</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Greater than or equal to</td>
+            <td>20>=10 = true</td>
+        </tr>
+        <tr>
+            <td>
+                << /td>
+            <td>Less than</td>
+            <td>20<10=false< /td>
+        </tr>
+        <tr>
+            <td>
+                <=< /td>
+            <td>Less than or equal to</td>
+            <td>20<=10=false< /td>
+        </tr>
+    </table>
+    <h2 class="h2">JavaScript Bitwise Operators</h2>
+    <p>The bitwise operators perform bitwise operations on operands. The bitwise operators are as follows:</p>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&</td>
+            <td>Bitwise AND</td>
+            <td>(10==20 & 20==33) = false</td>
+        </tr>
+        <tr>
+            <td>|</td>
+            <td>Bitwise OR</td>
+            <td>(10==20 | 20==33) = false</td>
+        </tr>
+        <tr>
+            <td>^</td>
+            <td>Bitwise XOR</td>
+            <td>(10==20 ^ 20==33) = false</td>
+        </tr>
+        <tr>
+            <td>~</td>
+            <td>Bitwise NOT</td>
+            <td> (~10) = -10</td>
+        </tr>
+        <tr>
+            <td>
+                <<< /td>
+            <td>Bitwise Left Shift</td>
+            <td>(10<<2)=40< /td>
+        </tr>
+        <tr>
+            <td>>></td>
+            <td>Bitwise Right Shift</td>
+            <td>(10>>2) = 2</td>
+        </tr>
+        <tr>
+            <td>>>></td>
+            <td>Bitwise Right Shift with Zero</td>
+            <td>(10>>>2) = 2</td>
+        </tr>
+    </table>
+    <h2 class="h2 mt-3">JavaScript Logical Operators</h2>
+    <p>The following operators are known as JavaScript logical operators.</p>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&&</td>
+            <td>Logical AND</td>
+            <td>(10==20 && 20==33) = false</td>
+        </tr>
+        <tr>
+            <td>||</td>
+            <td>Logical OR</td>
+            <td>(10==20 || 20==33) = false</td>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>Logical Not</td>
+            <td>!(10==20) = true</td>
+        </tr>
+    </table>
+    <h2 class="h2">JavaScript Assignment Operators</h2>
+    <p>The following operators are known as JavaScript assignment operators.</p>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>Assign</td>
+            <td>10+10 = 20</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>Add and assign</td>
+            <td>var a=10; a+=20; Now a = 30</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>Subtract and assign</td>
+            <td>var a=20; a-=10; Now a = 10</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>Multiply and assign</td>
+            <td>var a=10; a*=20; Now a = 200</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>Divide and assign</td>
+            <td>var a=10; a/=2; Now a = 5</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>Modulus and assign</td>
+            <td>var a=10; a%=2; Now a = 0</td>
+        </tr>
+    </table>
+    <h2 class="h2 mt-3">JavaScript Special Operators</h2>
+    <p>The following operators are known as JavaScript special operators.</p>
+    <table class="alt">
+        <tr>
+            <th>Operator</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>(?:)</td>
+            <td>Conditional Operator returns value based on the condition. It is like if-else.</td>
+        </tr>
+        <tr>
+            <td>,</td>
+            <td>Comma Operator allows multiple expressions to be evaluated as single statement.</td>
+        </tr>
+        <tr>
+            <td>delete</td>
+            <td>Delete Operator deletes a property from the object.</td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>In Operator checks if object has the given property</td>
+        </tr>
+        <tr>
+            <td>instanceof</td>
+            <td>checks if the object is an instance of given type</td>
+        </tr>
+        <tr>
+            <td>new</td>
+            <td>creates an instance (object)</td>
+        </tr>
+        <tr>
+            <td>typeof</td>
+            <td>checks the type of object.</td>
+        </tr>
+        <tr>
+            <td>void</td>
+            <td>it discards the expression's return value.</td>
+        </tr>
+        <tr>
+            <td>yield</td>
+            <td>checks what is returned in a generator by the generator's iterator.</td>
+        </tr>
+    </table>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="7js_data_type.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="9js_if_else_statement.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

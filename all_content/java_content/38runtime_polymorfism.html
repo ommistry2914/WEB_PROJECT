@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Runtime Polymorphism</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Polymorphism in Java</h1>
+    <p><strong>Polymorphism in Java</strong> is a concept by which we can perform a <em>single action in different
+            ways</em>. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and
+        "morphs"
+        means forms. So polymorphism means many forms.</p>
+    <p>There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform
+        polymorphism in java by method overloading and method overriding.</p>
+    <p>If you overload a static method in Java, it is the example of compile time polymorphism. Here, we will focus on
+        runtime polymorphism in java.</p>
+    <hr />
+    <h2 class="h2">Runtime Polymorphism in Java</h2>
+    <p><strong>Runtime polymorphism</strong> or <strong>Dynamic Method Dispatch</strong> is a process in which a call to
+        an
+        overridden method is resolved at runtime rather than compile-time.
+    </p>
+    <p>
+        In this process, an overridden method is called through the reference variable of a superclass. The
+        determination of
+        the method to be called is based on the object being referred to by the reference variable.
+    </p>
+    <p>Let's first understand the upcasting before Runtime Polymorphism.</p>
+    <a id="upcasting"></a>
+    <h3 class="h4">Upcasting</h3>
+    <p>If the reference variable of Parent class refers to the object of Child class, it is known as upcasting. For
+        example:
+    </p>
+    <img src="https://static.javatpoint.com/images/java-upcasting.png" alt="Upcasting in Java" />
+    
+    <a id="polymorphismex"></a>
+    <h3 class="h3ex">Example of Java Runtime Polymorphism</h3>
+    <p>In this example, we are creating two classes Bike and Splendor. Splendor class extends Bike class and overrides
+        its
+        run() method. We are calling the run method by the reference variable of Parent class. Since it refers to the
+        subclass object and subclass method overrides the Parent class method, the subclass method is invoked at
+        runtime.
+    </p>
+    <p>
+        Since method invocation is determined by the JVM not compiler, it is known as runtime polymorphism.
+    </p>
+    <div class="codeblock"><textarea name="code" class="java">
+ class Bike{
+   void run(){System.out.println("running");}
+ }
+ class Splendor extends Bike{
+   void run(){System.out.println("running safely with 60km");}
+ 
+   public static void main(String args[]){
+     Bike b = new Splendor();//upcasting
+     b.run();
+   }
+ }
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Splender" target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+running safely with 60km.
+</pre>
+    </div>
+    <h2 class="h2">Java Runtime Polymorphism Example: Bank</h2>
+    <p>Consider a scenario where Bank is a class that provides a method to get the rate of interest. However, the rate
+        of
+        interest may differ according to banks. For example, SBI, ICICI, and AXIS banks are providing 8.4%, 7.3%, and
+        9.7%
+        rate of interest.</p>
+    <img src="https://static.javatpoint.com/images/core/bankinheritance.png"
+        alt="Java Runtime Polymorphism example of bank" />
+    <h4 class="n">Note: This example is also given in method overriding but there was no upcasting.</h4>
+    <div class="codeblock"><textarea name="code" class="java">
+class Bank{
+float getRateOfInterest(){return 0;}
+}
+class SBI extends Bank{
+float getRateOfInterest(){return 8.4f;}
+}
+class ICICI extends Bank{
+float getRateOfInterest(){return 7.3f;}
+}
+class AXIS extends Bank{
+float getRateOfInterest(){return 9.7f;}
+}
+class TestPolymorphism{
+public static void main(String args[]){
+Bank b;
+b=new SBI();
+System.out.println("SBI Rate of Interest: "+b.getRateOfInterest());
+b=new ICICI();
+System.out.println("ICICI Rate of Interest: "+b.getRateOfInterest());
+b=new AXIS();
+System.out.println("AXIS Rate of Interest: "+b.getRateOfInterest());
+}
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestPolymorphism"
+            target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+SBI Rate of Interest: 8.4
+ICICI Rate of Interest: 7.3
+AXIS Rate of Interest: 9.7
+</pre>
+    </div>
+    <h2 class="h2">Java Runtime Polymorphism Example: Shape</h2>
+    <div class="codeblock"><textarea name="code" class="java">
+class Shape{
+void draw(){System.out.println("drawing...");}
+}
+class Rectangle extends Shape{
+void draw(){System.out.println("drawing rectangle...");}
+}
+class Circle extends Shape{
+void draw(){System.out.println("drawing circle...");}
+}
+class Triangle extends Shape{
+void draw(){System.out.println("drawing triangle...");}
+}
+class TestPolymorphism2{
+public static void main(String args[]){
+Shape s;
+s=new Rectangle();
+s.draw();
+s=new Circle();
+s.draw();
+s=new Triangle();
+s.draw();
+}
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestPolymorphism2"
+            target="_blank">Test
+            it Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+drawing rectangle...
+drawing circle...
+drawing triangle...
+</pre>
+    </div>
+    <h2 class="h2">Java Runtime Polymorphism Example: Animal</h2>
+    <div class="codeblock"><textarea name="code" class="java">
+class Animal{
+void eat(){System.out.println("eating...");}
+}
+class Dog extends Animal{
+void eat(){System.out.println("eating bread...");}
+}
+class Cat extends Animal{
+void eat(){System.out.println("eating rat...");}
+}
+class Lion extends Animal{
+void eat(){System.out.println("eating meat...");}
+}
+class TestPolymorphism3{
+public static void main(String[] args){
+Animal a;
+a=new Dog();
+a.eat();
+a=new Cat();
+a.eat();
+a=new Lion();
+a.eat();
+}}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=TestPolymorphism3"
+            target="_blank">Test
+            it Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+eating bread...
+eating rat...
+eating meat...
+</pre>
+    </div>
+    <a id="polymorphismdatamember"></a>
+    <h2 class="h2">Java Runtime Polymorphism with Data Member</h2>
+    <p>A method is overridden, not the data members, so runtime polymorphism can't be achieved by data members.
+    </p>
+    <p>
+        In the example given below, both the classes have a data member speedlimit. We are accessing the data member by
+        the
+        reference variable of Parent class which refers to the subclass object. Since we are accessing the data member
+        which
+        is not overridden, hence it will access the data member of the Parent class always.
+    </p>
+    <h4 class="n">Rule: Runtime polymorphism can't be achieved by data members.</h4>
+    <div class="codeblock"><textarea name="code" class="java">
+ class Bike{
+  int speedlimit=90;
+ }
+ class Honda3 extends Bike{
+  int speedlimit=150;
+ 
+  public static void main(String args[]){
+   Bike obj=new Honda3();
+   System.out.println(obj.speedlimit);//90
+ }
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Honda3" target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+90
+</pre>
+    </div>
+    <h2 class="h2">Java Runtime Polymorphism with Multilevel Inheritance</h2>
+    <p>Let's see the simple example of Runtime Polymorphism with multilevel inheritance.</p>
+    <div class="codeblock"><textarea name="code" class="java">
+class Animal{
+void eat(){System.out.println("eating");}
+}
+class Dog extends Animal{
+void eat(){System.out.println("eating fruits");}
+}
+class BabyDog extends Dog{
+void eat(){System.out.println("drinking milk");}
+public static void main(String args[]){
+Animal a1,a2,a3;
+a1=new Animal();
+a2=new Dog();
+a3=new BabyDog();
+a1.eat();
+a2.eat();
+a3.eat();
+}
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=BabyDog" target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+eating
+eating fruits
+drinking Milk
+</pre>
+    </div>
+    <hr />
+    <h3 class="h3">Try for Output</h3>
+    <div class="codeblock"><textarea name="code" class="java">
+class Animal{
+void eat(){System.out.println("animal is eating...");}
+}
+class Dog extends Animal{
+void eat(){System.out.println("dog is eating...");}
+}
+class BabyDog1 extends Dog{
+public static void main(String args[]){
+Animal a=new BabyDog1();
+a.eat();
+}}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=BabyDog1" target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Dog is eating
+</pre>
+    </div>
+    <p>Since, BabyDog is not overriding the eat() method, so eat() method of Dog class is invoked.</p>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="37final_keyword.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="39abstarct_class.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

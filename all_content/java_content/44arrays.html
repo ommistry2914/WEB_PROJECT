@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+        <link rel="stylesheet" href="../../stylesheet.css">
+
+
+        <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+        <title>Java Array</title>
+
+        <style>
+                .active-submenu {
+                        font-weight: 500;
+                        background-color: darkgray;
+                }
+
+                .active-submenu:hover {
+                        font-weight: 500;
+                        background-color: darkgray;
+                }
+                a:hover{
+            text-decoration: none;
+        }
+        </style>
+
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+        <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="../../home.html">
+                                <img src="../icon/sg.png" alt="icon"
+                                        style="height: 50px; width: 50px; margin-left: 20px;">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                                aria-labelledby="offcanvasNavbarDarkLabel">
+                                <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                                                <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                                        </h5>
+                                        <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                                <li class="nav-item">
+                                                        <a class="nav-link" aria-current="page"
+                                                                href="../../home.html">Home</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Programming Language
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                                href="../../first_page/c_page.html">C</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="../../first_page/c++_page.html">C++</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item active-submenu"
+                                                                                href="../../first_page/java_page.html">Java</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="../../first_page/python_page.html">Python</a>
+                                                                </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link active dropdown-toggle" href="#"
+                                                                role="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Java
+                                                        </a>
+                                                        <!-- <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">content</a></li>
+                                        <li><a class="dropdown-item" href="#">content</a></li>
+                                        <li><a class="dropdown-item" href="#">content</a></li>
+                                        <li><a class="dropdown-item" href="#">content</a></li>
+                                    </ul> -->
+                                                        <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item "
+                                                                                href="1what_is_java.html">What
+                                                                                is Java</a></li>
+                                                                <li><a class="dropdown-item "
+                                                                                href="2history_of_java.html">History Of
+                                                                                Java</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="3feature_of_java.html">Features Of
+                                                                                Java</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="4c++_vs_java.html">C++ Vs
+                                                                                Java</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="5hello_java_program.html">Hello
+                                                                                Java
+                                                                                Program</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="6program_internal.html">Program
+                                                                                Internal</a>
+                                                                </li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="7how_to_set_path.html">How To Set
+                                                                                Path
+                                                                        </a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                                                        </a></li>
+                                                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                                                        </a></li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="10java_variable.html">Java
+                                                                                Variable
+                                                                        </a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="11java_data_type.html">Java Data
+                                                                                Type
+                                                                        </a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="12unicode_system.html">Unicode
+                                                                                System
+                                                                        </a></li>
+
+                                                                <li><a class="dropdown-item" href="13operator.html">Java
+                                                                                Operator
+                                                                        </a></li>
+
+                                                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                                                                Keyword
+                                                                        </a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="15java_control_statement.html">
+                                                                                Java Control Statement</a></li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="16if_else_statement.html">
+                                                                                Java If Else Statement</a></li>
+
+                                                                <li><a class="dropdown-item" href="17java_switch.html">
+                                                                                Java Switch Statement</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="18java_for_loop.html">
+                                                                                Java For Loop</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="19java_while_loop.html">
+                                                                                Java While Loop</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="20java_do_while_loop.html">
+                                                                                Java Do While Loop</a></li>
+
+                                                                <li><a class="dropdown-item" href="21java_break.html">
+                                                                                Java Break Statement</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="22java_continue.html">
+                                                                                Java Continue Statement</a></li>
+
+                                                                <li><a class="dropdown-item" href="23java_comment.html">
+                                                                                Java Comments</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="24java_oops_concept.html">
+                                                                                Java Oops Concept</a></li>
+
+                                                                <li><a class="dropdown-item" href="25java_naming.html">
+                                                                                Java Naming Conventions</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="26object_nd_class.html">
+                                                                                Java Object And Class</a></li>
+
+                                                                <li><a class="dropdown-item" href="27method.html">
+                                                                                Java Methods</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="28java_constructor.html">
+                                                                                Java Constructors</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="29static_keyword.html">
+                                                                                Java Static Keyword</a></li>
+
+                                                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                                                                Java This Keyword</a></li>
+
+                                                                <li><a class="dropdown-item" href="31inheritence.html">
+                                                                                Java Inheritance</a></li>
+
+                                                                <li><a class="dropdown-item" href="32aggregation.html">
+                                                                                Java Aggregation</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="33method_overloading.html">
+                                                                                Java Method Overloading</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="34method_overrinding.html">
+                                                                                Java Method Overrinding</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="35covariant_return_type.html">
+                                                                                Java Covariant Return Type</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="36super_keyword.html">
+                                                                                Java Super Keyword</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="37final_keyword.html">
+                                                                                Java Final Keyword</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="38runtime_polymorfism.html">
+                                                                                Java Runtime Polymorphism</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="39abstarct_class.html">
+                                                                                Java Abstract Class</a></li>
+
+                                                                <li><a class="dropdown-item" href="40interface.html">
+                                                                                Java Interface</a></li>
+
+                                                                <li><a class="dropdown-item" href="41package.html">
+                                                                                Java Packages</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="42access_modifier.html">
+                                                                                Java Access Modifier</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="43encapsulation.html">
+                                                                                Java Encapulation</a></li>
+
+                                                                <li><a class="dropdown-item active-submenu"
+                                                                                href="44arrays.html">
+                                                                                Java Array</a></li>
+
+                                                                <li><a class="dropdown-item" href="45object_class.html">
+                                                                                Java Object Class</a></li>
+
+                                                                <li><a class="dropdown-item" href="46java_string.html">
+                                                                                Java String</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="47exception_handling.html">
+                                                                                Java Exception Handling</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="48multithreading.html">
+                                                                                Java Multithreading</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="49life_cycle_of_thread.html">
+                                                                                Life Cycle Of Thread</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="50garbage_collection.html">
+                                                                                Garbage Collection In Java</a></li>
+
+                                                                <li><a class="dropdown-item"
+                                                                                href="51synchronization.html">
+                                                                                Java Synchronization</a></li>
+                                                        </ul>
+
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Web Developement
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                                href="../../first_page/html_page.html">HTML</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="../../first_page/css_page.html">CSS</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                                href="../../first_page/javascript_page.html">JavaScript</a>
+                                                                </li>
+                                                        </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="../../first_page/ml_page.html">Machine
+                                                                Learning</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="../../about.html">About Us</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link" href="../../contact.html">Contact Us</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+        </nav>
+
+        <div style="padding: 30px;font-size: 18px;">
+
+        <h1 class="h1">Java Arrays</h1>
+        <p>Normally, an array is a collection of similar type of elements which has contiguous memory location.</p>
+        <p><strong>Java array</strong> is an object which contains elements of a similar data type. Additionally, The
+                elements
+                of an array are stored in a contiguous memory location. It is a data structure where we store similar
+                elements.
+                We
+                can store only a fixed set of elements in a Java array.</p>
+        <p>Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is
+                stored on 1st
+                index and so on. </p>
+        <p>Unlike C/C++, we can get the length of the array using the length member. In C/C++, we need to use the sizeof
+                operator. </p>
+        <p>In Java, array is an object of a dynamically generated class. Java array inherits the Object class, and
+                implements
+                the Serializable as well as Cloneable interfaces. We can store primitive values or objects in an array
+                in Java.
+                Like
+                C/C++, we can also create single dimentional or multidimentional arrays in Java.</p>
+        <p>Moreover, Java provides the feature of anonymous arrays which is not available in C/C++.</p>
+        <img src="images/core/array.gif" alt="Java array" />
+        <h3 class="h3">Advantages</h3>
+        <ul class="points">
+                <li><strong>Code Optimization:</strong> It makes the code optimized, we can retrieve or sort the data
+                        efficiently.
+                </li>
+                <li><strong>Random access:</strong> We can get any data located at an index position.</li>
+        </ul>
+        <h3 class="h3">Disadvantages</h3>
+        <ul class="points">
+                <li><strong>Size Limit:</strong> We can store only the fixed size of elements in the array. It doesn't
+                        grow its
+                        size
+                        at runtime. To solve this problem, collection framework is used in Java which grows
+                        automatically.</li>
+        </ul>
+        <hr />
+        
+        <h3 class="h2">Types of Array in java</h3>
+        <p>There are two types of array.</p>
+        <ul>
+                <li>Single Dimensional Array</li>
+                <li>Multidimensional Array</li>
+        </ul>
+        <hr />
+        
+        <h3 class="h3ex">Example of Java Array</h3>
+        <p>Let's see the simple example of java array, where we are going to declare, instantiate, initialize and
+                traverse an
+                array.</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+                style="resize: none;min-height: 200px;max-width: 100%;">
+//Java Program to illustrate how to declare, instantiate, initialize
+//and traverse the Java array.
+class Testarray{
+public static void main(String args[]){
+int a[]=new int[5];//declaration and instantiation
+a[0]=10;//initialization
+a[1]=20;
+a[2]=70;
+a[3]=40;
+a[4]=50;
+//traversing array
+for(int i=0;i&lt;a.length;i++)//length is the property of array
+System.out.println(a[i]);
+}}
+</textarea></div>
+        <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Testarray" target="_blank">Test
+                        it
+                        Now</a></span>
+        <p>Output:</p>
+        <div class="codeblock3">
+                <pre>
+10
+20
+70
+40
+50
+</pre>
+        </div>
+        <hr />
+        <h2 class="h2">Declaration, Instantiation and Initialization of Java Array</h2>
+        <p>We can declare, instantiate and initialize the java array together by:</p>
+        <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+                style="resize: none;min-height: 200px;max-width: 100%;">
+int a[]={33,3,4,5};//declaration, instantiation and initialization
+</textarea></div>
+        <p>Let's see the simple example to print this array.</p>
+        <div class="codeblock"><textarea name="code" class="java">
+//Java Program to illustrate the use of declaration, instantiation 
+//and initialization of Java array in a single line
+class Testarray1{
+public static void main(String args[]){
+int a[]={33,3,4,5};//declaration, instantiation and initialization
+//printing array
+for(int i=0;i&lt;a.length;i++)//length is the property of array
+System.out.println(a[i]);
+}}
+</textarea></div>
+        <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Testarray1" target="_blank">Test
+                        it
+                        Now</a></span>
+        <p>Output:</p>
+        <div class="codeblock3">
+                <pre>
+33
+3
+4
+5
+</pre>
+        </div>
+        <h2 class="h2">For-each Loop for Java Array</h2>
+        <p>We can also print the Java array using <strong><a href="for-each-loop">for-each loop</a></strong>. The Java
+                for-each
+                loop prints the array elements one by one. It holds an array element in a variable, then executes the
+                body of
+                the
+                loop.</p>
+        
+                
+                
+        <h2 class="h2">Passing Array to a Method in Java</h2>
+        <p>We can pass the java array to method so that we can reuse the same logic on any array.</p>
+        
+        <h2 class="h2">Anonymous Array in Java</h2>
+        <p>Java supports the feature of an anonymous array, so you don't need to declare the array while passing an
+                array to the
+                method.</p>
+        
+                <h2 class="h2">Returning Array from the Method</h2>
+        <p>We can also return an array from the method in Java.</p>
+        
+        <h2 class="h2">ArrayIndexOutOfBoundsException</h2>
+        <p>The Java Virtual Machine (JVM) throws an ArrayIndexOutOfBoundsException if length of the array in negative,
+                equal to
+                the array size or greater than the array size while traversing the array.</p>
+        
+                <hr />
+        <h2 class="h2">Multidimensional Array in Java</h2>
+        <p>In such case, data is stored in row and column based index (also known as matrix form).</p>
+        
+        <h2 class="h2">Jagged Array in Java</h2>
+        <p>If we are creating odd number of columns in a 2D array, it is known as a jagged array. In other words, it is
+                an array
+                of arrays with different number of columns.</p>
+        
+                <h2 class="h2">What is the class name of Java array?</h2>
+        <p>In Java, an array is an object. For array object, a proxy class is created whose name can be obtained by
+                getClass().getName() method on the object.</p>
+        
+                <h2 class="h2">Copying a Java Array</h2>
+        <p>We can copy an array to another by the arraycopy() method of System class.</p>
+        
+        <hr />
+        <h2 class="h2">Cloning an Array in Java</h2>
+        <p>Since, Java array implements the Cloneable interface, we can create the clone of the Java array. If we create
+                the
+                clone of a single-dimensional array, it creates the deep copy of the Java array. It means, it will copy
+                the
+                actual
+                value. But, if we create the clone of a multidimensional array, it creates the shallow copy of the Java
+                array
+                which
+                means it copies the references.</p>
+       
+                <h2 class="h2">Addition of 2 Matrices in Java</h2>
+        <p>Let's see a simple example that adds two matrices.</p>
+       
+        <h2 class="h2">Multiplication of 2 Matrices in Java</h2>
+        <p>In the case of matrix multiplication, a one-row element of the first matrix is multiplied by all the columns
+                of the
+                second matrix which can be understood by the image given below.</p>
+        <img src="https://static.javatpoint.com/cpp/images/matrix-multiplication-in-cpp1.png"
+                alt="Matrix Multiplication in Java" />
+        
+                
+</div>
+        <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+                <a href="43encapsulation.html"><button class="btn btn-danger" type="button">Previous</button></a>
+                <a href="45object_class.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+
+        <footer>
+                <div class="container-fluid bg-dark text-bg-dark"
+                        style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                        Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+                </div>
+        </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

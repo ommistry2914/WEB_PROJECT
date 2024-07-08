@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>C++ Memory Management</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item active-submenu" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">What is Memory Management?</h1>
+    <p>Memory management is a process of managing computer memory, assigning the memory space to the programs to improve
+        the overall system performance.</p>
+    <h2 class="h2">Why is memory management required?</h2>
+    <p>As we know that arrays store the homogeneous data, so most of the time, memory is allocated to the array at the
+        declaration time. Sometimes the situation arises when the exact memory is not determined until runtime. To avoid
+        such a situation, we declare an array with a maximum size, but some memory will be unused. To avoid the wastage
+        of memory, we use the new operator to allocate the memory dynamically at the run time.</p>
+    <h2 class="h2">Memory Management Operators</h2>
+    <p>In <a href="https://www.javatpoint.com/c-programming-language-tutorial">C language</a>, we use the
+        <strong>malloc()</strong> or <strong>calloc()</strong> functions to allocate the memory dynamically at run time,
+        and free() function is used to deallocate the dynamically allocated memory. <a
+            href="https://www.javatpoint.com/cpp-tutorial">C++</a> also supports these functions, but C++ also defines
+        unary operators such as <strong>new</strong> and <strong>delete</strong> to perform the same tasks, i.e.,
+        allocating and freeing the memory.
+    </p>
+    <h3 class="h3">New operator</h3>
+    <p>A <strong>new</strong> operator is used to create the object while a <strong>delete</strong> operator is used to
+        delete the object. When the object is created by using the new operator, then the object will exist until we
+        explicitly use the delete operator to delete the object. Therefore, we can say that the lifetime of the object
+        is not related to the block structure of the program.</p>
+    <p><strong>Syntax</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+pointer_variable = new data-type
+</textarea></div>
+    <p>The above syntax is used to create the object using the new operator. In the above syntax,
+        <strong>'pointer_variable'</strong> is the name of the pointer variable, <strong>'new'</strong> is the operator,
+        and <strong>'data-type'</strong> defines the type of the data.
+    </p>
+    <p><strong>Example 1:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *p;
+p = new int;
+</textarea></div>
+    <p>In the above example, 'p' is a pointer of type int.</p>
+    <p><strong>Example 2:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+float *q; 
+q = new float;
+</textarea></div>
+    <p>In the above example, 'q' is a pointer of type float.</p>
+    <p>In the above case, the declaration of pointers and their assignments are done separately. We can also combine
+        these two statements as follows:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *p = new int;
+float *q =   new float;
+</textarea></div>
+    <h3 class="h3">Assigning a value to the newly created object</h3>
+    <p><strong>Two ways of assigning values to the newly created object:</strong></p>
+    <ul class="points">
+        <li>We can assign the value to the newly created object by simply using the assignment operator. In the above
+            case, we have created two pointers 'p' and 'q' of type int and float, respectively. Now, we assign the
+            values as follows:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="cpp">
+*p = 45;
+*q = 9.8;
+</textarea></div>
+    <p>We assign 45 to the newly created int object and 9.8 to the newly created float object.</p>
+    <ul class="points">
+        <li>We can also assign the values by using new operator which can be done as follows:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="cpp">
+pointer_variable = new data-type(value);
+</textarea></div>
+    <p><strong>Let's look at some examples.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *p = new int(45);
+float *p = new float(9.8);
+</textarea></div>
+    <h3 class="h3">How to create a single dimensional array</h3>
+    <p>As we know that new operator is used to create memory space for any data-type or even user-defined data type such
+        as an array, structures, unions, etc., so the syntax for creating a one-dimensional array is given below:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+pointer-variable = new data-type[size];
+</textarea></div>
+    <h3 class="h3">Examples:</h3>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *a1 = new int[8];
+</textarea></div>
+    <p>In the above statement, we have created an array of type int having a size equal to 8 where p[0] refers first
+        element, p[1] refers the first element, and so on.</p>
+    <h3 class="h3">Delete operator</h3>
+    <p>When memory is no longer required, then it needs to be deallocated so that the memory can be used for another
+        purpose. This can be achieved by using the delete operator, as shown below:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+delete pointer_variable; 
+</textarea></div>
+    <p>In the above statement, <strong>'delete'</strong> is the operator used to delete the existing object, and
+        <strong>'pointer_variable'</strong> is the name of the pointer variable.
+    </p>
+    <p>In the previous case, we have created two pointers 'p' and 'q' by using the new operator, and can be deleted by
+        using the following statements:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+delete p;
+delete q;
+</textarea></div>
+    <p>The dynamically allocated array can also be removed from the memory space by using the following syntax:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+delete [size] pointer_variable; 
+</textarea></div>
+    <p>In the above statement, we need to specify the size that defines the number of elements that are required to be
+        freed. The drawback of this syntax is that we need to remember the size of the array. But, in recent versions of
+        C++, we do not need to mention the size as follows:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+delete [ ] pointer_variable; 
+</textarea></div>
+    <p><strong>Let's understand through a simple example:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std
+int main()
+{
+int size;  // variable declaration
+int *arr = new int[size];   // creating an array 
+cout&lt;&lt;"Enter the size of the array : ";   
+std::cin &gt;&gt; size;    // 
+cout&lt;&lt;"\nEnter the element : ";
+for(int i=0;i&lt;size;i++)   // for loop
+{
+cin&gt;&gt;arr[i];
+}
+cout&lt;&lt;"\nThe elements that you have entered are :";
+for(int i=0;i&lt;size;i++)    // for loop
+{
+cout&lt;&lt;arr[i]&lt;&lt;",";
+}
+delete arr;  // deleting an existing array.
+return 0;
+}
+</textarea></div>
+    <p>In the above code, we have created an array using the new operator. The above program will take the user input
+        for the size of an array at the run time. When the program completes all the operations, then it deletes the
+        object by using the statement <strong>delete arr</strong>.</p>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/cpp-memory-management.png" alt="C++ Memory Management" />
+    <h3 class="h3">Advantages of the new operator</h3>
+    <p><strong>The following are the advantages of the new operator over malloc() function:</strong></p>
+    <ul class="points">
+        <li>It does not use the sizeof() operator as it automatically computes the size of the data object.</li>
+        <li>It automatically returns the correct data type pointer, so it does not need to use the typecasting.</li>
+        <li>Like other operators, the new and delete operator can also be overloaded.</li>
+        <li>It also allows you to initialize the data object while creating the memory space for the object.</li>
+    </ul>
+    <hr />
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="26_cpp_reference.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="28_malloc_vs_new.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

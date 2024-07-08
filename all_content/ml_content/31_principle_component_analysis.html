@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principle Component Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item active-submenu" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Principal Component Analysis</h1>
+    <p>Principal Component Analysis is an unsupervised learning algorithm that is used for the dimensionality reduction
+        in <a href="https://www.javatpoint.com/machine-learning">machine learning</a>. It is a statistical process that
+        converts the observations of correlated features into a set of linearly uncorrelated features with the help of
+        orthogonal transformation. These new transformed features are called the <strong>Principal Components</strong>.
+        It is one of the popular tools that is used for exploratory data analysis and predictive modeling. It is a
+        technique to draw strong patterns from the given dataset by reducing the variances.</p>
+    <p>PCA generally tries to find the lower-dimensional surface to project the high-dimensional data.</p>
+    <p>PCA works by considering the variance of each attribute because the high attribute shows the good split between
+        the classes, and hence it reduces the dimensionality. Some real-world applications of PCA are <strong><em>image
+                processing, movie recommendation system, optimizing the power allocation in various communication
+                channels.</em></strong> It is a feature extraction technique, so it contains the important variables and
+        drops the least important variable.</p>
+    <p>The PCA algorithm is based on some mathematical concepts such as:</p>
+    <ul class="points">
+        <li>Variance and Covariance</li>
+        <li>Eigenvalues and Eigen factors</li>
+    </ul>
+    <p>Some common terms used in PCA algorithm:</p>
+    <ul class="points">
+        <li><strong>Dimensionality:</strong> It is the number of features or variables present in the given dataset.
+            More easily, it is the number of columns present in the dataset.</li>
+        <li><strong>Correlation:</strong> It signifies that how strongly two variables are related to each other. Such
+            as if one changes, the other variable also gets changed. The correlation value ranges from -1 to +1. Here,
+            -1 occurs if variables are inversely proportional to each other, and +1 indicates that variables are
+            directly proportional to each other.</li>
+        <li><strong>Orthogonal:</strong> It defines that variables are not correlated to each other, and hence the
+            correlation between the pair of variables is zero.</li>
+        <li><strong>Eigenvectors:</strong> If there is a square matrix M, and a non-zero vector v is given. Then v will
+            be eigenvector if Av is the scalar multiple of v.</li>
+        <li><strong>Covariance Matrix:</strong> A matrix containing the covariance between the pair of variables is
+            called the Covariance Matrix.</li>
+    </ul>
+    <h3 class="h3">Principal Components in PCA</h3>
+    <p>As described above, the transformed new features or the output of PCA are the Principal Components. The number of
+        these PCs are either equal to or less than the original features present in the dataset. Some properties of
+        these principal components are given below:</p>
+    <ul class="points">
+        <li>The principal component must be the linear combination of the original features.</li>
+        <li>These components are orthogonal, i.e., the correlation between a pair of variables is zero.</li>
+        <li>The importance of each component decreases when going to 1 to n, it means the 1 PC has the most importance,
+            and n PC will have the least importance.</li>
+    </ul>
+    <h3 class="h3">Steps for PCA algorithm</h3>
+    <ol class="points">
+        <li><strong>Getting the dataset</strong><br>
+            Firstly, we need to take the input dataset and divide it into two subparts X and Y, where X is the training
+            set, and Y is the validation set.</li>
+        <li><strong>Representing data into a structure</strong><br>
+            Now we will represent our dataset into a structure. Such as we will represent the two-dimensional matrix of
+            independent variable X. Here each row corresponds to the data items, and the column corresponds to the
+            Features. The number of columns is the dimensions of the dataset.</li>
+        <li><strong>Standardizing the data</strong><br>
+            In this step, we will standardize our dataset. Such as in a particular column, the features with high
+            variance are more important compared to the features with lower variance.<br>
+            If the importance of features is independent of the variance of the feature, then we will divide each data
+            item in a column with the standard deviation of the column. Here we will name the matrix as Z.</li>
+        <li><strong>Calculating the Covariance of Z</strong><br>
+            To calculate the covariance of Z, we will take the matrix Z, and will transpose it. After transpose, we will
+            multiply it by Z. The output matrix will be the Covariance matrix of Z.</li>
+        <li><strong>Calculating the Eigen Values and Eigen Vectors</strong><br>
+            Now we need to calculate the eigenvalues and eigenvectors for the resultant covariance matrix Z.
+            Eigenvectors or the covariance matrix are the directions of the axes with high information. And the
+            coefficients of these eigenvectors are defined as the eigenvalues.</li>
+        <li><strong>Sorting the Eigen Vectors</strong><br>
+            In this step, we will take all the eigenvalues and will sort them in decreasing order, which means from
+            largest to smallest. And simultaneously sort the eigenvectors accordingly in matrix P of eigenvalues. The
+            resultant matrix will be named as P*.</li>
+        <li><strong>Calculating the new features Or Principal Components</strong><br>
+            Here we will calculate the new features. To do this, we will multiply the P* matrix to the Z. In the
+            resultant matrix Z*, each observation is the linear combination of original features. Each column of the Z*
+            matrix is independent of each other.</li>
+        <li><strong>Remove less or unimportant features from the new dataset.</strong><br>
+            The new feature set has occurred, so we will decide here what to keep and what to remove. It means, we will
+            only keep the relevant or important features in the new dataset, and unimportant features will be removed
+            out.</li>
+    </ol>
+    <h2 class="h2">Applications of Principal Component Analysis</h2>
+    <ul class="points">
+        <li>PCA is mainly used as the dimensionality reduction technique in various AI applications such <strong>as
+                computer vision, image compression, etc.</strong> </li>
+        <li>It can also be used for finding hidden patterns if data has high dimensions. Some fields where PCA is used
+            are Finance, data mining, Psychology, etc.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="30_overfitting_underfitting.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="32_p_value.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

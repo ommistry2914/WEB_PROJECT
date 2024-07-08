@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item active-submenu" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python List</h1>
+    <p>In Python, the sequence of various data types is stored in a list. A list is a collection of different kinds of
+        values or items. Since Python lists are mutable, we can change their elements after forming. The comma (,) and
+        the square brackets [enclose the List's items] serve as separators.</p>
+    <p>Although six Python data types can hold sequences, the List is the most common and reliable form. A list, a type
+        of sequence data, is used to store the collection of data. Tuples and Strings are two similar data formats for
+        sequences.</p>
+    <p>Lists written in Python are identical to dynamically scaled arrays defined in other languages, such as Array List
+        in Java and Vector in C++. A list is a collection of items separated by commas and denoted by the symbol [].</p>
+    <h3 class="h3">List Declaration</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# a simple list 
+list1 = [1, 2, "Python", "Program", 15.9]    
+list2 = ["Amy", "Ryan", "Henry", "Emma"] 
+
+# printing the list
+print(list1)
+print(list2)
+
+# printing the type of list
+print(type(list1))
+print(type(list2))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[1, 2, 'Python', 'Program', 15.9]
+['Amy', 'Ryan', 'Henry', 'Emma']
+&lt; class ' list ' &gt;
+&lt; class ' list ' &gt;
+</pre>
+    </div>
+    <h2 class="h2">Characteristics of Lists</h2>
+    <p>The characteristics of the List are as follows:</p>
+    <ul class="points">
+        <li>The lists are in order.</li>
+        <li>The list element can be accessed via the index.</li>
+        <li>The mutable type of List is</li>
+        <li>The rundowns are changeable sorts.</li>
+        <li>The number of various elements can be stored in a list.</li>
+    </ul>
+    <h3 class="h3">Ordered List Checking</h3>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# example
+a = [ 1, 2, "Ram", 3.50, "Rahul", 5, 6 ]  
+b = [ 1, 2, 5, "Ram", 3.50, "Rahul", 6 ]  
+a == b  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>False
+</pre>
+    </div>
+    <p>The indistinguishable components were remembered for the two records; however, the subsequent rundown changed the
+        file position of the fifth component, which is against the rundowns' planned request. False is returned when the
+        two lists are compared.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# example
+a = [ 1, 2, "Ram", 3.50, "Rahul", 5, 6]  
+b = [ 1, 2, "Ram", 3.50, "Rahul", 5, 6]  
+a == b  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>True
+</pre>
+    </div>
+    <p>Records forever protect the component's structure. Because of this, it is an arranged collection of things.</p>
+    <p>Let's take a closer look at the list example.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# list example in detail
+emp = [ "John", 102, "USA"]     
+Dep1 = [ "CS",10]  
+Dep2 = [ "IT",11]    
+HOD_CS = [ 10,"Mr. Holding"]    
+HOD_IT = [11, "Mr. Bewon"]    
+print("printing employee data ...")    
+print(" Name : %s, ID: %d, Country: %s" %(emp[0], emp[1], emp[2]))    
+print("printing departments ...")   
+print("Department 1:\nName: %s, ID: %d\n Department 2:\n Name: %s, ID: %s"%( Dep1[0], Dep2[1], Dep2[0], Dep2[1]))    
+print("HOD Details ....")    
+print("CS HOD Name: %s, Id: %d" %(HOD_CS[1], HOD_CS[0]))    
+print("IT HOD Name: %s, Id: %d" %(HOD_IT[1], HOD_IT[0]))    
+print(type(emp), type(Dep1), type(Dep2), type(HOD_CS), type(HOD_IT))  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing employee data...
+Name : John, ID: 102, Country: USA
+printing departments...
+Department 1:
+Name: CS, ID: 11
+Department 2:
+Name: IT, ID: 11
+HOD Details ....
+CS HOD Name: Mr. Holding, Id: 10
+IT HOD Name: Mr. Bewon, Id: 11
+&lt;class ' list '&gt; &lt;class ' list '&gt; &lt;class ' list '&gt; &lt;class ' list '&gt; &lt;class ' list '&gt;
+</pre>
+    </div>
+    <p>In the preceding illustration, we printed the employee and department-specific details from lists that we had
+        created. To better comprehend the List's concept, look at the code above.</p>
+    <h2 class="h2">List Indexing and Splitting</h2>
+    <p>The indexing procedure is carried out similarly to string processing. The slice operator [] can be used to get to
+        the List's components.</p>
+    <p>The index ranges from 0 to length -1. The 0th index is where the List's first element is stored; the 1st index is
+        where the second element is stored, and so on.</p>
+    <img src="https://static.javatpoint.com/python/images/python-list.png" alt="Python List" />
+    <p>We can get the sub-list of the list using the following syntax.</p>
+    <div class="codeblock"><textarea name="code" class="python">
+list_varible(start:stop:step)  
+</textarea></div>
+    <ul class="points">
+        <li>The beginning indicates the beginning record position of the rundown.</li>
+        <li>The stop signifies the last record position of the rundown.</li>
+        <li>Within a start, the step is used to skip the nth element: stop.</li>
+    </ul>
+    <p>The start parameter is the initial index, the step is the ending index, and the value of the end parameter is the
+        number of elements that are "stepped" through. The default value for the step is one without a specific value.
+        Inside the resultant Sub List, the same with record start would be available, yet the one with the file finish
+        will not. The first element in a list appears to have an index of zero.</p>
+    <p>Consider the following example:</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list = [1,2,3,4,5,6,7]  
+print(list[0])  
+print(list[1])  
+print(list[2])  
+print(list[3])  
+# Slicing the elements  
+print(list[0:6])  
+# By default, the index value is 0 so its starts from the 0th element and go for index -1.  
+print(list[:])  
+print(list[2:5])  
+print(list[1:6:2])  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>1
+2
+3
+4
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5, 6, 7]
+[3, 4, 5]
+[2, 4, 6]
+</pre>
+    </div>
+    <p>In contrast to other programming languages, Python lets you use negative indexing as well. The negative indices
+        are counted from the right. The index -1 represents the final element on the List's right side, followed by the
+        index -2 for the next member on the left, and so on, until the last element on the left is reached.</p>
+    <img src="https://static.javatpoint.com/python/images/python-list2.png" alt="Python List" />
+    <p>Let's have a look at the following example where we will use negative indexing to access the elements of the
+        list.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# negative indexing example
+list = [1,2,3,4,5]  
+print(list[-1])  
+print(list[-3:])  
+print(list[:-1])  
+print(list[-3:-1])  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>5
+[3, 4, 5]
+[1, 2, 3, 4]
+[3, 4]
+</pre>
+    </div>
+    <p>Negative indexing allows us to obtain an element, as previously mentioned. The rightmost item in the List was
+        returned by the first print statement in the code above. The second print statement returned the sub-list, and
+        so on.</p>
+    <h2 class="h2">Updating List Values</h2>
+    <p>Due to their mutability and the slice and assignment operator's ability to update their values, lists are
+        Python's most adaptable data structure. Python's append() and insert() methods can also add values to a list.
+    </p>
+    <p>Consider the following example to update the values inside the List.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# updating list values
+list = [1, 2, 3, 4, 5, 6]     
+print(list)     
+# It will assign value to the value to the second index   
+list[2] = 10   
+print(list)    
+# Adding multiple-element   
+list[1:3] = [89, 78]     
+print(list)   
+# It will add value at the end of the list  
+list[-1] = 25  
+print(list)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[1, 2, 3, 4, 5, 6]
+[1, 2, 10, 4, 5, 6]
+[1, 89, 78, 4, 5, 6]
+[1, 89, 78, 4, 5, 25]
+</pre>
+    </div>
+    <p>The list elements can also be deleted by using the <strong>del</strong> keyword. Python also provides us the
+        <strong>remove()</strong> method if we do not know which element is to be deleted from the list.</p>
+    <p>Consider the following example to delete the list elements.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list = [1, 2, 3, 4, 5, 6]     
+print(list)     
+# It will assign value to the value to second index   
+list[2] = 10   
+print(list)    
+# Adding multiple element   
+list[1:3] = [89, 78]     
+print(list)   
+# It will add value at the end of the list  
+list[-1] = 25  
+print(list)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[1, 2, 3, 4, 5, 6]
+[1, 2, 10, 4, 5, 6]
+[1, 89, 78, 4, 5, 6]
+[1, 89, 78, 4, 5, 25]
+</pre>
+    </div>
+    <h2 class="h2">Python List Operations</h2>
+    <p>The concatenation (+) and repetition (*) operators work in the same way as they were working with the strings.
+        The different operations of list are</p>
+    <ol class="points">
+        <li>Repetition</li>
+        <li>Concatenation</li>
+        <li>Length</li>
+        <li>Iteration</li>
+        <li>Membership</li>
+    </ol>
+    <p>Let's see how the list responds to various operators.</p>
+    <h3 class="h3">1. Repetition</h3>
+    <p>The redundancy administrator empowers the rundown components to be rehashed on different occasions.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# repetition of list
+# declaring the list
+list1 = [12, 14, 16, 18, 20]
+# repetition operator *
+l = list1 * 2
+print(l)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[12, 14, 16, 18, 20, 12, 14, 16, 18, 20]
+</pre>
+    </div>
+    <h3 class="h3">2. Concatenation</h3>
+    <p>It concatenates the list mentioned on either side of the operator.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# concatenation of two lists
+# declaring the lists
+list1 = [12, 14, 16, 18, 20]
+list2 = [9, 10, 32, 54, 86]
+# concatenation operator +
+l = list1 + list2
+print(l)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[12, 14, 16, 18, 20, 9, 10, 32, 54, 86]
+</pre>
+    </div>
+    <h3 class="h3">3. Length</h3>
+    <p>It is used to get the length of the list</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# size of the list
+# declaring the list
+list1 = [12, 14, 16, 18, 20, 23, 27, 39, 40]
+# finding length of the list
+len(list1)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>9
+</pre>
+    </div>
+    <h3 class="h3">4. Iteration</h3>
+    <p>The for loop is used to iterate over the list elements.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# iteration of the list
+# declaring the list
+list1 = [12, 14, 16, 39, 40]
+# iterating
+for i in list1: 
+    print(i)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>12
+14
+16
+39
+40
+</pre>
+    </div>
+    <h3 class="h3">5. Membership</h3>
+    <p>It returns true if a particular item exists in a particular list otherwise false.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# membership of the list
+# declaring the list
+list1 = [100, 200, 300, 400, 500]
+# true will be printed if value exists
+# and false if not
+
+print(600 in list1)
+print(700 in list1)
+print(1040 in list1)
+
+print(300 in list1)
+print(100 in list1)
+print(500 in list1)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>False
+False
+False
+True
+True
+True
+</pre>
+    </div>
+    <h2 class="h2">Iterating a List</h2>
+    <p>A list can be iterated by using a for - in loop. A simple list containing four strings, which can be iterated as
+        follows.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# iterating a list
+list = ["John", "David", "James", "Jonathan"]    
+for i in list:   
+    # The i variable will iterate over the elements of the List and contains each element in each iteration.     
+    print(i)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>John
+David
+James
+Jonathan
+</pre>
+    </div>
+    <h2 class="h2">Adding Elements to the List</h2>
+    <p>The append() function in Python can add a new item to the List. In any case, the annex() capability can enhance
+        the finish of the rundown.</p>
+    <p>Consider the accompanying model, where we take the components of the rundown from the client and print the
+        rundown on the control center.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+#Declaring the empty list  
+l =[]  
+#Number of elements will be entered by the user    
+n = int(input("Enter the number of elements in the list:"))  
+# for loop to take the input  
+for i in range(0,n):     
+    # The input is taken from the user and added to the list as the item  
+    l.append(input("Enter the item:"))     
+print("printing the list items..")   
+# traversal loop to print the list items    
+for i in l:   
+    print(i, end = "  ") 
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Enter the number of elements in the list:10
+Enter the item:32
+Enter the item:56
+Enter the item:81
+Enter the item:2
+Enter the item:34
+Enter the item:65
+Enter the item:09
+Enter the item:66
+Enter the item:12
+Enter the item:18
+printing the list items..
+32  56  81  2  34  65  09  66  12  18 
+</pre>
+    </div>
+    <h2 class="h2">Removing Elements from the List</h2>
+    <p>The remove() function in Python can remove an element from the List. To comprehend this idea, look at the example
+        that follows.</p>
+    <p><strong>Example -</strong></p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list = [0,1,2,3,4]     
+print("printing original list: ");    
+for i in list:    
+    print(i,end=" ")    
+list.remove(2)    
+print("\nprinting the list after the removal of first element...")    
+for i in list:    
+    print(i,end=" ")  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>printing original list: 
+0 1 2 3 4 
+printing the list after the removal of first element...
+0 1 3 4 
+</pre>
+    </div>
+    <h2 class="h2">Python List Built-in Functions</h2>
+    <p>Python provides the following built-in functions, which can be used with the lists.</p>
+    <ol class="points">
+        <li>len()</li>
+        <li>max()</li>
+        <li>min()</li>
+    </ol>
+    <h3 class="h3">len( )</h3>
+    <p>It is used to calculate the length of the list.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# size of the list
+# declaring the list
+list1 = [12, 16, 18, 20, 39, 40]
+# finding length of the list
+len(list1)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>6
+</pre>
+    </div>
+    <h3 class="h3">Max( )</h3>
+    <p>It returns the maximum element of the list</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# maximum of the list
+list1 = [103, 675, 321, 782, 200]
+# large element in the list
+print(max(list1))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>782
+</pre>
+    </div>
+    <h3 class="h3">Min( )</h3>
+    <p>It returns the minimum element of the list</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+# minimum of the list
+list1 = [103, 675, 321, 782, 200]
+# smallest element in the list
+print(min(list1))
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>103
+</pre>
+    </div>
+    <p>Let's have a look at the few list examples.</p>
+    <p><strong>Example: 1-</strong> Create a program to eliminate the List's duplicate items.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list1 = [1,2,2,3,55,98,65,65,13,29]  
+# Declare an empty list that will store unique values  
+list2 = []  
+for i in list1:  
+    if i not in list2:  
+        list2.append(i)  
+print(list2)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>[1, 2, 3, 55, 98, 65, 13, 29]
+</pre>
+    </div>
+    <p><strong>Example:2-</strong> Compose a program to track down the amount of the component in the rundown.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list1 = [3,4,5,9,10,12,24]  
+sum = 0  
+for i in list1:  
+    sum = sum+i      
+print("The sum is:",sum)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>The sum is: 67
+In [8]:
+</pre>
+    </div>
+    <p><strong>Example: 3-</strong> Compose the program to find the rundowns comprise of somewhere around one normal
+        component.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="python">
+list1 = [1,2,3,4,5,6]  
+list2 = [7,8,9,2,10]  
+for x in list1:  
+    for y in list2:  
+        if x == y:  
+            print("The common element is:",x)  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>The common element is: 2
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="17_strings.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="19_tuples.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

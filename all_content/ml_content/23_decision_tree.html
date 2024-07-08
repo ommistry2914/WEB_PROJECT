@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item active-submenu" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Decision Tree Classification Algorithm</h1>
+    <ul class="points">
+        <li>Decision Tree is a <strong>Supervised learning technique </strong> that can be used for both classification
+            and Regression problems, but mostly it is preferred for solving Classification problems. It is a
+            tree-structured classifier, where<strong> internal nodes represent the features of a dataset, branches
+                represent the decision rules</strong> and <strong>each leaf node represents the outcome.</strong></li>
+        <li>In a Decision tree, there are two nodes, which are the <strong>Decision Node</strong> and<strong> Leaf
+                Node.</strong> Decision nodes are used to make any decision and have multiple branches, whereas Leaf
+            nodes are the output of those decisions and do not contain any further branches. </li>
+        <li>The decisions or the test are performed on the basis of features of the given dataset.</li>
+        <li><strong><em>It is a graphical representation for getting all the possible solutions to a problem/decision
+                    based on given conditions.</em></strong></li>
+        <li>It is called a decision tree because, similar to a tree, it starts with the root node, which expands on
+            further branches and constructs a tree-like structure.</li>
+        <li>In order to build a tree, we use the <strong>CART algorithm,</strong> which stands for
+            <strong>Classification and Regression Tree algorithm.</strong> </li>
+        <li>A decision tree simply asks a question, and based on the answer (Yes/No), it further split the tree into
+            subtrees. </li>
+        <li>Below diagram explains the general structure of a decision tree: </li>
+    </ul>
+    <h4 class="n">Note: A decision tree can contain categorical data (YES/NO) as well as numeric data.</h4>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm.png"
+        alt="Decision Tree Classification Algorithm" />
+    <h2 class="h3">Why use Decision Trees?</h2>
+    <p>There are various algorithms in Machine learning, so choosing the best algorithm for the given dataset and
+        problem is the main point to remember while creating a machine learning model. Below are the two reasons for
+        using the Decision tree: </p>
+    <ul class="points">
+        <li>Decision Trees usually mimic human thinking ability while making a decision, so it is easy to understand.
+        </li>
+        <li>The logic behind the decision tree can be easily understood because it shows a tree-like structure. </li>
+    </ul>
+    <h2 class="h3">Decision Tree Terminologies</h2>
+    <li><strong>Root Node:</strong> Root node is from where the decision tree starts. It represents the entire dataset,
+        which further gets divided into two or more homogeneous sets. </li>
+    <li><strong>Leaf Node:</strong> Leaf nodes are the final output node, and the tree cannot be segregated further
+        after getting a leaf node.</li>
+    <li><strong>Splitting:</strong> Splitting is the process of dividing the decision node/root node into sub-nodes
+        according to the given conditions. </li>
+    <li><strong>Branch/Sub Tree:</strong> A tree formed by splitting the tree. </li>
+    <li><strong>Pruning:</strong> Pruning is the process of removing the unwanted branches from the tree. </li>
+    <li><strong>Parent/Child node:</strong> The root node of the tree is called the parent node, and other nodes are
+        called the child nodes.</li>
+    </ul>
+    <p class="pq"><strong>How does the Decision Tree algorithm Work?</strong></p>
+    <p>In a decision tree, for predicting the class of the given dataset, the algorithm starts from the root node of the
+        tree. This algorithm compares the values of root attribute with the record (real dataset) attribute and, based
+        on the comparison, follows the branch and jumps to the next node. </p>
+    <p>For the next node, the algorithm again compares the attribute value with the other sub-nodes and move further. It
+        continues the process until it reaches the leaf node of the tree. The complete process can be better understood
+        using the below algorithm:</p>
+    <ul class="points">
+        <li><strong>Step-1:</strong> Begin the tree with the root node, says S, which contains the complete dataset.
+        </li>
+        <li><strong>Step-2:</strong> Find the best attribute in the dataset using <strong>Attribute Selection Measure
+                (ASM).</strong> </li>
+        <li><strong>Step-3:</strong> Divide the S into subsets that contains possible values for the best attributes.
+        </li>
+        <li><strong>Step-4:</strong> Generate the decision tree node, which contains the best attribute. </li>
+        <li><strong>Step-5:</strong> Recursively make new decision trees using the subsets of the dataset created in
+            step -3. Continue this process until a stage is reached where you cannot further classify the nodes and
+            called the final node as a leaf node. </li>
+    </ul>
+    <p><strong>Example:</strong> Suppose there is a candidate who has a job offer and wants to decide whether he should
+        accept the offer or Not. So, to solve this problem, the decision tree starts with the root node (Salary
+        attribute by ASM). The root node splits further into the next decision node (distance from the office) and one
+        leaf node based on the corresponding labels. The next decision node further gets split into one decision node
+        (Cab facility) and one leaf node. Finally, the decision node splits into two leaf nodes (Accepted offers and
+        Declined offer). Consider the below diagram:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm2.png"
+        alt="Decision Tree Classification Algorithm" />
+    <h2 class="h3">Attribute Selection Measures</h2>
+    <p>While implementing a Decision tree, the main issue arises that how to select the best attribute for the root node
+        and for sub-nodes. So, to solve such problems there is a technique which is called as <strong> Attribute
+            selection measure or ASM. </strong>By this measurement, we can easily select the best attribute for the
+        nodes of the tree. There are two popular techniques for ASM, which are:</p>
+    <ul class="points">
+        <li><strong>Information Gain</strong></li>
+        <li><strong>Gini Index</strong></li>
+    </ul>
+    <h3 class="h3">1. Information Gain:</h3>
+    <ul class="points">
+        <li>Information gain is the measurement of changes in entropy after the segmentation of a dataset based on an
+            attribute.</li>
+        <li>It calculates how much information a feature provides us about a class. </li>
+        <li>According to the value of information gain, we split the node and build the decision tree. </li>
+        <li>A decision tree algorithm always tries to maximize the value of information gain, and a node/attribute
+            having the highest information gain is split first. It can be calculated using the below formula:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+Information Gain= Entropy(S)- [(Weighted Avg) *Entropy(each feature)
+</textarea></div>
+    <p><strong>Entropy:</strong> Entropy is a metric to measure the impurity in a given attribute. It specifies
+        randomness in data. Entropy can be calculated as:</p>
+    <pre>Entropy(s)= -P(yes)log2 P(yes)- P(no) log2 P(no)</pre>
+    <p><strong>Where,</strong></p>
+    <ul class="points">
+        <li><strong>S= Total number of samples</strong></li>
+        <li><strong>P(yes)= probability of yes</strong></li>
+        <li><strong>P(no)= probability of no</strong></li>
+    </ul>
+    <h3 class="h3">2. Gini Index:</h3>
+    <ul class="points">
+        <li>Gini index is a measure of impurity or purity used while creating a decision tree in the CART(Classification
+            and Regression Tree) algorithm. </li>
+        <li>An attribute with the low Gini index should be preferred as compared to the high Gini index. </li>
+        <li>It only creates binary splits, and the CART algorithm uses the Gini index to create binary splits. </li>
+        <li>Gini index can be calculated using the below formula:</li>
+    </ul>
+    <div class="codeblock">
+        <pre>
+Gini Index= 1- &sum;<sub>j</sub>P<sub>j</sub><sup>2</sup>
+</pre>
+    </div>
+    <h2 class="h2">Pruning: Getting an Optimal Decision tree</h2>
+    <p><em>Pruning is a process of deleting the unnecessary nodes from a tree in order to get the optimal decision tree.
+        </em></p>
+    <p>A too-large tree increases the risk of overfitting, and a small tree may not capture all the important features
+        of the dataset. Therefore, a technique that decreases the size of the learning tree without reducing accuracy is
+        known as Pruning. There are mainly two types of tree <strong>pruning </strong> technology used:</p>
+    <ul class="points">
+        <li><strong>Cost Complexity Pruning</strong></li>
+        <li><strong>Reduced Error Pruning. </strong></li>
+    </ul>
+    <h2 class="h2">Advantages of the Decision Tree</h2>
+    <ul class="points">
+        <li>It is simple to understand as it follows the same process which a human follow while making any decision in
+            real-life.</li>
+        <li>It can be very useful for solving decision-related problems.</li>
+        <li>It helps to think about all the possible outcomes for a problem. </li>
+        <li>There is less requirement of data cleaning compared to other algorithms. </li>
+    </ul>
+    <h2 class="h2">Disadvantages of the Decision Tree</h2>
+    <ul class="points">
+        <li>The decision tree contains lots of layers, which makes it complex. </li>
+        <li>It may have an overfitting issue, which can be resolved using the <strong>Random Forest algorithm. </strong>
+        </li>
+        <li>For more class labels, the computational complexity of the decision tree may increase. </li>
+    </ul>
+    <h2 class="h2">Python Implementation of Decision Tree</h2>
+    <p>Now we will implement the Decision tree using Python. For this, we will use the dataset
+        "<strong>user_data.csv</strong>," which we have used in previous classification models. By using the same
+        dataset, we can compare the Decision tree classifier with other classification models such as <a
+            href="https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning">KNN</a>
+        <a href="https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm">SVM,</a> <a
+            href="https://www.javatpoint.com/logistic-regression-in-machine-learning">LogisticRegression,</a> etc.
+    </p>
+    <p>Steps will also remain the same, which are given below:</p>
+    <ul class="points">
+        <li><strong>Data Pre-processing step</strong></li>
+        <li><strong>Fitting a Decision-Tree algorithm to the Training set</strong></li>
+        <li><strong>Predicting the test result</strong></li>
+        <li><strong>Test accuracy of the result(Creation of Confusion matrix)</strong></li>
+        <li><strong>Visualizing the test set result. </strong></li>
+    </ul>
+    <h3 class="h3">1. Data Pre-Processing Step:</h3>
+    <p>Below is the code for the pre-processing step:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('user_data.csv')
+
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, [2,3]].values
+y= data_set.iloc[:, 4].values
+
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)
+
+#feature Scaling
+from sklearn.preprocessing import StandardScaler  
+st_x= StandardScaler()
+x_train= st_x.fit_transform(x_train)  
+x_test= st_x.transform(x_test)  
+</textarea></div>
+    <p>In the above code, we have pre-processed the data. Where we have loaded the dataset, which is given as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm3.png"
+        alt="Decision Tree Classification Algorithm" />
+    <h3 class="h3">2. Fitting a Decision-Tree algorithm to the Training set</h3>
+    <p>Now we will fit the model to the training set. For this, we will import the
+        <strong>DecisionTreeClassifier</strong> class from <strong>sklearn.tree</strong> library. Below is the code for
+        it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting Decision Tree classifier to the training set
+From sklearn.tree import DecisionTreeClassifier
+classifier= DecisionTreeClassifier(criterion='entropy', random_state=0)
+classifier.fit(x_train, y_train)
+</textarea></div>
+    <p>In the above code, we have created a classifier object, in which we have passed two main parameters; </p>
+    <ul class="points">
+        <li><strong>"criterion='entropy':</strong> Criterion is used to measure the quality of split, which is
+            calculated by information gain given by entropy. </li>
+        <li><strong>random_state=0":</strong> For generating the random states. </li>
+    </ul>
+    <p>Below is the output for this:</p>
+    <div class="codeblock3">
+        <pre>
+Out[8]: 
+DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=None,
+max_features=None, max_leaf_nodes=None,
+min_impurity_decrease=0.0, min_impurity_split=None,
+min_samples_leaf=1, min_samples_split=2,
+min_weight_fraction_leaf=0.0, presort=False,
+                       random_state=0, splitter='best')
+</pre>
+    </div>
+    <h3 class="h3">3. Predicting the test result</h3>
+    <p>Now we will predict the test set result. We will create a new prediction vector <strong>y_pred.</strong> Below is
+        the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Predicting the test set result
+y_pred= classifier.predict(x_test)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>In the below output image, the predicted output and real test output are given. We can clearly see that there are
+        some values in the prediction vector, which are different from the real vector values. These are prediction
+        errors. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm4.png"
+        alt="Decision Tree Classification Algorithm" />
+    <h3 class="h3">4. Test accuracy of the result (Creation of Confusion matrix)</h3>
+    <p>In the above output, we have seen that there were some incorrect predictions, so if we want to know the number of
+        correct and incorrect predictions, we need to use the confusion matrix. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Creating the Confusion matrix
+from sklearn.metrics import confusion_matrix
+cm= confusion_matrix(y_test, y_pred)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm5.png"
+        alt="Decision Tree Classification Algorithm" />
+    <p>In the above output image, we can see the confusion matrix, which has <strong>6+3= 9 incorrect
+            predictions</strong> and<strong>62+29=91 correct predictions. Therefore, we can say that compared to other
+            classification models, the Decision Tree classifier made a good prediction.</strong></p>
+    <h3 class="h3">5. Visualizing the training set result:</h3>
+    <p>Here we will visualize the training set result. To visualize the training set result we will plot a graph for the
+        decision tree classifier. The classifier will predict yes or No for the users who have either Purchased or Not
+        purchased the SUV car as we did in <a
+            href="https://www.javatpoint.com/logistic-regression-in-machine-learning">Logistic Regression.</a> Below is
+        the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the trianing set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_train, y_train
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('purple','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+fori, j in enumerate(nm.unique(y_set)):
+mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Decision Tree Algorithm (Training set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm6.png"
+        alt="Decision Tree Classification Algorithm" />
+    <p>The above output is completely different from the rest classification models. It has both vertical and horizontal
+        lines that are splitting the dataset according to the age and estimated salary variable. </p>
+    <p>As we can see, the tree is trying to capture each dataset, which is the case of overfitting. </p>
+    <h3 class="h3">6. Visualizing the test set result:</h3>
+    <p>Visualization of test set result will be similar to the visualization of the training set except that the
+        training set will be replaced with the test set. </p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the test set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_test, y_test
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('purple','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+fori, j in enumerate(nm.unique(y_set)):
+mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Decision Tree Algorithm(Test set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm7.png"
+        alt="Decision Tree Classification Algorithm" />
+    <p>As we can see in the above image that there are some green data points within the purple region and vice versa.
+        So, these are the incorrect predictions which we have discussed in the confusion matrix.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="22_linear_reg_vs_logistic_reg.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="24_random_forest.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

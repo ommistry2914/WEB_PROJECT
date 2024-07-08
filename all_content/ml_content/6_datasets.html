@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item active-submenu" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">How to get datasets for Machine Learning</h1>
+    <p>The field of ML depends vigorously on datasets for preparing models and making precise predictions. Datasets
+        assume a vital part in the progress of AIML projects and are fundamental for turning into a gifted information
+        researcher. In this article, we will investigate the various sorts of datasets utilized in AI and give a
+        definite aid on where to track down them.</p>
+    <h2 class="h2">What is a dataset?</h2>
+    <p><strong>A dataset</strong> is a collection of data in which data is arranged in some order. A dataset can contain
+        any data from a series of an array to a database table. Below table shows an example of the dataset:</p>
+    <table class="alt">
+        <tr>
+            <th>Country</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Purchased</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>38</td>
+            <td>48000</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>43</td>
+            <td>45000</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>30</td>
+            <td>54000</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>48</td>
+            <td>65000</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>40</td>
+            <td></td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>35</td>
+            <td>58000</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    <p>A tabular dataset can be understood as a database table or matrix, where each column corresponds to a
+        <strong>particular variable,</strong> and each row corresponds to the <strong>fields of the dataset.</strong>
+        The most supported file type for a tabular dataset is <strong>"Comma Separated File,"</strong> or
+        <strong>CSV.</strong> But to store a "tree-like data," we can use the JSON file more efficiently.</p>
+    <h2 class="h3">Types of data in datasets</h2>
+    <ul class="points">
+        <li><strong>Numerical data:</strong>Such as house price, temperature, etc.</li>
+        <li><strong>Categorical data:</strong>Such as Yes/No, True/False, Blue/green, etc.</li>
+        <li><strong>Ordinal data:</strong>These data are similar to categorical data but can be measured on the basis of
+            comparison.</li>
+    </ul>
+    <h4 class="h4">Note: A real-world dataset is of huge size, which is difficult to manage and process at the initial
+        level. Therefore, to practice machine learning algorithms, we can use any dummy dataset.</h4>
+    <h2 class="h2">Types of datasets</h2>
+    <p>Machine learning incorporates different domains, each requiring explicit sorts of datasets. A few normal sorts of
+        datasets utilized in machine learning include:</p>
+    <h3 class="h3">Image Datasets:</h3>
+    <p>Image datasets contain an assortment of images and are normally utilized in computer vision tasks such as image
+        classification, object detection, and image segmentation.</p>
+    <p><strong>Examples :</strong> </p>
+    <ul class="points">
+        <li>ImageNet</li>
+        <li>CIFAR-10</li>
+        <li>MNIST</li>
+    </ul>
+    <h3 class="h3">Text Datasets:</h3>
+    <p>Text datasets comprise textual information, like articles, books, or virtual entertainment posts. These datasets
+        are utilized in NLP techniques like sentiment analysis, text classification, and machine translation.</p>
+    <p><strong>Examples :</strong></p>
+    <ul class="points">
+        <li>Gutenberg Task dataset</li>
+        <li>IMDb film reviews dataset</li>
+    </ul>
+    <h3 class="h3">Time Series Datasets:</h3>
+    <p>Time series datasets include information focuses gathered after some time. They are generally utilized in
+        determining, abnormality location, and pattern examination. <strong>Examples :</strong></p>
+    <ul class="points">
+        <li>Securities exchange information</li>
+        <li>Climate information</li>
+        <li>Sensor readings.</li>
+    </ul>
+    <h3 class="h3">Tabular Datasets:</h3>
+    <p>Tabular datasets are organized information coordinated in tables or calculation sheets. They contain lines
+        addressing examples or tests and segments addressing highlights or qualities. Tabular datasets are utilized for
+        undertakings like relapse and arrangement. The dataset given before in the article is an illustration of a
+        tabular dataset.</p>
+    <h2 class="h2">Need of Dataset</h2>
+    <ul class="points">
+        <li>Completely ready and pre-handled datasets are significant for machine learning projects.</li>
+        <li>They give the establishment to prepare exact and solid models. Notwithstanding, working with enormous
+            datasets can introduce difficulties regarding the board and handling.</li>
+        <li>To address these difficulties, productive information the executive's strategies and are expected to handle
+            calculations.</li>
+    </ul>
+    <h2 class="h2">Data Pre-processing:</h2>
+    <p>Data pre-processing is a fundamental stage in preparing datasets for machine learning. It includes changing raw
+        data into a configuration reasonable for model training. Normal pre-processing procedures incorporate data
+        cleaning to eliminate irregularities or blunders, standardization to scale data inside a particular reach,
+        highlight scaling to guarantee highlights have comparative ranges, and taking care of missing qualities through
+        ascription or evacuation.</p>
+    <p>During the development of the ML project, the developers completely rely on the datasets. In building ML
+        applications, datasets are divided into two parts:</p>
+    <ul class="points">
+        <li><strong>Training dataset:</strong></li>
+        <li><strong>Test Dataset</strong></li>
+    </ul>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning.png"
+        alt="How to get datasets for Machine Learning" />
+    <h4 class="h4">Note: The datasets are of large size, so to download these datasets, you must have fast internet on
+        your computer.</h4>
+    <h2 class="h2">Training Dataset and Test Dataset:</h2>
+    <p>In machine learning, datasets are ordinarily partitioned into two sections: the training dataset and the test
+        dataset. The training dataset is utilized to prepare the machine learning model, while the test dataset is
+        utilized to assess the model's exhibition. This division surveys the model's capacity, to sum up to
+        inconspicuous data. It is fundamental to guarantee that the datasets are representative of the issue space and
+        appropriately split to stay away from inclination or overfitting.</p>
+    <h2 class="h2">Popular sources for Machine Learning datasets</h2>
+    <p>Below is the list of datasets which are freely available for the public to work on it:</p>
+    <h3 class="h3">1. Kaggle Datasets</h3>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning2.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>Kaggle is one of the best sources for providing datasets for Data Scientists and Machine Learners. It allows
+        users to find, download, and publish datasets in an easy way. It also provides the opportunity to work with
+        other machine learning engineers and solve difficult Data Science related tasks.</p>
+    <p>Kaggle provides a high-quality dataset in different formats that we can easily find and download.</p>
+    <p>The link for the Kaggle dataset is <a href="https://www.kaggle.com/datasets" rel="nofollow"
+            target="_blank">https://www.kaggle.com/datasets</a>.</p>
+    <h3 class="h3">2. UCI Machine Learning Repository</h3>
+    <p>The UCI Machine Learning Repository is an important asset that has been broadly utilized by scientists and
+        specialists beginning around 1987. It contains a huge collection of datasets sorted by machine learning tasks
+        such as regression, classification, and clustering. Remarkable datasets in the storehouse incorporate the Iris
+        dataset, Vehicle Assessment dataset, and Poker Hand dataset. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning3.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>The link for the UCI machine learning repository is <a href="https://archive.ics.uci.edu/ml/index.php"
+            rel="nofollow" target="_blank">https://archive.ics.uci.edu/ml/index.php</a>.</p>
+    <h3 class="h3">3. Datasets via AWS</h3>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning4.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>We can search, download, access, and share the datasets that are publicly available via AWS resources. These
+        datasets can be accessed through AWS resources but provided and maintained by different government
+        organizations, researches, businesses, or individuals.</p>
+    <p>Anyone can analyze and build various services using shared data via AWS resources. The shared dataset on cloud
+        helps users to spend more time on data analysis rather than on acquisitions of data.</p>
+    <p>This source provides the various types of datasets with examples and ways to use the dataset. It also provides
+        the search box using which we can search for the required dataset. Anyone can add any dataset or example to the
+        <strong>Registry of Open Data on AWS.</strong></p>
+    <p>The link for the resource is <a href="https://registry.opendata.aws/" rel="nofollow"
+            target="_blank">https://registry.opendata.aws/</a>.</p>
+    <h3 class="h3">4. Google's Dataset Search Engine</h3>
+    <p>Google's Dataset Web index helps scientists find and access important datasets from different sources across the
+        web. It files datasets from areas like sociologies, science, and environmental science. Specialists can utilize
+        catchphrases to find datasets, channel results in light of explicit standards, and access the datasets
+        straightforwardly from the source.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning5.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>The link for the Google dataset search engine is <a href="https://toolbox.google.com/datasetsearch"
+            rel="nofollow" target="_blank">https://toolbox.google.com/datasetsearch</a>.</p>
+    <h3 class="h3">5. Microsoft Datasets</h3>
+    <p>The Microsoft has launched the <strong>"Microsoft Research Open data"</strong> repository with the collection of
+        free datasets in various areas such as <strong>natural language processing, computer vision, and domain-specific
+            sciences.</strong> It gives admittance to assorted and arranged datasets that can be significant for machine
+        learning projects.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning6.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>The link to download or use the dataset from this resource is <a href="https://msropendata.com/" rel="nofollow"
+            target="_blank">https://msropendata.com/</a>.</p>
+    <h3 class="h3">6. Awesome Public Dataset Collection</h3>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning7.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>Awesome public dataset collection provides high-quality datasets that are arranged in a well-organized manner
+        within a list according to topics such as Agriculture, Biology, Climate, Complex networks, etc. Most of the
+        datasets are available free, but some may not, so it is better to check the license before downloading the
+        dataset.</p>
+    <p>The link to download the dataset from Awesome public dataset collection is <a
+            href="https://github.com/awesomedata/awesome-public-datasets" rel="nofollow"
+            target="_blank">https://github.com/awesomedata/awesome-public-datasets</a>.</p>
+    <h3 class="h3">7. Government Datasets</h3>
+    <p>There are different sources to get government-related data. Various countries publish government data for public
+        use collected by them from different departments.</p>
+    <p>The goal of providing these datasets is to increase transparency of government work among the people and to use
+        the data in an innovative approach. Below are some links of government datasets:</p>
+    <ul class="points">
+        <li><a href="https://data.gov.in/" rel="nofollow" target="_blank">Indian Government dataset</a></li>
+        <li><a href="https://www.data.gov/" rel="nofollow" target="_blank">US Government Dataset</a></li>
+        <li><a href="https://www.opendatani.gov.uk/" rel="nofollow" target="_blank">Northern Ireland Public Sector
+                Datasets</a></li>
+        <li><a href="https://data.europa.eu/euodp/data/dataset" rel="nofollow" target="_blank">European Union Open Data
+                Portal</a></li>
+    </ul>
+    <h3 class="h3">8. Computer Vision Datasets</h3>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning8.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>Visual data provides multiple numbers of the great dataset that are specific to computer visions such as Image
+        Classification, Video classification, Image Segmentation, etc. Therefore, if you want to build a project on deep
+        learning or image processing, then you can refer to this source.</p>
+    <p>The link for downloading the dataset from this source is <a href="https://www.visualdata.io/" rel="nofollow"
+            target="_blank">https://www.visualdata.io/</a>.</p>
+    <h3 class="h3">9. Scikit-learn dataset</h3>
+    <p>Scikit-learn, a well-known machine learning library in Python, gives a few underlying datasets to practice and
+        trial and error. These datasets are open through the sci-kit-learn Programming interface and can be utilized for
+        learning different machine-learning calculations. Scikit-learn offers both toy datasets, which are little and
+        improved, and genuine world datasets with greater intricacy. Instances of sci-kit-learn datasets incorporate the
+        Iris dataset, the Boston Lodging dataset, and the Wine dataset. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/how-to-get-datasets-for-machine-learning9.png"
+        alt="How to get datasets for Machine Learning" />
+    <p>The link to download datasets from this source is <a href="https://scikit-learn.org/stable/datasets/index.html"
+            rel="nofollow" target="_blank">https://scikit-learn.org/stable/datasets/index.html</a>.</p>
+    <h2 class="h2">Data Ethics and Privacy:</h2>
+    <p>Data ethics and privacy are basic contemplations in machine learning projects. It is fundamental to guarantee
+        that data is gathered and utilized morally, regarding privacy freedoms and observing pertinent regulations and
+        guidelines. Data experts ought to go to lengths to safeguard data privacy, get appropriate assent, and handle
+        delicate data mindfully. Assets, for example, moral rules and privacy structures can give direction on keeping
+        up with moral practices in data assortment and use.</p>
+    <h2 class="h2">Conclusion:</h2>
+    <p>In conclusion, datasets structure the groundwork of effective machine-learning projects. Understanding the
+        various kinds of datasets, the significance of data pre-processing, and the job of training and testing datasets
+        are key stages towards building powerful models. By utilizing well-known sources, for example, Kaggle, UCI
+        Machine Learning Repository, AWS, Google's Dataset Search, Microsoft Datasets, and government datasets, data
+        researchers and specialists can get to an extensive variety of datasets for their machine learning projects. It
+        is fundamental to consider data ethics and privacy all through the whole data lifecycle to guarantee mindful and
+        moral utilization of data. With the right datasets and moral practices, machine learning models can accomplish
+        exact predictions and drive significant bits of knowledge.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="5_ai_vs_ml.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="7_data_preprocessing.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

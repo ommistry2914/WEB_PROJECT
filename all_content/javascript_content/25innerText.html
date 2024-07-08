@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>innerText</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item" href="8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item active-submenu" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item" href="34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Javascript - innerText</h1>
+    <div id="upr">
+        <ol>
+            <li><a href="#">javascript innerText</a></li>
+            <li><a href="#">Example of innerText property</a></li>
+        </ol>
+    </div>
+    <p>The <b>innerText</b> property can be used to write the dynamic text on the html document. Here, text will not be
+        interpreted as html text but a normal text.
+    <p>
+    <p>It is used mostly in the web pages to generate the dynamic content such as writing the validation message,
+        password strength etc.</p>
+    <h2 class="h2">Javascript innerText Example</h2>
+    <p>In this example, we are going to display the password strength when releases the key after press.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script type="text/javascript" &gt;
+function validate() {
+var msg;
+if(document.myForm.userPass.value.length&gt;5){
+msg="good";
+}
+else{
+msg="poor";
+}
+document.getElementById('mylocation').innerText=msg;
+ }
+
+&lt;/script&gt;
+&lt;form name="myForm"&gt;
+&lt;input type="password" value="" name="userPass" onkeyup="validate()"&gt;
+Strength:&lt;span id="mylocation"&gt;no strength&lt;/span&gt;
+&lt;/form&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsinnertext" target="_blank">Test
+            it Now</a></span>
+    <hr />
+    <h4 class="h4">Output of the above example</h4>
+    <div class="codeblock3">
+        <script type="text/javascript">
+            function validate() {
+                var msg;
+                if (document.myForm.userPass.value.length > 5) {
+                    msg = "good";
+                }
+                else {
+                    msg = "poor";
+                }
+                document.getElementById('mylocation').innerText = msg;
+            }
+
+        </script>
+        <form name="myForm">
+            <input type="password" value name="userPass" onkeyup="validate()">
+            Strength:<span id="mylocation">no strength</span>
+        </form>
+    </div>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="24innerHtml.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="26form_validation.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

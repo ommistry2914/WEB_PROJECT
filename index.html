@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+    <style>
+        .center-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .custom-icon {
+            width: 50%;
+            /* max-width: 150px; set maximum width for the icon */
+        }
+
+        .card {
+            box-shadow: 30px 30px 15px 0px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(white, #b3d6e6, white);">
+    <div class="container">
+        <div class="row justify-content-center center-div">
+            <div class="col-lg-5 text-center">
+                <img src="icon/black_sg.png" alt="Icon" class="custom-icon mb-2">
+                <h3>StudyGenie</h3>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="un" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="un" placeholder="Enter your username" onblur="bgcolor(event)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter your password" onblur="bgcolor(event)">
+                                <small><a href="verification.html">Forgot Password?</a></small>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary" onclick="loginbtn()">Login</button>
+                            </div>
+                            <div class="text-center">
+                                <p>Don't have an account? <a href="sign_up.html">Sign Up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script>
+    function bgcolor(e){
+        let c = document.getElementById(e.target.id);
+        if(c.value == ""){
+            c.style.borderColor = 'red';
+        }
+        else{
+            c.style.borderColor = 'lightgray';
+        }
+    }
+
+    function loginbtn() {
+        var un = document.getElementById('un').value;
+        var pwd = document.getElementById('pwd').value;
+        if (un == "") {
+            document.getElementById('un').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else if (pwd == "") {
+            document.getElementById('pwd').style.borderColor = "red";
+            window.alert('Fill the require fields!');
+        }
+        else{
+            console.log(un);
+            console.log(pwd);
+            window.open("home.html", target='_top');
+        }
+    }
+</script>
+
+</html>

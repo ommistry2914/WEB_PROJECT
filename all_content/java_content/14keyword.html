@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Java Keyword</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+        <h1 class="h1">Java Keywords</h1>
+        <p>Java keywords are also known as reserved words. Keywords are particular words that act as a key to a code.
+            These
+            are
+            predefined words by Java so they cannot be used as a variable or object name or class name.</p>
+        <h2 class="h2">List of Java Keywords</h2>
+        <p>A list of Java keywords or reserved words are given below:</p>
+        <ol class="points">
+            <li><strong>abstract:</strong> Java abstract keyword is used to
+                declare
+                an
+                abstract class. An abstract class can provide the implementation of the interface. It can have abstract
+                and
+                non-abstract methods.</li>
+            <li><strong>boolean:</strong> Java boolean keyword is used to declare
+                a
+                variable as a boolean type. It can hold True and False values only.</li>
+            <li><strong>break:</strong> Java break keyword is used to break the loop or switch
+                statement. It breaks the current flow of the program at specified conditions.</li>
+            <li><strong>byte:</strong> Java byte keyword is used to declare a
+                variable
+                that
+                can hold 8-bit data values.</li>
+            <li><strong>case:</strong> Java case keyword is used with the switch
+                statements
+                to mark blocks of text.</li>
+            <li><strong>catch:</strong> Java catch keyword is used to catch the exceptions
+                generated by try statements. It must be used after the try block only.</li>
+            <li><strong>char:</strong> Java char keyword is used to declare a
+                variable
+                that
+                can hold unsigned 16-bit Unicode characters</li>
+            <li><strong>class:</strong> Java class keyword is used to declare a
+                class.
+            </li>
+            <li><strong>continue:</strong> Java continue keyword is used to continue the
+                loop.
+                It
+                continues the current flow of the program and skips the remaining code at the specified condition.</li>
+            <li><strong>default:</strong> Java default keyword is used to specify
+                the
+                default block of code in a switch statement.</li>
+            <li><strong>do:</strong> Java do keyword is used in the control statement
+                to
+                declare a loop. It can iterate a part of the program several times.</li>
+            <li><strong>double:</strong> Java double keyword is used to declare a
+                variable
+                that can hold 64-bit floating-point number.</li>
+            <li><strong>else:</strong> Java else keyword is used to indicate the alternative
+                branches
+                in an if statement.</li>
+            <li><strong>enum:</strong> Java enum keyword is used to define a fixed set of
+                constants.
+                Enum constructors are always private or default.</li>
+            <li><strong>extends:</strong> Java extends keyword is used to indicate
+                that a
+                class is derived from another class or interface.</li>
+            <li><strong>final:</strong> Java final keyword is used to indicate that a
+                variable
+                holds
+                a constant value. It is used with a variable. It is used to restrict the user from updating the value of
+                the
+                variable.</li>
+            <li><strong>finally:</strong> Java finally keyword
+                indicates a
+                block of code in a try-catch structure. This block is always executed whether an exception is handled or
+                not.
+            </li>
+            <li><strong>float:</strong> Java float keyword is used to declare a
+                variable
+                that can hold a 32-bit floating-point number.</li>
+            <li><strong>for:</strong> Java for keyword is used to start a for loop. It is
+                used
+                to
+                execute a set of instructions/functions repeatedly when some condition becomes true. If the number of
+                iteration
+                is fixed, it is recommended to use for loop.</li>
+            <li><strong>if:</strong> Java if keyword tests the condition. It executes the if
+                block if
+                the condition is true.</li>
+            <li><strong>implements:</strong> Java implements keyword is used to
+                implement an
+                interface. </li>
+            <li><strong>import:</strong> Java import keyword makes classes and interfaces
+                available
+                and
+                accessible to the current source code.</li>
+            <li><strong>instanceof:</strong> Java instanceof keyword
+                is
+                used
+                to test whether the object is an instance of the specified class or implements an interface.</li>
+            <li><strong>int:</strong> Java int keyword is used to declare a variable
+                that
+                can
+                hold a 32-bit signed integer.</li>
+            <li><strong>interface:</strong> Java interface keyword is used to declare an
+                interface. It can have only abstract methods.</li>
+            <li><strong>long:</strong> Java long keyword is used to declare a
+                variable
+                that
+                can hold a 64-bit integer.</li>
+            <li><strong>native:</strong> Java native keyword is used to specify that a method is implemented in native
+                code
+                using JNI (Java Native Interface).</li>
+            <li><strong>new:</strong> Java new keyword is used to create new objects.
+            </li>
+            <li><strong>null:</strong> Java null keyword is used to indicate that a
+                reference
+                does not refer to anything. It removes the garbage value.</li>
+            <li><strong>package:</strong> Java package keyword is used to declare a Java package
+                that
+                includes the classes.</li>
+            <li><strong>private:</strong> Java private keyword is an access
+                modifier.
+                It
+                is used to indicate that a method or variable may be accessed only in the class in which it is declared.
+            </li>
+            <li><strong>protected:</strong> Java protected keyword is an access
+                modifier. It can be accessible within the package and outside the package but through inheritance only.
+                It
+                can't
+                be applied with the class.</li>
+            <li><strong>public:</strong> Java public keyword is an access modifier.
+                It
+                is
+                used to indicate that an item is accessible anywhere. It has the widest scope among all other modifiers.
+            </li>
+            <li><strong>return:</strong> Java return keyword is used to return from
+                a
+                method when its execution is complete.</li>
+            <li><strong>short:</strong> Java short keyword is used to declare a
+                variable
+                that can hold a 16-bit integer.</li>
+            <li><strong>static:</strong> Java static keyword is used to indicate
+                that a
+                variable or method is a class method. The static keyword in Java is mainly used for memory management.
+            </li>
+            <li><strong>strictfp:</strong> Java strictfp is used to restrict the
+                floating-point
+                calculations to ensure portability.</li>
+            <li><strong>super:</strong> Java super keyword is a reference variable that is
+                used
+                to
+                refer to parent class objects. It can be used to invoke the immediate parent class method.</li>
+            <li><strong>switch:</strong> The Java switch keyword contains a switch statement
+                that
+                executes code based on test value. The switch statement tests the equality of a variable against
+                multiple
+                values.</li>
+            <li><strong>synchronized:</strong> Java synchronized keyword is used
+                to
+                specify the critical sections or methods in multithreaded code. </li>
+            <li><strong>this:</strong> Java this keyword can be used to refer the current
+                object
+                in a
+                method or constructor.</li>
+            <li><strong>throw:</strong> The Java throw keyword is used to explicitly throw
+                an
+                exception. The throw keyword is mainly used to throw custom exceptions. It is followed by an instance.
+            </li>
+            <li><strong>throws:</strong> The Java
+                throws
+                keyword is used to declare an exception. Checked exceptions can be propagated with throws.</li>
+            <li><strong>transient:</strong> Java transient keyword is used in
+                serialization.
+                If
+                you define any data member as transient, it will not be serialized.</li>
+            <li><strong>try:</strong> Java try keyword is used to start a block of code
+                that
+                will
+                be tested for exceptions. The try block must be followed by either catch or finally block.</li>
+            <li><strong>void:</strong> Java void keyword is used to specify that a method does not have a return value.
+            </li>
+            <li><strong>volatile:</strong> Java volatile keyword is used to
+                indicate
+                that
+                a variable may change asynchronously.</li>
+            <li><strong>while:</strong> Java while keyword is used to start a while loop.
+                This
+                loop iterates a part of the program several times. If the number of iteration is not fixed, it is
+                recommended to
+                use the while loop.</li>
+        </ol>
+        <hr />
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="13operator.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="15java_control_statement.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

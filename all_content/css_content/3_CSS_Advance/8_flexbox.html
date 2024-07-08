@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="../2_CSS_Properties/31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item active-submenu" href="8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Flexbox</h1>
+    <p>CSS3 Flexible boxes also known as CSS Flexbox, is a new layout mode in CSS3. </p>
+    <p>The CSS3 flexbox is used to make the elements behave predictably when they are used with different screen sizes and different display devices. It provides a more efficient way to layout, align and distribute space among items in the container.</p>
+    <p>It is mainly used to make CSS3 capable to change its item?s width and height to best fit for all available spaces. It is preferred over block model.</p>
+    <p>The CSS3 flexbox contains flex containers and flex items.</p>
+    <p><strong>Flex container:</strong>The flex container specifies the properties of the parent. It is declared by setting the display property of an element to either flex or inline-flex.</p>
+    <p><strong>Flex items:</strong>The flex items specify properties of the children. There may be one or more flex items inside a flex container.</p>
+    <img src="https://static.javatpoint.com/csspages/images/css-flexbox1.png" alt="CSS Flexbox1" />
+    <p><strong>Note:</strong>Flexbox specifies how flex items are set inside a flex container. It sets the flex items inside a flex container along a flex line. By default, there is only one flex line per flex container. Everything outside a flex container and inside a flex item is considered as usual.</p>
+    
+    <hr/>
+    <h2 class="h2">CSS3 Flexbox Properties</h2>
+    <p>Following is a list of CSS3 Flexbox properties:</p>
+    <table class="alt">
+    <tr>
+    <th>property</th>
+    <th>description</th>
+    </tr>
+    <tr>
+    <td>display</td>
+    <td>it is used to specify the type of box used for an html element.</td>
+    </tr>
+    <tr>
+    <td>flex-direction</td>
+    <td>it is used to specify the direction of the flexible items inside a flex container.</td>
+    </tr>
+    <tr>
+    <td>justify-content</td>
+    <td>it is used to align the flex items horizontally when the items do not use all available space on the main-axis.</td>
+    </tr>
+    <tr>
+    <td>align-items</td>
+    <td>it is used to align the flex items vertically when the items do not use all available space on the cross-axis.</td>
+    </tr>
+    <tr>
+    <td>flex-wrap</td>
+    <td>it specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.</td>
+    </tr>
+    <tr>
+    <td>align-content</td>
+    <td>it is used to modify the behavior of the flex-wrap property. it is similar to align-items, but instead of aligning flex items, it aligns flex lines.</td>
+    </tr>
+    <tr>
+    <td>flex-flow</td>
+    <td>it specifies a shorthand property for flex-direction and flex-wrap.</td>
+    </tr>
+    <tr>
+    <td>order</td>
+    <td>it specifies the order of a flexible item relative to the rest of the flex items inside the same container.</td>
+    </tr>
+    <tr>
+    <td>align-self</td>
+    <td>it is used on flex items. it overrides the container's align-items property.</td>
+    </tr>
+    <tr>
+    <td>flex</td>
+    <td>it specifies the length of a flex item, relative to the rest of the flex items inside the same container.</td>
+    </tr>
+    </table>
+    <hr/>
+    <h2 class="h2"> Supporting Browsers</h2>
+    <table class="alt">
+    <tr><th>Property</th><th><img src="https://static.javatpoint.com/htmlpages/images/chrome_browser.png" alt="chrome browser" /> Chrome</th><th><img src="https://static.javatpoint.com/htmlpages/images/ie_browser.png" alt="ie browser" /> IE</th><th><img src="https://static.javatpoint.com/htmlpages/images/firefox_browser.png" alt="firefox browser" /> Firefox</th><th><img src="https://static.javatpoint.com/htmlpages/images/opera_browser.png" alt="opera browser" /> Opera</th><th><img src="https://static.javatpoint.com/htmlpages/images/safari_browser.png" alt="safari browser" /> Safari</th></tr>
+    <tr>
+    <td>basic support<br/>(single-line flexbox)</td>
+    <td>29.0<br/>21.0 -webkit-</td>
+    <td>11.0</td>
+    <td>22.0<br/>18.0 -moz-</td>
+    <td>12.1 -webkit-</td>
+    <td>6.1 -webkit-</td>
+    </tr>
+    <tr>
+    <td>multi-line flexbox</td>
+    <td>29.021.0 -webkit</td>
+    <td>11.0</td>
+    <td>28.0</td>
+    <td>17.0<br/>15.0 -webkit-<br/>12.1</td>
+    <td>6.1 -webkit-</td>
+    </tr>
+    </table>
+    <hr/>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="7_z-index.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="9_media_query.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

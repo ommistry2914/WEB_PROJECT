@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>JS String</title>
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item" href="8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item active-submenu" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item" href="34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">JavaScript String</h1>
+    <p>The <strong>JavaScript string</strong> is an object that represents a sequence of characters.</p>
+    <p>There are 2 ways to create string in JavaScript</p>
+    <ol>
+        <li>By string literal</li>
+        <li>By string object (using new keyword)</li>
+    </ol>
+    <hr />
+    <h2 class="h3">1) By string literal</h2>
+    <p>The string literal is created using double quotes. The syntax of creating string using string literal is given
+        below:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+var stringname="string value";
+</textarea></div>
+    <p>Let's see the simple example of creating string literal.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var str="This is string literal";
+document.write(str);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstring1" target="_blank">Test it
+            Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+This is string literal
+</pre>
+    </div>
+    <hr />
+    <h2 class="h3">2) By string object (using new keyword)</h2>
+    <p>The syntax of creating string object using new keyword is given below:</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+var stringname=new String("string literal");
+</textarea></div>
+    <p>Here, <strong>new keyword</strong> is used to create instance of string.</p>
+    <p>Let's see the example of creating string in JavaScript by new keyword.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var stringname=new String("hello javascript string");
+document.write(stringname);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstring2" target="_blank">Test it
+            Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+hello javascript string
+</pre>
+    </div>
+    <hr />
+    <h2 class="h2">JavaScript String Methods</h2>
+    <p>Let's see the list of JavaScript string methods with examples.</p>
+    <table class="alt">
+        <tr>
+            <th>Methods</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-charat-method">charAt()</a></td>
+            <td>It provides the char value present at the specified index.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-charcodeat-method">charCodeAt()</a></td>
+            <td>It provides the Unicode value of a character present at the specified index.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-concat-method">concat()</a></td>
+            <td>It provides a combination of two or more strings.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-indexof-method">indexOf()</a></td>
+            <td>It provides the position of a char value present in the given string.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-lastindexof-method">lastIndexOf()</a></td>
+            <td>It provides the position of a char value present in the given string by searching a character from the
+                last position.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-search-method">search()</a></td>
+            <td>It searches a specified regular expression in a given string and returns its position if a match occurs.
+            </td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-match-method">match()</a></td>
+            <td>It searches a specified regular expression in a given string and returns that regular expression if a
+                match occurs.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-replace-method">replace()</a></td>
+            <td>It replaces a given string with the specified replacement.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-substr-method">substr()</a></td>
+            <td>It is used to fetch the part of the given string on the basis of the specified starting position and
+                length.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-substring-method">substring()</a></td>
+            <td>It is used to fetch the part of the given string on the basis of the specified index.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-slice-method">slice()</a></td>
+            <td>It is used to fetch the part of the given string. It allows us to assign positive as well negative
+                index.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-tolowercase-method">toLowerCase()</a></td>
+            <td>It converts the given string into lowercase letter.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-tolocalelowercase-method">toLocaleLowerCase()</a></td>
+            <td>It converts the given string into lowercase letter on the basis of host?s current locale.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-touppercase-method">toUpperCase()</a></td>
+            <td>It converts the given string into uppercase letter.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-tolocaleuppercase-method">toLocaleUpperCase()</a></td>
+            <td>It converts the given string into uppercase letter on the basis of host?s current locale.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-tostring-method">toString()</a></td>
+            <td>It provides a string representing the particular object.</td>
+        </tr>
+        <tr>
+            <td><a href="javascript-string-valueof-method">valueOf()</a></td>
+            <td>It provides the primitive value of string object.</td>
+        </tr>
+        <tr>
+            <td>split()</td>
+            <td>It splits a string into substring array, then returns that newly created array.</td>
+        </tr>
+        <tr>
+            <td>trim()</td>
+            <td>It trims the white space from the left and right side of the string.</td>
+        </tr>
+    </table>
+    <hr />
+    <h2 class="h3">1) JavaScript String charAt(index) Method</h2>
+    <p>The JavaScript String charAt() method returns the character at the given index.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var str="javascript";
+document.write(str.charAt(2));
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod1"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+v
+</pre>
+    </div>
+    <h2 class="h3">2) JavaScript String concat(str) Method</h2>
+    <p>The JavaScript String concat(str) method concatenates or joins two strings.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var s1="javascript ";
+var s2="concat example";
+var s3=s1.concat(s2);
+document.write(s3);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod2"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+javascript concat example
+</pre>
+    </div>
+    <h2 class="h3">3) JavaScript String indexOf(str) Method</h2>
+    <p>The JavaScript String indexOf(str) method returns the index position of the given string.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var s1="javascript from javatpoint indexof";
+var n=s1.indexOf("from");
+document.write(n);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod3"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+11
+</pre>
+    </div>
+    <h2 class="h3">4) JavaScript String lastIndexOf(str) Method</h2>
+    <p>The JavaScript String lastIndexOf(str) method returns the last index position of the given string.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var s1="javascript from javatpoint indexof";
+var n=s1.lastIndexOf("java");
+document.write(n);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod4"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+16
+</pre>
+    </div>
+    <h2 class="h3">5) JavaScript String toLowerCase() Method</h2>
+    <p>The JavaScript String toLowerCase() method returns the given string in lowercase letters.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var s1="JavaScript toLowerCase Example";
+var s2=s1.toLowerCase();
+document.write(s2);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod5"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+javascript tolowercase example
+</pre>
+    </div>
+    <h2 class="h3">6) JavaScript String toUpperCase() Method</h2>
+    <p>The JavaScript String toUpperCase() method returns the given string in uppercase letters.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var s1="JavaScript toUpperCase Example";
+var s2=s1.toUpperCase();
+document.write(s2);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod6"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+JAVASCRIPT TOUPPERCASE EXAMPLE
+</pre>
+    </div>
+    <h2 class="h3">7) JavaScript String slice(beginIndex, endIndex) Method</h2>
+    <p>The JavaScript String slice(beginIndex, endIndex) method returns the parts of string from given beginIndex to
+        endIndex. In slice() method, beginIndex is inclusive and endIndex is exclusive.</p>
+    <div class="codeblock">
+        <pre name="code" class="xml">
+&lt;script&gt;
+var s1="abcdefgh";
+var s2=s1.slice(2,5);
+document.write(s2);
+&lt;/script&gt;
+</textarea></div>
+<span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod7" target="_blank">Test it Now</a></span>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>
+cde
+</pre>
+    </div>
+    <h2 class="h3">8) JavaScript String trim() Method</h2>
+    <p>The JavaScript String trim() method removes leading and trailing whitespaces from the string.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var s1="     javascript trim    ";
+var s2=s1.trim();
+document.write(s2);
+&lt;/script&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=jsstringmethod8"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+javascript trim
+</pre>
+    </div>
+    <h3 class="h3">9) JavaScript String split() Method</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;script&gt;
+var str="This is JavaTpoint website";
+document.write(str.split(" ")); //splits the given string.
+&lt;/script&gt;
+</textarea></div>
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="14js_arrays.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="16js_date.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

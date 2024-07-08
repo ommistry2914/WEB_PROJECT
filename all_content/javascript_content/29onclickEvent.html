@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>onclick event</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item" href="2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item" href="3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item" href="4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item" href="5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item" href="6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item" href="7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item" href="8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item" href="9js_if_else_statement.html">JS If Else Statement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item" href="12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item" href="13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item" href="14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item" href="15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item" href="16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item" href="17browser_object_model.html">Browser Object Model</a>
+                                </li>
+                                <li><a class="dropdown-item" href="18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item" href="19document_object_model.html">Document Object
+                                        Model</a></li>
+                                <li><a class="dropdown-item" href="20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item" href="21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item" href="22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item" href="23getElementByTagName.html">getElementByTagName</a>
+                                </li>
+                                <li><a class="dropdown-item" href="24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item" href="25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item" href="26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item" href="27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item" href="28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item active-submenu" href="29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item" href="30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item" href="31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item" href="32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item" href="33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item" href="34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item" href="35querySelector.html">JS querySelector</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">JavaScript onclick event</h1>
+    <p>The <strong>onclick</strong> event generally occurs when the user clicks on an element. It allows the programmer
+        to execute a JavaScript's function when an element gets clicked. This event can be used for validating a form,
+        warning messages and many more.</p>
+    <p>Using JavaScript, this event can be dynamically added to any element. It supports all HTML elements except
+        <strong><a href="https://www.javatpoint.com/html-html-tag">&lt;html&gt;</a>, <a
+                href="https://www.javatpoint.com/html-head">&lt;head&gt;</a>, <a
+                href="https://www.javatpoint.com/html-title">&lt;title&gt;</a>, <a
+                href="https://www.javatpoint.com/html-style">&lt;style&gt;</a>, <a
+                href="https://www.javatpoint.com/html-script-tag">&lt;script&gt;</a>, <a
+                href="https://www.javatpoint.com/html-base-tag">&lt;base&gt;</a>, <a
+                href="https://www.javatpoint.com/html-iframes">&lt;iframe&gt;</a>, <a
+                href="https://www.javatpoint.com/html-bdo-tag">&lt;bdo&gt;</a>, <a
+                href="https://www.javatpoint.com/html-br-tag">&lt;br&gt;</a>, <a
+                href="https://www.javatpoint.com/html-meta-tag">&lt;meta&gt;</a>,</strong> and <strong><a
+                href="https://www.javatpoint.com/html-param-tag">&lt;param&gt;</a></strong>. It means we cannot apply
+        the <strong>onclick</strong> event on the given tags.</p>
+    <p>In HTML, we can use the <strong>onclick</strong> attribute and assign a <a
+            href="https://www.javatpoint.com/javascript-function">JavaScript function</a> to it. We can also use the
+        JavaScript's <strong>addEventListener()</strong> method and pass a <strong>click</strong> event to it for
+        greater flexibility.</p>
+    <h3 class="h3">Syntax</h3>
+    <p>Now, we see the syntax of using the <strong>onclick</strong> event in <a
+            href="https://www.javatpoint.com/html-tutorial">HTML</a> and in <a
+            href="https://www.javatpoint.com/javascript-tutorial">javascript</a> (without
+        <strong>addEventListener()</strong> method or by using the <strong>addEventListener()</strong> method).</p>
+    <h3 class="h3">In HTML</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;element onclick = "fun()"&gt;
+</textarea></div>
+    <h3 class="h3">In JavaScript</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+object.onclick = function() { myScript };
+</textarea></div>
+    <h3 class="h3">In JavaScript by using the addEventListener() method</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+object.addEventListener("click", myScript);
+</textarea></div>
+    <p>Let's see how to use <strong>onclick</strong> event by using some illustrations. Now, we will see the examples of
+        using the <strong>onclick</strong> event in HTML, and in JavaScript.</p>
+    <h3 class="h3">Example1 - Using onclick attribute in HTML</h3>
+    <p>In this example, we are using the <a href="https://www.javatpoint.com/html-button-onclick">HTML
+            <strong>onclick</strong></a> attribute and assigning a JavaScript's function to it. When the user clicks the
+        given button, the corresponding function will get executed, and an alert dialog box will be displayed on the
+        screen.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+function fun() {
+alert("Welcome to the javaTpoint.com");
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt; This is an example of using onclick attribute in HTML. &lt;/h3&gt;
+&lt;p&gt; Click the following button to see the effect. &lt;/p&gt;
+&lt;button onclick = "fun()"&gt;Click me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-onclick-event1"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-onclick-event.png"
+        alt="JavaScript onclick event" />
+    <p>After clicking the given button, the output will be -</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-onclick-event2.png"
+        alt="JavaScript onclick event" />
+    <h3 class="h3">Example2 - Using JavaScript</h3>
+    <p>In this example, we are using JavaScript's <strong>onclick</strong> event. Here we are using the
+        <strong>onclick</strong> event with the paragraph element.</p>
+    <p>When the user clicks on the <a href="https://www.javatpoint.com/html-paragraph">paragraph</a> element, the
+        corresponding function will get executed, and the text of the paragraph gets changed. On clicking the
+        <strong>&lt;p&gt;</strong> element, the <a href="https://www.javatpoint.com/html-background-color">background
+            color</a>, size, border, and color of the text will also get change.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; onclick event &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt; This is an example of using onclick event. &lt;/h3&gt;
+&lt;p&gt; Click the following text to see the effect. &lt;/p&gt;
+&lt;p id = "para"&gt;Click me&lt;/p&gt;
+&lt;script&gt;
+document.getElementById("para").onclick = function() {
+fun()
+};
+function fun() {
+document.getElementById("para").innerHTML = "Welcome to the javaTpoint.com";
+document.getElementById("para").style.color = "blue";
+document.getElementById("para").style.backgroundColor = "yellow";
+document.getElementById("para").style.fontSize = "25px";
+document.getElementById("para").style.border = "4px solid red"; 
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-onclick-event2"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-onclick-event3.png"
+        alt="JavaScript onclick event" />
+    <p>After clicking the text <strong><em>Click me,</em></strong> the output will be -</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-onclick-event4.png"
+        alt="JavaScript onclick event" />
+    <h3 class="h3">Example3 - Using addEventListener() method</h3>
+    <p>In this example, we are using JavaScript's <strong>addEventListener()</strong> method to attach a
+        <strong>click</strong> event to the paragraph element. When the user clicks the paragraph element, the text of
+        the paragraph gets changed.</p>
+    <p>On clicking the paragraph, the background color and font-size of elements will also change.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt; This is an example of using click event. &lt;/h3&gt;
+&lt;p&gt; Click the following text to see the effect. &lt;/p&gt;
+&lt;p id = "para"&gt;Click me&lt;/p&gt;
+&lt;script&gt;
+document.getElementById("para").onclick = function() {
+fun()
+};
+function fun() {
+document.getElementById("para").innerHTML = "Welcome to the javaTpoint.com";
+document.getElementsByTagName("body")[0].style.color = "blue";
+document.getElementsByTagName("body")[0].style.backgroundColor = "lightgreen";
+document.getElementsByTagName("body")[0].style.fontSize = "25px";
+document.getElementById("para").style.border = "4px solid red"; 
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-onclick-event3"
+            target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-onclick-event5.png"
+        alt="JavaScript onclick event" />
+    <p>On clicking the text <strong><em>Click me</em></strong>, the output will be -</p>
+    <img src="https://static.javatpoint.com/javascriptpages/images/javascript-onclick-event6.png"
+        alt="JavaScript onclick event" />
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="28addEventListener.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="30dbclick.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <!-- Add Bootstrap CSS link -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="icon/sg.png">
+
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .g-link{
+            font-size: large;
+            color: green;
+        }
+        .g-link:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home.html">
+                <img src="icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item active-submenu" href="javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JavaScript
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/1js_introduction.html">JS
+                                        Introduction</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/2js_example.html">JS Example</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/3external_js.html">External JS</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/4js_comment.html">JS Comments</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/5js_variable.html">JS Variable</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/6js_global_variable.html">JS Global Variable</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/7js_data_type.html">JS Data Type</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/8js_operator.html">JS Operator</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/9js_if_else_statement.html">JS If Else Statement</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/10js_switch.html">JS Switch Statement</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/11js_loop.html">JS Loop</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/12js_function.html">JS Function</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/13js_objects.html">JS Object</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/14js_arrays.html">JS Array</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/15js_string.html">JS String</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/16js_date.html">JS Date</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/17browser_object_model.html">Browser Object Model</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/18window_object.html">Window Object</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/19document_object_model.html">Document Object Model</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/20getElementById.html">getElementById</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/21getElementByClass.html">getElementByClass</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/22getElementByName.html">getElementByName</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/23getElementByTagName.html">getElementByTagName</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/24innerHtml.html">JS InnerHTML Property</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/25innerText.html">JS InnerText Property</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/26form_validation.html">JS Form Validation</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/27js_events.html">JS Events</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/28addEventListener.html">JS addEventListener</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/29onclickEvent.html">JS onClick Event</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/30dbclick.html">JS dbClick Event</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/31onload.html">JS onload Event</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/32onresize.html">JS onresize Event</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/33setInterval.html">JS setInterval</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/34setTimeOut.html">JS setTimeOut</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../all_content/javascript_content/35querySelector.html">JS querySelector</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-8">
+                <p>
+                    JavaScript, often abbreviated as JS, is a versatile and widely-used programming language primarily
+                    used for
+                    building
+                    interactive and dynamic web applications. It is an essential component of web development, allowing
+                    developers
+                    to add
+                    functionality, interactivity, and behavior to web pages. Here's an overview of JavaScript:
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <img src="logo/js_logo.png" alt="Html" style="height: 120px; width: 120px;">
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="mt-4 mb-5">Information About JavaScript</h2>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>1. Client-Side Scripting:</h4>
+                <p>JavaScript is primarily a client-side scripting language, which means it runs in the user's web
+                    browser. It
+                    enables
+                    web pages to respond to user actions without requiring a round-trip to the server, making web
+                    applications more
+                    responsive.
+                </p>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>2. High-Level Language:</h4>
+                <p>JavaScript is a high-level, interpreted language, which means it is human-readable and does not need
+                    to be
+                    compiled. Web
+                    browsers interpret JavaScript code directly.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>3. Versatility:</h4>
+                <p>While JavaScript is most commonly associated with web development, it can also be used for
+                    server-side
+                    programming
+                    (Node.js) and even desktop application development (Electron).</p>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>4. Core Features:</h4>
+                <p>JavaScript provides core features such as variables, data types (strings, numbers, booleans,
+                    objects), functions,
+                    loops,
+                    and conditional statements. These enable developers to write structured and reusable code.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+
+                <h4>5. DOM Manipulation:</h4>
+                <p>JavaScript can interact with the Document Object Model (DOM) of a web page, allowing developers to
+                    manipulate and
+                    change
+                    HTML and CSS dynamically. This is crucial for creating interactive web applications.</p>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>6. Event Handling:</h4>
+                <p>JavaScript enables the handling of user events like clicks, keypresses, and mouse movements. Event
+                    listeners are
+                    used to
+                    respond to these events, making web pages interactive.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>7. Asynchronous Programming:</h4>
+                <p>JavaScript supports asynchronous programming through callbacks, promises, and async/await, allowing
+                    non-blocking
+                    operations
+                    like fetching data from a server without freezing the user interface.</p>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>8. Libraries and Frameworks:</h4>
+                <p>JavaScript has a rich ecosystem of libraries and frameworks like jQuery, React, Angular, and Vue.js
+                    that simplify
+                    common
+                    tasks, enhance code organization, and speed up development.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>9. Third-Party APIs:</h4>
+                <p>Developers can integrate various third-party APIs into their JavaScript applications to access
+                    external services,
+                    including
+                    social media platforms, mapping services, and payment gateways.</p>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>10. Cross-Browser Compatibility:</h4>
+                <p>JavaScript is supported by all modern web browsers. However, developers need to be aware of
+                    cross-browser
+                    compatibility
+                    issues and employ techniques to ensure consistent behavior.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                <h4>11. Debugging and Development Tools:</h4>
+                <p>Browsers provide developer tools for debugging JavaScript, including features like breakpoints,
+                    console logging,
+                    and
+                    profiling. Code editors like Visual Studio Code offer integrated debugging and code analysis tools
+                    for
+                    JavaScript
+                    development.</p>
+
+            </div>
+            <div class="col-lg-6">
+
+                <h4>12. Security Considerations:</h4>
+                <p>JavaScript execution in a browser occurs within a sandboxed environment for security. Developers
+                    should be aware
+                    of
+                    potential security risks, such as Cross-Site Scripting (XSS) attacks, and follow best practices to
+                    mitigate
+                    them.</p>
+
+            </div>
+        </div>
+
+        <hr>
+        <!-- <div class="row mt-4 mb-3">
+            <h4>Summary</h4>
+            <p class="mt-2">
+
+                In summary, HTML is the foundation of web development, providing the structure and content for web
+                pages. It is an essential skill for web developers and anyone looking to create content for the
+                internet. When combined with CSS and JavaScript, HTML forms the core technologies used to build modern,
+                interactive, and visually appealing websites and web applications.
+
+            </p>
+        </div>
+        <hr> -->
+        <h2 class="mt-4 mb-2">Useful Website References</h2>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.w3schools.com/js/" target="_blank" class="g-link">w3schools JavaScript Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.geeksforgeeks.org/introduction-to-javascript/" target="_blank" class="g-link">GeeksforGeeks
+                    Javascript Tutorial</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.programiz.com/javascript" target="_blank" class="g-link">Programiz JavaScript Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.tutorialspoint.com/javascript/javascript_overview.htm"
+                    target="_blank">Tutorialspoint Javascript
+                    Tutorial</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <a href="https://www.hostinger.in/tutorials/what-is-javascript" target="_blank" class="g-link">Hostinger JavaScript
+                    Tutorial</a>
+            </div>
+            <div class="col-md-6 mt-4">
+                <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank" class="g-link">Codecademy
+                    JavaScript Tutorial</a>
+            </div>
+        </div>
+        <div class="mb-5"></div>
+        <hr>
+
+        <h2 class="mt-4 mb-5"><a href="../all_content/javascript_content/1js_introduction.html">Start Learning From Our
+                Tutorials&nbsp;<i class="bi bi-box-arrow-in-right"></i></a></h2>
+        <hr>
+
+
+        <h2 class="mt-4 mb-5">Learn From Some Amazing YouTube Tutorials :</h2>
+
+        <div style="margin-bottom: 50px;"></div>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=rjWOzmN9hdOWY9BE&amp;list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe src="https://www.youtube.com/embed/jS4aFq5-91M?si=CPFtMR01pAqC-pIn"
+                        title="YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=m5itzm3xCEjSmHJ-&amp;list=PLwgFb6VsUj_n15Cg_y2ULKfsOR1XiQqPx"
+                        title=" YouTube video player" frameborder="0" allowfullscreen class="d-block w-100"
+                        style="height: 70vh;"></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div style="margin-bottom: 50px;"></div>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<!-- Add Bootstrap JavaScript and jQuery for Bootstrap features (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

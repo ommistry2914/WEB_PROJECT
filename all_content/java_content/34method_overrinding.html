@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Method Overriding</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Method Overriding in Java</h1>
+    <div id="upr">
+        <ol>
+            <li><a href="#moverproblem">Understanding the problem without method overriding</a></li>
+            <li><a href="#movercanstatic">Can we override the static method</a></li>
+            <li><a href="#moverdiff">Method overloading vs. method overriding</a></li>
+        </ol>
+    </div>
+    <p>If subclass (child class) has the same method as declared in the parent class, it is known as <strong>method
+            overriding in Java</strong>. </p>
+    <p>In other words, If a subclass provides the specific implementation of the method that has been declared by one of
+        its
+        parent class, it is known as method overriding.</p>
+    <h3 class="h3">Usage of Java Method Overriding</h3>
+    <ul class="points">
+        <li>Method overriding is used to provide the specific implementation of a method which is already provided by
+            its
+            superclass.</li>
+        <li>Method overriding is used for runtime polymorphism</li>
+    </ul>
+    <h4 class="h3">Rules for Java Method Overriding</h4>
+    <ol class="points">
+        <li>The method must have the same name as in the parent class</li>
+        <li>The method must have the same parameter as in the parent class.</li>
+        <li>There must be an IS-A relationship (inheritance).</li>
+    </ol>
+    <img src="https://static.javatpoint.com/images/java-rules-for-method-overriding.png"
+        alt="Java Rules for Method Overriding" />
+    
+        <span id="moverproblem"></span>
+    <h3 class="h4">Understanding the problem without method overriding</h3>
+    <p>Let's understand the problem that we may face in the program if we don't use method overriding.</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//Java Program to demonstrate why we need method overriding
+//Here, we are calling the method of parent class with child
+//class object.
+//Creating a parent class
+class Vehicle{
+  void run(){System.out.println("Vehicle is running");}
+}
+//Creating a child class
+class Bike extends Vehicle{
+  public static void main(String args[]){
+  //creating an instance of child class
+  Bike obj = new Bike();
+  //calling the method with child class instance
+  obj.run();
+  }
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Bike" target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Vehicle is running
+</pre>
+    </div>
+    <p>Problem is that I have to provide a specific implementation of run() method in subclass that is why we use method
+        overriding.</p>
+    <hr />
+    <span id="moverexample"></span>
+    <h3 class="h3ex">Example of method overriding</h3>
+    <p>In this example, we have defined the run method in the subclass as defined in the parent class but it has some
+        specific implementation. The name and parameter of the method are the same, and there is IS-A relationship
+        between
+        the classes, so there is method overriding.
+    </p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//Java Program to illustrate the use of Java Method Overriding
+//Creating a parent class.
+class Vehicle{
+  //defining a method
+  void run(){System.out.println("Vehicle is running");}
+}
+//Creating a child class
+class Bike2 extends Vehicle{
+  //defining the same method as in the parent class
+  void run(){System.out.println("Bike is running safely");}
+
+  public static void main(String args[]){
+  Bike2 obj = new Bike2();//creating object
+  obj.run();//calling method
+  }
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Bike2" target="_blank">Test it
+            Now</a></span>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Bike is running safely
+</pre>
+    </div>
+    <hr />
+    <h3 class="h2">A real example of Java Method Overriding</h3>
+    <p>Consider a scenario where Bank is a class that provides functionality to get the rate of interest. However, the
+        rate
+        of interest varies according to banks. For example, SBI, ICICI and AXIS banks could provide 8%, 7%, and 9% rate
+        of
+        interest.</p>
+    <img src="https://static.javatpoint.com/images/core/bankinheritance.png"
+        alt="Java method overriding example of bank" />
+    <h4 class="n mt-3">Java method overriding is mostly used in Runtime Polymorphism which we will learn in next pages.</h4>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+//Java Program to demonstrate the real scenario of Java Method Overriding
+//where three classes are overriding the method of a parent class.
+//Creating a parent class.
+class Bank{
+int getRateOfInterest(){return 0;}
+}
+//Creating child classes.
+class SBI extends Bank{
+int getRateOfInterest(){return 8;}
+}
+
+class ICICI extends Bank{
+int getRateOfInterest(){return 7;}
+}
+class AXIS extends Bank{
+int getRateOfInterest(){return 9;}
+}
+//Test class to create objects and call the methods
+class Test2{
+public static void main(String args[]){
+SBI s=new SBI();
+ICICI i=new ICICI();
+AXIS a=new AXIS();
+System.out.println("SBI Rate of Interest: "+s.getRateOfInterest());
+System.out.println("ICICI Rate of Interest: "+i.getRateOfInterest());
+System.out.println("AXIS Rate of Interest: "+a.getRateOfInterest());
+}
+}
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=Test2" target="_blank">Test it
+            Now</a></span>
+    <div class="codeblock3">
+        <pre>
+Output:
+SBI Rate of Interest: 8
+ICICI Rate of Interest: 7
+AXIS Rate of Interest: 9
+</pre>
+    </div>
+    <span id="movercanstatic"></span>
+    <h3 class="h3">Can we override static method?</h3>
+    <p>No, a static method cannot be overridden. It can be proved by runtime polymorphism, so we will learn it later.
+    </p>
+    <hr />
+    <h3 class="h3">Why can we not override static method?</h3>
+    <p>It is because the static method is bound with class whereas instance method is bound with an object. Static
+        belongs
+        to the class area, and an instance belongs to the heap area.
+    </p>
+    <hr />
+    <h3 class="h3">Can we override java main method?</h3>
+    <p>No, because the main is a static method.</p>
+    <hr />
+    <span id="moverdiff"></span>
+    
+    
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="33method_overloading.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="35covariant_return_type.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item" href="18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item active-submenu" href="23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Position</h1>
+    <p>The <strong>CSS position property</strong> is used <em>to set position for an element</em>. it is also used to place an element behind another and also useful for scripted animation effect. </p>
+    <p>You can position an element using the top, bottom, left and right properties. These properties can be used only after position property is set first. A position element's computed position property is relative, absolute, fixed or sticky. </p>
+    <p>Let's have a look at following CSS positioning:</p>
+    <ol class="points">
+    <li>CSS Static Positioning</li>
+    <li>CSS Fixed Positioning</li>
+    <li>CSS Relative Positioning</li>
+    <li>CSS Absolute Positioning</li>
+    </ol>
+    <hr/>
+    <h2 class="h2">1) CSS Static Positioning</h2>
+    <p>This is a by default position for HTML elements. It always positions an element according to the normal flow of the page. It is not affected by the top, bottom, left and right properties.</p>
+    <hr/>
+    <h2 class="h2">2) CSS Fixed Positioning</h2>
+    <p>The fixed positioning property helps to put the text fixed on the browser. This fixed test is positioned relative to the browser window, and doesn't move even you scroll the window. </p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    p.pos_fixed {
+        position: fixed;
+        top: 50px;
+        right: 5px;
+        color: blue;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    &lt;p&gt;Some text...&lt;/p&gt;&lt;p&gt;Some text...&lt;/p&gt;&lt;p&gt;Some text...&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;.... ...&lt;/p
+    &gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;
+    &lt;p&gt;........ &lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;
+    &lt;p&gt;........&lt;/p&gt;&lt;p&gt;........&lt;/p&gt;&lt;p&gt;Some text...&lt;/p&gt;&lt;p&gt;Some text...&lt;/p&gt;&lt;p&gt;Some text...&lt;/p&gt;
+    &lt;p class="pos_fixed"&gt;This is the fix positioned text.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=cssposition1" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h2">3) CSS Relative Positioning</h2>
+    <p>The relative positioning property is used to set the element relative to its normal position. </p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    h2.pos_left {
+        position: relative;
+        left: -30px;
+    }
+    h2.pos_right {
+        position: relative;
+        left: 30px;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h2&gt;This is a heading with no position&lt;/h2&gt;
+    &lt;h2 class="pos_left"&gt;This heading is positioned left according to its normal position&lt;/h2&gt;
+    &lt;h2 class="pos_right"&gt;This heading is positioned right according to its normal position&lt;/h2&gt;
+    &lt;p&gt;The style "left:-30px" subtracts 30 pixels from the element's original left position.&lt;/p&gt;
+    &lt;p&gt;The style "left:30px" adds 30 pixels to the element's original left position.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=cssposition2" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h2">4) CSS Absolute Positioning</h2>
+    <p>The absolute positioning is used to position an element relative to the first parent element that has a position other than static. If no such element is found, the containing block is HTML. </p>
+    <p>With the absolute positioning, you can place an element anywhere on a page.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    h2 {
+        position: absolute;
+        left: 150px;
+        top: 250px;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h2&gt;This heading has an absolute position&lt;/h2&gt;
+    &lt;p&gt; The heading below is placed 150px from the left and 250px from the top of the page.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=cssposition3" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h2">All CSS Position Properties</h2>
+    <table class="alt">
+    <tr>
+    <th>No.</th>
+    <th>property</th>
+    <th>description</th>
+    <th>values</th>
+    </tr>
+    <tr>
+    <td>1)</td>
+    <td>bottom</td>
+    <td>It is used to set the bottom margin edge for a positioned box.</td>
+    <td>auto, length, %, inherit</td>
+    </tr>
+    <tr>
+    <td>2)</td>
+    <td>clip</td>
+    <td>It is used to clip an absolutely positioned element.</td>
+    <td>shape, auto, inherit</td>
+    </tr>
+    <tr>
+    <td>3)</td>
+    <td>cursor</td>
+    <td>It is used to specify the type of cursors to be displayed.</td>
+    <td>url, auto, crosshair, default, pointer, move, e-resize, ne-resize, nw-resize, n-resize, se-resize, sw-resize, s-resize, w-resize, text, wait, help</td>
+    </tr>
+    <tr>
+    <td>4)</td>
+    <td>left</td>
+    <td>It sets a left margin edge for a positioned box.</td>
+    <td>auto, length, %, inherit</td>
+    </tr>
+    <tr>
+    <td>5)</td>
+    <td>overflow</td>
+    <td>This property is used to define what happens if content overflow an element's box.</td>
+    <td>auto, hidden, scroll, visible, inherit</td>
+    </tr>
+    <tr>
+    <td>6)</td>
+    <td>position</td>
+    <td>It is used to specify the type of positioning for an element.</td>
+    <td>absolute, fixed, relative, static, inherit</td>
+    </tr>
+    <tr>
+    <td>7)</td>
+    <td>right</td>
+    <td>It is used to set a right margin edge for a positioned box.</td>
+    <td>auto, length, %, inherit</td>
+    </tr>
+    <tr>
+    <td>8)</td>
+    <td>top</td>
+    <td>It is used to set a top margin edge for a positioned box.</td>
+    <td>auto, length, %, inherit</td>
+    </tr>
+    <tr>
+    <td>9)</td>
+    <td>z-index</td>
+    <td>It is used to set stack order of an element.</td>
+    <td>number, auto, inherit</td>
+    </tr>
+    </table>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+    <a href="22_padding.html"><button class="btn btn-danger" type="button">Previous</button></a>
+    <a href="24_width.html"><button class="btn btn-success" type="button">Next</button></a>
+</div>
+<footer>
+    <div class="container-fluid bg-dark text-bg-dark"
+        style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+        Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+   <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+       <div class="container-fluid">
+           <a class="navbar-brand" href="../../../home.html">
+               <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+               data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+               aria-labelledby="offcanvasNavbarDarkLabel">
+               <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                       <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                   </h5>
+                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                       aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                       <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               Programming Language
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               Web Developement
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                               <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Tutorial
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                               <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Properties
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                               <li><a class="dropdown-item" href="2_border.html">Border</a></li>
+                               <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                               <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                               <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                               <li><a class="dropdown-item" href="6_Cursor.html">Cursor</a></li>
+                               <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                               <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                               <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                               <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                               <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                               <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                               <li><a class="dropdown-item" href="13_colors.html">Colors</a></li>
+                               <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                               <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                               <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                               <li><a class="dropdown-item" href="17_background_attachment.html">background-attachment</a></li>
+                               <li><a class="dropdown-item" href="18_background_size.html">Background size</a></li>
+                               <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                               <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                               <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                               <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                               <li><a class="dropdown-item" href="23_position.html">Position</a></li>
+                               <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                               <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                               <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                               <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                               <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                               <li><a class="dropdown-item active-submenu" href="29_Lists.html">Lists</a></li>
+                               <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                               <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Advance
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                               <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                               CSS Design
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                               <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                               <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                               <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../../../about.html">About Us</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </nav>
+   <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS Lists</h1>
+    <p>There are various CSS properties that can be used to control lists. Lists can be classified as ordered lists and unordered lists. In ordered lists, marking of the list items is with alphabet and numbers, whereas in unordered lists, the list items are marked using bullets.</p>
+    <p>We can style the lists using CSS. CSS list properties allow us to:</p>
+    <ul class="points">
+    <li>Set the distance between the text and the marker in the list.</li>
+    <li>Specify an image for the marker instead of using the number or bullet point.</li>
+    <li>Control the marker appearance and shape.</li>
+    <li>Place the marker outside or inside the box that contains the list items.</li>
+    <li>Set the background colors to list items and lists.</li>
+    </ul>
+    <p>The CSS properties to style the lists are given as follows:</p>
+    <ul class="points">
+    <li><strong>list-style-type:</strong> This property is responsible for controlling the appearance and shape of the marker.</li>
+    <li><strong>list-style-image:</strong> It sets an image for the marker instead of the number or a bullet point.</li>
+    <li><strong>list-style-position:</strong> It specifies the position of the marker.</li>
+    <li><strong>list-style:</strong> It is the shorthand property of the above properties.</li>
+    <li><strong>marker-offset:</strong> It is used to specify the distance between the text and the marker. It is unsupported in IE6 or Netscape 7.</li>
+    </ul>
+    <p>Let's understand the above properties in detail, along with an example of each.</p>
+    <h2 class="h2">The list-style-type property</h2>
+    <p>It allows us to change the default list type of marker to any other type such as square, circle, roman numerals, Latin letters, and many more. By default, the ordered list items are numbered with Arabic numerals (1, 2, 3, etc.), and the items in an unordered list are marked with round bullets (&bull;).</p>
+    <p>If we set its value to <strong>none,</strong> it will remove the markers/bullets.</p>
+    <h4 class="n">Note: The list also includes the default padding and margin. To remove this, we need to add padding:0 and margin:0 to &lt;ol&gt; and &lt;ul&gt;.</h4>
+    <p>The illustration of using this property is given as follows:</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt; 
+       &lt;head&gt; 
+       &lt;title&gt;CSS Lists&lt;/title&gt;
+          &lt;style&gt; 
+          .num{
+            list-style-type:decimal; 	  
+          }
+          .alpha{
+                  list-style-type:lower-alpha; 
+          }
+          .roman{
+                  list-style-type:lower-roman; 
+          }
+          .circle{
+            list-style-type:circle; 
+          }
+          .square{
+            list-style-type:square; 
+          }
+          .disc{
+            list-style-type:disc; 
+          }
+          &lt;/style&gt; 
+       &lt;/head&gt; 
+       &lt;body&gt; 
+          &lt;h1&gt; 
+             Welcome to the javaTpoint.com 
+          &lt;/h1&gt; 
+                &lt;h2&gt; 
+             Ordered Lists 
+          &lt;/h2&gt; 
+          &lt;ol class="num"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;ol class="alpha"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+                &lt;ol class="roman"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;h2&gt; 
+             Unordered lists 
+          &lt;/h2&gt; 
+          &lt;ul class="disc"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+          &lt;ul class="circle"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+          &lt;ul class="square"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+    
+       &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSLists1" target="_blank">Test it Now</a></span>
+    <h2 class="h2">The list-style-position property</h2>
+    <p>It represents whether the appearing of the marker is inside or outside of the box containing the bullet points. It includes two values.</p>
+    <p><strong>inside:</strong> It means that the bullet points will be in the list item. In this, if the text goes on the second line, then the text will be wrap under the marker.</p>
+    <p><strong>outside:</strong> It represents that the bullet points will be outside the list item. It is the default value.</p>
+    <p>The following example explains it more clearly.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt; 
+       &lt;head&gt; 
+       &lt;title&gt;CSS Lists&lt;/title&gt;
+          &lt;style&gt; 
+          .num{
+            list-style-type:decimal; 	  
+             list-style-position:inside; 
+          }
+          .roman{
+           list-style-type:lower-roman; 
+           list-style-position:outside; 
+          }
+          .circle{
+            list-style-type:circle; 
+            list-style-position:inside;
+          }
+          .square{
+            list-style-type:square; 
+          }
+          .disc{
+            list-style-type:disc; 
+            list-style-position:inside;
+          }
+          &lt;/style&gt; 
+       &lt;/head&gt; 
+       &lt;body&gt; 
+          &lt;h1&gt; 
+             Welcome to the javaTpoint.com 
+          &lt;/h1&gt; 
+                &lt;h2&gt; 
+             Ordered Lists 
+          &lt;/h2&gt; 
+          &lt;ol class="num"&gt; 
+             &lt;li&gt;INSIDE&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;ol class="roman"&gt; 
+             &lt;li&gt;OUTSIDE&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;h2&gt; 
+             Unordered lists 
+          &lt;/h2&gt; 
+          &lt;ul class="disc"&gt; 
+             &lt;li&gt;INSIDE&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+          &lt;ul class="circle"&gt; 
+             &lt;li&gt;INSIDE&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+          &lt;ul class="square"&gt; 
+             &lt;li&gt;DEFAULT&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+    
+       &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSLists2" target="_blank">Test it Now</a></span>
+    <h2 class="h2">The list-style-image property</h2>
+    <p>It specifies an image as the marker. Using this property, we can set the image bullets. Its syntax is similar to the background-image property. If it does not find the corresponding image, the default bullets will be used.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt; 
+       &lt;head&gt; 
+       &lt;title&gt;CSS Lists&lt;/title&gt;
+          &lt;style&gt; 
+          .order{
+            list-style-image: url(img.png); 	   
+          }
+          .unorder{
+            list-style-image: url(img.png); 	   
+          }
+    
+          &lt;/style&gt; 
+       &lt;/head&gt; 
+       &lt;body&gt; 
+          &lt;h1&gt; 
+             Welcome to the javaTpoint.com 
+          &lt;/h1&gt; 
+                &lt;h2&gt; 
+             Ordered Lists 
+          &lt;/h2&gt; 
+          &lt;ol class="order"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;h2&gt; 
+             Unordered lists 
+          &lt;/h2&gt; 
+          &lt;ul class="unorder"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+    
+       &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSLists3" target="_blank">Test it Now</a></span>
+    <h2 class="h2">The list-style property</h2>
+    <p>It is the shorthand property that is used to set all list properties in one expression. The order of the values of this property is type, position, and image. But if any property value is missing, then the default value will be inserted.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt; 
+       &lt;head&gt; 
+       &lt;title&gt;CSS Lists&lt;/title&gt;
+          &lt;style&gt; 
+          .order{
+            list-style: lower-alpha inside url(img.png); 	   
+          }
+          .unorder{
+            list-style: disc outside; 	   
+          }
+    
+          &lt;/style&gt; 
+       &lt;/head&gt; 
+       &lt;body&gt; 
+          &lt;h1&gt; 
+             Welcome to the javaTpoint.com 
+          &lt;/h1&gt; 
+                &lt;h2&gt; 
+             Ordered Lists 
+          &lt;/h2&gt; 
+          &lt;ol class="order"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;h2&gt; 
+             Unordered lists 
+          &lt;/h2&gt; 
+          &lt;ul class="unorder"&gt; 
+             &lt;li&gt;one&lt;/li&gt; 
+             &lt;li&gt;two&lt;/li&gt; 
+             &lt;li&gt;three&lt;/li&gt; 
+          &lt;/ul&gt; 
+    
+       &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSLists4" target="_blank">Test it Now</a></span>
+    <h2 class="h2">Styling Lists with colors</h2>
+    <p>To make the lists more attractive and interesting, we can style lists with colors. The addition of anything to the &lt;ul&gt; or &lt;ol&gt; tag will affect the entire list, whereas the addition to the individual &lt;li&gt; tag will affect the items of the corresponding list.</p>
+    <h3 class="h4">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;  
+    &lt;html&gt; 
+       &lt;head&gt; 
+       &lt;title&gt;CSS Lists&lt;/title&gt;
+          &lt;style&gt; 
+          .order{
+            list-style: upper-alpha;
+            background: pink;
+            padding:20px;
+          }
+          .order li{
+          background: lightblue;
+          padding:10px;
+          font-size:20px;
+          margin:10px;
+          }
+          .unorder{
+            list-style: square inside; 	
+            background: cyan;
+            padding:20px;
+          }
+          .unorder li{
+          background: green;
+          color:white;
+          padding:10px;
+          font-size:20px;
+          margin:10px;
+          }
+    
+          &lt;/style&gt; 
+       &lt;/head&gt; 
+       &lt;body&gt; 
+          &lt;h1&gt; 
+             Welcome to the javaTpoint.com 
+          &lt;/h1&gt; 
+                &lt;h2&gt; 
+             Ordered Lists 
+          &lt;/h2&gt; 
+          &lt;ol class="order"&gt; 
+             &lt;li&gt;ONE&lt;/li&gt; 
+             &lt;li&gt;TWO&lt;/li&gt; 
+             &lt;li&gt;THREE&lt;/li&gt; 
+          &lt;/ol&gt; 
+          &lt;h2&gt; 
+             Unordered lists 
+          &lt;/h2&gt; 
+          &lt;ul class="unorder"&gt; 
+             &lt;li&gt;ONE&lt;/li&gt; 
+             &lt;li&gt;TWO&lt;/li&gt; 
+             &lt;li&gt;THREE&lt;/li&gt; 
+          &lt;/ul&gt; 
+    
+       &lt;/body&gt; 
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=CSSLists5" target="_blank">Test it Now</a></span>
+    <br>
+    <hr/>
+   </div>
+   <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+       <a href="28_text_decoration.html"><button class="btn btn-danger" type="button">Previous</button></a>
+       <a href="30_navigation_bar.html"><button class="btn btn-success" type="button">Next</button></a>
+   </div>
+   <footer>
+       <div class="container-fluid bg-dark text-bg-dark"
+           style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+           Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+       </div>
+   </footer>
+   </body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+   crossorigin="anonymous"></script>
+</html>

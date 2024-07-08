@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionality Reduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item active-submenu" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Introduction to Dimensionality Reduction Technique</h1>
+    <h2 class="h2">What is Dimensionality Reduction?</h2>
+    <p>The number of input features, variables, or columns present in a given dataset is known as dimensionality, and
+        the process to reduce these features is called dimensionality reduction.</p>
+    <p>A dataset contains a huge number of input features in various cases, which makes the predictive modeling task
+        more complicated. Because it is very difficult to visualize or make predictions for the training dataset with a
+        high number of features, for such cases, dimensionality reduction techniques are required to use.</p>
+    <p>Dimensionality reduction technique can be defined as, <strong><em>"It is a way of converting the higher
+                dimensions dataset into lesser dimensions dataset ensuring that it provides similar
+                information."</em></strong> These techniques are widely used in <a
+            href="https://www.javatpoint.com/machine-learning">machine learning</a> for obtaining a better fit
+        predictive model while solving the classification and regression problems.</p>
+    <p>It is commonly used in the fields that deal with high-dimensional data, such as <strong>speech recognition,
+            signal processing, bioinformatics, etc. It can also be used for data visualization, noise reduction, cluster
+            analysis</strong>, etc.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/dimensionality-reduction-technique.png"
+        alt="Dimensionality Reduction Technique" />
+    <h2 class="h2">The Curse of Dimensionality</h2>
+    <p>Handling the high-dimensional data is very difficult in practice, commonly known as the <em>curse of
+            dimensionality.</em> If the dimensionality of the input dataset increases, any machine learning algorithm
+        and model becomes more complex. As the number of features increases, the number of samples also gets increased
+        proportionally, and the chance of overfitting also increases. If the machine learning model is trained on
+        high-dimensional data, it becomes overfitted and results in poor performance.</p>
+    <p>Hence, it is often required to reduce the number of features, which can be done with dimensionality reduction.
+    </p>
+    <h2 class="h2">Benefits of applying Dimensionality Reduction</h2>
+    <p>Some benefits of applying dimensionality reduction technique to the given dataset are given below:</p>
+    <ul class="points">
+        <li>By reducing the dimensions of the features, the space required to store the dataset also gets reduced.</li>
+        <li>Less Computation training time is required for reduced dimensions of features.</li>
+        <li>Reduced dimensions of features of the dataset help in visualizing the data quickly.</li>
+        <li><strong>I</strong>t removes the redundant features (if present) by taking care of multicollinearity.</li>
+    </ul>
+    <h2 class="h2">Disadvantages of dimensionality Reduction</h2>
+    <p>There are also some disadvantages of applying the dimensionality reduction, which are given below:</p>
+    <ul class="points">
+        <li>Some data may be lost due to dimensionality reduction.</li>
+        <li>In the PCA dimensionality reduction technique, sometimes the principal components required to consider are
+            unknown.</li>
+    </ul>
+    <h2 class="h2">Approaches of Dimension Reduction</h2>
+    <p>There are two ways to apply the dimension reduction technique, which are given below:</p>
+    <h3 class="h3">Feature Selection</h3>
+    <p>Feature selection is the process of selecting the subset of the relevant features and leaving out the irrelevant
+        features present in a dataset to build a model of high accuracy. In other words, it is a way of selecting the
+        optimal features from the input dataset.</p>
+    <p>Three methods are used for the feature selection:</p>
+    <p><strong>1. Filters Methods</strong></p>
+    <p>In this method, the dataset is filtered, and a subset that contains only the relevant features is taken. Some
+        common techniques of filters method are:</p>
+    <ul class="points">
+        <li><strong>Correlation</strong></li>
+        <li><strong>Chi-Square Test</strong></li>
+        <li><strong>ANOVA</strong></li>
+        <li><strong>Information Gain, etc.</strong> </li>
+    </ul>
+    <p><strong>2. Wrappers Methods</strong></p>
+    <p>The wrapper method has the same goal as the filter method, but it takes a machine learning model for its
+        evaluation. In this method, some features are fed to the ML model, and evaluate the performance. The performance
+        decides whether to add those features or remove to increase the accuracy of the model. This method is more
+        accurate than the filtering method but complex to work. Some common techniques of wrapper methods are:</p>
+    <ul class="points">
+        <li>Forward Selection</li>
+        <li>Backward Selection</li>
+        <li>Bi-directional Elimination</li>
+    </ul>
+    <p><strong>3. Embedded Methods:</strong> Embedded methods check the different training iterations of the machine
+        learning model and evaluate the importance of each feature. Some common techniques of Embedded methods are:</p>
+    <ul class="points">
+        <li><strong>LASSO</strong></li>
+        <li><strong>Elastic Net</strong></li>
+        <li><strong>Ridge Regression, etc.</strong> </li>
+    </ul>
+    <h3 class="h3">Feature Extraction:</h3>
+    <p>Feature extraction is the process of transforming the space containing many dimensions into space with fewer
+        dimensions. This approach is useful when we want to keep the whole information but use fewer resources while
+        processing the information.</p>
+    <p>Some common feature extraction techniques are:</p>
+    <ol class="pointsa">
+        <li>Principal Component Analysis</li>
+        <li>Linear Discriminant Analysis</li>
+        <li>Kernel PCA</li>
+        <li>Quadratic Discriminant Analysis</li>
+    </ol>
+    <h2 class="h2">Common techniques of Dimensionality Reduction</h2>
+    <ol class="pointsa">
+        <li><strong>Principal Component Analysis</strong></li>
+        <li><strong>Backward Elimination</strong></li>
+        <li><strong>Forward Selection</strong></li>
+        <li><strong>Score comparison</strong></li>
+        <li><strong>Missing Value Ratio</strong></li>
+        <li><strong>Low Variance Filter</strong></li>
+        <li><strong>High Correlation Filter</strong></li>
+        <li><strong>Random Forest</strong></li>
+        <li><strong>Factor Analysis</strong></li>
+        <li><strong>Auto-Encoder</strong></li>
+    </ol>
+    <h3 class="h3">Principal Component Analysis (PCA)</h3>
+    <p>Principal Component Analysis is a statistical process that converts the observations of correlated features into
+        a set of linearly uncorrelated features with the help of orthogonal transformation. These new transformed
+        features are called the <strong>Principal Components</strong>. It is one of the popular tools that is used for
+        exploratory data analysis and predictive modeling.</p>
+    <p>PCA works by considering the variance of each attribute because the high attribute shows the good split between
+        the classes, and hence it reduces the dimensionality. Some real-world applications of PCA are <strong><em>image
+                processing, movie recommendation system, optimizing the power allocation in various communication
+                channels.</em></strong></p>
+    <h3 class="h3">Backward Feature Elimination</h3>
+    <p>The backward feature elimination technique is mainly used while developing Linear Regression or Logistic
+        Regression model. Below steps are performed in this technique to reduce the dimensionality or in feature
+        selection:</p>
+    <ul class="points">
+        <li>In this technique, firstly, all the n variables of the given dataset are taken to train the model.</li>
+        <li>The performance of the model is checked.</li>
+        <li>Now we will remove one feature each time and train the model on n-1 features for n times, and will compute
+            the performance of the model.</li>
+        <li>We will check the variable that has made the smallest or no change in the performance of the model, and then
+            we will drop that variable or features; after that, we will be left with n-1 features.</li>
+        <li>Repeat the complete process until no feature can be dropped.</li>
+    </ul>
+    <p>In this technique, by selecting the optimum performance of the model and maximum tolerable error rate, we can
+        define the optimal number of features require for the machine learning algorithms.</p>
+    <h3 class="h3">Forward Feature Selection</h3>
+    <p>Forward feature selection follows the inverse process of the backward elimination process. It means, in this
+        technique, we don't eliminate the feature; instead, we will find the best features that can produce the highest
+        increase in the performance of the model. Below steps are performed in this technique:</p>
+    <ul class="points">
+        <li>We start with a single feature only, and progressively we will add each feature at a time.</li>
+        <li>Here we will train the model on each feature separately.</li>
+        <li>The feature with the best performance is selected.</li>
+        <li>The process will be repeated until we get a significant increase in the performance of the model.</li>
+    </ul>
+    <h3 class="h3">Missing Value Ratio</h3>
+    <p>If a dataset has too many missing values, then we drop those variables as they do not carry much useful
+        information. To perform this, we can set a threshold level, and if a variable has missing values more than that
+        threshold, we will drop that variable. The higher the threshold value, the more efficient the reduction.</p>
+    <h3 class="h3">Low Variance Filter</h3>
+    <p>As same as missing value ratio technique, data columns with some changes in the data have less information.
+        Therefore, we need to calculate the variance of each variable, and all data columns with variance lower than a
+        given threshold are dropped because low variance features will not affect the target variable.</p>
+    <h3 class="h3">High Correlation Filter</h3>
+    <p>High Correlation refers to the case when two variables carry approximately similar information. Due to this
+        factor, the performance of the model can be degraded. This correlation between the independent numerical
+        variable gives the calculated value of the correlation coefficient. If this value is higher than the threshold
+        value, we can remove one of the variables from the dataset. We can consider those variables or features that
+        show a high correlation with the target variable.</p>
+    <h3 class="h3">Random Forest</h3>
+    <p>Random Forest is a popular and very useful feature selection algorithm in machine learning. This algorithm
+        contains an in-built feature importance package, so we do not need to program it separately. In this technique,
+        we need to generate a large set of trees against the target variable, and with the help of usage statistics of
+        each attribute, we need to find the subset of features.</p>
+    <p>Random forest algorithm takes only numerical variables, so we need to convert the input data into numeric data
+        using <strong>hot encoding</strong>.</p>
+    <h3 class="h3">Factor Analysis</h3>
+    <p>Factor analysis is a technique in which each variable is kept within a group according to the correlation with
+        other variables, it means variables within a group can have a high correlation between themselves, but they have
+        a low correlation with variables of other groups.</p>
+    <p>We can understand it by an example, such as if we have two variables Income and spend. These two variables have a
+        high correlation, which means people with high income spends more, and vice versa. So, such variables are put
+        into a group, and that group is known as the <strong>factor</strong>. The number of these factors will be
+        reduced as compared to the original dimension of the dataset.</p>
+    <h3 class="h3">Auto-encoders</h3>
+    <p>One of the popular methods of dimensionality reduction is auto-encoder, which is a type of ANN or <a
+            href="https://www.javatpoint.com/artificial-neural-network">artificial neural network</a>, and its main aim
+        is to copy the inputs to their outputs. In this, the input is compressed into latent-space representation, and
+        output is occurred using this representation. It has mainly two parts:</p>
+    <ul class="points">
+        <li><strong>Encoder:</strong> The function of the encoder is to compress the input to form the latent-space
+            representation.</li>
+        <li><strong>Decoder:</strong> The function of the decoder is to recreate the output from the latent-space
+            representation.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="28_cross_validation.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="30_overfitting_underfitting.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

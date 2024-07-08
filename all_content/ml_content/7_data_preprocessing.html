@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data preprocessing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item active-submenu" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Data Preprocessing in Machine learning</h1>
+    <p>Data preprocessing is a process of preparing the raw data and making it suitable for a machine learning model. It
+        is the first and crucial step while creating a machine learning model. </p>
+    <p>When creating a machine learning project, it is not always a case that we come across the clean and formatted
+        data. And while doing any operation with data, it is mandatory to clean it and put in a formatted way. So for
+        this, we use data preprocessing task.</p>
+    <h2 class="h2">Why do we need Data Preprocessing?</h2>
+    <p>A real-world data generally contains noises, missing values, and maybe in an unusable format which cannot be
+        directly used for machine learning models. Data preprocessing is required tasks for cleaning the data and making
+        it suitable for a machine learning model which also increases the accuracy and efficiency of a machine learning
+        model. </p>
+    <p>It involves below steps: </p>
+    <ul class="points">
+        <li><strong>Getting the dataset</strong></li>
+        <li><strong>Importing libraries</strong></li>
+        <li><strong>Importing datasets</strong></li>
+        <li><strong>Finding Missing Data</strong></li>
+        <li><strong>Encoding Categorical Data</strong></li>
+        <li><strong>Splitting dataset into training and test set</strong></li>
+        <li><strong>Feature scaling</strong></li>
+    </ul>
+    <hr />
+    <h2 class="h2">1) Get the Dataset</h2>
+    <p>To create a machine learning model, the first thing we required is a dataset as a machine learning model
+        completely works on data. The collected data for a particular problem in a proper format is known as the
+        <strong>dataset</strong>.
+    </p>
+    <p>Dataset may be of different formats for different purposes, such as, if we want to create a machine learning
+        model for business purpose, then dataset will be different with the dataset required for a liver patient. So
+        each dataset is different from another dataset. To use the dataset in our code, we usually put it into a CSV
+        <strong>file</strong>. However, sometimes, we may also need to use an HTML or xlsx file.
+    </p>
+    <h3 class="h3">What is a CSV File?</h3>
+    <p>CSV stands for "<strong>Comma-Separated Values</strong>" files; it is a file format which allows us to save the
+        tabular data, such as spreadsheets. It is useful for huge datasets and can use these datasets in programs.</p>
+    <p>Here we will use a demo dataset for data preprocessing, and for practice, it can be downloaded from here, "<a
+            href="https://www.superdatascience.com/pages/machine-learning" rel="nofollow"
+            target="_blank">https://www.superdatascience.com/pages/machine-learning</a>. For real-world problems, we can
+        download datasets online from various sources such as <a href="https://www.kaggle.com/uciml/datasets"
+            rel="nofollow" target="_blank">https://www.kaggle.com/uciml/datasets</a>, <a
+            href="https://archive.ics.uci.edu/ml/index.php" rel="nofollow"
+            target="_blank">https://archive.ics.uci.edu/ml/index.php</a> etc. </p>
+    <p>We can also create our dataset by gathering data using various API with Python and put that data into a .csv
+        file. </p>
+    <h2 class="h2">2) Importing Libraries</h2>
+    <p>In order to perform data preprocessing using Python, we need to import some predefined Python libraries. These
+        libraries are used to perform some specific jobs. There are three specific libraries that we will use for data
+        preprocessing, which are:</p>
+    <p><strong>Numpy:</strong> Numpy Python library is used for including any type of mathematical operation in the
+        code. It is the fundamental package for scientific calculation in Python. It also supports to add large,
+        multidimensional arrays and matrices. So, in Python, we can import it as:</p>
+    <div class="codeblock"><textarea name="code" class="html">
+import numpy as nm
+</textarea></div>
+    <p>Here we have used <strong>nm</strong>, which is a short name for Numpy, and it will be used in the whole program.
+    </p>
+    <p><strong>Matplotlib:</strong> The second library is <strong>matplotlib</strong>, which is a Python 2D plotting
+        library, and with this library, we need to import a sub-library <strong>pyplot</strong>. This library is used to
+        plot any type of charts in Python for the code. It will be imported as below: </p>
+    <div class="codeblock"><textarea name="code" class="html">
+import matplotlib.pyplot as mpt
+</textarea></div>
+    <p>Here we have used mpt as a short name for this library. </p>
+    <p><strong>Pandas:</strong> The last library is the Pandas library, which is one of the most famous Python libraries
+        and used for importing and managing the datasets. It is an open-source data manipulation and analysis library.
+        It will be imported as below:</p>
+    <p>Here, we have used pd as a short name for this library. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning.png"
+        alt="Data Preprocessing in Machine learning" />
+    <h2 class="h2">3) Importing the Datasets</h2>
+    <p>Now we need to import the datasets which we have collected for our machine learning project. But before importing
+        a dataset, we need to set the current directory as a working directory. To set a working directory in Spyder
+        IDE, we need to follow the below steps: </p>
+    <ol class="points">
+        <li>Save your Python file in the directory which contains dataset. </li>
+        <li>Go to File explorer option in Spyder IDE, and select the required directory.</li>
+        <li>Click on F5 button or run option to execute the file. </li>
+    </ol>
+    <h4 class="n"><span class="bold">Note:</span> We can set any directory as a working directory, but it must contain
+        the required dataset.</h4>
+    <p>Here, in the below image, we can see the Python file along with required dataset. Now, the current folder is set
+        as a working directory. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-1.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p><strong>read_csv() function:</strong></p>
+    <p>Now to import the dataset, we will use <storng>read_csv()</strong> function of pandas library, which is used to
+            read a <storng>csv</storng> file and performs various operations on it. Using this function, we can read a
+            csv file locally as well as through an URL. </p>
+    <p>We can use read_csv function as below:</p>
+    <div class="codeblock"><textarea name="code" class="html">
+data_set= pd.read_csv('Dataset.csv')
+</textarea></div>
+    <p>Here, <strong>data_set</strong> is a name of the variable to store our dataset, and inside the function, we have
+        passed the name of our dataset. Once we execute the above line of code, it will successfully import the dataset
+        in our code. We can also check the imported dataset by clicking on the section <strong>variable
+            explorer</strong>, and then double click on <strong>data_set</strong>. Consider the below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-2.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p>As in the above image, indexing is started from 0, which is the default indexing in Python. We can also change
+        the format of our dataset by clicking on the format option. </p>
+    <p class="pq"><strong>Extracting dependent and independent variables:</strong></p>
+    <p>In machine learning, it is important to distinguish the matrix of features (independent variables) and dependent
+        variables from dataset. In our dataset, there are three independent variables that are <strong>Country,
+            Age</strong>, and <strong>Salary</strong>, and one is a dependent variable which is
+        <strong>Purchased</strong>.
+    </p>
+    <p><strong>Extracting independent variable:</strong></p>
+    <p>To extract an independent variable, we will use <strong>iloc[ ] </strong> method of Pandas library. It is used to
+        extract the required rows and columns from the dataset. </p>
+    <div class="codeblock"><textarea name="code" class="html">
+x= data_set.iloc[:,:-1].values
+</textarea></div>
+    <p>In the above code, the first colon(:) is used to take all the rows, and the second colon(:) is for all the
+        columns. Here we have used :-1, because we don't want to take the last column as it contains the dependent
+        variable. So by doing this, we will get the matrix of features.</p>
+    <p>By executing the above code, we will get output as:</p>
+    <div class="codeblock"><textarea name="code" class="html">
+[['India' 38.0 68000.0]
+ ['France' 43.0 45000.0]
+ ['Germany' 30.0 54000.0]
+ ['France' 48.0 65000.0]
+ ['Germany' 40.0 nan]
+ ['India' 35.0 58000.0]
+ ['Germany' nan 53000.0]
+ ['France' 49.0 79000.0]
+ ['India' 50.0 88000.0]
+ ['France' 37.0 77000.0]]
+</textarea></div>
+    <p>As we can see in the above output, there are only three variables. </p>
+    <p><strong>Extracting dependent variable:</strong></p>
+    <p>To extract dependent variables, again, we will use Pandas .iloc[] method. </p>
+    <div class="codeblock"><textarea name="code" class="html">
+y= data_set.iloc[:,3].values
+</textarea></div>
+    <p>Here we have taken all the rows with the last column only. It will give the array of dependent variables. </p>
+    <p>By executing the above code, we will get output as:</p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+array(['No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'Yes', 'No', 'Yes'],
+      dtype=object)
+</pre>
+    </div>
+    <h4 class="n"><span class="bold">Note:</span> If you are using Python language for machine learning, then extraction
+        is mandatory, but for R language it is not required.</h4>
+    <h2 class="h2">4) Handling Missing data:</h2>
+    <p>The next step of data preprocessing is to handle missing data in the datasets. If our dataset contains some
+        missing data, then it may create a huge problem for our machine learning model. Hence it is necessary to handle
+        missing values present in the dataset.</p>
+    <p class="pq"><strong>Ways to handle missing data:</strong></p>
+    <p>There are mainly two ways to handle missing data, which are:</p>
+    <p><strong>By deleting the particular row:</strong> The first way is used to commonly deal with null values. In this
+        way, we just delete the specific row or column which consists of null values. But this way is not so efficient
+        and removing data may lead to loss of information which will not give the accurate output.</p>
+    <p><strong>By calculating the mean:</strong> In this way, we will calculate the mean of that column or row which
+        contains any missing value and will put it on the place of missing value. This strategy is useful for the
+        features which have numeric data such as age, salary, year, etc. Here, we will use this approach. </p>
+    <p>To handle missing values, we will use <strong>Scikit-learn</strong> library in our code, which contains various
+        libraries for building machine learning models. Here we will use <strong> Imputer</strong> class of
+        <strong>sklearn.preprocessing</strong> library. Below is the code for it:
+    </p>
+    <div class="codeblock"><textarea name="code" class="html">
+#handling missing data (Replacing missing data with the mean value)
+from sklearn.preprocessing import Imputer
+imputer= Imputer(missing_values ='NaN', strategy='mean', axis = 0)
+#Fitting imputer object to the independent variables x. 
+imputer= imputer.fit(x[:, 1:3])
+#Replacing missing data with the calculated mean value
+x[:, 1:3]= imputer.transform(x[:, 1:3])
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+array([['India', 38.0, 68000.0],
+       ['France', 43.0, 45000.0],
+       ['Germany', 30.0, 54000.0],
+       ['France', 48.0, 65000.0],
+       ['Germany', 40.0, 65222.22222222222],
+       ['India', 35.0, 58000.0],
+       ['Germany', 41.111111111111114, 53000.0],
+       ['France', 49.0, 79000.0],
+       ['India', 50.0, 88000.0],
+       ['France', 37.0, 77000.0]], dtype=object
+</pre>
+    </div>
+    <p>As we can see in the above output, the missing values have been replaced with the means of rest column values.
+    </p>
+    <h2 class="h2">5) Encoding Categorical data:</h2>
+    <p>Categorical data is data which has some categories such as, in our dataset; there are two categorical variable,
+        <strong>Country</strong>, and <strong>Purchased</strong>.
+    </p>
+    <p>Since machine learning model completely works on mathematics and numbers, but if our dataset would have a
+        categorical variable, then it may create trouble while building the model. So it is necessary to encode these
+        categorical variables into numbers. </p>
+    <p class="pq"><strong>For Country variable:</strong></p>
+    <p>Firstly, we will convert the country variables into categorical data. So to do this, we will use
+        <strong>LabelEncoder()</strong> class from <strong>preprocessing</strong> library.
+    </p>
+    <div class="codeblock"><textarea name="code" class="html">
+#Catgorical data
+#for Country Variable
+from sklearn.preprocessing import LabelEncoder
+label_encoder_x= LabelEncoder()
+x[:, 0]= label_encoder_x.fit_transform(x[:, 0])
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[15]: 
+  array([[2, 38.0, 68000.0],
+            [0, 43.0, 45000.0],
+         [1, 30.0, 54000.0],
+         [0, 48.0, 65000.0],
+         [1, 40.0, 65222.22222222222],
+         [2, 35.0, 58000.0],
+         [1, 41.111111111111114, 53000.0],
+         [0, 49.0, 79000.0],
+         [2, 50.0, 88000.0],
+        [0, 37.0, 77000.0]], dtype=object)
+</pre>
+    </div>
+    <p class="pq"><strong>Explanation:</strong></p>
+    <p>In above code, we have imported <strong>LabelEncoder</strong> class of <strong>sklearn library</strong>. This
+        class has successfully encoded the variables into digits. </p>
+    <p>But in our case, there are three country variables, and as we can see in the above output, these variables are
+        encoded into 0, 1, and 2. By these values, the machine learning model may assume that there is some correlation
+        between these variables which will produce the wrong output. So to remove this issue, we will use <strong>dummy
+            encoding</strong>. </p>
+    <p class="pq"><strong>Dummy Variables: </strong></p>
+    <p>Dummy variables are those variables which have values 0 or 1. The 1 value gives the presence of that variable in
+        a particular column, and rest variables become 0. With dummy encoding, we will have a number of columns equal to
+        the number of categories. </p>
+    <p>In our dataset, we have 3 categories so it will produce three columns having 0 and 1 values. For Dummy Encoding,
+        we will use <strong>OneHotEncoder</strong> class of <strong>preprocessing</strong> library. </p>
+    <div class="codeblock"><textarea name="code" class="html">
+#for Country Variable
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+label_encoder_x= LabelEncoder()
+x[:, 0]= label_encoder_x.fit_transform(x[:, 0])
+#Encoding for dummy variables
+onehot_encoder= OneHotEncoder(categorical_features= [0])  
+x= onehot_encoder.fit_transform(x).toarray()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+array([[0.00000000e+00, 0.00000000e+00, 1.00000000e+00, 3.80000000e+01,
+        6.80000000e+04],
+       [1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 4.30000000e+01,
+        4.50000000e+04],
+       [0.00000000e+00, 1.00000000e+00, 0.00000000e+00, 3.00000000e+01,
+        5.40000000e+04],
+       [1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 4.80000000e+01,
+        6.50000000e+04],
+       [0.00000000e+00, 1.00000000e+00, 0.00000000e+00, 4.00000000e+01,
+        6.52222222e+04],
+       [0.00000000e+00, 0.00000000e+00, 1.00000000e+00, 3.50000000e+01,
+        5.80000000e+04],
+       [0.00000000e+00, 1.00000000e+00, 0.00000000e+00, 4.11111111e+01,
+        5.30000000e+04],
+       [1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 4.90000000e+01,
+        7.90000000e+04],
+       [0.00000000e+00, 0.00000000e+00, 1.00000000e+00, 5.00000000e+01,
+        8.80000000e+04],
+       [1.00000000e+00, 0.00000000e+00, 0.00000000e+00, 3.70000000e+01,
+        7.70000000e+04]])
+</pre>
+    </div>
+    <p>As we can see in the above output, all the variables are encoded into numbers 0 and 1 and divided into three
+        columns. </p>
+    <p>It can be seen more clearly in the variables explorer section, by clicking on x option as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-3.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p class="pq"><strong>For Purchased Variable:</strong></p>
+    <div class="codeblock"><textarea name="code" class="html">
+labelencoder_y= LabelEncoder()
+y= labelencoder_y.fit_transform(y)
+</textarea></div>
+    <p>For the second categorical variable, we will only use labelencoder object of <strong>LableEncoder</strong> class.
+        Here we are not using <strong>OneHotEncoder</strong> class because the purchased variable has only two
+        categories yes or no, and which are automatically encoded into 0 and 1. </p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+Out[17]: array([0, 1, 0, 0, 1, 1, 0, 1, 0, 1])
+</pre>
+    </div>
+    <p><strong>It can also be seen as:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-4.png"
+        alt="Data Preprocessing in Machine learning" />
+    <h2 class="h2">6) Splitting the Dataset into the Training set and Test set</h2>
+    <p>In machine learning data preprocessing, we divide our dataset into a training set and test set. This is one of
+        the crucial steps of data preprocessing as by doing this, we can enhance the performance of our machine learning
+        model. </p>
+    <p>Suppose, if we have given training to our machine learning model by a dataset and we test it by a completely
+        different dataset. Then, it will create difficulties for our model to understand the correlations between the
+        models. </p>
+    <p>If we train our model very well and its training accuracy is also very high, but we provide a new dataset to it,
+        then it will decrease the performance. So we always try to make a machine learning model which performs well
+        with the training set and also with the test dataset. Here, we can define these datasets as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-5.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p><strong>Training Set:</strong> A subset of dataset to train the machine learning model, and we already know the
+        output. </p>
+    <p><strong>Test set:</strong> A subset of dataset to test the machine learning model, and by using the test set,
+        model predicts the output. </p>
+    <p>For splitting the dataset, we will use the below lines of code:</p>
+    <div class="codeblock"><textarea name="code" class="html">
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.2, random_state=0)
+</textarea></div>
+    <p class="pq"><strong>Explanation:</strong></p>
+    <ul class="points">
+        <li>In the above code, the first line is used for splitting arrays of the dataset into random train and test
+            subsets. </li>
+        <li>In the second line, we have used four variables for our output that are
+            <ul class="points">
+                <li><strong>x_train:</strong> features for the training data</li>
+                <li><strong>x_test:</strong> features for testing data</li>
+                <li><strong>y_train:</strong> Dependent variables for training data</li>
+                <li><strong>y_test:</strong> Independent variable for testing data</li>
+            </ul>
+        </li>
+        <li>In <strong>train_test_split() function</strong>, we have passed four parameters in which first two are for
+            arrays of data, and <strong>test_size</strong> is for specifying the size of the test set. The test_size
+            maybe .5, .3, or .2, which tells the dividing ratio of training and testing sets. </li>
+        <li>The last parameter <strong>random_state</strong> is used to set a seed for a random generator so that you
+            always get the same result, and the most used value for this is 42. </li>
+    </ul>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above code, we will get 4 different variables, which can be seen under the variable explorer
+        section. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-6.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p>As we can see in the above image, the x and y variables are divided into 4 different variables with corresponding
+        values. </p>
+    <h2 class="h2">7) Feature Scaling</h2>
+    <p>Feature scaling is the final step of data preprocessing in machine learning. It is a technique to standardize the
+        independent variables of the dataset in a specific range. In feature scaling, we put our variables in the same
+        range and in the same scale so that no any variable dominate the other variable. </p>
+    <p class="pq">Consider the below dataset:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-7.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p>As we can see, the age and salary column values are not on the same scale. A machine learning model is based on
+        <strong>Euclidean distance</strong>, and if we do not scale the variable, then it will cause some issue in our
+        machine learning model.
+    </p>
+    <p>Euclidean distance is given as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-8.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p>If we compute any two values from age and salary, then salary values will dominate the age values, and it will
+        produce an incorrect result. So to remove this issue, we need to perform feature scaling for machine learning.
+    </p>
+    <p>There are two ways to perform feature scaling in machine learning:</p>
+    <p class="pq"><strong>Standardization</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-9.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p class="pq"><strong>Normalization</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-10.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p>Here, we will use the standardization method for our dataset. </p>
+    <p>For feature scaling, we will import <strong><em>StandardScaler</em></strong> class of
+        <strong><em>sklearn.preprocessing</em></strong> library as:
+    </p>
+    <div class="codeblock"><textarea name="code" class="html">
+from sklearn.preprocessing import StandardScaler
+</textarea></div>
+    <p>Now, we will create the object of <strong>StandardScaler</strong> class for independent variables or features.
+        And then we will fit and transform the training dataset. </p>
+    <div class="codeblock"><textarea name="code" class="html">
+st_x= StandardScaler()
+x_train= st_x.fit_transform(x_train)
+</textarea></div>
+    <p>For test dataset, we will directly apply <strong>transform()</strong> function instead of
+        <strong>fit_transform()</strong> because it is already done in training set.
+    </p>
+    <div class="codeblock"><textarea name="code" class="html">
+x_test= st_x.transform(x_test)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>By executing the above lines of code, we will get the scaled values for x_train and x_test as: </p>
+    <p class="pq"><strong>x_train:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-11.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p class="pq"><strong>x_test:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-preprocessing-machine-learning-12.png"
+        alt="Data Preprocessing in Machine learning" />
+    <p>As we can see in the above output, all the variables are scaled between values -1 to 1. </p>
+    <h4 class="n"><span class="bold">Note:</span> Here, we have not scaled the dependent variable because there are only
+        two values 0 and 1. But if these variables will have more range of values, then we will also need to scale those
+        variables.</h4>
+    <p class="pq"><strong>Combining all the steps:</strong></p>
+    <p>Now, in the end, we can combine all the steps together to make our complete code more understandable. </p>
+    <div class="codeblock"><textarea name="code" class="html">
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('Dataset.csv')
+
+#Extracting Independent Variable
+x= data_set.iloc[:, :-1].values
+
+#Extracting Dependent variable
+y= data_set.iloc[:, 3].values
+
+#handling missing data(Replacing missing data with the mean value)
+from sklearn.preprocessing import Imputer
+imputer= Imputer(missing_values ='NaN', strategy='mean', axis = 0)
+
+#Fitting imputer object to the independent varibles x. 
+imputer= imputer.fit(x[:, 1:3])
+
+#Replacing missing data with the calculated mean value
+x[:, 1:3]= imputer.transform(x[:, 1:3])
+
+#for Country Variable
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+label_encoder_x= LabelEncoder()
+x[:, 0]= label_encoder_x.fit_transform(x[:, 0])
+
+#Encoding for dummy variables
+onehot_encoder= OneHotEncoder(categorical_features= [0])  
+x= onehot_encoder.fit_transform(x).toarray()
+
+#encoding for purchased variable
+labelencoder_y= LabelEncoder()
+y= labelencoder_y.fit_transform(y)
+
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.2, random_state=0)
+
+#Feature Scaling of datasets
+from sklearn.preprocessing import StandardScaler
+st_x= StandardScaler()
+x_train= st_x.fit_transform(x_train)
+x_test= st_x.transform(x_test)
+</textarea></div>
+    <p>In the above code, we have included all the data preprocessing steps together. But there are some steps or lines
+        of code which are not necessary for all machine learning models. So we can exclude them from our code to make it
+        reusable for all models. </p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="6_datasets.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="8_supervised_learning.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

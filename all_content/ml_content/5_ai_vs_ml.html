@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence vs Machine Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item active-submenu" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Difference between Artificial intelligence and Machine learning</h1>
+    <p>Artificial intelligence and machine learning are the part of computer science that are correlated with each
+        other. These two technologies are the most trending technologies which are used for creating intelligent
+        systems.</p>
+    <p>Although these are two related technologies and sometimes people use them as a synonym for each other, but still
+        both are the two different terms in various cases.</p>
+    <p>On a broad level, we can differentiate both AI and ML as:</p>
+    <blockquote><em>AI is a bigger concept to create intelligent machines that can simulate human thinking capability
+            and behavior, whereas, machine learning is an application or subset of AI that allows machines to learn from
+            data without being programmed explicitly.</em></blockquote>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/ai-vs-machine-learning.png"
+        alt="Artificial intelligence vs Machine learning" />
+    <p>Below are some main differences between AI and machine learning along with the overview of Artificial
+        intelligence and machine learning. </p>
+    <hr />
+    <h2 class="h2">Artificial Intelligence</h2>
+    <p>Artificial intelligence is a field of computer science which makes a computer system that can mimic human
+        intelligence. It is comprised of two words "<strong>Artificial</strong>" and "<strong>intelligence</strong>",
+        which means "a human-made thinking power." Hence we can define it as,</p>
+    <blockquote><em>Artificial intelligence is a technology using which we can create intelligent systems that can
+            simulate human intelligence.</em></blockquote>
+    <p>The Artificial intelligence system does not require to be pre-programmed, instead of that, they use such
+        algorithms which can work with their own intelligence. It involves machine learning algorithms such as
+        Reinforcement learning algorithm and deep learning neural networks. AI is being used in multiple places such as
+        Siri, Google?s AlphaGo, AI in Chess playing, etc.</p>
+    <p>Based on capabilities, AI can be classified into three types:</p>
+    <ul class="points">
+        <li><strong>Weak AI</strong></li>
+        <li><strong>General AI</strong></li>
+        <li><strong>Strong AI</strong></li>
+    </ul>
+    <p>Currently, we are working with weak AI and general AI. The future of AI is Strong AI for which it is said that it
+        will be intelligent than humans. </p>
+    <hr />
+    <h2 class="h2">Machine learning</h2>
+    <p>Machine learning is about extracting knowledge from the data. It can be defined as,</p>
+    <blockquote><em>Machine learning is a subfield of artificial intelligence, which enables machines to learn from past
+            data or experiences without being explicitly programmed.</em></blockquote>
+    <p>Machine learning enables a computer system to make predictions or take some decisions using historical data
+        without being explicitly programmed. Machine learning uses a massive amount of structured and semi-structured
+        data so that a machine learning model can generate accurate result or give predictions based on that data.</p>
+    <p>Machine learning works on algorithm which learn by it?s own using historical data. It works only for specific
+        domains such as if we are creating a machine learning model to detect pictures of dogs, it will only give result
+        for dog images, but if we provide a new data like cat image then it will become unresponsive. Machine learning
+        is being used in various places such as for online recommender system, for Google search algorithms, Email spam
+        filter, Facebook Auto friend tagging suggestion, etc.</p>
+    <p>It can be divided into three types:</p>
+    <ul class="points">
+        <li><strong>Supervised learning</strong></li>
+        <li><strong>Reinforcement learning</strong></li>
+        <li><strong>Unsupervised learning</strong></li>
+    </ul>
+    <hr />
+    <h2 class="h2">Key differences between Artificial Intelligence (AI) and Machine learning (ML):</h2>
+    <table class="alt">
+        <tr>
+            <th>Artificial Intelligence</th>
+            <th>Machine learning</th>
+        </tr>
+        <tr>
+            <td>Artificial intelligence is a technology which enables a machine to simulate human behavior.</td>
+            <td>Machine learning is a subset of AI which allows a machine to automatically learn from past data without
+                programming explicitly.</td>
+        </tr>
+        <tr>
+            <td>The goal of AI is to make a smart computer system like humans to solve complex problems.</td>
+            <td>The goal of ML is to allow machines to learn from data so that they can give accurate output.</td>
+        </tr>
+        <tr>
+            <td>In AI, we make intelligent systems to perform any task like a human.</td>
+            <td>In ML, we teach machines with data to perform a particular task and give an accurate result.</td>
+        </tr>
+        <tr>
+            <td>Machine learning and deep learning are the two main subsets of AI.</td>
+            <td>Deep learning is a main subset of machine learning.</td>
+        </tr>
+        <tr>
+            <td>AI has a very wide range of scope.</td>
+            <td>Machine learning has a limited scope.</td>
+        </tr>
+        <tr>
+            <td>AI is working to create an intelligent system which can perform various complex tasks.</td>
+            <td>Machine learning is working to create machines that can perform only those specific tasks for which they
+                are trained.</td>
+        </tr>
+        <tr>
+            <td>AI system is concerned about maximizing the chances of success.</td>
+            <td>Machine learning is mainly concerned about accuracy and patterns.</td>
+        </tr>
+        <tr>
+            <td>The main applications of AI are <strong>Siri, customer support using catboats</strong>, Expert System,
+                Online game playing, intelligent humanoid robot, etc.</td>
+            <td>The main applications of machine learning are <strong>Online recommender system</strong>, <strong>Google
+                    search algorithms</strong>, <strong>Facebook auto friend tagging suggestions</strong>, etc.</td>
+        </tr>
+        <tr>
+            <td>On the basis of capabilities, AI can be divided into three types, which are, <strong>Weak AI</strong>,
+                <strong>General AI</strong>, and <strong>Strong AI</strong>.</td>
+            <td>Machine learning can also be divided into mainly three types that are <strong>Supervised
+                    learning</strong>, <strong>Unsupervised learning</strong>, and <strong>Reinforcement
+                    learning</strong>.</td>
+        </tr>
+        <tr>
+            <td>It includes learning, reasoning, and self-correction.</td>
+            <td>It includes learning and self-correction when introduced with new data.</td>
+        </tr>
+        <tr>
+            <td>AI completely deals with Structured, semi-structured, and unstructured data.</td>
+            <td>Machine learning deals with Structured and semi-structured data.</td>
+        </tr>
+    </table>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="4_installing_anaconda_python.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="6_datasets.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

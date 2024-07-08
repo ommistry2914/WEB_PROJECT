@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background size</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/1_introduction_to_CSS.html">Introduction to CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/2_What_is_CSS.html">What is Css?</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/3_CSS_Syntax.html">CSS Syntax</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/4_CSS_selector.html">CSS selector</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/5_How_to_add_CSS.html">How to add CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/6_Inline_CSS.html">Inline CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/7_Internal_CSS.html">Internal CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/8_External_CSS.html">External CSS</a></li>
+                                <li><a class="dropdown-item" href="../1_CSS_tutorial/9_Comments.html">Comments</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Properties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_background.html">Background</a></li>
+                                <li><a class="dropdown-item" href="2_border.html">Border</a></li>
+                                <li><a class="dropdown-item" href="3_border_radius.html">Border-radius</a></li>
+                                <li><a class="dropdown-item" href="4_border_collapse.html">Border-collapse</a></li>
+                                <li><a class="dropdown-item" href="5_display.html">Display</a></li>
+                                <li><a class="dropdown-item" href="6_Cursor.html">Cursor</a></li>
+                                <li><a class="dropdown-item" href="7_button.html">Button</a></li>
+                                <li><a class="dropdown-item" href="8_float.html">Float</a></li>
+                                <li><a class="dropdown-item" href="9_font.html">font</a></li>
+                                <li><a class="dropdown-item" href="10_fontsize.html">fontsize</a></li>
+                                <li><a class="dropdown-item" href="11_fontfamily.html">Font family</a></li>
+                                <li><a class="dropdown-item" href="12_fontweight.html">font weight</a></li>
+                                <li><a class="dropdown-item" href="13_colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="14_hover.html">Hover</a></li>
+                                <li><a class="dropdown-item" href="15_Important.html">important</a></li>
+                                <li><a class="dropdown-item" href="16_background_color.html">background-color</a></li>
+                                <li><a class="dropdown-item" href="17_background_attachment.html">background-attachment</a></li>
+                                <li><a class="dropdown-item active-submenu" href="18_background_size.html">Background size</a></li>
+                                <li><a class="dropdown-item" href="19_Margin.html">Margin</a></li>
+                                <li><a class="dropdown-item" href="20_opacity.html">Opacity</a></li>
+                                <li><a class="dropdown-item" href="21_Overflow.html">Overflow</a></li>
+                                <li><a class="dropdown-item" href="22_padding.html">Padding</a></li>
+                                <li><a class="dropdown-item" href="23_position.html">Position</a></li>
+                                <li><a class="dropdown-item" href="24_width.html">width</a></li>
+                                <li><a class="dropdown-item" href="25_text_shadow.html">Text Shadow</a></li>
+                                <li><a class="dropdown-item" href="26_icons.html">icons</a></li>
+                                <li><a class="dropdown-item" href="27_justify_content.html">Justify content</a></li>
+                                <li><a class="dropdown-item" href="28_text_decoration.html">text-decoration</a></li>
+                                <li><a class="dropdown-item" href="29_Lists.html">Lists</a></li>
+                                <li><a class="dropdown-item" href="30_navigation_bar.html">Navigation bar</a></li>
+                                <li><a class="dropdown-item" href="31_text_align.html">Text-align</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Advance
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/1_animation.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/2_keyframes.html">keyframes</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/3_pseudo_classes.html">pseudo class</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/4_pseudo_elements.html">Pseudo elements</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/5_radial_gradient.html">radial gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/6_gradient.html">Gradient</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/7_z-index.html">Z-index</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/8_flexbox.html">flexbox</a></li>
+                                <li><a class="dropdown-item" href="../3_CSS_Advance/9_media_query.html">media query</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CSS Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../4_CSS_design/1_css_grid.html">CSS grid</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/2_css_layout.html">CSS layout</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/3_css_table.html">CSS table</a></li>
+                                <li><a class="dropdown-item" href="../4_CSS_design/4_css_boxmodel.html">CSS Box model</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">CSS background-size property</h1>
+    <p>The <strong>background-size</strong> CSS property is used to set the size of a background image of an element. The background image can be stretched or constrained to fit into the existing space. It allows us to control the scaling of the background image.</p>
+    <p>This property can be defined using <strong>length, percentage,</strong> or <strong>keyword</strong> values. It has two possible keyword values that are <strong>contain</strong> and <strong>cover</strong>. Its single-value syntax defines the width of the image (in this case, the height sets to auto), whereas the double values define the value of both height and width in which the first value sets the width and second sets the height.</p>
+    <p>If an element has multiple background images, we can define the comma-separated values to define the different sizes of each one.</p>
+    <p>The <strong>cover</strong> value of the <strong>background-size</strong> property is used to cover the entire background area of the element. In contrast, the <strong>contain</strong> value of this property scales the image as much as possible without clipping the image.</p>
+    <h3 class="h3">Syntax</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    background-size: auto | length | cover | contain | initial | inherit;
+    </textarea></div>
+    <p>The values of this property are defined as follows.</p>
+    <h3 class="h3">Property Values</h3>
+    <p><strong>auto:</strong> This is the default value, which displays the background image in its original size.</p>
+    <p><strong>length:</strong> It is used to set the width and height of the background image. This value stretches the image in the corresponding dimension of the given length. Its single value specifies the width of the image, and the height sets to auto. If two values are given, the first value sets the width, and the second value sets the height. It does not allow negative values.</p>
+    <p><strong>percentage:</strong> This value defines the width and height of the background image to the percentage (%) of the background positioning area. Negative values are not allowed.</p>
+    <p><strong>cover:</strong> This value is used to resize the background image to cover the entire container. Sometimes, it crops the little bit off one of the edges or stretches the image. It resizes the image to ensure the element is completely covered.</p>
+    <p><strong>contain:</strong> Without stretching or cropping, it resizes the background image to ensure the image is completely visible.</p>
+    <p><strong>initial:</strong> It sets the property to its default value.</p>
+    <p><strong>inherit:</strong> It inherits the property from its parent element.</p>
+    <p>Let's understand this <a href="https://www.javatpoint.com/css-tutorial">CSS</a> property by using some illustrations.</p>
+    <h3 class="h3">Example</h3>
+    <p>In this example, there are three div elements with a width of 300px and a height of 200px. Every div element has a background-image on which we are applying the <strong>background-size</strong> property.</p>
+    <p>Here we are using the length and percentage values to set the background-size of div element. The <strong>background-size</strong> of first div element set to <strong>auto</strong>, second div element is set to <strong>150px 150px</strong>, and the <strong>background-size</strong> of third div element is set to <strong>30%</strong>.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-size property
+    &lt;/title&gt;
+    &lt;style&gt;
+    div {
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    }
+    #div1{
+    background-image: url('lion.png');
+    background-size: auto;
+    }
+    #div2{
+    background-image: url('lion.png');
+    background-size: 150px 150px;
+    }
+    #div3{
+    background-image: url('lion.png');
+    background-size: 30%;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h2&gt; background-size: auto; &lt;/h2&gt;
+    &lt;div id = "div1"&gt;&lt;/div&gt;
+    &lt;h2&gt; background-size: 150px 150px; &lt;/h2&gt;
+    &lt;div id = "div2"&gt;&lt;/div&gt;
+    &lt;h2&gt; background-size: 30%; &lt;/h2&gt;
+    &lt;div id = "div3"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-size-property1" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-size-property1.png" alt="CSS background-size property" />
+    <p>Now, in the next example, we are using the <strong>cover, contain,</strong> and <strong>initial</strong> values of the <strong>background-size</strong> property.</p>
+    <h3 class="h3">Example</h3>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-size property
+    &lt;/title&gt;
+    &lt;style&gt;
+    div {
+    width: 300px;
+    height: 250px;
+    border: 2px solid red;
+    background-repeat: no-repeat;
+    }
+    #div1{
+    background-image: url('lion.png');
+    background-size: contain;
+    }
+    #div2{
+    background-image: url('lion.png');
+    background-size: cover;
+    }
+    #div3{
+    background-image: url('lion.png');
+    background-size: initial;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h2&gt; background-size: contain; &lt;/h2&gt;
+    &lt;div id = "div1"&gt;&lt;/div&gt;
+    &lt;h2&gt; background-size: cover; &lt;/h2&gt;
+    &lt;div id = "div2"&gt;&lt;/div&gt;
+    &lt;h2&gt; background-size: initial; &lt;/h2&gt;
+    &lt;div id = "div3"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-size-property2" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-size-property2.png" alt="CSS background-size property" />
+    <h3 class="h3">Example - Combining multiple images</h3>
+    <p>We can also combine the values of this property and can apply them to multiple images. It can be done by comma-separated syntax.</p>
+    <p>In this example, there are three div elements, each having two background-images. Now, we are applying the <strong>background-size</strong> property on both images.</p>
+    <div class="codeblock"><textarea name="code" class="xml">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;
+    background-size property
+    &lt;/title&gt;
+    &lt;style&gt;
+    div {
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    #div1{
+    background-image: url('lion.png'), url('forest.jpg');
+    background-size: 300px 150px, cover;
+    }
+    #div2{
+    background-image: url('lion.png'), url('forest.jpg');
+    background-size: 200px 150px, 300px 200px;
+    }
+    #div3{
+    background-image: url('lion.png'), url('forest.jpg');
+    background-size: 150px 175px, contain;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+    &lt;h2&gt; background-size: 300px 150px, cover; &lt;/h2&gt;
+    &lt;div id = "div1"&gt;&lt;/div&gt;
+    &lt;h2&gt; background-size: 200px 150px, 300px 200px; &lt;/h2&gt;
+    &lt;div id = "div2"&gt;&lt;/div&gt;
+    &lt;h2&gt; background-size: 150px 175px, contain; &lt;/h2&gt;
+    &lt;div id = "div3"&gt;&lt;/div&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=css-background-size-property3" target="_blank">Test it Now</a></span>
+    <p><strong>Output</strong></p>
+    <img src="https://static.javatpoint.com/csspages/images/css-background-size-property3.png" alt="CSS background-size property" />
+    <hr/>
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+    <a href="17_background_attachment.html"><button class="btn btn-danger" type="button">Previous</button></a>
+    <a href="19_Margin.html"><button class="btn btn-success" type="button">Next</button></a>
+</div>
+<footer>
+    <div class="container-fluid bg-dark text-bg-dark"
+        style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+        Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

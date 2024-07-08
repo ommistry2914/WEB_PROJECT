@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>malloc vs new </title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item active-submenu" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">malloc() vs new in C++</h1>
+    <p>Both the <strong>malloc()</strong> and new in C++ are used for the same purpose. They are used for allocating
+        memory at the runtime. But, malloc() and new have different syntax. The main difference between the malloc() and
+        new is that the new is an operator while malloc() is a standard library function that is predefined in a
+        <strong>stdlib</strong> header file.</p>
+    <h3 class="h3">What is new?</h3>
+    <p>The new is a memory allocation operator, which is used to allocate the memory at the runtime. The memory
+        initialized by the new operator is allocated in a heap. It returns the starting address of the memory, which
+        gets assigned to the variable. The functionality of the new <a
+            href="https://www.javatpoint.com/cpp-operators">operator in C++</a> is similar to the malloc() function,
+        which was used in the <a href="https://www.javatpoint.com/c-programming-language-tutorial">C programming
+            language</a>. <a href="https://www.javatpoint.com/cpp-tutorial">C++</a> is compatible with the malloc()
+        function also, but the new operator is mostly used because of its advantages.</p>
+    <p><strong>Syntax of new operator</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+ type variable = new type(parameter_list);
+</textarea></div>
+    <p><strong>In the above syntax</strong></p>
+    <p><strong>type:</strong> It defines the datatype of the variable for which the memory is allocated by the new
+        operator.</p>
+    <p><strong>variable:</strong> It is the name of the variable that points to the memory.</p>
+    <p><strong>parameter_list:</strong> It is the list of values that are initialized to a variable.</p>
+    <p>The new operator does not use the sizeof() operator to allocate the memory. It also does not use the resize as
+        the new operator allocates sufficient memory for an object. It is a construct that calls the constructor at the
+        time of declaration to initialize an object.</p>
+    <p>As we know that the new operator allocates the memory in a heap; if the memory is not available in a heap and the
+        new operator tries to allocate the memory, then the exception is thrown. If our code is not able to handle the
+        exception, then the program will be terminated abnormally.</p>
+    <p><strong>Let's understand the new operator through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+ int *ptr;  // integer pointer variable declaration
+ ptr=new int; // allocating memory to the pointer variable ptr.
+ std::cout &lt;&lt; "Enter the number : " &lt;&lt; std::endl;
+ std::cin &gt;&gt;*ptr;
+ std::cout &lt;&lt; "Entered number is " &lt;&lt;*ptr&lt;&lt; std::endl;
+return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/malloc-vs-new-in-cpp.png" alt="malloc() vs new in C++" />
+    <h3 class="h3">What is malloc()?</h3>
+    <p>A malloc() is a function that allocates memory at the runtime. This function returns the void pointer, which
+        means that it can be assigned to any pointer type. This void pointer can be further typecast to get the pointer
+        that points to the memory of a specified type.</p>
+    <p>The syntax of the malloc() function is given below:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+type variable_name = (type *)malloc(sizeof(type)); 
+</textarea></div>
+    <p><strong>where,</strong></p>
+    <p><strong>type:</strong> it is the datatype of the variable for which the memory has to be allocated.</p>
+    <p><strong>variable_name:</strong> It defines the name of the variable that points to the memory.</p>
+    <p><strong>(type*):</strong> It is used for typecasting so that we can get the pointer of a specified type that
+        points to the memory.</p>
+    <p><strong>sizeof():</strong> The sizeof() operator is used in the malloc() function to obtain the memory size
+        required for the allocation.</p>
+    <h4 class="n">Note: The malloc() function returns the void pointer, so typecasting is required to assign a different
+        type to the pointer. The sizeof() operator is required in the malloc() function as the malloc() function returns
+        the raw memory, so the sizeof() operator will tell the malloc() function how much memory is required for the
+        allocation.</h4>
+    <p>If the sufficient memory is not available, then the memory can be resized using realloc() function. As we know
+        that all the dynamic memory requirements are fulfilled using heap memory, so malloc() function also allocates
+        the memory in a heap and returns the pointer to it. The heap memory is very limited, so when our code starts
+        execution, it marks the memory in use, and when our code completes its task, then it frees the memory by using
+        the free() function. If the sufficient memory is not available, and our code tries to access the memory, then
+        the malloc() function returns the NULL pointer. The memory which is allocated by the malloc() function can be
+        deallocated by using the free() function.</p>
+    <p><strong>Let's understand through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+#include&lt;stdlib.h&gt;
+using namespace std;
+
+int main()
+{
+   
+  int len;   // variable declaration
+  std::cout &lt;&lt; "Enter the count of numbers :" &lt;&lt; std::endl;
+  std::cin &gt;&gt; len;
+  int *ptr; // pointer variable declaration
+  ptr=(int*) malloc(sizeof(int)*len);  // allocating memory to  the poiner variable
+  for(int i=0;i&lt;len;i++)
+  {
+      std::cout &lt;&lt; "Enter a number : " &lt;&lt; std::endl;
+      std::cin &gt;&gt; *(ptr+i);
+  }
+  std::cout &lt;&lt; "Entered elements are : " &lt;&lt; std::endl;
+   for(int i=0;i&lt;len;i++)
+  {
+     std::cout &lt;&lt; *(ptr+i) &lt;&lt; std::endl;
+  }
+free(ptr);
+    return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/cpp/images/malloc-vs-new-in-cpp2.png" alt="malloc() vs new in C++" />
+    <p>If we do not use the <strong>free()</strong> function at the correct place, then it can lead to the cause of the
+        dangling pointer. <strong>Let's understand this scenario through an example.</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+#include&lt;stdlib.h&gt;
+using namespace std;
+int *func()
+{
+    int *p;
+    p=(int*) malloc(sizeof(int));
+    free(p);
+    return p;
+}
+int main()
+{
+   
+ int *ptr;
+ ptr=func();
+ free(ptr);
+    return 0;
+}
+</textarea></div>
+    <p>In the above code, we are calling the func() function. The func() function returns the integer pointer. Inside
+        the func() function, we have declared a *p pointer, and the memory is allocated to this pointer variable using
+        malloc() function. In this case, we are returning the pointer whose memory is already released. The ptr is a
+        dangling pointer as it is pointing to the released memory location. Or we can say ptr is referring to that
+        memory which is not pointed by the pointer.</p>
+    <p>Till now, we get to know about the new operator and the malloc() function. Now, we will see the differences
+        between the new operator and the malloc() function.</p>
+    <h3 class="h3">Differences between the malloc() and new</h3>
+    <img src="https://static.javatpoint.com/cpp/images/malloc-vs-new-in-cpp3.png" alt="malloc() vs new in C++" />
+    <ul class="points">
+        <li>The new operator constructs an object, i.e., it calls the constructor to initialize an object while
+            <strong>malloc()</strong> function does not call the constructor. The new operator invokes the constructor,
+            and the delete operator invokes the destructor to destroy the object. This is the biggest difference between
+            the malloc() and new.</li>
+        <li>The new is an operator, while malloc() is a predefined function in the stdlib header file.</li>
+        <li>The operator new can be overloaded while the malloc() function cannot be overloaded.</li>
+        <li>If the sufficient memory is not available in a heap, then the new operator will throw an exception while the
+            malloc() function returns a NULL pointer.</li>
+        <li>In the new operator, we need to specify the number of objects to be allocated while in malloc() function, we
+            need to specify the number of bytes to be allocated.</li>
+        <li>In the case of a new operator, we have to use the delete operator to deallocate the memory. But in the case
+            of malloc() function, we have to use the free() function to deallocate the memory.</li>
+    </ul>
+    <p><strong>Syntax of new operator</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+type reference_variable = new type name;
+</textarea></div>
+    <p><strong>where,</strong></p>
+    <p><strong>type:</strong> It defines the data type of the reference variable.</p>
+    <p><strong>reference_variable:</strong> It is the name of the pointer variable.</p>
+    <p><strong>new:</strong> It is an operator used for allocating the memory.</p>
+    <p><strong>type name:</strong> It can be any basic data type.</p>
+    <p><strong>For example,</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *p;
+p = new int; 
+</textarea></div>
+    <p>In the above statements, we are declaring an integer pointer variable. The statement <strong>p = new
+            int;</strong> allocates the memory space for an integer variable.</p>
+    <p><strong>Syntax of malloc() is given below:</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *ptr = (data_type*) malloc(sizeof(data_type));
+</textarea></div>
+    <p><strong>ptr:</strong> It is a pointer variable.</p>
+    <p><strong>data_type:</strong> It can be any basic data type.</p>
+    <p><strong>For example,</strong></p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+int *p;
+p = (int *) malloc(sizeof(int))
+</textarea></div>
+    <p>The above statement will allocate the memory for an integer variable in a heap, and then stores the address of
+        the reserved memory in 'p' variable.</p>
+    <ul class="points">
+        <li>On the other hand, the memory allocated using malloc() function can be deallocated using the free()
+            function.</li>
+        <li>Once the memory is allocated using the new operator, then it cannot be resized. On the other hand, the
+            memory is allocated using malloc() function; then, it can be reallocated using realloc() function.</li>
+        <li>The execution time of new is less than the malloc() function as new is a construct, and malloc is a
+            function.</li>
+        <li>The new operator does not return the separate pointer variable; it returns the address of the newly created
+            object. On the other hand, the malloc() function returns the void pointer which can be further typecast in a
+            specified type.</li>
+    </ul>
+    <hr />
+</div>
+     
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="27_cpp_memory_management.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="29_oops_concept.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Value</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item active-submenu" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">What is P-Value</h1>
+    <p>In Statistical hypothesis testing, the P-value or sometimes called probability value, is used to observe the test
+        results or more extreme results by assuming that the null hypothesis (H0) is true. In data science, there are
+        lots of concepts that are borrowed from different disciplines, and the p-value is one of them. The concept of
+        p-value comes from statistics and widely used in <a href="https://www.javatpoint.com/machine-learning">machine
+            learning</a> and <a href="https://www.javatpoint.com/data-science">data science</a>.</p>
+    <ul class="points">
+        <li>P-value is also used as an alternative to determine the point of rejection in order to provide the smallest
+            significance level at which the null hypothesis is least or rejected.</li>
+        <li>It is expressed as the level of significance that lies between 0 and 1, and <em>if there is smaller p-value,
+                then there would be strong evidence to reject the null hypothesis.</em> If the value of p-value is very
+            small, then it means the observed output is feasible but doesn't lie under the null hypothesis conditions
+            (H<sub>0</sub>).</li>
+        <li>The p-value of 0.05 is known as the level of significance (<strong>&alpha;</strong>). Usually, it is
+            considered using two suggestions, which are given below:
+            <ul class="points">
+                <li><strong>If p-value&gt;0.05:</strong> The large p-value shows that the null hypothesis needs to be
+                    accepted.</strong></li>
+                <li><strong>If p-value&lt;0.05:</strong> The small p-value shows that the null hypothesis needs to be
+                    rejected, and the result is declared as statically significant.</strong></li>
+            </ul>
+        </li>
+    </ul>
+    <p>In Statistics, our main goal is to determine the statistical significance of our result, and this statistical
+        significance is made on below three concepts:</p>
+    <ul class="points">
+        <li>Hypothesis Testing</li>
+        <li>Normal Distribution</li>
+        <li>Statistical Significance</li>
+    </ul>
+    <p>Let's understand each of them.</p>
+    <h3 class="h3">Hypothesis Testing</h3>
+    <p><strong>Hypothesis testing</strong> can be defined between two terms; <strong>Null hypothesis</strong> and
+        <strong>Alternative Hypothesis</strong>. It is used to check the validity of the null hypothesis or claim made
+        using the sample data. Here, the <strong>null hypothesis (H<sub>0</sub>)</strong> is defined as the hypothesis
+        with no statistical significance between two variables, while an <strong>alternative hypothesis</strong> is
+        defined as the hypothesis with a statistical significance between the two variables. No significant relationship
+        between the two variables tells that one variable will not affect the other variable. Thus, the Null hypothesis
+        tells that what you are going to prove doesn't actually happen. If the independent variable doesn't affect the
+        dependent variable, then it shows the alternative hypothesis condition.</p>
+    <p>In a simple way, we can say that <em>in hypothesis testing, first, we make a claim that is assumed as a null
+            hypothesis using the sample data. If this claim is found invalid, then the alternative hypothesis is
+            selected.</em> This assumption or claim is validated using the p-value to see if it is statistically
+        significant or not using the evidence. If the evidence supports the alternative hypothesis, then the null
+        hypothesis is rejected.</p>
+    <p><strong>Steps for Hypothesis testing</strong></p>
+    <p>Below are the steps to perform an experiment for hypothesis testing:</p>
+    <ol class="points">
+        <li>Claim or state a Null hypothesis for the experiment.</li>
+        <li>State the alternative hypothesis, which is opposite to the null hypothesis.</li>
+        <li>Set the value of alpha to be used in the experiment.</li>
+        <li>Determine the z-score using the normal distribution.</li>
+        <li>Compare the P-value to validate the statistical significance.</li>
+    </ol>
+    <h3 class="h3">Normal Distribution</h3>
+    <p>The normal distribution, which is also known as Gaussian distribution, is the Probability distribution function.
+        It is symmetric about the mean, and use to see the distribution of data using a graph plot. It shows that data
+        near the mean is more frequent to occur as compared to data which is far from the mean, and it looks like a
+        <strong>bell-shaped curve</strong>. The two main terms of the normal distribution are
+        mean(<strong>&mu;</strong>) and standard deviation(&sigma;). For a normal distribution, the mean is zero, and
+        the standard deviation is 1.</p>
+    <p>In hypothesis testing, we need to calculate z-score. <strong>Z-score</strong> is the number of standard
+        deviations from the mean of data-point.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-p-value.png"
+        alt="P-Value" />
+    <p>Here, the z-score inform us that where the data lies compared to the average population.</p>
+    <h3 class="h3">Statistical significance:</h3>
+    <p>To determine the statistical significance of the hypothesis test is the goal of calculating the p-value. To do
+        this, first, we need to set a threshold, which is said to be alpha. We should always set the value of alpha
+        before the experiment, and it is set to be either 0.05 or 0.01(depending on the type of problem).</p>
+    <p>The result is concluded as a significant result if the observed p-value is lower than alpha.</p>
+    <h2 class="h2">Errors in P-value</h2>
+    <p>Two types of errors are defined for the p-value; these errors are given below:</p>
+    <ol class="points">
+        <li>Type I error</li>
+        <li>Type II error</li>
+    </ol>
+    <h3 class="h3">Type I Error:</h3>
+    <p>It is defined as the incorrect or false rejection of the Null hypothesis. For this error, the maximum probability
+        is alpha, and it is set in advance. The error is not affected by the sample size of the dataset. The type I
+        error increases as we increase the number of tests or endpoints.</p>
+    <h3 class="h3">Type II error</h3>
+    <p>Type II error is defined as the wrong acceptance of the Null hypothesis. The probability of type II error is
+        beta, and the beta depends upon the sample size and value of alpha. The beta cannot be determined as the
+        function of the true population effect. The value of beta is inversely proportional to the sample size, and it
+        means beta decreases as the sample size increases.</p>
+    <p>The value of beta also decreases when we increase the number of tests or endpoints.</p>
+    <p>We can understand the relationship between hypothesis testing and decision on the basis of the below table:</p>
+    <table class="alt">
+        <tr>
+            <td></td>
+            <td colspan="2">Decision</td>
+        </tr>
+        <tr>
+            <td>Truth</td>
+            <td>Accept H<sub>0</sub></td>
+            <td>Reject H<sub>0</sub></td>
+        </tr>
+        <tr>
+            <td>H<sub>0</sub> is true</td>
+            <td>Correct decision</td>
+            <td>Type I error</td>
+        </tr>
+        <tr>
+            <td>H<sub>0</sub> is false</td>
+            <td>Type II error</td>
+            <td>Correct Decision</td>
+        </tr>
+    </table>
+    <h3 class="h3">Importance of P-value</h3>
+    <p>The importance of p-value can be understood in two aspects:</p>
+    <ul class="points">
+        <li><strong>Statistics Aspect:</strong> In statistics, the concept of the p-value is important for hypothesis
+            testing and statistical methods such as Regression.</li>
+        <li><strong>Data Science Aspect:</strong> In data science also, it is one of the important aspect Here the
+            smaller p-value shows that there is an association between the predictor and response. It is advised while
+            working with the machine learning problem in data science, the p-value should be taken carefully.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="31_principle_component_analysis.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="33_regularization.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

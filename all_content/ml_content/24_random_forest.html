@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Forest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item active-submenu" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Random Forest Algorithm</h1>
+    <p>Random Forest is a popular machine learning algorithm that belongs to the supervised learning technique. It can
+        be used for both Classification and Regression problems in ML. It is based on the concept of <strong>ensemble
+            learning,</strong> which is a process of <em>combining multiple classifiers to solve a complex problem and
+            to improve the performance of the model.</em></p>
+    <p>As the name suggests, <em><strong>"Random Forest is a classifier that contains a number of decision trees on
+                various subsets of the given dataset and takes the average to improve the predictive accuracy of that
+                dataset."</strong></em> Instead of relying on one decision tree, the random forest takes the prediction
+        from each tree and based on the majority votes of predictions, and it predicts the final output. </p>
+    <p><strong>The greater number of trees in the forest leads to higher accuracy and prevents the problem of
+            overfitting. </strong></p>
+    <p>The below diagram explains the working of the Random Forest algorithm:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm.png"
+        alt="Random Forest Algorithm" />
+    <h4 class="n">Note: To better understand the Random Forest Algorithm, you should have knowledge of the Decision Tree
+        Algorithm.</h4>
+    <h2 class="h2">Assumptions for Random Forest</h2>
+    <p>Since the random forest combines multiple trees to predict the class of the dataset, it is possible that some
+        decision trees may predict the correct output, while others may not. But together, all the trees predict the
+        correct output. Therefore, below are two assumptions for a better Random forest classifier:</p>
+    <ul class="points">
+        <li>There should be some actual values in the feature variable of the dataset so that the classifier can predict
+            accurate results rather than a guessed result. </li>
+        <li>The predictions from each tree must have very low correlations. </li>
+    </ul>
+    <h2 class="h2">Why use Random Forest?</h2>
+    <p>Below are some points that explain why we should use the Random Forest algorithm:</p>
+    <ul class="points">
+        <liRandom forest combines multiple decision trees, hence reduces the risk of overfitting. < li>
+            <li>It takes less training time as compared to other algorithms. </li>
+            <li>It predicts output with high accuracy, even for the large dataset it runs efficiently.</li>
+            <li>It can also maintain accuracy when a large proportion of data is missing. </li>
+    </ul>
+    <h2 class="h2">How does Random Forest algorithm work?</h2>
+    <p>Random Forest works in two-phase first is to create the random forest by combining N decision tree, and second is
+        to make predictions for each tree created in the first phase. </p>
+    <p>The Working process can be explained in the below steps and diagram:</p>
+    <p><strong>Step-1:</strong> Select random K data points from the training set. </p>
+    <p><strong>Step-2:</strong> Build the decision trees associated with the selected data points (Subsets). </p>
+    <p><strong>Step-3:</strong> Choose the number N for decision trees that you want to build. </p>
+    <p><strong>Step-4:</strong> Repeat Step 1 & 2.</p>
+    <p><strong>Step-5:</strong> For new data points, find the predictions of each decision tree, and assign the new data
+        points to the category that wins the majority votes. </p>
+    <p>The working of the algorithm can be better understood by the below example:</p>
+    <p><strong>Example:</strong> Suppose there is a dataset that contains multiple fruit images. So, this dataset is
+        given to the Random forest classifier. The dataset is divided into subsets and given to each decision tree.
+        During the training phase, each decision tree produces a prediction result, and when a new data point occurs,
+        then based on the majority of results, the Random Forest classifier predicts the final decision. Consider the
+        below image:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm2.png"
+        alt="Random Forest Algorithm" />
+    <h2 class="h2">Applications of Random Forest</h2>
+    <p>There are mainly four sectors where Random forest mostly used:</p>
+    <ol class="points">
+        <li><strong>Banking:</strong> Banking sector mostly uses this algorithm for the identification of loan risk.
+        </li>
+        <li><strong>Medicine:</strong> With the help of this algorithm, disease trends and risks of the disease can be
+            identified. </li>
+        <li><strong>Land Use:</strong> We can identify the areas of similar land use by this algorithm. </li>
+        <li><strong>Marketing:</strong> Marketing trends can be identified using this algorithm. </li>
+    </ol>
+    <h2 class="h2">Advantages of Random Forest</h2>
+    <ul class="points">
+        <li>Random Forest is capable of performing both Classification and Regression tasks.</li>
+        <li>It is capable of handling large datasets with high dimensionality.</li>
+        <li>It enhances the accuracy of the model and prevents the overfitting issue. </li>
+    </ul>
+    <h2 class="h2">Disadvantages of Random Forest</h2>
+    <ul class="points">
+        <li>Although random forest can be used for both classification and regression tasks, it is not more suitable for
+            Regression tasks.</li>
+    </ul>
+    <h2 class="h2">Python Implementation of Random Forest Algorithm</h2>
+    <p>Now we will implement the Random Forest Algorithm tree using Python. For this, we will use the same dataset
+        "user_data.csv", which we have used in previous classification models. By using the same dataset, we can compare
+        the Random Forest classifier with other classification models such as <a
+            href="machine-learning-decision-tree-classification-algorithm">Decision tree Classifier,</a> <a
+            href="https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning">KNN, </a> <a
+            href=" https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm">SVM,</a> <a
+            href=" https://www.javatpoint.com/logistic-regression-in-machine-learning">Logistic Regression,</a> etc.
+    </p>
+    <p>Implementation Steps are given below:</p>
+    <ul class="points">
+        <li>Data Pre-processing step</li>
+        <li>Fitting the Random forest algorithm to the Training set</li>
+        <li>Predicting the test result</li>
+        <li>Test accuracy of the result (Creation of Confusion matrix)</li>
+        <li>Visualizing the test set result. </li>
+    </ul>
+    <h3 class="h3">1.Data Pre-Processing Step:</h3>
+    <p>Below is the code for the pre-processing step: </p>
+    <div class="codeblock"><textarea name="code" class="java">
+# importing libraries
+import numpy as nm
+import matplotlib.pyplot as mtp
+import pandas as pd
+
+#importing datasets
+data_set= pd.read_csv('user_data.csv')
+
+#Extracting Independent and dependent Variable
+x= data_set.iloc[:, [2,3]].values
+y= data_set.iloc[:, 4].values
+
+# Splitting the dataset into training and test set.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)
+
+#feature Scaling
+from sklearn.preprocessing import StandardScaler  
+st_x= StandardScaler()  
+x_train= st_x.fit_transform(x_train)  
+x_test= st_x.transform(x_test)  
+</textarea></div>
+    <p>In the above code, we have pre-processed the data. Where we have loaded the dataset, which is given as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm3.png"
+        alt="Random Forest Algorithm" />
+    <h3 class="h3">2. Fitting the Random Forest algorithm to the training set:</h3>
+    <p>Now we will fit the Random forest algorithm to the training set. To fit it, we will import the<strong>
+            RandomForestClassifier </strong>class from the <strong>sklearn.ensemble</strong> library. The code is given
+        below:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Fitting Decision Tree classifier to the training set
+from sklearn.ensemble import RandomForestClassifier
+classifier= RandomForestClassifier(n_estimators= 10, criterion="entropy")
+classifier.fit(x_train, y_train)
+</textarea></div>
+    <p>In the above code, the classifier object takes below parameters:</p>
+    <ul class="points">
+        <li><strong>n_estimators=</strong> The required number of trees in the Random Forest. The default value is 10.
+            We can choose any number but need to take care of the overfitting issue. </li>
+        <li><strong>criterion=</strong> It is a function to analyze the accuracy of the split. Here we have taken
+            "entropy" for the information gain. </li>
+    </ul>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='entropy',
+                       max_depth=None, max_features='auto', max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=10,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)
+</pre>
+    </div>
+    <h3 class="h3">3. Predicting the Test Set result</h3>
+    <p>Since our model is fitted to the training set, so now we can predict the test result. For prediction, we will
+        create a new prediction vector y_pred. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Predicting the test set result
+y_pred= classifier.predict(x_test)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>The prediction vector is given as:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm4.png"
+        alt="Random Forest Algorithm" />
+    <p>By checking the above prediction vector and test set real vector, we can determine the incorrect predictions done
+        by the classifier. </p>
+    <h3 class="h3">4. Creating the Confusion Matrix</h3>
+    <p>Now we will create the confusion matrix to determine the correct and incorrect predictions. Below is the code for
+        it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Creating the Confusion matrix
+from sklearn.metrics import confusion_matrix
+cm= confusion_matrix(y_test, y_pred)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm5.png"
+        alt="Random Forest Algorithm" />
+    <p>As we can see in the above matrix, there are <strong>4+4= 8 incorrect predictions</strong> and <strong>64+28= 92
+            correct predictions.</strong> </p>
+    <h3 class="h3">5. Visualizing the training Set result</h3>
+    <p>Here we will visualize the training set result. To visualize the training set result we will plot a graph for the
+        Random forest classifier. The classifier will predict yes or No for the users who have either Purchased or Not
+        purchased the SUV car as we did in <a
+            href="https://www.javatpoint.com/logistic-regression-in-machine-learning">Logistic Regression.</a> Below is
+        the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_train, y_train
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('purple','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Random Forest Algorithm (Training set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm6.png"
+        alt="Random Forest Algorithm" />
+    <p>The above image is the visualization result for the Random Forest classifier working with the training set
+        result. It is very much similar to the Decision tree classifier. Each data point corresponds to each user of the
+        user_data, and the purple and green regions are the prediction regions. The purple region is classified for the
+        users who did not purchase the SUV car, and the green region is for the users who purchased the SUV. </p>
+    <p>So, in the Random Forest classifier, we have taken 10 trees that have predicted Yes or NO for the Purchased
+        variable. The classifier took the majority of the predictions and provided the result. </p>
+    <h3 class="h3">6. Visualizing the test set result</h3>
+    <p>Now we will visualize the test set result. Below is the code for it:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+#Visulaizing the test set result
+from matplotlib.colors import ListedColormap
+x_set, y_set = x_test, y_test
+x1, x2 = nm.meshgrid(nm.arange(start = x_set[:, 0].min() - 1, stop = x_set[:, 0].max() + 1, step  =0.01),
+nm.arange(start = x_set[:, 1].min() - 1, stop = x_set[:, 1].max() + 1, step = 0.01))
+mtp.contourf(x1, x2, classifier.predict(nm.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+alpha = 0.75, cmap = ListedColormap(('purple','green' )))
+mtp.xlim(x1.min(), x1.max())
+mtp.ylim(x2.min(), x2.max())
+for i, j in enumerate(nm.unique(y_set)):
+    mtp.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+        c = ListedColormap(('purple', 'green'))(i), label = j)
+mtp.title('Random Forest Algorithm(Test set)')
+mtp.xlabel('Age')
+mtp.ylabel('Estimated Salary')
+mtp.legend()
+mtp.show()
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/random-forest-algorithm7.png"
+        alt="Random Forest Algorithm" />
+    <p>The above image is the visualization result for the test set. We can check that there is a minimum number of
+        incorrect predictions (8) without the Overfitting issue. We will get different results by changing the number of
+        trees in the classifier.</p>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="23_decision_tree.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="25_clustering.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

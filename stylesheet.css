@@ -1,0 +1,104 @@
+
+/* Apply styles to the div with class "codeblock" */
+.codeblock {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    border: none;
+    width: 100%;
+    background-color: #d6bdbd4d;
+    margin-bottom: 8px;
+    padding: 0 !important; /* Remove padding */
+}
+
+/* Apply styles to the textarea with class "xml" within codeblock */
+.codeblock textarea.xml {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.cpp {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.python {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.java {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.sql {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.html {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.css {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.c {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}
+.codeblock textarea.Cpp {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /* Remove padding */
+    /* font-family: monospace; */
+    border: none;
+    box-sizing: border-box;
+    background-color: #d6bdbd4d;
+}

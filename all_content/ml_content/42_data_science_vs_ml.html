@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science vs Machine Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item active-submenu" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Difference Between Data Science and Machine Learning</h1>
+    <p>Data Science is the study of <em>data cleansing, preparation, and analysis</em>, while machine learning is a
+        branch of AI and subfield of data science. Data Science and Machine Learning are the two popular modern
+        technologies, and they are growing with an immoderate rate. But these two buzzwords, along with artificial
+        intelligence and deep learning are very confusing term, so it is important to understand how they are different
+        from each other. In this topic, we will understand the difference between Data Science and Machine Learning
+        only, and how they relate to each other.</p>
+    <p>Data Science and <a href="https://www.javatpoint.com/machine-learning">Machine Learning</a> are closely related
+        to each other but have different functionalities and different goals. At a glance, <em><a
+                href="https://www.javatpoint.com/data-science">Data Science</a> is a field to study the approaches to
+            find insights from the raw data. Whereas, Machine Learning is a technique used by the group of data
+            scientists to enable the machines to learn automatically from the past data.</em> To understand the
+        difference in-depth, let's first have a brief introduction to these two technologies.</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-science-vs-machine-learning.png"
+        alt="Data Science and Machine Learning" />
+    <h4 class="n">Note: Data Science and Machine Learning are closely related to each other but cannot be treated as
+        synonyms.</h4>
+    <h2 class="h2">What is Data Science?</h2>
+    <p>Data science, as its name suggests, is all about the data. Hence, we can define it as, <strong><em>"A field of
+                deep study of data that includes extracting useful insights from the data, and processing that
+                information using different tools, statistical models, and Machine learning algorithms."</em></strong>
+        It is a concept that is used to handle big data that includes data cleaning, data preparation, data analysis,
+        and data visualization.</p>
+    <p>A data scientist collects the raw data from various sources, prepares and pre-processes the data, and applies
+        machine learning algorithms, predictive analysis to extract useful insights from the collected data.</p>
+    <p>For example, Netflix uses data science techniques to understand user interest by mining the data and viewing
+        patterns of its users.</p>
+    <p><strong>Skills Required to become Data Scientist</strong></p>
+    <ul class="points">
+        <li>An excellent programming knowledge of <strong>Python, R, SAS, or Scala.</strong></li>
+        <li>Experience in SQL database Coding.</li>
+        <li>Knowledge of Machine Learning Algorithms.</li>
+        <li>Deep Knowledge of Statistics concepts.</li>
+        <li>Data Mining, cleaning, and Visualizing skills.</li>
+        <li>Skills to use Big data tools such as Hadoop.</li>
+    </ul>
+    <h2 class="h2">What is Machine Learning?</h2>
+    <p>Machine learning is a part of artificial intelligence and the subfield of Data Science. It is a growing
+        technology that enables machines to learn from past data and perform a given task automatically. It can be
+        defined as:</p>
+    <blockquote>Machine Leaning allows the computers to learn from the past experiences by its own, it uses statistical
+        methods to improve the performance and predict the output without being explicitly programmed.</blockquote>
+    <p>The popular applications of ML are <strong><em>Email spam filtering, product recommendations, online fraud
+                detection, etc</em></strong>.</p>
+    <p><strong>Skills Needed for the Machine Learning Engineer:</strong></p>
+    <ul class="points">
+        <li>Understanding and implementation of Machine Learning Algorithms.</li>
+        <li>Natural Language Processing.</li>
+        <li>Good Programming knowledge of Python or R.</li>
+        <li>Knowledge of Statistics and probability concepts.</li>
+        <li>Knowledge of data modeling and data evaluation.</li>
+    </ul>
+    <h2 class="h2">Where is Machine Learning used in Data Science?</h2>
+    <p>The use of machine learning in data science can be understood by the development process or life cycle of Data
+        Science. The different steps that occur in Data science lifecycle are as follows:</p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/data-science-vs-machine-learning2.png"
+        alt="Data Science and Machine Learning" />
+    <ol class="points">
+        <li><strong>Business Requirements:</strong> In this step, we try to understand the requirement for the business
+            problem for which we want to use it. Suppose we want to create a recommendation system, and the business
+            requirement is to increase sales.</li>
+        <li><strong>Data Acquisition:</strong> In this step, the data is acquired to solve the given problem. For the
+            recommendation system, we can get the ratings provided by the user for different products, comments,
+            purchase history, etc.</li>
+        <li><strong>Data Processing:</strong> In this step, the raw data acquired from the previous step is transformed
+            into <strong>a</strong> suitable format, so that it can be easily used by the further steps.</li>
+        <li><strong>Data Exploration:</strong> It is a step where we understand the patterns of the data, and try to
+            find out the useful insights from the data.</li>
+        <li><strong>Modeling:</strong> The data modeling is a step where machine learning algorithms are used. So, this
+            step includes the whole machine learning process. The machine learning process involves importing the data,
+            data cleaning, building a model, training the model, testing the model, and improving the model's
+            efficiency.</li>
+        <li><strong>Deployment &amp; Optimization:</strong> This is the last step where the model is deployed on an
+            actual project, and the performance of the model is checked.</li>
+    </ol>
+    <h2 class="h2">Comparison Between Data Science and Machine Learning</h2>
+    <p>The below table describes the basic differences between Data Science and ML:</p>
+    <table class="alt">
+        <tr>
+            <th>Data Science</th>
+            <th>Machine Learning</th>
+        </tr>
+        <tr>
+            <td>It deals with understanding and finding hidden patterns or useful insights from the data, which helps to
+                take smarter business decisions.</td>
+            <td>It is a subfield of data science that enables the machine to learn from the past data and experiences
+                automatically.</td>
+        </tr>
+        <tr>
+            <td>It is used for discovering insights from the data.</td>
+            <td>It is used for making predictions and classifying the result for new data points.</td>
+        </tr>
+        <tr>
+            <td>It is a broad term that includes various steps to create a model for a given problem and deploy the
+                model.</td>
+            <td>It is used in the data modeling step of the data science as a complete process.</td>
+        </tr>
+        <tr>
+            <td>A data scientist needs to have skills to use big data tools like Hadoop, Hive and Pig, statistics,
+                programming in Python, R, or Scala.</td>
+            <td>Machine Learning Engineer needs to have skills such as computer science fundamentals, programming skills
+                in Python or R, statistics and probability concepts, etc.</td>
+        </tr>
+        <tr>
+            <td>It can work with raw, structured, and unstructured data.</td>
+            <td>It mostly requires structured data to work on.</td>
+        </tr>
+        <tr>
+            <td>Data scientists spent lots of time in handling the data, cleansing the data, and understanding its
+                patterns.</td>
+            <td>ML engineers spend a lot of time for managing the complexities that occur during the implementation of
+                algorithms and mathematical concepts behind that.</td>
+        </tr>
+    </table>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="41_perceptron.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="43_ml_vs_deep_learning.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

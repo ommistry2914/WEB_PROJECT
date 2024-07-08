@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+    <link rel="stylesheet" href="../../stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Constructor</title>
+       
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                C++
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_cpp_tutorial.html">C++ Tutorial</a></li>
+                                <li><a class="dropdown-item" href="2_c_vs_cpp.html">C Vs C++</a></li>
+                                <li><a class="dropdown-item" href="3_cpp_history.html">C++ History</a></li>
+                                <li><a class="dropdown-item" href="4_cpp_feature.html">C++ Features</a></li>
+                                <li><a class="dropdown-item" href="5_cpp_program.html">C++ Program</a></li>
+                                <li><a class="dropdown-item" href="6_cpp_cin_cout.html">C++ Cin And Cout</a></li>
+                                <li><a class="dropdown-item" href="7_cpp_variable.html">C++ Variable</a></li>
+                                <li><a class="dropdown-item" href="8_cpp_data_type.html">C++ Data Type</a></li>
+                                <li><a class="dropdown-item" href="9_cpp_keyword.html">C++ Keyword</a></li>
+                                <li><a class="dropdown-item" href="10_cpp_operator.html">C++ Operator</a></li>
+                                <li><a class="dropdown-item" href="11_cpp_identifier.html">C++ Identifier</a></li>
+                                <li><a class="dropdown-item" href="12_cpp_expression.html">C++ Expresion</a></li>
+                                <li><a class="dropdown-item" href="13_cpp_if_else_statement.html">C++ If Else Statement</a></li>
+                                <li><a class="dropdown-item" href="14_cpp_switch.html">C++ Switch Statement</a></li>
+                                <li><a class="dropdown-item" href="15_cpp_for_loop.html">C++ For Loop</a></li>
+                                <li><a class="dropdown-item" href="16_cpp_while_loop.html">C++ While Loop</a></li>
+                                <li><a class="dropdown-item" href="17_cpp_do_while_loop.html">C++ Do While Looop</a></li>
+                                <li><a class="dropdown-item" href="18_cpp_break_continue_goto.html">C++ Break,Continue Ans Goto Statement</a></li>
+                                <li><a class="dropdown-item" href="19_cpp_comments.html">C++ Comments</a></li>
+                                <li><a class="dropdown-item" href="20_cpp_function.html">C++ Function</a></li>
+                                <li><a class="dropdown-item" href="21_callBy_value_reference.html">Call By Value And Reference</a></li>
+                                <li><a class="dropdown-item" href="22_cpp_recursion.html">C++ Recursion</a></li>
+                                <li><a class="dropdown-item" href="23_cpp_arrays.html">C++ Array</a></li>
+                                <li><a class="dropdown-item" href="24_cpp_pointer.html">C++ Pointers</a></li>
+                                <li><a class="dropdown-item" href="25_cpp_array_of_pointer.html">C++ Array Of Pointers</a></li>
+                                <li><a class="dropdown-item" href="26_cpp_reference.html">C++ Reference</a></li>
+                                <li><a class="dropdown-item" href="27_cpp_memory_management.html">C++ Memory Management</a></li>
+                                <li><a class="dropdown-item" href="28_malloc_vs_new.html">C++ Malloc Vs New</a></li>
+                                <li><a class="dropdown-item" href="29_oops_concept.html">C++ Oops Concept</a></li>
+                                <li><a class="dropdown-item" href="30_object_class.html">C++ Object Class</a></li>
+                                <li><a class="dropdown-item active-submenu" href="31_constructor_Destructor.html">C++ Constructor And Desctructor</a></li>
+                                <li><a class="dropdown-item" href="32_structs.html">C++ Struct</a></li>
+                                <li><a class="dropdown-item" href="33_friend_function.html">C++ Friend Function</a></li>
+                                <li><a class="dropdown-item" href="34_inheritence.html">C++ Inheritance</a></li>
+                                <li><a class="dropdown-item" href="35_aggregation.html">C++ Aggregation</a></li>
+                                <li><a class="dropdown-item" href="36_polymorphism.html">C++ Polymorphism</a></li>
+                                <li><a class="dropdown-item" href="37_virtual_function.html">C++ Virtual Function</a></li>
+                                <li><a class="dropdown-item" href="38_interface.html">C++ Interface</a></li>
+                                <li><a class="dropdown-item" href="39_namespaces.html">C++ Namespaces</a></li>
+                                <li><a class="dropdown-item" href="40_string.html">C++ String</a></li>
+                                                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">C++ Constructor</h1>
+    <p>In C++, constructor is a special method which is invoked automatically at the time of object creation. It is used
+        to initialize the data members of new object generally. The constructor in C++ has the same name as class or
+        structure.</p>
+    <p>In brief, A particular procedure called a constructor is called automatically when an object is created in C++.
+        In general, it is employed to create the data members of new things. In C++, the class or structure name also
+        serves as the constructor name. When an object is completed, the constructor is called. Because it creates the
+        values or gives data for the thing, it is known as a constructor.</p>
+    <p>The Constructors prototype looks like this:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+&lt;class-name&gt; (list-of-parameters);
+</textarea></div>
+    <p>The following syntax is used to define the class's constructor:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+&lt;class-name&gt; (list-of-parameters) { // constructor definition }
+</textarea></div>
+    <p>The following syntax is used to define a constructor outside of a class:</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+&lt;class-name&gt;: :&lt;class-name&gt; (list-of-parameters){ // constructor definition}
+</textarea></div>
+    <p>Constructors lack a return type since they don't have a return value.</p>
+    <p>There can be two types of constructors in C++.</p>
+    <ul class="points">
+        <li>Default constructor</li>
+        <li>Parameterized constructor</li>
+    </ul>
+    <h2 class="h2">C++ Default Constructor</h2>
+    <p>A constructor which has no argument is known as default constructor. It is invoked at the time of creating
+        object.</p>
+    <p>Let's see the simple example of C++ default Constructor.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class Employee
+ {
+   public:
+        Employee()  
+        {  
+            cout&lt;&lt;"Default Constructor Invoked"&lt;&lt;endl;  
+        }  
+};
+int main(void) 
+{
+    Employee e1; //creating an object of Employee 
+    Employee e2; 
+    return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Default Constructor Invoked 
+Default Constructor Invoked
+</pre>
+    </div>
+    <h2 class="h2">C++ Parameterized Constructor</h2>
+    <p>A constructor which has parameters is called parameterized constructor. It is used to provide different values to
+        distinct objects.</p>
+    <p>Let's see the simple example of C++ Parameterized Constructor.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class Employee {
+   public:
+       int id;//data member (also instance variable)    
+       string name;//data member(also instance variable)
+       float salary;
+       Employee(int i, string n, float s)  
+        {  
+            id = i;  
+            name = n;  
+            salary = s;
+        }  
+       void display()  
+        {  
+            cout&lt;&lt;id&lt;&lt;"  "&lt;&lt;name&lt;&lt;"  "&lt;&lt;salary&lt;&lt;endl;  
+        }  
+};
+int main(void) {
+    Employee e1 =Employee(101, "Sonoo", 890000); //creating an object of Employee 
+    Employee e2=Employee(102, "Nakul", 59000); 
+    e1.display();  
+    e2.display();  
+    return 0;
+}
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>101  Sonoo  890000
+102  Nakul  59000
+</pre>
+    </div>
+    <h2 class="h2">What distinguishes constructors from a typical member function?</h2>
+    <ol class="points">
+        <li>Constructor's name is the same as the class's</li>
+        <li>Default There isn't an input argument for constructors. However, input arguments are available for copy and
+            parameterized constructors.</li>
+        <li>There is no return type for constructors.</li>
+        <li>An object's constructor is invoked automatically upon creation.</li>
+        <li>It must be shown in the classroom's open area.</li>
+        <li>The C++ compiler creates a default constructor for the object if a constructor is not specified (expects any
+            parameters and has an empty body).</li>
+    </ol>
+    <p>By using a practical example, let's learn about the various constructor types in C++. Imagine you visited a store
+        to purchase a marker. What are your alternatives if you want to buy a marker? For the first one, you ask a store
+        to give you a marker, given that you didn't specify the brand name or colour of the marker you wanted, simply
+        asking for one amount to a request. So, when we just said, "I just need a marker," he would hand us whatever the
+        most popular marker was in the market or his store. The default constructor is exactly what it sounds like! The
+        second approach is to go into a store and specify that you want a red marker of the XYZ brand. He will give you
+        that marker since you have brought up the subject. The parameters have been set in this instance thus. And a
+        parameterized constructor is exactly what it sounds like! The third one requires you to visit a store and
+        declare that you want a marker that looks like this (a physical marker on your hand). The shopkeeper will thus
+        notice that marker. He will provide you with a new marker when you say all right. Therefore, make a copy of that
+        marker. And that is what a copy constructor does!</p>
+    <h2 class="h2">What are the characteristics of a constructor?</h2>
+    <ol class="points">
+        <li>The constructor has the same name as the class it belongs to.</li>
+        <li>Although it is possible, constructors are typically declared in the class's public section. However, this is
+            not a must.</li>
+        <li>Because constructors don't return values, they lack a return type.</li>
+        <li>When we create a class object, the constructor is immediately invoked.</li>
+        <li>Overloaded constructors are possible.</li>
+        <li>Declaring a constructor virtual is not permitted.</li>
+        <li>One cannot inherit a constructor.</li>
+        <li>Constructor addresses cannot be referenced to.</li>
+        <li>When allocating memory, the constructor makes implicit calls to the new and delete operators.</li>
+    </ol>
+    <h2 class="h2">What is a copy constructor?</h2>
+    <p>A member function known as a copy constructor initializes an item using another object from the same class-an
+        in-depth discussion on Copy Constructors.</p>
+    <p>Every time we specify one or more non-default constructors (with parameters) for a class, we also need to include
+        a default constructor (without parameters), as the compiler won't supply one in this circumstance. The best
+        practice is to always declare a default constructor, even though it is not required.</p>
+    <p>A reference to an object belonging to the same class is required by the copy constructor.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+Sample(Sample &t)
+{
+id=t.id;
+}
+</textarea></div>
+    <h2 class="h2">What is a destructor in C++?</h2>
+    <p>An equivalent special member function to a constructor is a destructor. The constructor creates class objects,
+        which are destroyed by the destructor. The word "destructor," followed by the tilde () symbol, is the same as
+        the class name. You can only define one destructor at a time. One method of destroying an object made by a
+        constructor is to use a destructor. Destructors cannot be overloaded as a result. Destructors don't take any
+        arguments and don't give anything back. As soon as the item leaves the scope, it is immediately called.
+        Destructors free up the memory used by the objects the constructor generated. Destructor reverses the process of
+        creating things by destroying them.</p>
+    <p>The language used to define the class's destructor</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+~ <class-name>()
+          {
+            }
+</textarea></div>
+    <p>The language used to define the class's destructor outside of it</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+<class-name>: : ~ <class-name>(){}
+</textarea></div>
+    <hr />
+    <h1 class="h1">C++ Destructor</h1>
+    <p>A destructor works opposite to constructor; it destructs the objects of classes. It can be defined only once in a
+        class. Like constructors, it is invoked automatically.</p>
+    <p>A destructor is defined like constructor. It must have same name as class. But it is prefixed with a tilde sign
+        (~).</p>
+    <h4 class="n">Note: C++ destructor cannot have parameters. Moreover, modifiers can't be applied on destructors.</h4>
+    <h2 class="h2">C++ Constructor and Destructor Example</h2>
+    <p>Let's see an example of constructor and destructor in C++ which is called automatically.</p>
+    <div class="codeblock"><textarea name="code" class="cpp">
+#include &lt;iostream&gt;
+using namespace std;
+class Employee
+ {
+   public:
+        Employee()  
+        {  
+            cout&lt;&lt;"Constructor Invoked"&lt;&lt;endl;  
+        }  
+        ~Employee()  
+        {  
+            cout&lt;&lt;"Destructor Invoked"&lt;&lt;endl;  
+        }
+};
+int main(void) 
+{
+    Employee e1; //creating an object of Employee 
+    Employee e2; //creating an object of Employee
+    return 0;
+}
+</textarea></div>
+    <p>Output:</p>
+    <div class="codeblock3">
+        <pre>
+Constructor Invoked
+Constructor Invoked
+Destructor Invoked
+Destructor Invoked
+</pre>
+    </div>
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="30_object_class.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="32_structs.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>

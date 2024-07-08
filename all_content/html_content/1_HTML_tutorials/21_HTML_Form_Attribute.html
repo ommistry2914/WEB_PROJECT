@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute  in html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+  <link rel="icon" type="image/x-icon" href="../../icon/sg.png">
+  <style>
+    .active-submenu {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+
+    .active-submenu:hover {
+        font-weight: 500;
+        background-color: darkgray;
+    }
+    a:hover{
+            text-decoration: none;
+        }
+</style>
+</head>
+<body style="background-image: radial-gradient(#b3d6e6,white,#b3d6e6);"">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../home.html">
+                <img src="../../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-submenu" href="../../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../../first_page/javascript_page.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tutorial
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_Intro_to_html.html">Intro to html</a></li>
+                                <li><a class="dropdown-item" href="2_What_is_HTML.html">What is html </a></li>
+                                <li><a class="dropdown-item" href="3_Html_text_editors.html">text editors</a></li>
+                                <li><a class="dropdown-item" href="4_HTML_Building_blocks.html">Building blocks</a></li>
+                                <li><a class="dropdown-item" href="5_HTML_tags.html">HTML Tags</a></li>
+                                <li><a class="dropdown-item" href="6_HTML_Attributes.html">HTML Attributes<li>
+                                <li><a class="dropdown-item" href="7_HTML_Elements.html">HTML Elements</a></li>
+                                <li><a class="dropdown-item" href="8_HTML_Formatting.html">Formatting in html</a></li>
+                                <li><a class="dropdown-item" href="9_HTML_Heading.html"> heading in html</a></li>
+                                <li><a class="dropdown-item" href="10_HTML_Paragraph.html">paragraph in html</a></li>
+                                <li><a class="dropdown-item" href="11_HTML_Phrase_tags.html">Phrase Tags in html</a></li>
+                                <li><a class="dropdown-item" href="12_HTML_Anchor.html">Anchor Tag in html</a></li>
+                                <li><a class="dropdown-item" href="13_HTML_Image.html">Image tag</a></li>
+                                <li><a class="dropdown-item" href="14_HTML_Table.html">Table tag</a></li>
+                                <li><a class="dropdown-item" href="15_HTML_Lists.html">Lists tag</a></li>
+                                <li><a class="dropdown-item" href="16_HTML_Ordered_list.html">Ordered list</a></li>
+                                <li><a class="dropdown-item" href="17_HTML_Unordered_list.html">Unordered list</a></li>
+                                <li><a class="dropdown-item" href="18_HTML_Description_list.html">Description list</a></li>
+                                <li><a class="dropdown-item" href="19_HTML_form.html">form in html</a></li>
+                                <li><a class="dropdown-item" href="20_HTML_Form_Input.html">Form input</a></li>
+                                <li><a class="dropdown-item active-submenu" href="21_HTML_Form_Attribute.html">Form attribute</a></li>
+                                <li><a class="dropdown-item" href="22_HTML_with_CSS.html">Html with CSS</a></li>
+                                <li><a class="dropdown-item" href="23_HTML_Classes.html">HTML classes</a></li>
+                                <li><a class="dropdown-item" href="24_HTML_ID.html">HTML ID</a></li>
+                                <li><a class="dropdown-item" href="25_HTML_Iframes.html">Html Iframes</a></li>
+                                <li><a class="dropdown-item" href="26_HTML_Javascript.html">HTML JavaScript</a></li>
+                                <li><a class="dropdown-item" href="27_HTML_Comments.html">HTML comments</a></li>
+                                <li><a class="dropdown-item" href="28_HTML_Filepath.html">Filepath</a></li>
+                                <li><a class="dropdown-item" href="29_HTML_head.html">HTML head</a></li>
+                                <li><a class="dropdown-item" href="30_HTML_layout.html">HTML layout</a></li>
+                                <li><a class="dropdown-item" href="32_HTML_Responsive.html">HTML Responsive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Attributes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/1_html_global_attribute.html">Global Attributes</a></li>
+                                <li><a class="dropdown-item" href="../2_HTML_Attributes/2_html_Event_attributes.html">Event Attributes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HTML Tags
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../3_HTML_tags/1_HTML_5_tags.html">HTML 5 Tags</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/2_iDOCTYPE_tag.html">iDOCTYPE tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/3_anchor_tag.html">Anchor tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/4_abbr_tag.html">Abbr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/5_acronym_tag.html">Acronym tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/6_address_tag.html">Address tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/7_applet_tag.html">Applet tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/8_area_tag.html">Area tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/9_article_tag.html">Article tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/10_aside_tag.html">Aside tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/11_audio_tag.html">Audio tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/12_b_tag.html">B tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/13_base_tag.html">Base tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/14_basefont_tag.html">Basefont tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/15_bdi_tag.html">Bdi tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/16_bdo_tag.html">Bdo tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/17_big_tag.html">Big tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/18_blockquote_tag.html">Blockquote</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/19_body_tag.html">Body tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/20_br_tag.html">Br tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/21_button_tag.html">Button tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/22_canvas_tag.html">canvas tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/23_caption_tag.html">caption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/24_center_tag.html">center tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/25_cite_tag.html">cite tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/26_code_tag.html">code tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/27_col_tag.html">col tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/28_colgroup_tag.html">colgroup tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/29_data_tag.html">data tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/30_datalist_tag.html">datalist tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/31_Description_list.html">Description tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/32_del_tag.html">del tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/33_details_tag.html">details tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/34_dfn_tag.html">dfn tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/35_Dialog_tag.html">Dialog tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/36_dir_tag.html">dir tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/37_div_tag.html">div tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/38_em_tag.html">em tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/39_embed_tag.html">embed tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/40_field_set_tag.html">field set tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/41_figcaption_tag.html">figcaption tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/42_figure_tag.html">figure tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/43_font_tag.html">font tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/44_footer_tag.html">footer tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/45_form_tag.html">form tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/46_frame_tag.html">frame tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/47_frameset_tag.html">frameset tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/48_header_tag.html">header tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/49_hr_tag.html">hr tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/50_i_tag.html">i tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/51_input_tag.html">input tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/52_kbd_tag.html">kbd tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/53_label_tag.html">label tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/54_legend_tag.html">legend tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/55_lists_tag.html">lists tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/56_link_tag.html">link tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/57_main_tag.html">main tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/58_mark_tag.html">mark tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/59_marquee_tag.html">marquee tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/60_menu_tag.html">menu tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/61_meta_tag.html">meta tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/62_Meter_tag.html">Meter tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/63_nav_tag.html">nav tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/64_object_tag.html">Object tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/65_Optgrp_tag.html">optgrp tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/66_option_tag.html">option tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/67_progress.html">progress tag</a></li>
+                                <li><a class="dropdown-item" href="../3_HTML_tags/68_Colour_name.html">Color name</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px; font-size: 18px;">
+    <h1 class="h1">HTML form Attribute</h1>
+    <h2 class="h2">HTML &lt;form&gt; element attributes</h2>
+    <p>In HTML there are various attributes available for &lt;form&gt; element which are given below:</p>
+    <h2 class="h3">HTML action attribute</h2>
+    <p>The action attribute of &lt;form&gt; element defines the process to be performed on form when form is submitted, or it is a URI to process the form information. </p>
+    <p>The action attribute value defines the web page where information proceed. It can be .php, .jsp, .asp, etc. or any URL where you want to process your form.</p>
+    <h4 class="n">Note: If action attribute value is blank then form will be processed to the same page.</h4>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+      &lt;form action="action.html" method="post"&gt;
+         &lt;label&gt;User Name:&lt;/label&gt;&lt;br&gt;
+         &lt;input type="text" name="name"&gt;&lt;br&gt;&lt;br&gt;
+         &lt;label&gt;User Password&lt;/label&gt;&lt;br&gt;
+         &lt;input type="password" name="pass"&gt;&lt;br&gt;&lt;br&gt;
+          &lt;input type="submit"&gt;
+         &lt;/form&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute" target="_blank">Test it Now</a></span>
+
+    <hr/>
+    <h3 class="h2">HTML method attribute</h3>
+    <p>The method attribute defines the HTTP method which browser used to submit the form. The possible values of method attribute can be:</p>
+    <ul class="points">
+    <li><strong>post:</strong> We can use the post value of method attribute when we want to process the sensitive data as it does not display the submitted data in URL.</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="post"&gt;
+    </textarea></div>
+    <ul class="points">
+    <li><strong>get:</strong> The get value of method attribute is default value while submitting the form. But this is not secure as it displays data in URL after submitting the form.</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="get"&gt;
+    </textarea></div>
+    <p>When submitting the data, it will display the entered data in the form of:</p>
+    <div class="codeblock"><textarea name="code" class="html">
+    file:///D:/HTML/action.html?name=JavaTPoint&pass=123
+    </textarea></div>
+    <hr/>
+    <h2 class="h3">HTML target attribute</h2>
+    <p>The target attribute defines where to open the response after submitting the form. The following are the keywords used with the target attribute.</p>
+    <ul class="points">
+    <li><strong>_self:</strong> If we use _self as an attribute value, then the response will display in current page only.</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+     &lt;form action="action.html" method="get" target="_self"&gt;
+    </textarea></div>
+    <ul class="points">
+    <li><strong>_blank:</strong> If we use _blank as an attribute it will load the response in a new page.</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+     &lt;form action="action.html" method="get" target="_blank"&gt;
+    </textarea></div>
+    <hr/>
+    <h2 class="h3">HTML autocomplete attribute</h2>
+    <p>The HTML autocomplete attribute is a newly added attribute of HTML5 which enables an input field to complete automatically. It can have two values "on" and "off" which enables autocomplete either ON or OFF. The default value of autocomplete attribute is "on".</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="get" autocomplete="on"&gt;
+    </textarea></div>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="get" autocomplete="off"&gt;
+    </textarea></div>
+    <h4 class="n">Note: it can be used with &lt;form&gt; element and &lt;input&gt; element both.</h4>
+    <hr/>
+    <h2 class="h3">HTML enctype attribute</h2>
+    <p>The HTML enctype attribute defines the encoding type of form-content while submitting the form to the server. The possible values of enctype can be:</p>
+    <ul class="points">
+    <li><strong>application/x-www-form-urlencoded:</strong> It is default encoding type if the enctype attribute is not included in the form. All characters are encoded before submitting the form.</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="post" enctype="application/x-www-form-urlencoded" &gt;
+    </textarea></div>
+    <ul class="points">
+    <li><strong>multipart/form-data:</strong> It does not encode any character. It is used when our form contains file-upload controls. </li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="post" enctype="multipart/form-data"&gt;
+    </textarea></div>
+    <ul class="points">
+    <li><strong>text/plain (HTML5):</strong> In this encoding type only space are encoded into + symbol and no any other special character encoded.</li>
+    </ul>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action="action.html" method="post" enctype="text/plain" &gt;
+    </textarea></div>
+    <hr/>
+    <h2 class="h3">HTML novalidate attribute HTML5</h2>
+    <p>The novalidate attribute is newly added Boolean attribute of HTML5. If we apply this attribute in form then it does not perform any type of validation and submit the form.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action = "action.html" method = "get" novalidate&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute2" target="_blank">Test it Now</a></span>
+  
+    <hr/>
+    <h2 class="h2">HTML &lt;input&gt; element attribute</h2>
+    <h2 class="h3">HTML name attribute</h2>
+    <p>The HTML name attribute defines the name of an input element. The name and value attribute are included in HTTP request when we submit the form. </p>
+    <h4 class="n">Note: One should not omit the name attribute as when we submit the form the HTTP request includes both name-value pair and if name is not available it will not process that input field.</h4>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form action = "action.html" method = "get"&gt;
+             Enter name:&lt;br&gt;&lt;input type="name" name="uname"&gt;&lt;br&gt;
+             Enter age:&lt;br&gt;&lt;input type="number" name="age"&gt;&lt;br&gt;
+             Enter email:&lt;br&gt;&lt;input type="email"&gt;&lt;br&gt;
+             &lt;input type="submit" value="Submit"&gt;
+          &lt;/form&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute3" target="_blank">Test it Now</a></span>
+
+    <hr/>
+    <h2 class="h3">HTML value attribute</h2>
+    <p>The HTML value attribute defines the initial value or default value of an input field.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form&gt;
+            &lt;label&gt;Enter your Name&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="uname" value="Enter Name"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label&gt;Enter your Email-address&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="uname" value="Enter email"&gt;&lt;br&gt;&lt;br&gt;
+              &lt;label&gt;Enter your password&lt;/label&gt;&lt;br&gt;
+            &lt;input type="password" name="pass" value=""&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="submit" value="login"&gt;
+       &lt;/form&gt; 
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute4" target="_blank">Test it Now</a></span>
+    <hr/>
+    <h2 class="h3">HTML required attribute HTML5</h2>
+    <p>HTML required is a Boolean attribute which specifies that user must fill that filed before submitting the form.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form&gt;
+            &lt;label&gt;Enter your Email-address&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="uname" required&gt;&lt;br&gt;&lt;br&gt;
+             &lt;label&gt;Enter your password&lt;/label&gt;&lt;br&gt;
+            &lt;input type="password" name="pass"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="submit" value="login"&gt;
+       &lt;/form&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute5" target="_blank">Test it Now</a></span>
+
+    <hr/>
+    <h2 class="h3">HTML autofocus attribute HTML5</h2>
+    <p>The autofocus is a Boolean attribute which enables a field automatically focused when a webpage loads.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form&gt;
+            &lt;label&gt;Enter your Email-address&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="uname" autofocus&gt;&lt;br&gt;&lt;br&gt;
+             &lt;label&gt;Enter your password&lt;/label&gt;&lt;br&gt;
+            &lt;input type="password" name="pass"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="submit" value="login"&gt;
+       &lt;/form&gt;	
+    </textarea></div>
+    <hr/>
+    <h2 class="h3">HTML placeholder attribute HTML5</h2>
+    <p>The placeholder attribute specifies a text within an input field which informs the user about the expected input of that filed. </p>
+    <p>The placeholder attribute can be used with text, password, email, and URL values. </p>
+    <p>When the user enters the value, the placeholder will be automatically removed.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;form&gt;
+            &lt;label&gt;Enter your name&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="uname" placeholder="Your name"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;label&gt;Enter your Email address&lt;/label&gt;&lt;br&gt;
+            &lt;input type="email" name="email" placeholder="example@gmail.com"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;label&gt;Enter your password&lt;/label&gt;&lt;br&gt;
+            &lt;input type="password" name="pass" placeholder="your password"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="submit" value="login"&gt;
+        &lt;/form&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute6" target="_blank">Test it Now</a></span>
+
+    <hr/>
+    <h2 class="h3">HTML disabled attribute</h2>
+    <p>The HTML disabled attribute when applied then it disable that input field. The disabled field does not allow the user to interact with that field. </p>
+    <p>The disabled input filed does not receive click events, and these input value will not be sent to the server when submitting the form.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;input type="text" name="uname" disabled&gt;&lt;br&gt;&lt;br&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute7" target="_blank">Test it Now</a></span>
+
+    <hr/>
+    <h2 class="h3">HTML size attribute</h2>
+    <p>The size attribute controls the size of the input field in typed characters.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    &lt;label&gt;Account holder name&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="uname" size="40" required&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label&gt;Account number&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="an" size="30" required&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label&gt;CVV&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" name="cvv"  size="1" required&gt;&lt;br&gt;&lt;br&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute8" target="_blank">Test it Now</a></span>
+
+    <hr/>
+    <h2 class="h3">HTML form attribute</h2>
+    <p>HTML form attribute allows a user to specify an input filed outside the form but remains the part of the parent form.</p>
+    <h3 class="h3">Example:</h3>
+    <div class="codeblock"><textarea name="code" class="html">
+    User email: &lt;br&gt;&lt;input type="email" name="email"  form="fcontrol"  required&gt;&lt;br&gt;
+             &lt;input type="submit" form="fcontrol"&gt;
+    </textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/oprweb/test.jsp?filename=htmlFormAttribute9" target="_blank">Test it Now</a></span>
+    </div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="20_HTML_Form_Input.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="22_HTML_with_CSS.html"><button class="btn btn-success" type="button">Next</button></a>
+        </div>
+        <footer>
+            <div class="container-fluid bg-dark text-bg-dark"
+                style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+                Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+            </div>
+          </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

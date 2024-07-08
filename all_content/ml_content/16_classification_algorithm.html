@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Machine Learning
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_what_is_machine_learning.html">What is Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="2_application_of_ml.html">Applications of ML</a></li>
+                                <li><a class="dropdown-item" href="3_life_cycle.html">Machine Learning Life Cycle</a></li>
+                                <li><a class="dropdown-item" href="4_installing_anaconda_python.html">Installing Anaconda & Python</a></li>
+                                <li><a class="dropdown-item" href="5_ai_vs_ml.html">Artificial Intelligence vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="6_datasets.html">Datasets</a></li>
+                                <li><a class="dropdown-item" href="7_data_preprocessing.html">Data preprocessing</a></li>
+                                <li><a class="dropdown-item" href="8_supervised_learning.html">Supervised Learning</a></li>
+                                <li><a class="dropdown-item" href="9_unsupervised_learning.html">Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="10_supervised_vs_unsupervised.html">Supervised Learning vs Unsupervised Learning</a></li>
+                                <li><a class="dropdown-item" href="11_regression_analysis.html">Regression Analysis</a></li>
+                                <li><a class="dropdown-item" href="12_linear_regression.html">Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="13_simple_linear_regression.html">Simple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="14_multiple_linear_regression.html">Multiple Linear Regression</a></li>
+                                <li><a class="dropdown-item" href="15_polynomial_regression.html">Polynomial Regression</a></li>
+                                <li><a class="dropdown-item active-submenu" href="16_classification_algorithm.html">Classification</a></li>
+                                <li><a class="dropdown-item" href="17_logistic_regression.html">Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="18_knn.html">KNN Algorithm</a></li>
+                                <li><a class="dropdown-item" href="19_svm.html">Support Vector Machine</a></li>
+                                <li><a class="dropdown-item" href="20_naive_bayes.html">Naive Bayes</a></li>
+                                <li><a class="dropdown-item" href="21_regression_vs_classification.html">Regression vs Classification</a></li>
+                                <li><a class="dropdown-item" href="22_linear_reg_vs_logistic_reg.html">Linear Regression vs Logistic Regression</a></li>
+                                <li><a class="dropdown-item" href="23_decision_tree.html">Decision Tree</a></li>
+                                <li><a class="dropdown-item" href="24_random_forest.html">Random Forest</a></li>
+                                <li><a class="dropdown-item" href="25_clustering.html">Clustering</a></li>
+                                <li><a class="dropdown-item" href="26_k_means_clustering.html">K-Means Clustering</a></li>
+                                <li><a class="dropdown-item" href="27_confusion_matrix.html">Confusion Matrix</a></li>
+                                <li><a class="dropdown-item" href="28_cross_validation.html">Cross Validation</a></li>
+                                <li><a class="dropdown-item" href="29_dimensionality_reduction.html">Dimensionality Reduction</a></li>
+                                <li><a class="dropdown-item" href="30_overfitting_underfitting.html">Overfitting & Underfitting</a></li>
+                                <li><a class="dropdown-item" href="31_principle_component_analysis.html">Principle Component Analysis</a></li>
+                                <li><a class="dropdown-item" href="32_p_value.html">P-Value</a></li>
+                                <li><a class="dropdown-item" href="33_regularization.html">Regularization in ML</a></li>
+                                <li><a class="dropdown-item" href="34_overfitting.html">Overfitting in ML</a></li>
+                                <li><a class="dropdown-item" href="35_bias_variance.html">Bias & Variance</a></li>
+                                <li><a class="dropdown-item" href="36_gradient_descent.html">Gradient Descent</a></li>
+                                <li><a class="dropdown-item" href="37_cost_function.html">Cost Function</a></li>
+                                <li><a class="dropdown-item" href="38_normalization.html">Normalization in ML</a></li>
+                                <li><a class="dropdown-item" href="39_epoch_batch_iterations.html">Epoch, Batch & Iterations</a></li>
+                                <li><a class="dropdown-item" href="40_feature_engineering.html">Feature Engineering</a></li>
+                                <li><a class="dropdown-item" href="41_perceptron.html">Perceptron</a></li>
+                                <li><a class="dropdown-item" href="42_data_science_vs_ml.html">Data Science vs Machine Learning</a></li>
+                                <li><a class="dropdown-item" href="43_ml_vs_deep_learning.html">Machine Learning vs Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Classification Algorithm in Machine Learning </h1>
+    <p>As we know, the Supervised Machine Learning algorithm can be broadly classified into Regression and
+        Classification Algorithms. In Regression algorithms, we have predicted the output for continuous values, but to
+        predict the categorical values, we need Classification algorithms. </p>
+    <h2 class="h3">What is the Classification Algorithm?</h2>
+    <p>The Classification algorithm is a Supervised Learning technique that is used to identify the category of new
+        observations on the basis of training data. In Classification, a program learns from the given dataset or
+        observations and then classifies new observation into a number of classes or groups. Such as, <strong>Yes or No,
+            0 or 1, Spam or Not Spam, cat or dog,</strong> etc. Classes can be called as targets/labels or categories.
+    </p>
+    <p>Unlike regression, the output variable of Classification is a category, not a value, such as "Green or Blue",
+        "fruit or animal", etc. Since the Classification algorithm is a Supervised learning technique, hence it takes
+        labeled input data, which means it contains input with the corresponding output. </p>
+    <p>In classification algorithm, a discrete output function(y) is mapped to input variable(x).</p>
+    <div class="codeblock"><textarea name="code" class="java">
+ y=f(x), where y = categorical output
+</textarea></div>
+    <p>The best example of an ML classification algorithm is <strong>Email Spam Detector</strong>. </p>
+    <p>The main goal of the Classification algorithm is to identify the category of a given dataset, and these
+        algorithms are mainly used to predict the output for the categorical data. </p>
+    <p>Classification algorithms can be better understood using the below diagram. In the below diagram, there are two
+        classes, class A and Class B. These classes have features that are similar to each other and dissimilar to other
+        classes. </p>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/classification-algorithm-in-machine-learning.png"
+        alt="Classification Algorithm in Machine Learning " />
+    <p>The algorithm which implements the classification on a dataset is known as a classifier. There are two types of
+        Classifications:</p>
+    <ul class="points">
+        <li><strong>Binary Classifier:</strong> If the classification problem has only two possible outcomes, then it is
+            called as Binary Classifier.<br>
+            <strong>Examples:</strong> YES or NO, MALE or FEMALE, SPAM or NOT SPAM, CAT or DOG, etc.
+        </li>
+        <li><strong>Multi-class Classifier:</strong> If a classification problem has more than two outcomes, then it is
+            called as Multi-class Classifier.<br>
+            <strong>Example:</strong> Classifications of types of crops, Classification of types of music.
+        </li>
+    </ul>
+    <h2 class="h3">Learners in Classification Problems:</h2>
+    <p>In the classification problems, there are two types of learners:</p>
+    <ol class="points">
+        <li><strong>Lazy Learners:</strong> Lazy Learner firstly stores the training dataset and wait until it receives
+            the test dataset. In Lazy learner case, classification is done on the basis of the most related data stored
+            in the training dataset. It takes less time in training but more time for predictions.<br>
+            <strong>Example:</strong> K-NN algorithm, Case-based reasoning</strong>
+        </li>
+        <li><strong>Eager Learners:</strong>Eager Learners develop a classification model based on a training dataset
+            before receiving a test dataset. Opposite to Lazy learners, Eager Learner takes more time in learning, and
+            less time in prediction.
+            <strong>Example:</strong> Decision Trees, Naïve Bayes, ANN.</strong>
+        </li>
+    </ol>
+    <h2 class="h3">Types of ML Classification Algorithms:</h2>
+    <p>Classification Algorithms can be further divided into the Mainly two category:</p>
+    <ul class="points">
+        <li><strong>Linear Models</strong>
+            <ul class="points">
+                <li>Logistic Regression</li>
+                <li>Support Vector Machines</li>
+            </ul>
+        </li>
+        <li><strong>Non-linear Models</strong>
+            <ul class="points">
+                <li>K-Nearest Neighbours</li>
+                <li>Kernel SVM</li>
+                <li>Naïve Bayes</li>
+                <li>Decision Tree Classification</li>
+                <li>Random Forest Classification</li>
+            </ul>
+        </li>
+    </ul>
+    <h4 class="n">Note: We will learn the above algorithms in later chapters.</h4>
+    <h2 class="h2">Evaluating a Classification model:</h2>
+    <p>Once our model is completed, it is necessary to evaluate its performance; either it is a Classification or
+        Regression model. So for evaluating a Classification model, we have the following ways:</p>
+    <p><strong>1. Log Loss or Cross-Entropy Loss:</strong></p>
+    <ul class="points">
+        <li>It is used for evaluating the performance of a classifier, whose output is a probability value between the 0
+            and 1. </li>
+        <li>For a good binary Classification model, the value of log loss should be near to 0. </li>
+        <li>The value of log loss increases if the predicted value deviates from the actual value.</li>
+        <li>The lower log loss represents the higher accuracy of the model.</li>
+        <li>For Binary classification, cross-entropy can be calculated as:</li>
+    </ul>
+    <div class="codeblock"><textarea name="code" class="java">
+      ?(ylog(p)+(1?y)log(1?p))
+</textarea></div>
+    <p>Where y= Actual output, p= predicted output. </p>
+    <p><strong>2. Confusion Matrix:</strong></p>
+    <ul class="points">
+        <li>The confusion matrix provides us a matrix/table as output and describes the performance of the model.</li>
+        <li>It is also known as the error matrix.</li>
+        <li>The matrix consists of predictions result in a summarized form, which has a total number of correct
+            predictions and incorrect predictions. The matrix looks like as below table:</li>
+    </ul>
+    <table class="alt">
+        <tr>
+            <th></th>
+            <th>Actual Positive</th>
+            <th>Actual Negative </th>
+        </tr>
+        <tr>
+            <td>Predicted Positive</td>
+            <td>True Positive</td>
+            <td>False Positive</td>
+        </tr>
+        <tr>
+            <td>Predicted Negative</td>
+            <td>False Negative</td>
+            <td>True Negative</td>
+        </tr>
+    </table>
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/classification-algorithm-in-machine-learning2.png"
+        alt="Classification Algorithm in Machine Learning" />
+    <p><strong>3. AUC-ROC curve:</strong></p>
+    <ul class="points">
+        <li>ROC curve stands for <strong>Receiver Operating Characteristics Curve</strong> and AUC stands for
+            <strong>Area Under the Curve</strong>.</li>
+        <li>It is a graph that shows the performance of the classification model at different thresholds. </li>
+        <li>To visualize the performance of the multi-class classification model, we use the AUC-ROC Curve.</li>
+        <li>The ROC curve is plotted with TPR and FPR, where TPR (True Positive Rate) on Y-axis and FPR(False Positive
+            Rate) on X-axis. </li>
+    </ul>
+    <h2 class="h3">Use cases of Classification Algorithms</h2>
+    <p>Classification algorithms can be used in different places. Below are some popular use cases of Classification
+        Algorithms:</p>
+    <ul class="points">
+        <li>Email Spam Detection</li>
+        <li>Speech Recognition</li>
+        <li>Identifications of Cancer tumor cells. </li>
+        <li>Drugs Classification</li>
+        <li>Biometric Identification, etc.</li>
+    </ul>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="15_polynomial_regression.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="17_logistic_regression.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+    <style>
+        .active-submenu{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        .active-submenu:hover{
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Python
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="1_python_history.html">Python History</a></li>
+                                <li><a class="dropdown-item" href="2_python_applications.html">Python Applications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3_how_to_install_python.html">How To Install
+                                        Python</a></li>
+                                <li><a class="dropdown-item" href="4_python_variables.html">Variables</a></li>
+                                <li><a class="dropdown-item" href="5_python_datatypes.html">Data Types</a></li>
+                                <li><a class="dropdown-item" href="6_python_keywords.html">Keywords</a></li>
+                                <li><a class="dropdown-item" href="7_python_literals.html">Literals</a></li>
+                                <li><a class="dropdown-item" href="8_python_operators.html">Operators</a>
+                                </li>
+                                <li><a class="dropdown-item" href="9_python_comments.html">Comments</a></li>
+                                <li><a class="dropdown-item" href="10_python_if_else.html">If Else</a></li>
+                                <li><a class="dropdown-item" href="11_python_loops.html">Loops</a></li>
+                                <li><a class="dropdown-item" href="12_for_loop.html">For Loop</a></li>
+                                <li><a class="dropdown-item active-submenu" href="13_while_loop.html">While Loop</a></li>
+                                <li><a class="dropdown-item" href="14_break.html">Break Statement</a></li>
+                                <li><a class="dropdown-item" href="15_continue.html">Continue Statement</a></li>
+                                <li><a class="dropdown-item" href="16_pass.html">Pass</a></li>
+                                <li><a class="dropdown-item" href="17_strings.html">Strings</a></li>
+                                <li><a class="dropdown-item" href="18_lists.html">List</a></li>
+                                <li><a class="dropdown-item" href="19_tuples.html">Tuples</a></li>
+                                <li><a class="dropdown-item" href="20_list_vs_tuple.html">List vs Tuples</a></li>
+                                <li><a class="dropdown-item" href="21_set.html">Set</a></li>
+                                <li><a class="dropdown-item" href="22_dictionary.html">Dictionary</a></li>
+                                <li><a class="dropdown-item" href="23_functions.html">Functions</a></li>
+                                <li><a class="dropdown-item" href="24_lambda_functions.html">Lambda Functions</a></li>
+                                <li><a class="dropdown-item" href="25_exception_handling.html">Exception Handling</a>
+                                </li>
+                                <li><a class="dropdown-item" href="26_oops_concept.html">OOPs Concepts</a></li>
+                                <li><a class="dropdown-item" href="27_object_class.html">Object Class</a></li>
+                                <li><a class="dropdown-item" href="28_constructor.html">Constructor</a></li>
+                                <li><a class="dropdown-item" href="29_inheritance.html">Inheritance in Python</a></li>
+                                <li><a class="dropdown-item" href="30_abstraction.html">Abstraction in Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="padding: 30px;font-size: 18px;">
+    <h1 class="h1">Python While Loops</h1>
+    <p>In coding, loops are designed to execute a specified code block repeatedly. We'll learn how to construct a while
+        loop in Python, the syntax of a while loop, loop controls like break and continue, and other exercises in this
+        tutorial.</p>
+    <h2 class="h2">Introduction of Python While Loop</h2>
+    <p>In this article, we are discussing while loops in Python. The Python while loop iteration of a code block is
+        executed as long as the given Condition, i.e., conditional_expression, is true.</p>
+    <p>If we don't know how many times we'll execute the iteration ahead of time, we can write an indefinite loop.</p>
+    <p><strong>Syntax of Python While Loop</strong></p>
+    <p>Now, here we discuss the syntax of the Python while loop. The syntax is given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+Statement
+while Condition:
+    	Statement
+</textarea></div>
+    <p>The given condition, i.e., conditional_expression, is evaluated initially in the Python while loop. Then, if the
+        conditional expression gives a boolean value True, the while loop statements are executed. The conditional
+        expression is verified again when the complete code block is executed. This procedure repeatedly occurs until
+        the conditional expression returns the boolean value False.</p>
+    <ul class="points">
+        <li>The statements of the Python while loop are dictated by indentation.</li>
+        <li>The code block begins when a statement is indented &amp; ends with the very first unindented statement.</li>
+        <li>Any non-zero number in Python is interpreted as boolean True. False is interpreted as None and 0.</li>
+    </ul>
+    <h2 class="h3">Example</h2>
+    <p>Now we give some examples of while Loop in Python. The examples are given in below -</p>
+    <p><strong>Program code 1:</strong></p>
+    <p>Now we give code examples of while loops in Python for printing numbers from 1 to 10. The code is given below -
+    </p>
+    <div class="codeblock"><textarea name="code" class="java">
+i=1
+while i<=10:
+    print(i, end=' ')
+    i+=1
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+1 2 3 4 5 6 7 8 9 10 
+</pre>
+    </div>
+    <p><strong>Program Code 2:</strong></p>
+    <p>Now we give code examples of while loops in Python for Printing those numbers divisible by either 5 or 7 within 1
+        to 50 using a while loop. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+i=1
+while i<51:
+    if i%5 == 0 or i%7==0 :
+        print(i, end=' ')
+    i+=1
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+5 7 10 14 15 20 21 25 28 30 35 40 42 45 49 50
+</pre>
+    </div>
+    <p><strong>Program Code:</strong></p>
+    <p>Now we give code examples of while loops in Python, the sum of squares of the first 15 natural numbers using a
+        while loop. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program example to show the use of while loop 
+
+num = 15
+
+# initializing summation and a counter for iteration
+summation = 0
+c = 1
+
+while c <= num: # specifying the condition of the loop
+    # begining the code block
+    summation = c**2 + summation
+    c = c + 1    # incrementing the counter
+
+# print the final sum
+print("The sum of squares is", summation)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>The sum of squares is 1240
+</pre>
+    </div>
+    <p>Provided that our counter parameter i gives boolean true for the condition, i less than or equal to num, the loop
+        repeatedly executes the code block i number of times.</p>
+    <p>Next is a crucial point (which is mostly forgotten). We have to increment the counter parameter's value in the
+        loop's statements. If we don't, our while loop will execute itself indefinitely (a never-ending loop).</p>
+    <p>Finally, we print the result using the print statement.</p>
+    <h2 class="h2">Exercises of Python While Loop</h2>
+    <h3 class="h3">Prime Numbers and Python While Loop</h3>
+    <p>Using a while loop, we will construct a Python program to verify if the given integer is a prime number or not.
+    </p>
+    <p><strong>Program Code:</strong></p>
+    <p>Now we give code examples of while loops in Python for a number is Prime number or not. The code is given below -
+    </p>
+    <div class="codeblock"><textarea name="code" class="java">
+num = [34, 12, 54, 23, 75, 34, 11]  
+
+def prime_number(number):
+    condition = 0
+    iteration = 2
+    while iteration <= number / 2:
+        if number % iteration == 0:
+            condition = 1
+            break
+        iteration = iteration + 1
+
+    if condition == 0:
+        print(f"{number} is a PRIME number")
+    else:
+        print(f"{number} is not a PRIME number")
+for i in num:
+    prime_number(i)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>34 is not a PRIME number
+12 is not a PRIME number
+54 is not a PRIME number
+23 is a PRIME number
+75 is not a PRIME number
+34 is not a PRIME number
+11 is a PRIME number
+</pre>
+    </div>
+    <h3 class="h3">2. Armstrong and Python While Loop</h3>
+    <p>We will construct a Python program using a while loop to verify whether the given integer is an Armstrong number.
+    </p>
+    <p><strong>Program Code:</strong></p>
+    <p>Now we give code examples of while loops in Python for a number is Armstrong number or not. The code is given
+        below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+n = int(input())
+n1=str(n)
+l=len(n1)
+temp=n
+s=0
+while n!=0:
+    r=n%10
+    s=s+(r**1)
+    n=n//10
+if s==temp:
+    print("It is an Armstrong number")
+else:
+    print("It is not an Armstrong number ")
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+342
+It is not an Armstrong number
+</pre>
+    </div>
+    <h3 class="h3">Multiplication Table using While Loop</h3>
+    <p>In this example, we will use the while loop for printing the multiplication table of a given number.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>In this example, we will use the while loop for printing the multiplication table of a given number. The code is
+        given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+num = 21      
+counter = 1    
+# we will use a while loop for iterating 10 times for the multiplication table      
+print("The Multiplication Table of: ", num)    
+while counter <= 10: # specifying the condition
+    ans = num * counter    
+    print (num, 'x', counter, '=', ans)    
+    counter += 1 # expression to increment the counter
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>The Multiplication Table of:  21
+21 x 1 = 21
+21 x 2 = 42
+21 x 3 = 63
+21 x 4 = 84
+21 x 5 = 105
+21 x 6 = 126
+21 x 7 = 147
+21 x 8 = 168
+21 x 9 = 189
+21 x 10 = 210
+</pre>
+    </div>
+    <h3 class="h3">Python While Loop with List</h3>
+    <p><strong>Program Code 1:</strong></p>
+    <p>Now we give code examples of while loops in Python for square every number of a list. The code is given below -
+    </p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to square every number of a list  
+# initializing a list  
+list_ = [3, 5, 1, 4, 6]  
+squares = []  
+# programing a while loop   
+while list_: # until list is not empty this expression will give boolean True after that False  
+    squares.append( (list_.pop())**2)  
+#  Print the squares of all numbers.
+print( squares )  
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>[36, 16, 1, 25, 9]
+</pre>
+    </div>
+    <p>In the preceding example, we execute a while loop over a given list of integers that will repeatedly run if an
+        element in the list is found.</p>
+    <p><strong>Program Code 2:</strong></p>
+    <p>Now we give code examples of while loops in Python for determine odd and even number from every number of a list.
+        The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+list_ = [3, 4, 8, 10, 34, 45, 67,80]		# Initialize the list
+index = 0
+while index < len(list_):
+    element = list_[index]
+    if element % 2 == 0:
+        print('It is an even number')		# Print if the number is even.
+    else:
+        print('It is an odd number')		# Print if the number is odd.
+    index += 1
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+It is an odd number
+It is an even number
+It is an even number
+It is an even number
+It is an even number
+It is an odd number
+It is an odd number
+It is an even number
+</pre>
+    </div>
+    <p><strong>Program Code 3:</strong></p>
+    <p>Now we give code examples of while loops in Python for determine the number letters of every word from the given
+        list. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+List_= ['Priya', 'Neha', 'Cow', 'To']
+index = 0
+while index < len(List_):
+    element = List_[index]
+    print(len(element))
+    index += 1
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>
+5
+4
+3
+2
+</pre>
+    </div>
+    <h2 class="h2">Python While Loop Multiple Conditions</h2>
+    <p>We must recruit logical operators to combine two or more expressions specifying conditions into a single while
+        loop. This instructs Python on collectively analyzing all the given expressions of conditions.</p>
+    <p>We can construct a while loop with multiple conditions in this example. We have given two conditions and a and
+        keyword, meaning the Loop will execute the statements until both conditions give Boolean True.</p>
+    <p><strong>Program Code:</strong></p>
+    <p>Now we give code examples of while loops in Python for multiple condition. The code is given below -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+num1 = 17
+num2 = -12
+ 
+while num1 > 5 and num2 < -5 : # multiple conditions in a single while loop
+    num1 -= 2
+    num2 += 3
+    print( (num1, num2) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>(15, -9)
+(13, -6)
+(11, -3)
+</pre>
+    </div>
+    <p>Let's look at another example of multiple conditions with an OR operator.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+num1 = 17
+num2 = -12
+ 
+while num1 > 5 or num2 < -5 :
+    num1 -= 2
+    num2 += 3
+    print( (num1, num2) )
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>(15, -9)
+(13, -6)
+(11, -3)
+(9, 0)
+(7, 3)
+(5, 6)
+</pre>
+    </div>
+    <p>We can also group multiple logical expressions in the while loop, as shown in this example.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+num1 = 9 
+num = 14 
+maximum_value = 4
+counter = 0 
+while (counter < num1 or counter < num2) and not counter >= maximum_value: # grouping multiple conditions
+    print(f"Number of iterations: {counter}") 
+    counter += 1
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>Number of iterations: 0
+Number of iterations: 1
+Number of iterations: 2
+Number of iterations: 3
+</pre>
+    </div>
+    <h2 class="h2">Single Statement While Loop</h2>
+    <p>Similar to the if statement syntax, if our while clause consists of one statement, it may be written on the same
+        line as the while keyword.</p>
+    <p>Here is the syntax and example of a one-line while clause -</p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to create a single statement while loop
+counter = 1
+while counter: print('Python While Loops')
+</textarea></div>
+    <h2 class="h2">Loop Control Statements</h2>
+    <p>Now we will discuss the loop control statements in detail. We will see an example of each control statement.</p>
+    <h3 class="h3">Continue Statement</h3>
+    <p>It returns the control of the Python interpreter to the beginning of the loop.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to use continue loop control
+
+# Initiating the loop
+for string in "While Loops":
+    if string == "o" or string == "i" or string == "e":
+         continue
+    print('Current Letter:', string)
+</textarea></div>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>Current Letter: W
+Current Letter: h
+Current Letter: l
+Current Letter:  
+Current Letter: L
+Current Letter: p
+Current Letter: s
+</pre>
+    </div>
+    <h3 class="h3">Break Statement</h3>
+    <p>It stops the execution of the loop when the break statement is reached.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to use the break statement
+
+# Initiating the loop
+for string in "Python Loops":
+    if string == 'n':
+         break
+    print('Current Letter: ', string)
+</textarea></div>
+    <p><strong>Output:</strong></p>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <div class="codeblock3">
+        <pre>Current Letter:  P
+Current Letter:  y
+Current Letter:  t
+Current Letter:  h
+Current Letter:  o
+</pre>
+    </div>
+    <h3 class="h3">Pass Statement</h3>
+    <p>Pass statements are used to create empty loops. Pass statement is also employed for classes, functions, and empty
+        control statements.</p>
+    <p><strong>Code</strong></p>
+    <div class="codeblock"><textarea name="code" class="java">
+# Python program to show how to use the pass statement  
+for a string in "Python Loops":  
+    pass  
+print( 'The Last Letter of given string is:', string)   
+</textarea></div>
+    <p>Now we compile the above code in python, and after successful compilation, we run it. Then the output is given
+        below -</p>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>
+The Last Letter of given string is: s
+</pre>
+    </div>
+    <hr />
+</div>
+<div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="12_for_loop.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="14_break.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+</html>

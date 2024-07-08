@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/sg.png">
+
+
+    <link rel="stylesheet" type="text/css" href="https://static.javatpoint.com/link.css?v=6.0" async />
+    <title>Java String</title>
+    
+    <style>
+        .active-submenu {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+
+        .active-submenu:hover {
+            font-weight: 500;
+            background-color: darkgray;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-image: radial-gradient(#b3d6e6, white, #b3d6e6);">
+    <nav class="navbar navbar-dark bg-primary sticky-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../home.html">
+                <img src="../icon/sg.png" alt="icon" style="height: 50px; width: 50px; margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">
+                        <img src="../icon/sg.png" alt="icon" style="height: 50px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../home.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programming Language
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/c_page.html">C</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/c++_page.html">C++</a></li>
+                                <li><a class="dropdown-item active-submenu"
+                                        href="../../first_page/java_page.html">Java</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/python_page.html">Python</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Java
+                            </a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                                <li><a class="dropdown-item" href="#">content</a></li>
+                            </ul> -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="1what_is_java.html">What
+                                        is Java</a></li>
+                                <li><a class="dropdown-item " href="2history_of_java.html">History Of
+                                        Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="3feature_of_java.html">Features Of Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="4c++_vs_java.html">C++ Vs
+                                        Java</a></li>
+
+                                <li><a class="dropdown-item" href="5hello_java_program.html">Hello Java
+                                        Program</a></li>
+
+                                <li><a class="dropdown-item" href="6program_internal.html">Program Internal</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="7how_to_set_path.html">How To Set Path
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="8jdk_jvm_jre.html">JDk,JVM And JRE
+                                    </a></li>
+                                <li><a class="dropdown-item" href="9jvm.html">JVM
+                                    </a></li>
+                                <li><a class="dropdown-item" href="10java_variable.html">Java Variable
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="11java_data_type.html">Java Data Type
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="12unicode_system.html">Unicode System
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="13operator.html">Java
+                                        Operator
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="14keyword.html">Java
+                                        Keyword
+                                    </a></li>
+
+                                <li><a class="dropdown-item" href="15java_control_statement.html">
+                                        Java Control Statement</a></li>
+                                <li><a class="dropdown-item" href="16if_else_statement.html">
+                                        Java If Else Statement</a></li>
+
+                                <li><a class="dropdown-item" href="17java_switch.html">
+                                        Java Switch Statement</a></li>
+
+                                <li><a class="dropdown-item" href="18java_for_loop.html">
+                                        Java For Loop</a></li>
+
+                                <li><a class="dropdown-item" href="19java_while_loop.html">
+                                        Java While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="20java_do_while_loop.html">
+                                        Java Do While Loop</a></li>
+
+                                <li><a class="dropdown-item" href="21java_break.html">
+                                        Java Break Statement</a></li>
+
+                                <li><a class="dropdown-item" href="22java_continue.html">
+                                        Java Continue Statement</a></li>
+
+                                <li><a class="dropdown-item" href="23java_comment.html">
+                                        Java Comments</a></li>
+
+                                <li><a class="dropdown-item" href="24java_oops_concept.html">
+                                        Java Oops Concept</a></li>
+
+                                <li><a class="dropdown-item" href="25java_naming.html">
+                                        Java Naming Conventions</a></li>
+
+                                <li><a class="dropdown-item" href="26object_nd_class.html">
+                                        Java Object And Class</a></li>
+
+                                <li><a class="dropdown-item" href="27method.html">
+                                        Java Methods</a></li>
+
+                                <li><a class="dropdown-item" href="28java_constructor.html">
+                                        Java Constructors</a></li>
+
+                                <li><a class="dropdown-item" href="29static_keyword.html">
+                                        Java Static Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="30this_keyword.html">
+                                        Java This Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="31inheritence.html">
+                                        Java Inheritance</a></li>
+
+                                <li><a class="dropdown-item" href="32aggregation.html">
+                                        Java Aggregation</a></li>
+
+                                <li><a class="dropdown-item" href="33method_overloading.html">
+                                        Java Method Overloading</a></li>
+
+                                <li><a class="dropdown-item" href="34method_overrinding.html">
+                                        Java Method Overrinding</a></li>
+
+                                <li><a class="dropdown-item" href="35covariant_return_type.html">
+                                        Java Covariant Return Type</a></li>
+
+                                <li><a class="dropdown-item" href="36super_keyword.html">
+                                        Java Super Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="37final_keyword.html">
+                                        Java Final Keyword</a></li>
+
+                                <li><a class="dropdown-item" href="38runtime_polymorfism.html">
+                                        Java Runtime Polymorphism</a></li>
+
+                                <li><a class="dropdown-item" href="39abstarct_class.html">
+                                        Java Abstract Class</a></li>
+
+                                <li><a class="dropdown-item" href="40interface.html">
+                                        Java Interface</a></li>
+
+                                <li><a class="dropdown-item" href="41package.html">
+                                        Java Packages</a></li>
+
+                                <li><a class="dropdown-item" href="42access_modifier.html">
+                                        Java Access Modifier</a></li>
+
+                                <li><a class="dropdown-item" href="43encapsulation.html">
+                                        Java Encapulation</a></li>
+
+                                <li><a class="dropdown-item" href="44arrays.html">
+                                        Java Array</a></li>
+
+                                <li><a class="dropdown-item" href="45object_class.html">
+                                        Java Object Class</a></li>
+
+                                <li><a class="dropdown-item active-submenu" href="46java_string.html">
+                                        Java String</a></li>
+
+                                <li><a class="dropdown-item" href="47exception_handling.html">
+                                        Java Exception Handling</a></li>
+
+                                <li><a class="dropdown-item" href="48multithreading.html">
+                                        Java Multithreading</a></li>
+
+                                <li><a class="dropdown-item" href="49life_cycle_of_thread.html">
+                                        Life Cycle Of Thread</a></li>
+
+                                <li><a class="dropdown-item" href="50garbage_collection.html">
+                                        Garbage Collection In Java</a></li>
+
+                                <li><a class="dropdown-item" href="51synchronization.html">
+                                        Java Synchronization</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Web Developement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../first_page/html_page.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/css_page.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../../first_page/javascript_page.html">JavaScript</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../first_page/ml_page.html">Machine Learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 30px;font-size: 18px;">
+
+    <h1 class="h1">Java String</h1>
+    <p>In <a href="java-tutorial">Java</a>, string is basically an object that represents sequence of char values. An <a
+            href="array-in-java">array</a> of characters works same as Java string. For example:</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+char[] ch={'j','a','v','a','t','p','o','i','n','t'};
+String s=new String(ch);
+</textarea></div>
+    <p>is same as:</p>
+    <div class="codeblock"><textarea name="code" class="java">
+String s="javatpoint";
+</textarea></div>
+    <p><strong>Java String</strong> class provides a lot of methods to perform operations on strings such as compare(),
+        concat(), equals(), split(), length(), replace(), compareTo(), intern(), substring() etc.</p>
+    <p>The java.lang.String class implements <em>Serializable</em>, <em>Comparable</em> and <em>CharSequence</em> <a
+            href="interface-in-java">interfaces</a>.</p>
+    <img src="https://static.javatpoint.com/images/core/string-implements.png" alt="String in Java" />
+    <h2 class="h2">CharSequence Interface</h2>
+    <p>The CharSequence interface is used to represent the sequence of characters. String, <a
+            href="https://www.javatpoint.com/StringBuffer-class">StringBuffer</a> and <a
+            href="https://www.javatpoint.com/StringBuilder-class">StringBuilder</a> classes implement it. It means, we
+        can
+        create strings in Java by using these three classes.</p>
+    <img src="https://static.javatpoint.com/images/core/charsequence.png" alt="CharSequence in Java" />
+    <p>The Java String is immutable which means it cannot be changed. Whenever we change any string, a new instance is
+        created. For mutable strings, you can use StringBuffer and StringBuilder classes.</p>
+    <p>We will discuss immutable string later. Let's first understand what String in Java is and how to create the
+        String
+        object.</p>
+    <h3 class="h2">What is String in Java?</h3>
+    <p>Generally, String is a sequence of characters. But in Java, string is an object that represents a sequence of
+        characters. The java.lang.String class is used to create a string object.</p>
+    <a id="stringobjects"></a>
+    <h3 class="h3">How to create a string object?</h3>
+    <p>There are two ways to create String object:</p>
+    <ol class="points">
+        <li>By string literal</li>
+        <li>By new keyword</li>
+    </ol>
+    <a id="stringliteral"></a>
+    <h3 class="h2">1) String Literal</h3>
+    <p>Java String literal is created by using double quotes. For Example:</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+String s="welcome";
+</textarea></div>
+    <p>Each time you create a string literal, the JVM checks the "string constant pool" first. If the string already
+        exists
+        in the pool, a reference to the pooled instance is returned. If the string doesn't exist in the pool, a new
+        string
+        instance is created and placed in the pool. For example:</p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+String s1="Welcome";
+String s2="Welcome";//It doesn't create a new instance
+</textarea></div>
+    <br>
+    <img src="https://static.javatpoint.com/core/images/java-string.png" alt="Java String" />
+    <p>In the above example, only one object will be created. Firstly, JVM will not find any string object with the
+        value
+        "Welcome" in string constant pool that is why it will create a new object. After that it will find the string
+        with
+        the value "Welcome" in the pool, it will not create a new object but will return the reference to the same
+        instance.
+    </p>
+    <h4 class="n">Note: String objects are stored in a special memory area known as the "string constant pool".</h4>
+    <a id="stringwhyliteral"></a>
+    <h3 class="h3">Why Java uses the concept of String literal?</h3>
+    <p>To make Java more memory efficient (because no new objects are created if it exists already in the string
+        constant
+        pool).</p>
+    <a id="stringnew"></a>
+    <h3 class="h2">2) By new keyword</h3>
+    <div class="row justify-content-start p-3"><textarea name="code" class="java codeblock form-control col-lg-6"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+String s=new String("Welcome");//creates two objects and one reference variable
+</textarea></div>
+    <p>In such case, <a href="jvm-java-virtual-machine">JVM</a> will create a new string object in normal (non-pool)
+        heap
+        memory, and the literal "Welcome" will be placed in the string constant pool. The variable s will refer to the
+        object in a heap (non-pool).</p>
+    <h3 class="h2">Java String Example</h3>
+    <p><strong>StringExample.java</strong></p>
+    <div class="row justify-content-start p-3"><textarea name="code" class="codeblock form-control col-lg-6 px-3"
+        style="resize: none;min-height: 200px;max-width: 100%;">
+public class StringExample{  
+public static void main(String args[]){  
+String s1="java";//creating string by Java string literal  
+char ch[]={'s','t','r','i','n','g','s'};  
+String s2=new String(ch);//converting char array to string  
+String s3=new String("example");//creating Java string by new keyword  
+System.out.println(s1);  
+System.out.println(s2);  
+System.out.println(s3);  
+}}  
+</textarea></div>
+    <span class="testit"><a href="https://www.javatpoint.com/opr/test.jsp?filename=StringExample" target="_blank">Test
+            it
+            Now</a></span>
+    <p><strong>Output:</strong></p>
+    <div class="codeblock3">
+        <pre>java
+strings
+example
+</pre>
+    </div>
+    <p>The above code, converts a <strong><em>char</em></strong> array into a <strong>String</strong> object. And
+        displays
+        the String objects <strong><em>s1, s2</em></strong>, and <strong><em>s3</em></strong> on console using
+        <strong><em>println()</em></strong> method.
+    </p>
+    <h3 class="h2">Java String class methods</h3>
+    <p>The java.lang.String class provides many useful methods to perform operations on sequence of char values.</p>
+    <table class="alt">
+        <tr>
+            <th>No.</th>
+            <th>Method</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="java-string-charat">char charAt(int index)</a></td>
+            <td>It returns char value for the particular index</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="java-string-length">int length()</a></td>
+            <td>It returns string length</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="java-string-format">static String format(String format, Object... args)</a></td>
+            <td>It returns a formatted string.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="java-string-format">static String format(Locale l, String format, Object... args)</a></td>
+            <td>It returns formatted string with given locale.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="java-string-substring">String substring(int beginIndex)</a></td>
+            <td>It returns substring for given begin index.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="java-string-substring">String substring(int beginIndex, int endIndex)</a></td>
+            <td>It returns substring for given begin index and end index.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="java-string-contains">boolean contains(CharSequence s)</a></td>
+            <td>It returns true or false after matching the sequence of char value.</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="java-string-join">static String join(CharSequence delimiter, CharSequence... elements)</a></td>
+            <td>It returns a joined string.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="java-string-join">static String join(CharSequence delimiter, Iterable&lt;? extends
+                    CharSequence&gt;
+                    elements)</a></td>
+            <td>It returns a joined string.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="java-string-equals">boolean equals(Object another)</a></td>
+            <td>It checks the equality of string with the given object.</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="java-string-isempty">boolean isEmpty()</a></td>
+            <td>It checks if string is empty.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="java-string-concat">String concat(String str)</a></td>
+            <td>It concatenates the specified string.</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="java-string-replace">String replace(char old, char new)</a></td>
+            <td>It replaces all occurrences of the specified char value.</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="java-string-replace">String replace(CharSequence old, CharSequence new)</a></td>
+            <td>It replaces all occurrences of the specified CharSequence.</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="java-string-equalsignorecase">static String equalsIgnoreCase(String another)</a></td>
+            <td>It compares another string. It doesn't check case.</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="java-string-split">String[] split(String regex)</a></td>
+            <td>It returns a split string matching regex.</td>
+        <tr>
+            <td>17</td>
+            <td><a href="java-string-split">String[] split(String regex, int limit)</a></td>
+            <td>It returns a split string matching regex and limit.</td>
+        <tr>
+            <td>18</td>
+            <td><a href="java-string-intern">String intern()</a></td>
+            <td>It returns an interned string.</td>
+        <tr>
+            <td>19</td>
+            <td><a href="java-string-indexof">int indexOf(int ch)</a></td>
+            <td>It returns the specified char value index.</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><a href="java-string-indexof">int indexOf(int ch, int fromIndex)</a></td>
+            <td>It returns the specified char value index starting with given index.</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><a href="java-string-indexof">int indexOf(String substring)</a></td>
+            <td>It returns the specified substring index.</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><a href="java-string-indexof">int indexOf(String substring, int fromIndex)</a></td>
+            <td>It returns the specified substring index starting with given index.</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td><a href="java-string-tolowercase">String toLowerCase()</a></td>
+            <td>It returns a string in lowercase.</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td><a href="java-string-tolowercase">String toLowerCase(Locale l)</a></td>
+            <td>It returns a string in lowercase using specified locale.</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td><a href="java-string-touppercase">String toUpperCase()</a></td>
+            <td>It returns a string in uppercase.</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td><a href="java-string-touppercase">String toUpperCase(Locale l)</a></td>
+            <td>It returns a string in uppercase using specified locale.</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td><a href="java-string-trim">String trim()</a></td>
+            <td>It removes beginning and ending spaces of this string.</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td><a href="java-string-valueof">static String valueOf(int value)</a></td>
+            <td>It converts given type into string. It is an overloaded method.</td>
+        </tr>
+    </table>
+    <br />
+    <fieldset>
+        <legend class="legendfont">Do You Know? </legend>
+        <div id="youknow">
+            <ul class="points">
+                <li>Why are String objects immutable?</li>
+                <li>How to create an immutable class?</li>
+                <li>What is string constant pool?</li>
+                <li>What code is written by the compiler if you concatenate any string by + (string concatenation
+                    operator)?
+                </li>
+                <li>What is the difference between StringBuffer and StringBuilder class?</li>
+            </ul>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend class="legendfont">What will we learn in String Handling? </legend>
+        <div id="whatlearn">
+            <ul class="points">
+                <li>Concept of String</li>
+                <li>Immutable String</li>
+                <li>String Comparison</li>
+                <li>String Concatenation</li>
+                <li>Concept of Substring</li>
+                <li>String class methods and its usage</li>
+                <li>StringBuffer class</li>
+                <li>StringBuilder class</li>
+                <li>Creating Immutable class</li>
+                <li>toString() method</li>
+                <li>StringTokenizer class</li>
+            </ul>
+        </div>
+    </fieldset>
+    <hr />
+</div>
+    <div class="d-flex justify-content-between align-items-center my-4 mx-5">
+        <a href="45object_class.html"><button class="btn btn-danger" type="button">Previous</button></a>
+        <a href="47exception_handling.html"><button class="btn btn-success" type="button">Next</button></a>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-bg-dark"
+            style="height: 50px; display: flex; align-items: center; font-size: 15px; justify-content: center;">
+            Copyright&nbsp; ©&nbsp; 2023&nbsp; StudyGenie&nbsp; -&nbsp; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>
